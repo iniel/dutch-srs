@@ -1,7 +1,10 @@
 import {
   buildReviewQueue,
   buildLessonQueue,
+  buildLeechQueue,
+  lessonsRemainingToday,
   createSession,
+  LEECH_INCORRECT_THRESHOLD,
   type ReviewTask,
 } from "./session";
 import type { Card, ItemKey, ReviewState } from "../types";
@@ -146,5 +149,106 @@ describe("createSession", () => {
     const s = createSession([]);
     expect(() => s.submit(true)).not.toThrow();
     expect(s.isComplete()).toBe(true);
+  });
+});
+
+describe("buildReviewQueue order", () => {
+  const states: Record<ItemKey, ReviewState> = {
+    "g:nl_en": state({ stage: 6, availableAt: 100 }),
+    "a:nl_en": state({ stage: 1, availableAt: 300 }),
+    "b:nl_en": state({ stage: 5, availableAt: 200 }),
+    "c:nl_en": state({ stage: 2, availableAt: 400 }),
+  };
+
+  it("defaults to due order (availableAt then key)", () => {
+    expect(buildReviewQueue(states, NOW).map((t) => t.key)).toEqual([
+      "g:nl_en",
+      "b:nl_en",
+      "a:nl_en",
+      "c:nl_en",
+    ]);
+    expect(buildReviewQueue(states, NOW, "due").map((t) => t.key)).toEqual([
+      "g:nl_en",
+      "b:nl_en",
+      "a:nl_en",
+      "c:nl_en",
+    ]);
+  });
+
+  it("apprentice_first puts stages 1-4 ahead, then by due", () => {
+    expect(buildReviewQueue(states, NOW, "apprentice_first").map((t) => t.key)).toEqual([
+      "a:nl_en",
+      "c:nl_en",
+      "g:nl_en",
+      "b:nl_en",
+    ]);
+  });
+
+  it("shuffled is deterministic for a given now", () => {
+    const first = buildReviewQueue(states, NOW, "shuffled").map((t) => t.key);
+    const again = buildReviewQueue(states, NOW, "shuffled").map((t) => t.key);
+    expect(first).toEqual(again);
+    expect([...first].sort()).toEqual(["a:nl_en", "b:nl_en", "c:nl_en", "g:nl_en"]);
+  });
+
+  it("shuffled order varies with the seed (now)", () => {
+    const at1 = buildReviewQueue(states, 1, "shuffled").map((t) => t.key);
+    const at2 = buildReviewQueue(states, 999999, "shuffled").map((t) => t.key);
+    expect(at1).not.toEqual(at2);
+  });
+});
+
+describe("buildLeechQueue", () => {
+  it("includes stage>=1, non-burned items at or above the incorrect threshold", () => {
+    const states: Record<ItemKey, ReviewState> = {
+      "a:nl_en": state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD }),
+      "b:nl_en": state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD - 1 }),
+      "c:nl_en": state({ stage: 0, incorrectCount: 10 }),
+      "d:nl_en": state({ stage: 9, incorrectCount: 10, burned: true }),
+    };
+    expect(buildLeechQueue(states).map((t) => t.key)).toEqual(["a:nl_en"]);
+  });
+
+  it("orders by incorrectCount desc then key", () => {
+    const states: Record<ItemKey, ReviewState> = {
+      "b:nl_en": state({ stage: 2, incorrectCount: 5 }),
+      "a:nl_en": state({ stage: 2, incorrectCount: 5 }),
+      "c:nl_en": state({ stage: 2, incorrectCount: 9 }),
+    };
+    expect(buildLeechQueue(states).map((t) => t.key)).toEqual([
+      "c:nl_en",
+      "a:nl_en",
+      "b:nl_en",
+    ]);
+  });
+
+  it("apprenticeOnly keeps only stages 1-4", () => {
+    const states: Record<ItemKey, ReviewState> = {
+      "app:nl_en": state({ stage: 4, incorrectCount: 4 }),
+      "guru:nl_en": state({ stage: 5, incorrectCount: 4 }),
+    };
+    expect(buildLeechQueue(states, { apprenticeOnly: true }).map((t) => t.key)).toEqual([
+      "app:nl_en",
+    ]);
+    expect(buildLeechQueue(states).map((t) => t.key)).toEqual([
+      "app:nl_en",
+      "guru:nl_en",
+    ]);
+  });
+});
+
+describe("lessonsRemainingToday", () => {
+  it("returns the cap minus what was already started", () => {
+    expect(lessonsRemainingToday(15, 0)).toBe(15);
+    expect(lessonsRemainingToday(15, 10)).toBe(5);
+  });
+
+  it("never goes negative", () => {
+    expect(lessonsRemainingToday(15, 20)).toBe(0);
+  });
+
+  it("treats no cap (undefined or <=0) as unlimited", () => {
+    expect(lessonsRemainingToday(undefined, 100)).toBe(Infinity);
+    expect(lessonsRemainingToday(0, 5)).toBe(Infinity);
   });
 });

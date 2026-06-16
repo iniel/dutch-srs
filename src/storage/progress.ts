@@ -5,6 +5,7 @@ export const CURRENT_VERSION = 1;
 
 export const DEFAULT_SETTINGS: AppSettings = {
   lessonBatchSize: 5,
+  dailyLessonCap: 15,
   theme: "system",
 };
 

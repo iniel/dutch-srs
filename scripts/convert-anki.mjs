@@ -94,10 +94,15 @@ for (const deck of DECKS) {
       continue;
     }
     seen.add(dedupeKey);
+    const level = `${deck.level} · U${n.unit || "?"}`;
     const notesParts = [n.pos, n.other && `forms: ${n.other}`].filter(Boolean);
     cards.push({
       id: `${deck.level}-${cards.length}`,
+      level,
       group,
+      _deckLevel: deck.level,
+      _unit: n.unit,
+      _section: n.section,
       dutch: n.dutch,
       english,
       type: posType(n.pos),
@@ -108,24 +113,36 @@ for (const deck of DECKS) {
   }
 }
 
-// Stable group order: by level then numeric section (1.1, 1.2, 1.10 ...).
-const groupOrder = [...new Set(cards.map((c) => c.group))].sort((a, b) => {
-  const num = (g) => g.split("·")[1]?.trim().split(".").map(Number) ?? [0];
-  const [la, ...na] = [a.split("·")[0].trim(), ...num(a)];
-  const [lb, ...nb] = [b.split("·")[0].trim(), ...num(b)];
-  if (la !== lb) return la < lb ? -1 : 1;
-  for (let i = 0; i < Math.max(na.length, nb.length); i++) {
-    if ((na[i] ?? 0) !== (nb[i] ?? 0)) return (na[i] ?? 0) - (nb[i] ?? 0);
+// Lesson order: deck level → numeric unit → numeric section (1.1, 1.2, 1.10 ...).
+const numParts = (s) =>
+  String(s ?? "")
+    .trim()
+    .split(".")
+    .map((p) => Number(p))
+    .map((n) => (Number.isFinite(n) ? n : Infinity));
+const compareNum = (a, b) => {
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    if ((a[i] ?? 0) !== (b[i] ?? 0)) return (a[i] ?? 0) - (b[i] ?? 0);
   }
   return 0;
+};
+cards.sort((a, b) => {
+  if (a._deckLevel !== b._deckLevel) return a._deckLevel < b._deckLevel ? -1 : 1;
+  const unit = compareNum(numParts(a._unit), numParts(b._unit));
+  if (unit !== 0) return unit;
+  return compareNum(numParts(a._section), numParts(b._section));
 });
-const rank = new Map(groupOrder.map((g, i) => [g, i]));
-cards.sort((a, b) => rank.get(a.group) - rank.get(b.group));
-cards.forEach((c, i) => (c.id = `c${i}`));
+cards.forEach((c, i) => {
+  c.id = `c${i}`;
+  delete c._deckLevel;
+  delete c._unit;
+  delete c._section;
+});
 
+const levels = [...new Set(cards.map((c) => c.level))];
 mkdirSync(join(root, "public"), { recursive: true });
 writeFileSync(join(root, "public", "cards.json"), JSON.stringify(cards, null, 0));
 
-console.log(`cards: ${cards.length}, groups: ${groupOrder.length}, dropped: ${dropped}`);
-console.log("first group:", groupOrder[0], "last group:", groupOrder.at(-1));
+console.log(`cards: ${cards.length}, levels: ${levels.length}, dropped: ${dropped}`);
+console.log("first level:", levels[0], "last level:", levels.at(-1));
 console.log("sample:", JSON.stringify(cards.slice(0, 3), null, 2));

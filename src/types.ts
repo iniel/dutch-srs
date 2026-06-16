@@ -3,6 +3,7 @@ export type CardType = "word" | "phrase" | "sentence";
 export interface Card {
   id: string;
   group: string;
+  level?: string;
   dutch: string;
   english: string[];
   type: CardType;
@@ -47,5 +48,6 @@ export interface ProgressData {
 
 export interface AppSettings {
   lessonBatchSize: number;
+  dailyLessonCap?: number;
   theme: "system" | "light" | "dark";
 }

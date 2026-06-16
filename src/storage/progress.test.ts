@@ -135,7 +135,7 @@ describe("reset", () => {
 
     const reset = resetProgress();
     expect(reset.states).toEqual({});
-    expect(reset.settings).toEqual({ theme: "dark", lessonBatchSize: 7 });
+    expect(reset.settings).toEqual({ theme: "dark", lessonBatchSize: 7, dailyLessonCap: 15 });
     expect(localStorage.getItem(STORAGE_KEY)).toBeNull();
   });
 
