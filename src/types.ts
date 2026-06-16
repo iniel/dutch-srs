@@ -1,0 +1,51 @@
+export type CardType = "word" | "phrase" | "sentence";
+
+export interface Card {
+  id: string;
+  group: string;
+  dutch: string;
+  english: string[];
+  type: CardType;
+  pos?: string;
+  lemma?: string;
+  exampleNl?: string;
+  exampleEn?: string;
+  notes?: string;
+}
+
+export type Direction = "nl_en" | "en_nl";
+
+export const DIRECTIONS: Direction[] = ["nl_en", "en_nl"];
+
+/** Key for a per-direction review item: `${cardId}:${direction}`. */
+export type ItemKey = string;
+
+export function itemKey(cardId: string, dir: Direction): ItemKey {
+  return `${cardId}:${dir}`;
+}
+
+export function parseItemKey(key: ItemKey): { cardId: string; dir: Direction } {
+  const idx = key.lastIndexOf(":");
+  return { cardId: key.slice(0, idx), dir: key.slice(idx + 1) as Direction };
+}
+
+export interface ReviewState {
+  /** 0 = lesson (not started), 1-8 = review stages, 9 = burned. */
+  stage: number;
+  /** Unix ms when this item next becomes available for review. */
+  availableAt: number;
+  lastReviewedAt: number;
+  incorrectCount: number;
+  burned: boolean;
+}
+
+export interface ProgressData {
+  version: number;
+  states: Record<ItemKey, ReviewState>;
+  settings: AppSettings;
+}
+
+export interface AppSettings {
+  lessonBatchSize: number;
+  theme: "system" | "light" | "dark";
+}

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(pnpm -v)",
+      "Bash(set -e)",
+      "Bash(mkdir -p .claude/skills/playwright-cli)",
+      "Bash(unzip -l TaalCompleet_A1_Dutch-English-PersianFarsi.apkg)",
+      "Bash(playwright-cli snapshot *)",
+      "Read(//Users/svetlana/.nvm/versions/node/v24.15.0/lib/node_modules/**)",
+      "Bash(npx playwright *)",
+      "Bash(npm root *)",
+      "Bash(npx vite *)",
+      "Bash(playwright-cli close *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vitest *)",
+      "Bash(pkill -f \"vite --port 5180\")",
+      "Bash(printf \"node_modules\\\\ndist\\\\n.playwright-cli\\\\n*.log\\\\n\")"
+    ]
+  }
+}
