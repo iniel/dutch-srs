@@ -8,6 +8,7 @@ import type { ReviewTask, Session, TaskResult } from "./review/session";
 import type { Card } from "./types";
 import { useCards } from "./data/cards";
 import { now } from "./util/now";
+import { unlockedLevels, currentLevel, levelProgress } from "./srs/levels";
 import { Dashboard } from "./screens/Dashboard";
 import { Reviews } from "./screens/Reviews";
 import { Lessons } from "./screens/Lessons";
@@ -67,7 +68,8 @@ export function App() {
 
   function startLessons() {
     if (!index) return;
-    const tasks = buildLessonQueue(index.cards, progress.states, progress.settings.lessonBatchSize);
+    const unlocked = unlockedLevels(index.cards, progress.states, !!progress.settings.unlockAllLevels);
+    const tasks = buildLessonQueue(index.cards, progress.states, progress.settings.lessonBatchSize, unlocked);
     if (tasks.length === 0) return;
     const ids = [...new Set(tasks.map((t) => t.cardId))];
     setLessonCards(ids.map((id) => index.byId.get(id)!).filter(Boolean));
@@ -103,13 +105,17 @@ export function App() {
   const counts = useMemo(() => {
     if (!index) return null;
     const reviewsDue = buildReviewQueue(progress.states, now()).length;
-    const lessonCards = index.cards.filter((c) =>
-      DIRECTIONS.some((d) => {
+    const unlocked = unlockedLevels(index.cards, progress.states, !!progress.settings.unlockAllLevels);
+    const lessonCards = index.cards.filter((c) => {
+      if (c.level && !unlocked.has(c.level)) return false;
+      return DIRECTIONS.some((d) => {
         const s = progress.states[itemKey(c.id, d)];
         return !s || s.stage === 0;
-      }),
-    ).length;
-    return { reviewsDue, lessonCards };
+      });
+    }).length;
+    const levelName = currentLevel(index.cards, progress.states);
+    const levelPct = levelProgress(index.cards, progress.states, levelName).pct;
+    return { reviewsDue, lessonCards, levelName, levelPct };
   }, [index, progress]);
 
   if (error) return <div className="screen">Failed to load cards: {error}</div>;
@@ -122,6 +128,8 @@ export function App() {
           progress={progress}
           reviewsDue={counts.reviewsDue}
           lessonsAvailable={counts.lessonCards}
+          levelName={counts.levelName}
+          levelPct={counts.levelPct}
           onStartReviews={startReviews}
           onStartLessons={startLessons}
           onSettings={() => setScreen("settings")}

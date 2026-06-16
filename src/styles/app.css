@@ -362,3 +362,35 @@
   padding: 10px 14px;
   font-size: 0.9rem;
 }
+
+.level-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+.level-ring {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(
+    var(--guru, #872b9e) calc(var(--pct) * 1%),
+    var(--ring-track, #e0e0e0) 0
+  );
+  font-size: 12px;
+  font-weight: 600;
+}
+.level-ring span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg, #fff);
+  display: grid;
+  place-items: center;
+}
+.level-meta {
+  display: flex;
+  flex-direction: column;
+}
