@@ -44,7 +44,7 @@ async function answerAll(page, cards) {
     const info = await page.evaluate(() => ({
       label: document.querySelector(".prompt-label")?.textContent || "",
       prompt: document.querySelector(".prompt-text")?.textContent || "",
-      wrong: !!document.querySelector(".feedback-answer"),
+      wrong: !!document.querySelector(".wrong-feedback"),
     }));
     if (info.wrong) {
       await page.keyboard.press("Enter");
@@ -70,6 +70,19 @@ async function answerAll(page, cards) {
     await page.keyboard.press("Enter");
     await page.waitForTimeout(20);
   }
+}
+
+// Submit a deliberately wrong answer. Retries the fill because the quiz's
+// mount reset effect can clear a too-early fill.
+async function missAnswer(page) {
+  // Let the quiz mount/reset effect settle so it doesn't clear our input.
+  await page.waitForTimeout(250);
+  const input = page.locator(".answer-input");
+  await input.click();
+  await input.pressSequentially("zzzwrong", { delay: 25 });
+  await page.waitForTimeout(40);
+  await page.keyboard.press("Enter");
+  await page.waitForSelector(".wrong-feedback", { timeout: 5000 });
 }
 
 async function setClockOffset(page, ms) {
@@ -119,6 +132,32 @@ try {
   const lessons1 = Number(await page.textContent(".action-card.lessons .action-count"));
   check(lessons1 === lessons0 - 5, `lessons decreased by batch (${lessons0}->${lessons1})`);
 
+  console.log("FEATURE 8 — word search:");
+  await page.click('[aria-label="search"]');
+  await page.waitForSelector(".search-input");
+  await page.fill(".search-input", "hallo");
+  await page.waitForTimeout(150);
+  const hits = await page.$$eval(".word-row", (rows) => rows.map((r) => r.textContent));
+  check(hits.some((t) => /hallo/i.test(t)), `search "hallo" finds a suggestion (${hits.length} rows)`);
+  await page.click(".word-row");
+  await page.waitForSelector(".word-detail");
+  check(
+    (await page.textContent(".word-dutch")).toLowerCase().includes("hallo"),
+    "tapping a suggestion opens its word card",
+  );
+  await page.click('.word-detail [aria-label="back"]');
+  await page.waitForSelector(".search-input");
+  await page.click('.search [aria-label="back"]');
+  await page.waitForSelector(".action-card");
+
+  console.log("FEATURE 5 — word list:");
+  await page.click(".words-link");
+  await page.waitForSelector(".wordlist");
+  const listRows = await page.$$eval(".wordlist .word-row", (r) => r.length);
+  check(listRows >= 10, `word list shows learned items (${listRows} rows)`);
+  await page.click('.wordlist [aria-label="back"]');
+  await page.waitForSelector(".action-card");
+
   console.log("Clock +5h -> reviews due:");
   await setClockOffset(page, 5 * HOUR);
   await page.reload();
@@ -153,14 +192,38 @@ try {
   check(persisted.count === 10, `progress persisted (${persisted.count})`);
 
   console.log("Settings reset:");
-  await page.click(".icon-btn");
+  await page.click('[aria-label="settings"]');
   await page.waitForSelector(".settings");
   page.once("dialog", (d) => d.accept());
   await page.click(".btn.danger");
-  await page.click(".settings .icon-btn");
+  await page.click('.settings [aria-label="back"]');
   await page.waitForSelector(".action-card");
   const afterReset = await readState(page);
   check(afterReset.count === 0, `reset cleared states (${afterReset.count})`);
+
+  console.log("BUG 3 + FEATURE 4 — collapsed wrong-answer feedback:");
+  await page.click(".action-card.lessons");
+  for (let i = 0; i < 8; i++) {
+    if (await page.$(".answer-input")) break;
+    const btns = await page.$$(".btn.primary");
+    await btns[btns.length - 1].click();
+    await page.waitForTimeout(60);
+  }
+  await page.waitForSelector(".answer-input");
+  await missAnswer(page);
+  const collapsed = await page.evaluate(() => ({
+    title: document.querySelector(".feedback-title")?.textContent,
+    answerHidden: !document.querySelector(".feedback-answer"),
+    hasReveal: !!document.querySelector(".reveal-link"),
+  }));
+  check(collapsed.title === "Incorrect" && collapsed.answerHidden && collapsed.hasReveal,
+    "wrong answer shows collapsed (answer hidden, reveal link present)");
+  await page.click(".reveal-link");
+  check(!!(await page.$(".feedback-answer")), "Show answer reveals the correct answer");
+  await page.keyboard.press("Enter"); // continue
+  await page.waitForTimeout(120);
+  await missAnswer(page);
+  check(!!(await page.$(".wrong-feedback")), "wrong feedback shows again on a later miss (BUG 3)");
 } catch (e) {
   console.error("E2E threw:", e);
   exitCode = 1;

@@ -13,8 +13,19 @@ import { Reviews } from "./screens/Reviews";
 import { Lessons } from "./screens/Lessons";
 import { Summary } from "./screens/Summary";
 import { Settings } from "./screens/Settings";
+import { Search } from "./screens/Search";
+import { WordList } from "./screens/WordList";
+import { WordCard } from "./components/WordCard";
 
-export type Screen = "dashboard" | "reviews" | "lessons" | "summary" | "settings";
+export type Screen =
+  | "dashboard"
+  | "reviews"
+  | "lessons"
+  | "summary"
+  | "settings"
+  | "search"
+  | "wordlist"
+  | "worddetail";
 
 export function App() {
   const { index, error } = useCards();
@@ -24,6 +35,14 @@ export function App() {
   const [sessionMode, setSessionMode] = useState<"review" | "lesson">("review");
   const [lessonCards, setLessonCards] = useState<Card[]>([]);
   const [summary, setSummary] = useState<{ results: TaskResult[]; mode: "review" | "lesson" } | null>(null);
+  const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
+  const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
+
+  function openWordCard(cardId: string, from: Screen) {
+    setSelectedCardId(cardId);
+    setDetailFrom(from);
+    setScreen("worddetail");
+  }
 
   useEffect(() => {
     const t = progress.settings.theme;
@@ -106,6 +125,30 @@ export function App() {
           onStartReviews={startReviews}
           onStartLessons={startLessons}
           onSettings={() => setScreen("settings")}
+          onSearch={() => setScreen("search")}
+          onWords={() => setScreen("wordlist")}
+        />
+      )}
+      {screen === "search" && (
+        <Search
+          index={index}
+          onOpen={(id) => openWordCard(id, "search")}
+          onBack={() => setScreen("dashboard")}
+        />
+      )}
+      {screen === "wordlist" && (
+        <WordList
+          index={index}
+          progress={progress}
+          onOpen={(id) => openWordCard(id, "wordlist")}
+          onBack={() => setScreen("dashboard")}
+        />
+      )}
+      {screen === "worddetail" && selectedCardId && index.byId.get(selectedCardId) && (
+        <WordCard
+          card={index.byId.get(selectedCardId)!}
+          progress={progress}
+          onBack={() => setScreen(detailFrom)}
         />
       )}
       {screen === "reviews" && session && (

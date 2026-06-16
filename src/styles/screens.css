@@ -1,0 +1,138 @@
+.search-input {
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0 12px;
+  -webkit-appearance: none;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.word-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.word-empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 24px 0;
+}
+
+.word-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "dutch en" "dutch tag";
+  align-items: center;
+  gap: 2px 10px;
+  text-align: left;
+  border: none;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.word-row.tinted {
+  border-left: 4px solid var(--surface);
+}
+.word-row-dutch {
+  grid-area: dutch;
+  font-weight: 600;
+}
+.word-row-en {
+  grid-area: en;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: right;
+}
+.word-row-tag {
+  grid-area: tag;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-align: right;
+}
+
+.wordlist-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.wordlist-section h2 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+.wordlist-count {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.words-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: none;
+  color: var(--text);
+  padding: 0;
+}
+.words-link h2 {
+  margin: 0;
+}
+.words-link-chevron {
+  color: var(--text-muted);
+  font-size: 1.4rem;
+}
+
+.word-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.word-dutch {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+}
+.speak-btn {
+  flex: none;
+}
+.word-english {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+.word-notes {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.word-srs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.word-srs-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.word-srs-dir {
+  font-weight: 600;
+}

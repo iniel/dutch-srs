@@ -2,3 +2,4 @@ node_modules
 .playwright-cli
 *.log
 *.apkg
+tsconfig.tsbuildinfo

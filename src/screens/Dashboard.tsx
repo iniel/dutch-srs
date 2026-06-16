@@ -10,6 +10,8 @@ interface DashboardProps {
   onStartReviews: () => void;
   onStartLessons: () => void;
   onSettings: () => void;
+  onSearch: () => void;
+  onWords: () => void;
 }
 
 const CATEGORIES: { key: StageCategory; label: string }[] = [
@@ -36,6 +38,8 @@ export function Dashboard({
   onStartReviews,
   onStartLessons,
   onSettings,
+  onSearch,
+  onWords,
 }: DashboardProps) {
   const { byCategory, nextAt } = useMemo(() => {
     const byCategory: Record<StageCategory, number> = {
@@ -53,6 +57,7 @@ export function Dashboard({
   return (
     <div className="screen dashboard">
       <header className="topbar">
+        <button className="icon-btn" onClick={onSearch} aria-label="search">🔍</button>
         <h1>Dutch SRS</h1>
         <button className="icon-btn" onClick={onSettings} aria-label="settings">⚙</button>
       </header>
@@ -73,7 +78,10 @@ export function Dashboard({
       </div>
 
       <section className="srs-breakdown">
-        <h2>Progress</h2>
+        <button className="words-link" onClick={onWords}>
+          <h2>Words</h2>
+          <span className="words-link-chevron">›</span>
+        </button>
         <div className="srs-row">
           {CATEGORIES.map((c) => (
             <div className="srs-cell" key={c.key}>
