@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Card } from "../types";
 import type { ReviewTask, Session } from "../review/session";
 import { acceptedForDirection, checkAnswer } from "../review/answerCheck";
+import { speak, speechSupported } from "../util/speak";
 import { ProgressBar } from "./ProgressBar";
 
 interface QuizProps {
@@ -20,6 +21,7 @@ const dirLabel = (dir: ReviewTask["dir"]) =>
 export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
+  const [revealed, setRevealed] = useState(false);
   const [, force] = useState(0);
   const wrongSet = useRef<Set<string>>(new Set());
   const inputRef = useRef<HTMLInputElement>(null);
@@ -27,8 +29,25 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
   const task = session.current();
 
   useEffect(() => {
+    setPhase("input");
+    setValue("");
+    setRevealed(false);
+  }, [task?.key]);
+
+  useEffect(() => {
     if (phase === "input") inputRef.current?.focus();
-  }, [phase, task?.key]);
+  }, [phase]);
+
+  // Ref keeps the window keydown listener calling the current closure without re-binding.
+  const advanceRef = useRef<() => void>(() => {});
+  advanceRef.current = () => {
+    session.submit(false);
+    setPhase("input");
+    setValue("");
+    setRevealed(false);
+    force((n) => n + 1);
+    if (session.isComplete()) onComplete();
+  };
 
   // A disabled input fires no keydown, so Enter-to-continue lives on the window.
   useEffect(() => {
@@ -36,12 +55,14 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Enter") {
         e.preventDefault();
-        advanceAfterWrong();
+        advanceRef.current();
+      } else if (e.key === " " || e.key === "ArrowDown") {
+        e.preventDefault();
+        setRevealed(true);
       }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
 
   if (!task) return null;
@@ -52,11 +73,7 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
   const accepted = acceptedForDirection(card, task.dir);
 
   function advanceAfterWrong() {
-    session.submit(false);
-    setPhase("input");
-    setValue("");
-    force((n) => n + 1);
-    if (session.isComplete()) onComplete();
+    advanceRef.current();
   }
 
   function submit() {
@@ -119,9 +136,33 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
 
       {phase === "wrong" ? (
         <div className="feedback wrong-feedback">
-          <div className="feedback-title">Correct answer</div>
-          <div className="feedback-answer">{accepted.join(", ")}</div>
-          {card.notes && <div className="feedback-notes">{card.notes}</div>}
+          <div className="feedback-title">Incorrect</div>
+          {revealed ? (
+            <>
+              <div className="feedback-answer">
+                {accepted.join(", ")}
+                {task.dir === "en_nl" && speechSupported() && (
+                  <button
+                    type="button"
+                    className="speak-btn"
+                    onClick={() => speak(card.dutch)}
+                    aria-label="Pronounce Dutch word"
+                  >
+                    🔊
+                  </button>
+                )}
+              </div>
+              {card.notes && <div className="feedback-notes">{card.notes}</div>}
+            </>
+          ) : (
+            <button
+              type="button"
+              className="reveal-link"
+              onClick={() => setRevealed(true)}
+            >
+              Show answer
+            </button>
+          )}
           <button className="btn primary" onClick={advanceAfterWrong}>
             Continue (Enter)
           </button>

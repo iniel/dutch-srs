@@ -192,6 +192,37 @@
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+.prompt-card .feedback-notes {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.reveal-link {
+  align-self: flex-start;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.speak-btn {
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: inherit;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.feedback .speak-btn {
+  background: var(--surface-2);
+}
 
 .btn {
   border: none;

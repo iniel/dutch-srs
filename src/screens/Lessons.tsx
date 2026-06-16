@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Card } from "../types";
 import type { ReviewTask, Session } from "../review/session";
+import { speak, speechSupported } from "../util/speak";
 import { Quiz } from "../components/Quiz";
 
 interface LessonsProps {
@@ -29,7 +30,19 @@ export function Lessons({ session, lessonCards, getCard, onCleared, onComplete, 
 
         <div className="prompt-card lesson-info">
           <div className="prompt-label">{card.group} · {card.type}</div>
-          <div className="prompt-text">{card.dutch}</div>
+          <div className="prompt-text">
+            {card.dutch}
+            {speechSupported() && (
+              <button
+                type="button"
+                className="speak-btn"
+                onClick={() => speak(card.dutch)}
+                aria-label="Pronounce Dutch word"
+              >
+                🔊
+              </button>
+            )}
+          </div>
           <div className="lesson-meaning">{card.english.join(", ")}</div>
           {card.notes && <div className="feedback-notes">{card.notes}</div>}
         </div>
