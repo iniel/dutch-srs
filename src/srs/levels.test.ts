@@ -1,4 +1,3 @@
-// src/srs/levels.test.ts
 import { describe, it, expect } from "vitest";
 import type { Card, ItemKey, ReviewState } from "./../types";
 import { itemKey } from "./../types";
@@ -43,7 +42,6 @@ describe("levelProgress", () => {
   });
 
   it("passes at exactly the threshold", () => {
-    // 10 items, 9 gurued = 0.9
     const cards = Array.from({ length: 5 }, (_, i) => card(`c${i}`, L1));
     const entries: [string, ReviewState][] = [];
     let g = 0;
@@ -84,7 +82,6 @@ describe("currentLevel", () => {
 
   it("advances only once a level crosses the threshold", () => {
     const cards = [card("a", L1), card("b", L2)];
-    // L1 has 2 items; 1 guru = 0.5 < 0.9 => still on L1
     expect(currentLevel(cards, states([[itemKey("a", "nl_en"), guru()]]))).toBe(L1);
     // both L1 items guru => 1.0 => advance to L2
     expect(
