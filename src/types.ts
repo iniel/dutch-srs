@@ -50,4 +50,5 @@ export interface AppSettings {
   lessonBatchSize: number;
   dailyLessonCap?: number;
   theme: "system" | "light" | "dark";
+  unlockAllLevels?: boolean;
 }

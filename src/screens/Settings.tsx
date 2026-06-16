@@ -75,6 +75,15 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
         </select>
       </label>
 
+      <label className="setting-row">
+        <span>Unlock all levels</span>
+        <input
+          type="checkbox"
+          checked={!!progress.settings.unlockAllLevels}
+          onChange={(e) => setSetting({ unlockAllLevels: e.target.checked })}
+        />
+      </label>
+
       <section className="setting-block">
         <h2>Backup</h2>
         <button className="btn block" onClick={download}>Export progress (JSON)</button>
