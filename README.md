@@ -3,6 +3,9 @@
 Personal local-first SRS for Dutch vocabulary, WaniKani/Tsurukame-style review flow.
 Each card is drilled both directions (NL→EN and EN→NL) as independent SRS items.
 
+**Working on this app?** Start with [`CLAUDE.md`](CLAUDE.md), then the relevant guide in
+[`docs/`](docs/): architecture, recipes (how to change things), testing, deploy, vocabulary.
+
 ## Run
 
 ```bash
