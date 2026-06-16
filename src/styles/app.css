@@ -376,8 +376,8 @@
   display: grid;
   place-items: center;
   background: conic-gradient(
-    var(--guru, #872b9e) calc(var(--pct) * 1%),
-    var(--ring-track, #e0e0e0) 0
+    var(--srs-guru) calc(var(--pct) * 1%),
+    var(--border) 0
   );
   font-size: 12px;
   font-weight: 600;
