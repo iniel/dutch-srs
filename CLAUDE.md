@@ -74,5 +74,6 @@ After any logic/UI change: `npm run build && npm test && npm run test:e2e` must 
 - `docs/TESTING.md` — unit tests, the E2E harness, driving the browser, common failures
 - `docs/DEPLOY.md` — the GitHub Pages prebuilt-dist flow + the history of what went wrong
 - `docs/VOCABULARY.md` — `cards.json` schema, the converter, adding/editing cards
+- `docs/BACKLOG.md` — open features & bugs (start here for new work) + WaniKani logic comparison
 
 Live: https://iniel.github.io/dutch-srs/ · Repo: https://github.com/iniel/dutch-srs
