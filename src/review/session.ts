@@ -111,12 +111,14 @@ export function buildLessonQueue(
   cards: Card[],
   states: Record<ItemKey, ReviewState>,
   batchSize: number,
+  unlocked?: Set<string>,
 ): ReviewTask[] {
   const tasks: ReviewTask[] = [];
   let picked = 0;
 
   for (const card of cards) {
     if (picked >= batchSize) break;
+    if (unlocked && card.level && !unlocked.has(card.level)) continue;
     const isNew = DIRECTIONS.some((dir) => {
       const state = states[itemKey(card.id, dir)];
       return !state || state.stage === 0;

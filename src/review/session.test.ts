@@ -237,6 +237,30 @@ describe("buildLeechQueue", () => {
   });
 });
 
+describe("buildLessonQueue gating", () => {
+  function card(id: string, level?: string): Card {
+    return { id, group: "g", level, dutch: id, english: [id], type: "word" };
+  }
+
+  it("excludes cards whose level is not unlocked", () => {
+    const cards = [card("a", "A1 · U1"), card("b", "A1 · U2")];
+    const tasks = buildLessonQueue(cards, {}, 10, new Set(["A1 · U1"]));
+    expect(tasks.map((t) => t.cardId)).toEqual(["a", "a"]);
+  });
+
+  it("includes a card with no level even when gated", () => {
+    const cards = [card("a")];
+    const tasks = buildLessonQueue(cards, {}, 10, new Set(["A1 · U1"]));
+    expect(tasks.map((t) => t.cardId)).toEqual(["a", "a"]);
+  });
+
+  it("ignores the gate when unlocked is omitted", () => {
+    const cards = [card("a", "A1 · U2")];
+    const tasks = buildLessonQueue(cards, {}, 10);
+    expect(tasks.length).toBe(2);
+  });
+});
+
 describe("lessonsRemainingToday", () => {
   it("returns the cap minus what was already started", () => {
     expect(lessonsRemainingToday(15, 0)).toBe(15);
