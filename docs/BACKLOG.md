@@ -140,8 +140,64 @@ update tests.
 
 ---
 
+## FEATURE 8 — Word search (Tsurukame-style)
+**What:** A search box that, as you type, shows a live suggestion list of matching words; tap one to
+open its word card. Mirrors Tsurukame's search (magnifier in the header → type → list → subject detail).
+**Where:** search entry point = a magnifier `icon-btn` in the Dashboard topbar (`src/screens/Dashboard.tsx`,
+next to ⚙); new `src/screens/Search.tsx`; route + state in `src/App.tsx`. Reuse a shared word-detail
+view with FEATURE 5 (extract `src/components/WordCard.tsx`).
+**Approach:**
+- Input filters `index.cards` (all 1748) by `normalize()`d substring match on `dutch`, `english[]`,
+  and `lemma`. Rank exact/prefix matches first; cap the list (e.g. 50) for perf.
+- Suggestion row: Dutch (left) + `english.join(", ")` (right) + small group/level tag — reuse the
+  missed-list / FEATURE-5 row styling.
+- Tap → `WordCard`: shows `dutch`, `english`, `notes`, `group`/level, and the SRS stage of each
+  direction (`c{N}:nl_en` / `:en_nl`) via `SrsStagePill` + a speak button (ties FEATURE 2).
+- Keyboard-first: input autofocus, Up/Down to move, Enter to open the top hit, Esc back.
+**Acceptance:** Typing shows matching Dutch/English suggestions instantly; tapping opens a readable
+word card with current SRS state; reachable from the dashboard magnifier; works on mobile + keyboard.
+Add an E2E check: open search, type a known word, assert a suggestion, open it, assert the card.
+
+---
+
+## FEATURE 9 — Home screen parity (vs Tsurukame)
+
+What our dashboard has: lessons count, reviews-due count, next-review time, SRS-stage breakdown
+(Apprentice/Guru/Master/Enlightened/Burned). What Tsurukame's home has that we don't (Images #3/#4),
+prioritized, with Dutch applicability:
+
+1. **Search** — covered by FEATURE 8.
+2. **Upcoming reviews forecast** (chart of reviews coming due by hour). *We have the data* —
+   bucket `states[*].availableAt` (non-burned, stage≥1) by hour into the future. Render a small
+   bar/sparkline on the dashboard. No new deps needed (CSS bars). *Medium value.*
+3. **Leeches** ("Review apprentice leeches" / "Review all leeches"). Items repeatedly missed:
+   high `incorrectCount` and still low stage. Add a leech selector in `src/review/session.ts`
+   (`buildLeechQueue(states, {apprenticeOnly})`) + dashboard rows that start a review session over
+   them. *High learning value — recommended.*
+4. **Extra review entry points:** "Review burned items", "Review recent mistakes", review a single
+   SRS category. Cheap once leech/queue selectors exist (filtered `createSession`).
+5. **Lesson Picker** — choose which level/group/unit to learn next instead of strictly sequential.
+   Depends on FEATURE 7 (levels). A simple version: list groups with remaining-new counts, tap to
+   start that group's lesson batch.
+6. **Current-level progress rings + "Time remaining"** — Tsurukame shows 3 donuts (radical/kanji/vocab).
+   For Dutch we have one item type, so instead: a single ring of "% of current level's items at Guru+",
+   plus est. time to finish the level. Depends on FEATURE 7. *Nice-to-have.*
+7. **Profile/level header** ("Level 7 · learned 231 kanji"). For us: "Level X · learned N words" once
+   FEATURE 7 lands. *Low value; cosmetic.*
+
+**Not applicable:** radical/kanji/vocab split (Dutch is single-type — our analog is the NL→EN / EN→NL
+split). Skip "Next level-up review" unless levels gain a level-up gate.
+
+**Recommendation:** FEATURE 8 (search) + FEATURE 9.3 (leeches) are the highest-value, mostly
+independent of levels. The forecast chart (9.2) is a cheap visual win. The rest (picker, rings, header)
+ride on FEATURE 7.
+
+---
+
 ## Notes for whoever picks these up
 - Group BUG 3 + FEATURE 4 (same panel). Do FEATURE 7 before RESEARCH-6 acceleration (needs levels).
+- FEATURE 5 (word list) + FEATURE 8 (search) share a `WordCard`/row view — build it once, reuse.
+- Highest-value & level-independent: FEATURE 8 (search), FEATURE 9.3 (leeches).
 - New screens: presentational, props from `App.tsx` (see existing screens). No router/state lib.
 - Anything touching `src/srs/` or `src/review/` is pure + unit-tested first.
 - Re-verify interaction changes with `npm run test:e2e` (it exercises correct/wrong/SRS paths).
