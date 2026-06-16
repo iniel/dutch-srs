@@ -52,8 +52,13 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
   // A disabled input fires no keydown, so Enter-to-continue lives on the window.
   useEffect(() => {
     if (phase !== "wrong") return;
+    // The Enter that revealed this wrong state is still bubbling when React flushes
+    // this effect; arm on the next tick so that same press can't self-advance.
+    let armed = false;
+    const arm = setTimeout(() => (armed = true), 0);
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Enter") {
+        if (!armed) return;
         e.preventDefault();
         advanceRef.current();
       } else if (e.key === " " || e.key === "ArrowDown") {
@@ -62,7 +67,10 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
       }
     };
     window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
+    return () => {
+      clearTimeout(arm);
+      window.removeEventListener("keydown", handler);
+    };
   }, [phase]);
 
   if (!task) return null;
