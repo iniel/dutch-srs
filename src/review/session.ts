@@ -22,25 +22,32 @@ function isApprentice(stage: number): boolean {
   return stage >= 1 && stage <= APPRENTICE_MAX_STAGE;
 }
 
-// EN→NL (production) is drilled before NL→EN (recognition) for the same word.
-const DIR_PRIORITY: Record<Direction, number> = { en_nl: 0, nl_en: 1 };
+// Fully interleave all items, but keep EN→NL (production) before NL→EN
+// (recognition) for the same word — clamp the pair's random weights so en_nl
+// never sorts after its nl_en. The two need not be adjacent.
+function shuffleKeepingDirOrder(tasks: ReviewTask[], seed: number): ReviewTask[] {
+  const rand = seededRandom(seed);
+  const weight = new Map<ItemKey, number>();
+  for (const task of tasks) weight.set(task.key, rand());
 
-function shuffleByCard(tasks: ReviewTask[], seed: number): ReviewTask[] {
-  const order: string[] = [];
-  const groups = new Map<string, ReviewTask[]>();
+  const byCard = new Map<string, ReviewTask[]>();
   for (const task of tasks) {
-    let group = groups.get(task.cardId);
-    if (!group) {
-      group = [];
-      groups.set(task.cardId, group);
-      order.push(task.cardId);
-    }
+    const group = byCard.get(task.cardId) ?? [];
     group.push(task);
+    byCard.set(task.cardId, group);
   }
-  shuffleInPlace(order, seededRandom(seed));
-  return order.flatMap((cardId) =>
-    groups.get(cardId)!.sort((a, b) => DIR_PRIORITY[a.dir] - DIR_PRIORITY[b.dir]),
-  );
+  for (const group of byCard.values()) {
+    const en = group.find((t) => t.dir === "en_nl");
+    const nl = group.find((t) => t.dir === "nl_en");
+    if (en && nl) {
+      const lo = Math.min(weight.get(en.key)!, weight.get(nl.key)!);
+      const hi = Math.max(weight.get(en.key)!, weight.get(nl.key)!);
+      weight.set(en.key, lo);
+      weight.set(nl.key, hi);
+    }
+  }
+
+  return [...tasks].sort((a, b) => weight.get(a.key)! - weight.get(b.key)!);
 }
 
 // Mulberry32 PRNG so "shuffled" order is stable across runs for a given seed.
@@ -53,14 +60,6 @@ function seededRandom(seed: number): () => number {
     t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
-}
-
-function shuffleInPlace<T>(items: T[], rand: () => number): T[] {
-  for (let i = items.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [items[i], items[j]] = [items[j], items[i]];
-  }
-  return items;
 }
 
 export function buildReviewQueue(
@@ -79,7 +78,7 @@ export function buildReviewQueue(
     a.availableAt - b.availableAt || (a.task.key < b.task.key ? -1 : 1);
 
   if (order === "shuffled") {
-    return shuffleByCard(due.map((d) => d.task), now);
+    return shuffleKeepingDirOrder(due.map((d) => d.task), now);
   }
 
   if (order === "apprentice_first") {
@@ -151,7 +150,7 @@ export function buildLessonQueue(
     picked++;
   }
 
-  return seed === undefined ? tasks : shuffleByCard(tasks, seed);
+  return seed === undefined ? tasks : shuffleKeepingDirOrder(tasks, seed);
 }
 
 export interface TaskResult {

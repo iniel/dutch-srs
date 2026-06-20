@@ -72,10 +72,9 @@ describe("buildLessonQueue", () => {
     ]);
   });
 
-  it("shuffles card order with a seed, keeping en_nl before nl_en per card", () => {
+  it("interleaves words with a seed, keeping en_nl before nl_en per word", () => {
     const cards = [card("a"), card("b"), card("c"), card("d")];
-    const shuffled = buildLessonQueue(cards, {}, 5, undefined, 42);
-    const order = shuffled.map((t) => t.key);
+    const order = buildLessonQueue(cards, {}, 5, undefined, 42).map((t) => t.key);
     expect([...order].sort()).toEqual(
       [
         "a:en_nl",
@@ -88,11 +87,22 @@ describe("buildLessonQueue", () => {
         "d:nl_en",
       ].sort(),
     );
-    for (let i = 0; i < order.length; i += 2) {
-      const [cardId, dir] = order[i].split(":");
-      expect(dir).toBe("en_nl");
-      expect(order[i + 1]).toBe(`${cardId}:nl_en`);
+    for (const id of ["a", "b", "c", "d"]) {
+      expect(order.indexOf(`${id}:en_nl`)).toBeLessThan(order.indexOf(`${id}:nl_en`));
     }
+  });
+
+  it("does not glue a word's two directions together", () => {
+    const cards = [card("a"), card("b"), card("c"), card("d")];
+    const order = buildLessonQueue(cards, {}, 5, undefined, 42).map((t) => t.key);
+    const interleaved = order.some(
+      (key, i) => i > 0 && key.split(":")[0] !== order[i - 1].split(":")[0],
+    );
+    const someNonAdjacent = ["a", "b", "c", "d"].some(
+      (id) => order.indexOf(`${id}:nl_en`) - order.indexOf(`${id}:en_nl`) > 1,
+    );
+    expect(interleaved).toBe(true);
+    expect(someNonAdjacent).toBe(true);
   });
 
   it("skips cards already started (both directions stage>0)", () => {
