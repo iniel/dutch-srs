@@ -20,7 +20,8 @@
       "Bash(git -c user.name=\"iniel\" -c user.email=\"svetlana@miro.com\" commit --no-edit)",
       "Bash(npm run *)",
       "Bash(npm test *)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(pkill -f \"vite\")"
     ]
   }
 }

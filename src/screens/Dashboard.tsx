@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import type { ProgressData } from "../types";
-import { parseItemKey } from "../types";
 import { STAGE_COLORS, stageCategory, type StageCategory } from "../srs/stages";
 import { now } from "../util/now";
 
@@ -10,11 +9,13 @@ interface DashboardProps {
   lessonsAvailable: number;
   levelName: string;
   levelPct: number;
+  wordsToLevelUp: number;
   onStartReviews: () => void;
   onStartLessons: () => void;
   onSettings: () => void;
   onSearch: () => void;
   onWords: () => void;
+  onLevelWords: () => void;
 }
 
 const CATEGORIES: { key: StageCategory; label: string }[] = [
@@ -40,13 +41,15 @@ export function Dashboard({
   lessonsAvailable,
   levelName,
   levelPct,
+  wordsToLevelUp,
   onStartReviews,
   onStartLessons,
   onSettings,
   onSearch,
   onWords,
+  onLevelWords,
 }: DashboardProps) {
-  const { byCategory, nextAt, wordsLearned } = useMemo(() => {
+  const { byCategory, nextAt } = useMemo(() => {
     const byCategory: Record<StageCategory, number> = {
       lesson: 0, apprentice: 0, guru: 0, master: 0, enlightened: 0, burned: 0,
     };
@@ -56,11 +59,7 @@ export function Dashboard({
       byCategory[stageCategory(s.stage)]++;
       if (!s.burned && s.availableAt > now() && s.availableAt < nextAt) nextAt = s.availableAt;
     }
-    const learnedCards = new Set<string>();
-    for (const [key, s] of Object.entries(progress.states)) {
-      if (s.stage >= 1) learnedCards.add(parseItemKey(key).cardId);
-    }
-    return { byCategory, nextAt, wordsLearned: learnedCards.size };
+    return { byCategory, nextAt };
   }, [progress]);
 
   return (
@@ -71,7 +70,7 @@ export function Dashboard({
         <button className="icon-btn" onClick={onSettings} aria-label="settings">⚙</button>
       </header>
 
-      <section className="level-summary">
+      <button className="level-summary" onClick={onLevelWords} aria-label={`Level ${levelName} words`}>
         <div
           className="level-ring"
           style={{ ["--pct" as string]: `${Math.round(levelPct * 100)}` }}
@@ -82,9 +81,14 @@ export function Dashboard({
         </div>
         <div className="level-meta">
           <strong>Level {levelName}</strong>
-          <span>{wordsLearned} words learned</span>
+          <span>
+            {wordsToLevelUp === 0
+              ? "Ready to level up"
+              : `${wordsToLevelUp} word${wordsToLevelUp === 1 ? "" : "s"} to level up`}
+          </span>
         </div>
-      </section>
+        <span className="level-summary-chevron">›</span>
+      </button>
 
       <div className="action-cards">
         <button className="action-card lessons" onClick={onStartLessons} disabled={lessonsAvailable === 0}>

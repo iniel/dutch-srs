@@ -43,6 +43,14 @@ export function levelProgress(
   return { level, total, gurued, pct, passed: pct >= LEVEL_PASS_THRESHOLD };
 }
 
+const DIRECTIONS_PER_WORD = 2;
+
+export function wordsToLevelUp(progress: LevelProgress): number {
+  const neededItems = Math.ceil(progress.total * LEVEL_PASS_THRESHOLD);
+  const remainingItems = Math.max(0, neededItems - progress.gurued);
+  return Math.ceil(remainingItems / DIRECTIONS_PER_WORD);
+}
+
 export function currentLevel(
   cards: Card[],
   states: Record<ItemKey, ReviewState>,

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { Direction, ProgressData } from "../types";
-import { parseItemKey } from "../types";
+import { itemKey, DIRECTIONS } from "../types";
 import type { CardIndex } from "../data/cards";
 import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
@@ -8,9 +8,12 @@ import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
 interface WordListProps {
   index: CardIndex;
   progress: ProgressData;
+  level?: string;
   onOpen: (cardId: string) => void;
   onBack: () => void;
 }
+
+const NOT_STARTED_STAGE = 0;
 
 const STAGE_ORDER: number[] = Array.from(
   { length: BURNED_STAGE - MIN_REVIEW_STAGE + 1 },
@@ -28,23 +31,26 @@ interface ListItem {
   stage: number;
 }
 
-function buildSections(index: CardIndex, progress: ProgressData) {
+function buildSections(index: CardIndex, progress: ProgressData, level?: string) {
   const byStage = new Map<number, ListItem[]>();
-  for (const [key, state] of Object.entries(progress.states)) {
-    if (state.stage < 1) continue;
-    const { cardId, dir } = parseItemKey(key);
-    const card = index.byId.get(cardId);
-    if (!card) continue;
-    const items = byStage.get(state.stage) ?? [];
-    items.push({
-      key,
-      cardId,
-      dir,
-      dutch: card.dutch,
-      english: card.english.join(", "),
-      stage: state.stage,
-    });
-    byStage.set(state.stage, items);
+  for (const card of index.cards) {
+    if (level !== undefined && card.level !== level) continue;
+    for (const dir of DIRECTIONS) {
+      const key = itemKey(card.id, dir);
+      const stage = progress.states[key]?.stage ?? 0;
+      const includeUnstarted = level !== undefined;
+      if (stage < 1 && !includeUnstarted) continue;
+      const items = byStage.get(stage) ?? [];
+      items.push({
+        key,
+        cardId: card.id,
+        dir,
+        dutch: card.dutch,
+        english: card.english.join(", "),
+        stage,
+      });
+      byStage.set(stage, items);
+    }
   }
   for (const items of byStage.values()) {
     items.sort((a, b) => a.dutch.localeCompare(b.dutch));
@@ -52,32 +58,39 @@ function buildSections(index: CardIndex, progress: ProgressData) {
   return byStage;
 }
 
-export function WordList({ index, progress, onOpen, onBack }: WordListProps) {
-  const sections = useMemo(() => buildSections(index, progress), [index, progress]);
+export function WordList({ index, progress, level, onOpen, onBack }: WordListProps) {
+  const sections = useMemo(() => buildSections(index, progress, level), [index, progress, level]);
 
   const total = useMemo(
     () => [...sections.values()].reduce((n, items) => n + items.length, 0),
     [sections],
   );
 
+  const stageOrder = level !== undefined ? [...STAGE_ORDER, NOT_STARTED_STAGE] : STAGE_ORDER;
+
   return (
     <div className="screen wordlist">
       <header className="topbar">
         <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>Words</h1>
+        <h1>{level !== undefined ? `Level ${level}` : "Words"}</h1>
         <span className="topbar-spacer" />
       </header>
 
-      {total === 0 && <div className="word-empty">No items in progress yet.</div>}
+      {total === 0 && (
+        <div className="word-empty">
+          {level !== undefined ? "No words in this level." : "No items in progress yet."}
+        </div>
+      )}
 
-      {STAGE_ORDER.map((stage) => {
+      {stageOrder.map((stage) => {
         const items = sections.get(stage);
         if (!items || items.length === 0) return null;
         const color = STAGE_COLORS[stageCategory(stage)];
         return (
           <section key={stage} className="wordlist-section">
             <h2 style={{ color }}>
-              {stageLabel(stage)} <span className="wordlist-count">{items.length}</span>
+              {stage === NOT_STARTED_STAGE ? "Not started" : stageLabel(stage)}{" "}
+              <span className="wordlist-count">{items.length}</span>
             </h2>
             <ul className="word-rows">
               {items.map((item) => (

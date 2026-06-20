@@ -7,6 +7,7 @@ import {
   levelProgress,
   currentLevel,
   unlockedLevels,
+  wordsToLevelUp,
 } from "./levels";
 
 function card(id: string, level?: string): Card {
@@ -120,4 +121,32 @@ describe("unlockedLevels", () => {
 
 it("LEVEL_PASS_THRESHOLD is 0.9", () => {
   expect(LEVEL_PASS_THRESHOLD).toBe(0.9);
+});
+
+describe("wordsToLevelUp", () => {
+  const nineWords = Array.from({ length: 9 }, (_, i) => card(`w${i}`, L1));
+
+  it("equals the full word count when nothing is gurued (9 words => 9)", () => {
+    expect(wordsToLevelUp(levelProgress(nineWords, {}, L1))).toBe(9);
+  });
+
+  it("drops as words reach Guru (8 words gurued => 1 left)", () => {
+    const pairs: [string, ReviewState][] = [];
+    for (let i = 0; i < 8; i++) {
+      pairs.push([itemKey(`w${i}`, "nl_en"), guru()], [itemKey(`w${i}`, "en_nl"), guru()]);
+    }
+    expect(wordsToLevelUp(levelProgress(nineWords, states(pairs), L1))).toBe(1);
+  });
+
+  it("is 0 once the 90% threshold is met", () => {
+    const pairs: [string, ReviewState][] = [];
+    for (let i = 0; i < 9; i++) {
+      pairs.push([itemKey(`w${i}`, "nl_en"), guru()], [itemKey(`w${i}`, "en_nl"), guru()]);
+    }
+    expect(wordsToLevelUp(levelProgress(nineWords, states(pairs), L1))).toBe(0);
+  });
+
+  it("is 0 for an empty level", () => {
+    expect(wordsToLevelUp(levelProgress([], {}, L1))).toBe(0);
+  });
 });

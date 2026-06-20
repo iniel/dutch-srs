@@ -8,7 +8,7 @@ import type { ReviewTask, Session, TaskResult } from "./review/session";
 import type { Card } from "./types";
 import { useCards } from "./data/cards";
 import { now } from "./util/now";
-import { unlockedLevels, currentLevel, levelProgress } from "./srs/levels";
+import { unlockedLevels, currentLevel, levelProgress, wordsToLevelUp } from "./srs/levels";
 import { Dashboard } from "./screens/Dashboard";
 import { Reviews } from "./screens/Reviews";
 import { Lessons } from "./screens/Lessons";
@@ -26,6 +26,7 @@ export type Screen =
   | "settings"
   | "search"
   | "wordlist"
+  | "levelwords"
   | "worddetail";
 
 export function App() {
@@ -114,8 +115,14 @@ export function App() {
       });
     }).length;
     const levelName = currentLevel(index.cards, progress.states);
-    const levelPct = levelProgress(index.cards, progress.states, levelName).pct;
-    return { reviewsDue, lessonCards, levelName, levelPct };
+    const levelProg = levelProgress(index.cards, progress.states, levelName);
+    return {
+      reviewsDue,
+      lessonCards,
+      levelName,
+      levelPct: levelProg.pct,
+      wordsToLevelUp: wordsToLevelUp(levelProg),
+    };
   }, [index, progress]);
 
   if (error) return <div className="screen">Failed to load cards: {error}</div>;
@@ -130,11 +137,13 @@ export function App() {
           lessonsAvailable={counts.lessonCards}
           levelName={counts.levelName}
           levelPct={counts.levelPct}
+          wordsToLevelUp={counts.wordsToLevelUp}
           onStartReviews={startReviews}
           onStartLessons={startLessons}
           onSettings={() => setScreen("settings")}
           onSearch={() => setScreen("search")}
           onWords={() => setScreen("wordlist")}
+          onLevelWords={() => setScreen("levelwords")}
         />
       )}
       {screen === "search" && (
@@ -149,6 +158,15 @@ export function App() {
           index={index}
           progress={progress}
           onOpen={(id) => openWordCard(id, "wordlist")}
+          onBack={() => setScreen("dashboard")}
+        />
+      )}
+      {screen === "levelwords" && (
+        <WordList
+          index={index}
+          progress={progress}
+          level={counts.levelName}
+          onOpen={(id) => openWordCard(id, "levelwords")}
           onBack={() => setScreen("dashboard")}
         />
       )}
