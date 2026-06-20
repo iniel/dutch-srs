@@ -17,7 +17,10 @@
       "Bash(pkill -f \"vite --port 5180\")",
       "Bash(printf \"node_modules\\\\ndist\\\\n.playwright-cli\\\\n*.log\\\\n\")",
       "Bash(git rm *)",
-      "Bash(git -c user.name=\"iniel\" -c user.email=\"svetlana@miro.com\" commit --no-edit)"
+      "Bash(git -c user.name=\"iniel\" -c user.email=\"svetlana@miro.com\" commit --no-edit)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(git branch *)"
     ]
   }
 }

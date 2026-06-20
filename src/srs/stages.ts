@@ -49,6 +49,21 @@ export function stageName(stage: number): string {
   }
 }
 
+const STAGE_SUBLEVEL: Record<number, string> = {
+  1: "I",
+  2: "II",
+  3: "III",
+  4: "IV",
+  5: "I",
+  6: "II",
+};
+
+export function stageLabel(stage: number): string {
+  const name = stageName(stage);
+  const sub = STAGE_SUBLEVEL[stage];
+  return sub ? `${name} ${sub}` : name;
+}
+
 export const STAGE_COLORS: Record<StageCategory, string> = {
   apprentice: "#de0094",
   guru: "#872b9e",

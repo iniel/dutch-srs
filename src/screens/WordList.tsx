@@ -2,7 +2,8 @@ import { useMemo } from "react";
 import type { Direction, ProgressData } from "../types";
 import { parseItemKey } from "../types";
 import type { CardIndex } from "../data/cards";
-import { STAGE_COLORS, stageCategory, type StageCategory } from "../srs/stages";
+import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
+import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
 
 interface WordListProps {
   index: CardIndex;
@@ -11,13 +12,10 @@ interface WordListProps {
   onBack: () => void;
 }
 
-const CATEGORY_ORDER: { key: StageCategory; label: string }[] = [
-  { key: "apprentice", label: "Apprentice" },
-  { key: "guru", label: "Guru" },
-  { key: "master", label: "Master" },
-  { key: "enlightened", label: "Enlightened" },
-  { key: "burned", label: "Burned" },
-];
+const STAGE_ORDER: number[] = Array.from(
+  { length: BURNED_STAGE - MIN_REVIEW_STAGE + 1 },
+  (_, i) => MIN_REVIEW_STAGE + i,
+);
 
 const DIR_LABEL: Record<Direction, string> = { nl_en: "NL → EN", en_nl: "EN → NL" };
 
@@ -31,14 +29,13 @@ interface ListItem {
 }
 
 function buildSections(index: CardIndex, progress: ProgressData) {
-  const byCategory = new Map<StageCategory, ListItem[]>();
+  const byStage = new Map<number, ListItem[]>();
   for (const [key, state] of Object.entries(progress.states)) {
     if (state.stage < 1) continue;
     const { cardId, dir } = parseItemKey(key);
     const card = index.byId.get(cardId);
     if (!card) continue;
-    const cat = stageCategory(state.stage);
-    const items = byCategory.get(cat) ?? [];
+    const items = byStage.get(state.stage) ?? [];
     items.push({
       key,
       cardId,
@@ -47,12 +44,12 @@ function buildSections(index: CardIndex, progress: ProgressData) {
       english: card.english.join(", "),
       stage: state.stage,
     });
-    byCategory.set(cat, items);
+    byStage.set(state.stage, items);
   }
-  for (const items of byCategory.values()) {
-    items.sort((a, b) => b.stage - a.stage || a.dutch.localeCompare(b.dutch));
+  for (const items of byStage.values()) {
+    items.sort((a, b) => a.dutch.localeCompare(b.dutch));
   }
-  return byCategory;
+  return byStage;
 }
 
 export function WordList({ index, progress, onOpen, onBack }: WordListProps) {
@@ -73,20 +70,21 @@ export function WordList({ index, progress, onOpen, onBack }: WordListProps) {
 
       {total === 0 && <div className="word-empty">No items in progress yet.</div>}
 
-      {CATEGORY_ORDER.map(({ key, label }) => {
-        const items = sections.get(key);
+      {STAGE_ORDER.map((stage) => {
+        const items = sections.get(stage);
         if (!items || items.length === 0) return null;
+        const color = STAGE_COLORS[stageCategory(stage)];
         return (
-          <section key={key} className="wordlist-section">
-            <h2 style={{ color: STAGE_COLORS[key] }}>
-              {label} <span className="wordlist-count">{items.length}</span>
+          <section key={stage} className="wordlist-section">
+            <h2 style={{ color }}>
+              {stageLabel(stage)} <span className="wordlist-count">{items.length}</span>
             </h2>
             <ul className="word-rows">
               {items.map((item) => (
                 <li key={item.key}>
                   <button
                     className="word-row tinted"
-                    style={{ borderLeftColor: STAGE_COLORS[key] }}
+                    style={{ borderLeftColor: color }}
                     onClick={() => onOpen(item.cardId)}
                   >
                     <span className="word-row-dutch">{item.dutch}</span>

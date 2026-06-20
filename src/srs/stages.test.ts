@@ -2,6 +2,7 @@ import {
   STAGE_INTERVALS_MS,
   STAGE_COLORS,
   stageName,
+  stageLabel,
   stageCategory,
   MIN_REVIEW_STAGE,
   BURNED_STAGE,
@@ -52,6 +53,23 @@ describe("stageName", () => {
     [9, "Burned"],
   ])("stage %i -> %s", (stage, name) => {
     expect(stageName(stage)).toBe(name);
+  });
+});
+
+describe("stageLabel", () => {
+  it.each([
+    [0, "Lesson"],
+    [1, "Apprentice I"],
+    [2, "Apprentice II"],
+    [3, "Apprentice III"],
+    [4, "Apprentice IV"],
+    [5, "Guru I"],
+    [6, "Guru II"],
+    [7, "Master"],
+    [8, "Enlightened"],
+    [9, "Burned"],
+  ])("stage %i -> %s", (stage, label) => {
+    expect(stageLabel(stage)).toBe(label);
   });
 });
 
