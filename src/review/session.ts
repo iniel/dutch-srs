@@ -22,6 +22,27 @@ function isApprentice(stage: number): boolean {
   return stage >= 1 && stage <= APPRENTICE_MAX_STAGE;
 }
 
+// EN→NL (production) is drilled before NL→EN (recognition) for the same word.
+const DIR_PRIORITY: Record<Direction, number> = { en_nl: 0, nl_en: 1 };
+
+function shuffleByCard(tasks: ReviewTask[], seed: number): ReviewTask[] {
+  const order: string[] = [];
+  const groups = new Map<string, ReviewTask[]>();
+  for (const task of tasks) {
+    let group = groups.get(task.cardId);
+    if (!group) {
+      group = [];
+      groups.set(task.cardId, group);
+      order.push(task.cardId);
+    }
+    group.push(task);
+  }
+  shuffleInPlace(order, seededRandom(seed));
+  return order.flatMap((cardId) =>
+    groups.get(cardId)!.sort((a, b) => DIR_PRIORITY[a.dir] - DIR_PRIORITY[b.dir]),
+  );
+}
+
 // Mulberry32 PRNG so "shuffled" order is stable across runs for a given seed.
 function seededRandom(seed: number): () => number {
   let a = seed >>> 0;
@@ -58,11 +79,7 @@ export function buildReviewQueue(
     a.availableAt - b.availableAt || (a.task.key < b.task.key ? -1 : 1);
 
   if (order === "shuffled") {
-    due.sort((a, b) => (a.task.key < b.task.key ? -1 : 1));
-    return shuffleInPlace(
-      due.map((d) => d.task),
-      seededRandom(now),
-    );
+    return shuffleByCard(due.map((d) => d.task), now);
   }
 
   if (order === "apprentice_first") {
@@ -107,11 +124,14 @@ export function lessonsRemainingToday(
   return Math.max(0, cap - startedTodayCount);
 }
 
+const LESSON_DIR_ORDER: Direction[] = ["en_nl", "nl_en"];
+
 export function buildLessonQueue(
   cards: Card[],
   states: Record<ItemKey, ReviewState>,
   batchSize: number,
   unlocked?: Set<string>,
+  seed?: number,
 ): ReviewTask[] {
   const tasks: ReviewTask[] = [];
   let picked = 0;
@@ -125,13 +145,13 @@ export function buildLessonQueue(
     });
     if (!isNew) continue;
 
-    for (const dir of DIRECTIONS) {
+    for (const dir of LESSON_DIR_ORDER) {
       tasks.push({ key: itemKey(card.id, dir), cardId: card.id, dir });
     }
     picked++;
   }
 
-  return tasks;
+  return seed === undefined ? tasks : shuffleByCard(tasks, seed);
 }
 
 export interface TaskResult {

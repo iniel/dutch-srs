@@ -65,11 +65,34 @@ describe("buildLessonQueue", () => {
     const queue = buildLessonQueue(cards, {}, 2);
     expect(queue).toHaveLength(4);
     expect(queue.map((t) => t.key)).toEqual([
-      "a:nl_en",
       "a:en_nl",
-      "b:nl_en",
+      "a:nl_en",
       "b:en_nl",
+      "b:nl_en",
     ]);
+  });
+
+  it("shuffles card order with a seed, keeping en_nl before nl_en per card", () => {
+    const cards = [card("a"), card("b"), card("c"), card("d")];
+    const shuffled = buildLessonQueue(cards, {}, 5, undefined, 42);
+    const order = shuffled.map((t) => t.key);
+    expect([...order].sort()).toEqual(
+      [
+        "a:en_nl",
+        "a:nl_en",
+        "b:en_nl",
+        "b:nl_en",
+        "c:en_nl",
+        "c:nl_en",
+        "d:en_nl",
+        "d:nl_en",
+      ].sort(),
+    );
+    for (let i = 0; i < order.length; i += 2) {
+      const [cardId, dir] = order[i].split(":");
+      expect(dir).toBe("en_nl");
+      expect(order[i + 1]).toBe(`${cardId}:nl_en`);
+    }
   });
 
   it("skips cards already started (both directions stage>0)", () => {
@@ -195,6 +218,18 @@ describe("buildReviewQueue order", () => {
     const at1 = buildReviewQueue(states, 1, "shuffled").map((t) => t.key);
     const at2 = buildReviewQueue(states, 999999, "shuffled").map((t) => t.key);
     expect(at1).not.toEqual(at2);
+  });
+
+  it("shuffled keeps en_nl before nl_en for the same word", () => {
+    const both: Record<ItemKey, ReviewState> = {
+      "a:nl_en": state({ availableAt: 0 }),
+      "a:en_nl": state({ availableAt: 0 }),
+      "b:nl_en": state({ availableAt: 0 }),
+      "b:en_nl": state({ availableAt: 0 }),
+    };
+    const order = buildReviewQueue(both, NOW, "shuffled").map((t) => t.key);
+    expect(order.indexOf("a:en_nl")).toBeLessThan(order.indexOf("a:nl_en"));
+    expect(order.indexOf("b:en_nl")).toBeLessThan(order.indexOf("b:nl_en"));
   });
 });
 

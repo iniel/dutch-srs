@@ -59,7 +59,7 @@ export function App() {
 
   function startReviews() {
     if (!index) return;
-    const tasks = buildReviewQueue(progress.states, now());
+    const tasks = buildReviewQueue(progress.states, now(), "shuffled");
     if (tasks.length === 0) return;
     setSession(createSession(tasks));
     setSessionMode("review");
@@ -69,7 +69,7 @@ export function App() {
   function startLessons() {
     if (!index) return;
     const unlocked = unlockedLevels(index.cards, progress.states, !!progress.settings.unlockAllLevels);
-    const tasks = buildLessonQueue(index.cards, progress.states, progress.settings.lessonBatchSize, unlocked);
+    const tasks = buildLessonQueue(index.cards, progress.states, progress.settings.lessonBatchSize, unlocked, now());
     if (tasks.length === 0) return;
     const ids = [...new Set(tasks.map((t) => t.cardId))];
     setLessonCards(ids.map((id) => index.byId.get(id)!).filter(Boolean));
