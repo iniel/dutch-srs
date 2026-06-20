@@ -90,7 +90,7 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
       return;
     }
     if (value.trim() === "") return;
-    const { correct } = checkAnswer(value, accepted);
+    const { correct } = checkAnswer(value, accepted, task!.dir === "nl_en");
     if (correct) {
       const everWrong = wrongSet.current.has(task!.key);
       session.submit(true);

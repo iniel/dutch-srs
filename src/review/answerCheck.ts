@@ -43,7 +43,11 @@ export interface AnswerResult {
   imprecise: boolean;
 }
 
-export function checkAnswer(input: string, accepted: string[]): AnswerResult {
+export function checkAnswer(
+  input: string,
+  accepted: string[],
+  allowFuzzy = true,
+): AnswerResult {
   const normInput = normalize(input);
   if (normInput.length === 0) return { correct: false, imprecise: false };
 
@@ -52,6 +56,8 @@ export function checkAnswer(input: string, accepted: string[]): AnswerResult {
   if (normAccepted.includes(normInput)) {
     return { correct: true, imprecise: false };
   }
+
+  if (!allowFuzzy) return { correct: false, imprecise: false };
 
   for (const candidate of normAccepted) {
     const tolerance = distanceTolerance(candidate.length);

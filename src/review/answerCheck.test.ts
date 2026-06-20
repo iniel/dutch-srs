@@ -86,6 +86,14 @@ describe("checkAnswer", () => {
   it("rejects empty input", () => {
     expect(checkAnswer("   ", ["cat"]).correct).toBe(false);
   });
+
+  it("rejects a typo when fuzzy disabled, still accepts exact", () => {
+    expect(checkAnswer("hapiness", ["happiness"], false).correct).toBe(false);
+    expect(checkAnswer("happiness", ["happiness"], false)).toEqual({
+      correct: true,
+      imprecise: false,
+    });
+  });
 });
 
 describe("articleVariants", () => {
