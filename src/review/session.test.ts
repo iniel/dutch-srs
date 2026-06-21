@@ -7,8 +7,7 @@ import {
   LEECH_INCORRECT_THRESHOLD,
   type ReviewTask,
 } from "./session";
-import type { Card, ItemKey, ReviewState } from "../types";
-import { itemKey } from "../types";
+import type { Card, ReviewState } from "../types";
 
 function state(partial: Partial<ReviewState>): ReviewState {
   return {
@@ -25,42 +24,50 @@ function card(id: string, group = "g1"): Card {
   return { id, group, dutch: id, english: [id], type: "word" };
 }
 
+// Both directions of each word, in queue insertion order (en_nl before nl_en).
+function tasksFor(...ids: string[]): ReviewTask[] {
+  return ids.flatMap((id) => [
+    { key: `${id}:en_nl`, cardId: id, dir: "en_nl" as const },
+    { key: `${id}:nl_en`, cardId: id, dir: "nl_en" as const },
+  ]);
+}
+
 const NOW = 1000;
 
 describe("buildReviewQueue", () => {
-  it("includes only due, non-burned, stage>=1 items", () => {
-    const states: Record<ItemKey, ReviewState> = {
-      "a:nl_en": state({ stage: 1, availableAt: 500 }),
-      "b:nl_en": state({ stage: 0, availableAt: 500 }),
-      "c:nl_en": state({ stage: 3, availableAt: 2000 }),
-      "d:nl_en": state({ stage: 9, availableAt: 500, burned: true }),
+  it("includes both directions of due, non-burned, stage>=1 words", () => {
+    const states: Record<string, ReviewState> = {
+      a: state({ stage: 1, availableAt: 500 }),
+      b: state({ stage: 0, availableAt: 500 }),
+      c: state({ stage: 3, availableAt: 2000 }),
+      d: state({ stage: 9, availableAt: 500, burned: true }),
     };
     const queue = buildReviewQueue(states, NOW);
-    expect(queue.map((t) => t.key)).toEqual(["a:nl_en"]);
+    expect(queue.map((t) => t.key)).toEqual(["a:en_nl", "a:nl_en"]);
   });
 
-  it("sorts by availableAt then key", () => {
-    const states: Record<ItemKey, ReviewState> = {
-      "b:nl_en": state({ availableAt: 100 }),
-      "a:nl_en": state({ availableAt: 100 }),
-      "c:nl_en": state({ availableAt: 50 }),
+  it("sorts by availableAt then key, keeping a word's directions together", () => {
+    const states: Record<string, ReviewState> = {
+      b: state({ availableAt: 100 }),
+      a: state({ availableAt: 100 }),
+      c: state({ availableAt: 50 }),
     };
     const queue = buildReviewQueue(states, NOW);
-    expect(queue.map((t) => t.key)).toEqual(["c:nl_en", "a:nl_en", "b:nl_en"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "a", "a", "b", "b"]);
   });
 
-  it("parses cardId and dir", () => {
-    const states: Record<ItemKey, ReviewState> = {
-      "card-1:en_nl": state({ availableAt: 0 }),
+  it("builds per-direction tasks from a cardId", () => {
+    const states: Record<string, ReviewState> = {
+      "card-1": state({ availableAt: 0 }),
     };
-    const [task] = buildReviewQueue(states, NOW);
-    expect(task.cardId).toBe("card-1");
-    expect(task.dir).toBe("en_nl");
+    const tasks = buildReviewQueue(states, NOW);
+    expect(tasks.map((t) => t.dir).sort()).toEqual(["en_nl", "nl_en"]);
+    expect(tasks.every((t) => t.cardId === "card-1")).toBe(true);
   });
 });
 
 describe("buildLessonQueue", () => {
-  it("emits both directions for new cards up to batchSize cards", () => {
+  it("emits both directions for new words up to batchSize words", () => {
     const cards = [card("a"), card("b"), card("c")];
     const queue = buildLessonQueue(cards, {}, 2);
     expect(queue).toHaveLength(4);
@@ -105,21 +112,16 @@ describe("buildLessonQueue", () => {
     expect(someNonAdjacent).toBe(true);
   });
 
-  it("skips cards already started (both directions stage>0)", () => {
+  it("skips words already started (stage>0)", () => {
     const cards = [card("a"), card("b")];
-    const states: Record<ItemKey, ReviewState> = {
-      [itemKey("a", "nl_en")]: state({ stage: 2 }),
-      [itemKey("a", "en_nl")]: state({ stage: 2 }),
-    };
+    const states: Record<string, ReviewState> = { a: state({ stage: 2 }) };
     const queue = buildLessonQueue(cards, states, 5);
     expect(queue.map((t) => t.cardId)).toEqual(["b", "b"]);
   });
 
-  it("includes a card if either direction is still new", () => {
+  it("includes a word still at stage 0", () => {
     const cards = [card("a")];
-    const states: Record<ItemKey, ReviewState> = {
-      [itemKey("a", "nl_en")]: state({ stage: 2 }),
-    };
+    const states: Record<string, ReviewState> = { a: state({ stage: 0 }) };
     const queue = buildLessonQueue(cards, states, 5);
     expect(queue).toHaveLength(2);
   });
@@ -132,88 +134,85 @@ describe("buildLessonQueue", () => {
 });
 
 describe("createSession", () => {
-  const tasks: ReviewTask[] = [
-    { key: "a:nl_en", cardId: "a", dir: "nl_en" },
-    { key: "b:nl_en", cardId: "b", dir: "nl_en" },
-  ];
-
-  it("removes current task on correct answer", () => {
-    const s = createSession(tasks);
-    expect(s.current()?.key).toBe("a:nl_en");
-    s.submit(true);
-    expect(s.current()?.key).toBe("b:nl_en");
-    expect(s.done()).toBe(1);
-    expect(s.remaining()).toBe(1);
-  });
-
-  it("requeues current task to the back on incorrect answer", () => {
-    const s = createSession(tasks);
-    s.submit(false);
-    expect(s.current()?.key).toBe("b:nl_en");
-    expect(s.remaining()).toBe(2);
-    s.submit(true);
-    expect(s.current()?.key).toBe("a:nl_en");
-    s.submit(true);
-    expect(s.isComplete()).toBe(true);
-  });
-
-  it("records first-try correctness", () => {
-    const s = createSession(tasks);
-    s.submit(false); // a wrong on first try
-    s.submit(true); // b correct first try
-    s.submit(true); // a now correct, but first try was wrong
-    const results = s.results();
-    const byKey = Object.fromEntries(results.map((r) => [r.task.key, r.correct]));
-    expect(byKey["a:nl_en"]).toBe(false);
-    expect(byKey["b:nl_en"]).toBe(true);
-  });
-
-  it("tracks total and done counts", () => {
-    const s = createSession(tasks);
+  it("returns a completion only when a word's last direction clears", () => {
+    const s = createSession(tasksFor("a", "b"));
     expect(s.total()).toBe(2);
+    expect(s.current()?.key).toBe("a:en_nl");
+
+    expect(s.submit(true)).toBeUndefined(); // a:en_nl cleared, a still has nl_en
     expect(s.done()).toBe(0);
-    s.submit(true);
-    s.submit(true);
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: true }); // a:nl_en clears word a
+    expect(s.done()).toBe(1);
+
+    expect(s.submit(true)).toBeUndefined(); // b:en_nl
+    expect(s.submit(true)).toEqual({ cardId: "b", passed: true }); // b complete
     expect(s.done()).toBe(2);
     expect(s.isComplete()).toBe(true);
   });
 
-  it("submit is a no-op on empty queue", () => {
+  it("fails the word if any direction was wrong on first try", () => {
+    const s = createSession(tasksFor("a", "b"));
+    s.submit(true); // a:en_nl correct
+    expect(s.submit(false)).toBeUndefined(); // a:nl_en wrong, requeued to back
+    expect(s.remaining()).toBe(3); // b:en_nl, b:nl_en, requeued a:nl_en
+    s.submit(true); // b:en_nl
+    s.submit(true); // b:nl_en -> b complete
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: false }); // requeued a:nl_en now correct
+    const results = s.results();
+    const a = results.find((r) => r.cardId === "a")!;
+    const b = results.find((r) => r.cardId === "b")!;
+    expect(a.passed).toBe(false);
+    expect(a.missedDirs).toEqual(["nl_en"]);
+    expect(b.passed).toBe(true);
+  });
+
+  it("requeues a wrong task to the back; remaining counts tasks", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.remaining()).toBe(2);
+    expect(s.submit(false)).toBeUndefined(); // a:en_nl wrong -> back of queue
+    expect(s.current()?.key).toBe("a:nl_en");
+    expect(s.remaining()).toBe(2);
+    s.submit(true); // a:nl_en
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: false }); // requeued a:en_nl
+    expect(s.isComplete()).toBe(true);
+  });
+
+  it("total is word-based, done counts cleared words", () => {
+    const s = createSession(tasksFor("a", "b"));
+    expect(s.total()).toBe(2);
+    expect(s.done()).toBe(0);
+    s.submit(true);
+    s.submit(true); // a done
+    s.submit(true);
+    s.submit(true); // b done
+    expect(s.done()).toBe(2);
+    expect(s.isComplete()).toBe(true);
+  });
+
+  it("submit is a no-op (returns undefined) on an empty queue", () => {
     const s = createSession([]);
-    expect(() => s.submit(true)).not.toThrow();
+    expect(s.submit(true)).toBeUndefined();
     expect(s.isComplete()).toBe(true);
   });
 });
 
 describe("buildReviewQueue order", () => {
-  const states: Record<ItemKey, ReviewState> = {
-    "g:nl_en": state({ stage: 6, availableAt: 100 }),
-    "a:nl_en": state({ stage: 1, availableAt: 300 }),
-    "b:nl_en": state({ stage: 5, availableAt: 200 }),
-    "c:nl_en": state({ stage: 2, availableAt: 400 }),
+  const states: Record<string, ReviewState> = {
+    g: state({ stage: 6, availableAt: 100 }),
+    a: state({ stage: 1, availableAt: 300 }),
+    b: state({ stage: 5, availableAt: 200 }),
+    c: state({ stage: 2, availableAt: 400 }),
   };
 
   it("defaults to due order (availableAt then key)", () => {
-    expect(buildReviewQueue(states, NOW).map((t) => t.key)).toEqual([
-      "g:nl_en",
-      "b:nl_en",
-      "a:nl_en",
-      "c:nl_en",
-    ]);
-    expect(buildReviewQueue(states, NOW, "due").map((t) => t.key)).toEqual([
-      "g:nl_en",
-      "b:nl_en",
-      "a:nl_en",
-      "c:nl_en",
+    expect(buildReviewQueue(states, NOW).map((t) => t.cardId)).toEqual([
+      "g", "g", "b", "b", "a", "a", "c", "c",
     ]);
   });
 
   it("apprentice_first puts stages 1-4 ahead, then by due", () => {
-    expect(buildReviewQueue(states, NOW, "apprentice_first").map((t) => t.key)).toEqual([
-      "a:nl_en",
-      "c:nl_en",
-      "g:nl_en",
-      "b:nl_en",
+    expect(buildReviewQueue(states, NOW, "apprentice_first").map((t) => t.cardId)).toEqual([
+      "a", "a", "c", "c", "g", "g", "b", "b",
     ]);
   });
 
@@ -221,7 +220,8 @@ describe("buildReviewQueue order", () => {
     const first = buildReviewQueue(states, NOW, "shuffled").map((t) => t.key);
     const again = buildReviewQueue(states, NOW, "shuffled").map((t) => t.key);
     expect(first).toEqual(again);
-    expect([...first].sort()).toEqual(["a:nl_en", "b:nl_en", "c:nl_en", "g:nl_en"]);
+    expect(first).toHaveLength(8);
+    expect(new Set(first.map((k) => k.split(":")[0])).size).toBe(4);
   });
 
   it("shuffled order varies with the seed (now)", () => {
@@ -231,11 +231,9 @@ describe("buildReviewQueue order", () => {
   });
 
   it("shuffled keeps en_nl before nl_en for the same word", () => {
-    const both: Record<ItemKey, ReviewState> = {
-      "a:nl_en": state({ availableAt: 0 }),
-      "a:en_nl": state({ availableAt: 0 }),
-      "b:nl_en": state({ availableAt: 0 }),
-      "b:en_nl": state({ availableAt: 0 }),
+    const both: Record<string, ReviewState> = {
+      a: state({ availableAt: 0 }),
+      b: state({ availableAt: 0 }),
     };
     const order = buildReviewQueue(both, NOW, "shuffled").map((t) => t.key);
     expect(order.indexOf("a:en_nl")).toBeLessThan(order.indexOf("a:nl_en"));
@@ -244,40 +242,37 @@ describe("buildReviewQueue order", () => {
 });
 
 describe("buildLeechQueue", () => {
-  it("includes stage>=1, non-burned items at or above the incorrect threshold", () => {
-    const states: Record<ItemKey, ReviewState> = {
-      "a:nl_en": state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD }),
-      "b:nl_en": state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD - 1 }),
-      "c:nl_en": state({ stage: 0, incorrectCount: 10 }),
-      "d:nl_en": state({ stage: 9, incorrectCount: 10, burned: true }),
+  it("includes both directions of stage>=1, non-burned words at/above the threshold", () => {
+    const states: Record<string, ReviewState> = {
+      a: state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD }),
+      b: state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD - 1 }),
+      c: state({ stage: 0, incorrectCount: 10 }),
+      d: state({ stage: 9, incorrectCount: 10, burned: true }),
     };
-    expect(buildLeechQueue(states).map((t) => t.key)).toEqual(["a:nl_en"]);
+    expect(buildLeechQueue(states).map((t) => t.key)).toEqual(["a:en_nl", "a:nl_en"]);
   });
 
   it("orders by incorrectCount desc then key", () => {
-    const states: Record<ItemKey, ReviewState> = {
-      "b:nl_en": state({ stage: 2, incorrectCount: 5 }),
-      "a:nl_en": state({ stage: 2, incorrectCount: 5 }),
-      "c:nl_en": state({ stage: 2, incorrectCount: 9 }),
+    const states: Record<string, ReviewState> = {
+      b: state({ stage: 2, incorrectCount: 5 }),
+      a: state({ stage: 2, incorrectCount: 5 }),
+      c: state({ stage: 2, incorrectCount: 9 }),
     };
     expect(buildLeechQueue(states).map((t) => t.key)).toEqual([
-      "c:nl_en",
-      "a:nl_en",
-      "b:nl_en",
+      "c:en_nl", "c:nl_en", "a:en_nl", "a:nl_en", "b:en_nl", "b:nl_en",
     ]);
   });
 
   it("apprenticeOnly keeps only stages 1-4", () => {
-    const states: Record<ItemKey, ReviewState> = {
-      "app:nl_en": state({ stage: 4, incorrectCount: 4 }),
-      "guru:nl_en": state({ stage: 5, incorrectCount: 4 }),
+    const states: Record<string, ReviewState> = {
+      app: state({ stage: 4, incorrectCount: 4 }),
+      guru: state({ stage: 5, incorrectCount: 4 }),
     };
     expect(buildLeechQueue(states, { apprenticeOnly: true }).map((t) => t.key)).toEqual([
-      "app:nl_en",
+      "app:en_nl", "app:nl_en",
     ]);
     expect(buildLeechQueue(states).map((t) => t.key)).toEqual([
-      "app:nl_en",
-      "guru:nl_en",
+      "app:en_nl", "app:nl_en", "guru:en_nl", "guru:nl_en",
     ]);
   });
 });
@@ -287,13 +282,13 @@ describe("buildLessonQueue gating", () => {
     return { id, group: "g", level, dutch: id, english: [id], type: "word" };
   }
 
-  it("excludes cards whose level is not unlocked", () => {
+  it("excludes words whose level is not unlocked", () => {
     const cards = [card("a", "A1 · U1"), card("b", "A1 · U2")];
     const tasks = buildLessonQueue(cards, {}, 10, new Set(["A1 · U1"]));
     expect(tasks.map((t) => t.cardId)).toEqual(["a", "a"]);
   });
 
-  it("includes a card with no level even when gated", () => {
+  it("includes a word with no level even when gated", () => {
     const cards = [card("a")];
     const tasks = buildLessonQueue(cards, {}, 10, new Set(["A1 · U1"]));
     expect(tasks.map((t) => t.cardId)).toEqual(["a", "a"]);

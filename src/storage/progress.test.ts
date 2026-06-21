@@ -75,11 +75,68 @@ describe("loadProgress", () => {
 describe("save/load round-trip", () => {
   it("persists states across save and load", () => {
     let data = loadProgress();
-    data = setState(data, "card1:nl_en", sampleState);
+    data = setState(data, "card1", sampleState);
     saveProgress(data);
 
     const loaded = loadProgress();
-    expect(getState(loaded, "card1:nl_en")).toEqual(sampleState);
+    expect(getState(loaded, "card1")).toEqual(sampleState);
+  });
+});
+
+describe("v1 -> v2 migration", () => {
+  function v1(states: Record<string, ReviewState>): string {
+    return JSON.stringify({ version: 1, states, settings: DEFAULT_SETTINGS });
+  }
+  function rs(partial: Partial<ReviewState>): ReviewState {
+    return { stage: 1, availableAt: 0, lastReviewedAt: 0, incorrectCount: 0, burned: false, ...partial };
+  }
+
+  it("merges a word's two directions by taking the lower stage", () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      v1({
+        "w:nl_en": rs({ stage: 5, availableAt: 1000, lastReviewedAt: 900, incorrectCount: 1 }),
+        "w:en_nl": rs({ stage: 2, availableAt: 200, lastReviewedAt: 800, incorrectCount: 2 }),
+      }),
+    );
+    const data = loadProgress();
+    expect(data.version).toBe(CURRENT_VERSION);
+    expect(Object.keys(data.states)).toEqual(["w"]);
+    expect(data.states.w.stage).toBe(2); // lower stage
+    expect(data.states.w.availableAt).toBe(200); // from the min-stage direction
+    expect(data.states.w.lastReviewedAt).toBe(900); // most recent
+    expect(data.states.w.incorrectCount).toBe(3); // summed
+    expect(data.states.w.burned).toBe(false);
+  });
+
+  it("burns the word only when both directions are burned", () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      v1({
+        "w:nl_en": rs({ stage: 9, availableAt: 9e15, burned: true }),
+        "w:en_nl": rs({ stage: 9, availableAt: 9e15, burned: true }),
+      }),
+    );
+    const data = loadProgress();
+    expect(data.states.w.stage).toBe(9);
+    expect(data.states.w.burned).toBe(true);
+  });
+
+  it("keeps a single-direction word's values intact", () => {
+    localStorage.setItem(STORAGE_KEY, v1({ "w:nl_en": rs({ stage: 4, availableAt: 50 }) }));
+    const data = loadProgress();
+    expect(data.states.w).toEqual(rs({ stage: 4, availableAt: 50 }));
+  });
+
+  it("migrates a v1 export through importProgress", () => {
+    const imported = importProgress(
+      v1({
+        "w:nl_en": rs({ stage: 6 }),
+        "w:en_nl": rs({ stage: 3 }),
+      }),
+    );
+    expect(imported.version).toBe(CURRENT_VERSION);
+    expect(imported.states.w.stage).toBe(3);
   });
 });
 
@@ -105,7 +162,7 @@ describe("updateSettings", () => {
 describe("export/import", () => {
   it("round-trips through export and import", () => {
     let data = loadProgress();
-    data = setState(data, "card1:nl_en", sampleState);
+    data = setState(data, "card1", sampleState);
     data = updateSettings(data, { theme: "light" });
 
     const json = exportProgress(data);

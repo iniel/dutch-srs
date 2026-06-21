@@ -1,6 +1,5 @@
 import { useMemo } from "react";
-import type { Direction, ProgressData } from "../types";
-import { itemKey, DIRECTIONS } from "../types";
+import type { ProgressData } from "../types";
 import type { CardIndex } from "../data/cards";
 import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
@@ -20,12 +19,8 @@ const STAGE_ORDER: number[] = Array.from(
   (_, i) => MIN_REVIEW_STAGE + i,
 );
 
-const DIR_LABEL: Record<Direction, string> = { nl_en: "NL → EN", en_nl: "EN → NL" };
-
 interface ListItem {
-  key: string;
   cardId: string;
-  dir: Direction;
   dutch: string;
   english: string;
   stage: number;
@@ -35,22 +30,17 @@ function buildSections(index: CardIndex, progress: ProgressData, level?: string)
   const byStage = new Map<number, ListItem[]>();
   for (const card of index.cards) {
     if (level !== undefined && card.level !== level) continue;
-    for (const dir of DIRECTIONS) {
-      const key = itemKey(card.id, dir);
-      const stage = progress.states[key]?.stage ?? 0;
-      const includeUnstarted = level !== undefined;
-      if (stage < 1 && !includeUnstarted) continue;
-      const items = byStage.get(stage) ?? [];
-      items.push({
-        key,
-        cardId: card.id,
-        dir,
-        dutch: card.dutch,
-        english: card.english.join(", "),
-        stage,
-      });
-      byStage.set(stage, items);
-    }
+    const stage = progress.states[card.id]?.stage ?? 0;
+    const includeUnstarted = level !== undefined;
+    if (stage < 1 && !includeUnstarted) continue;
+    const items = byStage.get(stage) ?? [];
+    items.push({
+      cardId: card.id,
+      dutch: card.dutch,
+      english: card.english.join(", "),
+      stage,
+    });
+    byStage.set(stage, items);
   }
   for (const items of byStage.values()) {
     items.sort((a, b) => a.dutch.localeCompare(b.dutch));
@@ -94,7 +84,7 @@ export function WordList({ index, progress, level, onOpen, onBack }: WordListPro
             </h2>
             <ul className="word-rows">
               {items.map((item) => (
-                <li key={item.key}>
+                <li key={item.cardId}>
                   <button
                     className="word-row tinted"
                     style={{ borderLeftColor: color }}
@@ -102,7 +92,6 @@ export function WordList({ index, progress, level, onOpen, onBack }: WordListPro
                   >
                     <span className="word-row-dutch">{item.dutch}</span>
                     <span className="word-row-en">{item.english}</span>
-                    <span className="word-row-tag">{DIR_LABEL[item.dir]}</span>
                   </button>
                 </li>
               ))}

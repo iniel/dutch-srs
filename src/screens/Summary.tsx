@@ -1,18 +1,20 @@
 import type { Card } from "../types";
-import type { TaskResult } from "../review/session";
+import type { WordResult } from "../review/session";
 
 interface SummaryProps {
-  results: TaskResult[];
+  results: WordResult[];
   mode: "review" | "lesson";
   getCard: (id: string) => Card | undefined;
   onDone: () => void;
 }
 
+const DIR_ARROW: Record<string, string> = { nl_en: "NL→EN", en_nl: "EN→NL" };
+
 export function Summary({ results, mode, getCard, onDone }: SummaryProps) {
   const total = results.length;
-  const correct = results.filter((r) => r.correct).length;
+  const correct = results.filter((r) => r.passed).length;
   const pct = total === 0 ? 100 : Math.round((correct / total) * 100);
-  const missed = results.filter((r) => !r.correct);
+  const missed = results.filter((r) => !r.passed);
 
   return (
     <div className="screen summary">
@@ -30,13 +32,13 @@ export function Summary({ results, mode, getCard, onDone }: SummaryProps) {
           <h2>Missed ({missed.length})</h2>
           <ul>
             {missed.map((r) => {
-              const card = getCard(r.task.cardId);
+              const card = getCard(r.cardId);
               if (!card) return null;
-              const arrow = r.task.dir === "nl_en" ? "NL→EN" : "EN→NL";
+              const arrows = r.missedDirs.map((d) => DIR_ARROW[d]).join(" ");
               return (
-                <li key={r.task.key}>
+                <li key={r.cardId}>
                   <span className="missed-dutch">
-                    <span className="missed-dir">{arrow}</span> {card.dutch}
+                    <span className="missed-dir">{arrows}</span> {card.dutch}
                   </span>
                   <span className="missed-en">{card.english.join(", ")}</span>
                 </li>

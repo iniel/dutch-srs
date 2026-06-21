@@ -1,7 +1,7 @@
 import type { AppSettings, ItemKey, ProgressData, ReviewState } from "../types";
 
 export const STORAGE_KEY = "dutch-srs-progress-v1";
-export const CURRENT_VERSION = 1;
+export const CURRENT_VERSION = 2;
 
 export const DEFAULT_SETTINGS: AppSettings = {
   lessonBatchSize: 5,
@@ -29,16 +29,43 @@ function isReviewState(value: unknown): value is ReviewState {
   );
 }
 
+// Lower stage wins so a word counts as advanced only when its weaker direction is.
+function mergeWordStates(group: ReviewState[]): ReviewState {
+  const stage = Math.min(...group.map((s) => s.stage));
+  const atStage = group.filter((s) => s.stage === stage);
+  return {
+    stage,
+    availableAt: Math.min(...atStage.map((s) => s.availableAt)),
+    lastReviewedAt: Math.max(...group.map((s) => s.lastReviewedAt)),
+    incorrectCount: group.reduce((n, s) => n + s.incorrectCount, 0),
+    burned: group.every((s) => s.burned),
+  };
+}
+
+function migrateV1ToV2(legacy: Record<string, ReviewState>): Record<string, ReviewState> {
+  const byCard = new Map<string, ReviewState[]>();
+  for (const [key, st] of Object.entries(legacy)) {
+    const cardId = key.includes(":") ? key.slice(0, key.lastIndexOf(":")) : key;
+    const group = byCard.get(cardId) ?? [];
+    group.push(st);
+    byCard.set(cardId, group);
+  }
+  const out: Record<string, ReviewState> = {};
+  for (const [cardId, group] of byCard) out[cardId] = mergeWordStates(group);
+  return out;
+}
+
 function coerceProgress(value: unknown): ProgressData {
   if (typeof value !== "object" || value === null) return freshProgress();
   const obj = value as Record<string, unknown>;
   if (typeof obj.version !== "number") return freshProgress();
   if (typeof obj.states !== "object" || obj.states === null) return freshProgress();
 
-  const states: Record<ItemKey, ReviewState> = {};
+  const rawStates: Record<string, ReviewState> = {};
   for (const [key, raw] of Object.entries(obj.states as Record<string, unknown>)) {
-    if (isReviewState(raw)) states[key] = raw;
+    if (isReviewState(raw)) rawStates[key] = raw;
   }
+  const states = obj.version < CURRENT_VERSION ? migrateV1ToV2(rawStates) : rawStates;
 
   return {
     version: CURRENT_VERSION,

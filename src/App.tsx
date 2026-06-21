@@ -1,10 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ProgressData } from "./types";
-import { itemKey, DIRECTIONS } from "./types";
 import { loadProgress, saveProgress, setState } from "./storage/progress";
 import { newLessonState, startLesson, answerCorrect, answerIncorrect } from "./srs/schedule";
 import { buildLessonQueue, buildReviewQueue, createSession } from "./review/session";
-import type { ReviewTask, Session, TaskResult } from "./review/session";
+import type { Session, WordResult } from "./review/session";
 import type { Card } from "./types";
 import { useCards } from "./data/cards";
 import { now } from "./util/now";
@@ -36,7 +35,7 @@ export function App() {
   const [session, setSession] = useState<Session | null>(null);
   const [sessionMode, setSessionMode] = useState<"review" | "lesson">("review");
   const [lessonCards, setLessonCards] = useState<Card[]>([]);
-  const [summary, setSummary] = useState<{ results: TaskResult[]; mode: "review" | "lesson" } | null>(null);
+  const [summary, setSummary] = useState<{ results: WordResult[]; mode: "review" | "lesson" } | null>(null);
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
 
@@ -79,19 +78,21 @@ export function App() {
     setScreen("lessons");
   }
 
-  function applyReview(task: ReviewTask, everWrong: boolean) {
+  function applyWordReview(cardId: string, passed: boolean) {
     setProgress((prev) => {
-      const cur = prev.states[task.key] ?? newLessonState();
-      const updated = everWrong ? answerIncorrect(cur, now()) : answerCorrect(cur, now());
-      const next = setState(prev, task.key, updated);
+      const cur = prev.states[cardId] ?? newLessonState();
+      const updated = passed ? answerCorrect(cur, now()) : answerIncorrect(cur, now());
+      const next = setState(prev, cardId, updated);
       saveProgress(next);
       return next;
     });
   }
 
-  function applyLesson(task: ReviewTask) {
+  function applyWordLesson(cardId: string) {
     setProgress((prev) => {
-      const next = setState(prev, task.key, startLesson(newLessonState(), now()));
+      const existing = prev.states[cardId];
+      if (existing && existing.stage > 0) return prev;
+      const next = setState(prev, cardId, startLesson(newLessonState(), now()));
       saveProgress(next);
       return next;
     });
@@ -105,14 +106,15 @@ export function App() {
 
   const counts = useMemo(() => {
     if (!index) return null;
-    const reviewsDue = buildReviewQueue(progress.states, now()).length;
+    const t = now();
+    const reviewsDue = Object.values(progress.states).filter(
+      (s) => s.stage >= 1 && !s.burned && s.availableAt <= t,
+    ).length;
     const unlocked = unlockedLevels(index.cards, progress.states, !!progress.settings.unlockAllLevels);
     const lessonCards = index.cards.filter((c) => {
       if (c.level && !unlocked.has(c.level)) return false;
-      return DIRECTIONS.some((d) => {
-        const s = progress.states[itemKey(c.id, d)];
-        return !s || s.stage === 0;
-      });
+      const s = progress.states[c.id];
+      return !s || s.stage === 0;
     }).length;
     const levelName = currentLevel(index.cards, progress.states);
     const levelProg = levelProgress(index.cards, progress.states, levelName);
@@ -181,7 +183,7 @@ export function App() {
         <Reviews
           session={session}
           getCard={(id) => index.byId.get(id)}
-          onCleared={applyReview}
+          onWordCleared={applyWordReview}
           onComplete={finishSession}
           onQuit={() => {
             setSession(null);
@@ -194,7 +196,7 @@ export function App() {
           session={session}
           lessonCards={lessonCards}
           getCard={(id) => index.byId.get(id)}
-          onCleared={applyLesson}
+          onWordCleared={applyWordLesson}
           onComplete={finishSession}
           onQuit={() => {
             setSession(null);

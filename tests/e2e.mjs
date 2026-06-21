@@ -127,8 +127,8 @@ try {
   await page.waitForSelector(".action-card");
 
   const afterLesson = await readState(page);
-  check(afterLesson.count === 10, `10 items learned (${afterLesson.count})`);
-  check(afterLesson.hist["1"] === 10, `all at stage 1 (${JSON.stringify(afterLesson.hist)})`);
+  check(afterLesson.count === 5, `5 words learned (${afterLesson.count})`);
+  check(afterLesson.hist["1"] === 5, `all at stage 1 (${JSON.stringify(afterLesson.hist)})`);
   const lessons1 = Number(await page.textContent(".action-card.lessons .action-count"));
   check(lessons1 === lessons0 - 5, `lessons decreased by batch (${lessons0}->${lessons1})`);
 
@@ -154,7 +154,7 @@ try {
   await page.click(".words-link");
   await page.waitForSelector(".wordlist");
   const listRows = await page.$$eval(".wordlist .word-row", (r) => r.length);
-  check(listRows >= 10, `word list shows learned items (${listRows} rows)`);
+  check(listRows === 5, `word list shows one row per learned word (${listRows} rows)`);
   await page.click('.wordlist [aria-label="back"]');
   await page.waitForSelector(".action-card");
 
@@ -163,7 +163,7 @@ try {
   await page.reload();
   await page.waitForSelector(".action-card");
   const reviewsDue = Number(await page.textContent(".action-card.reviews .action-count"));
-  check(reviewsDue === 10, `10 reviews due after 5h (${reviewsDue})`);
+  check(reviewsDue === 5, `5 word reviews due after 5h (${reviewsDue})`);
 
   console.log("Review flow + SRS advance:");
   await page.click(".action-card.reviews");
@@ -176,7 +176,7 @@ try {
   await page.waitForSelector(".action-card");
 
   const afterReview = await readState(page);
-  check(afterReview.hist["2"] === 10, `all advanced to stage 2 (${JSON.stringify(afterReview.hist)})`);
+  check(afterReview.hist["2"] === 5, `all words advanced to stage 2 (${JSON.stringify(afterReview.hist)})`);
   const sample = Object.values(afterReview.states)[0];
   check(
     sample.availableAt - sample.lastReviewedAt === 8 * HOUR,
@@ -189,7 +189,7 @@ try {
   await page.reload();
   await page.waitForSelector(".action-card");
   const persisted = await readState(page);
-  check(persisted.count === 10, `progress persisted (${persisted.count})`);
+  check(persisted.count === 5, `progress persisted (${persisted.count})`);
 
   console.log("Settings reset:");
   await page.click('[aria-label="settings"]');

@@ -8,8 +8,8 @@ import { ProgressBar } from "./ProgressBar";
 interface QuizProps {
   session: Session;
   getCard: (cardId: string) => Card | undefined;
-  /** Fired when a task leaves the queue (answered correctly). */
-  onCleared: (task: ReviewTask, everWrong: boolean) => void;
+  /** Fired once per word, when both its directions have cleared. */
+  onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
 }
 
@@ -18,12 +18,11 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
+export function Quiz({ session, getCard, onWordCleared, onComplete }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [revealed, setRevealed] = useState(false);
   const [, force] = useState(0);
-  const wrongSet = useRef<Set<string>>(new Set());
   const inputRef = useRef<HTMLInputElement>(null);
 
   const task = session.current();
@@ -92,14 +91,12 @@ export function Quiz({ session, getCard, onCleared, onComplete }: QuizProps) {
     if (value.trim() === "") return;
     const { correct } = checkAnswer(value, accepted, task!.dir === "nl_en");
     if (correct) {
-      const everWrong = wrongSet.current.has(task!.key);
-      session.submit(true);
-      onCleared(task!, everWrong);
+      const completion = session.submit(true);
+      if (completion) onWordCleared(completion.cardId, completion.passed);
       setValue("");
       force((n) => n + 1);
       if (session.isComplete()) onComplete();
     } else {
-      wrongSet.current.add(task!.key);
       setPhase("wrong");
     }
   }

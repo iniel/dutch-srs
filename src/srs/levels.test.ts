@@ -1,6 +1,5 @@
 import { describe, it, expect } from "vitest";
-import type { Card, ItemKey, ReviewState } from "./../types";
-import { itemKey } from "./../types";
+import type { Card, ReviewState } from "./../types";
 import {
   LEVEL_PASS_THRESHOLD,
   levelOrder,
@@ -21,7 +20,7 @@ function appr(): ReviewState {
   return { stage: 2, availableAt: 0, lastReviewedAt: 0, incorrectCount: 0, burned: false };
 }
 
-function states(pairs: [string, ReviewState][]): Record<ItemKey, ReviewState> {
+function states(pairs: [string, ReviewState][]): Record<string, ReviewState> {
   return Object.fromEntries(pairs);
 }
 
@@ -36,22 +35,15 @@ describe("levelOrder", () => {
 });
 
 describe("levelProgress", () => {
-  it("counts both directions; zero progress => pct 0, not passed", () => {
+  it("counts one state per word; zero progress => pct 0, not passed", () => {
     const cards = [card("a", L1), card("b", L1)];
     const p = levelProgress(cards, {}, L1);
-    expect(p).toEqual({ level: L1, total: 4, gurued: 0, pct: 0, passed: false });
+    expect(p).toEqual({ level: L1, total: 2, gurued: 0, pct: 0, passed: false });
   });
 
   it("passes at exactly the threshold", () => {
-    const cards = Array.from({ length: 5 }, (_, i) => card(`c${i}`, L1));
-    const entries: [string, ReviewState][] = [];
-    let g = 0;
-    for (const c of cards) {
-      for (const d of ["nl_en", "en_nl"] as const) {
-        entries.push([itemKey(c.id, d), g < 9 ? guru() : appr()]);
-        g++;
-      }
-    }
+    const cards = Array.from({ length: 10 }, (_, i) => card(`c${i}`, L1));
+    const entries: [string, ReviewState][] = cards.map((c, i) => [c.id, i < 9 ? guru() : appr()]);
     const p = levelProgress(cards, states(entries), L1);
     expect(p.total).toBe(10);
     expect(p.gurued).toBe(9);
@@ -60,15 +52,8 @@ describe("levelProgress", () => {
   });
 
   it("fails just under the threshold", () => {
-    const cards = Array.from({ length: 5 }, (_, i) => card(`c${i}`, L1));
-    const entries: [string, ReviewState][] = [];
-    let g = 0;
-    for (const c of cards) {
-      for (const d of ["nl_en", "en_nl"] as const) {
-        entries.push([itemKey(c.id, d), g < 8 ? guru() : appr()]);
-        g++;
-      }
-    }
+    const cards = Array.from({ length: 10 }, (_, i) => card(`c${i}`, L1));
+    const entries: [string, ReviewState][] = cards.map((c, i) => [c.id, i < 8 ? guru() : appr()]);
     const p = levelProgress(cards, states(entries), L1);
     expect(p.gurued).toBe(8);
     expect(p.passed).toBe(false);
@@ -82,23 +67,14 @@ describe("currentLevel", () => {
   });
 
   it("advances only once a level crosses the threshold", () => {
-    const cards = [card("a", L1), card("b", L2)];
-    expect(currentLevel(cards, states([[itemKey("a", "nl_en"), guru()]]))).toBe(L1);
-    // both L1 items guru => 1.0 => advance to L2
-    expect(
-      currentLevel(
-        cards,
-        states([[itemKey("a", "nl_en"), guru()], [itemKey("a", "en_nl"), guru()]]),
-      ),
-    ).toBe(L2);
+    const cards = [card("a", L1), card("b", L1), card("c", L2)];
+    expect(currentLevel(cards, states([["a", guru()]]))).toBe(L1); // 1/2 = 0.5
+    expect(currentLevel(cards, states([["a", guru()], ["b", guru()]]))).toBe(L2); // 2/2 => advance
   });
 
   it("returns the last level when every level is passed", () => {
     const cards = [card("a", L1), card("b", L2)];
-    const all = states([
-      [itemKey("a", "nl_en"), guru()], [itemKey("a", "en_nl"), guru()],
-      [itemKey("b", "nl_en"), guru()], [itemKey("b", "en_nl"), guru()],
-    ]);
+    const all = states([["a", guru()], ["b", guru()]]);
     expect(currentLevel(cards, all)).toBe(L2);
   });
 });
@@ -132,17 +108,13 @@ describe("wordsToLevelUp", () => {
 
   it("drops as words reach Guru (8 words gurued => 1 left)", () => {
     const pairs: [string, ReviewState][] = [];
-    for (let i = 0; i < 8; i++) {
-      pairs.push([itemKey(`w${i}`, "nl_en"), guru()], [itemKey(`w${i}`, "en_nl"), guru()]);
-    }
+    for (let i = 0; i < 8; i++) pairs.push([`w${i}`, guru()]);
     expect(wordsToLevelUp(levelProgress(nineWords, states(pairs), L1))).toBe(1);
   });
 
   it("is 0 once the 90% threshold is met", () => {
     const pairs: [string, ReviewState][] = [];
-    for (let i = 0; i < 9; i++) {
-      pairs.push([itemKey(`w${i}`, "nl_en"), guru()], [itemKey(`w${i}`, "en_nl"), guru()]);
-    }
+    for (let i = 0; i < 9; i++) pairs.push([`w${i}`, guru()]);
     expect(wordsToLevelUp(levelProgress(nineWords, states(pairs), L1))).toBe(0);
   });
 

@@ -128,11 +128,7 @@
 .word-srs-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: var(--surface);
   border-radius: 10px;
   padding: 12px 14px;
-}
-.word-srs-dir {
-  font-weight: 600;
 }

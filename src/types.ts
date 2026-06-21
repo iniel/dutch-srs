@@ -18,7 +18,7 @@ export type Direction = "nl_en" | "en_nl";
 
 export const DIRECTIONS: Direction[] = ["nl_en", "en_nl"];
 
-/** Key for a per-direction review item: `${cardId}:${direction}`. */
+/** Session-local id `${cardId}:${direction}` — NOT a storage key (states are keyed by cardId). */
 export type ItemKey = string;
 
 export function itemKey(cardId: string, dir: Direction): ItemKey {
@@ -42,7 +42,8 @@ export interface ReviewState {
 
 export interface ProgressData {
   version: number;
-  states: Record<ItemKey, ReviewState>;
+  /** One SRS state per word, keyed by `cardId`. Both directions share it. */
+  states: Record<string, ReviewState>;
   settings: AppSettings;
 }
 

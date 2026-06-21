@@ -1,5 +1,4 @@
 import type { Card, ProgressData } from "../types";
-import { itemKey } from "../types";
 import { SrsStagePill } from "./SrsStagePill";
 import { speak, speechSupported } from "../util/speak";
 
@@ -10,8 +9,7 @@ interface WordCardProps {
 }
 
 export function WordCard({ card, progress, onBack }: WordCardProps) {
-  const nlEn = progress.states[itemKey(card.id, "nl_en")]?.stage ?? 0;
-  const enNl = progress.states[itemKey(card.id, "en_nl")]?.stage ?? 0;
+  const stage = progress.states[card.id]?.stage ?? 0;
 
   return (
     <div className="screen word-detail">
@@ -36,12 +34,7 @@ export function WordCard({ card, progress, onBack }: WordCardProps) {
 
       <div className="word-srs">
         <div className="word-srs-row">
-          <span className="word-srs-dir">NL → EN</span>
-          <SrsStagePill stage={nlEn} />
-        </div>
-        <div className="word-srs-row">
-          <span className="word-srs-dir">EN → NL</span>
-          <SrsStagePill stage={enNl} />
+          <SrsStagePill stage={stage} />
         </div>
       </div>
     </div>

@@ -13,9 +13,8 @@ export const LEECH_INCORRECT_THRESHOLD = 3;
 
 const APPRENTICE_MAX_STAGE = 4;
 
-function taskFromKey(key: ItemKey): ReviewTask {
-  const idx = key.lastIndexOf(":");
-  return { key, cardId: key.slice(0, idx), dir: key.slice(idx + 1) as Direction };
+function wordTasks(cardId: string): ReviewTask[] {
+  return DIRECTIONS.map((dir) => ({ key: itemKey(cardId, dir), cardId, dir }));
 }
 
 function isApprentice(stage: number): boolean {
@@ -69,9 +68,11 @@ export function buildReviewQueue(
 ): ReviewTask[] {
   const due: { task: ReviewTask; availableAt: number; stage: number }[] = [];
 
-  for (const [key, state] of Object.entries(states)) {
+  for (const [cardId, state] of Object.entries(states)) {
     if (state.stage < 1 || state.burned || state.availableAt > now) continue;
-    due.push({ task: taskFromKey(key), availableAt: state.availableAt, stage: state.stage });
+    for (const task of wordTasks(cardId)) {
+      due.push({ task, availableAt: state.availableAt, stage: state.stage });
+    }
   }
 
   const byDue = (a: typeof due[number], b: typeof due[number]) =>
@@ -101,11 +102,13 @@ export function buildLeechQueue(
 ): ReviewTask[] {
   const leeches: { task: ReviewTask; incorrectCount: number }[] = [];
 
-  for (const [key, state] of Object.entries(states)) {
+  for (const [cardId, state] of Object.entries(states)) {
     if (state.stage < 1 || state.burned) continue;
     if (state.incorrectCount < LEECH_INCORRECT_THRESHOLD) continue;
     if (opts.apprenticeOnly && !isApprentice(state.stage)) continue;
-    leeches.push({ task: taskFromKey(key), incorrectCount: state.incorrectCount });
+    for (const task of wordTasks(cardId)) {
+      leeches.push({ task, incorrectCount: state.incorrectCount });
+    }
   }
 
   leeches.sort(
@@ -138,10 +141,8 @@ export function buildLessonQueue(
   for (const card of cards) {
     if (picked >= batchSize) break;
     if (unlocked && card.level && !unlocked.has(card.level)) continue;
-    const isNew = DIRECTIONS.some((dir) => {
-      const state = states[itemKey(card.id, dir)];
-      return !state || state.stage === 0;
-    });
+    const state = states[card.id];
+    const isNew = !state || state.stage === 0;
     if (!isNew) continue;
 
     for (const dir of LESSON_DIR_ORDER) {
@@ -153,27 +154,56 @@ export function buildLessonQueue(
   return seed === undefined ? tasks : shuffleKeepingDirOrder(tasks, seed);
 }
 
-export interface TaskResult {
-  task: ReviewTask;
-  correct: boolean;
+/** Fired once per word, when its final outstanding direction is cleared. */
+export interface WordCompletion {
+  cardId: string;
+  passed: boolean;
+}
+
+export interface WordResult {
+  cardId: string;
+  passed: boolean;
+  missedDirs: Direction[];
 }
 
 export interface Session {
   current(): ReviewTask | undefined;
-  submit(wasCorrect: boolean): void;
+  submit(wasCorrect: boolean): WordCompletion | undefined;
   next(): ReviewTask | undefined;
   done(): number;
   total(): number;
   remaining(): number;
-  results(): TaskResult[];
+  results(): WordResult[];
   isComplete(): boolean;
 }
 
+// Tasks stay per-direction (the quiz needs `dir`) but collapse to one word event:
+// `passed` only if both directions were correct on the first try.
 export function createSession(tasks: ReviewTask[]): Session {
   const queue = [...tasks];
-  const total = tasks.length;
-  const firstTryCorrect = new Map<ItemKey, boolean>();
-  const completed = new Set<ItemKey>();
+  const firstTry = new Map<ItemKey, boolean>();
+  const wordDirs = new Map<string, Set<Direction>>();
+  const wordTaskKeys = new Map<string, Map<Direction, ItemKey>>();
+  const wordOrder: string[] = [];
+
+  for (const task of tasks) {
+    if (!wordDirs.has(task.cardId)) {
+      wordDirs.set(task.cardId, new Set());
+      wordTaskKeys.set(task.cardId, new Map());
+      wordOrder.push(task.cardId);
+    }
+    wordDirs.get(task.cardId)!.add(task.dir);
+    wordTaskKeys.get(task.cardId)!.set(task.dir, task.key);
+  }
+  const clearedWords = new Set<string>();
+
+  function missedDirsFor(cardId: string): Direction[] {
+    const missed: Direction[] = [];
+    for (const [dir, key] of wordTaskKeys.get(cardId)!) {
+      if (firstTry.get(key) === false) missed.push(dir);
+    }
+    return missed;
+  }
 
   return {
     current() {
@@ -181,36 +211,40 @@ export function createSession(tasks: ReviewTask[]): Session {
     },
     submit(wasCorrect: boolean) {
       const task = queue[0];
-      if (!task) return;
+      if (!task) return undefined;
 
-      if (!firstTryCorrect.has(task.key)) {
-        firstTryCorrect.set(task.key, wasCorrect);
-      }
+      if (!firstTry.has(task.key)) firstTry.set(task.key, wasCorrect);
 
       queue.shift();
-      if (wasCorrect) {
-        completed.add(task.key);
-      } else {
+      if (!wasCorrect) {
         queue.push(task);
+        return undefined;
       }
+
+      const remaining = wordDirs.get(task.cardId)!;
+      remaining.delete(task.dir);
+      if (remaining.size > 0) return undefined;
+
+      clearedWords.add(task.cardId);
+      return { cardId: task.cardId, passed: missedDirsFor(task.cardId).length === 0 };
     },
     next() {
       return queue[0];
     },
     done() {
-      return completed.size;
+      return clearedWords.size;
     },
     total() {
-      return total;
+      return wordOrder.length;
     },
     remaining() {
       return queue.length;
     },
     results() {
-      return [...firstTryCorrect.entries()].map(([key, correct]) => ({
-        task: tasks.find((t) => t.key === key)!,
-        correct,
-      }));
+      return wordOrder.map((cardId) => {
+        const missedDirs = missedDirsFor(cardId);
+        return { cardId, passed: missedDirs.length === 0, missedDirs };
+      });
     },
     isComplete() {
       return queue.length === 0;

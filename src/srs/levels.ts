@@ -1,5 +1,4 @@
-import type { Card, ItemKey, ReviewState } from "../types";
-import { itemKey, DIRECTIONS } from "../types";
+import type { Card, ReviewState } from "../types";
 
 export const LEVEL_PASS_THRESHOLD = 0.9;
 
@@ -26,34 +25,28 @@ export interface LevelProgress {
 
 export function levelProgress(
   cards: Card[],
-  states: Record<ItemKey, ReviewState>,
+  states: Record<string, ReviewState>,
   level: string,
 ): LevelProgress {
   let total = 0;
   let gurued = 0;
   for (const card of cards) {
     if (card.level !== level) continue;
-    for (const dir of DIRECTIONS) {
-      total++;
-      const state = states[itemKey(card.id, dir)];
-      if (state && state.stage >= GURU_MIN_STAGE) gurued++;
-    }
+    total++;
+    const state = states[card.id];
+    if (state && state.stage >= GURU_MIN_STAGE) gurued++;
   }
   const pct = total === 0 ? 0 : gurued / total;
   return { level, total, gurued, pct, passed: pct >= LEVEL_PASS_THRESHOLD };
 }
 
-const DIRECTIONS_PER_WORD = 2;
-
 export function wordsToLevelUp(progress: LevelProgress): number {
-  const neededItems = Math.ceil(progress.total * LEVEL_PASS_THRESHOLD);
-  const remainingItems = Math.max(0, neededItems - progress.gurued);
-  return Math.ceil(remainingItems / DIRECTIONS_PER_WORD);
+  return Math.max(0, Math.ceil(progress.total * LEVEL_PASS_THRESHOLD) - progress.gurued);
 }
 
 export function currentLevel(
   cards: Card[],
-  states: Record<ItemKey, ReviewState>,
+  states: Record<string, ReviewState>,
 ): string {
   const order = levelOrder(cards);
   for (const level of order) {
@@ -64,7 +57,7 @@ export function currentLevel(
 
 export function unlockedLevels(
   cards: Card[],
-  states: Record<ItemKey, ReviewState>,
+  states: Record<string, ReviewState>,
   unlockAll: boolean,
 ): Set<string> {
   const order = levelOrder(cards);
