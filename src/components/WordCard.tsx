@@ -1,14 +1,16 @@
-import type { Card, ProgressData } from "../types";
+import type { Card, Enrichment, ProgressData } from "../types";
 import { SrsStagePill } from "./SrsStagePill";
+import { WordDetail } from "./WordDetail";
 import { speak, speechSupported } from "../util/speak";
 
 interface WordCardProps {
   card: Card;
+  enrichment?: Enrichment;
   progress: ProgressData;
   onBack: () => void;
 }
 
-export function WordCard({ card, progress, onBack }: WordCardProps) {
+export function WordCard({ card, enrichment, progress, onBack }: WordCardProps) {
   const stage = progress.states[card.id]?.stage ?? 0;
 
   return (
@@ -31,6 +33,8 @@ export function WordCard({ card, progress, onBack }: WordCardProps) {
       <div className="word-english">{card.english.join(", ")}</div>
 
       {card.notes && <div className="word-notes">{card.notes}</div>}
+
+      <WordDetail enrichment={enrichment} />
 
       <div className="word-srs">
         <div className="word-srs-row">

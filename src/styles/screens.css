@@ -132,3 +132,193 @@
   border-radius: 10px;
   padding: 12px 14px;
 }
+
+/* --- Enriched word detail (WordDetail.tsx) --- */
+.word-detail-rich {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.word-detail-rich.compact {
+  gap: 8px;
+  margin-top: 4px;
+}
+.word-phonetics {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+}
+.word-ipa {
+  font-family: ui-monospace, monospace;
+  font-size: 0.95rem;
+}
+.word-syllables {
+  font-size: 0.9rem;
+}
+.sense-list {
+  margin: 0;
+  padding-left: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sense-item {
+  font-size: 1rem;
+}
+.sense-gloss {
+  color: var(--text);
+}
+.sense-tags {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 6px;
+}
+.sense-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+.sense-ru {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.forms-table {
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+.forms-row td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.forms-row:last-child td {
+  border-bottom: none;
+}
+.forms-key {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  width: 9em;
+}
+.forms-val {
+  font-weight: 600;
+}
+.sep-badge {
+  margin-left: 8px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 0 5px;
+  font-weight: 700;
+}
+.example-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.example-item {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.example-nl {
+  font-weight: 600;
+}
+.example-en {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.example-ru {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.relations {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.relation-row {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 0.9rem;
+}
+.relation-label {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  min-width: 4.5em;
+}
+.relation-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.relation-chip {
+  background: var(--surface-2);
+  border-radius: 6px;
+  padding: 1px 7px;
+}
+.usage-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.usage-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  padding: 1px 7px;
+}
+.usage-tag.register {
+  color: var(--incorrect);
+  background: color-mix(in srgb, var(--incorrect) 12%, transparent);
+}
+.usage-tag.topic {
+  color: var(--text-muted);
+  background: var(--surface-2);
+}
+.usage-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.etymology {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.etymology summary {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+.etymology p {
+  margin: 6px 0 0;
+}
+/* Quiz feedback panel sits on a surface card — examples need contrast. */
+.wrong-feedback .example-item,
+.wrong-feedback .forms-table {
+  background: var(--surface-2);
+}

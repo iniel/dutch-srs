@@ -6,6 +6,7 @@ import { buildLessonQueue, buildReviewQueue, createSession } from "./review/sess
 import type { Session, WordResult } from "./review/session";
 import type { Card } from "./types";
 import { useCards } from "./data/cards";
+import { useEnrichment } from "./data/loadEnrichment";
 import { now } from "./util/now";
 import { unlockedLevels, currentLevel, levelProgress, wordsToLevelUp } from "./srs/levels";
 import { Dashboard } from "./screens/Dashboard";
@@ -30,6 +31,8 @@ export type Screen =
 
 export function App() {
   const { index, error } = useCards();
+  const enrichment = useEnrichment();
+  const getEnrichment = (id: string) => enrichment.get(id);
   const [progress, setProgress] = useState<ProgressData>(() => loadProgress());
   const [screen, setScreen] = useState<Screen>("dashboard");
   const [session, setSession] = useState<Session | null>(null);
@@ -175,6 +178,7 @@ export function App() {
       {screen === "worddetail" && selectedCardId && index.byId.get(selectedCardId) && (
         <WordCard
           card={index.byId.get(selectedCardId)!}
+          enrichment={getEnrichment(selectedCardId)}
           progress={progress}
           onBack={() => setScreen(detailFrom)}
         />
@@ -183,6 +187,7 @@ export function App() {
         <Reviews
           session={session}
           getCard={(id) => index.byId.get(id)}
+          getEnrichment={getEnrichment}
           onWordCleared={applyWordReview}
           onComplete={finishSession}
           onQuit={() => {
@@ -196,6 +201,7 @@ export function App() {
           session={session}
           lessonCards={lessonCards}
           getCard={(id) => index.byId.get(id)}
+          getEnrichment={getEnrichment}
           onWordCleared={applyWordLesson}
           onComplete={finishSession}
           onQuit={() => {

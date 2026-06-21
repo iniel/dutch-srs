@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import type { Card } from "../types";
+import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
 import { acceptedForDirection, checkAnswer } from "../review/answerCheck";
 import { speak, speechSupported } from "../util/speak";
 import { ProgressBar } from "./ProgressBar";
+import { WordDetail } from "./WordDetail";
 
 interface QuizProps {
   session: Session;
   getCard: (cardId: string) => Card | undefined;
+  getEnrichment?: (cardId: string) => Enrichment | undefined;
   /** Fired once per word, when both its directions have cleared. */
   onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
@@ -18,7 +20,7 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, onWordCleared, onComplete }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [revealed, setRevealed] = useState(false);
@@ -158,6 +160,7 @@ export function Quiz({ session, getCard, onWordCleared, onComplete }: QuizProps)
                 )}
               </div>
               {card.notes && <div className="feedback-notes">{card.notes}</div>}
+              <WordDetail enrichment={getEnrichment?.(card.id)} compact />
             </>
           ) : (
             <button

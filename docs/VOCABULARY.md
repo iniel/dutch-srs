@@ -49,3 +49,29 @@ deploy.
 Adjust the field mapping in `convert-anki.mjs` (`fieldIndex` + the `get(...)` calls) to match the new
 deck's model field names, and the `DECKS` array. The rest of the app is language-agnostic except UI
 labels ("Dutch → English") in `src/components/Quiz.tsx` and placeholders.
+
+## Enrichment sidecar (`public/enrichment.json`)
+Dictionary-grade extras per card (senses, grammar/forms, IPA+audio, examples EN/RU, relations,
+register/topic tags, usage notes, etymology), keyed by `Card.id`. Built by `scripts/enrich-cards.mjs`
+from Kaikki (Wiktextract Dutch) + Tatoeba. **Additive + display-only** — never feeds answer checking;
+`cards.json` and the SRS/quiz layer are untouched. Loaded lazily and 404-tolerant
+(`src/data/loadEnrichment.ts`), rendered by `src/components/WordDetail.tsx`.
+
+### Regenerate
+1. Download the gitignored dumps into `data/`:
+   - Kaikki Dutch JSONL → `data/kaikki/kaikki-Dutch.jsonl`
+     (`https://kaikki.org/dictionary/Dutch/kaikki.org-dictionary-Dutch.jsonl`)
+   - Tatoeba (`https://downloads.tatoeba.org/exports/`):
+     `per_language/{nld,eng,rus}/{nld,eng,rus}_sentences.tsv.bz2` → `data/tatoeba/*.tsv`,
+     and `links.tar.bz2` → `data/tatoeba/links.csv`
+2. `npm run enrich` → writes `public/enrichment.json` + prints a coverage report.
+3. `npm run build`, commit `public/enrichment.json` + `dist/`, deploy.
+
+### Notes / limitations
+- Matched by `lemma` (fallback article-stripped `dutch`) + POS. ~99% of cards enriched; the ~15 misses
+  are pedagogical compounds not in Wiktionary ("de korte klank", "ik-vorm").
+- **English Wiktionary carries no translations on Dutch entries**, so Russian comes only from
+  Tatoeba example sentences (≈1150 cards have ≥1 RU example). There are no RU dictionary glosses.
+- Auxiliary (hebben/zijn) is rarely present in the Kaikki Dutch conjugation data, so it is usually omitted.
+- Caps to keep the file small: ≤4 senses, ≤3 examples/card, ≤12 items per relation list.
+- Pure extractors live in `scripts/enrich/extract.mjs` (unit-tested in `extract.test.mjs`).

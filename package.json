@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:e2e": "node tests/e2e.mjs",
     "test:watch": "vitest",
-    "convert": "node scripts/convert-anki.mjs"
+    "convert": "node scripts/convert-anki.mjs",
+    "enrich": "node scripts/enrich-cards.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

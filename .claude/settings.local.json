@@ -21,7 +21,11 @@
       "Bash(npm run *)",
       "Bash(npm test *)",
       "Bash(git branch *)",
-      "Bash(pkill -f \"vite\")"
+      "Bash(pkill -f \"vite\")",
+      "Bash(grep -m1 '\"word\": \"kind\"' kaikki-Dutch.jsonl)",
+      "Bash(grep -m1 '\"word\": \"lopen\"' kaikki-Dutch.jsonl)",
+      "Bash(grep -m1 '\"word\": \"groot\"' kaikki-Dutch.jsonl)",
+      "Bash(pkill -f \"vite preview\")"
     ]
   }
 }

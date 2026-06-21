@@ -14,6 +14,79 @@ export interface Card {
   notes?: string;
 }
 
+export type ExampleSource = "kaikki" | "tatoeba";
+
+export interface Example {
+  nl: string;
+  en?: string;
+  ru?: string;
+  source: ExampleSource;
+  tatoebaId?: number;
+}
+
+export interface Sense {
+  glosses: string[];
+  glossRu?: string[];
+  tags?: string[];
+  topics?: string[];
+  examples?: Example[];
+}
+
+export interface NounGrammar {
+  article?: "de" | "het" | "de/het";
+  gender?: string[];
+  plural?: string;
+  diminutive?: string;
+}
+
+export interface VerbGrammar {
+  presentSg?: string;
+  pastSg?: string;
+  pastPl?: string;
+  pastParticiple?: string;
+  auxiliary?: "hebben" | "zijn" | "hebben/zijn";
+  separable?: boolean;
+}
+
+export interface AdjectiveGrammar {
+  comparative?: string;
+  superlative?: string;
+}
+
+export interface Grammar {
+  noun?: NounGrammar;
+  verb?: VerbGrammar;
+  adjective?: AdjectiveGrammar;
+}
+
+export interface MatchInfo {
+  source: "kaikki" | "kaikki+tatoeba" | "tatoeba" | "none";
+  matchedBy?: "lemma+pos" | "lemma" | "dutch-stripped" | "none";
+  matchedWord?: string;
+}
+
+/** Dictionary-grade extras for a `Card`, keyed by `Card.id`. Display-only; never feeds answer checking. */
+export interface Enrichment {
+  id: string;
+  match: MatchInfo;
+  ipa?: string;
+  syllables?: string;
+  audioUrl?: string;
+  glossSummary?: string;
+  senses?: Sense[];
+  grammar?: Grammar;
+  synonyms?: string[];
+  antonyms?: string[];
+  hypernyms?: string[];
+  hyponyms?: string[];
+  related?: string[];
+  topics?: string[];
+  register?: string[];
+  usageNotes?: string[];
+  etymology?: string;
+  examples?: Example[];
+}
+
 export type Direction = "nl_en" | "en_nl";
 
 export const DIRECTIONS: Direction[] = ["nl_en", "en_nl"];
