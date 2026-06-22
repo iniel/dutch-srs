@@ -53,17 +53,16 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
       <div className="word-srs-row">
         <span className="word-srs-label">Status</span>
         <div className="word-srs-actions">
-          {stage === 0 && (
+          {stage === 0 ? (
             <>
               <button className="srs-action primary" onClick={() => onLearnNow(card.id)}>Learn now</button>
               {pinned ? (
                 <button className="srs-action" onClick={() => onUnpin(card.id)}>Remove from lessons</button>
               ) : (
-                <button className="srs-action" onClick={() => onPin(card.id)}>Add to lessons</button>
+                <button className="srs-action" onClick={() => onPin(card.id)}>Add to next lesson</button>
               )}
             </>
-          )}
-          <SrsStagePill stage={stage} />
+          ) : <SrsStagePill stage={stage} />}
         </div>
       </div>
     </div>
