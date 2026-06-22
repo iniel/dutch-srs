@@ -189,13 +189,6 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
           </div>
         ) : (
           <>
-            <div className="quiz-direction">
-              {task.dir === "nl_en" ? (
-                <><span>Dutch </span><strong>→ English</strong></>
-              ) : (
-                <><span>English </span><strong>→ Dutch</strong></>
-              )}
-            </div>
             <div className="answer-field">
               <input
                 ref={inputRef}

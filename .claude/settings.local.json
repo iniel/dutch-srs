@@ -26,7 +26,8 @@
       "Bash(grep -m1 '\"word\": \"lopen\"' kaikki-Dutch.jsonl)",
       "Bash(grep -m1 '\"word\": \"groot\"' kaikki-Dutch.jsonl)",
       "Bash(pkill -f \"vite preview\")",
-      "Bash(pkill -f \"vite preview --port 4319\")"
+      "Bash(pkill -f \"vite preview --port 4319\")",
+      "Bash(pkill -f vite)"
     ]
   }
 }
