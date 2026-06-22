@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="800" viewBox="0 0 390 800" font-family="-apple-system, 'Segoe UI', Inter, sans-serif">
+  <rect width="390" height="800" fill="#ffffff"/>
+
+  <!-- topbar -->
+  <text x="24" y="58" font-size="22" fill="#71717a">‹</text>
+  <text x="195" y="58" font-size="17" font-weight="700" fill="#09090b" text-anchor="middle" letter-spacing="-0.3">Settings</text>
+
+  <!-- setting rows -->
+  <rect x="24" y="88" width="342" height="54" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="40" y="120" font-size="14.5" fill="#18181b">Lesson batch size</text>
+  <rect x="300" y="103" width="50" height="24" rx="8" fill="#f4f4f5"/>
+  <text x="325" y="120" font-size="14" font-weight="600" fill="#18181b" text-anchor="middle">5</text>
+
+  <rect x="24" y="150" width="342" height="54" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="40" y="182" font-size="14.5" fill="#18181b">Theme</text>
+  <rect x="266" y="165" width="84" height="24" rx="8" fill="#f4f4f5"/>
+  <text x="308" y="182" font-size="13.5" fill="#3f3f46" text-anchor="middle">System ⌄</text>
+
+  <rect x="24" y="212" width="342" height="54" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="40" y="244" font-size="14.5" fill="#18181b">Unlock all levels</text>
+  <rect x="314" y="227" width="36" height="22" rx="11" fill="#2563eb"/>
+  <circle cx="339" cy="238" r="8" fill="#ffffff"/>
+
+  <!-- backup -->
+  <text x="24" y="302" font-size="12" font-weight="700" letter-spacing="0.6" fill="#71717a">BACKUP</text>
+  <rect x="24" y="314" width="342" height="48" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="195" y="343" font-size="14.5" font-weight="600" fill="#18181b" text-anchor="middle">Export progress (JSON)</text>
+
+  <rect x="24" y="372" width="342" height="80" rx="12" fill="#fafafa" stroke="#f0f0f2"/>
+  <text x="40" y="398" font-size="13" fill="#b8b8bf">Paste exported JSON here to import…</text>
+
+  <rect x="24" y="462" width="342" height="48" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="195" y="491" font-size="14.5" font-weight="600" fill="#a1a1aa" text-anchor="middle">Import progress</text>
+
+  <!-- danger -->
+  <text x="24" y="552" font-size="12" font-weight="700" letter-spacing="0.6" fill="#71717a">DANGER ZONE</text>
+  <rect x="24" y="564" width="342" height="48" rx="12" fill="#ffffff" stroke="#fecaca"/>
+  <text x="195" y="593" font-size="14.5" font-weight="600" fill="#dc2626" text-anchor="middle">Reset progress</text>
+
+  <text x="195" y="784" font-size="11" fill="#d4d4d8" text-anchor="middle">Settings</text>
+</svg>

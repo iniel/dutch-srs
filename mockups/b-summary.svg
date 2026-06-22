@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="800" viewBox="0 0 390 800" font-family="-apple-system, 'Segoe UI', Inter, sans-serif">
+  <rect width="390" height="800" fill="#ffffff"/>
+
+  <!-- topbar -->
+  <text x="195" y="58" font-size="17" font-weight="700" fill="#09090b" text-anchor="middle" letter-spacing="-0.3">Session complete</text>
+
+  <!-- score, big, flat -->
+  <text x="195" y="190" font-size="72" font-weight="800" fill="#2563eb" text-anchor="middle" letter-spacing="-2">88%</text>
+  <text x="195" y="222" font-size="14" fill="#71717a" text-anchor="middle">21 / 24 correct first try</text>
+
+  <line x1="24" y1="262" x2="366" y2="262" stroke="#f0f0f2"/>
+
+  <!-- missed -->
+  <text x="24" y="298" font-size="13" font-weight="700" fill="#09090b">Missed</text>
+  <text x="58" y="298" font-size="13" font-weight="600" fill="#a1a1aa">3</text>
+
+  <g font-size="14">
+    <rect x="24" y="312" width="342" height="52" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+    <text x="40" y="336" font-size="10.5" font-weight="700" fill="#2563eb">NL→EN</text>
+    <text x="40" y="354" font-weight="600" fill="#18181b">gezellig</text>
+    <text x="350" y="345" fill="#71717a" text-anchor="end">cozy, sociable</text>
+
+    <rect x="24" y="372" width="342" height="52" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+    <text x="40" y="396" font-size="10.5" font-weight="700" fill="#2563eb">EN→NL</text>
+    <text x="40" y="414" font-weight="600" fill="#18181b">afspraak</text>
+    <text x="350" y="405" fill="#71717a" text-anchor="end">appointment</text>
+
+    <rect x="24" y="432" width="342" height="52" rx="12" fill="#ffffff" stroke="#e7e7ea"/>
+    <text x="40" y="456" font-size="10.5" font-weight="700" fill="#2563eb">NL→EN</text>
+    <text x="40" y="474" font-weight="600" fill="#18181b">vergeten</text>
+    <text x="350" y="465" fill="#71717a" text-anchor="end">to forget</text>
+  </g>
+
+  <!-- done -->
+  <rect x="24" y="724" width="342" height="52" rx="12" fill="#2563eb"/>
+  <text x="195" y="757" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">Done</text>
+
+  <text x="195" y="700" font-size="11" fill="#d4d4d8" text-anchor="middle">Summary</text>
+</svg>

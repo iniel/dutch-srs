@@ -27,9 +27,11 @@ export function Summary({ results, mode, getCard, onDone }: SummaryProps) {
         <div className="summary-sub">{correct} / {total} correct first try</div>
       </div>
 
+      <hr className="hairline" />
+
       {missed.length > 0 && (
         <section className="summary-missed">
-          <h2>Missed ({missed.length})</h2>
+          <h2>Missed<span className="summary-missed-count">{missed.length}</span></h2>
           <ul>
             {missed.map((r) => {
               const card = getCard(r.cardId);
@@ -37,9 +39,8 @@ export function Summary({ results, mode, getCard, onDone }: SummaryProps) {
               const arrows = r.missedDirs.map((d) => DIR_ARROW[d]).join(" ");
               return (
                 <li key={r.cardId}>
-                  <span className="missed-dutch">
-                    <span className="missed-dir">{arrows}</span> {card.dutch}
-                  </span>
+                  <span className="missed-dir">{arrows}</span>
+                  <span className="missed-dutch">{card.dutch}</span>
                   <span className="missed-en">{card.english.join(", ")}</span>
                 </li>
               );

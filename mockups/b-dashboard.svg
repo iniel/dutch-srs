@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="800" viewBox="0 0 390 800" font-family="-apple-system, 'Segoe UI', Inter, sans-serif">
+  <rect width="390" height="800" fill="#ffffff"/>
+
+  <!-- topbar -->
+  <rect x="24" y="34" width="36" height="36" rx="11" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="42" y="58" font-size="15" text-anchor="middle">🔍</text>
+  <text x="195" y="58" font-size="17" font-weight="700" fill="#09090b" text-anchor="middle" letter-spacing="-0.3">Dutch SRS</text>
+  <rect x="330" y="34" width="36" height="36" rx="11" fill="#ffffff" stroke="#e7e7ea"/>
+  <text x="348" y="58" font-size="15" text-anchor="middle">⚙</text>
+
+  <!-- level summary -->
+  <rect x="24" y="90" width="342" height="74" rx="14" fill="#ffffff" stroke="#e7e7ea"/>
+  <circle cx="66" cy="127" r="22" fill="none" stroke="#eef0f3" stroke-width="5"/>
+  <circle cx="66" cy="127" r="22" fill="none" stroke="#2563eb" stroke-width="5"
+          stroke-dasharray="90 138" stroke-linecap="round" transform="rotate(-90 66 127)"/>
+  <text x="66" y="132" font-size="12" font-weight="700" text-anchor="middle" fill="#09090b">65%</text>
+  <text x="104" y="122" font-size="15" font-weight="700" fill="#09090b">Level 3</text>
+  <text x="104" y="141" font-size="12.5" fill="#71717a">14 words to level up</text>
+  <text x="346" y="133" font-size="18" fill="#c4c4cc" text-anchor="middle">›</text>
+
+  <!-- action cards -->
+  <rect x="24" y="180" width="163" height="112" rx="14" fill="#ffffff" stroke="#e7e7ea"/>
+  <rect x="203" y="180" width="163" height="112" rx="14" fill="#2563eb"/>
+  <text x="42" y="246" font-size="40" font-weight="800" fill="#09090b" letter-spacing="-1">12</text>
+  <text x="42" y="272" font-size="13.5" font-weight="600" fill="#71717a">Lessons</text>
+  <text x="221" y="246" font-size="40" font-weight="800" fill="#ffffff" letter-spacing="-1">34</text>
+  <text x="221" y="272" font-size="13.5" font-weight="600" fill="#ffffff" fill-opacity="0.85">Reviews</text>
+
+  <!-- next review -->
+  <text x="24" y="324" font-size="13" fill="#71717a">Next review</text>
+  <text x="366" y="324" font-size="13" font-weight="600" fill="#09090b" text-anchor="end">in 2h</text>
+
+  <!-- words / srs -->
+  <text x="24" y="372" font-size="13" font-weight="700" fill="#09090b">Words</text>
+  <text x="346" y="372" font-size="18" fill="#c4c4cc" text-anchor="middle">›</text>
+  <line x1="24" y1="386" x2="366" y2="386" stroke="#f0f0f2"/>
+  <g text-anchor="middle">
+    <text x="55"  y="430" font-size="22" font-weight="800" fill="#db2777">18</text>
+    <text x="125" y="430" font-size="22" font-weight="800" fill="#7c3aed">42</text>
+    <text x="195" y="430" font-size="22" font-weight="800" fill="#2563eb">30</text>
+    <text x="265" y="430" font-size="22" font-weight="800" fill="#0891b2">12</text>
+    <text x="335" y="430" font-size="22" font-weight="800" fill="#52525b">5</text>
+    <text x="55"  y="450" font-size="9.5" fill="#a1a1aa">Apprentice</text>
+    <text x="125" y="450" font-size="9.5" fill="#a1a1aa">Guru</text>
+    <text x="195" y="450" font-size="9.5" fill="#a1a1aa">Master</text>
+    <text x="265" y="450" font-size="9.5" fill="#a1a1aa">Enlight.</text>
+    <text x="335" y="450" font-size="9.5" fill="#a1a1aa">Burned</text>
+  </g>
+  <line x1="24" y1="470" x2="366" y2="470" stroke="#f0f0f2"/>
+
+  <text x="195" y="784" font-size="11" fill="#d4d4d8" text-anchor="middle">Dashboard</text>
+</svg>

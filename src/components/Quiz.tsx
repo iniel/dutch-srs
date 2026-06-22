@@ -3,7 +3,6 @@ import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
 import { acceptedForDirection, checkAnswer } from "../review/answerCheck";
 import { speak, speechSupported } from "../util/speak";
-import { ProgressBar } from "./ProgressBar";
 import { WordDetail } from "./WordDetail";
 
 interface QuizProps {
@@ -13,6 +12,7 @@ interface QuizProps {
   /** Fired once per word, when both its directions have cleared. */
   onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
+  onQuit: () => void;
 }
 
 type Phase = "input" | "wrong";
@@ -20,7 +20,7 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [revealed, setRevealed] = useState(false);
@@ -110,76 +110,104 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     }
   }
 
+  const total = session.total();
+  const pct = total === 0 ? 0 : Math.round((session.done() / total) * 100);
+
   return (
     <div className="quiz">
-      <ProgressBar done={session.done()} total={session.total()} />
-      <div className="quiz-counters">
-        <span>{session.done()} done</span>
-        <span>{session.remaining()} left</span>
-      </div>
-
-      <div className="prompt-card">
-        <div className="prompt-label">
-          {dirLabel(task.dir)} · {card.type}
+      <div className="quiz-prompt">
+        <div className="quiz-progress" role="progressbar" aria-valuenow={pct}>
+          <div className="quiz-progress-fill" style={{ width: `${pct}%` }} />
         </div>
-        <div className="prompt-text">{prompt}</div>
-      </div>
-
-      <input
-        ref={inputRef}
-        className={`answer-input ${phase === "wrong" ? "wrong" : ""}`}
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        onKeyDown={onKeyDown}
-        disabled={phase === "wrong"}
-        placeholder={task.dir === "nl_en" ? "English meaning" : "Dutch word"}
-        autoCapitalize="off"
-        autoCorrect="off"
-        autoComplete="off"
-        spellCheck={false}
-        enterKeyHint="go"
-        aria-label="answer"
-      />
-
-      {phase === "wrong" ? (
-        <div className="feedback wrong-feedback">
-          <div className="feedback-title">Incorrect</div>
-          {revealed ? (
-            <>
-              <div className="feedback-answer">
-                {accepted.join(", ")}
-                {task.dir === "en_nl" && speechSupported() && (
-                  <button
-                    type="button"
-                    className="speak-btn"
-                    onClick={() => speak(card.dutch)}
-                    aria-label="Pronounce Dutch word"
-                  >
-                    🔊
-                  </button>
-                )}
-              </div>
-              {card.notes && <div className="feedback-notes">{card.notes}</div>}
-              <WordDetail enrichment={getEnrichment?.(card.id)} compact />
-            </>
-          ) : (
+        <div className="quiz-top">
+          <button className="quiz-quit" onClick={onQuit} aria-label="quit">✕</button>
+          <div className="quiz-counters">
+            <span className="quiz-correct">✓ {session.done()}</span>
+            <span className="quiz-left">{session.remaining()} left</span>
+          </div>
+        </div>
+        <div className="quiz-word">
+          <div className="prompt-label">
+            {dirLabel(task.dir)} · {card.type}
+          </div>
+          <div className="prompt-text">{prompt}</div>
+          {task.dir === "nl_en" && speechSupported() && (
             <button
               type="button"
-              className="reveal-link"
-              onClick={() => setRevealed(true)}
+              className="quiz-speak"
+              onClick={() => speak(card.dutch)}
+              aria-label="Pronounce Dutch word"
             >
-              Show answer
+              🔊
             </button>
           )}
-          <button className="btn primary" onClick={advanceAfterWrong}>
-            Continue (Enter)
-          </button>
         </div>
-      ) : (
-        <button className="btn primary" onClick={submit}>
-          Submit (Enter)
-        </button>
-      )}
+      </div>
+
+      <div className="quiz-answer">
+        {phase === "wrong" ? (
+          <div className="feedback wrong-feedback">
+            <div className="feedback-title">Incorrect</div>
+            {revealed ? (
+              <>
+                <div className="feedback-answer">
+                  {accepted.join(", ")}
+                  {task.dir === "en_nl" && speechSupported() && (
+                    <button
+                      type="button"
+                      className="speak-btn"
+                      onClick={() => speak(card.dutch)}
+                      aria-label="Pronounce Dutch word"
+                    >
+                      🔊
+                    </button>
+                  )}
+                </div>
+                {card.notes && <div className="feedback-notes">{card.notes}</div>}
+                <WordDetail enrichment={getEnrichment?.(card.id)} compact />
+              </>
+            ) : (
+              <button
+                type="button"
+                className="reveal-link"
+                onClick={() => setRevealed(true)}
+              >
+                Show answer
+              </button>
+            )}
+            <button className="btn primary" onClick={advanceAfterWrong}>
+              Continue (Enter)
+            </button>
+          </div>
+        ) : (
+          <>
+            <div className="quiz-direction">
+              {task.dir === "nl_en" ? (
+                <><span>Dutch </span><strong>→ English</strong></>
+              ) : (
+                <><span>English </span><strong>→ Dutch</strong></>
+              )}
+            </div>
+            <div className="answer-field">
+              <input
+                ref={inputRef}
+                className="answer-input"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                onKeyDown={onKeyDown}
+                placeholder="Your response"
+                autoCapitalize="off"
+                autoCorrect="off"
+                autoComplete="off"
+                spellCheck={false}
+                enterKeyHint="go"
+                aria-label="answer"
+              />
+              <span className="answer-check" aria-hidden="true">✓</span>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }

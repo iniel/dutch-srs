@@ -1,7 +1,8 @@
 :root {
-  /* Subject accent (vocab purple, WaniKani/Tsurukame) */
-  --accent: #aa00ff;
-  --accent-dark: #9300dd;
+  /* Single blue accent (redesign B) */
+  --accent: #2563eb;
+  --accent-dark: #1e40af;
+  --accent-soft: #eff6ff;
 
   /* SRS stage colors (Tsurukame Style.swift) */
   --srs-apprentice: #de0094;
@@ -12,38 +13,59 @@
 
   /* Feedback */
   --correct: #1faa59;
-  --incorrect: #ff3b30;
+  --incorrect: #dc2626;
+  --danger-soft: #fef2f2;
+  --danger-border: #fecaca;
 
   /* Light theme surface */
-  --bg: #f4f4f6;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --surface-2: #eeeeee;
-  --text: #1a1a1a;
-  --text-muted: #6b6b6b;
-  --border: rgba(0, 0, 0, 0.1);
+  --surface-2: #f4f4f5;
+  --surface-muted: #fafafa;
+  --text: #09090b;
+  --text-strong: #18181b;
+  --text-muted: #71717a;
+  --text-faint: #a1a1aa;
+  --border: #e7e7ea;
+  --border-faint: #f0f0f2;
 
   --radius: 14px;
+  --radius-sm: 12px;
   --maxw: 600px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0e0e10;
-    --surface: #1c1c1e;
-    --surface-2: #2a2a2d;
-    --text: #f2f2f2;
-    --text-muted: #9a9a9e;
-    --border: rgba(255, 255, 255, 0.12);
+    --accent-soft: #18243f;
+    --bg: #0f0f12;
+    --surface: #16161a;
+    --surface-2: #26262b;
+    --surface-muted: #1a1a1e;
+    --text: #f4f4f5;
+    --text-strong: #fafafa;
+    --text-muted: #a1a1aa;
+    --text-faint: #71717a;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-faint: rgba(255, 255, 255, 0.06);
+    --danger-soft: #2a1416;
+    --danger-border: #5b2526;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #0e0e10;
-  --surface: #1c1c1e;
-  --surface-2: #2a2a2d;
-  --text: #f2f2f2;
-  --text-muted: #9a9a9e;
-  --border: rgba(255, 255, 255, 0.12);
+  --accent-soft: #18243f;
+  --bg: #0f0f12;
+  --surface: #16161a;
+  --surface-2: #26262b;
+  --surface-muted: #1a1a1e;
+  --text: #f4f4f5;
+  --text-strong: #fafafa;
+  --text-muted: #a1a1aa;
+  --text-faint: #71717a;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-faint: rgba(255, 255, 255, 0.06);
+  --danger-soft: #2a1416;
+  --danger-border: #5b2526;
 }
 
 * {

@@ -5,6 +5,8 @@ interface WordDetailProps {
   enrichment?: Enrichment;
   /** Trimmed view for the quiz feedback panel: senses + forms + one example. */
   compact?: boolean;
+  /** Hide the IPA/syllables row when the host (lesson/word hero) already shows it. */
+  hidePhonetics?: boolean;
 }
 
 function playAudio(url: string) {
@@ -71,17 +73,18 @@ function Relations({ label, words }: { label: string; words?: string[] }) {
   );
 }
 
-export function WordDetail({ enrichment, compact }: WordDetailProps) {
+export function WordDetail({ enrichment, compact, hidePhonetics }: WordDetailProps) {
   if (!enrichment) return null;
   const e = enrichment;
   const separable = e.grammar?.verb?.separable;
   const formRows = e.grammar ? grammarRows(e.grammar) : [];
   const senses = compact ? e.senses?.slice(0, 2) : e.senses;
   const examples = compact ? e.examples?.slice(0, 1) : e.examples;
+  const showLabels = !compact;
 
   return (
     <div className={`word-detail-rich ${compact ? "compact" : ""}`}>
-      {(e.ipa || e.syllables || e.audioUrl) && (
+      {!hidePhonetics && (e.ipa || e.syllables || e.audioUrl) && (
         <div className="word-phonetics">
           {e.ipa && <span className="word-ipa">{e.ipa}</span>}
           {e.syllables && <span className="word-syllables">{e.syllables}</span>}
@@ -94,45 +97,55 @@ export function WordDetail({ enrichment, compact }: WordDetailProps) {
       )}
 
       {senses?.length ? (
-        <ol className="sense-list">
-          {senses.map((s, i) => (
-            <li key={i} className="sense-item">
-              <span className="sense-gloss">{s.glosses.join("; ")}</span>
-              {s.tags?.length ? (
-                <span className="sense-tags">{s.tags.map((t) => <span key={t} className="sense-tag">{t}</span>)}</span>
-              ) : null}
-              {s.glossRu?.length ? <span className="sense-ru">{s.glossRu.join(", ")}</span> : null}
-            </li>
-          ))}
-        </ol>
+        <div className="lesson-section">
+          {showLabels && <p className="section-label">Meanings</p>}
+          <ol className="sense-list">
+            {senses.map((s, i) => (
+              <li key={i} className="sense-item">
+                <span className="sense-gloss">{s.glosses.join("; ")}</span>
+                {s.tags?.length ? (
+                  <span className="sense-tags">{s.tags.map((t) => <span key={t} className="sense-tag">{t}</span>)}</span>
+                ) : null}
+                {s.glossRu?.length ? <span className="sense-ru">{s.glossRu.join(", ")}</span> : null}
+              </li>
+            ))}
+          </ol>
+        </div>
       ) : null}
 
       {formRows.length ? (
-        <table className="forms-table">
-          <tbody>
-            {formRows.map(([k, v]) => (
-              <tr key={k} className="forms-row">
-                <td className="forms-key">{k}</td>
-                <td className="forms-val">
-                  {v}
-                  {k === "present" && separable && <span className="sep-badge">separable</span>}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="lesson-section">
+          {showLabels && <p className="section-label">Forms</p>}
+          <table className="forms-table">
+            <tbody>
+              {formRows.map(([k, v]) => (
+                <tr key={k} className="forms-row">
+                  <td className="forms-key">{k}</td>
+                  <td className="forms-val">
+                    {v}
+                    {k === "present" && separable && <span className="sep-badge">separable</span>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       ) : null}
 
       {examples?.length ? (
-        <ul className="example-list">
-          {examples.map((ex) => <ExampleItem key={`${ex.source}-${ex.tatoebaId ?? ex.nl}`} ex={ex} />)}
-        </ul>
+        <div className="lesson-section">
+          {showLabels && <p className="section-label">Examples</p>}
+          <ul className="example-list">
+            {examples.map((ex) => <ExampleItem key={`${ex.source}-${ex.tatoebaId ?? ex.nl}`} ex={ex} />)}
+          </ul>
+        </div>
       ) : null}
 
       {!compact && (
         <>
           {(e.synonyms || e.antonyms || e.hypernyms || e.hyponyms || e.related) && (
             <div className="relations">
+              <p className="section-label">Related</p>
               <Relations label="syn" words={e.synonyms} />
               <Relations label="ant" words={e.antonyms} />
               <Relations label="broader" words={e.hypernyms} />

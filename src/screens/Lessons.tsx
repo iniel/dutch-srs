@@ -4,6 +4,7 @@ import type { Session } from "../review/session";
 import { speak, speechSupported } from "../util/speak";
 import { Quiz } from "../components/Quiz";
 import { WordDetail } from "../components/WordDetail";
+import { ProgressBar } from "../components/ProgressBar";
 
 interface LessonsProps {
   session: Session;
@@ -21,18 +22,22 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
 
   if (phase === "info") {
     const card = lessonCards[idx];
+    const e = getEnrichment?.(card.id);
     const isLast = idx === lessonCards.length - 1;
+    const phon = [e?.ipa, e?.syllables].filter(Boolean).join(" · ");
     return (
-      <div className="screen session-screen">
+      <div className="screen lesson-screen">
         <header className="topbar">
           <button className="icon-btn" onClick={onQuit} aria-label="quit">✕</button>
-          <h1>Lesson {idx + 1}/{lessonCards.length}</h1>
+          <h1>Lesson {idx + 1} / {lessonCards.length}</h1>
           <span className="topbar-spacer" />
         </header>
 
-        <div className="prompt-card lesson-info">
-          <div className="prompt-label">{card.group} · {card.type}</div>
-          <div className="prompt-text">
+        <ProgressBar done={idx + 1} total={lessonCards.length} />
+
+        <div className="lesson-hero">
+          <div className="lesson-eyebrow">{card.type} · {card.group}</div>
+          <div className="lesson-word">
             {card.dutch}
             {speechSupported() && (
               <button
@@ -46,10 +51,13 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
             )}
           </div>
           <div className="lesson-meaning">{card.english.join(", ")}</div>
+          {phon && <div className="lesson-phon">{phon}</div>}
           {card.notes && <div className="feedback-notes">{card.notes}</div>}
         </div>
 
-        <WordDetail enrichment={getEnrichment?.(card.id)} />
+        <hr className="hairline" />
+
+        <WordDetail enrichment={e} hidePhonetics />
 
         <div className="lesson-nav">
           {idx > 0 && (
@@ -68,17 +76,13 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
 
   return (
     <div className="screen session-screen">
-      <header className="topbar">
-        <button className="icon-btn" onClick={onQuit} aria-label="quit">✕</button>
-        <h1>Lesson quiz</h1>
-        <span className="topbar-spacer" />
-      </header>
       <Quiz
         session={session}
         getCard={getCard}
         getEnrichment={getEnrichment}
         onWordCleared={(cardId) => onWordCleared(cardId)}
         onComplete={onComplete}
+        onQuit={onQuit}
       />
     </div>
   );

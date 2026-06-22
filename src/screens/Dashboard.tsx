@@ -101,8 +101,9 @@ export function Dashboard({
         </button>
       </div>
 
-      <div className="next-review">
-        Next review: <strong>{nextAt === Infinity ? "—" : fmtNext(nextAt)}</strong>
+      <div className="dash-row">
+        <span>Next review</span>
+        <strong>{nextAt === Infinity ? "—" : `in ${fmtNext(nextAt)}`}</strong>
       </div>
 
       <section className="srs-breakdown">

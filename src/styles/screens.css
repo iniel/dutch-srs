@@ -1,16 +1,19 @@
 .search-input {
   flex: 1;
   height: 40px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--surface-2);
   color: var(--text);
-  padding: 0 12px;
+  padding: 0 14px;
+  font-size: 0.95rem;
   -webkit-appearance: none;
+}
+.search-input::placeholder {
+  color: var(--text-faint);
 }
 .search-input:focus {
   outline: none;
-  border-color: var(--accent);
 }
 
 .word-rows {
@@ -19,7 +22,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .word-empty {
   color: var(--text-muted);
@@ -35,18 +38,19 @@
   align-items: center;
   gap: 2px 10px;
   text-align: left;
-  border: none;
+  border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  border-radius: 10px;
-  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  padding: 11px 16px;
 }
 .word-row.tinted {
-  border-left: 4px solid var(--surface);
+  border-left: 4px solid var(--border);
 }
 .word-row-dutch {
   grid-area: dutch;
   font-weight: 600;
+  color: var(--text-strong);
 }
 .word-row-en {
   grid-area: en;
@@ -56,7 +60,7 @@
 }
 .word-row-tag {
   grid-area: tag;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 700;
   color: var(--accent);
   text-align: right;
@@ -65,60 +69,46 @@
 .wordlist-section {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .wordlist-section h2 {
-  font-size: 0.95rem;
+  font-size: 0.82rem;
+  font-weight: 700;
   margin: 0;
 }
 .wordlist-count {
-  color: var(--text-muted);
-  font-weight: 500;
+  color: var(--text-faint);
+  font-weight: 600;
+  margin-left: 6px;
 }
 
-.words-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  border: none;
-  background: none;
-  color: var(--text);
-  padding: 0;
-}
-.words-link h2 {
-  margin: 0;
-}
-.words-link-chevron {
-  color: var(--text-muted);
-  font-size: 1.4rem;
-}
-
+/* Word detail hero */
 .word-hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
+  margin-top: 8px;
 }
 .word-dutch {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 800;
+  letter-spacing: -1px;
   text-align: center;
+  color: var(--text);
 }
-.speak-btn {
+.word-hero .speak-btn {
   flex: none;
 }
 .word-english {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
 }
 .word-notes {
-  background: var(--surface);
-  border-radius: 10px;
-  padding: 12px 14px;
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 0.85rem;
 }
 .word-srs {
   display: flex;
@@ -128,33 +118,40 @@
 .word-srs-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: var(--surface);
-  border-radius: 10px;
-  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+.word-srs-label {
+  color: var(--text-muted);
+  font-size: 0.88rem;
 }
 
 /* --- Enriched word detail (WordDetail.tsx) --- */
 .word-detail-rich {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 .word-detail-rich.compact {
-  gap: 8px;
+  gap: 10px;
   margin-top: 4px;
 }
 .word-phonetics {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  color: var(--text-muted);
+  color: var(--text-faint);
 }
 .word-ipa {
   font-family: ui-monospace, monospace;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 .word-syllables {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .sense-list {
   margin: 0;
@@ -164,10 +161,11 @@
   gap: 6px;
 }
 .sense-item {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-strong);
 }
 .sense-gloss {
-  color: var(--text);
+  color: var(--text-strong);
 }
 .sense-tags {
   display: inline-flex;
@@ -175,46 +173,50 @@
   margin-left: 6px;
 }
 .sense-tag {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--text-muted);
+  color: var(--text-faint);
   background: var(--surface-2);
   border-radius: 6px;
   padding: 1px 6px;
 }
 .sense-ru {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 .forms-table {
   border-collapse: collapse;
+  width: 100%;
   background: var(--surface);
-  border-radius: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
   overflow: hidden;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 .forms-row td {
-  padding: 7px 12px;
-  border-bottom: 1px solid var(--border);
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border-faint);
 }
 .forms-row:last-child td {
   border-bottom: none;
 }
 .forms-key {
-  color: var(--text-muted);
+  color: var(--text-faint);
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.66rem;
   letter-spacing: 0.04em;
   width: 9em;
 }
 .forms-val {
   font-weight: 600;
+  text-align: right;
+  color: var(--text-strong);
 }
 .sep-badge {
   margin-left: 8px;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -231,69 +233,72 @@
   gap: 10px;
 }
 .example-item {
-  background: var(--surface);
-  border-radius: 10px;
-  padding: 10px 12px;
+  background: var(--surface-muted);
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-sm);
+  padding: 11px 14px;
 }
 .example-nl {
   font-weight: 600;
+  color: var(--text-strong);
 }
 .example-en {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 .example-ru {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  font-size: 0.85rem;
+  color: var(--text-faint);
 }
 .relations {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .relation-row {
   display: flex;
   gap: 8px;
-  align-items: baseline;
-  font-size: 0.9rem;
+  align-items: center;
+  font-size: 0.85rem;
 }
 .relation-label {
-  color: var(--text-muted);
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
-  min-width: 4.5em;
+  color: var(--text-faint);
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  min-width: 4em;
 }
 .relation-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
 }
 .relation-chip {
   background: var(--surface-2);
-  border-radius: 6px;
-  padding: 1px 7px;
+  color: var(--text-strong);
+  border-radius: 8px;
+  padding: 3px 10px;
 }
 .usage-notes {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .tag-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
 }
 .usage-tag {
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  border-radius: 6px;
-  padding: 1px 7px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 3px 9px;
 }
 .usage-tag.register {
   color: var(--incorrect);
-  background: color-mix(in srgb, var(--incorrect) 12%, transparent);
+  background: var(--danger-soft);
 }
 .usage-tag.topic {
   color: var(--text-muted);
@@ -301,18 +306,19 @@
 }
 .usage-note {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 .etymology {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 .etymology summary {
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.66rem;
   letter-spacing: 0.04em;
+  color: var(--text-faint);
 }
 .etymology p {
   margin: 6px 0 0;
@@ -321,4 +327,5 @@
 .wrong-feedback .example-item,
 .wrong-feedback .forms-table {
   background: var(--surface-2);
+  border-color: var(--border);
 }

@@ -77,11 +77,14 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
 
       <label className="setting-row">
         <span>Unlock all levels</span>
-        <input
-          type="checkbox"
-          checked={!!progress.settings.unlockAllLevels}
-          onChange={(e) => setSetting({ unlockAllLevels: e.target.checked })}
-        />
+        <span className="toggle">
+          <input
+            type="checkbox"
+            checked={!!progress.settings.unlockAllLevels}
+            onChange={(e) => setSetting({ unlockAllLevels: e.target.checked })}
+          />
+          <span className="toggle-track" />
+        </span>
       </label>
 
       <section className="setting-block">

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dutch SRS — redesign (B refined)</title>
+<style>
+  body { margin:0; background:#0f0f12; color:#e4e4e7;
+    font-family:-apple-system,"Segoe UI",Inter,sans-serif; padding:32px; }
+  h1 { font-size:20px; font-weight:700; margin:0 0 4px; }
+  p.sub { color:#a1a1aa; margin:0 0 28px; font-size:14px; max-width:680px; line-height:1.5; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; max-width:1400px; }
+  figure { margin:0; }
+  figure img { width:100%; border:1px solid #26262b; border-radius:18px; background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.45); display:block; }
+  figcaption { text-align:center; font-size:13px; color:#a1a1aa; margin-top:10px; }
+  @media (max-width:1100px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+  <h1>Dutch SRS — redesign (B · refined)</h1>
+  <p class="sub">Calm minimal: white, hairline borders, no shadows, one blue accent. Quiz is Tsurukame-style —
+    full-bleed prompt, no plate under the word, flat underline input, autofocus, no submit button.</p>
+  <div class="grid">
+    <figure><img src="b-dashboard.svg"  alt="Dashboard"><figcaption>Dashboard</figcaption></figure>
+    <figure><img src="b-quiz.svg"       alt="Review / Quiz"><figcaption>Review / Quiz</figcaption></figure>
+    <figure><img src="b-lesson.svg"     alt="Lesson teach"><figcaption>Lesson · teach</figcaption></figure>
+    <figure><img src="b-summary.svg"    alt="Summary"><figcaption>Summary</figcaption></figure>
+    <figure><img src="b-search.svg"     alt="Search"><figcaption>Search</figcaption></figure>
+    <figure><img src="b-wordlist.svg"   alt="Word list"><figcaption>Word list</figcaption></figure>
+    <figure><img src="b-worddetail.svg" alt="Word detail"><figcaption>Word detail</figcaption></figure>
+  </div>
+</body>
+</html>
