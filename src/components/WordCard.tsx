@@ -1,4 +1,5 @@
 import type { Card, Enrichment, ProgressData } from "../types";
+import { cefrBadge } from "../srs/levels";
 import { SrsStagePill } from "./SrsStagePill";
 import { WordDetail } from "./WordDetail";
 import { speak, speechSupported } from "../util/speak";
@@ -17,6 +18,7 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
   const stage = progress.states[card.id]?.stage ?? 0;
   const pinned = progress.lessonQueue.includes(card.id);
   const phon = [enrichment?.ipa, enrichment?.syllables].filter(Boolean).join(" · ");
+  const cefr = cefrBadge(card);
 
   return (
     <div className="screen word-detail">
@@ -27,7 +29,10 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
       </header>
 
       <div className="lesson-hero">
-        <div className="lesson-eyebrow">{card.type} · {card.group}</div>
+        <div className="lesson-eyebrow">
+          {card.type} · {card.group}
+          {cefr && <span className="cefr-badge">{cefr}</span>}
+        </div>
         <div className="lesson-word">
           {card.dutch}
           {speechSupported() && (

@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import type { Card, ReviewState } from "./../types";
 import {
   LEVEL_PASS_THRESHOLD,
+  cefrBadge,
   levelOrder,
   levelProgress,
   currentLevel,
@@ -26,6 +27,23 @@ function states(pairs: [string, ReviewState][]): Record<string, ReviewState> {
 
 const L1 = "A1 · U1";
 const L2 = "A1 · U2";
+
+describe("cefrBadge", () => {
+  it("hides the badge when the level name already conveys the CEFR", () => {
+    expect(cefrBadge(card("a", "A1 · U1"))).toBeUndefined();
+    expect(cefrBadge(card("a", "A2 · U8"))).toBeUndefined();
+    expect(cefrBadge({ ...card("a", "B1"), cefr: "B1" })).toBeUndefined();
+    expect(cefrBadge({ ...card("a", "B2"), cefr: "B2" })).toBeUndefined();
+  });
+  it("shows the band on the mixed A+ level", () => {
+    expect(cefrBadge({ ...card("a", "A+"), cefr: "A1" })).toBe("A1 CEFR");
+    expect(cefrBadge({ ...card("a", "A+"), cefr: "A2" })).toBe("A2 CEFR");
+  });
+  it("returns undefined when no CEFR can be determined", () => {
+    expect(cefrBadge(card("a", "A+"))).toBeUndefined();
+    expect(cefrBadge(card("a"))).toBeUndefined();
+  });
+});
 
 describe("levelOrder", () => {
   it("dedupes and preserves first-appearance order, drops undefined", () => {

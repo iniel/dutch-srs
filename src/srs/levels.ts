@@ -4,6 +4,21 @@ export const LEVEL_PASS_THRESHOLD = 0.9;
 
 const GURU_MIN_STAGE = 5;
 
+export type Cefr = "A1" | "A2" | "B1" | "B2";
+
+function levelCefr(level?: string): Cefr | undefined {
+  const m = /^(A1|A2|B1|B2)/.exec(level ?? "");
+  return m ? (m[1] as Cefr) : undefined;
+}
+
+/** Badge text for a card's CEFR, or undefined when the level name already conveys it. */
+export function cefrBadge(card: Card): string | undefined {
+  const inLevel = levelCefr(card.level);
+  const cefr = card.cefr ?? inLevel;
+  if (!cefr || cefr === inLevel) return undefined;
+  return `${cefr} CEFR`;
+}
+
 export function levelOrder(cards: Card[]): string[] {
   const seen = new Set<string>();
   const order: string[] = [];

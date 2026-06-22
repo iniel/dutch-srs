@@ -3,6 +3,7 @@ import type { ProgressData } from "../types";
 import type { CardIndex } from "../data/cards";
 import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
+import { cefrBadge } from "../srs/levels";
 
 interface WordListProps {
   index: CardIndex;
@@ -23,6 +24,7 @@ interface ListItem {
   cardId: string;
   dutch: string;
   english: string;
+  cefr?: string;
   stage: number;
 }
 
@@ -38,6 +40,7 @@ function buildSections(index: CardIndex, progress: ProgressData, level?: string)
       cardId: card.id,
       dutch: card.dutch,
       english: card.english.join(", "),
+      cefr: cefrBadge(card),
       stage,
     });
     byStage.set(stage, items);
@@ -92,6 +95,7 @@ export function WordList({ index, progress, level, onOpen, onBack }: WordListPro
                   >
                     <span className="word-row-dutch">{item.dutch}</span>
                     <span className="word-row-en">{item.english}</span>
+                    {item.cefr && <span className="word-row-tag">{item.cefr}</span>}
                   </button>
                 </li>
               ))}

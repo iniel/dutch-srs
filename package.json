@@ -11,6 +11,7 @@
     "test:e2e": "node tests/e2e.mjs",
     "test:watch": "vitest",
     "convert": "node scripts/convert-anki.mjs",
+    "convert:nt2lex": "node scripts/convert-nt2lex.mjs",
     "enrich": "node scripts/enrich-cards.mjs"
   },
   "dependencies": {

@@ -1,7 +1,8 @@
 # Vocabulary
 
-Cards live in `public/cards.json` (committed). 1748 cards, 170 groups (`A1 · 1.1` … `A2 · 8.12`),
-generated from two TaalCompleet Anki decks.
+Cards live in `public/cards.json` (committed). The first 1748 cards (ids `c0`–`c1747`) come from two
+TaalCompleet Anki decks (`A1 · U1` … `A2 · U8`). Three further levels — `A+`, `B1`, `B2` (~8350 cards,
+ids `c1748`+) — are appended from the NT2Lex frequency list; see "Frequency vocabulary" below.
 
 ## `cards.json` schema
 Array of `Card` (see `src/types.ts`):
@@ -12,11 +13,15 @@ Array of `Card` (see `src/types.ts`):
   "dutch": "het jaar",            // prompt for EN→NL accepts with/without article
   "english": ["year"],            // accepted answers for NL→EN (array = multiple aliases)
   "type": "word",                 // "word" | "phrase" | "sentence"
+  "cefr": "A2",                    // optional "A1"|"A2"|"B1"|"B2"; per-word badge (NT2Lex cards only)
   "pos": "n.",                     // optional, shown in notes
   "lemma": "jaar",                // optional
   "notes": "n."                    // optional, shown on lesson info + wrong-answer feedback
 }
 ```
+The CEFR badge (`cefrBadge()` in `src/srs/levels.ts`) shows only when a card's CEFR differs from the
+level it sits in — so it appears on the mixed `A+` level (`"A1 CEFR"`/`"A2 CEFR"`) but is hidden on the
+A1/A2/B1/B2 levels whose name already conveys it.
 `group` ordering matters: lessons are introduced in array order (which the converter sorts by level then
 numeric section). Don't shuffle the array.
 
@@ -39,6 +44,29 @@ Source decks: `TaalCompleet_A1_*.apkg`, `TaalCompleet_A2_*.apkg` in the repo roo
 - HTML and `[sound:…]` tags are stripped.
 - Dedupes by `group|dutch|english`. Sorts by level then numeric section. Reassigns ids `c0..cN`.
 - Uses Node's built-in `node:sqlite` (Node 22+) — no dependency.
+
+## Frequency vocabulary — levels `A+`, `B1`, `B2` (`scripts/convert-nt2lex.mjs`)
+Source: `NT2Lex-CGN+ODWN-v01.tsv` (repo root) — a CEFR-graded Dutch frequency list (one row per word
+sense; columns `word`, `tag`, then `F@A1 … U@TOTAL` per band). It carries **no translations** — the quiz
+answer comes from Kaikki glosses at convert time, everything else from the normal enrichment pass.
+
+```bash
+npm run convert          # rebuild the Anki block first (owns c0..c1747)
+npm run convert:nt2lex   # append A+/B1/B2; consumes + rewrites cards.json
+npm run enrich           # generate enrichment.json for all cards (new ones included)
+```
+Run order matters: `convert:nt2lex` reads the Anki block, so it must run **after** `convert`. Re-running
+`convert` alone drops the appended levels. `convert:nt2lex` is idempotent (strips any prior `A+`/`B1`/`B2`
+cards before rebuilding) and never touches the Anki ids/progress.
+
+What it does:
+- Keeps content words only (NT2Lex tags `N( WW( ADJ( BW(`), one per lemma, at its lowest band.
+- Drops words already in the app, and words with no usable Kaikki gloss (~4000 dropped).
+- Bands → levels: `A1`/`A2` → `A+`, `B1` → `B1`, `B2` → `B2`. `cefr` keeps the original band.
+- `english`: short pieces of the first Kaikki sense's glosses (parentheticals stripped, split on `;,/or`,
+  leading `a/an/the` removed, ≤4 words each). Nouns get their `de`/`het` article prepended to `dutch`.
+- Frequency-sorted (`U@TOTAL`) within each level, chunked into groups of 25 (`A+ · 1`, `A+ · 2`, …).
+- Shares the Kaikki streaming index with `enrich-cards.mjs` (`scripts/enrich/kaikki-index.mjs`).
 
 ## Editing cards directly
 Hand-editing `public/cards.json` is fine for small fixes. Keep the schema, keep ids unique and stable

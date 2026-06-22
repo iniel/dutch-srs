@@ -18,7 +18,8 @@ npm run dev          # http://localhost:5173 (dev server)
 npm run build        # tsc -b + vite build -> dist/
 npm test             # vitest: 85 unit tests (pure logic + storage)
 npm run test:e2e     # full-flow browser test (system Chrome, ~1min)
-npm run convert      # regenerate public/cards.json from the .apkg decks
+npm run convert      # regenerate public/cards.json from the .apkg decks (A1/A2)
+npm run convert:nt2lex # append A+/B1/B2 freq vocab; run AFTER convert, then enrich
 ```
 After any logic/UI change: `npm run build && npm test && npm run test:e2e` must all pass.
 

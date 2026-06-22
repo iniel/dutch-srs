@@ -7,6 +7,7 @@ export interface Card {
   dutch: string;
   english: string[];
   type: CardType;
+  cefr?: "A1" | "A2" | "B1" | "B2";
   pos?: string;
   lemma?: string;
   exampleNl?: string;

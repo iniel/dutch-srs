@@ -10,6 +10,7 @@ import { createInterface } from "node:readline";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { stripArticle, normalizeHead, pickEntry, extractKaikki, dedupeExamples } from "./enrich/extract.mjs";
+import { buildKaikkiIndex } from "./enrich/kaikki-index.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KAIKKI = join(root, "data/kaikki/kaikki-Dutch.jsonl");
@@ -25,24 +26,6 @@ function cardHeads(card) {
   if (card.lemma) heads.add(normalizeHead(card.lemma));
   heads.add(normalizeHead(stripArticle(card.dutch)));
   return [...heads].filter(Boolean);
-}
-
-async function buildKaikkiIndex(wantedHeads) {
-  const index = new Map();
-  let kept = 0;
-  for await (const line of lines(KAIKKI)) {
-    if (!line) continue;
-    let e;
-    try { e = JSON.parse(line); } catch { continue; }
-    if (!e.word) continue;
-    const head = normalizeHead(e.word);
-    if (!wantedHeads.has(head)) continue;
-    if (!index.has(head)) index.set(head, []);
-    index.get(head).push(e);
-    kept++;
-  }
-  console.log(`kaikki: indexed ${kept} entries for ${index.size}/${wantedHeads.size} wanted heads`);
-  return index;
 }
 
 const tokenize = (s) => s.toLowerCase().split(/[^a-zà-ÿ]+/i).filter(Boolean);
@@ -155,7 +138,7 @@ async function main() {
   for (const c of cards) for (const h of cardHeads(c)) wantedHeads.add(h);
   console.log(`cards: ${cards.length}, wanted heads: ${wantedHeads.size}`);
 
-  const kaikkiIndex = await buildKaikkiIndex(wantedHeads);
+  const kaikkiIndex = await buildKaikkiIndex(KAIKKI, wantedHeads);
   const tatoeba = await buildTatoebaIndex(wantedHeads);
 
   const result = {};
