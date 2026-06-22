@@ -22,26 +22,29 @@ export function WordCard({ card, enrichment, progress, onBack }: WordCardProps) 
         <span className="topbar-spacer" />
       </header>
 
-      <div className="word-hero">
-        <div className="word-dutch">{card.dutch}</div>
-        {speechSupported() && (
-          <button className="speak-btn" onClick={() => speak(card.dutch)} aria-label="pronounce">
-            🔊
-          </button>
-        )}
+      <div className="lesson-hero">
+        <div className="lesson-eyebrow">{card.type} · {card.group}</div>
+        <div className="lesson-word">
+          {card.dutch}
+          {speechSupported() && (
+            <button className="speak-btn" onClick={() => speak(card.dutch)} aria-label="pronounce">
+              🔊
+            </button>
+          )}
+        </div>
+        <div className="lesson-meaning">{card.english.join(", ")}</div>
+        {phon && <div className="lesson-phon">{phon}</div>}
+        {card.notes && <div className="feedback-notes">{card.notes}</div>}
       </div>
 
-      <div className="word-english">{card.english.join(", ")}</div>
-      {phon && <div className="word-notes">{phon}</div>}
+      <hr className="hairline" />
+
+      <WordDetail enrichment={enrichment} hidePhonetics />
 
       <div className="word-srs-row">
         <span className="word-srs-label">Status</span>
         <SrsStagePill stage={stage} />
       </div>
-
-      {card.notes && <div className="word-notes">{card.notes}</div>}
-
-      <WordDetail enrichment={enrichment} hidePhonetics />
     </div>
   );
 }

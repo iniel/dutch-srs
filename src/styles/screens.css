@@ -83,42 +83,10 @@
 }
 
 .word-detail {
+  gap: 14px;
   padding-bottom: max(32px, env(safe-area-inset-bottom));
 }
 
-/* Word detail hero */
-.word-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 8px;
-}
-.word-dutch {
-  font-size: 2.4rem;
-  font-weight: 800;
-  letter-spacing: -1px;
-  text-align: center;
-  color: var(--text);
-}
-.word-hero .speak-btn {
-  flex: none;
-}
-.word-english {
-  text-align: center;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-.word-notes {
-  text-align: center;
-  color: var(--text-faint);
-  font-size: 0.85rem;
-}
-.word-srs {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
 .word-srs-row {
   display: flex;
   align-items: center;
