@@ -24,6 +24,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [revealed, setRevealed] = useState(false);
+  const [flash, setFlash] = useState(false);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -33,6 +34,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     setPhase("input");
     setValue("");
     setRevealed(false);
+    setFlash(false);
   }, [task?.key]);
 
   useEffect(() => {
@@ -86,6 +88,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   }
 
   function submit() {
+    if (flash) return;
     if (phase === "wrong") {
       advanceAfterWrong();
       return;
@@ -93,11 +96,16 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     if (value.trim() === "") return;
     const { correct } = checkAnswer(value, accepted, task!.dir === "nl_en");
     if (correct) {
-      const completion = session.submit(true);
-      if (completion) onWordCleared(completion.cardId, completion.passed);
-      setValue("");
-      force((n) => n + 1);
-      if (session.isComplete()) onComplete();
+      // Let the green check flash before the next card replaces the input.
+      setFlash(true);
+      window.setTimeout(() => {
+        const completion = session.submit(true);
+        if (completion) onWordCleared(completion.cardId, completion.passed);
+        setValue("");
+        setFlash(false);
+        force((n) => n + 1);
+        if (session.isComplete()) onComplete();
+      }, 350);
     } else {
       setPhase("wrong");
     }
@@ -203,7 +211,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
                 enterKeyHint="go"
                 aria-label="answer"
               />
-              <span className="answer-check" aria-hidden="true">✓</span>
+              <span className={`answer-check ${flash ? "correct" : ""}`} aria-hidden="true">✓</span>
             </div>
           </>
         )}

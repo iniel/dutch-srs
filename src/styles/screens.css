@@ -82,6 +82,10 @@
   margin-left: 6px;
 }
 
+.word-detail {
+  padding-bottom: max(32px, env(safe-area-inset-bottom));
+}
+
 /* Word detail hero */
 .word-hero {
   display: flex;
