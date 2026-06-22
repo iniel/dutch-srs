@@ -8,10 +8,14 @@ interface WordCardProps {
   enrichment?: Enrichment;
   progress: ProgressData;
   onBack: () => void;
+  onLearnNow: (cardId: string) => void;
+  onPin: (cardId: string) => void;
+  onUnpin: (cardId: string) => void;
 }
 
-export function WordCard({ card, enrichment, progress, onBack }: WordCardProps) {
+export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin, onUnpin }: WordCardProps) {
   const stage = progress.states[card.id]?.stage ?? 0;
+  const pinned = progress.lessonQueue.includes(card.id);
   const phon = [enrichment?.ipa, enrichment?.syllables].filter(Boolean).join(" · ");
 
   return (
@@ -43,7 +47,19 @@ export function WordCard({ card, enrichment, progress, onBack }: WordCardProps) 
 
       <div className="word-srs-row">
         <span className="word-srs-label">Status</span>
-        <SrsStagePill stage={stage} />
+        <div className="word-srs-actions">
+          {stage === 0 && (
+            <>
+              <button className="srs-action primary" onClick={() => onLearnNow(card.id)}>Learn now</button>
+              {pinned ? (
+                <button className="srs-action" onClick={() => onUnpin(card.id)}>Remove from lessons</button>
+              ) : (
+                <button className="srs-action" onClick={() => onPin(card.id)}>Add to lessons</button>
+              )}
+            </>
+          )}
+          <SrsStagePill stage={stage} />
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
 };
 
 function freshProgress(settings: AppSettings = DEFAULT_SETTINGS): ProgressData {
-  return { version: CURRENT_VERSION, states: {}, settings: { ...settings } };
+  return { version: CURRENT_VERSION, states: {}, lessonQueue: [], settings: { ...settings } };
 }
 
 function mergeSettings(partial: Partial<AppSettings> | undefined): AppSettings {
@@ -66,10 +66,14 @@ function coerceProgress(value: unknown): ProgressData {
     if (isReviewState(raw)) rawStates[key] = raw;
   }
   const states = obj.version < CURRENT_VERSION ? migrateV1ToV2(rawStates) : rawStates;
+  const lessonQueue = Array.isArray(obj.lessonQueue)
+    ? obj.lessonQueue.filter((x): x is string => typeof x === "string")
+    : [];
 
   return {
     version: CURRENT_VERSION,
     states,
+    lessonQueue,
     settings: mergeSettings(obj.settings as Partial<AppSettings> | undefined),
   };
 }
@@ -99,6 +103,10 @@ export function getState(data: ProgressData, key: ItemKey): ReviewState | undefi
 
 export function setState(data: ProgressData, key: ItemKey, state: ReviewState): ProgressData {
   return { ...data, states: { ...data.states, [key]: state } };
+}
+
+export function setLessonQueue(data: ProgressData, lessonQueue: string[]): ProgressData {
+  return { ...data, lessonQueue };
 }
 
 export function updateSettings(data: ProgressData, partial: Partial<AppSettings>): ProgressData {

@@ -29,10 +29,11 @@ const initScript = `window.__NOW__ = ${CLOCK_BASE} + Number(localStorage.getItem
 async function readState(page) {
   return page.evaluate(() => {
     const raw = localStorage.getItem("dutch-srs-progress-v1");
-    const states = raw ? JSON.parse(raw).states : {};
+    const parsed = raw ? JSON.parse(raw) : {};
+    const states = parsed.states ?? {};
     const hist = {};
     for (const v of Object.values(states)) hist[v.stage] = (hist[v.stage] || 0) + 1;
-    return { count: Object.keys(states).length, hist, states };
+    return { count: Object.keys(states).length, hist, states, lessonQueue: parsed.lessonQueue ?? [] };
   });
 }
 
@@ -142,9 +143,28 @@ try {
   await page.click(".word-row");
   await page.waitForSelector(".word-detail");
   check(
-    (await page.textContent(".word-dutch")).toLowerCase().includes("hallo"),
+    (await page.textContent(".lesson-word")).toLowerCase().includes("hallo"),
     "tapping a suggestion opens its word card",
   );
+
+  await page.click('.word-detail [aria-label="back"]');
+  await page.waitForSelector(".search-input");
+
+  console.log("FEATURE — pin a searched word to lessons:");
+  await page.fill(".search-input", "bedankt");
+  await page.waitForTimeout(150);
+  await page.click(".word-row");
+  await page.waitForSelector(".word-detail");
+  await page.waitForSelector('.srs-action:has-text("Add to lessons")');
+  await page.click('.srs-action:has-text("Add to lessons")');
+  await page.waitForSelector('.srs-action:has-text("Remove from lessons")');
+  const pinned = await readState(page);
+  check(pinned.lessonQueue.length === 1, `pin persists to lessonQueue (${pinned.lessonQueue.length})`);
+  await page.click('.srs-action:has-text("Remove from lessons")');
+  await page.waitForSelector('.srs-action:has-text("Add to lessons")');
+  const unpinned = await readState(page);
+  check(unpinned.lessonQueue.length === 0, `unpin clears lessonQueue (${unpinned.lessonQueue.length})`);
+
   await page.click('.word-detail [aria-label="back"]');
   await page.waitForSelector(".search-input");
   await page.click('.search [aria-label="back"]');

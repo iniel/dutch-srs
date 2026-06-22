@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ProgressData } from "./types";
-import { loadProgress, saveProgress, setState } from "./storage/progress";
+import { loadProgress, saveProgress, setLessonQueue, setState } from "./storage/progress";
 import { newLessonState, startLesson, answerCorrect, answerIncorrect } from "./srs/schedule";
-import { buildLessonQueue, buildReviewQueue, createSession } from "./review/session";
+import { buildLessonQueue, buildReviewQueue, createSession, singleWordLessonTasks } from "./review/session";
 import type { Session, WordResult } from "./review/session";
 import type { Card } from "./types";
 import { useCards } from "./data/cards";
 import { useEnrichment } from "./data/loadEnrichment";
 import { now } from "./util/now";
+import { useVisualViewportVars } from "./util/visualViewport";
 import { unlockedLevels, currentLevel, levelProgress, wordsToLevelUp } from "./srs/levels";
 import { Dashboard } from "./screens/Dashboard";
 import { Reviews } from "./screens/Reviews";
@@ -42,6 +43,8 @@ export function App() {
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
 
+  useVisualViewportVars(screen === "reviews" || screen === "lessons");
+
   function openWordCard(cardId: string, from: Screen) {
     setSelectedCardId(cardId);
     setDetailFrom(from);
@@ -72,13 +75,41 @@ export function App() {
   function startLessons() {
     if (!index) return;
     const unlocked = unlockedLevels(index.cards, progress.states, !!progress.settings.unlockAllLevels);
-    const tasks = buildLessonQueue(index.cards, progress.states, progress.settings.lessonBatchSize, unlocked, now());
+    const tasks = buildLessonQueue(
+      index.cards,
+      progress.states,
+      progress.settings.lessonBatchSize,
+      unlocked,
+      now(),
+      progress.lessonQueue,
+    );
     if (tasks.length === 0) return;
+    enterLessonSession(tasks);
+  }
+
+  function enterLessonSession(tasks: ReturnType<typeof singleWordLessonTasks>) {
+    if (!index) return;
     const ids = [...new Set(tasks.map((t) => t.cardId))];
     setLessonCards(ids.map((id) => index.byId.get(id)!).filter(Boolean));
     setSession(createSession(tasks));
     setSessionMode("lesson");
     setScreen("lessons");
+  }
+
+  function learnNow(cardId: string) {
+    if (!index || !index.byId.has(cardId)) return;
+    if ((progress.states[cardId]?.stage ?? 0) > 0) return;
+    enterLessonSession(singleWordLessonTasks(cardId));
+  }
+
+  function pinLesson(cardId: string) {
+    if ((progress.states[cardId]?.stage ?? 0) > 0) return;
+    if (progress.lessonQueue.includes(cardId)) return;
+    persist(setLessonQueue(progress, [...progress.lessonQueue, cardId]));
+  }
+
+  function unpinLesson(cardId: string) {
+    persist(setLessonQueue(progress, progress.lessonQueue.filter((id) => id !== cardId)));
   }
 
   function applyWordReview(cardId: string, passed: boolean) {
@@ -95,7 +126,10 @@ export function App() {
     setProgress((prev) => {
       const existing = prev.states[cardId];
       if (existing && existing.stage > 0) return prev;
-      const next = setState(prev, cardId, startLesson(newLessonState(), now()));
+      let next = setState(prev, cardId, startLesson(newLessonState(), now()));
+      if (next.lessonQueue.includes(cardId)) {
+        next = setLessonQueue(next, next.lessonQueue.filter((id) => id !== cardId));
+      }
       saveProgress(next);
       return next;
     });
@@ -114,11 +148,17 @@ export function App() {
       (s) => s.stage >= 1 && !s.burned && s.availableAt <= t,
     ).length;
     const unlocked = unlockedLevels(index.cards, progress.states, !!progress.settings.unlockAllLevels);
-    const lessonCards = index.cards.filter((c) => {
-      if (c.level && !unlocked.has(c.level)) return false;
-      const s = progress.states[c.id];
+    const isNew = (id: string) => {
+      const s = progress.states[id];
       return !s || s.stage === 0;
-    }).length;
+    };
+    const available = new Set(
+      index.cards.filter((c) => (!c.level || unlocked.has(c.level)) && isNew(c.id)).map((c) => c.id),
+    );
+    for (const id of progress.lessonQueue) {
+      if (index.byId.has(id) && isNew(id)) available.add(id);
+    }
+    const lessonCards = available.size;
     const levelName = currentLevel(index.cards, progress.states);
     const levelProg = levelProgress(index.cards, progress.states, levelName);
     return {
@@ -181,6 +221,9 @@ export function App() {
           enrichment={getEnrichment(selectedCardId)}
           progress={progress}
           onBack={() => setScreen(detailFrom)}
+          onLearnNow={learnNow}
+          onPin={pinLesson}
+          onUnpin={unpinLesson}
         />
       )}
       {screen === "reviews" && session && (

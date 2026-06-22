@@ -4,6 +4,7 @@ import {
   buildLeechQueue,
   lessonsRemainingToday,
   createSession,
+  singleWordLessonTasks,
   LEECH_INCORRECT_THRESHOLD,
   type ReviewTask,
 } from "./session";
@@ -20,8 +21,8 @@ function state(partial: Partial<ReviewState>): ReviewState {
   };
 }
 
-function card(id: string, group = "g1"): Card {
-  return { id, group, dutch: id, english: [id], type: "word" };
+function card(id: string, group = "g1", level?: string): Card {
+  return { id, group, level, dutch: id, english: [id], type: "word" };
 }
 
 // Both directions of each word, in queue insertion order (en_nl before nl_en).
@@ -130,6 +131,52 @@ describe("buildLessonQueue", () => {
     const cards = [card("z"), card("a")];
     const queue = buildLessonQueue(cards, {}, 5);
     expect(queue.map((t) => t.cardId)).toEqual(["z", "z", "a", "a"]);
+  });
+});
+
+describe("buildLessonQueue pinned", () => {
+  it("emits pinned new words first, before normal selection", () => {
+    const cards = [card("a"), card("b"), card("c")];
+    const queue = buildLessonQueue(cards, {}, 5, undefined, undefined, ["c"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "a", "a", "b", "b"]);
+  });
+
+  it("includes a pinned word from a locked level, bypassing the level lock", () => {
+    const cards = [card("a", "g1", "L1"), card("b", "g1", "L9")];
+    const unlocked = new Set(["L1"]);
+    const queue = buildLessonQueue(cards, {}, 5, unlocked, undefined, ["b"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["b", "b", "a", "a"]);
+  });
+
+  it("counts pinned words toward batchSize", () => {
+    const cards = [card("a"), card("b"), card("c"), card("d")];
+    const queue = buildLessonQueue(cards, {}, 2, undefined, undefined, ["c"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "a", "a"]);
+  });
+
+  it("includes all pinned words even past batchSize, with no normal fill", () => {
+    const cards = [card("a"), card("b"), card("c"), card("d")];
+    const queue = buildLessonQueue(cards, {}, 2, undefined, undefined, ["b", "c", "d"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["b", "b", "c", "c", "d", "d"]);
+  });
+
+  it("ignores a pinned word already started (stage>0)", () => {
+    const cards = [card("a"), card("b")];
+    const states: Record<string, ReviewState> = { b: state({ stage: 3 }) };
+    const queue = buildLessonQueue(cards, states, 5, undefined, undefined, ["b"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["a", "a"]);
+  });
+
+  it("does not duplicate a pinned word also present in normal selection", () => {
+    const cards = [card("a"), card("b")];
+    const queue = buildLessonQueue(cards, {}, 5, undefined, undefined, ["a"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["a", "a", "b", "b"]);
+  });
+});
+
+describe("singleWordLessonTasks", () => {
+  it("emits both directions, en_nl before nl_en", () => {
+    expect(singleWordLessonTasks("a")).toEqual(tasksFor("a"));
   });
 });
 

@@ -11,6 +11,7 @@ import {
   resetAll,
   resetProgress,
   saveProgress,
+  setLessonQueue,
   setState,
   updateSettings,
 } from "./progress";
@@ -206,6 +207,46 @@ describe("reset", () => {
     expect(reset.states).toEqual({});
     expect(reset.settings).toEqual(DEFAULT_SETTINGS);
     expect(localStorage.getItem(STORAGE_KEY)).toBeNull();
+  });
+});
+
+describe("lessonQueue", () => {
+  it("defaults to empty when absent", () => {
+    expect(loadProgress().lessonQueue).toEqual([]);
+  });
+
+  it("persists across save and load", () => {
+    let data = loadProgress();
+    data = setLessonQueue(data, ["c1", "c2"]);
+    saveProgress(data);
+    expect(loadProgress().lessonQueue).toEqual(["c1", "c2"]);
+  });
+
+  it("drops non-string entries on load", () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ version: CURRENT_VERSION, states: {}, settings: DEFAULT_SETTINGS, lessonQueue: ["c1", 2, null] }),
+    );
+    expect(loadProgress().lessonQueue).toEqual(["c1"]);
+  });
+
+  it("round-trips through export and import", () => {
+    let data = loadProgress();
+    data = setLessonQueue(data, ["c1"]);
+    expect(importProgress(exportProgress(data)).lessonQueue).toEqual(["c1"]);
+  });
+
+  it("setLessonQueue does not mutate the original", () => {
+    const data = loadProgress();
+    const next = setLessonQueue(data, ["c1"]);
+    expect(next).not.toBe(data);
+    expect(data.lessonQueue).toEqual([]);
+  });
+
+  it("reset clears the queue", () => {
+    let data = setLessonQueue(loadProgress(), ["c1"]);
+    saveProgress(data);
+    expect(resetProgress().lessonQueue).toEqual([]);
   });
 });
 

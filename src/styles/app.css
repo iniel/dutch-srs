@@ -221,7 +221,10 @@
 /* ---- Quiz (Tsurukame full-bleed) ---- */
 .session-screen {
   position: fixed;
-  inset: 0;
+  top: var(--vvt, 0px);
+  left: 0;
+  right: 0;
+  height: var(--vvh, 100dvh);
   overflow: hidden;
   max-width: var(--maxw);
   margin-inline: auto;
@@ -454,6 +457,28 @@
 }
 .btn:disabled {
   opacity: 0.45;
+}
+
+.word-srs-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.srs-action {
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.srs-action.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 .lesson-nav {

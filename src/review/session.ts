@@ -128,29 +128,44 @@ export function lessonsRemainingToday(
 
 const LESSON_DIR_ORDER: Direction[] = ["en_nl", "nl_en"];
 
+export function singleWordLessonTasks(cardId: string): ReviewTask[] {
+  return LESSON_DIR_ORDER.map((dir) => ({ key: itemKey(cardId, dir), cardId, dir }));
+}
+
 export function buildLessonQueue(
   cards: Card[],
   states: Record<ItemKey, ReviewState>,
   batchSize: number,
   unlocked?: Set<string>,
   seed?: number,
+  pinned: string[] = [],
 ): ReviewTask[] {
-  const tasks: ReviewTask[] = [];
-  let picked = 0;
+  const isNew = (id: string) => {
+    const state = states[id];
+    return !state || state.stage === 0;
+  };
+  const byId = new Map(cards.map((c) => [c.id, c]));
 
-  for (const card of cards) {
-    if (picked >= batchSize) break;
-    if (unlocked && card.level && !unlocked.has(card.level)) continue;
-    const state = states[card.id];
-    const isNew = !state || state.stage === 0;
-    if (!isNew) continue;
+  const picked: string[] = [];
+  const pickedSet = new Set<string>();
 
-    for (const dir of LESSON_DIR_ORDER) {
-      tasks.push({ key: itemKey(card.id, dir), cardId: card.id, dir });
-    }
-    picked++;
+  // Pinned words go first and bypass the level lock; all are kept even past batchSize.
+  for (const id of pinned) {
+    if (pickedSet.has(id) || !byId.has(id) || !isNew(id)) continue;
+    picked.push(id);
+    pickedSet.add(id);
   }
 
+  for (const card of cards) {
+    if (picked.length >= batchSize) break;
+    if (pickedSet.has(card.id)) continue;
+    if (unlocked && card.level && !unlocked.has(card.level)) continue;
+    if (!isNew(card.id)) continue;
+    picked.push(card.id);
+    pickedSet.add(card.id);
+  }
+
+  const tasks = picked.flatMap(singleWordLessonTasks);
   return seed === undefined ? tasks : shuffleKeepingDirOrder(tasks, seed);
 }
 

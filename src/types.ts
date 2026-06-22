@@ -117,6 +117,8 @@ export interface ProgressData {
   version: number;
   /** One SRS state per word, keyed by `cardId`. Both directions share it. */
   states: Record<string, ReviewState>;
+  /** cardIds pinned to jump the level lock and lead the next lesson batch. */
+  lessonQueue: string[];
   settings: AppSettings;
 }
 

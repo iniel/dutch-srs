@@ -87,6 +87,12 @@ body {
   overscroll-behavior-y: none;
 }
 
+body.scroll-locked {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
 #root {
   max-width: var(--maxw);
   margin: 0 auto;
