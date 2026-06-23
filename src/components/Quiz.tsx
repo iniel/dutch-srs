@@ -38,6 +38,12 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   }, [task?.key]);
 
   useEffect(() => {
+    if (!task || task.dir !== "nl_en") return;
+    const c = getCard(task.cardId);
+    if (c) speak(c.dutch);
+  }, [task?.key]);
+
+  useEffect(() => {
     if (phase === "input") inputRef.current?.focus();
   }, [phase]);
 

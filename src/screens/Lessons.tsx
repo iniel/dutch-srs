@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Card, Enrichment } from "../types";
 import type { Session } from "../review/session";
 import { speak, speechSupported } from "../util/speak";
@@ -19,6 +19,12 @@ interface LessonsProps {
 export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: LessonsProps) {
   const [phase, setPhase] = useState<"info" | "quiz">("info");
   const [idx, setIdx] = useState(0);
+
+  useEffect(() => {
+    if (phase !== "info") return;
+    const card = lessonCards[idx];
+    if (card) speak(card.dutch);
+  }, [idx, phase, lessonCards]);
 
   if (phase === "info") {
     const card = lessonCards[idx];
