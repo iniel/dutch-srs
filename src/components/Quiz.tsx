@@ -27,6 +27,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   const [flash, setFlash] = useState(false);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const wrongScrollRef = useRef<HTMLDivElement>(null);
 
   const task = session.current();
 
@@ -127,39 +128,33 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   const total = session.total();
   const pct = total === 0 ? 0 : Math.round((session.done() / total) * 100);
 
-  return (
-    <div className="quiz">
-      <div className="quiz-prompt">
-        <div className="quiz-progress" role="progressbar" aria-valuenow={pct}>
-          <div className="quiz-progress-fill" style={{ width: `${pct}%` }} />
-        </div>
-        <div className="quiz-top">
-          <button className="quiz-quit" onClick={onQuit} aria-label="quit">✕</button>
-          <div className="quiz-counters">
-            <span className="quiz-correct">✓ {session.done()}</span>
-            <span className="quiz-left">{session.remaining()} left</span>
-          </div>
-        </div>
-        <div className="quiz-word">
-          <div className="prompt-label">
-            {dirLabel(task.dir)} · {card.type}
-          </div>
-          <div className="prompt-text">{prompt}</div>
-          {task.dir === "nl_en" && speechSupported() && (
-            <button
-              type="button"
-              className="quiz-speak"
-              onClick={() => speak(card.dutch)}
-              aria-label="Pronounce Dutch word"
-            >
-              🔊
-            </button>
-          )}
+  const progressHeader = (
+    <>
+      <div className="quiz-progress" role="progressbar" aria-valuenow={pct}>
+        <div className="quiz-progress-fill" style={{ width: `${pct}%` }} />
+      </div>
+      <div className="quiz-top">
+        <button className="quiz-quit" onClick={onQuit} aria-label="quit">✕</button>
+        <div className="quiz-counters">
+          <span className="quiz-correct">✓ {session.done()}</span>
+          <span className="quiz-left">{session.remaining()} left</span>
         </div>
       </div>
+    </>
+  );
 
-      <div className="quiz-answer">
-        {phase === "wrong" ? (
+  if (phase === "wrong") {
+    return (
+      <div className="quiz wrong-screen">
+        <div className="quiz-prompt wrong-prompt">
+          {progressHeader}
+          <div className="wrong-recap">
+            <div className="prompt-label">{dirLabel(task.dir)} · {card.type}</div>
+            <div className="wrong-prompt-text">{prompt}</div>
+          </div>
+        </div>
+
+        <div className="wrong-scroll" ref={wrongScrollRef}>
           <div className="feedback wrong-feedback">
             <div className="feedback-title">Incorrect</div>
             {revealed ? (
@@ -189,31 +184,58 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
                 Show answer
               </button>
             )}
-            <button className="btn primary" onClick={advanceAfterWrong}>
-              Continue (Enter)
-            </button>
           </div>
-        ) : (
-          <>
-            <div className="answer-field">
-              <input
-                ref={inputRef}
-                className="answer-input"
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-                onKeyDown={onKeyDown}
-                placeholder="Your response"
-                autoCapitalize="off"
-                autoCorrect="off"
-                autoComplete="off"
-                spellCheck={false}
-                enterKeyHint="go"
-                aria-label="answer"
-              />
-              <span className={`answer-check ${flash ? "correct" : ""}`} aria-hidden="true">✓</span>
-            </div>
-          </>
-        )}
+        </div>
+
+        <div className="wrong-foot">
+          <button className="btn primary block" onClick={advanceAfterWrong}>
+            Continue (Enter)
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="quiz">
+      <div className="quiz-prompt">
+        {progressHeader}
+        <div className="quiz-word">
+          <div className="prompt-label">
+            {dirLabel(task.dir)} · {card.type}
+          </div>
+          <div className="prompt-text">{prompt}</div>
+          {task.dir === "nl_en" && speechSupported() && (
+            <button
+              type="button"
+              className="quiz-speak"
+              onClick={() => speak(card.dutch)}
+              aria-label="Pronounce Dutch word"
+            >
+              🔊
+            </button>
+          )}
+        </div>
+      </div>
+
+      <div className="quiz-answer">
+        <div className="answer-field">
+          <input
+            ref={inputRef}
+            className="answer-input"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            onKeyDown={onKeyDown}
+            placeholder="Your response"
+            autoCapitalize="off"
+            autoCorrect="off"
+            autoComplete="off"
+            spellCheck={false}
+            enterKeyHint="go"
+            aria-label="answer"
+          />
+          <span className={`answer-check ${flash ? "correct" : ""}`} aria-hidden="true">✓</span>
+        </div>
       </div>
     </div>
   );
