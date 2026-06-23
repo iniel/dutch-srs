@@ -66,7 +66,7 @@ export function Dashboard({
     <div className="screen dashboard">
       <header className="topbar">
         <button className="icon-btn" onClick={onSearch} aria-label="search">🔍</button>
-        <h1>Dutch SRS</h1>
+        <h1>Dutch</h1>
         <button className="icon-btn" onClick={onSettings} aria-label="settings">⚙</button>
       </header>
 

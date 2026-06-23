@@ -14,8 +14,8 @@ export default defineConfig({
       registerType: "prompt",
       injectRegister: false,
       manifest: {
-        name: "Dutch SRS",
-        short_name: "DutchSRS",
+        name: "Dutch",
+        short_name: "Dutch",
         description: "Personal Dutch vocabulary SRS",
         theme_color: "#aa00ff",
         background_color: "#0e0e10",
