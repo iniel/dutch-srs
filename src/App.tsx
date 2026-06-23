@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { ProgressData } from "./types";
 import { loadProgress, saveProgress, setLessonQueue, setState } from "./storage/progress";
 import { newLessonState, startLesson, answerCorrect, answerIncorrect } from "./srs/schedule";
@@ -18,6 +18,7 @@ import { Settings } from "./screens/Settings";
 import { Search } from "./screens/Search";
 import { WordList } from "./screens/WordList";
 import { WordCard } from "./components/WordCard";
+import { registerPwa } from "./pwa/registerPwa";
 
 export type Screen =
   | "dashboard"
@@ -42,8 +43,14 @@ export function App() {
   const [summary, setSummary] = useState<{ results: WordResult[]; mode: "review" | "lesson" } | null>(null);
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
+  const [updateReady, setUpdateReady] = useState(false);
+  const applyUpdate = useRef<((reload?: boolean) => Promise<void>) | null>(null);
 
   useVisualViewportVars(screen === "reviews" || screen === "lessons");
+
+  useEffect(() => {
+    applyUpdate.current = registerPwa(() => setUpdateReady(true));
+  }, []);
 
   function openWordCard(cardId: string, from: Screen) {
     setSelectedCardId(cardId);
@@ -175,6 +182,11 @@ export function App() {
 
   return (
     <div className="app">
+      {updateReady && (
+        <button className="update-banner" onClick={() => applyUpdate.current?.(true)}>
+          New version — tap to update
+        </button>
+      )}
       {screen === "dashboard" && (
         <Dashboard
           progress={progress}

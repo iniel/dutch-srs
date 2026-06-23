@@ -89,6 +89,10 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
 
       <section className="setting-block">
         <h2>Backup</h2>
+        <p className="setting-note">
+          The home-screen app and Safari keep <strong>separate</strong> storage. Deleting the
+          home-screen icon erases its progress — export first before reinstalling.
+        </p>
         <button className="btn block" onClick={download}>Export progress (JSON)</button>
         <textarea
           className="import-area"
@@ -115,6 +119,8 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
       </section>
 
       {msg && <div className="settings-msg">{msg}</div>}
+
+      <div className="app-version">Build {__BUILD_TIME__}</div>
     </div>
   );
 }
