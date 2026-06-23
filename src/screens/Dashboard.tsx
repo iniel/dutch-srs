@@ -106,11 +106,10 @@ export function Dashboard({
         <strong>{nextAt === Infinity ? "—" : `in ${fmtNext(nextAt)}`}</strong>
       </div>
 
-      <section className="srs-breakdown">
-        <button className="words-link" onClick={onWords}>
+      <button className="srs-breakdown" onClick={onWords} aria-label="Words in progress">
+        <div className="words-link">
           <h2>Words</h2>
-          <span className="words-link-chevron">›</span>
-        </button>
+        </div>
         <div className="srs-row">
           {CATEGORIES.map((c) => (
             <div className="srs-cell" key={c.key}>
@@ -119,7 +118,7 @@ export function Dashboard({
             </div>
           ))}
         </div>
-      </section>
+      </button>
     </div>
   );
 }
