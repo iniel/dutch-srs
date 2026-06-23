@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Card, Enrichment } from "../types";
 import type { Session } from "../review/session";
 import { speak, speechSupported } from "../util/speak";
@@ -19,11 +19,13 @@ interface LessonsProps {
 export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: LessonsProps) {
   const [phase, setPhase] = useState<"info" | "quiz">("info");
   const [idx, setIdx] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (phase !== "info") return;
     const card = lessonCards[idx];
     if (card) speak(card.dutch);
+    scrollRef.current?.scrollTo(0, 0);
   }, [idx, phase, lessonCards]);
 
   if (phase === "info") {
@@ -41,7 +43,7 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
 
         <ProgressBar done={idx + 1} total={lessonCards.length} />
 
-        <div className="lesson-scroll">
+        <div className="lesson-scroll" ref={scrollRef}>
           <div className="lesson-hero">
             <div className="lesson-eyebrow">{card.type} · {card.group}</div>
             <div className="lesson-word">
