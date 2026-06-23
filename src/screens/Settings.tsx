@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { AppSettings, ProgressData } from "../types";
 import {
   exportProgress,
@@ -14,8 +14,8 @@ interface SettingsProps {
 }
 
 export function Settings({ progress, onChange, onBack }: SettingsProps) {
-  const [importText, setImportText] = useState("");
   const [msg, setMsg] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   function setSetting(partial: Partial<AppSettings>) {
     onChange(updateSettings(progress, partial));
@@ -31,11 +31,10 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
     URL.revokeObjectURL(url);
   }
 
-  function doImport() {
+  async function doImport(file: File) {
     try {
-      const data = importProgress(importText);
+      const data = importProgress(await file.text());
       onChange(data);
-      setImportText("");
       setMsg("Progress imported.");
     } catch (e) {
       setMsg(e instanceof Error ? e.message : "Import failed.");
@@ -94,13 +93,18 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
           home-screen icon erases its progress — export first before reinstalling.
         </p>
         <button className="btn block" onClick={download}>Export progress (JSON)</button>
-        <textarea
-          className="import-area"
-          placeholder="Paste exported JSON here to import…"
-          value={importText}
-          onChange={(e) => setImportText(e.target.value)}
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="application/json,.json"
+          hidden
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file) doImport(file);
+            e.target.value = "";
+          }}
         />
-        <button className="btn block" onClick={doImport} disabled={!importText.trim()}>Import progress</button>
+        <button className="btn block" onClick={() => fileInputRef.current?.click()}>Import progress (JSON)</button>
       </section>
 
       <section className="setting-block">

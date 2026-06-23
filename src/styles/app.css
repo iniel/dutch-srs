@@ -729,21 +729,6 @@
   line-height: 1.4;
   color: var(--text-muted);
 }
-.import-area {
-  width: 100%;
-  min-height: 80px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-faint);
-  background: var(--surface-muted);
-  color: var(--text);
-  padding: 14px;
-  font-family: ui-monospace, monospace;
-  font-size: 0.82rem;
-  resize: vertical;
-}
-.import-area::placeholder {
-  color: var(--text-faint);
-}
 .settings-msg {
   background: var(--surface-2);
   border-radius: 10px;
