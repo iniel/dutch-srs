@@ -41,29 +41,31 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
 
         <ProgressBar done={idx + 1} total={lessonCards.length} />
 
-        <div className="lesson-hero">
-          <div className="lesson-eyebrow">{card.type} · {card.group}</div>
-          <div className="lesson-word">
-            {card.dutch}
-            {speechSupported() && (
-              <button
-                type="button"
-                className="speak-btn"
-                onClick={() => speak(card.dutch)}
-                aria-label="Pronounce Dutch word"
-              >
-                🔊
-              </button>
-            )}
+        <div className="lesson-scroll">
+          <div className="lesson-hero">
+            <div className="lesson-eyebrow">{card.type} · {card.group}</div>
+            <div className="lesson-word">
+              {card.dutch}
+              {speechSupported() && (
+                <button
+                  type="button"
+                  className="speak-btn"
+                  onClick={() => speak(card.dutch)}
+                  aria-label="Pronounce Dutch word"
+                >
+                  🔊
+                </button>
+              )}
+            </div>
+            <div className="lesson-meaning">{card.english.join(", ")}</div>
+            {phon && <div className="lesson-phon">{phon}</div>}
+            {card.notes && <div className="feedback-notes">{card.notes}</div>}
           </div>
-          <div className="lesson-meaning">{card.english.join(", ")}</div>
-          {phon && <div className="lesson-phon">{phon}</div>}
-          {card.notes && <div className="feedback-notes">{card.notes}</div>}
+
+          <hr className="hairline" />
+
+          <WordDetail enrichment={e} hidePhonetics />
         </div>
-
-        <hr className="hairline" />
-
-        <WordDetail enrichment={e} hidePhonetics />
 
         <div className="lesson-nav">
           {idx > 0 && (

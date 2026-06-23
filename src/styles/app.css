@@ -481,10 +481,8 @@
 
 .lesson-nav {
   display: flex;
+  flex: 0 0 auto;
   gap: 12px;
-  margin-top: auto;
-  position: sticky;
-  bottom: 0;
   background: var(--bg);
   border-top: 1px solid var(--border-faint);
   padding: 10px 0 max(8px, env(safe-area-inset-bottom));
@@ -495,7 +493,25 @@
 
 /* Lesson teach hero */
 .lesson-screen {
+  position: fixed;
+  top: var(--vvt, 0px);
+  left: 0;
+  right: 0;
+  height: var(--vvh, 100dvh);
+  overflow: hidden;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: env(safe-area-inset-top) 16px 0;
+  gap: 0;
+}
+.lesson-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
+  padding-top: 10px;
 }
 .lesson-eyebrow {
   font-size: 0.72rem;
