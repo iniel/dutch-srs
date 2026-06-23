@@ -327,6 +327,7 @@
   padding: 16px max(16px, env(safe-area-inset-left)) max(8px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-right));
 }
 .answer-field {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -357,6 +358,8 @@
   display: none;
 }
 .answer-check.correct {
+  position: absolute;
+  right: 0;
   flex: none;
   width: 28px;
   height: 28px;
@@ -610,7 +613,7 @@
 /* Summary */
 .summary {
   text-align: left;
-  min-height: calc(100vh - 20px);
+  min-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 16px);
 }
 .summary > .btn.block {
   margin-top: auto;
