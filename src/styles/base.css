@@ -1,8 +1,8 @@
 :root {
-  /* Single blue accent (redesign B) */
-  --accent: #2563eb;
-  --accent-dark: #1e40af;
-  --accent-soft: #eff6ff;
+  /* Indigo accent */
+  --accent: #4f46e5;
+  --accent-dark: #4338ca;
+  --accent-soft: #eef2ff;
 
   /* SRS stage colors (Tsurukame Style.swift) */
   --srs-apprentice: #de0094;
@@ -13,7 +13,7 @@
 
   /* Feedback */
   --correct: #1faa59;
-  --incorrect: #dc2626;
+  --incorrect: #be123c;
   --danger-soft: #fef2f2;
   --danger-border: #fecaca;
 
