@@ -143,15 +143,15 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
 
   const progressHeader = (
     <>
-      <div className="quiz-progress" role="progressbar" aria-valuenow={pct}>
-        <div className="quiz-progress-fill" style={{ width: `${pct}%` }} />
-      </div>
       <div className="quiz-top">
         <button className="quiz-quit" onClick={onQuit} aria-label="quit">✕</button>
         <div className="quiz-counters">
           <span className="quiz-correct">✓ {session.done()}</span>
           <span className="quiz-left">{session.remaining()} left</span>
         </div>
+      </div>
+      <div className="quiz-progress" role="progressbar" aria-valuenow={pct}>
+        <div className="quiz-progress-fill" style={{ width: `${pct}%` }} />
       </div>
     </>
   );

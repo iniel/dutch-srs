@@ -247,12 +247,10 @@
   flex-direction: column;
 }
 .quiz-progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   height: 4px;
   background: var(--accent-dark);
+  margin-top: 6px;
 }
 .quiz-progress-fill {
   height: 100%;
