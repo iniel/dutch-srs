@@ -19,7 +19,8 @@ npm run build        # tsc -b + vite build -> dist/
 npm test             # vitest: 85 unit tests (pure logic + storage)
 npm run test:e2e     # full-flow browser test (system Chrome, ~1min)
 npm run convert      # regenerate public/cards.json from the .apkg decks (A1/A2)
-npm run convert:nt2lex # append A+/B1/B2 freq vocab; run AFTER convert, then enrich
+npm run convert:nt2lex # append A+/B1/B2 freq vocab; run AFTER convert
+npm run clean        # drop dup cards + junk/truncated glosses; run AFTER convert:nt2lex, before enrich
 ```
 After any logic/UI change: `npm run build && npm test && npm run test:e2e` must all pass.
 
@@ -30,6 +31,7 @@ After any logic/UI change: `npm run build && npm test && npm run test:e2e` must 
 | SRS stages + intervals | `src/srs/stages.ts` | stage→interval, colors, category. **Pure.** |
 | SRS scheduling | `src/srs/schedule.ts` | advance/demote/startLesson. **Pure, takes `now`.** |
 | Answer checking | `src/review/answerCheck.ts` | normalize, levenshtein, accepted answers. **Pure.** |
+| Synonym pooling | `src/review/synonyms.ts` | cross-card answer pools; `pooledAccepted()` widens checking for collisions. **Pure.** |
 | Session queue | `src/review/session.ts` | build queues, `createSession()`. **Pure.** |
 | Storage | `src/storage/progress.ts` | localStorage load/save/export/import/reset |
 | Card loading | `src/data/loadCards.ts`, `src/data/cards.ts` | fetch + index + `useCards()` hook |

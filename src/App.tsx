@@ -78,7 +78,9 @@ export function App() {
 
   function startReviews() {
     if (!index) return;
-    const tasks = buildReviewQueue(progress.states, now(), "shuffled");
+    const tasks = buildReviewQueue(progress.states, now(), "shuffled").filter((t) =>
+      index.byId.has(t.cardId),
+    );
     if (tasks.length === 0) return;
     setSession(createSession(tasks));
     setSessionMode("review");
@@ -251,6 +253,7 @@ export function App() {
           session={session}
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
+          pools={index.pools}
           onWordCleared={applyWordReview}
           onComplete={finishSession}
           onQuit={() => {
@@ -265,6 +268,7 @@ export function App() {
           lessonCards={lessonCards}
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
+          pools={index.pools}
           onWordCleared={applyWordLesson}
           onComplete={finishSession}
           onQuit={() => {

@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
-import { acceptedForDirection, checkAnswer } from "../review/answerCheck";
+import { checkAnswer } from "../review/answerCheck";
+import { pooledAccepted, type AnswerPools } from "../review/synonyms";
 import { speak, speechSupported } from "../util/speak";
 
 interface QuizProps {
   session: Session;
   getCard: (cardId: string) => Card | undefined;
   getEnrichment?: (cardId: string) => Enrichment | undefined;
+  pools: AnswerPools;
   /** Fired once per word, when both its directions have cleared. */
   onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
@@ -19,10 +21,11 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, onComplete, onQuit }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [flash, setFlash] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -32,6 +35,7 @@ export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: Qu
     setPhase("input");
     setValue("");
     setFlash(false);
+    setShowHint(false);
   }, [task?.key]);
 
   useEffect(() => {
@@ -80,7 +84,19 @@ export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: Qu
   if (!card) return null;
 
   const prompt = task.dir === "nl_en" ? card.dutch : card.english.join(" / ");
-  const accepted = acceptedForDirection(card, task.dir);
+  // Pooled across colliding cards for checking; the reveal shows only this card's
+  // own answer so a synonym-heavy meaning doesn't dump dozens of words.
+  const accepted = pooledAccepted(card, task.dir, pools);
+  const reveal = task.dir === "nl_en" ? card.english : [card.dutch];
+
+  // Disambiguation hint for colliding words. Direction-safe: NL→EN may show the
+  // Dutch example (answer is English); EN→NL shows only the English example so
+  // the Dutch answer isn't given away.
+  const enr = getEnrichment?.(card.id);
+  const example =
+    task.dir === "nl_en"
+      ? card.exampleNl ?? enr?.examples?.find((e) => e.nl)?.nl
+      : card.exampleEn ?? enr?.examples?.find((e) => e.en)?.en;
 
   function advanceAfterWrong() {
     advanceRef.current();
@@ -146,6 +162,7 @@ export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: Qu
         <div className="quiz-word">
           <div className="prompt-label">
             {dirLabel(task.dir)} · {card.type}
+            {card.pos ? ` · ${card.pos}` : ""}
           </div>
           <div className="prompt-row">
             <div className="prompt-text">{prompt}</div>
@@ -160,9 +177,18 @@ export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: Qu
               </button>
             )}
           </div>
+          {!wrong && example && (
+            showHint ? (
+              <div className="quiz-hint" lang={task.dir === "nl_en" ? "nl" : "en"}>{example}</div>
+            ) : (
+              <button type="button" className="quiz-hint-btn" onClick={() => setShowHint(true)}>
+                Show example
+              </button>
+            )
+          )}
           {wrong && (
             <div className="quiz-reveal">
-              {accepted.join(", ")}
+              {reveal.join(", ")}
               {task.dir === "en_nl" && speechSupported() && (
                 <button
                   type="button"

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Card, Enrichment } from "../types";
 import type { Session } from "../review/session";
+import type { AnswerPools } from "../review/synonyms";
 import { speak, speechSupported } from "../util/speak";
 import { Quiz } from "../components/Quiz";
 import { WordDetail } from "../components/WordDetail";
@@ -11,12 +12,13 @@ interface LessonsProps {
   lessonCards: Card[];
   getCard: (id: string) => Card | undefined;
   getEnrichment?: (id: string) => Enrichment | undefined;
+  pools: AnswerPools;
   onWordCleared: (cardId: string) => void;
   onComplete: () => void;
   onQuit: () => void;
 }
 
-export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: LessonsProps) {
+export function Lessons({ session, lessonCards, getCard, getEnrichment, pools, onWordCleared, onComplete, onQuit }: LessonsProps) {
   const [phase, setPhase] = useState<"info" | "quiz">("info");
   const [idx, setIdx] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -90,6 +92,7 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
         session={session}
         getCard={getCard}
         getEnrichment={getEnrichment}
+        pools={pools}
         onWordCleared={(cardId) => onWordCleared(cardId)}
         onComplete={onComplete}
         onQuit={onQuit}

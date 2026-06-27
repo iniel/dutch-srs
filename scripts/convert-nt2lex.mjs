@@ -61,12 +61,29 @@ function readCandidates() {
   return byHead;
 }
 
+// Pieces that are pure function words ("of", "from") are useless as quiz answers;
+// bare proper-noun fragments are usually a comma-split place definition
+// ("hamlet in X, Zeeland, Netherlands" -> drop "Zeeland"/"Netherlands").
+const ANSWER_STOP = new Set([
+  "of", "from", "to", "a", "an", "the", "and", "or", "in", "on", "at", "for",
+  "with", "by", "as", "it", "is", "be", "that", "this", "one", "not", "no",
+]);
+const isStopPiece = (p) => {
+  const toks = p.toLowerCase().split(/\s+/).filter(Boolean);
+  return toks.length > 0 && toks.every((t) => ANSWER_STOP.has(t));
+};
+const isProperPiece = (p) => {
+  const toks = p.split(/\s+/).filter(Boolean);
+  return toks.length > 0 && toks.every((t) => /^[A-ZÀ-Þ]/.test(t));
+};
+
 // A Kaikki gloss can pack several meanings plus a parenthetical definition
 // ("come on; modal particle ...", "society (long-standing group ...)"). Strip
 // the parenthetical, split into answer phrases, keep only the short ones — long
-// remainders are definitions, not usable quiz answers.
+// remainders are definitions, not usable quiz answers. Then drop function-word
+// fragments, and proper-noun fragments when a real meaning still remains.
 function answersFromGlosses(glosses) {
-  const out = [];
+  let out = [];
   for (const g of glosses ?? []) {
     const cleaned = (g ?? "").replace(/\([^)]*\)/g, " ");
     for (const piece of cleaned.split(/[;,/]|\bor\b/i)) {
@@ -74,7 +91,9 @@ function answersFromGlosses(glosses) {
       if (p && p.split(/\s+/).length <= MAX_GLOSS_WORDS) out.push(p);
     }
   }
-  return [...new Set(out)].slice(0, MAX_GLOSSES);
+  out = [...new Set(out)].filter((p) => !isStopPiece(p));
+  if (out.some((p) => !isProperPiece(p))) out = out.filter((p) => !isProperPiece(p));
+  return out.slice(0, MAX_GLOSSES);
 }
 
 function buildCard(cand, entry) {

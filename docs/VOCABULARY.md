@@ -53,11 +53,13 @@ answer comes from Kaikki glosses at convert time, everything else from the norma
 ```bash
 npm run convert          # rebuild the Anki block first (owns c0..c1747)
 npm run convert:nt2lex   # append A+/B1/B2; consumes + rewrites cards.json
+npm run clean            # drop dup cards + junk/truncated glosses (drop-only, never renumbers)
 npm run enrich           # generate enrichment.json for all cards (new ones included)
 ```
 Run order matters: `convert:nt2lex` reads the Anki block, so it must run **after** `convert`. Re-running
 `convert` alone drops the appended levels. `convert:nt2lex` is idempotent (strips any prior `A+`/`B1`/`B2`
-cards before rebuilding) and never touches the Anki ids/progress.
+cards before rebuilding) and never touches the Anki ids/progress. `clean` runs **after** both and **before**
+`enrich` so enrichment keys match the final card set.
 
 What it does:
 - Keeps content words only (NT2Lex tags `N( WW( ADJ( BW(`), one per lemma, at its lowest band.
@@ -67,6 +69,29 @@ What it does:
   leading `a/an/the` removed, ≤4 words each). Nouns get their `de`/`het` article prepended to `dutch`.
 - Frequency-sorted (`U@TOTAL`) within each level, chunked into groups of 25 (`A+ · 1`, `A+ · 2`, …).
 - Shares the Kaikki streaming index with `enrich-cards.mjs` (`scripts/enrich/kaikki-index.mjs`).
+
+## Cleaning pass (`scripts/clean-cards.mjs`)
+Regen-safe, **idempotent, drop-only** (never renumbers, so `enrichment.json` and saved progress stay valid).
+Runs after `convert:nt2lex`, before `enrich`. It:
+- drops glosses that are pure function words (`of`, `from`, `to be`, …) unless that would empty the card;
+- strips register tags (`(formal)`, `(informal)`, …) and `etc.`/`e.g.`/`i.e.` remnants from glosses;
+- salvages truncated/unbalanced-parenthesis fragments (`article (een` → `article`, `moss …)` → `moss …`);
+- drops exact-duplicate cards (same article-stripped Dutch + same English), keeping the lowest id.
+
+Place-name fragment junk (`schapenbout` → `Zeeland`, `Netherlands`) is prevented at the source in
+`convert-nt2lex.mjs` (`answersFromGlosses` drops stopword/proper-noun comma-pieces), so curated cards whose
+answer is legitimately a proper noun (`CD`, `Muslim`) are never touched. Audit with
+`node scripts/enrich/analyze-collisions.mjs` (writes `scripts/enrich/collisions-report.json`).
+
+## Collisions handled at runtime (`src/review/synonyms.ts`)
+Two words can legitimately share a surface form (NL→EN: `zijn` = "to be" / "his") or a meaning
+(EN→NL: "nice" = `leuk` / `aardig` / `fijn`). Rather than merge cards, `buildAnswerPools()` indexes every
+card and `pooledAccepted()` widens the accepted set so any sibling answer counts as correct in both
+directions; the bare answer for a parenthetical/placeholder gloss (`cousin (male)` → also `cousin`,
+`to call somebody` → also `to call`) is accepted here too, **without** mutating the EN→NL prompt. The Quiz
+prompt also shows the part of speech and an optional, direction-safe example sentence as a disambiguation
+hint. Tradeoff: English homonyms over-accept (e.g. "state" = `staat` and `verklaren`); the POS/example hint
+mitigates and this is intentional.
 
 ## Editing cards directly
 Hand-editing `public/cards.json` is fine for small fixes. Keep the schema, keep ids unique and stable

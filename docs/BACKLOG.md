@@ -8,6 +8,19 @@ Priority order is roughly top-down. Items are independent unless noted.
 
 ---
 
+## DONE — Card collisions & gloss noise
+**What:** Same Dutch / different English (44 groups) and same English / different Dutch (~2k groups) were
+marked wrong for valid synonyms; exact-duplicate cards were drilled twice; auto-extracted glosses carried
+junk (function words, place fragments, register tags, truncated parens).
+**Fix:** Data — `scripts/clean-cards.mjs` (drop-only cleaning pass, run after `convert:nt2lex`) plus a
+stopword/proper-noun filter in `convert-nt2lex.mjs`. Runtime — `src/review/synonyms.ts` pools accepted
+answers across colliding cards in both directions (and accepts bare answers for parenthetical/placeholder
+glosses), wired through `Quiz`; the prompt shows POS + a direction-safe example hint.
+**Tradeoff:** English homonyms over-accept ("state" = `staat` / `verklaren`); accepted intentionally,
+mitigated by the hint. Audit anytime with `node scripts/enrich/analyze-collisions.mjs`.
+
+---
+
 ## BUG 1 — Unreadable gray notes text on cards
 **Problem:** The secondary line on cards (e.g. `n. · forms: de mannen`) is dark gray (`--text-muted`)
 rendered on the purple prompt-card → barely visible (see Image #1).

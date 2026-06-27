@@ -1,0 +1,5720 @@
+{
+  "summary": {
+    "totalCards": 10047,
+    "dutchCollisions": 44,
+    "dutchCollisionCards": 92,
+    "englishCollisions": 2023,
+    "englishCollisionCards": 4033,
+    "junkGlossCollisions": 6,
+    "exactDuplicates": 0,
+    "extraWords": {
+      "parenthetical": 23,
+      "bracket": 0,
+      "slash_alt": 0,
+      "multi_clause": 0,
+      "placeholder": 83,
+      "register_tag": 0,
+      "abbrev_etc": 0,
+      "infinitive_to": 2744
+    }
+  },
+  "dutchCollisions": [
+    {
+      "key": "dag",
+      "ids": [
+        "c18",
+        "c171"
+      ],
+      "variants": [
+        {
+          "id": "c18",
+          "dutch": "dag",
+          "english": [
+            "hello",
+            "bye"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c171",
+          "dutch": "de dag",
+          "english": [
+            "day"
+          ],
+          "level": "A1 · U2"
+        }
+      ]
+    },
+    {
+      "key": "korte klank",
+      "ids": [
+        "c29",
+        "c1122"
+      ],
+      "variants": [
+        {
+          "id": "c29",
+          "dutch": "de korte klank",
+          "english": [
+            "short sound"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c1122",
+          "dutch": "de korte klank",
+          "english": [
+            "short vowel"
+          ],
+          "level": "A2 · U2"
+        }
+      ]
+    },
+    {
+      "key": "u",
+      "ids": [
+        "c47",
+        "c1262"
+      ],
+      "variants": [
+        {
+          "id": "c47",
+          "dutch": "u",
+          "english": [
+            "you (polite)"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c1262",
+          "dutch": "u",
+          "english": [
+            "you"
+          ],
+          "level": "A2 · U4"
+        }
+      ]
+    },
+    {
+      "key": "zij",
+      "ids": [
+        "c49",
+        "c52"
+      ],
+      "variants": [
+        {
+          "id": "c49",
+          "dutch": "zij",
+          "english": [
+            "she"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c52",
+          "dutch": "zij",
+          "english": [
+            "they"
+          ],
+          "level": "A1 · U1"
+        }
+      ]
+    },
+    {
+      "key": "jullie",
+      "ids": [
+        "c51",
+        "c783"
+      ],
+      "variants": [
+        {
+          "id": "c51",
+          "dutch": "jullie",
+          "english": [
+            "you (plural)"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c783",
+          "dutch": "jullie",
+          "english": [
+            "your (plural)"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "zijn",
+      "ids": [
+        "c65",
+        "c779"
+      ],
+      "variants": [
+        {
+          "id": "c65",
+          "dutch": "zijn",
+          "english": [
+            "to be"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c779",
+          "dutch": "zijn",
+          "english": [
+            "his"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "nee",
+      "ids": [
+        "c87",
+        "c229"
+      ],
+      "variants": [
+        {
+          "id": "c87",
+          "dutch": "nee",
+          "english": [
+            "no"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c229",
+          "dutch": "Nee",
+          "english": [
+            "No thanks."
+          ],
+          "level": "A1 · U2"
+        }
+      ]
+    },
+    {
+      "key": "binnen",
+      "ids": [
+        "c107",
+        "c1657"
+      ],
+      "variants": [
+        {
+          "id": "c107",
+          "dutch": "binnen",
+          "english": [
+            "inside"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c1657",
+          "dutch": "binnen",
+          "english": [
+            "within"
+          ],
+          "level": "A2 · U8"
+        }
+      ]
+    },
+    {
+      "key": "bord",
+      "ids": [
+        "c159",
+        "c404",
+        "c702"
+      ],
+      "variants": [
+        {
+          "id": "c159",
+          "dutch": "het bord",
+          "english": [
+            "blackboard"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c404",
+          "dutch": "het bord",
+          "english": [
+            "plate"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c702",
+          "dutch": "het bord",
+          "english": [
+            "traffic sign"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "alsjeblieft",
+      "ids": [
+        "c223",
+        "c248"
+      ],
+      "variants": [
+        {
+          "id": "c223",
+          "dutch": "alsjeblieft",
+          "english": [
+            "here you go",
+            "please"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c248",
+          "dutch": "alsjeblieft",
+          "english": [
+            "please"
+          ],
+          "level": "A1 · U2"
+        }
+      ]
+    },
+    {
+      "key": "ikvorm",
+      "ids": [
+        "c235",
+        "c966"
+      ],
+      "variants": [
+        {
+          "id": "c235",
+          "dutch": "de ik-vorm",
+          "english": [
+            "I-form"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c966",
+          "dutch": "de ik-vorm",
+          "english": [
+            "I-form of verb"
+          ],
+          "level": "A2 · U1"
+        }
+      ]
+    },
+    {
+      "key": "weg",
+      "ids": [
+        "c246",
+        "c712",
+        "c760"
+      ],
+      "variants": [
+        {
+          "id": "c246",
+          "dutch": "weg",
+          "english": [
+            "missing"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c712",
+          "dutch": "de weg",
+          "english": [
+            "road",
+            "way"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c760",
+          "dutch": "de weg",
+          "english": [
+            "way",
+            "route"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "boven",
+      "ids": [
+        "c282",
+        "c727"
+      ],
+      "variants": [
+        {
+          "id": "c282",
+          "dutch": "boven",
+          "english": [
+            "upstairs"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c727",
+          "dutch": "boven",
+          "english": [
+            "above"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "kopje",
+      "ids": [
+        "c297",
+        "c1023"
+      ],
+      "variants": [
+        {
+          "id": "c297",
+          "dutch": "het kopje",
+          "english": [
+            "cup"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c1023",
+          "dutch": "het kopje",
+          "english": [
+            "headline"
+          ],
+          "level": "A2 · U2"
+        }
+      ]
+    },
+    {
+      "key": "bank",
+      "ids": [
+        "c303",
+        "c1672"
+      ],
+      "variants": [
+        {
+          "id": "c303",
+          "dutch": "de bank",
+          "english": [
+            "couch",
+            "sofa"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c1672",
+          "dutch": "de bank",
+          "english": [
+            "bank"
+          ],
+          "level": "A2 · U8"
+        }
+      ]
+    },
+    {
+      "key": "van",
+      "ids": [
+        "c355",
+        "c699"
+      ],
+      "variants": [
+        {
+          "id": "c355",
+          "dutch": "van",
+          "english": [
+            "from",
+            "of"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c699",
+          "dutch": "van",
+          "english": [
+            "from"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "vinden",
+      "ids": [
+        "c357",
+        "c423"
+      ],
+      "variants": [
+        {
+          "id": "c357",
+          "dutch": "vinden",
+          "english": [
+            "to find"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c423",
+          "dutch": "vinden",
+          "english": [
+            "to find",
+            "have an opinion"
+          ],
+          "level": "A1 · U4"
+        }
+      ]
+    },
+    {
+      "key": "eten",
+      "ids": [
+        "c384",
+        "c406"
+      ],
+      "variants": [
+        {
+          "id": "c384",
+          "dutch": "eten",
+          "english": [
+            "to eat"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c406",
+          "dutch": "het eten",
+          "english": [
+            "food"
+          ],
+          "level": "A1 · U4"
+        }
+      ]
+    },
+    {
+      "key": "op",
+      "ids": [
+        "c411",
+        "c694",
+        "c731"
+      ],
+      "variants": [
+        {
+          "id": "c411",
+          "dutch": "op",
+          "english": [
+            "used up"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c694",
+          "dutch": "op",
+          "english": [
+            "on"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c731",
+          "dutch": "op",
+          "english": [
+            "on top"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "aan",
+      "ids": [
+        "c427",
+        "c726"
+      ],
+      "variants": [
+        {
+          "id": "c427",
+          "dutch": "aan",
+          "english": [
+            "switched on"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c726",
+          "dutch": "aan",
+          "english": [
+            "on"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "uit",
+      "ids": [
+        "c438",
+        "c735"
+      ],
+      "variants": [
+        {
+          "id": "c438",
+          "dutch": "uit",
+          "english": [
+            "switched off"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c735",
+          "dutch": "uit",
+          "english": [
+            "out of"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "ons",
+      "ids": [
+        "c447",
+        "c781",
+        "c1265"
+      ],
+      "variants": [
+        {
+          "id": "c447",
+          "dutch": "het ons",
+          "english": [
+            "100 gram"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c781",
+          "dutch": "ons",
+          "english": [
+            "our (neuter)"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c1265",
+          "dutch": "ons",
+          "english": [
+            "us"
+          ],
+          "level": "A2 · U4"
+        }
+      ]
+    },
+    {
+      "key": "pak",
+      "ids": [
+        "c474",
+        "c624"
+      ],
+      "variants": [
+        {
+          "id": "c474",
+          "dutch": "het pak",
+          "english": [
+            "pack"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c624",
+          "dutch": "het pak",
+          "english": [
+            "suit"
+          ],
+          "level": "A1 · U6"
+        }
+      ]
+    },
+    {
+      "key": "haar",
+      "ids": [
+        "c497",
+        "c780"
+      ],
+      "variants": [
+        {
+          "id": "c497",
+          "dutch": "het haar",
+          "english": [
+            "hair"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c780",
+          "dutch": "haar",
+          "english": [
+            "her"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "halen",
+      "ids": [
+        "c527",
+        "c766"
+      ],
+      "variants": [
+        {
+          "id": "c527",
+          "dutch": "halen",
+          "english": [
+            "to get",
+            "to fetch"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c766",
+          "dutch": "halen",
+          "english": [
+            "to be in time for"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "net",
+      "ids": [
+        "c623",
+        "c791"
+      ],
+      "variants": [
+        {
+          "id": "c623",
+          "dutch": "net",
+          "english": [
+            "neat",
+            "well taken care of"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c791",
+          "dutch": "net",
+          "english": [
+            "just"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "over",
+      "ids": [
+        "c695",
+        "c732"
+      ],
+      "variants": [
+        {
+          "id": "c695",
+          "dutch": "over",
+          "english": [
+            "in"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c732",
+          "dutch": "over",
+          "english": [
+            "about"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "voor",
+      "ids": [
+        "c700",
+        "c736"
+      ],
+      "variants": [
+        {
+          "id": "c700",
+          "dutch": "voor",
+          "english": [
+            "before",
+            "earlier than"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c736",
+          "dutch": "voor",
+          "english": [
+            "in front of"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "kaart",
+      "ids": [
+        "c717",
+        "c973"
+      ],
+      "variants": [
+        {
+          "id": "c717",
+          "dutch": "de kaart",
+          "english": [
+            "map"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c973",
+          "dutch": "de kaart",
+          "english": [
+            "card"
+          ],
+          "level": "A2 · U1"
+        }
+      ]
+    },
+    {
+      "key": "opzoeken",
+      "ids": [
+        "c762",
+        "c1574"
+      ],
+      "variants": [
+        {
+          "id": "c762",
+          "dutch": "opzoeken",
+          "english": [
+            "to look up"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c1574",
+          "dutch": "opzoeken",
+          "english": [
+            "to search for"
+          ],
+          "level": "A2 · U7"
+        }
+      ]
+    },
+    {
+      "key": "leven",
+      "ids": [
+        "c804",
+        "c1643"
+      ],
+      "variants": [
+        {
+          "id": "c804",
+          "dutch": "leven",
+          "english": [
+            "to live"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c1643",
+          "dutch": "het leven",
+          "english": [
+            "life"
+          ],
+          "level": "A2 · U7"
+        }
+      ]
+    },
+    {
+      "key": "weer",
+      "ids": [
+        "c819",
+        "c850"
+      ],
+      "variants": [
+        {
+          "id": "c819",
+          "dutch": "het weer",
+          "english": [
+            "weather"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c850",
+          "dutch": "weer",
+          "english": [
+            "again"
+          ],
+          "level": "A1 · U8"
+        }
+      ]
+    },
+    {
+      "key": "aanwijzen",
+      "ids": [
+        "c884",
+        "c1247"
+      ],
+      "variants": [
+        {
+          "id": "c884",
+          "dutch": "aanwijzen",
+          "english": [
+            "to point at"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c1247",
+          "dutch": "aanwijzen",
+          "english": [
+            "to point out"
+          ],
+          "level": "A2 · U4"
+        }
+      ]
+    },
+    {
+      "key": "huiswerk",
+      "ids": [
+        "c929",
+        "c1449"
+      ],
+      "variants": [
+        {
+          "id": "c929",
+          "dutch": "het huiswerk",
+          "english": [
+            "to do homework"
+          ],
+          "level": "A2 · U1"
+        },
+        {
+          "id": "c1449",
+          "dutch": "het huiswerk",
+          "english": [
+            "homework"
+          ],
+          "level": "A2 · U5"
+        }
+      ]
+    },
+    {
+      "key": "folder",
+      "ids": [
+        "c1022",
+        "c1374"
+      ],
+      "variants": [
+        {
+          "id": "c1022",
+          "dutch": "de folder",
+          "english": [
+            "flyer",
+            "booklet"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c1374",
+          "dutch": "de folder",
+          "english": [
+            "leaflet"
+          ],
+          "level": "A2 · U5"
+        }
+      ]
+    },
+    {
+      "key": "door",
+      "ids": [
+        "c1051",
+        "c1564"
+      ],
+      "variants": [
+        {
+          "id": "c1051",
+          "dutch": "door",
+          "english": [
+            "because of"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c1564",
+          "dutch": "door",
+          "english": [
+            "through"
+          ],
+          "level": "A2 · U7"
+        }
+      ]
+    },
+    {
+      "key": "waarvoor",
+      "ids": [
+        "c1170",
+        "c1580"
+      ],
+      "variants": [
+        {
+          "id": "c1170",
+          "dutch": "waarvoor",
+          "english": [
+            "for which"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c1580",
+          "dutch": "waarvoor",
+          "english": [
+            "for what purpose"
+          ],
+          "level": "A2 · U7"
+        }
+      ]
+    },
+    {
+      "key": "opnemen",
+      "ids": [
+        "c1192",
+        "c1747"
+      ],
+      "variants": [
+        {
+          "id": "c1192",
+          "dutch": "opnemen",
+          "english": [
+            "to answer (phone)"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c1747",
+          "dutch": "opnemen",
+          "english": [
+            "to record"
+          ],
+          "level": "A2 · U8"
+        }
+      ]
+    },
+    {
+      "key": "nog eens",
+      "ids": [
+        "c1304",
+        "c1777"
+      ],
+      "variants": [
+        {
+          "id": "c1304",
+          "dutch": "(nog) eens",
+          "english": [
+            "once",
+            "once again"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c1777",
+          "dutch": "nog eens",
+          "english": [
+            "once again"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "zeer",
+      "ids": [
+        "c1385",
+        "c1713"
+      ],
+      "variants": [
+        {
+          "id": "c1385",
+          "dutch": "zeer",
+          "english": [
+            "very"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c1713",
+          "dutch": "zeer",
+          "english": [
+            "sore"
+          ],
+          "level": "A2 · U8"
+        }
+      ]
+    },
+    {
+      "key": "kennis",
+      "ids": [
+        "c1478",
+        "c1510"
+      ],
+      "variants": [
+        {
+          "id": "c1478",
+          "dutch": "de kennis",
+          "english": [
+            "acquaintance"
+          ],
+          "level": "A2 · U6"
+        },
+        {
+          "id": "c1510",
+          "dutch": "de kennis",
+          "english": [
+            "knowledge"
+          ],
+          "level": "A2 · U6"
+        }
+      ]
+    },
+    {
+      "key": "stuk",
+      "ids": [
+        "c1527",
+        "c1615"
+      ],
+      "variants": [
+        {
+          "id": "c1527",
+          "dutch": "stuk",
+          "english": [
+            "broken"
+          ],
+          "level": "A2 · U6"
+        },
+        {
+          "id": "c1615",
+          "dutch": "het stuk",
+          "english": [
+            "piece",
+            "part"
+          ],
+          "level": "A2 · U7"
+        }
+      ]
+    },
+    {
+      "key": "politieagent",
+      "ids": [
+        "c1701",
+        "c2407"
+      ],
+      "variants": [
+        {
+          "id": "c1701",
+          "dutch": "de (politie)agent",
+          "english": [
+            "policeman"
+          ],
+          "level": "A2 · U8"
+        },
+        {
+          "id": "c2407",
+          "dutch": "politieagent",
+          "english": [
+            "police officer"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "email",
+      "ids": [
+        "c2226",
+        "c4336"
+      ],
+      "variants": [
+        {
+          "id": "c2226",
+          "dutch": "e-mail",
+          "english": [
+            "e-mail"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4336",
+          "dutch": "het email",
+          "english": [
+            "enamel"
+          ],
+          "level": "A+"
+        }
+      ]
+    }
+  ],
+  "englishCollisions": [
+    {
+      "gloss": "netherlands",
+      "count": 11,
+      "words": [
+        {
+          "id": "c7",
+          "dutch": "Nederland",
+          "english": [
+            "Netherlands"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c4252",
+          "dutch": "schapenbout",
+          "english": [
+            "hamlet in Terneuzen",
+            "Zeeland",
+            "Netherlands"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4312",
+          "dutch": "waterkant",
+          "english": [
+            "North Brabant",
+            "Netherlands"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4697",
+          "dutch": "galgenveld",
+          "english": [
+            "neighborhood of Nijmegen",
+            "Gelderland",
+            "Netherlands"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4818",
+          "dutch": "zandheuvel",
+          "english": [
+            "hamlet in Lingewaard",
+            "Gelderland",
+            "Netherlands"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7211",
+          "dutch": "bomenbuurt",
+          "english": [
+            "neighbourhood of Assen",
+            "Drenthe",
+            "Netherlands"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8088",
+          "dutch": "sportdorp",
+          "english": [
+            "neighbourhood of Rotterdam",
+            "South Holland",
+            "Netherlands"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8358",
+          "dutch": "winkelstraat",
+          "english": [
+            "hamlet in Someren",
+            "North Brabant",
+            "Netherlands"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9145",
+          "dutch": "koolhoven",
+          "english": [
+            "neighbourhood of Tilburg",
+            "North Brabant",
+            "Netherlands"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9939",
+          "dutch": "tongeren",
+          "english": [
+            "hamlet in Epe",
+            "Gelderland",
+            "Netherlands"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c10025",
+          "dutch": "driesprong",
+          "english": [
+            "hamlet in Ede",
+            "Gelderland",
+            "Netherlands"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "act",
+      "count": 10,
+      "words": [
+        {
+          "id": "c2598",
+          "dutch": "uitdrukking",
+          "english": [
+            "expression",
+            "act",
+            "process of expressing something"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2886",
+          "dutch": "combinatie",
+          "english": [
+            "combination",
+            "act",
+            "process"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3021",
+          "dutch": "daad",
+          "english": [
+            "deed",
+            "act",
+            "action"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4272",
+          "dutch": "applicatie",
+          "english": [
+            "application",
+            "act",
+            "process of applying something"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4582",
+          "dutch": "heldendaad",
+          "english": [
+            "heroic deed",
+            "act",
+            "feat"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6063",
+          "dutch": "handeling",
+          "english": [
+            "act",
+            "action"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7651",
+          "dutch": "de activatie",
+          "english": [
+            "activation",
+            "act",
+            "process of activating"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7716",
+          "dutch": "de variatie",
+          "english": [
+            "variant",
+            "act",
+            "process"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8402",
+          "dutch": "de toewijding",
+          "english": [
+            "dedication",
+            "act",
+            "process of dedicating"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9959",
+          "dutch": "kruising",
+          "english": [
+            "act",
+            "instance of crossing"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "just",
+      "count": 8,
+      "words": [
+        {
+          "id": "c640",
+          "dutch": "even",
+          "english": [
+            "just",
+            "just a moment"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c791",
+          "dutch": "net",
+          "english": [
+            "just"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c906",
+          "dutch": "pas",
+          "english": [
+            "just"
+          ],
+          "level": "A2 · U1"
+        },
+        {
+          "id": "c1772",
+          "dutch": "vlak",
+          "english": [
+            "straight",
+            "immediately",
+            "just"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c1785",
+          "dutch": "terecht",
+          "english": [
+            "just",
+            "right",
+            "for good reason"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c1884",
+          "dutch": "slechts",
+          "english": [
+            "only",
+            "just"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2298",
+          "dutch": "nu eenmaal",
+          "english": [
+            "just"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6005",
+          "dutch": "rechtvaardig",
+          "english": [
+            "fair",
+            "just"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "present",
+      "count": 8,
+      "words": [
+        {
+          "id": "c1003",
+          "dutch": "het cadeau",
+          "english": [
+            "present",
+            "gift"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c1596",
+          "dutch": "aanwezig",
+          "english": [
+            "present"
+          ],
+          "level": "A2 · U7"
+        },
+        {
+          "id": "c1903",
+          "dutch": "tegenwoordig",
+          "english": [
+            "present",
+            "current"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5265",
+          "dutch": "huidig",
+          "english": [
+            "current",
+            "present"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7248",
+          "dutch": "het geschenk",
+          "english": [
+            "gift",
+            "present"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7779",
+          "dutch": "het heden",
+          "english": [
+            "present"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8393",
+          "dutch": "actueel",
+          "english": [
+            "current",
+            "present"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9381",
+          "dutch": "gave",
+          "english": [
+            "gift",
+            "donation",
+            "present"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "nice",
+      "count": 7,
+      "words": [
+        {
+          "id": "c85",
+          "dutch": "leuk",
+          "english": [
+            "nice"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c325",
+          "dutch": "aardig",
+          "english": [
+            "nice"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c443",
+          "dutch": "fijn",
+          "english": [
+            "nice"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c6119",
+          "dutch": "sympathiek",
+          "english": [
+            "sympathetic",
+            "nice",
+            "kind"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6818",
+          "dutch": "poeslief",
+          "english": [
+            "very friendly",
+            "nice",
+            "sweet"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8062",
+          "dutch": "relaxed",
+          "english": [
+            "relaxed",
+            "chill",
+            "nice"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9012",
+          "dutch": "aangenaam",
+          "english": [
+            "nice",
+            "pleasant",
+            "friendly"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to continue",
+      "count": 7,
+      "words": [
+        {
+          "id": "c1079",
+          "dutch": "doorgaan",
+          "english": [
+            "to continue"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c1341",
+          "dutch": "verdergaan",
+          "english": [
+            "to continue"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c2356",
+          "dutch": "voortzetten",
+          "english": [
+            "to continue"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2882",
+          "dutch": "vervolgen",
+          "english": [
+            "to continue",
+            "carry on"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6505",
+          "dutch": "voortduren",
+          "english": [
+            "to continue",
+            "to persist"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6593",
+          "dutch": "volhouden",
+          "english": [
+            "to continue",
+            "persevere"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7858",
+          "dutch": "verderzetten",
+          "english": [
+            "to continue",
+            "to resume"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "sad",
+      "count": 7,
+      "words": [
+        {
+          "id": "c1120",
+          "dutch": "verdrietig",
+          "english": [
+            "sad"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c2034",
+          "dutch": "zielig",
+          "english": [
+            "sad",
+            "pitiful"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2078",
+          "dutch": "droevig",
+          "english": [
+            "sad",
+            "melancholy"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2440",
+          "dutch": "bedroefd",
+          "english": [
+            "sorrowful",
+            "sad"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2504",
+          "dutch": "treurig",
+          "english": [
+            "sad",
+            "melancholy"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6227",
+          "dutch": "sip",
+          "english": [
+            "sad",
+            "subdued"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9225",
+          "dutch": "vreugdeloos",
+          "english": [
+            "sad",
+            "bleak"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "state",
+      "count": 7,
+      "words": [
+        {
+          "id": "c1883",
+          "dutch": "staat",
+          "english": [
+            "state"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2346",
+          "dutch": "kolonie",
+          "english": [
+            "colony",
+            "dependent human settlement",
+            "state"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2939",
+          "dutch": "gezelligheid",
+          "english": [
+            "state",
+            "fact of being cozy",
+            "Gemütlichkeit"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5273",
+          "dutch": "verklaren",
+          "english": [
+            "to declare",
+            "state"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c5478",
+          "dutch": "de conditie",
+          "english": [
+            "condition",
+            "state"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7456",
+          "dutch": "de fitheid",
+          "english": [
+            "state",
+            "quality",
+            "condition of being fit"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8162",
+          "dutch": "de gesteldheid",
+          "english": [
+            "state",
+            "condition"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "to finish",
+      "count": 6,
+      "words": [
+        {
+          "id": "c92",
+          "dutch": "eindigen",
+          "english": [
+            "to finish"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c1228",
+          "dutch": "afmaken",
+          "english": [
+            "to finish"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c1417",
+          "dutch": "afgelopen zijn",
+          "english": [
+            "to finish"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c2130",
+          "dutch": "ophouden",
+          "english": [
+            "to finish",
+            "end"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5743",
+          "dutch": "beëindigen",
+          "english": [
+            "to end",
+            "to finish",
+            "to conclude"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9781",
+          "dutch": "klaren",
+          "english": [
+            "to finish",
+            "to complete",
+            "to get done"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "march",
+      "count": 6,
+      "words": [
+        {
+          "id": "c125",
+          "dutch": "maart",
+          "english": [
+            "March"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c2540",
+          "dutch": "tocht",
+          "english": [
+            "journey",
+            "expedition",
+            "march"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5223",
+          "dutch": "de mark",
+          "english": [
+            "march",
+            "mark"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6153",
+          "dutch": "de opmars",
+          "english": [
+            "advance",
+            "march"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9764",
+          "dutch": "mars",
+          "english": [
+            "march"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c10058",
+          "dutch": "de krokusvakantie",
+          "english": [
+            "March",
+            "spring break"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "place",
+      "count": 6,
+      "words": [
+        {
+          "id": "c271",
+          "dutch": "de plaats",
+          "english": [
+            "place"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c744",
+          "dutch": "de plek",
+          "english": [
+            "place"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c1770",
+          "dutch": "stellen",
+          "english": [
+            "to position",
+            "place"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4514",
+          "dutch": "stek",
+          "english": [
+            "spot",
+            "place",
+            "home"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8214",
+          "dutch": "de oorsprong",
+          "english": [
+            "origin",
+            "point",
+            "place"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c8628",
+          "dutch": "het oord",
+          "english": [
+            "place"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to appear",
+      "count": 6,
+      "words": [
+        {
+          "id": "c1065",
+          "dutch": "lijken",
+          "english": [
+            "to appear"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c1756",
+          "dutch": "blijken",
+          "english": [
+            "to appear",
+            "to become apparent"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c1852",
+          "dutch": "verschijnen",
+          "english": [
+            "to appear",
+            "show up"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6499",
+          "dutch": "opduiken",
+          "english": [
+            "to appear",
+            "to emerge",
+            "to turn up"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9185",
+          "dutch": "ogen",
+          "english": [
+            "to look",
+            "to appear"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9677",
+          "dutch": "opdagen",
+          "english": [
+            "to show up",
+            "to appear"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "order",
+      "count": 6,
+      "words": [
+        {
+          "id": "c1154",
+          "dutch": "de volgorde",
+          "english": [
+            "sequence",
+            "order"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c1303",
+          "dutch": "de bestelling",
+          "english": [
+            "order",
+            "request"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c2288",
+          "dutch": "het bevel",
+          "english": [
+            "order",
+            "command"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4406",
+          "dutch": "het bestel",
+          "english": [
+            "order",
+            "establishment"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8890",
+          "dutch": "gebieden",
+          "english": [
+            "to command",
+            "order"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c8965",
+          "dutch": "order",
+          "english": [
+            "order"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "result",
+      "count": 6,
+      "words": [
+        {
+          "id": "c1221",
+          "dutch": "het resultaat",
+          "english": [
+            "result"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c1826",
+          "dutch": "het gevolg",
+          "english": [
+            "consequence",
+            "result"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3628",
+          "dutch": "de afloop",
+          "english": [
+            "ending",
+            "result",
+            "termination"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7744",
+          "dutch": "consequentie",
+          "english": [
+            "consequence",
+            "result"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7899",
+          "dutch": "uitslag",
+          "english": [
+            "result",
+            "score in a competition",
+            "test"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8220",
+          "dutch": "de uitkomst",
+          "english": [
+            "outcome",
+            "result"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "actual",
+      "count": 6,
+      "words": [
+        {
+          "id": "c1753",
+          "dutch": "eigenlijk",
+          "english": [
+            "actual"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2195",
+          "dutch": "werkelijk",
+          "english": [
+            "real",
+            "actual"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5218",
+          "dutch": "waargebeurd",
+          "english": [
+            "real",
+            "actual"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5775",
+          "dutch": "feitelijk",
+          "english": [
+            "actual"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c5807",
+          "dutch": "daadwerkelijk",
+          "english": [
+            "actual"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6129",
+          "dutch": "reëel",
+          "english": [
+            "real",
+            "actual"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "to raise",
+      "count": 6,
+      "words": [
+        {
+          "id": "c1762",
+          "dutch": "beuren",
+          "english": [
+            "to lift",
+            "to raise"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2089",
+          "dutch": "tillen",
+          "english": [
+            "to lift",
+            "to raise"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2723",
+          "dutch": "opvoeden",
+          "english": [
+            "to raise",
+            "to bring up"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2895",
+          "dutch": "heffen",
+          "english": [
+            "to raise",
+            "lift",
+            "heave"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4884",
+          "dutch": "lichten",
+          "english": [
+            "to raise",
+            "to lift up"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7398",
+          "dutch": "grootbrengen",
+          "english": [
+            "to raise",
+            "bring up young",
+            "from infancy to maturity"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "current",
+      "count": 6,
+      "words": [
+        {
+          "id": "c1903",
+          "dutch": "tegenwoordig",
+          "english": [
+            "present",
+            "current"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3839",
+          "dutch": "stroming",
+          "english": [
+            "flow",
+            "current"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5265",
+          "dutch": "huidig",
+          "english": [
+            "current",
+            "present"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7851",
+          "dutch": "hedendaags",
+          "english": [
+            "current",
+            "contemporary",
+            "modern"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8393",
+          "dutch": "actueel",
+          "english": [
+            "current",
+            "present"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c8456",
+          "dutch": "gangbaar",
+          "english": [
+            "current",
+            "in common use",
+            "prevailing"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "rough",
+      "count": 6,
+      "words": [
+        {
+          "id": "c3270",
+          "dutch": "hees",
+          "english": [
+            "hoarse",
+            "rough",
+            "husky"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3369",
+          "dutch": "grof",
+          "english": [
+            "rough",
+            "coarse"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5006",
+          "dutch": "ruig",
+          "english": [
+            "rough",
+            "rugged",
+            "bristly"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6618",
+          "dutch": "ruw",
+          "english": [
+            "rough",
+            "crude",
+            "harsh"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6771",
+          "dutch": "stroef",
+          "english": [
+            "rough",
+            "not smooth"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7484",
+          "dutch": "globaal",
+          "english": [
+            "general",
+            "not precise",
+            "rough"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "student",
+      "count": 5,
+      "words": [
+        {
+          "id": "c109",
+          "dutch": "de cursist",
+          "english": [
+            "student",
+            "pupil"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c1203",
+          "dutch": "de leerling",
+          "english": [
+            "pupil",
+            "student"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c1394",
+          "dutch": "de student",
+          "english": [
+            "student"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c2744",
+          "dutch": "scholier",
+          "english": [
+            "pupil",
+            "student"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7072",
+          "dutch": "de eerstejaarsstudent",
+          "english": [
+            "student"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "cold",
+      "count": 5,
+      "words": [
+        {
+          "id": "c432",
+          "dutch": "koud",
+          "english": [
+            "cold"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c2399",
+          "dutch": "koel",
+          "english": [
+            "cold",
+            "chilly"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2438",
+          "dutch": "kou",
+          "english": [
+            "cold"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6243",
+          "dutch": "de verkoudheid",
+          "english": [
+            "cold"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7283",
+          "dutch": "koelte",
+          "english": [
+            "coolness",
+            "cold",
+            "but not freezing temperature"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "control",
+      "count": 5,
+      "words": [
+        {
+          "id": "c515",
+          "dutch": "de controle",
+          "english": [
+            "control",
+            "check"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c2426",
+          "dutch": "macht",
+          "english": [
+            "political power",
+            "control"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3264",
+          "dutch": "leiding",
+          "english": [
+            "lead",
+            "control"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7738",
+          "dutch": "bestrijding",
+          "english": [
+            "suppression",
+            "control"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9262",
+          "dutch": "beheersing",
+          "english": [
+            "control"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "very",
+      "count": 5,
+      "words": [
+        {
+          "id": "c541",
+          "dutch": "erg",
+          "english": [
+            "very"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c642",
+          "dutch": "heel",
+          "english": [
+            "very"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c1385",
+          "dutch": "zeer",
+          "english": [
+            "very"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c1451",
+          "dutch": "ontzettend",
+          "english": [
+            "very"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c2459",
+          "dutch": "hartstikke",
+          "english": [
+            "very",
+            "freaking",
+            "hella"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "to send",
+      "count": 5,
+      "words": [
+        {
+          "id": "c647",
+          "dutch": "sturen",
+          "english": [
+            "to send"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c955",
+          "dutch": "opsturen",
+          "english": [
+            "to send"
+          ],
+          "level": "A2 · U1"
+        },
+        {
+          "id": "c3044",
+          "dutch": "versturen",
+          "english": [
+            "to send",
+            "to dispatch"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3382",
+          "dutch": "zenden",
+          "english": [
+            "to send"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7751",
+          "dutch": "verzenden",
+          "english": [
+            "to send",
+            "to ship"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "dirty",
+      "count": 5,
+      "words": [
+        {
+          "id": "c675",
+          "dutch": "vies",
+          "english": [
+            "dirty"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c1563",
+          "dutch": "vuil",
+          "english": [
+            "dirty"
+          ],
+          "level": "A2 · U7"
+        },
+        {
+          "id": "c2936",
+          "dutch": "smerig",
+          "english": [
+            "dirty",
+            "filthy",
+            "grubby"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4959",
+          "dutch": "goor",
+          "english": [
+            "dirty",
+            "filthy",
+            "disgusting"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c9208",
+          "dutch": "morsig",
+          "english": [
+            "dirty",
+            "unclean",
+            "untidy"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to move",
+      "count": 5,
+      "words": [
+        {
+          "id": "c841",
+          "dutch": "bewegen",
+          "english": [
+            "to move"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c2979",
+          "dutch": "ontroeren",
+          "english": [
+            "to move"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5470",
+          "dutch": "vervoeren",
+          "english": [
+            "to transport",
+            "to move"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c5814",
+          "dutch": "verplaatsen",
+          "english": [
+            "to move"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8775",
+          "dutch": "verschuiven",
+          "english": [
+            "to move",
+            "shift"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "idea",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1034",
+          "dutch": "het idee",
+          "english": [
+            "idea"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c2934",
+          "dutch": "gedachte",
+          "english": [
+            "thought",
+            "idea"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7082",
+          "dutch": "het denkbeeld",
+          "english": [
+            "idea",
+            "notion"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7197",
+          "dutch": "het benul",
+          "english": [
+            "understanding",
+            "idea",
+            "insight"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8319",
+          "dutch": "opvatting",
+          "english": [
+            "concept",
+            "idea"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to save",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1103",
+          "dutch": "sparen (voor)",
+          "english": [
+            "to save"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c1723",
+          "dutch": "redden",
+          "english": [
+            "to save"
+          ],
+          "level": "A2 · U8"
+        },
+        {
+          "id": "c4139",
+          "dutch": "opslaan",
+          "english": [
+            "to save",
+            "to store"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5357",
+          "dutch": "behouden",
+          "english": [
+            "to save",
+            "keep"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6523",
+          "dutch": "overhouden",
+          "english": [
+            "to leave over",
+            "to save",
+            "to keep"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "to break",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1128",
+          "dutch": "breken",
+          "english": [
+            "to break"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c3548",
+          "dutch": "overtreden",
+          "english": [
+            "to break",
+            "to transgress",
+            "to violate"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3561",
+          "dutch": "kapotmaken",
+          "english": [
+            "to break"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4244",
+          "dutch": "verbreken",
+          "english": [
+            "to break",
+            "break up physically"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8371",
+          "dutch": "doorbreken",
+          "english": [
+            "to break",
+            "break through",
+            "break in half"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "top",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1137",
+          "dutch": "de top",
+          "english": [
+            "top",
+            "summit"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c3461",
+          "dutch": "bovenkant",
+          "english": [
+            "top"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3767",
+          "dutch": "tol",
+          "english": [
+            "top",
+            "spinning top"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4594",
+          "dutch": "zijkant",
+          "english": [
+            "side",
+            "back",
+            "top"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10055",
+          "dutch": "het toppunt",
+          "english": [
+            "top",
+            "summit",
+            "spire"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to arrange",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1193",
+          "dutch": "regelen",
+          "english": [
+            "to arrange",
+            "to organize"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c5070",
+          "dutch": "opstellen",
+          "english": [
+            "to arrange",
+            "line up"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7410",
+          "dutch": "scharen",
+          "english": [
+            "to arrange",
+            "draw up",
+            "line up"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7647",
+          "dutch": "inrichten",
+          "english": [
+            "to arrange",
+            "organize"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9679",
+          "dutch": "schikken",
+          "english": [
+            "to arrange",
+            "to order"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "opinion",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1204",
+          "dutch": "de mening",
+          "english": [
+            "opinion"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c2157",
+          "dutch": "het gedacht",
+          "english": [
+            "opinion"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2589",
+          "dutch": "kijk",
+          "english": [
+            "view",
+            "opinion"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5681",
+          "dutch": "opinie",
+          "english": [
+            "opinion"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6706",
+          "dutch": "het oordeel",
+          "english": [
+            "opinion",
+            "judgement"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "activity",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1233",
+          "dutch": "de activiteit",
+          "english": [
+            "activity"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c2661",
+          "dutch": "werkzaamheid",
+          "english": [
+            "activity",
+            "operation"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3073",
+          "dutch": "bezigheid",
+          "english": [
+            "busyness",
+            "occupation",
+            "activity"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5257",
+          "dutch": "actie",
+          "english": [
+            "action",
+            "activity",
+            "movement"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6186",
+          "dutch": "de actualiteit",
+          "english": [
+            "actuality",
+            "activity"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "meeting",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1257",
+          "dutch": "de vergadering",
+          "english": [
+            "meeting"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c2522",
+          "dutch": "bijeenkomst",
+          "english": [
+            "meeting"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2576",
+          "dutch": "ontmoeting",
+          "english": [
+            "meeting"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3581",
+          "dutch": "zitting",
+          "english": [
+            "meeting",
+            "session"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7896",
+          "dutch": "meeting",
+          "english": [
+            "meeting"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "education",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1273",
+          "dutch": "de opleiding",
+          "english": [
+            "education"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c1407",
+          "dutch": "het onderwijs",
+          "english": [
+            "education"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c2317",
+          "dutch": "de opvoeding",
+          "english": [
+            "upbringing",
+            "education"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6668",
+          "dutch": "scholing",
+          "english": [
+            "education"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9070",
+          "dutch": "de lering",
+          "english": [
+            "education",
+            "instruction"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to close",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1323",
+          "dutch": "sluiten",
+          "english": [
+            "to close"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c3637",
+          "dutch": "dichtdoen",
+          "english": [
+            "to close"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4127",
+          "dutch": "dichtgaan",
+          "english": [
+            "to close",
+            "to shut"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8774",
+          "dutch": "toedoen",
+          "english": [
+            "to close",
+            "shut"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9485",
+          "dutch": "dichten",
+          "english": [
+            "to close"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to enter",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1568",
+          "dutch": "binnenkomen",
+          "english": [
+            "to enter"
+          ],
+          "level": "A2 · U7"
+        },
+        {
+          "id": "c2699",
+          "dutch": "ingaan",
+          "english": [
+            "to enter",
+            "to go inside"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4363",
+          "dutch": "binnengaan",
+          "english": [
+            "to enter",
+            "go into"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6892",
+          "dutch": "binnenstappen",
+          "english": [
+            "to enter"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9591",
+          "dutch": "binnenlopen",
+          "english": [
+            "to enter",
+            "to walk inside"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "foolish",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1684",
+          "dutch": "stom",
+          "english": [
+            "foolish"
+          ],
+          "level": "A2 · U8"
+        },
+        {
+          "id": "c2700",
+          "dutch": "idioot",
+          "english": [
+            "idiotic",
+            "foolish",
+            "stupid"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3540",
+          "dutch": "mal",
+          "english": [
+            "foolish",
+            "crazy",
+            "lacking common sense"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4097",
+          "dutch": "dwaas",
+          "english": [
+            "foolish",
+            "stupid"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c9380",
+          "dutch": "daas",
+          "english": [
+            "foolish",
+            "dull",
+            "silly"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "rather",
+      "count": 5,
+      "words": [
+        {
+          "id": "c1765",
+          "dutch": "liever",
+          "english": [
+            "rather",
+            "preferably"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c1957",
+          "dutch": "nogal",
+          "english": [
+            "rather",
+            "quite"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5523",
+          "dutch": "enigszins",
+          "english": [
+            "somewhat",
+            "to some degree",
+            "rather"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6155",
+          "dutch": "tamelijk",
+          "english": [
+            "rather",
+            "fairly"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6698",
+          "dutch": "veeleer",
+          "english": [
+            "rather"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "complete",
+      "count": 5,
+      "words": [
+        {
+          "id": "c2052",
+          "dutch": "absoluut",
+          "english": [
+            "absolute",
+            "complete",
+            "perfect"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2417",
+          "dutch": "compleet",
+          "english": [
+            "complete"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4408",
+          "dutch": "gaaf",
+          "english": [
+            "whole",
+            "complete",
+            "not injured"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5716",
+          "dutch": "volkomen",
+          "english": [
+            "complete",
+            "total"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6543",
+          "dutch": "volstrekt",
+          "english": [
+            "absolute",
+            "complete"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "silly",
+      "count": 5,
+      "words": [
+        {
+          "id": "c2092",
+          "dutch": "dol",
+          "english": [
+            "crazy",
+            "silly",
+            "mad"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5025",
+          "dutch": "mallerd",
+          "english": [
+            "silly",
+            "crazy person"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7361",
+          "dutch": "het gekkie",
+          "english": [
+            "silly",
+            "silly person"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9380",
+          "dutch": "daas",
+          "english": [
+            "foolish",
+            "dull",
+            "silly"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9658",
+          "dutch": "het modderfiguur",
+          "english": [
+            "silly",
+            "ridiculous character"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "change",
+      "count": 5,
+      "words": [
+        {
+          "id": "c2422",
+          "dutch": "verandering",
+          "english": [
+            "change"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6733",
+          "dutch": "wijziging",
+          "english": [
+            "modification",
+            "edit",
+            "change"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6793",
+          "dutch": "afwisseling",
+          "english": [
+            "change",
+            "variation"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8379",
+          "dutch": "wijzigen",
+          "english": [
+            "to edit",
+            "change",
+            "modify"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c8480",
+          "dutch": "de kentering",
+          "english": [
+            "change",
+            "alteration",
+            "transformation"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "condition",
+      "count": 5,
+      "words": [
+        {
+          "id": "c2434",
+          "dutch": "voorwaarde",
+          "english": [
+            "condition",
+            "requirement"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3040",
+          "dutch": "toestand",
+          "english": [
+            "situation",
+            "condition"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5399",
+          "dutch": "omstandigheid",
+          "english": [
+            "circumstance",
+            "condition"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c5478",
+          "dutch": "de conditie",
+          "english": [
+            "condition",
+            "state"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8162",
+          "dutch": "de gesteldheid",
+          "english": [
+            "state",
+            "condition"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "action",
+      "count": 5,
+      "words": [
+        {
+          "id": "c3021",
+          "dutch": "daad",
+          "english": [
+            "deed",
+            "act",
+            "action"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4840",
+          "dutch": "verrichting",
+          "english": [
+            "action",
+            "deed"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5257",
+          "dutch": "actie",
+          "english": [
+            "action",
+            "activity",
+            "movement"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c5964",
+          "dutch": "misstand",
+          "english": [
+            "wrongful state",
+            "action",
+            "circumstance"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6063",
+          "dutch": "handeling",
+          "english": [
+            "act",
+            "action"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "stage",
+      "count": 5,
+      "words": [
+        {
+          "id": "c3229",
+          "dutch": "het toneel",
+          "english": [
+            "stage",
+            "scene"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3325",
+          "dutch": "fase",
+          "english": [
+            "phase",
+            "stage"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3359",
+          "dutch": "het podium",
+          "english": [
+            "stage"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4839",
+          "dutch": "scène",
+          "english": [
+            "scene",
+            "stage"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c9490",
+          "dutch": "het stadium",
+          "english": [
+            "stage",
+            "phase"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "tour",
+      "count": 5,
+      "words": [
+        {
+          "id": "c6171",
+          "dutch": "tournee",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6952",
+          "dutch": "rondreis",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7235",
+          "dutch": "rondgang",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8171",
+          "dutch": "toertocht",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9134",
+          "dutch": "excursie",
+          "english": [
+            "excursion",
+            "tour"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "turn",
+      "count": 5,
+      "words": [
+        {
+          "id": "c7071",
+          "dutch": "draai",
+          "english": [
+            "rotation",
+            "spin",
+            "turn"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7665",
+          "dutch": "toer",
+          "english": [
+            "turn",
+            "rotation",
+            "revolution"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9087",
+          "dutch": "wenden",
+          "english": [
+            "to direct oneself",
+            "turn"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9943",
+          "dutch": "cirkelen",
+          "english": [
+            "to form a circle",
+            "turn",
+            "move"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9945",
+          "dutch": "wending",
+          "english": [
+            "turn",
+            "chance to do something"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "bye",
+      "count": 4,
+      "words": [
+        {
+          "id": "c18",
+          "dutch": "dag",
+          "english": [
+            "hello",
+            "bye"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c19",
+          "dutch": "doei",
+          "english": [
+            "bye"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c28",
+          "dutch": "tot ziens",
+          "english": [
+            "bye"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c4564",
+          "dutch": "aju",
+          "english": [
+            "bye",
+            "see you"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "mother",
+      "count": 4,
+      "words": [
+        {
+          "id": "c36",
+          "dutch": "de moeder",
+          "english": [
+            "mother"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c4746",
+          "dutch": "mam",
+          "english": [
+            "mother"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5267",
+          "dutch": "mama",
+          "english": [
+            "mama",
+            "mother"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9788",
+          "dutch": "ma",
+          "english": [
+            "mother"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "teacher",
+      "count": 4,
+      "words": [
+        {
+          "id": "c110",
+          "dutch": "de docent",
+          "english": [
+            "teacher"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c1346",
+          "dutch": "de leraar",
+          "english": [
+            "teacher"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c2658",
+          "dutch": "leerkracht",
+          "english": [
+            "teacher",
+            "educator"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8431",
+          "dutch": "onderwijzer",
+          "english": [
+            "teacher"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "together",
+      "count": 4,
+      "words": [
+        {
+          "id": "c115",
+          "dutch": "samen",
+          "english": [
+            "together"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c4154",
+          "dutch": "bijeen",
+          "english": [
+            "together"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c9093",
+          "dutch": "ineen",
+          "english": [
+            "together"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9105",
+          "dutch": "tezamen",
+          "english": [
+            "together"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "first",
+      "count": 4,
+      "words": [
+        {
+          "id": "c120",
+          "dutch": "eerste",
+          "english": [
+            "first"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c751",
+          "dutch": "eerst",
+          "english": [
+            "first"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c4586",
+          "dutch": "binnenlaat",
+          "english": [
+            "first",
+            "second"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6033",
+          "dutch": "primeur",
+          "english": [
+            "first"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "number",
+      "count": 4,
+      "words": [
+        {
+          "id": "c135",
+          "dutch": "het getal",
+          "english": [
+            "number"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c265",
+          "dutch": "het aantal",
+          "english": [
+            "number",
+            "amount"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c860",
+          "dutch": "het nummer",
+          "english": [
+            "number"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c7781",
+          "dutch": "het tal",
+          "english": [
+            "number"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "to learn",
+      "count": 4,
+      "words": [
+        {
+          "id": "c161",
+          "dutch": "leren",
+          "english": [
+            "to learn"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c6075",
+          "dutch": "aanleren",
+          "english": [
+            "to learn"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6729",
+          "dutch": "vernemen",
+          "english": [
+            "to learn",
+            "to find out",
+            "to hear"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7726",
+          "dutch": "opsteken",
+          "english": [
+            "to learn"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "mark",
+      "count": 4,
+      "words": [
+        {
+          "id": "c216",
+          "dutch": "het kruisje",
+          "english": [
+            "mark"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c1157",
+          "dutch": "het cijfer",
+          "english": [
+            "mark",
+            "grade"
+          ],
+          "level": "A2 · U3"
+        },
+        {
+          "id": "c2108",
+          "dutch": "het teken",
+          "english": [
+            "sign",
+            "indication",
+            "mark"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5223",
+          "dutch": "de mark",
+          "english": [
+            "march",
+            "mark"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "someone",
+      "count": 4,
+      "words": [
+        {
+          "id": "c253",
+          "dutch": "iemand",
+          "english": [
+            "someone"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c3489",
+          "dutch": "topper",
+          "english": [
+            "someone",
+            "something excellent",
+            "belter"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3640",
+          "dutch": "het type",
+          "english": [
+            "type: a class",
+            "someone"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8471",
+          "dutch": "voorloper",
+          "english": [
+            "forerunner",
+            "precursor",
+            "someone"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "house",
+      "count": 4,
+      "words": [
+        {
+          "id": "c260",
+          "dutch": "het huis",
+          "english": [
+            "house"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c1670",
+          "dutch": "de woning",
+          "english": [
+            "house"
+          ],
+          "level": "A2 · U8"
+        },
+        {
+          "id": "c6098",
+          "dutch": "het pand",
+          "english": [
+            "house"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6980",
+          "dutch": "het woonhuis",
+          "english": [
+            "residential building",
+            "house"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "calm",
+      "count": 4,
+      "words": [
+        {
+          "id": "c273",
+          "dutch": "rustig",
+          "english": [
+            "quiet",
+            "calm"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c1840",
+          "dutch": "kalm",
+          "english": [
+            "calm",
+            "tranquil"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5704",
+          "dutch": "de kalmte",
+          "english": [
+            "calmness",
+            "calm"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8793",
+          "dutch": "windstil",
+          "english": [
+            "calm",
+            "windless"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "beautiful",
+      "count": 4,
+      "words": [
+        {
+          "id": "c330",
+          "dutch": "mooi",
+          "english": [
+            "beautiful"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c1068",
+          "dutch": "prachtig",
+          "english": [
+            "beautiful"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c2236",
+          "dutch": "aantrekkelijk",
+          "english": [
+            "attractive",
+            "beautiful"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3050",
+          "dutch": "fraai",
+          "english": [
+            "beautiful",
+            "pretty",
+            "handsome"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "floor",
+      "count": 4,
+      "words": [
+        {
+          "id": "c334",
+          "dutch": "de verdieping",
+          "english": [
+            "floor"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c1593",
+          "dutch": "de vloer",
+          "english": [
+            "floor"
+          ],
+          "level": "A2 · U7"
+        },
+        {
+          "id": "c7218",
+          "dutch": "etage",
+          "english": [
+            "floor",
+            "storey"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9187",
+          "dutch": "oprapen",
+          "english": [
+            "floor"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "second",
+      "count": 4,
+      "words": [
+        {
+          "id": "c337",
+          "dutch": "tweede",
+          "english": [
+            "second"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c598",
+          "dutch": "een seconde",
+          "english": [
+            "second"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c4586",
+          "dutch": "binnenlaat",
+          "english": [
+            "first",
+            "second"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c9504",
+          "dutch": "herkansing",
+          "english": [
+            "retry",
+            "second"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "then",
+      "count": 4,
+      "words": [
+        {
+          "id": "c383",
+          "dutch": "dan",
+          "english": [
+            "then"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c1136",
+          "dutch": "toen",
+          "english": [
+            "then"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c5623",
+          "dutch": "destijds",
+          "english": [
+            "then"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c5965",
+          "dutch": "toenmalig",
+          "english": [
+            "then"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "ready",
+      "count": 4,
+      "words": [
+        {
+          "id": "c393",
+          "dutch": "klaar",
+          "english": [
+            "ready"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c2469",
+          "dutch": "bereid",
+          "english": [
+            "ready",
+            "prepared"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7853",
+          "dutch": "paraat",
+          "english": [
+            "ready"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9364",
+          "dutch": "gereed",
+          "english": [
+            "ready",
+            "prepared"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "all",
+      "count": 4,
+      "words": [
+        {
+          "id": "c403",
+          "dutch": "allemaal",
+          "english": [
+            "all"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c451",
+          "dutch": "alle",
+          "english": [
+            "all"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c667",
+          "dutch": "alles",
+          "english": [
+            "all",
+            "everythingh"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c5292",
+          "dutch": "gezamenlijk",
+          "english": [
+            "all"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "food",
+      "count": 4,
+      "words": [
+        {
+          "id": "c406",
+          "dutch": "het eten",
+          "english": [
+            "food"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c1842",
+          "dutch": "het voedsel",
+          "english": [
+            "food"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3024",
+          "dutch": "voeding",
+          "english": [
+            "food",
+            "diet"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4754",
+          "dutch": "de etenswaar",
+          "english": [
+            "food",
+            "foodstuff"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "to call",
+      "count": 4,
+      "words": [
+        {
+          "id": "c412",
+          "dutch": "roepen",
+          "english": [
+            "to call",
+            "to call somebody"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c1116",
+          "dutch": "noemen",
+          "english": [
+            "to call"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c2778",
+          "dutch": "opbellen",
+          "english": [
+            "to call"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3595",
+          "dutch": "oproepen",
+          "english": [
+            "to call",
+            "invoke"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "to place",
+      "count": 4,
+      "words": [
+        {
+          "id": "c414",
+          "dutch": "zetten",
+          "english": [
+            "to put",
+            "to place"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c2461",
+          "dutch": "voegen",
+          "english": [
+            "to place",
+            "to put"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2466",
+          "dutch": "vestigen",
+          "english": [
+            "to establish",
+            "to place"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3078",
+          "dutch": "plaatsen",
+          "english": [
+            "to place"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "stupid",
+      "count": 4,
+      "words": [
+        {
+          "id": "c428",
+          "dutch": "dom",
+          "english": [
+            "stupid"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c2700",
+          "dutch": "idioot",
+          "english": [
+            "idiotic",
+            "foolish",
+            "stupid"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4097",
+          "dutch": "dwaas",
+          "english": [
+            "foolish",
+            "stupid"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c9446",
+          "dutch": "achterlijk",
+          "english": [
+            "backwards",
+            "idiotic",
+            "stupid"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "back",
+      "count": 4,
+      "words": [
+        {
+          "id": "c449",
+          "dutch": "terug",
+          "english": [
+            "back"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c486",
+          "dutch": "de rug",
+          "english": [
+            "back"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c2898",
+          "dutch": "terugzien",
+          "english": [
+            "to see again",
+            "back"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c4594",
+          "dutch": "zijkant",
+          "english": [
+            "side",
+            "back",
+            "top"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "sound",
+      "count": 4,
+      "words": [
+        {
+          "id": "c492",
+          "dutch": "de klank",
+          "english": [
+            "sound"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c1435",
+          "dutch": "het geluid",
+          "english": [
+            "sound"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c4407",
+          "dutch": "flappen",
+          "english": [
+            "to flap",
+            "make a flapping movement",
+            "sound"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5359",
+          "dutch": "degelijk",
+          "english": [
+            "sound",
+            "solid"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "to take",
+      "count": 4,
+      "words": [
+        {
+          "id": "c558",
+          "dutch": "innemen",
+          "english": [
+            "to take",
+            "to swallow"
+          ],
+          "level": "A1 · U5"
+        },
+        {
+          "id": "c685",
+          "dutch": "nemen",
+          "english": [
+            "to take"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c2464",
+          "dutch": "aannemen",
+          "english": [
+            "to take"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2473",
+          "dutch": "aanpakken",
+          "english": [
+            "to take",
+            "to hold",
+            "to take over"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "size",
+      "count": 4,
+      "words": [
+        {
+          "id": "c608",
+          "dutch": "de maat",
+          "english": [
+            "size"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c6115",
+          "dutch": "de omvang",
+          "english": [
+            "dimension",
+            "size",
+            "extensiveness"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8850",
+          "dutch": "de grootte",
+          "english": [
+            "size"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "c9618",
+          "dutch": "statuur",
+          "english": [
+            "stature",
+            "size"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "indeed",
+      "count": 4,
+      "words": [
+        {
+          "id": "c648",
+          "dutch": "wel",
+          "english": [
+            "for sure",
+            "indeed"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c889",
+          "dutch": "inderdaad",
+          "english": [
+            "indeed"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c1816",
+          "dutch": "immers",
+          "english": [
+            "indeed",
+            "after all"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c5508",
+          "dutch": "weliswaar",
+          "english": [
+            "admittedly",
+            "indeed"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "to order",
+      "count": 4,
+      "words": [
+        {
+          "id": "c651",
+          "dutch": "bestellen",
+          "english": [
+            "to order"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c3220",
+          "dutch": "bevelen",
+          "english": [
+            "to order",
+            "to command"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7234",
+          "dutch": "rangschikken",
+          "english": [
+            "to sort",
+            "to order"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9679",
+          "dutch": "schikken",
+          "english": [
+            "to arrange",
+            "to order"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "to pick up",
+      "count": 4,
+      "words": [
+        {
+          "id": "c659",
+          "dutch": "ophalen",
+          "english": [
+            "to pick up",
+            "to fetch"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c2450",
+          "dutch": "oppakken",
+          "english": [
+            "to pick up"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2834",
+          "dutch": "rapen",
+          "english": [
+            "to gather",
+            "to pick up"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c3071",
+          "dutch": "afhalen",
+          "english": [
+            "to pick up",
+            "take away"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "stuff",
+      "count": 4,
+      "words": [
+        {
+          "id": "c660",
+          "dutch": "de spullen",
+          "english": [
+            "stuff",
+            "things"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c1839",
+          "dutch": "het spul",
+          "english": [
+            "stuff"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2817",
+          "dutch": "de shit",
+          "english": [
+            "stuff"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10096",
+          "dutch": "vreten",
+          "english": [
+            "to eat savagely",
+            "stuff",
+            "hog"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "hot",
+      "count": 4,
+      "words": [
+        {
+          "id": "c676",
+          "dutch": "warm",
+          "english": [
+            "hot"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c1063",
+          "dutch": "heet",
+          "english": [
+            "hot"
+          ],
+          "level": "A2 · U2"
+        },
+        {
+          "id": "c7156",
+          "dutch": "verhit",
+          "english": [
+            "fiery",
+            "hot",
+            "feverish"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7406",
+          "dutch": "pikant",
+          "english": [
+            "hot",
+            "spicy",
+            "piquant"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "coach",
+      "count": 4,
+      "words": [
+        {
+          "id": "c681",
+          "dutch": "de bus",
+          "english": [
+            "bus",
+            "coach"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c1893",
+          "dutch": "het rijtuig",
+          "english": [
+            "carriage",
+            "coach"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2213",
+          "dutch": "koets",
+          "english": [
+            "coach"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c7113",
+          "dutch": "autobus",
+          "english": [
+            "bus",
+            "coach"
+          ],
+          "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "way",
+      "count": 4,
+      "words": [
+        {
+          "id": "c760",
+          "dutch": "de weg",
+          "english": [
+            "way",
+            "route"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c821",
+          "dutch": "de manier",
+          "english": [
+            "way",
+            "manner"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c2284",
+          "dutch": "wijze",
+          "english": [
+            "manner",
+            "mode",
+            "way"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c2304",
+          "dutch": "route",
+          "english": [
+            "route",
+            "course",
+            "way"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "gloss": "opposite",
+      "count": 4,
+      "words": [
+        {
+          "id": "c733",
+          "dutch": "tegenover",
+          "english": [
+            "opposite"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c824",
+          "dutch": "de tegenstelling",
+          "english": [
+            "opposite"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c6278",
+          "dutch": "tegenovergesteld",
+          "english": [
+            "opposite"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8432",
+          "dutch": "tegengesteld",
+          "english": [
+            "opposite"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "form",
+      "count": 4,
+      "words": [
+        {
+          "id": "c764",
+          "dutch": "de vorm",
+          "english": [
+            "form"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c856",
+          "dutch": "het formulier",
+          "english": [
+            "form"
+          ],
+          "level": "A1 · U8"
+        },
+        {
+          "id": "c3761",
+          "dutch": "gedaante",
+          "english": [
+            "form",
+            "appearance"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c8511",
+          "dutch": "beelden",
+          "english": [
+            "to shape",
+            "form"
+          ],
+          "level": "B2"
+        }
+      ]
+    }
+  ],
+  "junkGlossCollisions": [
+    {
+      "gloss": "not",
+      "count": 2,
+      "words": [
+        {
+          "id": "c61",
+          "dutch": "niet",
+          "english": [
+            "not"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c8527",
+          "dutch": "al dan niet",
+          "english": [
+            "... not"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "no",
+      "count": 2,
+      "words": [
+        {
+          "id": "c77",
+          "dutch": "geen",
+          "english": [
+            "no"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c87",
+          "dutch": "nee",
+          "english": [
+            "no"
+          ],
+          "level": "A1 · U1"
+        }
+      ]
+    },
+    {
+      "gloss": "of",
+      "count": 2,
+      "words": [
+        {
+          "id": "c355",
+          "dutch": "van",
+          "english": [
+            "from",
+            "of"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c9016",
+          "dutch": "atlantisch",
+          "english": [
+            "of"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "in",
+      "count": 2,
+      "words": [
+        {
+          "id": "c691",
+          "dutch": "in",
+          "english": [
+            "in"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c695",
+          "dutch": "over",
+          "english": [
+            "in"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "gloss": "at",
+      "count": 2,
+      "words": [
+        {
+          "id": "c693",
+          "dutch": "om",
+          "english": [
+            "at"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c749",
+          "dutch": "bij",
+          "english": [
+            "at"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "gloss": "on",
+      "count": 2,
+      "words": [
+        {
+          "id": "c694",
+          "dutch": "op",
+          "english": [
+            "on"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c726",
+          "dutch": "aan",
+          "english": [
+            "on"
+          ],
+          "level": "A1 · U7"
+        }
+      ]
+    }
+  ],
+  "exactDuplicates": [],
+  "extraWords": {
+    "parenthetical": [
+      {
+        "id": "c12",
+        "dutch": "de neef",
+        "english": "cousin (male)"
+      },
+      {
+        "id": "c13",
+        "dutch": "de nicht",
+        "english": "cousin (female)"
+      },
+      {
+        "id": "c46",
+        "dutch": "jij",
+        "english": "you (singular)"
+      },
+      {
+        "id": "c47",
+        "dutch": "u",
+        "english": "you (polite)"
+      },
+      {
+        "id": "c51",
+        "dutch": "jullie",
+        "english": "you (plural)"
+      },
+      {
+        "id": "c291",
+        "dutch": "de buurman",
+        "english": "neighbour (male)"
+      },
+      {
+        "id": "c292",
+        "dutch": "de buurvrouw",
+        "english": "neighbour (female)"
+      },
+      {
+        "id": "c513",
+        "dutch": "de assistente",
+        "english": "assistant (female)"
+      },
+      {
+        "id": "c616",
+        "dutch": "aanhebben",
+        "english": "to wear (clothing)"
+      },
+      {
+        "id": "c617",
+        "dutch": "dragen",
+        "english": "to wear (clothing)"
+      },
+      {
+        "id": "c777",
+        "dutch": "jouw",
+        "english": "your (singular)"
+      },
+      {
+        "id": "c778",
+        "dutch": "uw",
+        "english": "your (polite)"
+      },
+      {
+        "id": "c781",
+        "dutch": "ons",
+        "english": "our (neuter)"
+      },
+      {
+        "id": "c783",
+        "dutch": "jullie",
+        "english": "your (plural)"
+      },
+      {
+        "id": "c943",
+        "dutch": "verhuizen",
+        "english": "to move (to another house)"
+      },
+      {
+        "id": "c978",
+        "dutch": "de pincode",
+        "english": "pin (code of card)"
+      },
+      {
+        "id": "c1012",
+        "dutch": "Sinterklaas",
+        "english": "Sinterklaas (Dutch holiday)"
+      },
+      {
+        "id": "c1073",
+        "dutch": "waaien",
+        "english": "to blow (wind)"
+      },
+      {
+        "id": "c1106",
+        "dutch": "de zaal",
+        "english": "(big) room"
+      },
+      {
+        "id": "c1192",
+        "dutch": "opnemen",
+        "english": "to answer (phone)"
+      },
+      {
+        "id": "c1345",
+        "dutch": "het hbo",
+        "english": "vocational education (high level)"
+      },
+      {
+        "id": "c1347",
+        "dutch": "het mbo",
+        "english": "vocational education (medium level)"
+      },
+      {
+        "id": "c1422",
+        "dutch": "de dienst",
+        "english": "shift (work)"
+      }
+    ],
+    "bracket": [],
+    "slash_alt": [],
+    "multi_clause": [],
+    "placeholder": [
+      {
+        "id": "c253",
+        "dutch": "iemand",
+        "english": "someone"
+      },
+      {
+        "id": "c412",
+        "dutch": "roepen",
+        "english": "to call somebody"
+      },
+      {
+        "id": "c470",
+        "dutch": "iets",
+        "english": "something"
+      },
+      {
+        "id": "c539",
+        "dutch": "zeggen tegen",
+        "english": "to say to somebody"
+      },
+      {
+        "id": "c741",
+        "dutch": "dus",
+        "english": "so"
+      },
+      {
+        "id": "c1182",
+        "dutch": "verzetten",
+        "english": "to move something"
+      },
+      {
+        "id": "c1198",
+        "dutch": "zodat",
+        "english": "so that"
+      },
+      {
+        "id": "c1811",
+        "dutch": "zwijgen",
+        "english": "to shut one's mouth"
+      },
+      {
+        "id": "c1871",
+        "dutch": "tip",
+        "english": "extreme end of something"
+      },
+      {
+        "id": "c2026",
+        "dutch": "zogenaamd",
+        "english": "so-called"
+      },
+      {
+        "id": "c2206",
+        "dutch": "zolang",
+        "english": "so long as"
+      },
+      {
+        "id": "c2480",
+        "dutch": "zover",
+        "english": "so far"
+      },
+      {
+        "id": "c2481",
+        "dutch": "kennismaken",
+        "english": "to make someone's acquaintance"
+      },
+      {
+        "id": "c2493",
+        "dutch": "grootouder",
+        "english": "parent of someone's parent"
+      },
+      {
+        "id": "c2590",
+        "dutch": "gedragen",
+        "english": "to behave oneself"
+      },
+      {
+        "id": "c2598",
+        "dutch": "uitdrukking",
+        "english": "process of expressing something"
+      },
+      {
+        "id": "c2622",
+        "dutch": "herinnering",
+        "english": "something that one remembers"
+      },
+      {
+        "id": "c2689",
+        "dutch": "achterover",
+        "english": "on one's back"
+      },
+      {
+        "id": "c2737",
+        "dutch": "bestemming",
+        "english": "future function of something"
+      },
+      {
+        "id": "c3054",
+        "dutch": "teruggeven",
+        "english": "give something back"
+      },
+      {
+        "id": "c3060",
+        "dutch": "opkijken",
+        "english": "to lift one's eyes"
+      },
+      {
+        "id": "c3183",
+        "dutch": "manager",
+        "english": "someone in management"
+      },
+      {
+        "id": "c3292",
+        "dutch": "de maling",
+        "english": "something is milled"
+      },
+      {
+        "id": "c3330",
+        "dutch": "verkeren",
+        "english": "to find oneself"
+      },
+      {
+        "id": "c3489",
+        "dutch": "topper",
+        "english": "someone"
+      }
+    ],
+    "register_tag": [],
+    "abbrev_etc": [],
+    "infinitive_to": [
+      {
+        "id": "c9",
+        "dutch": "wonen",
+        "english": "to live in"
+      },
+      {
+        "id": "c23",
+        "dutch": "groeten",
+        "english": "to greet"
+      },
+      {
+        "id": "c35",
+        "dutch": "heten",
+        "english": "to be called"
+      },
+      {
+        "id": "c65",
+        "dutch": "zijn",
+        "english": "to be"
+      },
+      {
+        "id": "c81",
+        "dutch": "horen",
+        "english": "to hear"
+      },
+      {
+        "id": "c88",
+        "dutch": "praten",
+        "english": "to talk"
+      },
+      {
+        "id": "c91",
+        "dutch": "beginnen",
+        "english": "to begin"
+      },
+      {
+        "id": "c92",
+        "dutch": "eindigen",
+        "english": "to finish"
+      },
+      {
+        "id": "c97",
+        "dutch": "hebben",
+        "english": "to have"
+      },
+      {
+        "id": "c111",
+        "dutch": "gaan",
+        "english": "to go"
+      },
+      {
+        "id": "c112",
+        "dutch": "lopen",
+        "english": "to walk"
+      },
+      {
+        "id": "c118",
+        "dutch": "zeggen",
+        "english": "to say"
+      },
+      {
+        "id": "c161",
+        "dutch": "leren",
+        "english": "to learn"
+      },
+      {
+        "id": "c162",
+        "dutch": "lezen",
+        "english": "to read"
+      },
+      {
+        "id": "c163",
+        "dutch": "luisteren",
+        "english": "to listen"
+      },
+      {
+        "id": "c164",
+        "dutch": "maken",
+        "english": "to make"
+      },
+      {
+        "id": "c167",
+        "dutch": "schrijven",
+        "english": "to write"
+      },
+      {
+        "id": "c168",
+        "dutch": "spreken",
+        "english": "to speak"
+      },
+      {
+        "id": "c184",
+        "dutch": "vragen",
+        "english": "to ask"
+      },
+      {
+        "id": "c194",
+        "dutch": "begrijpen",
+        "english": "to understand"
+      },
+      {
+        "id": "c212",
+        "dutch": "staan",
+        "english": "to stand"
+      },
+      {
+        "id": "c213",
+        "dutch": "zien",
+        "english": "to see"
+      },
+      {
+        "id": "c214",
+        "dutch": "zitten",
+        "english": "to sit"
+      },
+      {
+        "id": "c215",
+        "dutch": "kiezen",
+        "english": "to choose"
+      },
+      {
+        "id": "c218",
+        "dutch": "moeten",
+        "english": "to have to"
+      }
+    ]
+  }
+}
