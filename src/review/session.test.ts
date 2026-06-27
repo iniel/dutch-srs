@@ -286,6 +286,22 @@ describe("buildReviewQueue order", () => {
     expect(order.indexOf("a:en_nl")).toBeLessThan(order.indexOf("a:nl_en"));
     expect(order.indexOf("b:en_nl")).toBeLessThan(order.indexOf("b:nl_en"));
   });
+
+  it("shuffled keeps both directions of a word within bounded index distance (interleave density)", () => {
+    const manyStates: Record<string, ReviewState> = {};
+    for (let i = 0; i < 30; i++) manyStates[`w${i}`] = state({ availableAt: 0 });
+    const order = buildReviewQueue(manyStates, NOW, "shuffled").map((t) => t.key);
+    const N = 30;
+    const gap = Math.max(1, Math.min(Math.floor(N / 3), 8));
+    for (let i = 0; i < N; i++) {
+      const id = `w${i}`;
+      const enIdx = order.indexOf(`${id}:en_nl`);
+      const nlIdx = order.indexOf(`${id}:nl_en`);
+      expect(enIdx).toBeGreaterThanOrEqual(0);
+      expect(nlIdx).toBeGreaterThanOrEqual(0);
+      expect(nlIdx - enIdx).toBeLessThanOrEqual(N + gap);
+    }
+  });
 });
 
 describe("buildLeechQueue", () => {

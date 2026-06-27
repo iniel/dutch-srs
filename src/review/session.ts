@@ -21,32 +21,46 @@ function isApprentice(stage: number): boolean {
   return stage >= 1 && stage <= APPRENTICE_MAX_STAGE;
 }
 
-// Fully interleave all items, but keep EN→NL (production) before NL→EN
-// (recognition) for the same word — clamp the pair's random weights so en_nl
-// never sorts after its nl_en. The two need not be adjacent.
-function shuffleKeepingDirOrder(tasks: ReviewTask[], seed: number): ReviewTask[] {
+// Interleave tasks so both directions of each word appear close together throughout
+// the queue. Uses rank-offset: en_nl gets rank r, nl_en gets rank r+gap, where
+// gap = min(floor(N/3), 8). This bounds the maximum distance between a word's two
+// directions to gap+N tasks, ensuring partial-session progress even when interrupted.
+function shuffleInterleaved(tasks: ReviewTask[], seed: number): ReviewTask[] {
   const rand = seededRandom(seed);
-  const weight = new Map<ItemKey, number>();
-  for (const task of tasks) weight.set(task.key, rand());
 
   const byCard = new Map<string, ReviewTask[]>();
   for (const task of tasks) {
-    const group = byCard.get(task.cardId) ?? [];
-    group.push(task);
-    byCard.set(task.cardId, group);
+    const g = byCard.get(task.cardId) ?? [];
+    g.push(task);
+    byCard.set(task.cardId, g);
   }
-  for (const group of byCard.values()) {
+
+  const cards = [...byCard.keys()];
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [cards[i], cards[j]] = [cards[j], cards[i]];
+  }
+
+  const N = cards.length;
+  const gap = Math.max(1, Math.min(Math.floor(N / 3), 8));
+
+  type Positioned = { pos: number; tieDir: number; task: ReviewTask };
+  const positioned: Positioned[] = [];
+
+  for (let r = 0; r < N; r++) {
+    const group = byCard.get(cards[r])!;
     const en = group.find((t) => t.dir === "en_nl");
     const nl = group.find((t) => t.dir === "nl_en");
     if (en && nl) {
-      const lo = Math.min(weight.get(en.key)!, weight.get(nl.key)!);
-      const hi = Math.max(weight.get(en.key)!, weight.get(nl.key)!);
-      weight.set(en.key, lo);
-      weight.set(nl.key, hi);
+      positioned.push({ pos: r, tieDir: 0, task: en });
+      positioned.push({ pos: r + gap, tieDir: 1, task: nl });
+    } else {
+      positioned.push({ pos: r, tieDir: 0, task: group[0] });
     }
   }
 
-  return [...tasks].sort((a, b) => weight.get(a.key)! - weight.get(b.key)!);
+  positioned.sort((a, b) => a.pos - b.pos || a.tieDir - b.tieDir);
+  return positioned.map((p) => p.task);
 }
 
 // Mulberry32 PRNG so "shuffled" order is stable across runs for a given seed.
@@ -79,7 +93,7 @@ export function buildReviewQueue(
     a.availableAt - b.availableAt || (a.task.key < b.task.key ? -1 : 1);
 
   if (order === "shuffled") {
-    return shuffleKeepingDirOrder(due.map((d) => d.task), now);
+    return shuffleInterleaved(due.map((d) => d.task), now);
   }
 
   if (order === "apprentice_first") {
@@ -166,7 +180,7 @@ export function buildLessonQueue(
   }
 
   const tasks = picked.flatMap(singleWordLessonTasks);
-  return seed === undefined ? tasks : shuffleKeepingDirOrder(tasks, seed);
+  return seed === undefined ? tasks : shuffleInterleaved(tasks, seed);
 }
 
 /** Fired once per word, when its final outstanding direction is cleared. */
