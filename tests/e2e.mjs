@@ -45,7 +45,7 @@ async function answerAll(page, cards) {
     const info = await page.evaluate(() => ({
       label: document.querySelector(".prompt-label")?.textContent || "",
       prompt: document.querySelector(".prompt-text")?.textContent || "",
-      wrong: !!document.querySelector(".wrong-feedback"),
+      wrong: !!document.querySelector(".answer-input[disabled]"),
     }));
     if (info.wrong) {
       await page.keyboard.press("Enter");
@@ -83,7 +83,7 @@ async function missAnswer(page) {
   await input.pressSequentially("zzzwrong", { delay: 25 });
   await page.waitForTimeout(40);
   await page.keyboard.press("Enter");
-  await page.waitForSelector(".wrong-feedback", { timeout: 5000 });
+  await page.waitForSelector(".answer-input[disabled]", { timeout: 5000 });
 }
 
 async function setClockOffset(page, ms) {
@@ -221,7 +221,7 @@ try {
   const afterReset = await readState(page);
   check(afterReset.count === 0, `reset cleared states (${afterReset.count})`);
 
-  console.log("BUG 3 + FEATURE 4 — collapsed wrong-answer feedback:");
+  console.log("BUG 3 + FEATURE 4 — in-place wrong-answer state:");
   await page.click(".action-card.lessons");
   for (let i = 0; i < 8; i++) {
     if (await page.$(".answer-input")) break;
@@ -231,19 +231,26 @@ try {
   }
   await page.waitForSelector(".answer-input");
   await missAnswer(page);
-  const collapsed = await page.evaluate(() => ({
-    title: document.querySelector(".feedback-title")?.textContent,
-    answerHidden: !document.querySelector(".feedback-answer"),
-    hasReveal: !!document.querySelector(".reveal-link"),
-  }));
-  check(collapsed.title === "Incorrect" && collapsed.answerHidden && collapsed.hasReveal,
-    "wrong answer shows collapsed (answer hidden, reveal link present)");
-  await page.click(".reveal-link");
-  check(!!(await page.$(".feedback-answer")), "Show answer reveals the correct answer");
-  await page.keyboard.press("Enter"); // continue
+  const wrongState = await page.evaluate(() => {
+    const input = document.querySelector(".answer-input");
+    const reveal = document.querySelector(".quiz-reveal");
+    return {
+      disabled: !!input?.hasAttribute("disabled"),
+      red: !!input?.classList.contains("wrong"),
+      keptValue: input?.value || "",
+      answerShown: !!reveal && (reveal.textContent || "").trim().length > 0,
+      hasNext: !!document.querySelector(".answer-next"),
+    };
+  });
+  check(wrongState.disabled, "wrong answer disables the input");
+  check(wrongState.red, "wrong answer turns the input red");
+  check(wrongState.keptValue === "zzzwrong", "wrong answer keeps the typed value");
+  check(wrongState.answerShown, "correct answer is shown under the word");
+  check(wrongState.hasNext, "next arrow button is present");
+  await page.click(".answer-next"); // advance via arrow
   await page.waitForTimeout(120);
   await missAnswer(page);
-  check(!!(await page.$(".wrong-feedback")), "wrong feedback shows again on a later miss (BUG 3)");
+  check(!!(await page.$(".quiz-reveal")), "wrong state shows again on a later miss (BUG 3)");
 } catch (e) {
   console.error("E2E threw:", e);
   exitCode = 1;

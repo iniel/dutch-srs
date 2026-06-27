@@ -282,6 +282,7 @@
   opacity: 0.8;
 }
 .quiz-word {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -290,11 +291,39 @@
   gap: 18px;
   text-align: center;
 }
+/* The correct answer on a wrong attempt: overlaid below the word so it never
+   shifts the centered prompt. */
+.quiz-reveal {
+  position: absolute;
+  top: calc(50% + 2.6rem);
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  word-break: break-word;
+  pointer-events: none;
+}
+.quiz-reveal .speak-btn {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
 .prompt-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   opacity: 0.85;
+}
+.prompt-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 }
 .prompt-text {
   font-size: 3rem;
@@ -377,82 +406,20 @@
   45% { transform: scale(1.25); }
   100% { transform: scale(1); }
 }
-
-/* Wrong-answer screen: own scroll-locked column so tall feedback scrolls */
-.wrong-screen {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.wrong-prompt {
-  flex: 0 0 auto;
-  padding-bottom: 16px;
-}
-.wrong-recap {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 14px;
-  text-align: left;
-}
-.wrong-prompt-text {
-  font-size: 1.6rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  word-break: break-word;
-  line-height: 1.1;
-}
-.wrong-scroll {
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: 16px max(16px, env(safe-area-inset-left)) 16px max(16px, env(safe-area-inset-right));
-}
-.wrong-foot {
-  flex: 0 0 auto;
-  padding: 12px max(16px, env(safe-area-inset-left)) max(12px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-right));
-  border-top: 1px solid var(--border-faint);
-  background: var(--bg);
-}
-
-/* Wrong-answer feedback sheet */
-.feedback {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.wrong-feedback {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-}
-.feedback-title {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--incorrect);
-  font-weight: 700;
-}
-.feedback-answer {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text);
-}
-.feedback-notes {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-.reveal-link {
-  align-self: flex-start;
+.answer-next {
+  position: absolute;
+  right: 0;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   border: none;
-  background: none;
-  padding: 0;
-  color: var(--accent);
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: underline;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  line-height: 1;
   cursor: pointer;
 }
 

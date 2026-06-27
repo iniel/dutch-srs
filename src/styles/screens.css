@@ -310,9 +310,3 @@
 .etymology p {
   margin: 6px 0 0;
 }
-/* Quiz feedback panel sits on a surface card — examples need contrast. */
-.wrong-feedback .example-item,
-.wrong-feedback .forms-table {
-  background: var(--surface-2);
-  border-color: var(--border);
-}

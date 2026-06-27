@@ -3,7 +3,6 @@ import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
 import { acceptedForDirection, checkAnswer } from "../review/answerCheck";
 import { speak, speechSupported } from "../util/speak";
-import { WordDetail } from "./WordDetail";
 
 interface QuizProps {
   session: Session;
@@ -20,21 +19,18 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: QuizProps) {
+export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
-  const [revealed, setRevealed] = useState(false);
   const [flash, setFlash] = useState(false);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const wrongScrollRef = useRef<HTMLDivElement>(null);
 
   const task = session.current();
 
   useEffect(() => {
     setPhase("input");
     setValue("");
-    setRevealed(false);
     setFlash(false);
   }, [task?.key]);
 
@@ -54,7 +50,6 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     session.submit(false);
     setPhase("input");
     setValue("");
-    setRevealed(false);
     force((n) => n + 1);
     if (session.isComplete()) onComplete();
   };
@@ -71,9 +66,6 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
         if (!armed) return;
         e.preventDefault();
         advanceRef.current();
-      } else if (e.key === " " || e.key === "ArrowDown") {
-        e.preventDefault();
-        setRevealed(true);
       }
     };
     window.addEventListener("keydown", handler);
@@ -143,58 +135,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     </>
   );
 
-  if (phase === "wrong") {
-    return (
-      <div className="quiz wrong-screen">
-        <div className="quiz-prompt wrong-prompt">
-          {progressHeader}
-          <div className="wrong-recap">
-            <div className="prompt-label">{dirLabel(task.dir)} · {card.type}</div>
-            <div className="wrong-prompt-text">{prompt}</div>
-          </div>
-        </div>
-
-        <div className="wrong-scroll" ref={wrongScrollRef}>
-          <div className="feedback wrong-feedback">
-            <div className="feedback-title">Incorrect</div>
-            {revealed ? (
-              <>
-                <div className="feedback-answer">
-                  {accepted.join(", ")}
-                  {task.dir === "en_nl" && speechSupported() && (
-                    <button
-                      type="button"
-                      className="speak-btn"
-                      onClick={() => speak(card.dutch)}
-                      aria-label="Pronounce Dutch word"
-                    >
-                      🔊
-                    </button>
-                  )}
-                </div>
-                {card.notes && <div className="feedback-notes">{card.notes}</div>}
-                <WordDetail enrichment={getEnrichment?.(card.id)} compact />
-              </>
-            ) : (
-              <button
-                type="button"
-                className="reveal-link"
-                onClick={() => setRevealed(true)}
-              >
-                Show answer
-              </button>
-            )}
-          </div>
-        </div>
-
-        <div className="wrong-foot">
-          <button className="btn primary block" onClick={advanceAfterWrong}>
-            Continue (Enter)
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const wrong = phase === "wrong";
 
   return (
     <div className="quiz">
@@ -204,16 +145,33 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
           <div className="prompt-label">
             {dirLabel(task.dir)} · {card.type}
           </div>
-          <div className="prompt-text">{prompt}</div>
-          {task.dir === "nl_en" && speechSupported() && (
-            <button
-              type="button"
-              className="quiz-speak"
-              onClick={() => speak(card.dutch)}
-              aria-label="Pronounce Dutch word"
-            >
-              🔊
-            </button>
+          <div className="prompt-row">
+            <div className="prompt-text">{prompt}</div>
+            {task.dir === "nl_en" && speechSupported() && (
+              <button
+                type="button"
+                className="quiz-speak"
+                onClick={() => speak(card.dutch)}
+                aria-label="Pronounce Dutch word"
+              >
+                🔊
+              </button>
+            )}
+          </div>
+          {wrong && (
+            <div className="quiz-reveal">
+              {accepted.join(", ")}
+              {task.dir === "en_nl" && speechSupported() && (
+                <button
+                  type="button"
+                  className="speak-btn"
+                  onClick={() => speak(card.dutch)}
+                  aria-label="Pronounce Dutch word"
+                >
+                  🔊
+                </button>
+              )}
+            </div>
           )}
         </div>
       </div>
@@ -222,10 +180,11 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
         <div className="answer-field">
           <input
             ref={inputRef}
-            className="answer-input"
+            className={`answer-input ${wrong ? "wrong" : ""}`}
             value={value}
             onChange={(e) => setValue(e.target.value)}
             onKeyDown={onKeyDown}
+            disabled={wrong}
             placeholder="Your response"
             autoCapitalize="off"
             autoCorrect="off"
@@ -234,7 +193,18 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
             enterKeyHint="go"
             aria-label="answer"
           />
-          <span className={`answer-check ${flash ? "correct" : ""}`} aria-hidden="true">✓</span>
+          {wrong ? (
+            <button
+              type="button"
+              className="answer-next"
+              onClick={advanceAfterWrong}
+              aria-label="next"
+            >
+              →
+            </button>
+          ) : (
+            <span className={`answer-check ${flash ? "correct" : ""}`} aria-hidden="true">✓</span>
+          )}
         </div>
       </div>
     </div>
