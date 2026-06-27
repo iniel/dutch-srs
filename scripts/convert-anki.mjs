@@ -16,13 +16,24 @@ const DECKS = [
   { file: "TaalCompleet_A2_Dutch-English-PersianFarsi.apkg", level: "A2" },
 ];
 
-const stripHtml = (s) =>
+// Decode HTML entities BEFORE any splitting — otherwise the `;` inside an
+// entity like &#x27; gets treated as a meaning separator (splits "It's" -> "It&#x27", "s").
+const decodeEntities = (s) =>
   (s ?? "")
-    .replace(/<br\s*\/?>/gi, " ")
-    .replace(/<[^>]+>/g, "")
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(parseInt(d, 10)))
+    .replace(/&apos;/g, "'")
+    .replace(/&quot;/g, '"')
     .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/\[sound:[^\]]*\]/gi, "")
+    .replace(/&amp;/g, "&");
+
+const stripHtml = (s) =>
+  decodeEntities(
+    (s ?? "")
+      .replace(/<br\s*\/?>/gi, " ")
+      .replace(/<[^>]+>/g, "")
+      .replace(/\[sound:[^\]]*\]/gi, "")
+  )
     .replace(/\s+/g, " ")
     .trim();
 
