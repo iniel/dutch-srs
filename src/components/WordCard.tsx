@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { Card, Enrichment, ProgressData } from "../types";
 import { cefrBadge } from "../srs/levels";
 import { SrsStagePill } from "./SrsStagePill";
@@ -19,6 +20,10 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
   const pinned = progress.lessonQueue.includes(card.id);
   const phon = [enrichment?.ipa, enrichment?.syllables].filter(Boolean).join(" · ");
   const cefr = cefrBadge(card);
+
+  useEffect(() => {
+    speak(card.dutch);
+  }, [card.id]);
 
   return (
     <div className="screen word-detail">

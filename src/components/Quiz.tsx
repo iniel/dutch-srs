@@ -94,6 +94,8 @@ export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: Qu
     }
     if (value.trim() === "") return;
     const { correct } = checkAnswer(value, accepted, task!.dir === "nl_en");
+    // EN→NL prompts never speak on open; play the Dutch answer once submitted (right or wrong).
+    if (task!.dir === "en_nl") speak(card!.dutch);
     if (correct) {
       // Let the green check flash before the next card replaces the input.
       setFlash(true);
