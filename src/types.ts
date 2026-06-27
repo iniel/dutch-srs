@@ -74,6 +74,8 @@ export interface Enrichment {
   syllables?: string;
   audioUrl?: string;
   glossSummary?: string;
+  /** Russian glosses for the whole word, from the ruwiktionary edition (display-only). */
+  glossRu?: string[];
   senses?: Sense[];
   grammar?: Grammar;
   synonyms?: string[];

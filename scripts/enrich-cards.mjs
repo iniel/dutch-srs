@@ -11,9 +11,11 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { stripArticle, normalizeHead, pickEntry, extractKaikki, dedupeExamples } from "./enrich/extract.mjs";
 import { buildKaikkiIndex } from "./enrich/kaikki-index.mjs";
+import { buildRuGlossIndex } from "./enrich/ru-index.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KAIKKI = join(root, "data/kaikki/kaikki-Dutch.jsonl");
+const KAIKKI_RU = join(root, "data/kaikki/kaikki-ru.jsonl");
 const TAT = join(root, "data/tatoeba");
 
 const MAX_TATOEBA_IDS_PER_HEAD = 40;
@@ -107,7 +109,7 @@ async function buildTatoebaIndex(wantedHeads) {
   return { examplesFor };
 }
 
-function enrichOne(card, kaikkiIndex, tatoeba) {
+function enrichOne(card, kaikkiIndex, tatoeba, ruIndex) {
   const heads = cardHeads(card);
   const candidates = heads.flatMap((h) => kaikkiIndex.get(h) ?? []);
   const { entry, matchedBy } = pickEntry(candidates, card.pos);
@@ -120,6 +122,9 @@ function enrichOne(card, kaikkiIndex, tatoeba) {
     for (const s of out.senses ?? []) for (const ex of s.examples ?? []) kaikkiExamples.push(ex);
   }
 
+  const ruGlosses = heads.map((h) => ruIndex.get(h)).find((g) => g?.length);
+  if (ruGlosses) out.glossRu = ruGlosses;
+
   const tatExamples = tatoeba.examplesFor(heads);
   const merged = dedupeExamples([...kaikkiExamples, ...tatExamples], MAX_EXAMPLES);
   if (merged.length) {
@@ -128,7 +133,7 @@ function enrichOne(card, kaikkiIndex, tatoeba) {
     else if (!entry) out.match = { source: "tatoeba", matchedBy: "dutch-stripped" };
   }
 
-  const hasContent = entry || out.examples;
+  const hasContent = entry || out.examples || out.glossRu;
   return hasContent ? out : null;
 }
 
@@ -139,18 +144,21 @@ async function main() {
   console.log(`cards: ${cards.length}, wanted heads: ${wantedHeads.size}`);
 
   const kaikkiIndex = await buildKaikkiIndex(KAIKKI, wantedHeads);
+  const ruIndex = await buildRuGlossIndex(KAIKKI_RU, wantedHeads);
   const tatoeba = await buildTatoebaIndex(wantedHeads);
 
   const result = {};
   const stats = { kaikki: 0, "kaikki+tatoeba": 0, tatoeba: 0, none: 0 };
   const byMatch = {};
   const unmatchedWords = [];
+  let withRuGloss = 0;
   for (const card of cards) {
-    const e = enrichOne(card, kaikkiIndex, tatoeba);
+    const e = enrichOne(card, kaikkiIndex, tatoeba, ruIndex);
     if (e) {
       result[card.id] = e;
       stats[e.match.source]++;
       byMatch[e.match.matchedBy] = (byMatch[e.match.matchedBy] ?? 0) + 1;
+      if (e.glossRu?.length) withRuGloss++;
     } else {
       stats.none++;
       if (card.type === "word") unmatchedWords.push(`${card.id}:${card.dutch}`);
@@ -162,6 +170,7 @@ async function main() {
   console.log("by source:", stats);
   console.log("by matchedBy:", byMatch);
   console.log(`enriched ${Object.keys(result).length}/${cards.length} cards`);
+  console.log(`cards with Russian gloss: ${withRuGloss}`);
   console.log(`unmatched single-word cards: ${unmatchedWords.length}`);
   console.log("sample unmatched:", unmatchedWords.slice(0, 25).join(", "));
 }

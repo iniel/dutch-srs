@@ -113,6 +113,13 @@ export function WordDetail({ enrichment, compact, hidePhonetics }: WordDetailPro
         </div>
       ) : null}
 
+      {e.glossRu?.length ? (
+        <div className="lesson-section">
+          {showLabels && <p className="section-label">Russian</p>}
+          <p className="word-ru">{e.glossRu.join(", ")}</p>
+        </div>
+      ) : null}
+
       {formRows.length ? (
         <div className="lesson-section">
           {showLabels && <p className="section-label">Forms</p>}
