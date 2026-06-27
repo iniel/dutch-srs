@@ -178,7 +178,7 @@ export function Quiz({ session, getCard, onWordCleared, onComplete, onQuit }: Qu
         </div>
       </div>
 
-      <div className="quiz-answer">
+      <div className={`quiz-answer ${wrong ? "wrong" : ""}`}>
         <div className="answer-field">
           <input
             ref={inputRef}
