@@ -3,6 +3,7 @@ import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
 import { checkAnswer } from "../review/answerCheck";
 import { pooledAccepted, type AnswerPools } from "../review/synonyms";
+import { getHint } from "../data/hints";
 import { speak, speechSupported } from "../util/speak";
 
 interface QuizProps {
@@ -89,9 +90,11 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
   const accepted = pooledAccepted(card, task.dir, pools);
   const reveal = task.dir === "nl_en" ? card.english : [card.dutch];
 
-  // Disambiguation hint for colliding words. Direction-safe: NL→EN may show the
-  // Dutch example (answer is English); EN→NL shows only the English example so
-  // the Dutch answer isn't given away.
+  // Disambiguation hint for colliding words. A hand-curated hint (src/data/hints.ts)
+  // wins and is shown inline; otherwise fall back to a direction-safe example
+  // sentence behind a button (NL→EN may show the Dutch example, EN→NL only the
+  // English one so the Dutch answer isn't given away).
+  const manualHint = getHint(card.id, task.dir);
   const enr = getEnrichment?.(card.id);
   const example =
     task.dir === "nl_en"
@@ -177,11 +180,21 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
               </button>
             )}
           </div>
-          {!wrong && example && (
+          {!wrong && manualHint && <div className="quiz-hint manual">{manualHint}</div>}
+          {!wrong && !manualHint && example && (
             showHint ? (
               <div className="quiz-hint" lang={task.dir === "nl_en" ? "nl" : "en"}>{example}</div>
             ) : (
-              <button type="button" className="quiz-hint-btn" onClick={() => setShowHint(true)}>
+              <button
+                type="button"
+                className="quiz-hint-btn"
+                // Keep focus on the input so the mobile keyboard doesn't collapse.
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => {
+                  setShowHint(true);
+                  inputRef.current?.focus();
+                }}
+              >
                 Show example
               </button>
             )
