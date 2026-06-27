@@ -9,7 +9,7 @@ import { createReadStream, readFileSync, writeFileSync } from "node:fs";
 import { createInterface } from "node:readline";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { stripArticle, normalizeHead, pickEntry, extractKaikki, dedupeExamples } from "./enrich/extract.mjs";
+import { stripArticle, normalizeHead, pickEntry, entryMatchesCard, extractKaikki, dedupeExamples } from "./enrich/extract.mjs";
 import { buildKaikkiIndex } from "./enrich/kaikki-index.mjs";
 import { buildRuGlossIndex } from "./enrich/ru-index.mjs";
 import { buildNlRuGlossIndex } from "./enrich/nl-ru-index.mjs";
@@ -33,9 +33,16 @@ const MAX_EXAMPLES = 3;
 
 const lines = (path) => createInterface({ input: createReadStream(path), crlfDelay: Infinity });
 
+function isMultiWordPhrase(card) {
+  return card.type !== "word" && normalizeHead(stripArticle(card.dutch)).includes(" ");
+}
+
 function cardHeads(card) {
   const heads = new Set();
-  if (card.lemma) heads.add(normalizeHead(card.lemma));
+  // Multi-word phrase/sentence cards match only on the whole phrase, never the
+  // single-word lemma — the lemma pulls a sub-word's examples ("gaan" -> "Ik moet
+  // gaan slapen.") and Russian glosses that don't fit the phrase.
+  if (card.lemma && !isMultiWordPhrase(card)) heads.add(normalizeHead(card.lemma));
   heads.add(normalizeHead(stripArticle(card.dutch)));
   return [...heads].filter(Boolean);
 }
@@ -122,7 +129,8 @@ async function buildTatoebaIndex(wantedHeads) {
 function enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex, enRuIndex, fdNldIndex, fdEngIndex) {
   const heads = cardHeads(card);
   const candidates = heads.flatMap((h) => kaikkiIndex.get(h) ?? []);
-  const { entry, matchedBy } = pickEntry(candidates, card.pos);
+  let { entry, matchedBy } = pickEntry(candidates, card.pos);
+  if (!entryMatchesCard(entry, card)) entry = undefined;
 
   const out = { id: card.id, match: { source: "none", matchedBy: "none" } };
   const kaikkiExamples = [];
@@ -136,17 +144,22 @@ function enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex, enRuIndex, fd
   // sources win — ru.wiktionary gloss, then the curated nld-rus bilingual dict,
   // then nl.wiktionary translations; the English-meaning bridges fill the rest —
   // the curated eng-rus dict, then en.wiktionary's EN->RU table. Dedupe + cap.
-  const keys = englishKeys(card);
-  const ruGlosses = [];
-  const addGlosses = (list) => { for (const g of list ?? []) if (!ruGlosses.includes(g)) ruGlosses.push(g); };
-  const byHead = (index) => heads.map((h) => index.get(h)).find((g) => g?.length);
-  const byKey = (index) => keys.map((k) => index.get(k)).find((g) => g?.length);
-  addGlosses(byHead(ruIndex));
-  addGlosses(byHead(fdNldIndex));
-  addGlosses(byHead(nlRuIndex));
-  addGlosses(byKey(fdEngIndex));
-  addGlosses(byKey(enRuIndex));
-  if (ruGlosses.length) out.glossRu = ruGlosses.slice(0, MAX_RU_GLOSSES);
+  // Skipped for multi-word phrases: the RU dictionaries are word-level, so a phrase
+  // only matches via a sub-word lemma or the English bridge, giving the wrong sense
+  // (e.g. "Het gaat wel." -> "ходить, идти").
+  if (!isMultiWordPhrase(card)) {
+    const keys = englishKeys(card);
+    const ruGlosses = [];
+    const addGlosses = (list) => { for (const g of list ?? []) if (!ruGlosses.includes(g)) ruGlosses.push(g); };
+    const byHead = (index) => heads.map((h) => index.get(h)).find((g) => g?.length);
+    const byKey = (index) => keys.map((k) => index.get(k)).find((g) => g?.length);
+    addGlosses(byHead(ruIndex));
+    addGlosses(byHead(fdNldIndex));
+    addGlosses(byHead(nlRuIndex));
+    addGlosses(byKey(fdEngIndex));
+    addGlosses(byKey(enRuIndex));
+    if (ruGlosses.length) out.glossRu = ruGlosses.slice(0, MAX_RU_GLOSSES);
+  }
 
   const tatExamples = tatoeba.examplesFor(heads);
   const merged = dedupeExamples([...kaikkiExamples, ...tatExamples], MAX_EXAMPLES);

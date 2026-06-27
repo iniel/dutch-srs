@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
-  stripArticle, normalizeHead, mapPos, pickEntry,
+  stripArticle, normalizeHead, mapPos, pickEntry, entryMatchesCard,
   extractKaikki, dedupeExamples,
 } from "./extract.mjs";
 
@@ -85,6 +85,24 @@ describe("pickEntry", () => {
   });
   it("reports none for empty", () => {
     expect(pickEntry([], "n.")).toMatchObject({ matchedBy: "none" });
+  });
+});
+
+describe("entryMatchesCard", () => {
+  it("always accepts word cards, even a sub-word entry", () => {
+    expect(entryMatchesCard({ word: "meer" }, { type: "word", dutch: "het meer" })).toBe(true);
+  });
+  it("accepts single-word phrase cards", () => {
+    expect(entryMatchesCard({ word: "hallo" }, { type: "phrase", dutch: "hallo" })).toBe(true);
+  });
+  it("rejects a sub-word entry on a multi-word phrase", () => {
+    expect(entryMatchesCard({ word: "meer" }, { type: "phrase", dutch: "niet/geen ... meer" })).toBe(false);
+  });
+  it("accepts a whole-phrase headword on a multi-word phrase", () => {
+    expect(entryMatchesCard({ word: "tot ziens" }, { type: "phrase", dutch: "tot ziens" })).toBe(true);
+  });
+  it("rejects a missing entry", () => {
+    expect(entryMatchesCard(undefined, { type: "phrase", dutch: "tot ziens" })).toBe(false);
   });
 });
 

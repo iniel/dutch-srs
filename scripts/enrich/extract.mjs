@@ -46,6 +46,17 @@ export function pickEntry(candidates, deckPos) {
   return { entry: candidates[0], matchedBy: "lemma" };
 }
 
+// Multi-word phrase/sentence cards must match a Kaikki headword that IS the whole
+// phrase. A single sub-word entry (meer=lake for "niet/geen ... meer") brings the
+// wrong sense + that word's grammar/IPA, so reject it. Word cards are unaffected.
+export function entryMatchesCard(entry, card) {
+  if (!entry) return false;
+  if (card.type === "word") return true;
+  const stripped = normalizeHead(stripArticle(card.dutch));
+  if (!stripped.includes(" ")) return true;        // single-word "phrase" e.g. hallo
+  return normalizeHead(entry.word) === stripped;   // whole-phrase headword only
+}
+
 const REGISTER_TAGS = new Set([
   "informal", "formal", "colloquial", "vulgar", "slang", "derogatory",
   "archaic", "dated", "obsolete", "literary", "poetic", "humorous",
