@@ -48,10 +48,10 @@ async function answerAll(page, cards) {
     const info = await page.evaluate(() => ({
       label: document.querySelector(".prompt-label")?.textContent || "",
       prompt: document.querySelector(".prompt-text")?.textContent || "",
-      wrong: !!document.querySelector(".answer-input[disabled]"),
+      wrong: !!document.querySelector(".answer-input.wrong"),
     }));
     if (info.wrong) {
-      await page.keyboard.press("Enter");
+      await page.click(".answer-next");
       await page.waitForTimeout(20);
       continue;
     }
@@ -86,7 +86,7 @@ async function missAnswer(page) {
   await input.pressSequentially("zzzwrong", { delay: 25 });
   await page.waitForTimeout(40);
   await page.keyboard.press("Enter");
-  await page.waitForSelector(".answer-input[disabled]", { timeout: 5000 });
+  await page.waitForSelector(".answer-input.wrong", { timeout: 5000 });
 }
 
 async function setClockOffset(page, ms) {
@@ -254,14 +254,14 @@ try {
     const input = document.querySelector(".answer-input");
     const reveal = document.querySelector(".quiz-reveal");
     return {
-      disabled: !!input?.hasAttribute("disabled"),
+      readonly: input?.readOnly === true,
       red: !!input?.classList.contains("wrong"),
       keptValue: input?.value || "",
       answerShown: !!reveal && (reveal.textContent || "").trim().length > 0,
       hasNext: !!document.querySelector(".answer-next"),
     };
   });
-  check(wrongState.disabled, "wrong answer disables the input");
+  check(wrongState.readonly, "wrong answer makes the input read-only");
   check(wrongState.red, "wrong answer turns the input red");
   check(wrongState.keptValue === "zzzwrong", "wrong answer keeps the typed value");
   check(wrongState.answerShown, "correct answer is shown under the word");

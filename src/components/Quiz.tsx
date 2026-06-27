@@ -49,37 +49,6 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
     if (phase === "input") inputRef.current?.focus();
   }, [phase]);
 
-  // Ref keeps the window keydown listener calling the current closure without re-binding.
-  const advanceRef = useRef<() => void>(() => {});
-  advanceRef.current = () => {
-    session.submit(false);
-    setPhase("input");
-    setValue("");
-    force((n) => n + 1);
-    if (session.isComplete()) onComplete();
-  };
-
-  // A disabled input fires no keydown, so Enter-to-continue lives on the window.
-  useEffect(() => {
-    if (phase !== "wrong") return;
-    // The Enter that revealed this wrong state is still bubbling when React flushes
-    // this effect; arm on the next tick so that same press can't self-advance.
-    let armed = false;
-    const arm = setTimeout(() => (armed = true), 0);
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Enter") {
-        if (!armed) return;
-        e.preventDefault();
-        advanceRef.current();
-      }
-    };
-    window.addEventListener("keydown", handler);
-    return () => {
-      clearTimeout(arm);
-      window.removeEventListener("keydown", handler);
-    };
-  }, [phase]);
-
   if (!task) return null;
   const card = getCard(task.cardId);
   if (!card) return null;
@@ -101,8 +70,14 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
       ? card.exampleNl ?? enr?.examples?.find((e) => e.nl)?.nl
       : card.exampleEn ?? enr?.examples?.find((e) => e.en)?.en;
 
+  // Requeue happens here, on Continue — never the moment the wrong answer is
+  // revealed, so the feedback panel keeps showing the current card's answer.
   function advanceAfterWrong() {
-    advanceRef.current();
+    session.submit(false);
+    setPhase("input");
+    setValue("");
+    force((n) => n + 1);
+    if (session.isComplete()) onComplete();
   }
 
   function submit() {
@@ -227,7 +202,9 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
             value={value}
             onChange={(e) => setValue(e.target.value)}
             onKeyDown={onKeyDown}
-            disabled={wrong}
+            // readOnly (not disabled) so iOS keeps focus + the keyboard up
+            // across the wrong-answer reveal; Enter still fires onKeyDown.
+            readOnly={wrong}
             placeholder="Your response"
             autoCapitalize="off"
             autoCorrect="off"
@@ -240,6 +217,9 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
             <button
               type="button"
               className="answer-next"
+              // Keep focus on the input so tapping to advance doesn't collapse
+              // the mobile keyboard.
+              onMouseDown={(e) => e.preventDefault()}
               onClick={advanceAfterWrong}
               aria-label="next"
             >

@@ -245,6 +245,7 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.18s ease;
 }
 .quiz-progress {
   width: 100%;
@@ -384,6 +385,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 16px max(16px, env(safe-area-inset-left)) max(8px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-right));
+  transition: background-color 0.18s ease;
 }
 .answer-field {
   position: relative;
@@ -403,6 +405,7 @@
   padding: 4px 0;
   text-align: center;
   caret-color: var(--accent);
+  transition: color 0.18s ease;
 }
 .answer-input::placeholder {
   color: var(--text-faint);

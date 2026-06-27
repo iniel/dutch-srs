@@ -76,8 +76,10 @@ attach to the user's already-open browser/tab.
 ## Non-obvious gotchas (read before touching these)
 - **Wrong-answer requeue timing** (`Quiz.tsx`): on a wrong answer, do NOT call `session.submit(false)`
   immediately — that advances `current()` and the feedback panel would show the *next* card's answer.
-  The requeue happens on "Continue". A disabled input fires no `keydown`, so Enter-to-continue uses a
-  **window** keydown listener, not the input's.
+  The requeue happens on "Continue" (`advanceAfterWrong`). The input is `readOnly` (not `disabled`) in
+  the wrong phase so iOS keeps focus + the keyboard up; Enter-to-continue therefore rides the input's
+  own `onKeyDown`/`submit()` (no window listener). The next-arrow button uses `onMouseDown`
+  preventDefault so tapping it doesn't blur the input and collapse the keyboard.
 - **Deploy serves prebuilt `dist/`**, committed to the repo. CI does NOT run `npm ci`/build (it hung
   on the runner). You must `npm run build` and commit `dist/` for changes to go live. See `docs/DEPLOY.md`.
 - **No Jekyll.** `public/.nojekyll` exists and Pages `build_type` is `workflow`. Don't re-enable a
