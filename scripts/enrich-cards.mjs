@@ -129,13 +129,13 @@ async function buildTatoebaIndex(wantedHeads) {
 function enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex, enRuIndex, fdNldIndex, fdEngIndex) {
   const heads = cardHeads(card);
   const candidates = heads.flatMap((h) => kaikkiIndex.get(h) ?? []);
-  let { entry, matchedBy } = pickEntry(candidates, card.pos);
+  let { entry, matchedBy } = pickEntry(candidates, card);
   if (!entryMatchesCard(entry, card)) entry = undefined;
 
   const out = { id: card.id, match: { source: "none", matchedBy: "none" } };
   const kaikkiExamples = [];
   if (entry) {
-    Object.assign(out, extractKaikki(entry));
+    Object.assign(out, extractKaikki(entry, { english: card.english }));
     out.match = { source: "kaikki", matchedBy, matchedWord: entry.word };
     for (const s of out.senses ?? []) for (const ex of s.examples ?? []) kaikkiExamples.push(ex);
   }

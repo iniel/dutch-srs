@@ -28,6 +28,19 @@ const KIND = {
   ],
 };
 
+const MAN = {
+  word: "man", pos: "noun",
+  forms: [
+    { form: "mannen", tags: ["plural"] },
+    { form: "mannetje", tags: ["diminutive", "neuter"] },
+    { form: "manneke", tags: ["diminutive", "neuter"] },
+  ],
+  senses: [
+    { glosses: ["man (adult male human)"], tags: ["masculine"] },
+    { glosses: ["husband"], tags: ["masculine"] },
+  ],
+};
+
 const LOPEN = {
   word: "lopen", pos: "verb",
   forms: [
@@ -50,6 +63,27 @@ const GROOT = {
     { form: "grote", tags: ["feminine", "indefinite", "masculine", "positive", "singular"] },
   ],
   senses: [{ glosses: ["big, large"] }],
+};
+
+const BORD = {
+  word: "bord", pos: "noun",
+  senses: [
+    { glosses: ["plate, dish (tableware)"], tags: ["neuter"] },
+    { glosses: ["board, blackboard, sign"], tags: ["neuter"] },
+  ],
+};
+
+const EEN = {
+  word: "een", pos: "num",
+  senses: [
+    { glosses: ["alternative form of één"] },
+    { glosses: ["one (the cardinal number)"] },
+  ],
+};
+
+const MAIL = {
+  word: "mail", pos: "noun",
+  senses: [{ glosses: ["alternative form of e-mail"] }],
 };
 
 describe("stripArticle / normalizeHead", () => {
@@ -77,14 +111,41 @@ describe("mapPos", () => {
 describe("pickEntry", () => {
   it("prefers POS-matching homograph", () => {
     const cands = [{ pos: "verb" }, { pos: "noun" }];
-    expect(pickEntry(cands, "n.")).toMatchObject({ matchedBy: "lemma+pos", entry: { pos: "noun" } });
+    expect(pickEntry(cands, { pos: "n." })).toMatchObject({ matchedBy: "lemma+pos", entry: { pos: "noun" } });
   });
   it("falls back to first when no POS match", () => {
     const cands = [{ pos: "verb" }];
-    expect(pickEntry(cands, "n.")).toMatchObject({ matchedBy: "lemma" });
+    expect(pickEntry(cands, { pos: "n." })).toMatchObject({ matchedBy: "lemma" });
   });
   it("reports none for empty", () => {
-    expect(pickEntry([], "n.")).toMatchObject({ matchedBy: "none" });
+    expect(pickEntry([], { pos: "n." })).toMatchObject({ matchedBy: "none" });
+  });
+  it("prefers a meaning match over a (mis)mapped POS — meer: lake vs more", () => {
+    const cands = [
+      { pos: "noun", senses: [{ glosses: ["lake", "sea"] }] },
+      { pos: "det", senses: [{ glosses: ["comparative degree of veel: more"] }] },
+    ];
+    expect(pickEntry(cands, { pos: "adj.", english: ["more"] })).toMatchObject({
+      matchedBy: "meaning", entry: { pos: "det" },
+    });
+  });
+  it("disambiguates same-POS homographs by meaning — klinker: brick vs vowel", () => {
+    const cands = [
+      { pos: "noun", senses: [{ glosses: ["clinker brick"] }] },
+      { pos: "noun", senses: [{ glosses: ["vowel", "vowel letter"] }] },
+    ];
+    const r = pickEntry(cands, { pos: "n.", english: ["vowel"] });
+    expect(r.matchedBy).toBe("lemma+pos");
+    expect(r.entry.senses[0].glosses).toContain("vowel");
+  });
+  it("keeps POS pick when no candidate matches meaning", () => {
+    const cands = [
+      { pos: "noun", senses: [{ glosses: ["lake"] }] },
+      { pos: "verb", senses: [{ glosses: ["to wander"] }] },
+    ];
+    expect(pickEntry(cands, { pos: "n.", english: ["pond"] })).toMatchObject({
+      matchedBy: "lemma+pos", entry: { pos: "noun" },
+    });
   });
 });
 
@@ -116,6 +177,12 @@ describe("extractKaikki — noun", () => {
   it("derives article + forms", () => {
     expect(e.grammar.noun).toMatchObject({ article: "het", plural: "kinderen", diminutive: "kindje" });
   });
+  it("ignores diminutive-form neuter when deriving gender (no bogus de/het)", () => {
+    const m = extractKaikki(MAN);
+    expect(m.grammar.noun.article).toBe("de");
+    expect(m.grammar.noun.gender).toEqual(["masculine"]);
+    expect(m.grammar.noun.diminutive).toBe("mannetje");
+  });
   it("keeps real senses, drops form-of, sets summary", () => {
     expect(e.senses).toHaveLength(1);
     expect(e.glossSummary).toBe("child, kid, non-adult human");
@@ -126,6 +193,26 @@ describe("extractKaikki — noun", () => {
   it("keeps etymology + example", () => {
     expect(e.etymology).toContain("Middle Dutch");
     expect(e.senses[0].examples[0]).toMatchObject({ nl: expect.stringContaining("schaatsen"), source: "kaikki" });
+  });
+});
+
+describe("extractKaikki — sense ordering + glossSummary", () => {
+  it("reorders senses so the card's meaning comes first", () => {
+    const e = extractKaikki(BORD, { english: ["blackboard"] });
+    expect(e.senses[0].glosses.join(" ")).toContain("board");
+    expect(e.glossSummary).toBe(e.senses[0].glosses[0]);
+  });
+  it("keeps Kaikki order when no card meaning is given", () => {
+    const e = extractKaikki(BORD);
+    expect(e.senses[0].glosses[0]).toContain("plate");
+  });
+  it("skips a cross-reference gloss for the summary when a real one exists", () => {
+    const e = extractKaikki(EEN);
+    expect(e.glossSummary).toBe("one (the cardinal number)");
+  });
+  it("falls back to the cross-reference gloss when it is the only sense", () => {
+    const e = extractKaikki(MAIL);
+    expect(e.glossSummary).toBe("alternative form of e-mail");
   });
 });
 

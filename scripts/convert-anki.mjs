@@ -44,6 +44,13 @@ const splitMeanings = (s) =>
     .map((x) => x.trim())
     .filter(Boolean);
 
+// Deck typos: these nouns are listed with the wrong article in the source deck.
+// Both are neuter (het stukje is a diminutive; het lidwoord = "the article").
+const DUTCH_FIX = {
+  "de stukje": "het stukje",
+  "de lidwoord": "het lidwoord",
+};
+
 const posType = (pos) => {
   const p = (pos ?? "").toLowerCase();
   if (p.includes("phrase") || p.includes("expr")) return "phrase";
@@ -93,6 +100,7 @@ let dropped = 0;
 for (const deck of DECKS) {
   const notes = readDeck(join(root, deck.file));
   for (const n of notes) {
+    if (DUTCH_FIX[n.dutch]) n.dutch = DUTCH_FIX[n.dutch];
     const english = splitMeanings(n.english);
     if (!n.dutch || english.length === 0) {
       dropped++;

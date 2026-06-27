@@ -36,14 +36,58 @@ export function mapPos(deckPos) {
   return undefined;
 }
 
-export function pickEntry(candidates, deckPos) {
-  if (!candidates || candidates.length === 0) return { entry: undefined, matchedBy: "none" };
-  const wantPos = mapPos(deckPos);
-  if (wantPos) {
-    const hit = candidates.find((e) => e.pos === wantPos);
-    if (hit) return { entry: hit, matchedBy: "lemma+pos" };
+const EN_STOP = new Set(["to", "a", "an", "the", "of", "or", "and", "be", "is", "in", "on", "at", "s", "someone", "something"]);
+const enContentTokens = (s) => (s ?? "").toLowerCase().split(/[^a-zà-ÿ]+/i).filter((w) => w && !EN_STOP.has(w));
+
+// A gloss like "alternative form of …" / "obsolete spelling of …" / "misspelling
+// of …" is a cross-reference, not a meaning — useless as a one-line summary.
+const CROSS_REF_GLOSS = /^(alternative|obsolete|dated|archaic|rare|nonstandard|superseded|eye[ -]dialect|misspelling)\b.*\bof\b/i;
+
+// Do any of these glosses share a content word with the card's English answers?
+// Exact token, or a >=4-char substring either way (absorbs plural/inflection).
+const glossesMatchWords = (glosses, cardWords) => {
+  for (const gloss of glosses ?? []) {
+    for (const g of enContentTokens(gloss)) {
+      for (const w of cardWords) {
+        if (g === w) return true;
+        if (g.length >= 4 && w.length >= 4 && (g.includes(w) || w.includes(g))) return true;
+      }
+    }
   }
-  return { entry: candidates[0], matchedBy: "lemma" };
+  return false;
+};
+
+// True when any gloss of the entry overlaps the card's English. Used to
+// disambiguate spelling-homograph entries that the POS heuristic gets wrong.
+export function glossMatchesEnglish(entry, english) {
+  if (!english?.length || !entry) return false;
+  const cardWords = new Set(english.flatMap(enContentTokens));
+  if (!cardWords.size) return false;
+  return (entry.senses ?? []).some((s) => glossesMatchWords(s.glosses, cardWords));
+}
+
+// Choose the best Kaikki entry for a card. Meaning match (gloss overlaps the
+// card's English) outranks the POS heuristic, because the deck POS is sometimes
+// mis-mapped (e.g. "meer" tagged adj. but Kaikki has it as det "more"), which
+// otherwise grabs the wrong spelling-homograph (the noun "meer" = lake).
+export function pickEntry(candidates, card = {}) {
+  if (!candidates || candidates.length === 0) return { entry: undefined, matchedBy: "none" };
+  const wantPos = mapPos(card.pos);
+  let best = candidates[0];
+  let bestScore = -1;
+  let bestOverlap = false;
+  let bestPos = false;
+  for (const e of candidates) {
+    const overlap = glossMatchesEnglish(e, card.english);
+    const posMatch = wantPos ? e.pos === wantPos : false;
+    const score = (overlap ? 2 : 0) + (posMatch ? 1 : 0);
+    if (score > bestScore) { best = e; bestScore = score; bestOverlap = overlap; bestPos = posMatch; }
+  }
+  let matchedBy;
+  if (bestOverlap && !bestPos) matchedBy = "meaning";
+  else if (bestPos) matchedBy = "lemma+pos";
+  else matchedBy = "lemma";
+  return { entry: best, matchedBy };
 }
 
 // Multi-word phrase/sentence cards must match a Kaikki headword that IS the whole
@@ -100,7 +144,13 @@ const GENDER_TO_ARTICLE = { neuter: "het", masculine: "de", feminine: "de", "com
 function nounGrammar(entry) {
   const genderTags = new Set();
   for (const s of entry.senses ?? []) for (const t of s.tags ?? []) if (GENDER_TO_ARTICLE[t]) genderTags.add(t);
-  for (const f of entry.forms ?? []) for (const t of f.tags ?? []) if (GENDER_TO_ARTICLE[t]) genderTags.add(t);
+  // Skip diminutive forms: a diminutive is grammatically neuter (het neefje)
+  // regardless of the base noun's gender, so its neuter tag must not leak in and
+  // turn a plain "de" noun into a bogus "de/het".
+  for (const f of entry.forms ?? []) {
+    if (f.tags?.includes("diminutive")) continue;
+    for (const t of f.tags ?? []) if (GENDER_TO_ARTICLE[t]) genderTags.add(t);
+  }
   const articles = new Set([...genderTags].map((g) => GENDER_TO_ARTICLE[g]));
   const g = {};
   if (articles.size === 1) g.article = [...articles][0];
@@ -156,7 +206,7 @@ const MAX_SENSES = 4;
 const MAX_SENSE_EXAMPLES = 2;
 const MAX_RELATIONS = 12;
 
-export function extractKaikki(entry, { maxSenses = MAX_SENSES } = {}) {
+export function extractKaikki(entry, { maxSenses = MAX_SENSES, english } = {}) {
   const out = {};
 
   const ipa = (entry.sounds ?? []).find((s) => s.ipa)?.ipa;
@@ -182,8 +232,15 @@ export function extractKaikki(entry, { maxSenses = MAX_SENSES } = {}) {
     if (senses.length >= maxSenses) break;
   }
   if (senses.length) {
+    const cardWords = english?.length ? new Set(english.flatMap(enContentTokens)) : null;
+    if (cardWords?.size) {
+      // Stable-sort the card's own meaning to the front so the compact view and
+      // summary surface the relevant sense for spelling-homographs.
+      senses.sort((a, b) => (glossesMatchWords(b.glosses, cardWords) ? 1 : 0) - (glossesMatchWords(a.glosses, cardWords) ? 1 : 0));
+    }
     out.senses = senses;
-    out.glossSummary = senses[0].glosses[0];
+    const summarySense = senses.find((s) => s.glosses?.[0] && !CROSS_REF_GLOSS.test(s.glosses[0])) ?? senses[0];
+    out.glossSummary = summarySense.glosses[0];
   }
 
   const g = grammar(entry);
