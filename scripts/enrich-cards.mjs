@@ -12,11 +12,15 @@ import { fileURLToPath } from "node:url";
 import { stripArticle, normalizeHead, pickEntry, extractKaikki, dedupeExamples } from "./enrich/extract.mjs";
 import { buildKaikkiIndex } from "./enrich/kaikki-index.mjs";
 import { buildRuGlossIndex } from "./enrich/ru-index.mjs";
+import { buildNlRuGlossIndex } from "./enrich/nl-ru-index.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KAIKKI = join(root, "data/kaikki/kaikki-Dutch.jsonl");
 const KAIKKI_RU = join(root, "data/kaikki/kaikki-ru.jsonl");
+const KAIKKI_NL = join(root, "data/kaikki/kaikki-nl.jsonl");
 const TAT = join(root, "data/tatoeba");
+
+const MAX_RU_GLOSSES = 4;
 
 const MAX_TATOEBA_IDS_PER_HEAD = 40;
 const MAX_EXAMPLES = 3;
@@ -109,7 +113,7 @@ async function buildTatoebaIndex(wantedHeads) {
   return { examplesFor };
 }
 
-function enrichOne(card, kaikkiIndex, tatoeba, ruIndex) {
+function enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex) {
   const heads = cardHeads(card);
   const candidates = heads.flatMap((h) => kaikkiIndex.get(h) ?? []);
   const { entry, matchedBy } = pickEntry(candidates, card.pos);
@@ -122,8 +126,13 @@ function enrichOne(card, kaikkiIndex, tatoeba, ruIndex) {
     for (const s of out.senses ?? []) for (const ex of s.examples ?? []) kaikkiExamples.push(ex);
   }
 
-  const ruGlosses = heads.map((h) => ruIndex.get(h)).find((g) => g?.length);
-  if (ruGlosses) out.glossRu = ruGlosses;
+  // ru.wiktionary glosses first, then nl.wiktionary translations; dedupe + cap.
+  const ruGlosses = [];
+  for (const index of [ruIndex, nlRuIndex]) {
+    const hit = heads.map((h) => index.get(h)).find((g) => g?.length) ?? [];
+    for (const g of hit) if (!ruGlosses.includes(g)) ruGlosses.push(g);
+  }
+  if (ruGlosses.length) out.glossRu = ruGlosses.slice(0, MAX_RU_GLOSSES);
 
   const tatExamples = tatoeba.examplesFor(heads);
   const merged = dedupeExamples([...kaikkiExamples, ...tatExamples], MAX_EXAMPLES);
@@ -137,6 +146,8 @@ function enrichOne(card, kaikkiIndex, tatoeba, ruIndex) {
   return hasContent ? out : null;
 }
 
+const headsHit = (index, heads) => heads.some((h) => index.get(h)?.length);
+
 async function main() {
   const cards = JSON.parse(readFileSync(join(root, "public/cards.json"), "utf8"));
   const wantedHeads = new Set();
@@ -145,6 +156,7 @@ async function main() {
 
   const kaikkiIndex = await buildKaikkiIndex(KAIKKI, wantedHeads);
   const ruIndex = await buildRuGlossIndex(KAIKKI_RU, wantedHeads);
+  const nlRuIndex = await buildNlRuGlossIndex(KAIKKI_NL, wantedHeads);
   const tatoeba = await buildTatoebaIndex(wantedHeads);
 
   const result = {};
@@ -152,13 +164,16 @@ async function main() {
   const byMatch = {};
   const unmatchedWords = [];
   let withRuGloss = 0;
+  let gainedViaNl = 0;
   for (const card of cards) {
-    const e = enrichOne(card, kaikkiIndex, tatoeba, ruIndex);
+    const e = enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex);
     if (e) {
       result[card.id] = e;
       stats[e.match.source]++;
       byMatch[e.match.matchedBy] = (byMatch[e.match.matchedBy] ?? 0) + 1;
       if (e.glossRu?.length) withRuGloss++;
+      const heads = cardHeads(card);
+      if (headsHit(nlRuIndex, heads) && !headsHit(ruIndex, heads)) gainedViaNl++;
     } else {
       stats.none++;
       if (card.type === "word") unmatchedWords.push(`${card.id}:${card.dutch}`);
@@ -170,7 +185,7 @@ async function main() {
   console.log("by source:", stats);
   console.log("by matchedBy:", byMatch);
   console.log(`enriched ${Object.keys(result).length}/${cards.length} cards`);
-  console.log(`cards with Russian gloss: ${withRuGloss}`);
+  console.log(`cards with Russian gloss: ${withRuGloss} (gained via nl.wiktionary: ${gainedViaNl})`);
   console.log(`unmatched single-word cards: ${unmatchedWords.length}`);
   console.log("sample unmatched:", unmatchedWords.slice(0, 25).join(", "));
 }
