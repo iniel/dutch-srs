@@ -165,7 +165,9 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
         <div className="quiz-word">
           <div className="prompt-label">
             {dirLabel(task.dir)} · {card.type}
-            {card.pos ? ` · ${card.pos}` : ""}
+            {card.pos && card.pos.toLowerCase() !== card.type.toLowerCase()
+              ? ` · ${card.pos}`
+              : ""}
           </div>
           <div className="prompt-row">
             <div className="prompt-text">{prompt}</div>

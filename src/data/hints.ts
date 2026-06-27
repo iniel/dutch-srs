@@ -117,72 +117,55 @@ const HINTS: Record<string, string> = {
   "c1527:nl_en": "adjective",
   "c1615:nl_en": "noun",
 
-  // ---- EN→NL collisions: same English prompt, several Dutch words. The hint
-  // names the register/number/nuance of the wanted Dutch word. Pure synonyms
-  // with no clean distinguisher (very, nice, beautiful, ...) are intentionally
-  // left to the example button.
-  // you are — jij bent / u bent / jullie zijn
+  // ---- EN→NL collisions. Only listed where ≥2 cards share the EXACT English
+  // prompt, so the hint actually disambiguates which Dutch word is wanted (a
+  // hint on a unique prompt is noise). The hint names the register/number/nuance
+  // without printing the answer. Pure synonyms with no clean distinguisher
+  // (very, nice, beautiful, ...) are left to the example button.
+  // "you are" — jij bent / u bent / jullie zijn
   "c67:en_nl": "informal",
   "c69:en_nl": "formal",
   "c74:en_nl": "plural",
-  // you have — jij hebt / u hebt
+  // "you have" — jij hebt / u hebt
   "c99:en_nl": "informal",
   "c101:en_nl": "formal",
-  // hello — hallo / dag
-  "c1:en_nl": "neutral",
-  "c18:en_nl": "also means 'bye'",
-  // bye — dag / doei / tot ziens
+  // "bye" — doei / tot ziens
   "c19:en_nl": "informal",
   "c28:en_nl": "'see you'",
-  // please — alsjeblieft / alstublieft / graag
+  // "please" / "Please" — alsjeblieft / alstublieft
   "c248:en_nl": "informal",
   "c439:en_nl": "formal",
-  "c226:en_nl": "= gladly",
-  // dear — beste / lief / geachte
+  // "dear" — beste / lief
   "c1093:en_nl": "in a letter",
   "c1099:en_nl": "affectionate",
-  "c1171:en_nl": "formal letter",
-  // no — geen / nee
+  // "no" — geen / nee
   "c77:en_nl": "not a / any",
   "c87:en_nl": "as an answer",
-  // yes — ja / jawel
+  // "yes" — ja / jawel
+  "c82:en_nl": "plain",
   "c890:en_nl": "emphatic",
-  // to know — weten / kennen
+  // "to know" — weten / kennen
   "c245:en_nl": "a fact",
   "c536:en_nl": "a person / place",
-  // to understand — begrijpen / snappen / verstaan
+  // "to understand" — begrijpen / snappen
   "c194:en_nl": "to grasp",
   "c746:en_nl": "informal",
-  "c882:en_nl": "to make out speech",
-  // to hear — horen
-  "c81:en_nl": "with your ears",
-  // to get — krijgen / pakken / halen
-  "c254:en_nl": "to receive",
-  "c352:en_nl": "to grab",
-  "c527:en_nl": "to fetch",
-  // student — cursist / leerling / student
-  "c109:en_nl": "course attendee",
-  "c1203:en_nl": "school pupil",
-  "c1394:en_nl": "at university",
-  // teacher — docent / leraar
+  // "teacher" — docent / leraar
   "c110:en_nl": "higher education",
   "c1346:en_nl": "at school",
-  // place — plaats / plek
+  // "place" — plaats / plek
   "c271:en_nl": "a location",
   "c744:en_nl": "a spot (informal)",
-  // quiet — rustig / stil
-  "c273:en_nl": "calm",
-  "c994:en_nl": "silent",
-  // toilet — wc / toilet
+  // "toilet" — wc / toilet
   "c287:en_nl": "informal",
   "c1562:en_nl": "formal",
-  // classroom — klas / lokaal
+  // "classroom" — klas / lokaal
   "c208:en_nl": "the group",
   "c1160:en_nl": "the room",
-  // to walk — lopen / wandelen
+  // "to walk" — lopen / wandelen
   "c112:en_nl": "to go on foot",
   "c818:en_nl": "to stroll",
-  // difficult — moeilijk / lastig
+  // "difficult" — moeilijk / lastig
   "c197:en_nl": "hard",
   "c1427:en_nl": "tricky / annoying",
 };
