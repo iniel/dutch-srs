@@ -22,7 +22,24 @@ npm run convert      # regenerate public/cards.json from the .apkg decks (A1/A2)
 npm run convert:nt2lex # append A+/B1/B2 freq vocab; run AFTER convert
 npm run clean        # drop dup cards + junk/truncated glosses; run AFTER convert:nt2lex, before enrich
 ```
-After any logic/UI change: `npm run build && npm test && npm run test:e2e` must all pass.
+Iterate against the running dev server + `npm test` (pure, fast, parallel-safe). Run the full
+`npm run build && npm test && npm run test:e2e` only when **shipping** or when directly asked — it
+must all pass before deploy.
+
+## Parallel agents & when to build
+- **Do NOT `npm run build` or `npm run test:e2e` unless shipping or directly asked.** Build is a
+  deploy step (see `ship-dutch-srs`), not an after-every-edit reflex.
+- `dist/`, `public/cards.json`, and `tsconfig.tsbuildinfo` are **shared single-copy state**.
+  Concurrent builds clobber each other (one agent's `vite build` overwrites files while another's
+  e2e reads a half-written `dist/`; shared `tsbuildinfo` corrupts incremental `tsc -b`). For genuinely
+  parallel tasks, work in a **git worktree** (own `dist/`, own ports, own tsbuildinfo).
+- E2E port is randomized (override with `E2E_PORT`); `npm run dev` defaults to 5173. Two dev servers
+  on one port collide — reuse the one already running instead of spawning another.
+
+## Browser automation
+Use the **`playwright-cli` skill** (`.claude/skills/playwright-cli/`) for all browser work — it opens a
+fresh, isolated context (`playwright-cli open --browser=chrome`, resize `390 844` for iPhone). Don't
+attach to the user's already-open browser/tab.
 
 ## Where things live
 | Area | Path | Notes |

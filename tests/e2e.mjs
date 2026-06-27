@@ -10,7 +10,10 @@ const require = createRequire(import.meta.url);
 const gRoot = execSync("npm root -g").toString().trim();
 const { chromium } = require(`${gRoot}/@playwright/cli/node_modules/playwright`);
 
-const PORT = 5199;
+// Random default port (override with E2E_PORT) so parallel agents/sessions don't
+// collide on a fixed port. --strictPort below makes a clash fail loudly, not silently
+// serve the wrong app.
+const PORT = Number(process.env.E2E_PORT) || 5200 + Math.floor(Math.random() * 400);
 const BASE_URL = `http://localhost:${PORT}/`;
 const HOUR = 3600_000;
 const CLOCK_BASE = 1_700_000_000_000;
@@ -93,7 +96,23 @@ async function setClockOffset(page, ms) {
 const server = spawn("npx", ["vite", "preview", "--port", String(PORT), "--strictPort"], {
   stdio: "ignore",
 });
-await sleep(2500);
+
+// Poll the preview until it actually serves, instead of a fixed sleep that flakes
+// under load (slow boot -> blank page -> cascade of failed checks).
+async function waitForServer(url, { timeoutMs = 30_000, intervalMs = 150 } = {}) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) return;
+    } catch {
+      // not up yet
+    }
+    await sleep(intervalMs);
+  }
+  throw new Error(`vite preview did not respond at ${url} within ${timeoutMs}ms`);
+}
+await waitForServer(BASE_URL);
 
 const browser = await chromium.launch({ channel: "chrome" });
 let exitCode = 0;
