@@ -34,8 +34,9 @@ export function englishKeys(card) {
   return keys;
 }
 
-// Proper nouns (capitalized) leak in via senses like brown -> "Браун"; skip them.
-const isProperNoun = (w) => /^\p{Lu}/u.test(w);
+// Proper nouns (capitalized) leak in via senses like brown -> "Браун",
+// nice -> "Ницца"; skip them. Shared with the FreeDict parser.
+export const isProperNoun = (w) => /^\p{Lu}/u.test(w);
 
 export function extractEnRuTranslations(entry, { maxGlosses = MAX_GLOSSES } = {}) {
   const out = [];
