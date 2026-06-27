@@ -7,6 +7,7 @@ interface SearchProps {
   index: CardIndex;
   onOpen: (cardId: string) => void;
   onBack: () => void;
+  initialQuery?: string;
 }
 
 const MAX_RESULTS = 50;
@@ -37,8 +38,8 @@ function search(cards: Card[], raw: string): Card[] {
   return scored.slice(0, MAX_RESULTS).map((s) => s.card);
 }
 
-export function Search({ index, onOpen, onBack }: SearchProps) {
-  const [query, setQuery] = useState("");
+export function Search({ index, onOpen, onBack, initialQuery }: SearchProps) {
+  const [query, setQuery] = useState(initialQuery ?? "");
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {

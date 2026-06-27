@@ -7,6 +7,8 @@ interface WordDetailProps {
   compact?: boolean;
   /** Hide the IPA/syllables row when the host (lesson/word hero) already shows it. */
   hidePhonetics?: boolean;
+  /** When set, related-word chips become buttons that fire this with the word. */
+  onWordClick?: (word: string) => void;
 }
 
 function playAudio(url: string) {
@@ -59,21 +61,25 @@ function ExampleItem({ ex }: { ex: Example }) {
   );
 }
 
-function Relations({ label, words }: { label: string; words?: string[] }) {
+function Relations({ label, words, onWordClick }: { label: string; words?: string[]; onWordClick?: (word: string) => void }) {
   if (!words?.length) return null;
   return (
     <div className="relation-row">
       <span className="relation-label">{label}</span>
       <span className="relation-chips">
-        {words.map((w) => (
-          <span key={w} className="relation-chip">{w}</span>
-        ))}
+        {words.map((w) =>
+          onWordClick ? (
+            <button key={w} type="button" className="relation-chip" onClick={() => onWordClick(w)}>{w}</button>
+          ) : (
+            <span key={w} className="relation-chip">{w}</span>
+          ),
+        )}
       </span>
     </div>
   );
 }
 
-export function WordDetail({ enrichment, compact, hidePhonetics }: WordDetailProps) {
+export function WordDetail({ enrichment, compact, hidePhonetics, onWordClick }: WordDetailProps) {
   if (!enrichment) return null;
   const e = enrichment;
   const separable = e.grammar?.verb?.separable;
@@ -153,11 +159,11 @@ export function WordDetail({ enrichment, compact, hidePhonetics }: WordDetailPro
           {(e.synonyms || e.antonyms || e.hypernyms || e.hyponyms || e.related) && (
             <div className="relations">
               <p className="section-label">Related</p>
-              <Relations label="syn" words={e.synonyms} />
-              <Relations label="ant" words={e.antonyms} />
-              <Relations label="broader" words={e.hypernyms} />
-              <Relations label="narrower" words={e.hyponyms} />
-              <Relations label="related" words={e.related} />
+              <Relations label="syn" words={e.synonyms} onWordClick={onWordClick} />
+              <Relations label="ant" words={e.antonyms} onWordClick={onWordClick} />
+              <Relations label="broader" words={e.hypernyms} onWordClick={onWordClick} />
+              <Relations label="narrower" words={e.hyponyms} onWordClick={onWordClick} />
+              <Relations label="related" words={e.related} onWordClick={onWordClick} />
             </div>
           )}
 

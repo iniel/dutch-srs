@@ -265,6 +265,17 @@
   border-radius: 8px;
   padding: 3px 10px;
 }
+button.relation-chip {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+button.relation-chip:hover {
+  background: var(--surface-3, var(--surface-2));
+}
+button.relation-chip:active {
+  opacity: 0.7;
+}
 .usage-notes {
   display: flex;
   flex-direction: column;

@@ -13,9 +13,10 @@ interface WordCardProps {
   onLearnNow: (cardId: string) => void;
   onPin: (cardId: string) => void;
   onUnpin: (cardId: string) => void;
+  onSearchWord?: (word: string) => void;
 }
 
-export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin, onUnpin }: WordCardProps) {
+export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin, onUnpin, onSearchWord }: WordCardProps) {
   const stage = progress.states[card.id]?.stage ?? 0;
   const pinned = progress.lessonQueue.includes(card.id);
   const phon = [enrichment?.ipa, enrichment?.syllables].filter(Boolean).join(" · ");
@@ -53,7 +54,7 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
 
       <hr className="hairline" />
 
-      <WordDetail enrichment={enrichment} hidePhonetics />
+      <WordDetail enrichment={enrichment} hidePhonetics onWordClick={onSearchWord} />
 
       <div className="word-srs-row">
         <span className="word-srs-label">Status</span>

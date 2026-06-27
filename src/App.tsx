@@ -43,6 +43,7 @@ export function App() {
   const [summary, setSummary] = useState<{ results: WordResult[]; mode: "review" | "lesson" } | null>(null);
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
+  const [searchQuery, setSearchQuery] = useState("");
   const [updateReady, setUpdateReady] = useState(false);
   const applyUpdate = useRef<((reload?: boolean) => Promise<void>) | null>(null);
 
@@ -56,6 +57,11 @@ export function App() {
     setSelectedCardId(cardId);
     setDetailFrom(from);
     setScreen("worddetail");
+  }
+
+  function openSearch(q = "") {
+    setSearchQuery(q);
+    setScreen("search");
   }
 
   useEffect(() => {
@@ -198,7 +204,7 @@ export function App() {
           onStartReviews={startReviews}
           onStartLessons={startLessons}
           onSettings={() => setScreen("settings")}
-          onSearch={() => setScreen("search")}
+          onSearch={() => openSearch()}
           onWords={() => setScreen("wordlist")}
           onLevelWords={() => setScreen("levelwords")}
         />
@@ -206,6 +212,7 @@ export function App() {
       {screen === "search" && (
         <Search
           index={index}
+          initialQuery={searchQuery}
           onOpen={(id) => openWordCard(id, "search")}
           onBack={() => setScreen("dashboard")}
         />
@@ -236,6 +243,7 @@ export function App() {
           onLearnNow={learnNow}
           onPin={pinLesson}
           onUnpin={unpinLesson}
+          onSearchWord={(w) => openSearch(w)}
         />
       )}
       {screen === "reviews" && session && (
