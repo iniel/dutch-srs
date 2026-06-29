@@ -126,9 +126,12 @@ const HINTS: Record<string, string> = {
   "c67:en_nl": "informal",
   "c69:en_nl": "formal",
   "c74:en_nl": "plural",
-  // "you have" — jij hebt / u hebt
+  // "you have" — jij hebt / u hebt / jullie hebben
   "c99:en_nl": "informal",
   "c101:en_nl": "formal",
+  "c105:en_nl": "plural",
+  // "hello" — hallo / dag
+  "c18:en_nl": "good day",
   // "bye" — doei / tot ziens
   "c19:en_nl": "informal",
   "c28:en_nl": "'see you'",
