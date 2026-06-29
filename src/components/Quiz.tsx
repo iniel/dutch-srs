@@ -89,7 +89,10 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
     if (value.trim() === "") return;
     const { correct } = checkAnswer(value, accepted, task!.dir === "nl_en");
     // EN→NL prompts never speak on open; play the Dutch answer once submitted (right or wrong).
-    if (task!.dir === "en_nl") speak(card!.dutch);
+    // Skip it when a correct answer is about to advance to an NL→EN card: that next card
+    // speaks the Dutch word on open and would cut this answer off mid-utterance.
+    const nextIsSpoken = correct && session.peekNext()?.dir === "nl_en";
+    if (task!.dir === "en_nl" && !nextIsSpoken) speak(card!.dutch);
     if (correct) {
       // Let the green check flash before the next card replaces the input.
       setFlash(true);

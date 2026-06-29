@@ -199,6 +199,8 @@ export interface Session {
   current(): ReviewTask | undefined;
   submit(wasCorrect: boolean): WordCompletion | undefined;
   next(): ReviewTask | undefined;
+  /** The task that would be shown after the current one clears (queue[1]). */
+  peekNext(): ReviewTask | undefined;
   done(): number;
   total(): number;
   remaining(): number;
@@ -259,6 +261,9 @@ export function createSession(tasks: ReviewTask[]): Session {
     },
     next() {
       return queue[0];
+    },
+    peekNext() {
+      return queue[1];
     },
     done() {
       return clearedWords.size;
