@@ -40,6 +40,16 @@ const STOP = new Set([
   "with", "by", "as", "it", "is", "be", "that", "this", "s", "one", "ones",
   "oneself", "not", "no",
 ]);
+
+// Grammar/spelling-rule sentences in the TaalCompleet deck that describe Dutch
+// *about* Dutch (meta-linguistic rules) rather than vocabulary to drill. Matched
+// on normalized Dutch so the drop survives a fresh `npm run convert`.
+const DROP_DUTCH = new Set(
+  [
+    "Aan het eind van een woord staan nooit twee dezelfde medeklinkers.",
+    "Heeft het hele werkwoord een lange klank? De ik-vorm krijgt twee klinkers.",
+  ].map(normalize)
+);
 const isFunctionWordGloss = (g) => {
   const n = normalize(g);
   return n.length > 0 && n.split(" ").every((w) => STOP.has(w));
@@ -73,6 +83,7 @@ const stats = {
   unbalancedDropped: 0,
   emptiedRestored: 0,
   duplicateCardsDropped: 0,
+  ruleSentencesDropped: 0,
 };
 
 function cleanEnglish(list) {
@@ -122,7 +133,16 @@ function cleanEnglish(list) {
 }
 
 function main() {
-  const cards = JSON.parse(readFileSync(CARDS, "utf8"));
+  let cards = JSON.parse(readFileSync(CARDS, "utf8"));
+
+  // Drop meta-linguistic grammar-rule sentences (not vocabulary).
+  cards = cards.filter((c) => {
+    if (DROP_DUTCH.has(normalize(c.dutch))) {
+      stats.ruleSentencesDropped++;
+      return false;
+    }
+    return true;
+  });
 
   for (const c of cards) {
     const cleaned = cleanEnglish(c.english);
