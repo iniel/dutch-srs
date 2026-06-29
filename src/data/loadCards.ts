@@ -1,5 +1,4 @@
 import type { Card } from "../types";
-import { buildAnswerPools, type AnswerPools } from "../review/synonyms";
 
 export async function loadCards(): Promise<Card[]> {
   const url = `${import.meta.env.BASE_URL}cards.json`;
@@ -18,7 +17,6 @@ export interface CardIndex {
   byId: Map<string, Card>;
   groups: string[];
   byGroup: Map<string, Card[]>;
-  pools: AnswerPools;
 }
 
 export function indexCards(cards: Card[]): CardIndex {
@@ -37,5 +35,5 @@ export function indexCards(cards: Card[]): CardIndex {
     bucket.push(card);
   }
 
-  return { byId, groups, byGroup, pools: buildAnswerPools(cards) };
+  return { byId, groups, byGroup };
 }

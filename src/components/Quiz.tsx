@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
-import { checkAnswer } from "../review/answerCheck";
-import { pooledAccepted, type AnswerPools } from "../review/synonyms";
+import { checkAnswer, acceptedAnswers } from "../review/answerCheck";
 import { getHint } from "../data/hints";
 import { speak, speechSupported } from "../util/speak";
 
@@ -10,7 +9,6 @@ interface QuizProps {
   session: Session;
   getCard: (cardId: string) => Card | undefined;
   getEnrichment?: (cardId: string) => Enrichment | undefined;
-  pools: AnswerPools;
   /** Fired once per word, when both its directions have cleared. */
   onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
@@ -22,7 +20,7 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, onComplete, onQuit }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [flash, setFlash] = useState(false);
@@ -54,9 +52,10 @@ export function Quiz({ session, getCard, getEnrichment, pools, onWordCleared, on
   if (!card) return null;
 
   const prompt = task.dir === "nl_en" ? card.dutch : card.english.join(" / ");
-  // Pooled across colliding cards for checking; the reveal shows only this card's
-  // own answer so a synonym-heavy meaning doesn't dump dozens of words.
-  const accepted = pooledAccepted(card, task.dir, pools);
+  // Only this card's own answers are accepted. Collisions (same Dutch / same
+  // English across cards) are NOT pooled — each item must be answered precisely;
+  // hints (src/data/hints.ts) steer the learner toward the wanted sense.
+  const accepted = acceptedAnswers(card, task.dir);
   const reveal = task.dir === "nl_en" ? card.english : [card.dutch];
 
   // Disambiguation hint for colliding words. A hand-curated hint (src/data/hints.ts)

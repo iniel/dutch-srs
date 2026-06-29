@@ -90,3 +90,30 @@ export function acceptedForDirection(
   if (dir === "nl_en") return card.english;
   return [...new Set(articleVariants(card.dutch))];
 }
+
+const PLACEHOLDER_RE = /\b(someone|something|somebody|oneself|one's|sb|sth)\b/gi;
+
+// Extra forms accepted for an English answer that carries explanatory words the
+// learner shouldn't have to type: "cousin (male)" -> "cousin", "to call
+// somebody" -> "to call". The originals are kept too. Single-card only — no
+// cross-card synonym pooling, so each item must be answered on its own terms.
+function englishVariants(glosses: string[]): string[] {
+  const out = new Set<string>();
+  for (const gloss of glosses) {
+    out.add(gloss);
+    const noParen = gloss.replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim();
+    if (noParen) out.add(noParen);
+    const noPlaceholder = gloss.replace(PLACEHOLDER_RE, " ").replace(/\s+/g, " ").trim();
+    if (noPlaceholder) out.add(noPlaceholder);
+  }
+  return [...out];
+}
+
+export function acceptedAnswers(
+  card: { dutch: string; english: string[] },
+  dir: Direction,
+): string[] {
+  const base = acceptedForDirection(card, dir);
+  if (dir === "nl_en") return [...new Set(englishVariants(base))];
+  return base;
+}

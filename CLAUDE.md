@@ -48,7 +48,7 @@ attach to the user's already-open browser/tab.
 | SRS stages + intervals | `src/srs/stages.ts` | stage→interval, colors, category. **Pure.** |
 | SRS scheduling | `src/srs/schedule.ts` | advance/demote/startLesson. **Pure, takes `now`.** |
 | Answer checking | `src/review/answerCheck.ts` | normalize, levenshtein, accepted answers. **Pure.** |
-| Synonym pooling | `src/review/synonyms.ts` | cross-card answer pools; `pooledAccepted()` widens checking for collisions. **Pure.** |
+| Accepted answers | `src/review/answerCheck.ts` | `acceptedAnswers()` = a single card's own answers (article variants + paren/placeholder stripping). **No cross-card synonym pooling** — collisions handled by hints, not acceptance. **Pure.** |
 | Session queue | `src/review/session.ts` | build queues, `createSession()`. **Pure.** |
 | Storage | `src/storage/progress.ts` | localStorage load/save/export/import/reset |
 | Card loading | `src/data/loadCards.ts`, `src/data/cards.ts` | fetch + index + `useCards()` hook |

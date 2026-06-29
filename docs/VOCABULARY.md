@@ -83,15 +83,15 @@ Place-name fragment junk (`schapenbout` → `Zeeland`, `Netherlands`) is prevent
 answer is legitimately a proper noun (`CD`, `Muslim`) are never touched. Audit with
 `node scripts/enrich/analyze-collisions.mjs` (writes `scripts/enrich/collisions-report.json`).
 
-## Collisions handled at runtime (`src/review/synonyms.ts`)
+## Collisions handled at runtime (`src/review/answerCheck.ts`)
 Two words can legitimately share a surface form (NL→EN: `zijn` = "to be" / "his") or a meaning
-(EN→NL: "nice" = `leuk` / `aardig` / `fijn`). Rather than merge cards, `buildAnswerPools()` indexes every
-card and `pooledAccepted()` widens the accepted set so any sibling answer counts as correct in both
-directions; the bare answer for a parenthetical/placeholder gloss (`cousin (male)` → also `cousin`,
-`to call somebody` → also `to call`) is accepted here too, **without** mutating the EN→NL prompt. The Quiz
-prompt also shows the part of speech and an optional, direction-safe example sentence as a disambiguation
-hint. Tradeoff: English homonyms over-accept (e.g. "state" = `staat` and `verklaren`); the POS/example hint
-mitigates and this is intentional.
+(EN→NL: "nice" = `leuk` / `aardig` / `fijn`). **Cross-card answers are NOT pooled** — each item is
+checked against only its own card's answers (`acceptedAnswers()`), so the learner must answer the exact
+word being drilled. Collisions are disambiguated for the learner by hand-curated hints
+(`src/data/hints.ts`) plus the part of speech and an optional, direction-safe example sentence on the
+Quiz prompt. `acceptedAnswers()` still accepts the bare answer for a parenthetical/placeholder gloss
+(`cousin (male)` → also `cousin`, `to call somebody` → also `to call`) — that's a single-card
+convenience, **not** synonym pooling, and never mutates the EN→NL prompt.
 
 ## Editing cards directly
 Hand-editing `public/cards.json` is fine for small fixes. Keep the schema, keep ids unique and stable

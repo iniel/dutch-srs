@@ -253,7 +253,6 @@ export function App() {
           session={session}
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
-          pools={index.pools}
           onWordCleared={applyWordReview}
           onComplete={finishSession}
           onQuit={() => {
@@ -268,7 +267,6 @@ export function App() {
           lessonCards={lessonCards}
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
-          pools={index.pools}
           onWordCleared={applyWordLesson}
           onComplete={finishSession}
           onQuit={() => {

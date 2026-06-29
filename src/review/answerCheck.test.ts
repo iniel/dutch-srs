@@ -5,6 +5,7 @@ import {
   checkAnswer,
   articleVariants,
   acceptedForDirection,
+  acceptedAnswers,
 } from "./answerCheck";
 
 describe("normalize", () => {
@@ -123,5 +124,28 @@ describe("acceptedForDirection", () => {
     const accepted = acceptedForDirection(card, "en_nl");
     expect(checkAnswer("hond", accepted).correct).toBe(true);
     expect(checkAnswer("de hond", accepted).correct).toBe(true);
+  });
+});
+
+describe("acceptedAnswers", () => {
+  it("NL->EN: includes the card's own glosses, no cross-card synonyms", () => {
+    const accepted = acceptedAnswers({ dutch: "leuk", english: ["nice"] }, "nl_en");
+    expect(accepted).toEqual(["nice"]);
+  });
+
+  it("EN->NL: only the card's own Dutch (with article variants)", () => {
+    const accepted = acceptedAnswers({ dutch: "de hond", english: ["dog"] }, "en_nl");
+    expect(accepted).toEqual(["de hond", "hond"]);
+  });
+
+  it("NL->EN: also accepts the bare answer for a parenthetical gloss", () => {
+    const accepted = acceptedAnswers({ dutch: "de neef", english: ["cousin (male)"] }, "nl_en");
+    expect(accepted).toContain("cousin (male)");
+    expect(accepted).toContain("cousin");
+  });
+
+  it("NL->EN: strips trailing placeholder words (someone/something)", () => {
+    const accepted = acceptedAnswers({ dutch: "roepen", english: ["to call somebody"] }, "nl_en");
+    expect(accepted).toContain("to call");
   });
 });
