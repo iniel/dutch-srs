@@ -66,6 +66,28 @@
   text-align: right;
 }
 
+.wordlist-select {
+  width: 100%;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 0 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.wordlist-select:focus {
+  outline: none;
+}
+.wordlist-progress {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .wordlist-section {
   display: flex;
   flex-direction: column;

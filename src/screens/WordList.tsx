@@ -3,12 +3,14 @@ import type { ProgressData } from "../types";
 import type { CardIndex } from "../data/cards";
 import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
-import { cefrBadge } from "../srs/levels";
+import { cefrBadge, levelProgress, wordsToLevelUp } from "../srs/levels";
 
 interface WordListProps {
   index: CardIndex;
   progress: ProgressData;
-  level?: string;
+  levels: string[];
+  selectedLevel: string;
+  onSelectLevel: (level: string) => void;
   onOpen: (cardId: string) => void;
   onBack: () => void;
 }
@@ -28,13 +30,11 @@ interface ListItem {
   stage: number;
 }
 
-function buildSections(index: CardIndex, progress: ProgressData, level?: string) {
+function buildSections(index: CardIndex, progress: ProgressData, level: string) {
   const byStage = new Map<number, ListItem[]>();
   for (const card of index.cards) {
-    if (level !== undefined && card.level !== level) continue;
+    if (card.level !== level) continue;
     const stage = progress.states[card.id]?.stage ?? 0;
-    const includeUnstarted = level !== undefined;
-    if (stage < 1 && !includeUnstarted) continue;
     const items = byStage.get(stage) ?? [];
     items.push({
       cardId: card.id,
@@ -51,31 +51,60 @@ function buildSections(index: CardIndex, progress: ProgressData, level?: string)
   return byStage;
 }
 
-export function WordList({ index, progress, level, onOpen, onBack }: WordListProps) {
-  const sections = useMemo(() => buildSections(index, progress, level), [index, progress, level]);
+const STAGE_ORDER_WITH_UNSTARTED = [...STAGE_ORDER, NOT_STARTED_STAGE];
+
+export function WordList({
+  index,
+  progress,
+  levels,
+  selectedLevel,
+  onSelectLevel,
+  onOpen,
+  onBack,
+}: WordListProps) {
+  const sections = useMemo(
+    () => buildSections(index, progress, selectedLevel),
+    [index, progress, selectedLevel],
+  );
 
   const total = useMemo(
     () => [...sections.values()].reduce((n, items) => n + items.length, 0),
     [sections],
   );
 
-  const stageOrder = level !== undefined ? [...STAGE_ORDER, NOT_STARTED_STAGE] : STAGE_ORDER;
+  const prog = useMemo(
+    () => levelProgress(index.cards, progress.states, selectedLevel),
+    [index, progress, selectedLevel],
+  );
+  const toLevelUp = wordsToLevelUp(prog);
 
   return (
     <div className="screen wordlist">
       <header className="topbar">
         <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>{level !== undefined ? `Level ${level}` : "Words"}</h1>
+        <h1>Progress</h1>
         <span className="topbar-spacer" />
       </header>
 
-      {total === 0 && (
-        <div className="word-empty">
-          {level !== undefined ? "No words in this level." : "No items in progress yet."}
-        </div>
-      )}
+      <select
+        className="wordlist-select"
+        value={selectedLevel}
+        onChange={(e) => onSelectLevel(e.target.value)}
+        aria-label="Select level"
+      >
+        {levels.map((level) => (
+          <option key={level} value={level}>{level}</option>
+        ))}
+      </select>
 
-      {stageOrder.map((stage) => {
+      <div className="wordlist-progress">
+        {Math.round(prog.pct * 100)}% Guru
+        {toLevelUp > 0 && ` · ${toLevelUp} word${toLevelUp === 1 ? "" : "s"} to level up`}
+      </div>
+
+      {total === 0 && <div className="word-empty">No words in this level.</div>}
+
+      {STAGE_ORDER_WITH_UNSTARTED.map((stage) => {
         const items = sections.get(stage);
         if (!items || items.length === 0) return null;
         const color = STAGE_COLORS[stageCategory(stage)];

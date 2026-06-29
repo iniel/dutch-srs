@@ -192,8 +192,16 @@ try {
   console.log("FEATURE 5 — word list:");
   await page.click(".words-link");
   await page.waitForSelector(".wordlist");
-  const listRows = await page.$$eval(".wordlist .word-row", (r) => r.length);
-  check(listRows === 5, `word list shows one row per learned word (${listRows} rows)`);
+  const sectionCounts = await page.$$eval(".wordlist-section", (secs) =>
+    secs.map((s) => ({
+      heading: s.querySelector("h2")?.textContent ?? "",
+      rows: s.querySelectorAll(".word-row").length,
+    })),
+  );
+  const learnedRows = sectionCounts
+    .filter((s) => !s.heading.includes("Not started"))
+    .reduce((n, s) => n + s.rows, 0);
+  check(learnedRows === 5, `progress list shows one row per learned word (${learnedRows} learned)`);
   await page.click('.wordlist [aria-label="back"]');
   await page.waitForSelector(".action-card");
 

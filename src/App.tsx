@@ -9,7 +9,7 @@ import { useCards } from "./data/cards";
 import { useEnrichment } from "./data/loadEnrichment";
 import { now } from "./util/now";
 import { useVisualViewportVars } from "./util/visualViewport";
-import { unlockedLevels, currentLevel, levelProgress, wordsToLevelUp } from "./srs/levels";
+import { unlockedLevels, currentLevel, levelProgress, wordsToLevelUp, levelOrder, levelsWithProgress } from "./srs/levels";
 import { Dashboard } from "./screens/Dashboard";
 import { Reviews } from "./screens/Reviews";
 import { Lessons } from "./screens/Lessons";
@@ -43,6 +43,7 @@ export function App() {
   const [summary, setSummary] = useState<{ results: WordResult[]; mode: "review" | "lesson" } | null>(null);
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
+  const [listLevel, setListLevel] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [updateReady, setUpdateReady] = useState(false);
   const applyUpdate = useRef<((reload?: boolean) => Promise<void>) | null>(null);
@@ -176,12 +177,17 @@ export function App() {
     const lessonCards = available.size;
     const levelName = currentLevel(index.cards, progress.states);
     const levelProg = levelProgress(index.cards, progress.states, levelName);
+    const allLevels = levelOrder(index.cards);
+    const withProgress = new Set(levelsWithProgress(index.cards, progress.states));
+    const progressLevels = allLevels.filter((l) => withProgress.has(l) || l === levelName);
     return {
       reviewsDue,
       lessonCards,
       levelName,
       levelPct: levelProg.pct,
       wordsToLevelUp: wordsToLevelUp(levelProg),
+      allLevels,
+      progressLevels,
     };
   }, [index, progress]);
 
@@ -207,8 +213,14 @@ export function App() {
           onStartLessons={startLessons}
           onSettings={() => setScreen("settings")}
           onSearch={() => openSearch()}
-          onWords={() => setScreen("wordlist")}
-          onLevelWords={() => setScreen("levelwords")}
+          onWords={() => {
+            setListLevel((cur) => (cur && counts.progressLevels.includes(cur) ? cur : counts.levelName));
+            setScreen("wordlist");
+          }}
+          onLevelWords={() => {
+            setListLevel((cur) => (cur && counts.allLevels.includes(cur) ? cur : counts.levelName));
+            setScreen("levelwords");
+          }}
         />
       )}
       {screen === "search" && (
@@ -223,6 +235,9 @@ export function App() {
         <WordList
           index={index}
           progress={progress}
+          levels={counts.progressLevels}
+          selectedLevel={listLevel ?? counts.levelName}
+          onSelectLevel={setListLevel}
           onOpen={(id) => openWordCard(id, "wordlist")}
           onBack={() => setScreen("dashboard")}
         />
@@ -231,7 +246,9 @@ export function App() {
         <WordList
           index={index}
           progress={progress}
-          level={counts.levelName}
+          levels={counts.allLevels}
+          selectedLevel={listLevel ?? counts.levelName}
+          onSelectLevel={setListLevel}
           onOpen={(id) => openWordCard(id, "levelwords")}
           onBack={() => setScreen("dashboard")}
         />

@@ -108,7 +108,7 @@ export function Dashboard({
 
       <button className="srs-breakdown" onClick={onWords} aria-label="Words in progress">
         <div className="words-link">
-          <h2>Words</h2>
+          <h2>Progress</h2>
         </div>
         <div className="srs-row">
           {CATEGORIES.map((c) => (

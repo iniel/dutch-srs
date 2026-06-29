@@ -70,6 +70,19 @@ export function currentLevel(
   return order[order.length - 1];
 }
 
+export function levelsWithProgress(
+  cards: Card[],
+  states: Record<string, ReviewState>,
+): string[] {
+  const started = new Set<string>();
+  for (const card of cards) {
+    if (!card.level) continue;
+    const state = states[card.id];
+    if (state && state.stage >= 1) started.add(card.level);
+  }
+  return levelOrder(cards).filter((level) => started.has(level));
+}
+
 export function unlockedLevels(
   cards: Card[],
   states: Record<string, ReviewState>,
