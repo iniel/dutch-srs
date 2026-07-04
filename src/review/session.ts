@@ -1,5 +1,8 @@
 import type { Card, Direction, ItemKey, ReviewState } from "../types";
-import { itemKey, DIRECTIONS } from "../types";
+import { itemKey, DIRECTIONS, directionEnabled } from "../types";
+
+/** Per-card list of directions the learner has switched off. */
+export type DisabledDirections = Record<string, Direction[]>;
 
 export interface ReviewTask {
   key: ItemKey;
@@ -13,8 +16,12 @@ export const LEECH_INCORRECT_THRESHOLD = 3;
 
 const APPRENTICE_MAX_STAGE = 4;
 
-function wordTasks(cardId: string): ReviewTask[] {
-  return DIRECTIONS.map((dir) => ({ key: itemKey(cardId, dir), cardId, dir }));
+function wordTasks(cardId: string, disabled?: DisabledDirections): ReviewTask[] {
+  return DIRECTIONS.filter((dir) => directionEnabled(disabled, cardId, dir)).map((dir) => ({
+    key: itemKey(cardId, dir),
+    cardId,
+    dir,
+  }));
 }
 
 function isApprentice(stage: number): boolean {
@@ -79,12 +86,13 @@ export function buildReviewQueue(
   states: Record<ItemKey, ReviewState>,
   now: number,
   order: ReviewOrder = "due",
+  disabled?: DisabledDirections,
 ): ReviewTask[] {
   const due: { task: ReviewTask; availableAt: number; stage: number }[] = [];
 
   for (const [cardId, state] of Object.entries(states)) {
     if (state.stage < 1 || state.burned || state.availableAt > now) continue;
-    for (const task of wordTasks(cardId)) {
+    for (const task of wordTasks(cardId, disabled)) {
       due.push({ task, availableAt: state.availableAt, stage: state.stage });
     }
   }
@@ -112,7 +120,7 @@ export function buildReviewQueue(
 
 export function buildLeechQueue(
   states: Record<ItemKey, ReviewState>,
-  opts: { apprenticeOnly?: boolean } = {},
+  opts: { apprenticeOnly?: boolean; disabled?: DisabledDirections } = {},
 ): ReviewTask[] {
   const leeches: { task: ReviewTask; incorrectCount: number }[] = [];
 
@@ -120,7 +128,7 @@ export function buildLeechQueue(
     if (state.stage < 1 || state.burned) continue;
     if (state.incorrectCount < LEECH_INCORRECT_THRESHOLD) continue;
     if (opts.apprenticeOnly && !isApprentice(state.stage)) continue;
-    for (const task of wordTasks(cardId)) {
+    for (const task of wordTasks(cardId, opts.disabled)) {
       leeches.push({ task, incorrectCount: state.incorrectCount });
     }
   }
@@ -142,8 +150,12 @@ export function lessonsRemainingToday(
 
 const LESSON_DIR_ORDER: Direction[] = ["en_nl", "nl_en"];
 
-export function singleWordLessonTasks(cardId: string): ReviewTask[] {
-  return LESSON_DIR_ORDER.map((dir) => ({ key: itemKey(cardId, dir), cardId, dir }));
+export function singleWordLessonTasks(cardId: string, disabled?: DisabledDirections): ReviewTask[] {
+  return LESSON_DIR_ORDER.filter((dir) => directionEnabled(disabled, cardId, dir)).map((dir) => ({
+    key: itemKey(cardId, dir),
+    cardId,
+    dir,
+  }));
 }
 
 export function buildLessonQueue(
@@ -153,6 +165,7 @@ export function buildLessonQueue(
   unlocked?: Set<string>,
   seed?: number,
   pinned: string[] = [],
+  disabled?: DisabledDirections,
 ): ReviewTask[] {
   const isNew = (id: string) => {
     const state = states[id];
@@ -179,7 +192,7 @@ export function buildLessonQueue(
     pickedSet.add(card.id);
   }
 
-  const tasks = picked.flatMap(singleWordLessonTasks);
+  const tasks = picked.flatMap((id) => singleWordLessonTasks(id, disabled));
   return seed === undefined ? tasks : shuffleInterleaved(tasks, seed);
 }
 
@@ -198,6 +211,12 @@ export interface WordResult {
 export interface Session {
   current(): ReviewTask | undefined;
   submit(wasCorrect: boolean): WordCompletion | undefined;
+  /**
+   * Drop a direction from the running session (learner switched it off). Removes
+   * its queued task(s) and stops counting it; returns a `WordCompletion` if this
+   * was the word's last outstanding direction.
+   */
+  removeDirection(cardId: string, dir: Direction): WordCompletion | undefined;
   next(): ReviewTask | undefined;
   /** The task that would be shown after the current one clears (queue[1]). */
   peekNext(): ReviewTask | undefined;
@@ -258,6 +277,19 @@ export function createSession(tasks: ReviewTask[]): Session {
 
       clearedWords.add(task.cardId);
       return { cardId: task.cardId, passed: missedDirsFor(task.cardId).length === 0 };
+    },
+    removeDirection(cardId: string, dir: Direction) {
+      const remaining = wordDirs.get(cardId);
+      if (!remaining) return undefined;
+      for (let i = queue.length - 1; i >= 0; i--) {
+        if (queue[i].cardId === cardId && queue[i].dir === dir) queue.splice(i, 1);
+      }
+      remaining.delete(dir);
+      // Drop it from the scoring maps so it is not counted as missed.
+      wordTaskKeys.get(cardId)?.delete(dir);
+      if (remaining.size > 0 || clearedWords.has(cardId)) return undefined;
+      clearedWords.add(cardId);
+      return { cardId, passed: missedDirsFor(cardId).length === 0 };
     },
     next() {
       return queue[0];

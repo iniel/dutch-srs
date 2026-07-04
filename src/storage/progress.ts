@@ -1,4 +1,5 @@
-import type { AppSettings, ItemKey, ProgressData, ReviewState } from "../types";
+import type { AppSettings, Direction, ItemKey, ProgressData, ReviewState } from "../types";
+import { DIRECTIONS } from "../types";
 
 export const STORAGE_KEY = "dutch-srs-progress-v1";
 export const CURRENT_VERSION = 2;
@@ -10,7 +11,22 @@ export const DEFAULT_SETTINGS: AppSettings = {
 };
 
 function freshProgress(settings: AppSettings = DEFAULT_SETTINGS): ProgressData {
-  return { version: CURRENT_VERSION, states: {}, lessonQueue: [], settings: { ...settings } };
+  return { version: CURRENT_VERSION, states: {}, lessonQueue: [], disabledDirections: {}, settings: { ...settings } };
+}
+
+// Keep only valid directions and never let a card disable BOTH directions
+// (that would leave the word with nothing to review).
+function coerceDisabledDirections(value: unknown): Record<string, Direction[]> {
+  if (typeof value !== "object" || value === null) return {};
+  const out: Record<string, Direction[]> = {};
+  for (const [cardId, raw] of Object.entries(value as Record<string, unknown>)) {
+    if (!Array.isArray(raw)) continue;
+    const dirs = raw.filter((d): d is Direction => DIRECTIONS.includes(d as Direction));
+    const unique = [...new Set(dirs)];
+    if (unique.length >= DIRECTIONS.length) continue;
+    if (unique.length > 0) out[cardId] = unique;
+  }
+  return out;
 }
 
 function mergeSettings(partial: Partial<AppSettings> | undefined): AppSettings {
@@ -74,6 +90,7 @@ function coerceProgress(value: unknown): ProgressData {
     version: CURRENT_VERSION,
     states,
     lessonQueue,
+    disabledDirections: coerceDisabledDirections(obj.disabledDirections),
     settings: mergeSettings(obj.settings as Partial<AppSettings> | undefined),
   };
 }
@@ -107,6 +124,31 @@ export function setState(data: ProgressData, key: ItemKey, state: ReviewState): 
 
 export function setLessonQueue(data: ProgressData, lessonQueue: string[]): ProgressData {
   return { ...data, lessonQueue };
+}
+
+// Toggle a single direction for one card. Immutable. Refuses to disable the
+// last remaining direction so a word is never left with nothing to review.
+export function setDirectionDisabled(
+  data: ProgressData,
+  cardId: string,
+  dir: Direction,
+  disabled: boolean,
+): ProgressData {
+  const current = data.disabledDirections?.[cardId] ?? [];
+  const has = current.includes(dir);
+  let next: Direction[];
+  if (disabled) {
+    if (has) return data;
+    if (current.length + 1 >= DIRECTIONS.length) return data;
+    next = [...current, dir];
+  } else {
+    if (!has) return data;
+    next = current.filter((d) => d !== dir);
+  }
+  const map = { ...(data.disabledDirections ?? {}) };
+  if (next.length === 0) delete map[cardId];
+  else map[cardId] = next;
+  return { ...data, disabledDirections: map };
 }
 
 export function updateSettings(data: ProgressData, partial: Partial<AppSettings>): ProgressData {

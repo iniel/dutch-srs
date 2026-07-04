@@ -13,6 +13,12 @@ interface QuizProps {
   onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
   onQuit: () => void;
+  /**
+   * When provided, an NL→EN card shows a control to switch that direction off
+   * for the word. Called to persist the setting; the quiz drops it from the
+   * live session itself. Only wired for reviews (not lessons).
+   */
+  onRemoveDirection?: (cardId: string) => void;
 }
 
 type Phase = "input" | "wrong";
@@ -20,11 +26,12 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit, onRemoveDirection }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [flash, setFlash] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [showRemoveSheet, setShowRemoveSheet] = useState(false);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -35,6 +42,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     setValue("");
     setFlash(false);
     setShowHint(false);
+    setShowRemoveSheet(false);
   }, [task?.key]);
 
   useEffect(() => {
@@ -73,6 +81,19 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   // revealed, so the feedback panel keeps showing the current card's answer.
   function advanceAfterWrong() {
     session.submit(false);
+    setPhase("input");
+    setValue("");
+    force((n) => n + 1);
+    if (session.isComplete()) onComplete();
+  }
+
+  function confirmRemoveDirection() {
+    if (!task) return;
+    const { cardId } = task;
+    setShowRemoveSheet(false);
+    onRemoveDirection?.(cardId);
+    const completion = session.removeDirection(cardId, "nl_en");
+    if (completion) onWordCleared(completion.cardId, completion.passed);
     setPhase("input");
     setValue("");
     force((n) => n + 1);
@@ -140,11 +161,25 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
       <div className="quiz-prompt">
         {progressHeader}
         <div className="quiz-word">
-          <div className="prompt-label">
-            {dirLabel(task.dir)} · {card.type}
-            {card.pos && card.pos.toLowerCase() !== card.type.toLowerCase()
-              ? ` · ${card.pos}`
-              : ""}
+          <div className="prompt-label-row">
+            <div className="prompt-label">
+              {dirLabel(task.dir)} · {card.type}
+              {card.pos && card.pos.toLowerCase() !== card.type.toLowerCase()
+                ? ` · ${card.pos}`
+                : ""}
+            </div>
+            {task.dir === "nl_en" && onRemoveDirection && (
+              <button
+                type="button"
+                className="quiz-remove-dir"
+                // Keep focus on the input so the mobile keyboard doesn't collapse.
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => setShowRemoveSheet(true)}
+                aria-label="Question options"
+              >
+                ✕
+              </button>
+            )}
           </div>
           <div className="prompt-row">
             <div className="prompt-text">{prompt}</div>
@@ -232,6 +267,37 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
           )}
         </div>
       </div>
+
+      {showRemoveSheet && (
+        <div
+          className="sheet-backdrop"
+          onMouseDown={(e) => e.preventDefault()}
+          onClick={() => setShowRemoveSheet(false)}
+        >
+          <div className="bottom-sheet" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="sheet-action danger"
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={confirmRemoveDirection}
+            >
+              Remove Dutch → English question
+            </button>
+            <p className="sheet-note">
+              This word will only be reviewed English → Dutch. You can turn it back on
+              from the word's card, next to its level.
+            </p>
+            <button
+              type="button"
+              className="sheet-cancel"
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={() => setShowRemoveSheet(false)}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

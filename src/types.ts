@@ -122,7 +122,22 @@ export interface ProgressData {
   states: Record<string, ReviewState>;
   /** cardIds pinned to jump the level lock and lead the next lesson batch. */
   lessonQueue: string[];
+  /**
+   * Directions the learner has switched off per word, keyed by `cardId`.
+   * Display/scheduling filter only — never touches `ReviewState`, so a word
+   * keeps its stage across disabling/re-enabling a direction.
+   */
+  disabledDirections?: Record<string, Direction[]>;
   settings: AppSettings;
+}
+
+/** True unless `dir` is in the card's disabled list. */
+export function directionEnabled(
+  disabled: Record<string, Direction[]> | undefined,
+  cardId: string,
+  dir: Direction,
+): boolean {
+  return !disabled?.[cardId]?.includes(dir);
 }
 
 export interface AppSettings {

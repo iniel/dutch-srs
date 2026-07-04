@@ -11,6 +11,7 @@ import {
   resetAll,
   resetProgress,
   saveProgress,
+  setDirectionDisabled,
   setLessonQueue,
   setState,
   updateSettings,
@@ -247,6 +248,55 @@ describe("lessonQueue", () => {
     let data = setLessonQueue(loadProgress(), ["c1"]);
     saveProgress(data);
     expect(resetProgress().lessonQueue).toEqual([]);
+  });
+});
+
+describe("disabledDirections", () => {
+  it("defaults to empty when absent", () => {
+    expect(loadProgress().disabledDirections).toEqual({});
+  });
+
+  it("setDirectionDisabled adds and removes a direction immutably", () => {
+    const data = loadProgress();
+    const off = setDirectionDisabled(data, "w", "nl_en", true);
+    expect(off).not.toBe(data);
+    expect(data.disabledDirections).toEqual({});
+    expect(off.disabledDirections).toEqual({ w: ["nl_en"] });
+
+    const on = setDirectionDisabled(off, "w", "nl_en", false);
+    expect(on.disabledDirections).toEqual({});
+  });
+
+  it("refuses to disable the last remaining direction", () => {
+    let data = setDirectionDisabled(loadProgress(), "w", "nl_en", true);
+    const same = setDirectionDisabled(data, "w", "en_nl", true);
+    expect(same).toBe(data); // no-op, would leave the word with nothing
+    expect(same.disabledDirections).toEqual({ w: ["nl_en"] });
+  });
+
+  it("persists and round-trips through export/import", () => {
+    let data = setDirectionDisabled(loadProgress(), "w", "nl_en", true);
+    saveProgress(data);
+    expect(loadProgress().disabledDirections).toEqual({ w: ["nl_en"] });
+    expect(importProgress(exportProgress(data)).disabledDirections).toEqual({ w: ["nl_en"] });
+  });
+
+  it("sanitizes malformed and both-disabled entries on load", () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        version: CURRENT_VERSION,
+        states: {},
+        settings: DEFAULT_SETTINGS,
+        disabledDirections: {
+          a: ["nl_en", "bogus"],
+          b: ["nl_en", "en_nl"], // both -> dropped
+          c: "nope",
+          d: [],
+        },
+      }),
+    );
+    expect(loadProgress().disabledDirections).toEqual({ a: ["nl_en"] });
   });
 });
 

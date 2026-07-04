@@ -364,6 +364,82 @@ describe("buildLessonQueue gating", () => {
   });
 });
 
+describe("disabled directions filtering", () => {
+  it("buildReviewQueue omits a disabled direction, keeps the other", () => {
+    const states: Record<string, ReviewState> = { a: state({ availableAt: 0 }) };
+    const queue = buildReviewQueue(states, NOW, "due", { a: ["nl_en"] });
+    expect(queue.map((t) => t.key)).toEqual(["a:en_nl"]);
+  });
+
+  it("buildReviewQueue leaves other words untouched", () => {
+    const states: Record<string, ReviewState> = {
+      a: state({ availableAt: 0 }),
+      b: state({ availableAt: 0 }),
+    };
+    const queue = buildReviewQueue(states, NOW, "due", { a: ["nl_en"] });
+    expect(queue.map((t) => t.key)).toEqual(["a:en_nl", "b:en_nl", "b:nl_en"]);
+  });
+
+  it("buildLeechQueue omits a disabled direction", () => {
+    const states: Record<string, ReviewState> = {
+      a: state({ stage: 2, incorrectCount: LEECH_INCORRECT_THRESHOLD }),
+    };
+    expect(buildLeechQueue(states, { disabled: { a: ["nl_en"] } }).map((t) => t.key)).toEqual([
+      "a:en_nl",
+    ]);
+  });
+
+  it("buildLessonQueue omits a disabled direction", () => {
+    const cards = [card("a")];
+    const queue = buildLessonQueue(cards, {}, 5, undefined, undefined, [], { a: ["nl_en"] });
+    expect(queue.map((t) => t.key)).toEqual(["a:en_nl"]);
+  });
+
+  it("singleWordLessonTasks omits a disabled direction", () => {
+    expect(singleWordLessonTasks("a", { a: ["nl_en"] }).map((t) => t.key)).toEqual(["a:en_nl"]);
+  });
+});
+
+describe("session.removeDirection", () => {
+  it("completes the word when its other direction was already answered", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.submit(true)).toBeUndefined(); // a:en_nl cleared, a:nl_en pending
+    const completion = s.removeDirection("a", "nl_en");
+    expect(completion).toEqual({ cardId: "a", passed: true });
+    expect(s.done()).toBe(1);
+    expect(s.remaining()).toBe(0);
+    expect(s.isComplete()).toBe(true);
+  });
+
+  it("keeps the other direction's first-try failure after removing a direction", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.submit(false)).toBeUndefined(); // en_nl wrong -> requeued to back
+    expect(s.current()?.key).toBe("a:nl_en");
+    // Remove the not-yet-answered nl_en; en_nl (wrong) still pending, so no completion.
+    expect(s.removeDirection("a", "nl_en")).toBeUndefined();
+    // Answering the requeued en_nl now completes the word, still failed.
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: false });
+  });
+
+  it("does not complete when the other direction is still pending", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.removeDirection("a", "nl_en")).toBeUndefined(); // en_nl still pending
+    expect(s.done()).toBe(0);
+    expect(s.current()?.key).toBe("a:en_nl");
+    expect(s.remaining()).toBe(1);
+  });
+
+  it("removes the direction from the live queue", () => {
+    const s = createSession(tasksFor("a", "b"));
+    expect(s.current()?.key).toBe("a:en_nl");
+    s.removeDirection("a", "nl_en");
+    // a:nl_en gone; queue is a:en_nl, b:en_nl, b:nl_en
+    expect(s.remaining()).toBe(3);
+    s.submit(true); // a:en_nl -> a complete (nl_en removed)
+    expect(s.done()).toBe(1);
+  });
+});
+
 describe("lessonsRemainingToday", () => {
   it("returns the cap minus what was already started", () => {
     expect(lessonsRemainingToday(15, 0)).toBe(15);

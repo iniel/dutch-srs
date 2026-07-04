@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ProgressData } from "./types";
-import { loadProgress, saveProgress, setLessonQueue, setState } from "./storage/progress";
+import { loadProgress, saveProgress, setLessonQueue, setState, setDirectionDisabled } from "./storage/progress";
 import { newLessonState, startLesson, answerCorrect, answerIncorrect } from "./srs/schedule";
 import { buildLessonQueue, buildReviewQueue, createSession, singleWordLessonTasks } from "./review/session";
 import type { Session, WordResult } from "./review/session";
@@ -79,7 +79,7 @@ export function App() {
 
   function startReviews() {
     if (!index) return;
-    const tasks = buildReviewQueue(progress.states, now(), "shuffled").filter((t) =>
+    const tasks = buildReviewQueue(progress.states, now(), "shuffled", progress.disabledDirections).filter((t) =>
       index.byId.has(t.cardId),
     );
     if (tasks.length === 0) return;
@@ -98,6 +98,7 @@ export function App() {
       unlocked,
       now(),
       progress.lessonQueue,
+      progress.disabledDirections,
     );
     if (tasks.length === 0) return;
     enterLessonSession(tasks);
@@ -115,7 +116,7 @@ export function App() {
   function learnNow(cardId: string) {
     if (!index || !index.byId.has(cardId)) return;
     if ((progress.states[cardId]?.stage ?? 0) > 0) return;
-    enterLessonSession(singleWordLessonTasks(cardId));
+    enterLessonSession(singleWordLessonTasks(cardId, progress.disabledDirections));
   }
 
   function pinLesson(cardId: string) {
@@ -263,6 +264,9 @@ export function App() {
           onPin={pinLesson}
           onUnpin={unpinLesson}
           onSearchWord={(w) => openSearch(w)}
+          onToggleDirection={(id, enabled) =>
+            persist(setDirectionDisabled(progress, id, "nl_en", !enabled))
+          }
         />
       )}
       {screen === "reviews" && session && (
@@ -272,6 +276,7 @@ export function App() {
           getEnrichment={getEnrichment}
           onWordCleared={applyWordReview}
           onComplete={finishSession}
+          onRemoveDirection={(id) => persist(setDirectionDisabled(progress, id, "nl_en", true))}
           onQuit={() => {
             setSession(null);
             setScreen("dashboard");
@@ -286,6 +291,11 @@ export function App() {
           getEnrichment={getEnrichment}
           onWordCleared={applyWordLesson}
           onComplete={finishSession}
+          onRemoveDirection={(id) => persist(setDirectionDisabled(progress, id, "nl_en", true))}
+          disabledDirections={progress.disabledDirections}
+          onToggleDirection={(id, enabled) =>
+            persist(setDirectionDisabled(progress, id, "nl_en", !enabled))
+          }
           onQuit={() => {
             setSession(null);
             setScreen("dashboard");

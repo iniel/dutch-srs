@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import type { Card, Enrichment } from "../types";
+import type { Card, Direction, Enrichment } from "../types";
+import { directionEnabled } from "../types";
 import type { Session } from "../review/session";
 import { speak, speechSupported } from "../util/speak";
 import { Quiz } from "../components/Quiz";
@@ -14,9 +15,12 @@ interface LessonsProps {
   onWordCleared: (cardId: string) => void;
   onComplete: () => void;
   onQuit: () => void;
+  onRemoveDirection?: (cardId: string) => void;
+  disabledDirections?: Record<string, Direction[]>;
+  onToggleDirection?: (cardId: string, enabled: boolean) => void;
 }
 
-export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: LessonsProps) {
+export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit, onRemoveDirection, disabledDirections, onToggleDirection }: LessonsProps) {
   const [phase, setPhase] = useState<"info" | "quiz">("info");
   const [idx, setIdx] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -67,6 +71,23 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
           <hr className="hairline" />
 
           <WordDetail enrichment={e} hidePhonetics />
+
+          {onToggleDirection && (
+            <div className="word-srs-row">
+              <span className="word-srs-label">Dutch → English</span>
+              <div className="word-srs-actions">
+                {directionEnabled(disabledDirections, card.id, "nl_en") ? (
+                  <button className="srs-action" onClick={() => onToggleDirection(card.id, false)}>
+                    Remove question
+                  </button>
+                ) : (
+                  <button className="srs-action primary" onClick={() => onToggleDirection(card.id, true)}>
+                    Enable question
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="lesson-nav">
@@ -93,6 +114,7 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
         onWordCleared={(cardId) => onWordCleared(cardId)}
         onComplete={onComplete}
         onQuit={onQuit}
+        onRemoveDirection={onRemoveDirection}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import type { Card, Enrichment, ProgressData } from "../types";
+import { directionEnabled } from "../types";
 import { cefrBadge } from "../srs/levels";
 import { SrsStagePill } from "./SrsStagePill";
 import { WordDetail } from "./WordDetail";
@@ -14,11 +15,14 @@ interface WordCardProps {
   onPin: (cardId: string) => void;
   onUnpin: (cardId: string) => void;
   onSearchWord?: (word: string) => void;
+  /** Toggle the NL→EN direction for this word. `enabled` is the desired new state. */
+  onToggleDirection?: (cardId: string, enabled: boolean) => void;
 }
 
-export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin, onUnpin, onSearchWord }: WordCardProps) {
+export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin, onUnpin, onSearchWord, onToggleDirection }: WordCardProps) {
   const stage = progress.states[card.id]?.stage ?? 0;
   const pinned = progress.lessonQueue.includes(card.id);
+  const nlEnEnabled = directionEnabled(progress.disabledDirections, card.id, "nl_en");
   const phon = [enrichment?.ipa, enrichment?.syllables].filter(Boolean).join(" · ");
   const cefr = cefrBadge(card);
 
@@ -71,6 +75,23 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
           ) : <SrsStagePill stage={stage} />}
         </div>
       </div>
+
+      {onToggleDirection && (
+        <div className="word-srs-row">
+          <span className="word-srs-label">Dutch → English</span>
+          <div className="word-srs-actions">
+            {nlEnEnabled ? (
+              <button className="srs-action" onClick={() => onToggleDirection(card.id, false)}>
+                Remove question
+              </button>
+            ) : (
+              <button className="srs-action primary" onClick={() => onToggleDirection(card.id, true)}>
+                Enable question
+              </button>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

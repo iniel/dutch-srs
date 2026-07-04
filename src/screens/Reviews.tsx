@@ -9,9 +9,10 @@ interface ReviewsProps {
   onWordCleared: (cardId: string, passed: boolean) => void;
   onComplete: () => void;
   onQuit: () => void;
+  onRemoveDirection?: (cardId: string) => void;
 }
 
-export function Reviews({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit }: ReviewsProps) {
+export function Reviews({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit, onRemoveDirection }: ReviewsProps) {
   return (
     <div className="screen session-screen">
       <Quiz
@@ -21,6 +22,7 @@ export function Reviews({ session, getCard, getEnrichment, onWordCleared, onComp
         onWordCleared={onWordCleared}
         onComplete={onComplete}
         onQuit={onQuit}
+        onRemoveDirection={onRemoveDirection}
       />
     </div>
   );
