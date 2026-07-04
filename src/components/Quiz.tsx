@@ -87,6 +87,12 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     if (session.isComplete()) onComplete();
   }
 
+  function closeRemoveSheet() {
+    setShowRemoveSheet(false);
+    // Restore the between-card focus behaviour so typing resumes on cancel.
+    inputRef.current?.focus();
+  }
+
   function confirmRemoveDirection() {
     if (!task) return;
     const { cardId } = task;
@@ -172,9 +178,12 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
               <button
                 type="button"
                 className="quiz-remove-dir"
-                // Keep focus on the input so the mobile keyboard doesn't collapse.
-                onMouseDown={(e) => e.preventDefault()}
-                onClick={() => setShowRemoveSheet(true)}
+                // Unlike the other quiz buttons, this one intentionally drops
+                // input focus so the mobile keyboard collapses behind the sheet.
+                onClick={() => {
+                  inputRef.current?.blur();
+                  setShowRemoveSheet(true);
+                }}
                 aria-label="Question options"
               >
                 ✕
@@ -272,7 +281,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
         <div
           className="sheet-backdrop"
           onMouseDown={(e) => e.preventDefault()}
-          onClick={() => setShowRemoveSheet(false)}
+          onClick={closeRemoveSheet}
         >
           <div className="bottom-sheet" onClick={(e) => e.stopPropagation()}>
             <button
@@ -291,7 +300,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
               type="button"
               className="sheet-cancel"
               onMouseDown={(e) => e.preventDefault()}
-              onClick={() => setShowRemoveSheet(false)}
+              onClick={closeRemoveSheet}
             >
               Cancel
             </button>
