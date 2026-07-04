@@ -91,6 +91,29 @@ export function acceptedForDirection(
   return [...new Set(articleVariants(card.dutch))];
 }
 
+const ONES = [
+  "zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
+  "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+  "sixteen", "seventeen", "eighteen", "nineteen",
+];
+const TENS = [
+  "", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty",
+  "ninety",
+];
+
+// Spelled-out English forms for a whole number 0-100, so number cards
+// (e.g. "drie" -> "3") also accept "three". Returns [] outside the range.
+function numberWords(n: number): string[] {
+  if (!Number.isInteger(n) || n < 0 || n > 100) return [];
+  if (n === 100) return ["hundred", "one hundred"];
+  if (n < 20) return [ONES[n]];
+  const tens = TENS[Math.floor(n / 10)];
+  const ones = n % 10;
+  if (ones === 0) return [tens];
+  // Both hyphenated and spaced forms; normalize() drops the hyphen anyway.
+  return [`${tens}-${ONES[ones]}`, `${tens} ${ONES[ones]}`];
+}
+
 const PLACEHOLDER_RE = /\b(someone|something|somebody|oneself|one's|sb|sth)\b/gi;
 
 // Extra forms accepted for an English answer that carries explanatory words the
@@ -105,6 +128,9 @@ function englishVariants(glosses: string[]): string[] {
     if (noParen) out.add(noParen);
     const noPlaceholder = gloss.replace(PLACEHOLDER_RE, " ").replace(/\s+/g, " ").trim();
     if (noPlaceholder) out.add(noPlaceholder);
+    if (/^\d+$/.test(gloss.trim())) {
+      for (const word of numberWords(parseInt(gloss, 10))) out.add(word);
+    }
   }
   return [...out];
 }

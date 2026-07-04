@@ -148,4 +148,22 @@ describe("acceptedAnswers", () => {
     const accepted = acceptedAnswers({ dutch: "roepen", english: ["to call somebody"] }, "nl_en");
     expect(accepted).toContain("to call");
   });
+
+  it("NL->EN: number cards accept the spelled-out English word", () => {
+    const accepted = acceptedAnswers({ dutch: "drie", english: ["3"] }, "nl_en");
+    expect(accepted).toContain("3");
+    expect(accepted).toContain("three");
+    expect(checkAnswer("three", accepted).correct).toBe(true);
+    expect(checkAnswer("3", accepted).correct).toBe(true);
+  });
+
+  it("NL->EN: two-digit number cards spell out too", () => {
+    const accepted = acceptedAnswers({ dutch: "twintig", english: ["20"] }, "nl_en");
+    expect(checkAnswer("twenty", accepted).correct).toBe(true);
+  });
+
+  it("EN->NL: number cards are unaffected (Dutch answer only)", () => {
+    const accepted = acceptedAnswers({ dutch: "drie", english: ["3"] }, "en_nl");
+    expect(accepted).toEqual(["drie"]);
+  });
 });
