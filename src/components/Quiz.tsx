@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Card, Enrichment } from "../types";
 import type { ReviewTask, Session } from "../review/session";
 import { checkAnswer, acceptedAnswers } from "../review/answerCheck";
+import { dutchCloze } from "../review/cloze";
 import { getHint } from "../data/hints";
 import { speak, speechSupported } from "../util/speak";
 
@@ -68,14 +69,18 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
 
   // Disambiguation hint for colliding words. A hand-curated hint (src/data/hints.ts)
   // wins and is shown inline; otherwise fall back to a direction-safe example
-  // sentence behind a button (NL→EN may show the Dutch example, EN→NL only the
-  // English one so the Dutch answer isn't given away).
+  // sentence behind a button. NL→EN shows the Dutch example. EN→NL shows the
+  // Dutch example with the answer word blanked out (a cloze that gives context
+  // without revealing the answer); when it can't be blanked reliably it falls
+  // back to the English example so the Dutch answer isn't given away.
   const manualHint = getHint(card.id, task.dir);
   const enr = getEnrichment?.(card.id);
+  const cloze = task.dir === "en_nl" ? dutchCloze(card, enr) : null;
   const example =
     task.dir === "nl_en"
       ? card.exampleNl ?? enr?.examples?.find((e) => e.nl)?.nl
-      : card.exampleEn ?? enr?.examples?.find((e) => e.en)?.en;
+      : cloze ?? card.exampleEn ?? enr?.examples?.find((e) => e.en)?.en;
+  const exampleLang: "nl" | "en" = task.dir === "nl_en" || cloze ? "nl" : "en";
 
   // Requeue happens here, on Continue — never the moment the wrong answer is
   // revealed, so the feedback panel keeps showing the current card's answer.
@@ -206,7 +211,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
           {!wrong && manualHint && <div className="quiz-hint manual">{manualHint}</div>}
           {!wrong && !manualHint && example && (
             showHint ? (
-              <div className="quiz-hint" lang={task.dir === "nl_en" ? "nl" : "en"}>{example}</div>
+              <div className="quiz-hint" lang={exampleLang}>{example}</div>
             ) : (
               <button
                 type="button"
