@@ -98,10 +98,15 @@ describe("checkAnswer", () => {
 });
 
 describe("articleVariants", () => {
-  it("returns word with and without leading article", () => {
+  it("returns word with and without omittable article (de/een)", () => {
     expect(articleVariants("de hond")).toEqual(["de hond", "hond"]);
-    expect(articleVariants("het huis")).toEqual(["het huis", "huis"]);
     expect(articleVariants("een appel")).toEqual(["een appel", "appel"]);
+  });
+
+  it("keeps the full form only for the het-family (het/'t/’t)", () => {
+    expect(articleVariants("het huis")).toEqual(["het huis"]);
+    expect(articleVariants("’t kind")).toEqual(["’t kind"]);
+    expect(articleVariants("'t kind")).toEqual(["'t kind"]);
   });
 
   it("returns single variant when no article", () => {
@@ -136,6 +141,13 @@ describe("acceptedAnswers", () => {
   it("EN->NL: only the card's own Dutch (with article variants)", () => {
     const accepted = acceptedAnswers({ dutch: "de hond", english: ["dog"] }, "en_nl");
     expect(accepted).toEqual(["de hond", "hond"]);
+  });
+
+  it("EN->NL: het is required — full form accepted, bare noun rejected", () => {
+    const accepted = acceptedAnswers({ dutch: "het huis", english: ["house"] }, "en_nl");
+    expect(accepted).toEqual(["het huis"]);
+    expect(checkAnswer("het huis", accepted).correct).toBe(true);
+    expect(checkAnswer("huis", accepted).correct).toBe(false);
   });
 
   it("NL->EN: also accepts the bare answer for a parenthetical gloss", () => {

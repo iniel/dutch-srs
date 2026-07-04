@@ -69,13 +69,15 @@ export function checkAnswer(
   return { correct: false, imprecise: false };
 }
 
-const ARTICLES = ["de ", "het ", "een ", "’t ", "'t "];
+// "de"/"een" may be omitted; the het-family ("het", "’t", "'t") must be typed,
+// so no bare variant is produced for them — getting the gender right is the point.
+const OPTIONAL_ARTICLES = ["de ", "een "];
 
 export function articleVariants(dutch: string): string[] {
   const trimmed = dutch.trim();
   const variants = new Set<string>([trimmed]);
   const lower = trimmed.toLowerCase();
-  for (const article of ARTICLES) {
+  for (const article of OPTIONAL_ARTICLES) {
     if (lower.startsWith(article)) {
       variants.add(trimmed.slice(article.length).trim());
     }
