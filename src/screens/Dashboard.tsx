@@ -1,7 +1,8 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { ProgressData } from "../types";
 import { STAGE_COLORS, stageCategory, type StageCategory } from "../srs/stages";
 import { now } from "../util/now";
+import { HelpModal } from "../components/HelpModal";
 
 export interface PathSummary {
   id: string;
@@ -52,6 +53,7 @@ export function Dashboard({
   onSearch,
   onWords,
 }: DashboardProps) {
+  const [helpOpen, setHelpOpen] = useState(false);
   const { byCategory, nextAt } = useMemo(() => {
     const byCategory: Record<StageCategory, number> = {
       lesson: 0, apprentice: 0, guru: 0, master: 0, enlightened: 0, burned: 0,
@@ -70,7 +72,10 @@ export function Dashboard({
       <header className="topbar">
         <button className="icon-btn" onClick={onSearch} aria-label="search">🔍</button>
         <h1>Dutch</h1>
-        <button className="icon-btn" onClick={onSettings} aria-label="settings">⚙</button>
+        <div className="topbar-actions">
+          <button className="icon-btn" onClick={() => setHelpOpen(true)} aria-label="help">?</button>
+          <button className="icon-btn" onClick={onSettings} aria-label="settings">⚙</button>
+        </div>
       </header>
 
       <button
@@ -137,6 +142,8 @@ export function Dashboard({
           </button>
         </div>
       ))}
+
+      {helpOpen && <HelpModal onClose={() => setHelpOpen(false)} />}
     </div>
   );
 }
