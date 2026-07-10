@@ -110,6 +110,57 @@
   color: var(--text-muted);
 }
 
+/* General progress: mastery tabs */
+.progress-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.progress-tab {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-bottom: 3px solid transparent;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.progress-tab.active {
+  border-bottom-color: var(--tab-color);
+  color: var(--text);
+}
+.progress-tab-count {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--tab-color);
+}
+.progress-tab-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Per-path dashboard section: ring/browse button + its own Lessons button */
+.path-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.path-lessons {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+  padding: 12px 16px;
+}
+.path-lessons .action-count {
+  font-size: 1.6rem;
+}
+
 /* Dashboard action cards */
 .action-cards {
   display: grid;

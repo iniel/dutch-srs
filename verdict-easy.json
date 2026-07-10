@@ -1,0 +1,618 @@
+[
+  {
+    "nl": "zullen",
+    "source_en": "shall",
+    "our_en": "to will",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "shall/will are the same future modal auxiliary; bare vs infinitive wording."
+  },
+  {
+    "nl": "kunnen",
+    "source_en": "can/to be able to",
+    "our_en": "to be able / to can",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Identical modal of ability, just phrasing/infinitive variants."
+  },
+  {
+    "nl": "komen",
+    "source_en": "come",
+    "our_en": "Where are you from? | to come",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Second card is 'to come'; same verb, bare vs infinitive plus a phrase card."
+  },
+  {
+    "nl": "zo",
+    "source_en": "so",
+    "our_en": "like that",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Same manner/degree adverb; 'so' and 'like that' cover one core sense of zo."
+  },
+  {
+    "nl": "moeten",
+    "source_en": "should",
+    "our_en": "to have to / to must",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Modal of obligation; should/must/have-to same deontic sense."
+  },
+  {
+    "nl": "staan",
+    "source_en": "stand",
+    "our_en": "to stand",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive, identical verb."
+  },
+  {
+    "nl": "vinden",
+    "source_en": "find",
+    "our_en": "to find | to find / have an opinion",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "'to find' present; bare vs infinitive, both senses covered."
+  },
+  {
+    "nl": "houden",
+    "source_en": "to keep",
+    "our_en": "to hold in front of",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Core houden='keep/hold' absent; only the phrasal 'houden voor' card exists."
+  },
+  {
+    "nl": "twee",
+    "source_en": "two",
+    "our_en": "2",
+    "verdict": "TECHNICAL",
+    "subtype": "digit",
+    "note": "Digit vs spelled numeral, same value."
+  },
+  {
+    "nl": "alleen",
+    "source_en": "only",
+    "our_en": "alone",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "alleen means both 'alone' and restrictive 'only'; the 'only' sense is missing."
+  },
+  {
+    "nl": "brengen",
+    "source_en": "bring",
+    "our_en": "to bring",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "vallen",
+    "source_en": "fall",
+    "our_en": "to fall",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "drie",
+    "source_en": "three",
+    "our_en": "3",
+    "verdict": "TECHNICAL",
+    "subtype": "digit",
+    "note": "Digit vs spelled numeral."
+  },
+  {
+    "nl": "lachen",
+    "source_en": "laugh",
+    "our_en": "to laugh",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "moment",
+    "source_en": "moment",
+    "our_en": "A moment please. | at this moment",
+    "verdict": "TECHNICAL",
+    "subtype": "phrase-wrapper",
+    "note": "Same noun 'moment' embedded in example phrases."
+  },
+  {
+    "nl": "vier",
+    "source_en": "four",
+    "our_en": "4",
+    "verdict": "TECHNICAL",
+    "subtype": "digit",
+    "note": "Digit vs spelled numeral."
+  },
+  {
+    "nl": "dood",
+    "source_en": "death",
+    "our_en": "dead",
+    "verdict": "TECHNICAL",
+    "subtype": "pos-variant",
+    "note": "Same concept, noun 'death' vs adjective 'dead'; dood serves both."
+  },
+  {
+    "nl": "luisteren",
+    "source_en": "listen",
+    "our_en": "to listen",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "tien",
+    "source_en": "ten",
+    "our_en": "10",
+    "verdict": "TECHNICAL",
+    "subtype": "digit",
+    "note": "Digit vs spelled numeral."
+  },
+  {
+    "nl": "vijf",
+    "source_en": "five",
+    "our_en": "5",
+    "verdict": "TECHNICAL",
+    "subtype": "digit",
+    "note": "Digit vs spelled numeral."
+  },
+  {
+    "nl": "direct",
+    "source_en": "directly",
+    "our_en": "right away",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Same temporal adverb sense; directly='right away/immediately'."
+  },
+  {
+    "nl": "relatie",
+    "source_en": "relationship",
+    "our_en": "relation",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "relation/relationship same noun sense."
+  },
+  {
+    "nl": "menen",
+    "source_en": "mean",
+    "our_en": "to think / to have an opinion / assumption",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "menen='to be of the opinion/mean it'; 'think' captures the same sense."
+  },
+  {
+    "nl": "drinken",
+    "source_en": "drink",
+    "our_en": "to drink",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "functie",
+    "source_en": "function",
+    "our_en": "job",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "functie='function/position/job'; overlapping sense, article wrapper."
+  },
+  {
+    "nl": "warm",
+    "source_en": "warm",
+    "our_en": "hot",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Dutch warm spans warm/hot; same temperature concept."
+  },
+  {
+    "nl": "eind",
+    "source_en": "end",
+    "our_en": "at the end",
+    "verdict": "TECHNICAL",
+    "subtype": "phrase-wrapper",
+    "note": "Same noun 'end' inside the phrase 'aan het eind'."
+  },
+  {
+    "nl": "persoonlijk",
+    "source_en": "personally",
+    "our_en": "personal",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Same concept, adjective vs adverb form."
+  },
+  {
+    "nl": "normaal",
+    "source_en": "normal",
+    "our_en": "usually",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "normaal = normal (adj) / normally-usually (adv); same concept."
+  },
+  {
+    "nl": "zes",
+    "source_en": "six",
+    "our_en": "6",
+    "verdict": "TECHNICAL",
+    "subtype": "digit",
+    "note": "Digit vs spelled numeral."
+  },
+  {
+    "nl": "beter",
+    "source_en": "better",
+    "our_en": "not sick anymore / recovered",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Comparative 'better' (of goed) missing; only the 'recovered from illness' idiom taught."
+  },
+  {
+    "nl": "stappen",
+    "source_en": "to step",
+    "our_en": "to march",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "stappen='to stride/step'; march is a near-synonym of the same motion."
+  },
+  {
+    "nl": "stoppen",
+    "source_en": "stop",
+    "our_en": "to stop | to insert",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "First card 'to stop' matches; bare vs infinitive plus a phrasal card."
+  },
+  {
+    "nl": "film",
+    "source_en": "movie",
+    "our_en": "film",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "movie/film same noun."
+  },
+  {
+    "nl": "geluk",
+    "source_en": "luck",
+    "our_en": "to be lucky",
+    "verdict": "TECHNICAL",
+    "subtype": "phrase-wrapper",
+    "note": "Same 'luck' sense inside idiom 'geluk hebben'."
+  },
+  {
+    "nl": "basis",
+    "source_en": "base",
+    "our_en": "basis",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "base/basis same noun sense."
+  },
+  {
+    "nl": "vliegen",
+    "source_en": "fly",
+    "our_en": "to fly",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "politie",
+    "source_en": "law enforcement",
+    "our_en": "police",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "police / law enforcement denote the same institution."
+  },
+  {
+    "nl": "begin",
+    "source_en": "get started",
+    "our_en": "beginning",
+    "verdict": "TECHNICAL",
+    "subtype": "pos-variant",
+    "note": "Same start/begin concept; noun 'beginning' vs verbal 'get started'."
+  },
+  {
+    "nl": "ontbreken",
+    "source_en": "lack",
+    "our_en": "to be missing",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "ontbreken='to be lacking/missing/absent'; same sense."
+  },
+  {
+    "nl": "ziek",
+    "source_en": "sick",
+    "our_en": "ill",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "ill/sick fully synonymous."
+  },
+  {
+    "nl": "individueel",
+    "source_en": "individually",
+    "our_en": "individual",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Same concept, adjective vs adverb form."
+  },
+  {
+    "nl": "meester",
+    "source_en": "master",
+    "our_en": "male teacher",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "meester='master' sense missing; card only gives the primary-school 'male teacher' sense."
+  },
+  {
+    "nl": "vervullen",
+    "source_en": "fulfill",
+    "our_en": "to fulfill",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "plaatsen",
+    "source_en": "place",
+    "our_en": "to place",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "bespreken",
+    "source_en": "discuss",
+    "our_en": "to discuss",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare vs 'to' infinitive."
+  },
+  {
+    "nl": "absoluut",
+    "source_en": "absolutely",
+    "our_en": "absolute / complete / perfect",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Same concept, adjective vs adverb form."
+  },
+  {
+    "nl": "schaduw",
+    "source_en": "shadow",
+    "our_en": "shade",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "schaduw covers both shadow and shade; same noun."
+  },
+  {
+    "nl": "leiding",
+    "source_en": "leadership",
+    "our_en": "lead / control",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "de leiding='being in charge'; leadership/lead/control same sense."
+  },
+  {
+    "nl": "programma",
+    "source_en": "program",
+    "our_en": "programme",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "programme (BrE) vs program (AmE), same noun."
+  },
+  {
+    "nl": "officieel",
+    "source_en": "officially",
+    "our_en": "official",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Same concept, adjective vs adverb form."
+  },
+  {
+    "nl": "kilometer",
+    "source_en": "kilometers",
+    "our_en": "kilometer",
+    "verdict": "TECHNICAL",
+    "subtype": "plural",
+    "note": "Singular vs plural gloss of same unit."
+  },
+  {
+    "nl": "plezier",
+    "source_en": "pleasure",
+    "our_en": "lots of fun",
+    "verdict": "TECHNICAL",
+    "subtype": "phrase-wrapper",
+    "note": "plezier='pleasure/fun'; same sense inside 'veel plezier'."
+  },
+  {
+    "nl": "techniek",
+    "source_en": "technic",
+    "our_en": "technics",
+    "verdict": "TECHNICAL",
+    "subtype": "typo",
+    "note": "Both are malformed 'technique/technics'; same intended word."
+  },
+  {
+    "nl": "realiseren",
+    "source_en": "realize",
+    "our_en": "to realize / to achieve / to bring about",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "'to realize' present; bare vs infinitive, extra senses added."
+  },
+  {
+    "nl": "directeur",
+    "source_en": "director",
+    "our_en": "manager",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "directeur = director/manager, same leadership role."
+  },
+  {
+    "nl": "koel",
+    "source_en": "cool",
+    "our_en": "cold / chilly",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "koel='cool/chilly'; same low-temperature sense."
+  },
+  {
+    "nl": "klant",
+    "source_en": "client",
+    "our_en": "customer",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "customer/client interchangeable for klant."
+  },
+  {
+    "nl": "kust",
+    "source_en": "coast",
+    "our_en": "shoreline",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "coast/shoreline same geographic sense."
+  },
+  {
+    "nl": "danken",
+    "source_en": "to thank",
+    "our_en": "thank you | No thanks. | thanks",
+    "verdict": "TECHNICAL",
+    "subtype": "phrase-wrapper",
+    "note": "Thanking sense present across the fixed-expression cards."
+  },
+  {
+    "nl": "interesseren",
+    "source_en": "to be interested",
+    "our_en": "to interest",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Same verb; active 'to interest' vs reflexive 'to be interested' (zich interesseren)."
+  },
+  {
+    "nl": "honger",
+    "source_en": "hungry",
+    "our_en": "to be hungry",
+    "verdict": "TECHNICAL",
+    "subtype": "phrase-wrapper",
+    "note": "honger='hunger'; same sense inside idiom 'honger hebben'."
+  },
+  {
+    "nl": "relatief",
+    "source_en": "relatively",
+    "our_en": "relative",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Same concept, adjective vs adverb form."
+  },
+  {
+    "nl": "eindigen",
+    "source_en": "to end",
+    "our_en": "to finish",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "eindigen = to end/finish, same intransitive sense."
+  },
+  {
+    "nl": "klas",
+    "source_en": "class",
+    "our_en": "classroom",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "klas = class/classroom, same school sense."
+  },
+  {
+    "nl": "warmte",
+    "source_en": "warmth",
+    "our_en": "physical warmth / thermal energy / from moderate to heat",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Verbose gloss but same 'warmth' noun."
+  },
+  {
+    "nl": "patroon",
+    "source_en": "pattern",
+    "our_en": "patron saint",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homonym: patroon='pattern' (source) vs 'patron saint' (ours) are distinct senses."
+  },
+  {
+    "nl": "agent",
+    "source_en": "agent",
+    "our_en": "policeman",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Dutch agent primarily = police officer; 'policeman' is the same referent."
+  },
+  {
+    "nl": "klassiek",
+    "source_en": "classic",
+    "our_en": "classical",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "classic/classical same adjective sense."
+  },
+  {
+    "nl": "passeren",
+    "source_en": "pass",
+    "our_en": "to pass by",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Same verb; bare vs infinitive with particle, 'pass/pass by'."
+  },
+  {
+    "nl": "mama",
+    "source_en": "mom",
+    "our_en": "mama / mother",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "mom/mama/mother same familial term."
+  },
+  {
+    "nl": "dun",
+    "source_en": "thin",
+    "our_en": "skinny",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "thin/skinny same 'not thick' adjective sense."
+  },
+  {
+    "nl": "verspreiden",
+    "source_en": "to spread",
+    "our_en": "to spread around",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Same verb, 'spread' vs 'spread around' particle nuance."
+  },
+  {
+    "nl": "klas",
+    "source_en": "class",
+    "our_en": "classroom",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "klas = class/classroom, same school sense (duplicate entry)."
+  },
+  {
+    "nl": "economie",
+    "source_en": "economy",
+    "our_en": "economics",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "economie covers economy/economics; closely related sense."
+  },
+  {
+    "nl": "automatisch",
+    "source_en": "automatically",
+    "our_en": "automatic",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Same concept, adjective vs adverb form."
+  },
+  {
+    "nl": "dom",
+    "source_en": "dumb",
+    "our_en": "stupid",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "dumb/stupid fully synonymous."
+  }
+]

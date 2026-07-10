@@ -1,0 +1,1060 @@
+[
+  {
+    "nl": "zullen",
+    "source_en": "shall",
+    "our_cards": [
+      {
+        "dutch": "zullen",
+        "english": [
+          "to will"
+        ],
+        "level": "A2 · U4"
+      }
+    ]
+  },
+  {
+    "nl": "kunnen",
+    "source_en": "can/to be able to",
+    "our_cards": [
+      {
+        "dutch": "kunnen",
+        "english": [
+          "to be able",
+          "to can"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "komen",
+    "source_en": "come",
+    "our_cards": [
+      {
+        "dutch": "Waar kom je vandaan?",
+        "english": [
+          "Where are you from?"
+        ],
+        "level": "A1 · U1"
+      },
+      {
+        "dutch": "komen",
+        "english": [
+          "to come"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "zo",
+    "source_en": "so",
+    "our_cards": [
+      {
+        "dutch": "zo",
+        "english": [
+          "like that"
+        ],
+        "level": "A2 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "moeten",
+    "source_en": "should",
+    "our_cards": [
+      {
+        "dutch": "moeten",
+        "english": [
+          "to have to",
+          "to must"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "staan",
+    "source_en": "stand",
+    "our_cards": [
+      {
+        "dutch": "staan",
+        "english": [
+          "to stand"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "vinden",
+    "source_en": "find",
+    "our_cards": [
+      {
+        "dutch": "vinden",
+        "english": [
+          "to find"
+        ],
+        "level": "A1 · U3"
+      },
+      {
+        "dutch": "vinden",
+        "english": [
+          "to find",
+          "have an opinion"
+        ],
+        "level": "A1 · U4"
+      }
+    ]
+  },
+  {
+    "nl": "houden",
+    "source_en": "to keep",
+    "our_cards": [
+      {
+        "dutch": "houden voor",
+        "english": [
+          "to hold in front of"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "twee",
+    "source_en": "two",
+    "our_cards": [
+      {
+        "dutch": "twee",
+        "english": [
+          "2"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "alleen",
+    "source_en": "only",
+    "our_cards": [
+      {
+        "dutch": "alleen",
+        "english": [
+          "alone"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "brengen",
+    "source_en": "bring",
+    "our_cards": [
+      {
+        "dutch": "brengen",
+        "english": [
+          "to bring"
+        ],
+        "level": "A1 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "vallen",
+    "source_en": "fall",
+    "our_cards": [
+      {
+        "dutch": "vallen",
+        "english": [
+          "to fall"
+        ],
+        "level": "A2 · U4"
+      }
+    ]
+  },
+  {
+    "nl": "drie",
+    "source_en": "three",
+    "our_cards": [
+      {
+        "dutch": "drie",
+        "english": [
+          "3"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "lachen",
+    "source_en": "laugh",
+    "our_cards": [
+      {
+        "dutch": "lachen",
+        "english": [
+          "to laugh"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "moment",
+    "source_en": "moment",
+    "our_cards": [
+      {
+        "dutch": "Een moment alstublieft.",
+        "english": [
+          "A moment please."
+        ],
+        "level": "A1 · U6"
+      },
+      {
+        "dutch": "op dit moment",
+        "english": [
+          "at this moment"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "vier",
+    "source_en": "four",
+    "our_cards": [
+      {
+        "dutch": "vier",
+        "english": [
+          "4"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "dood",
+    "source_en": "death",
+    "our_cards": [
+      {
+        "dutch": "dood",
+        "english": [
+          "dead"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "luisteren",
+    "source_en": "listen",
+    "our_cards": [
+      {
+        "dutch": "luisteren",
+        "english": [
+          "to listen"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "tien",
+    "source_en": "ten",
+    "our_cards": [
+      {
+        "dutch": "tien",
+        "english": [
+          "10"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "vijf",
+    "source_en": "five",
+    "our_cards": [
+      {
+        "dutch": "vijf",
+        "english": [
+          "5"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "direct",
+    "source_en": "directly",
+    "our_cards": [
+      {
+        "dutch": "direct",
+        "english": [
+          "right away"
+        ],
+        "level": "A2 · U4"
+      }
+    ]
+  },
+  {
+    "nl": "relatie",
+    "source_en": "relationship",
+    "our_cards": [
+      {
+        "dutch": "relatie",
+        "english": [
+          "relation"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "menen",
+    "source_en": "mean",
+    "our_cards": [
+      {
+        "dutch": "menen",
+        "english": [
+          "to think",
+          "to have an opinion",
+          "assumption"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "drinken",
+    "source_en": "drink",
+    "our_cards": [
+      {
+        "dutch": "drinken",
+        "english": [
+          "to drink"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "functie",
+    "source_en": "function",
+    "our_cards": [
+      {
+        "dutch": "de functie",
+        "english": [
+          "job"
+        ],
+        "level": "A2 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "warm",
+    "source_en": "warm",
+    "our_cards": [
+      {
+        "dutch": "warm",
+        "english": [
+          "hot"
+        ],
+        "level": "A1 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "eind",
+    "source_en": "end",
+    "our_cards": [
+      {
+        "dutch": "aan het eind",
+        "english": [
+          "at the end"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "persoonlijk",
+    "source_en": "personally",
+    "our_cards": [
+      {
+        "dutch": "persoonlijk",
+        "english": [
+          "personal"
+        ],
+        "level": "A2 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "normaal",
+    "source_en": "normal",
+    "our_cards": [
+      {
+        "dutch": "normaal",
+        "english": [
+          "usually"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "zes",
+    "source_en": "six",
+    "our_cards": [
+      {
+        "dutch": "zes",
+        "english": [
+          "6"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "beter",
+    "source_en": "better",
+    "our_cards": [
+      {
+        "dutch": "beter",
+        "english": [
+          "not sick anymore",
+          "recovered"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "stappen",
+    "source_en": "to step",
+    "our_cards": [
+      {
+        "dutch": "stappen",
+        "english": [
+          "to march"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "stoppen",
+    "source_en": "stop",
+    "our_cards": [
+      {
+        "dutch": "stoppen",
+        "english": [
+          "to stop"
+        ],
+        "level": "A1 · U7"
+      },
+      {
+        "dutch": "stoppen in",
+        "english": [
+          "to insert"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "film",
+    "source_en": "movie",
+    "our_cards": [
+      {
+        "dutch": "de film",
+        "english": [
+          "film"
+        ],
+        "level": "A1 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "geluk",
+    "source_en": "luck",
+    "our_cards": [
+      {
+        "dutch": "geluk hebben",
+        "english": [
+          "to be lucky"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "basis",
+    "source_en": "base",
+    "our_cards": [
+      {
+        "dutch": "basis",
+        "english": [
+          "basis"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "vliegen",
+    "source_en": "fly",
+    "our_cards": [
+      {
+        "dutch": "vliegen",
+        "english": [
+          "to fly"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "politie",
+    "source_en": "law enforcement",
+    "our_cards": [
+      {
+        "dutch": "de politie",
+        "english": [
+          "police"
+        ],
+        "level": "A2 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "begin",
+    "source_en": "get started",
+    "our_cards": [
+      {
+        "dutch": "het begin",
+        "english": [
+          "beginning"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "ontbreken",
+    "source_en": "lack",
+    "our_cards": [
+      {
+        "dutch": "ontbreken",
+        "english": [
+          "to be missing"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "ziek",
+    "source_en": "sick",
+    "our_cards": [
+      {
+        "dutch": "ziek",
+        "english": [
+          "ill"
+        ],
+        "level": "A1 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "individueel",
+    "source_en": "individually",
+    "our_cards": [
+      {
+        "dutch": "individueel",
+        "english": [
+          "individual"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "meester",
+    "source_en": "master",
+    "our_cards": [
+      {
+        "dutch": "de meester",
+        "english": [
+          "male teacher"
+        ],
+        "level": "A2 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "vervullen",
+    "source_en": "fulfill",
+    "our_cards": [
+      {
+        "dutch": "vervullen",
+        "english": [
+          "to fulfill"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "plaatsen",
+    "source_en": "place",
+    "our_cards": [
+      {
+        "dutch": "plaatsen",
+        "english": [
+          "to place"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "bespreken",
+    "source_en": "discuss",
+    "our_cards": [
+      {
+        "dutch": "bespreken",
+        "english": [
+          "to discuss"
+        ],
+        "level": "A2 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "absoluut",
+    "source_en": "absolutely",
+    "our_cards": [
+      {
+        "dutch": "absoluut",
+        "english": [
+          "absolute",
+          "complete",
+          "perfect"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "schaduw",
+    "source_en": "shadow",
+    "our_cards": [
+      {
+        "dutch": "schaduw",
+        "english": [
+          "shade"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "leiding",
+    "source_en": "leadership",
+    "our_cards": [
+      {
+        "dutch": "leiding",
+        "english": [
+          "lead",
+          "control"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "programma",
+    "source_en": "program",
+    "our_cards": [
+      {
+        "dutch": "het programma",
+        "english": [
+          "programme"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "officieel",
+    "source_en": "officially",
+    "our_cards": [
+      {
+        "dutch": "officieel",
+        "english": [
+          "official"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "kilometer",
+    "source_en": "kilometers",
+    "our_cards": [
+      {
+        "dutch": "de kilometer",
+        "english": [
+          "kilometer"
+        ],
+        "level": "A1 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "plezier",
+    "source_en": "pleasure",
+    "our_cards": [
+      {
+        "dutch": "veel plezier",
+        "english": [
+          "lots of fun"
+        ],
+        "level": "A1 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "techniek",
+    "source_en": "technic",
+    "our_cards": [
+      {
+        "dutch": "de techniek",
+        "english": [
+          "technics"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "realiseren",
+    "source_en": "realize",
+    "our_cards": [
+      {
+        "dutch": "realiseren",
+        "english": [
+          "to realize",
+          "to achieve",
+          "to bring about"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "directeur",
+    "source_en": "director",
+    "our_cards": [
+      {
+        "dutch": "de directeur",
+        "english": [
+          "manager"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "koel",
+    "source_en": "cool",
+    "our_cards": [
+      {
+        "dutch": "koel",
+        "english": [
+          "cold",
+          "chilly"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "klant",
+    "source_en": "client",
+    "our_cards": [
+      {
+        "dutch": "de klant",
+        "english": [
+          "customer"
+        ],
+        "level": "A2 · U4"
+      }
+    ]
+  },
+  {
+    "nl": "kust",
+    "source_en": "coast",
+    "our_cards": [
+      {
+        "dutch": "kust",
+        "english": [
+          "shoreline"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "danken",
+    "source_en": "to thank",
+    "our_cards": [
+      {
+        "dutch": "dank je wel",
+        "english": [
+          "thank you"
+        ],
+        "level": "A1 · U2"
+      },
+      {
+        "dutch": "Nee",
+        "english": [
+          "No thanks."
+        ],
+        "level": "A1 · U2"
+      },
+      {
+        "dutch": "bedankt",
+        "english": [
+          "thanks"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "interesseren",
+    "source_en": "to be interested",
+    "our_cards": [
+      {
+        "dutch": "interesseren",
+        "english": [
+          "to interest"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "honger",
+    "source_en": "hungry",
+    "our_cards": [
+      {
+        "dutch": "honger hebben",
+        "english": [
+          "to be hungry"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "relatief",
+    "source_en": "relatively",
+    "our_cards": [
+      {
+        "dutch": "relatief",
+        "english": [
+          "relative"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "eindigen",
+    "source_en": "to end",
+    "our_cards": [
+      {
+        "dutch": "eindigen",
+        "english": [
+          "to finish"
+        ],
+        "level": "A1 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "klas",
+    "source_en": "class",
+    "our_cards": [
+      {
+        "dutch": "de klas",
+        "english": [
+          "classroom"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "warmte",
+    "source_en": "warmth",
+    "our_cards": [
+      {
+        "dutch": "de warmte",
+        "english": [
+          "physical warmth",
+          "thermal energy",
+          "from moderate to heat"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "patroon",
+    "source_en": "pattern",
+    "our_cards": [
+      {
+        "dutch": "patroon",
+        "english": [
+          "patron saint"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "agent",
+    "source_en": "agent",
+    "our_cards": [
+      {
+        "dutch": "de (politie)agent",
+        "english": [
+          "policeman"
+        ],
+        "level": "A2 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "klassiek",
+    "source_en": "classic",
+    "our_cards": [
+      {
+        "dutch": "klassiek",
+        "english": [
+          "classical"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "passeren",
+    "source_en": "pass",
+    "our_cards": [
+      {
+        "dutch": "passeren",
+        "english": [
+          "to pass by"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "mama",
+    "source_en": "mom",
+    "our_cards": [
+      {
+        "dutch": "mama",
+        "english": [
+          "mama",
+          "mother"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "dun",
+    "source_en": "thin",
+    "our_cards": [
+      {
+        "dutch": "dun",
+        "english": [
+          "skinny"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "verspreiden",
+    "source_en": "to spread",
+    "our_cards": [
+      {
+        "dutch": "verspreiden",
+        "english": [
+          "to spread around"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "klas",
+    "source_en": "class",
+    "our_cards": [
+      {
+        "dutch": "de klas",
+        "english": [
+          "classroom"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "economie",
+    "source_en": "economy",
+    "our_cards": [
+      {
+        "dutch": "economie",
+        "english": [
+          "economics"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "automatisch",
+    "source_en": "automatically",
+    "our_cards": [
+      {
+        "dutch": "automatisch",
+        "english": [
+          "automatic"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "dom",
+    "source_en": "dumb",
+    "our_cards": [
+      {
+        "dutch": "dom",
+        "english": [
+          "stupid"
+        ],
+        "level": "A1 · U4"
+      }
+    ]
+  }
+]

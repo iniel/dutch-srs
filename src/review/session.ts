@@ -1,4 +1,4 @@
-import type { Card, Direction, ItemKey, ReviewState } from "../types";
+import type { Direction, ItemKey, ReviewState } from "../types";
 import { itemKey, DIRECTIONS, directionEnabled } from "../types";
 
 /** Per-card list of directions the learner has switched off. */
@@ -158,11 +158,16 @@ export function singleWordLessonTasks(cardId: string, disabled?: DisabledDirecti
   }));
 }
 
+/**
+ * Build a lesson batch from an already path-filtered, unlock-filtered, ordered pool
+ * of candidate card ids. Pinned words lead the batch and bypass the pool (so a pin
+ * from a still-locked unit is still taught); all pins are kept even past `batchSize`.
+ * Callers own path membership + unlock gating (see `src/paths/engine.ts`).
+ */
 export function buildLessonQueue(
-  cards: Card[],
+  orderedCandidateIds: string[],
   states: Record<ItemKey, ReviewState>,
   batchSize: number,
-  unlocked?: Set<string>,
   seed?: number,
   pinned: string[] = [],
   disabled?: DisabledDirections,
@@ -171,25 +176,21 @@ export function buildLessonQueue(
     const state = states[id];
     return !state || state.stage === 0;
   };
-  const byId = new Map(cards.map((c) => [c.id, c]));
 
   const picked: string[] = [];
   const pickedSet = new Set<string>();
 
-  // Pinned words go first and bypass the level lock; all are kept even past batchSize.
   for (const id of pinned) {
-    if (pickedSet.has(id) || !byId.has(id) || !isNew(id)) continue;
+    if (pickedSet.has(id) || !isNew(id)) continue;
     picked.push(id);
     pickedSet.add(id);
   }
 
-  for (const card of cards) {
+  for (const id of orderedCandidateIds) {
     if (picked.length >= batchSize) break;
-    if (pickedSet.has(card.id)) continue;
-    if (unlocked && card.level && !unlocked.has(card.level)) continue;
-    if (!isNew(card.id)) continue;
-    picked.push(card.id);
-    pickedSet.add(card.id);
+    if (pickedSet.has(id) || !isNew(id)) continue;
+    picked.push(id);
+    pickedSet.add(id);
   }
 
   const tasks = picked.flatMap((id) => singleWordLessonTasks(id, disabled));

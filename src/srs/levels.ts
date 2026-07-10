@@ -2,7 +2,7 @@ import type { Card, ReviewState } from "../types";
 
 export const LEVEL_PASS_THRESHOLD = 0.9;
 
-const GURU_MIN_STAGE = 5;
+export const GURU_MIN_STAGE = 5;
 
 export type Cefr = "A1" | "A2" | "B1" | "B2";
 

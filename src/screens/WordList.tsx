@@ -3,14 +3,25 @@ import type { ProgressData } from "../types";
 import type { CardIndex } from "../data/cards";
 import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
-import { cefrBadge, levelProgress, wordsToLevelUp } from "../srs/levels";
+import { cefrBadge, LEVEL_PASS_THRESHOLD } from "../srs/levels";
+import { unitProgress } from "../paths/engine";
+import type { LearningPath } from "../paths/types";
+
+export interface WordSection {
+  id: string;
+  label: string;
+  cardIds: string[];
+}
 
 interface WordListProps {
   index: CardIndex;
   progress: ProgressData;
-  levels: string[];
-  selectedLevel: string;
-  onSelectLevel: (level: string) => void;
+  title: string;
+  sections: WordSection[];
+  selectedId: string;
+  onSelectSection: (id: string) => void;
+  /** Show the purple CEFR badge on rows. Off for paths where it is noise (e.g. Inburgering Online). */
+  showCefr?: boolean;
   onOpen: (cardId: string) => void;
   onBack: () => void;
 }
@@ -30,14 +41,15 @@ interface ListItem {
   stage: number;
 }
 
-function buildSections(index: CardIndex, progress: ProgressData, level: string) {
+function buildStageGroups(index: CardIndex, progress: ProgressData, cardIds: string[]) {
   const byStage = new Map<number, ListItem[]>();
-  for (const card of index.cards) {
-    if (card.level !== level) continue;
-    const stage = progress.states[card.id]?.stage ?? 0;
+  for (const id of cardIds) {
+    const card = index.byId.get(id);
+    if (!card) continue;
+    const stage = progress.states[id]?.stage ?? 0;
     const items = byStage.get(stage) ?? [];
     items.push({
-      cardId: card.id,
+      cardId: id,
       dutch: card.dutch,
       english: card.english.join(", "),
       cefr: cefrBadge(card),
@@ -56,44 +68,49 @@ const STAGE_ORDER_WITH_UNSTARTED = [...STAGE_ORDER, NOT_STARTED_STAGE];
 export function WordList({
   index,
   progress,
-  levels,
-  selectedLevel,
-  onSelectLevel,
+  title,
+  sections,
+  selectedId,
+  onSelectSection,
+  showCefr = true,
   onOpen,
   onBack,
 }: WordListProps) {
-  const sections = useMemo(
-    () => buildSections(index, progress, selectedLevel),
-    [index, progress, selectedLevel],
+  const selected = useMemo(
+    () => sections.find((s) => s.id === selectedId) ?? sections[0],
+    [sections, selectedId],
   );
 
-  const total = useMemo(
-    () => [...sections.values()].reduce((n, items) => n + items.length, 0),
-    [sections],
+  const groups = useMemo(
+    () => buildStageGroups(index, progress, selected?.cardIds ?? []),
+    [index, progress, selected],
   );
+
+  const total = selected?.cardIds.length ?? 0;
 
   const prog = useMemo(
-    () => levelProgress(index.cards, progress.states, selectedLevel),
-    [index, progress, selectedLevel],
+    () => unitProgress(selected?.cardIds ?? [], progress.states),
+    [selected, progress],
   );
-  const toLevelUp = wordsToLevelUp(prog);
+  // Per-section level-up hint: guru cost to pass this section's own gate.
+  const toLevelUp = Math.max(0, Math.ceil(prog.total * LEVEL_PASS_THRESHOLD) - prog.gurued);
 
   return (
     <div className="screen wordlist">
       <header className="topbar">
         <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>Progress</h1>
+        <h1>{title}</h1>
         <span className="topbar-spacer" />
       </header>
 
       <select
         className="wordlist-select"
-        value={selectedLevel}
-        onChange={(e) => onSelectLevel(e.target.value)}
-        aria-label="Select level"
+        value={selected?.id ?? ""}
+        onChange={(e) => onSelectSection(e.target.value)}
+        aria-label="Select section"
       >
-        {levels.map((level) => (
-          <option key={level} value={level}>{level}</option>
+        {sections.map((s) => (
+          <option key={s.id} value={s.id}>{s.label}</option>
         ))}
       </select>
 
@@ -102,10 +119,10 @@ export function WordList({
         {toLevelUp > 0 && ` · ${toLevelUp} word${toLevelUp === 1 ? "" : "s"} to level up`}
       </div>
 
-      {total === 0 && <div className="word-empty">No words in this level.</div>}
+      {total === 0 && <div className="word-empty">No words in this section.</div>}
 
       {STAGE_ORDER_WITH_UNSTARTED.map((stage) => {
-        const items = sections.get(stage);
+        const items = groups.get(stage);
         if (!items || items.length === 0) return null;
         const color = STAGE_COLORS[stageCategory(stage)];
         return (
@@ -124,7 +141,7 @@ export function WordList({
                   >
                     <span className="word-row-dutch">{item.dutch}</span>
                     <span className="word-row-en">{item.english}</span>
-                    {item.cefr && <span className="word-row-tag">{item.cefr}</span>}
+                    {showCefr && item.cefr && <span className="word-row-tag">{item.cefr}</span>}
                   </button>
                 </li>
               ))}
@@ -134,4 +151,9 @@ export function WordList({
       })}
     </div>
   );
+}
+
+/** Map a path's units to WordList sections. */
+export function pathSections(path: LearningPath): WordSection[] {
+  return path.units.map((u) => ({ id: u.id, label: u.label, cardIds: u.cardIds }));
 }

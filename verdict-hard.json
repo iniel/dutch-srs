@@ -1,0 +1,714 @@
+[
+  {
+    "nl": "eigenlijk",
+    "source_en": "actually",
+    "our_en": "actual",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Adverb 'eigenlijk' = actually; ours gives adjective form, same concept."
+  },
+  {
+    "nl": "alles",
+    "source_en": "everything",
+    "our_en": "all / everythingh",
+    "verdict": "TECHNICAL",
+    "subtype": "typo",
+    "note": "Our gloss 'everythingh' is a typo of everything; same meaning."
+  },
+  {
+    "nl": "anders",
+    "source_en": "different",
+    "our_en": "Anything else? | otherwise",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Primary adjectival sense 'different/differently' not taught; only 'otherwise/else'."
+  },
+  {
+    "nl": "zeker",
+    "source_en": "sure",
+    "our_en": "certainly",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'zeker' = sure/certain(ly); sure and certainly are the same sense."
+  },
+  {
+    "nl": "enkel",
+    "source_en": "only",
+    "our_en": "ankle",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homograph: 'enkel' = only/single (adv) vs ankle (noun); ours teaches the noun."
+  },
+  {
+    "nl": "duidelijk",
+    "source_en": "clearly",
+    "our_en": "clear",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "'duidelijk' adjective 'clear' vs adverb 'clearly'; same concept."
+  },
+  {
+    "nl": "vooral",
+    "source_en": "mostly",
+    "our_en": "especially",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'vooral' = especially/mainly; mostly and especially cover the same sense."
+  },
+  {
+    "nl": "nodig",
+    "source_en": "required",
+    "our_en": "necessary / needed",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "required, necessary and needed are synonyms of the same sense."
+  },
+  {
+    "nl": "binnen",
+    "source_en": "within, inside",
+    "our_en": "inside | within",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source senses (inside, within) present across our two cards."
+  },
+  {
+    "nl": "aantal",
+    "source_en": "number of",
+    "our_en": "number / amount",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'aantal' = number/amount; 'number of' is the same countable sense."
+  },
+  {
+    "nl": "allemaal",
+    "source_en": "all of them",
+    "our_en": "all",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'allemaal' = all/all of them; same collective sense."
+  },
+  {
+    "nl": "eigenlijk",
+    "source_en": "actually",
+    "our_en": "actual",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Adverb 'eigenlijk' = actually; ours gives adjective form, same concept."
+  },
+  {
+    "nl": "gewoon",
+    "source_en": "just",
+    "our_en": "normal",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Very common particle sense 'just/simply' missing; ours only has 'normal/ordinary'."
+  },
+  {
+    "nl": "daarna",
+    "source_en": "after that",
+    "our_en": "thereafter",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'daarna' = after that/thereafter; identical temporal sense."
+  },
+  {
+    "nl": "weinig",
+    "source_en": "little, few",
+    "our_en": "few / little",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source glosses (few, little) present in our card."
+  },
+  {
+    "nl": "iedereen",
+    "source_en": "everyone",
+    "our_en": "everybody",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "everyone and everybody are exact synonyms."
+  },
+  {
+    "nl": "bijzonder",
+    "source_en": "special",
+    "our_en": "extraordinary",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'bijzonder' = special/particular/extraordinary; same evaluative sense."
+  },
+  {
+    "nl": "vroeger",
+    "source_en": "back in the days",
+    "our_en": "in former times / in the past",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "All phrasings denote the same 'formerly/in the past' sense."
+  },
+  {
+    "nl": "eerder",
+    "source_en": "earlier",
+    "our_en": "previously",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'eerder' = earlier/previously; same temporal comparative sense."
+  },
+  {
+    "nl": "bepaald",
+    "source_en": "determined",
+    "our_en": "certain",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'bepaald' = certain/specific; 'determined' is the participle wording of same lexeme."
+  },
+  {
+    "nl": "langzaam",
+    "source_en": "slowly",
+    "our_en": "slow",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "'langzaam' adjective 'slow' vs adverb 'slowly'; same concept."
+  },
+  {
+    "nl": "richting",
+    "source_en": "towards",
+    "our_en": "direction",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Noun 'direction'; 'towards' is the directional use of the same word."
+  },
+  {
+    "nl": "verschillen",
+    "source_en": "differences",
+    "our_en": "to differ",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homograph: noun plural 'differences' vs verb infinitive 'to differ'; ours teaches the verb."
+  },
+  {
+    "nl": "maatschappij",
+    "source_en": "society",
+    "our_en": "company",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "'maatschappij' = society vs company/firm; two distinct senses, ours teaches company."
+  },
+  {
+    "nl": "volledig",
+    "source_en": "complete",
+    "our_en": "entire",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'volledig' = complete/entire/full; same totality sense."
+  },
+  {
+    "nl": "ongeveer",
+    "source_en": "approximately",
+    "our_en": "about",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'ongeveer' = about/approximately; same approximation sense."
+  },
+  {
+    "nl": "aarde",
+    "source_en": "soil",
+    "our_en": "earth",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'aarde' = earth/ground/soil; English 'earth' encompasses the soil sense."
+  },
+  {
+    "nl": "persoonlijk",
+    "source_en": "in person",
+    "our_en": "personal",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "'persoonlijk' adjective 'personal' vs adverbial 'in person'; same concept."
+  },
+  {
+    "nl": "gelijk",
+    "source_en": "equal",
+    "our_en": "to be right",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Core sense 'equal/same' missing; our card only teaches idiom 'gelijk hebben'."
+  },
+  {
+    "nl": "kop",
+    "source_en": "headline",
+    "our_en": "cup",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "'kop' = head/cup/headline; ours teaches 'cup', source the newspaper-headline sense."
+  },
+  {
+    "nl": "overigens",
+    "source_en": "moreover",
+    "our_en": "besides",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'overigens' = besides/moreover/incidentally; same discourse-connective sense."
+  },
+  {
+    "nl": "trouwens",
+    "source_en": "besides, by the way",
+    "our_en": "besides / by the way",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source glosses present verbatim in our card."
+  },
+  {
+    "nl": "opvatting",
+    "source_en": "view",
+    "our_en": "concept / idea",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'opvatting' = view/notion/conception; view, idea and concept share the sense."
+  },
+  {
+    "nl": "vervolgens",
+    "source_en": "thereafter",
+    "our_en": "subsequently",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'vervolgens' = subsequently/thereafter; same sequential sense."
+  },
+  {
+    "nl": "wetenschap",
+    "source_en": "science",
+    "our_en": "knowledge",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Primary modern sense 'science' missing; ours teaches archaic/secondary 'knowledge'."
+  },
+  {
+    "nl": "maatschappij",
+    "source_en": "society",
+    "our_en": "company",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "'maatschappij' = society vs company/firm; two distinct senses, ours teaches company."
+  },
+  {
+    "nl": "beneden",
+    "source_en": "down",
+    "our_en": "downstairs",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'beneden' = below/down/downstairs; same locative sense."
+  },
+  {
+    "nl": "verhouding",
+    "source_en": "ratio",
+    "our_en": "proportion",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'verhouding' = ratio/proportion; near-identical mathematical sense."
+  },
+  {
+    "nl": "prachtig",
+    "source_en": "magnificent",
+    "our_en": "beautiful",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'prachtig' = magnificent/gorgeous/beautiful; same laudatory sense."
+  },
+  {
+    "nl": "gezin",
+    "source_en": "family",
+    "our_en": "family household",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'gezin' = nuclear family/household; our gloss is just more precise."
+  },
+  {
+    "nl": "uiteindelijk",
+    "source_en": "in the end",
+    "our_en": "eventual",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "'uiteindelijk' adverb 'eventually/in the end' vs adjective 'eventual'; same concept."
+  },
+  {
+    "nl": "bellen",
+    "source_en": "dial",
+    "our_en": "to dial / to call by phone",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "'to dial' present; only difference is bare vs 'to' infinitive."
+  },
+  {
+    "nl": "bezoek",
+    "source_en": "visit",
+    "our_en": "visiting",
+    "verdict": "TECHNICAL",
+    "subtype": "article-wrapper",
+    "note": "Our card is phrase 'op bezoek' = visiting; same 'visit' sense."
+  },
+  {
+    "nl": "bevatten",
+    "source_en": "contain",
+    "our_en": "to contain",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare 'contain' vs 'to contain' infinitive; identical."
+  },
+  {
+    "nl": "herinnering",
+    "source_en": "reminder",
+    "our_en": "memory / something that one remembers",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "'reminder' sense (herinnering sturen) missing; ours only 'memory/recollection'."
+  },
+  {
+    "nl": "onderwerp",
+    "source_en": "topic, subject",
+    "our_en": "subject / issue",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'subject' present; topic/subject/issue share the same sense."
+  },
+  {
+    "nl": "blijkbaar",
+    "source_en": "apparently",
+    "our_en": "evident / apparent",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "'blijkbaar' adverb 'apparently' vs adjectives evident/apparent; same concept."
+  },
+  {
+    "nl": "opdracht",
+    "source_en": "assignment, exercise",
+    "our_en": "assignment",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'assignment' present; assignment/exercise/task share the sense."
+  },
+  {
+    "nl": "lekker",
+    "source_en": "tasty, nice",
+    "our_en": "delicious",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'lekker' = tasty/nice/delicious; same positive-sensory sense."
+  },
+  {
+    "nl": "bestuur",
+    "source_en": "board",
+    "our_en": "management",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'bestuur' = board/governing body/management; same administrative sense."
+  },
+  {
+    "nl": "stijgen",
+    "source_en": "rise",
+    "our_en": "to climb / to go up / to rise",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'to rise' present; only bare vs infinitive difference."
+  },
+  {
+    "nl": "tegenstelling",
+    "source_en": "contrary",
+    "our_en": "opposite",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'tegenstelling' = contrast/opposite/contrary; same antithesis sense."
+  },
+  {
+    "nl": "oordeel",
+    "source_en": "judgment",
+    "our_en": "opinion / judgement",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "'judgement' (BR) = 'judgment' (AM); same word, spelling only."
+  },
+  {
+    "nl": "spanning",
+    "source_en": "tension, stress",
+    "our_en": "tension / suspense",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'tension' present; tension/stress/suspense share the sense."
+  },
+  {
+    "nl": "arbeid",
+    "source_en": "labor",
+    "our_en": "labour / work",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "'labour' (BR) = 'labor' (AM); same word, spelling only."
+  },
+  {
+    "nl": "zekerheid",
+    "source_en": "security",
+    "our_en": "certainty",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'zekerheid' = certainty/assurance/security; same 'being sure/safe' sense."
+  },
+  {
+    "nl": "heerlijk",
+    "source_en": "delicious",
+    "our_en": "delightful",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'heerlijk' = delicious/lovely/delightful; same positive sense."
+  },
+  {
+    "nl": "voordeel",
+    "source_en": "benefit",
+    "our_en": "advantage",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'voordeel' = advantage/benefit; exact synonyms."
+  },
+  {
+    "nl": "opmerking",
+    "source_en": "comment",
+    "our_en": "remark / observation",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'opmerking' = comment/remark/observation; same utterance sense."
+  },
+  {
+    "nl": "tevreden",
+    "source_en": "satisfied; pleased",
+    "our_en": "satisfied / content",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'satisfied' present; satisfied/pleased/content share the sense."
+  },
+  {
+    "nl": "toevallig",
+    "source_en": "coincidentally",
+    "our_en": "accidentally",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'toevallig' = by chance; coincidentally and accidentally both render that sense."
+  },
+  {
+    "nl": "uitstekend",
+    "source_en": "excellent; outstanding",
+    "our_en": "outstanding / excellent",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source glosses present verbatim in our card."
+  },
+  {
+    "nl": "eigenschap",
+    "source_en": "charachteristic",
+    "our_en": "property / feature / quality",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Source is typo of 'characteristic'; property/quality/feature same sense."
+  },
+  {
+    "nl": "ongetwijfeld",
+    "source_en": "undoubtedly, surely",
+    "our_en": "undoubtedly / surely",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source glosses present verbatim in our card."
+  },
+  {
+    "nl": "redelijk",
+    "source_en": "reasonable, reasonably",
+    "our_en": "reasonable",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Source lists adjective+adverb; ours has adjective, same concept."
+  },
+  {
+    "nl": "voorwerp",
+    "source_en": "object",
+    "our_en": "physical object",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'voorwerp' = (physical) object; our gloss merely disambiguates."
+  },
+  {
+    "nl": "gunstig",
+    "source_en": "favorable",
+    "our_en": "favourable",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "'favourable' (BR) = 'favorable' (AM); same word, spelling only."
+  },
+  {
+    "nl": "regeling",
+    "source_en": "regulation",
+    "our_en": "arrangement",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'regeling' = arrangement/scheme/regulation; same 'set rules/arrangement' sense."
+  },
+  {
+    "nl": "doelstelling",
+    "source_en": "goal, objective",
+    "our_en": "objective / goal / aim",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source glosses present; goal/objective/aim synonymous."
+  },
+  {
+    "nl": "dichtbij",
+    "source_en": "nearby",
+    "our_en": "near",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'dichtbij' = near/nearby/close; same proximity sense."
+  },
+  {
+    "nl": "verstand",
+    "source_en": "wit, wiseness",
+    "our_en": "reason / mind / intellect",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'verstand' = mind/intellect/reason; wit/wiseness fall in same cognitive cluster."
+  },
+  {
+    "nl": "onderscheid",
+    "source_en": "difference, distinction",
+    "our_en": "difference",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'difference' present; distinction/difference share the sense."
+  },
+  {
+    "nl": "afscheid",
+    "source_en": "goodbye",
+    "our_en": "farewell",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'afscheid' = farewell/goodbye/parting; same leave-taking sense."
+  },
+  {
+    "nl": "vereniging",
+    "source_en": "association, club",
+    "our_en": "association",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'association' present; association/club share the sense."
+  },
+  {
+    "nl": "geweldig",
+    "source_en": "awesome, great",
+    "our_en": "great",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'great' present; awesome/great same enthusiastic sense."
+  },
+  {
+    "nl": "bodem",
+    "source_en": "bottom, ground",
+    "our_en": "bottom",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'bottom' present; bodem = bottom/ground, same base sense."
+  },
+  {
+    "nl": "overeenkomst",
+    "source_en": "agreement",
+    "our_en": "similarity",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "'overeenkomst' = agreement/contract vs similarity/resemblance; ours teaches similarity."
+  },
+  {
+    "nl": "voorzitter",
+    "source_en": "chairman",
+    "our_en": "chairperson / president",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "chairman/chairperson/president all denote the presiding officer."
+  },
+  {
+    "nl": "kenmerken",
+    "source_en": "characteristics",
+    "our_en": "to characterize",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homograph: noun plural 'characteristics' (kenmerk) vs verb 'to characterize'; ours teaches the verb."
+  },
+  {
+    "nl": "definitief",
+    "source_en": "final",
+    "our_en": "definitive / conclusive",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'definitief' = final/definitive/conclusive; same finality sense."
+  },
+  {
+    "nl": "overleg",
+    "source_en": "consultation",
+    "our_en": "a meeting at work",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'overleg' = consultation/deliberation; our gloss describes the same sense."
+  },
+  {
+    "nl": "verbazing",
+    "source_en": "surprise",
+    "our_en": "amazement",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'verbazing' = amazement/surprise/astonishment; same reaction sense."
+  },
+  {
+    "nl": "kern",
+    "source_en": "core",
+    "our_en": "nucleus / physical core",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'kern' = core/nucleus/essence; 'core' present with disambiguation."
+  },
+  {
+    "nl": "gevangenis",
+    "source_en": "jail, prison",
+    "our_en": "jail / prison",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both source glosses present verbatim in our card."
+  },
+  {
+    "nl": "gemak",
+    "source_en": "ease",
+    "our_en": "convenience",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'gemak' = ease/comfort/convenience; same sense."
+  },
+  {
+    "nl": "overig",
+    "source_en": "other, remaining",
+    "our_en": "remaining",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'remaining' present; other/remaining share the residual sense."
+  },
+  {
+    "nl": "gezellig",
+    "source_en": "cozy",
+    "our_en": "cosy",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "'cosy' (BR) = 'cozy' (AM); same word, spelling only."
+  },
+  {
+    "nl": "nuttig",
+    "source_en": "helpful; useful",
+    "our_en": "useful / handy",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'useful' present; helpful/useful/handy share the sense."
+  },
+  {
+    "nl": "jammer",
+    "source_en": "unfortunately",
+    "our_en": "pity / shame",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'jammer' = a pity/too bad; 'unfortunately' is loose wording of same regret sense."
+  }
+]

@@ -3,19 +3,25 @@ import type { ProgressData } from "../types";
 import { STAGE_COLORS, stageCategory, type StageCategory } from "../srs/stages";
 import { now } from "../util/now";
 
+export interface PathSummary {
+  id: string;
+  name: string;
+  ringPct: number;
+  currentUnitLabel: string;
+  wordsToUnlock: number;
+  lessonsAvailable: number;
+}
+
 interface DashboardProps {
   progress: ProgressData;
   reviewsDue: number;
-  lessonsAvailable: number;
-  levelName: string;
-  levelPct: number;
-  wordsToLevelUp: number;
+  paths: PathSummary[];
   onStartReviews: () => void;
-  onStartLessons: () => void;
+  onStartLessons: (pathId: string) => void;
+  onOpenPath: (pathId: string) => void;
   onSettings: () => void;
   onSearch: () => void;
   onWords: () => void;
-  onLevelWords: () => void;
 }
 
 const CATEGORIES: { key: StageCategory; label: string }[] = [
@@ -38,16 +44,13 @@ function fmtNext(ms: number): string {
 export function Dashboard({
   progress,
   reviewsDue,
-  lessonsAvailable,
-  levelName,
-  levelPct,
-  wordsToLevelUp,
+  paths,
   onStartReviews,
   onStartLessons,
+  onOpenPath,
   onSettings,
   onSearch,
   onWords,
-  onLevelWords,
 }: DashboardProps) {
   const { byCategory, nextAt } = useMemo(() => {
     const byCategory: Record<StageCategory, number> = {
@@ -70,36 +73,14 @@ export function Dashboard({
         <button className="icon-btn" onClick={onSettings} aria-label="settings">⚙</button>
       </header>
 
-      <button className="level-summary" onClick={onLevelWords} aria-label={`Level ${levelName} words`}>
-        <div
-          className="level-ring"
-          style={{ ["--pct" as string]: `${Math.round(levelPct * 100)}` }}
-          role="img"
-          aria-label={`${Math.round(levelPct * 100)}% of level ${levelName} at Guru`}
-        >
-          <span>{Math.round(levelPct * 100)}%</span>
-        </div>
-        <div className="level-meta">
-          <strong>Level {levelName}</strong>
-          <span>
-            {wordsToLevelUp === 0
-              ? "Ready to level up"
-              : `${wordsToLevelUp} word${wordsToLevelUp === 1 ? "" : "s"} to level up`}
-          </span>
-        </div>
-        <span className="level-summary-chevron">›</span>
+      <button
+        className="action-card reviews"
+        onClick={onStartReviews}
+        disabled={reviewsDue === 0}
+      >
+        <div className="action-count">{reviewsDue}</div>
+        <div className="action-name">Reviews</div>
       </button>
-
-      <div className="action-cards">
-        <button className="action-card lessons" onClick={onStartLessons} disabled={lessonsAvailable === 0}>
-          <div className="action-count">{lessonsAvailable}</div>
-          <div className="action-name">Lessons</div>
-        </button>
-        <button className="action-card reviews" onClick={onStartReviews} disabled={reviewsDue === 0}>
-          <div className="action-count">{reviewsDue}</div>
-          <div className="action-name">Reviews</div>
-        </button>
-      </div>
 
       <div className="dash-row">
         <span>Next review</span>
@@ -119,6 +100,43 @@ export function Dashboard({
           ))}
         </div>
       </button>
+
+      {paths.map((p) => (
+        <div className="path-section" key={p.id}>
+          <button
+            className="level-summary"
+            onClick={() => onOpenPath(p.id)}
+            aria-label={`${p.name} words`}
+          >
+            <div
+              className="level-ring"
+              style={{ ["--pct" as string]: `${Math.round(p.ringPct * 100)}` }}
+              role="img"
+              aria-label={`${Math.round(p.ringPct * 100)}% of ${p.name} at Guru`}
+            >
+              <span>{Math.round(p.ringPct * 100)}%</span>
+            </div>
+            <div className="level-meta">
+              <strong>{p.name}</strong>
+              <span>
+                {p.currentUnitLabel}
+                {p.wordsToUnlock > 0
+                  ? ` · ${p.wordsToUnlock} to unlock next`
+                  : " · all unlocked"}
+              </span>
+            </div>
+            <span className="level-summary-chevron">›</span>
+          </button>
+          <button
+            className="action-card lessons path-lessons"
+            onClick={() => onStartLessons(p.id)}
+            disabled={p.lessonsAvailable === 0}
+          >
+            <div className="action-count">{p.lessonsAvailable}</div>
+            <div className="action-name">Lessons</div>
+          </button>
+        </div>
+      ))}
     </div>
   );
 }

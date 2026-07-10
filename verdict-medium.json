@@ -1,0 +1,578 @@
+[
+  {
+    "nl": "van",
+    "source_en": "from / of",
+    "our_en": "from / of | from",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Both glosses cover van's from/of sense; identical meaning."
+  },
+  {
+    "nl": "met",
+    "source_en": "with",
+    "our_en": "along with",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'along with' is a wordier rendering of comitative 'with'."
+  },
+  {
+    "nl": "als",
+    "source_en": "if/when",
+    "our_en": "if",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Als spans conditional if and temporal when; 'if' is the core."
+  },
+  {
+    "nl": "om",
+    "source_en": "around",
+    "our_en": "at",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Ours teaches temporal 'at'; spatial 'around' (om de hoek) is missing."
+  },
+  {
+    "nl": "naar",
+    "source_en": "to",
+    "our_en": "towards",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "naar = to/towards; directional sense identical."
+  },
+  {
+    "nl": "mens",
+    "source_en": "human",
+    "our_en": "people",
+    "verdict": "TECHNICAL",
+    "subtype": "plural",
+    "note": "Card is plural 'de mensen = people'; singular mens = human."
+  },
+  {
+    "nl": "toch",
+    "source_en": "however",
+    "our_en": "nevertheless",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Concessive particle; however/nevertheless are equivalent."
+  },
+  {
+    "nl": "even",
+    "source_en": "for a bit, for a while",
+    "our_en": "just / just a moment",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'just a moment' equals 'for a bit'; same brief-duration sense."
+  },
+  {
+    "nl": "een paar",
+    "source_en": "a couple",
+    "our_en": "a few",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "a couple / a few both render small-quantity een paar."
+  },
+  {
+    "nl": "keer",
+    "source_en": "times",
+    "our_en": "time | again",
+    "verdict": "TECHNICAL",
+    "subtype": "plural",
+    "note": "keer = time (occurrence); source is plural of same sense."
+  },
+  {
+    "nl": "weg",
+    "source_en": "away",
+    "our_en": "missing | road / way | way / route",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Adverb weg = away/gone; 'missing' captures the same gone sense."
+  },
+  {
+    "nl": "zaak",
+    "source_en": "matter, business",
+    "our_en": "business",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'business' present; 'matter' is a near-synonym of same sense."
+  },
+  {
+    "nl": "juist",
+    "source_en": "right",
+    "our_en": "correct",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "juist = correct/right; identical meaning."
+  },
+  {
+    "nl": "waar",
+    "source_en": "true",
+    "our_en": "where",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homonyms: waar = true (adj) vs waar = where (interrogative)."
+  },
+  {
+    "nl": "mooi",
+    "source_en": "beautiful, pretty",
+    "our_en": "beautiful",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'beautiful' present; pretty is the same aesthetic sense."
+  },
+  {
+    "nl": "nou",
+    "source_en": "well",
+    "our_en": "come on",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Discourse particle nou; well/come on are register variants."
+  },
+  {
+    "nl": "pas",
+    "source_en": "only",
+    "our_en": "just",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Temporal pas = only just/just; same restrictive sense."
+  },
+  {
+    "nl": "recht",
+    "source_en": "straight",
+    "our_en": "orderly",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "recht = straight/upright; 'orderly' doesn't convey the spatial sense."
+  },
+  {
+    "nl": "ooit",
+    "source_en": "ever",
+    "our_en": "sometime / someday / at some point",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "ooit = ever/at some time; glosses are equivalent."
+  },
+  {
+    "nl": "blik",
+    "source_en": "look",
+    "our_en": "can",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homonyms: de blik = look/glance vs het blik = can/tin."
+  },
+  {
+    "nl": "kans",
+    "source_en": "opportunity",
+    "our_en": "chance",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "kans = chance/opportunity; same sense."
+  },
+  {
+    "nl": "beeld",
+    "source_en": "statue",
+    "our_en": "image",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Ours teaches 'image'; concrete 'statue/sculpture' sense is missing."
+  },
+  {
+    "nl": "macht",
+    "source_en": "power",
+    "our_en": "political power / control",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "macht = power/control; source is the same sense unqualified."
+  },
+  {
+    "nl": "lucht",
+    "source_en": "sky",
+    "our_en": "air",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Ours teaches 'air'; the distinct 'sky' referent is missing."
+  },
+  {
+    "nl": "doel",
+    "source_en": "target",
+    "our_en": "aim / purpose",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "doel = goal/aim/target; all one goal-cluster sense."
+  },
+  {
+    "nl": "menen",
+    "source_en": "mean",
+    "our_en": "to think / to have an opinion / assumption",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "menen = to mean/be of opinion; overlapping mental-stance verb."
+  },
+  {
+    "nl": "aarde",
+    "source_en": "soil",
+    "our_en": "earth",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "aarde = earth/soil; same substance, one sense."
+  },
+  {
+    "nl": "lief",
+    "source_en": "sweet",
+    "our_en": "love | dear",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "lief = sweet/dear/kind; affectionate-adjective sense matches."
+  },
+  {
+    "nl": "trap",
+    "source_en": "stairs",
+    "our_en": "stairway",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "trap = stairs/staircase; stairway is identical."
+  },
+  {
+    "nl": "blad",
+    "source_en": "sheet",
+    "our_en": "leaf",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "blad = leaf (plant) vs sheet (of paper); distinct referents."
+  },
+  {
+    "nl": "hoop",
+    "source_en": "pile",
+    "our_en": "hope / aspiration / wish",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Homonyms: de hoop = hope vs een hoop = pile/heap."
+  },
+  {
+    "nl": "grens",
+    "source_en": "border",
+    "our_en": "physical / territorial border / frontier",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "grens = border/frontier; same territorial sense."
+  },
+  {
+    "nl": "vlak",
+    "source_en": "flat",
+    "our_en": "straight / immediately / just",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Adjective vlak = flat/level not covered; ours gives adverbial 'just'."
+  },
+  {
+    "nl": "buurt",
+    "source_en": "neighborhood",
+    "our_en": "neighbourhood",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "American vs British spelling of the same word."
+  },
+  {
+    "nl": "reis",
+    "source_en": "trip, journey",
+    "our_en": "journey / trip",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "Identical glosses, order reversed."
+  },
+  {
+    "nl": "druk",
+    "source_en": "pressure",
+    "our_en": "busy",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "de druk = pressure (noun) vs druk = busy (adj); different sense."
+  },
+  {
+    "nl": "vlug / snel",
+    "source_en": "quickly",
+    "our_en": "quick | fast / quick",
+    "verdict": "TECHNICAL",
+    "subtype": "adj/adv",
+    "note": "Adjective quick/fast vs adverb quickly; same concept."
+  },
+  {
+    "nl": "leuk",
+    "source_en": "fun",
+    "our_en": "nice",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "leuk = nice/fun/enjoyable; same positive-evaluation sense."
+  },
+  {
+    "nl": "huisarts",
+    "source_en": "doctor",
+    "our_en": "general practitioner",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "huisarts = GP/family doctor; same referent, ours more precise."
+  },
+  {
+    "nl": "rust",
+    "source_en": "peace/calm",
+    "our_en": "rest / inactivity",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "rust = rest/calm/peace; overlapping same sense."
+  },
+  {
+    "nl": "haast",
+    "source_en": "rush",
+    "our_en": "to hurry",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "haast = haste/hurry/rush; card wraps it as verb phrase."
+  },
+  {
+    "nl": "eis",
+    "source_en": "demand",
+    "our_en": "requirement",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "eis = demand/requirement; same sense."
+  },
+  {
+    "nl": "rij",
+    "source_en": "queue",
+    "our_en": "to stand in line",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "rij = row/queue/line; card wraps it in a collocation."
+  },
+  {
+    "nl": "last",
+    "source_en": "burden",
+    "our_en": "I suffer from ... | to suffer from",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "last = burden; cards teach the 'last hebben van' collocation."
+  },
+  {
+    "nl": "slot",
+    "source_en": "key lock",
+    "our_en": "locked | finally",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'op slot = locked' conveys the lock sense; same lexeme."
+  },
+  {
+    "nl": "buik",
+    "source_en": "stomach",
+    "our_en": "belly",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "buik = belly/stomach/abdomen; same body part."
+  },
+  {
+    "nl": "flink",
+    "source_en": "hefty",
+    "our_en": "large / considerable",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "flink = considerable/substantial/hefty; same sense."
+  },
+  {
+    "nl": "beurt",
+    "source_en": "turn",
+    "our_en": "to have your turn",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "beurt = turn; card wraps it as 'aan de beurt zijn'."
+  },
+  {
+    "nl": "slag",
+    "source_en": "battle",
+    "our_en": "blow / knock / strike",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Ours teaches blow/strike; military 'battle' (de slag) sense missing."
+  },
+  {
+    "nl": "sfeer",
+    "source_en": "ambiance",
+    "our_en": "sphere / round object",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "Common sense atmosphere/ambiance missing; ours teaches rare geometric sphere."
+  },
+  {
+    "nl": "pak",
+    "source_en": "business suit",
+    "our_en": "pack | suit",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "'suit' card present; business suit is the same sense."
+  },
+  {
+    "nl": "geloof",
+    "source_en": "faith, belief",
+    "our_en": "belief / conviction",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "geloof = belief/faith/conviction; same sense."
+  },
+  {
+    "nl": "zaal",
+    "source_en": "hall",
+    "our_en": "(big) room",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "zaal = hall/large room; same referent."
+  },
+  {
+    "nl": "greep",
+    "source_en": "grip",
+    "our_en": "grasp / clutches",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "greep = grip/grasp/hold; same sense."
+  },
+  {
+    "nl": "kust",
+    "source_en": "coast",
+    "our_en": "shoreline",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "kust = coast/shore; same referent."
+  },
+  {
+    "nl": "vak",
+    "source_en": "field, subject",
+    "our_en": "school subject",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "vak = subject/field; ours specifies school subject, same sense."
+  },
+  {
+    "nl": "trots",
+    "source_en": "pride",
+    "our_en": "proud",
+    "verdict": "TECHNICAL",
+    "subtype": "noun/adj",
+    "note": "Noun pride vs adjective proud; same concept."
+  },
+  {
+    "nl": "kast",
+    "source_en": "closet",
+    "our_en": "cupboard / cabinet",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "kast = cupboard/closet/cabinet/wardrobe; same furniture sense."
+  },
+  {
+    "nl": "klap",
+    "source_en": "blow",
+    "our_en": "bang",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "klap = slap/blow/bang; same impact sense."
+  },
+  {
+    "nl": "stroom",
+    "source_en": "flow",
+    "our_en": "electric current",
+    "verdict": "MEANINGFUL",
+    "subtype": "missing-sense",
+    "note": "Ours restricts to electricity; water/stream 'flow' sense missing."
+  },
+  {
+    "nl": "knap",
+    "source_en": "good looking",
+    "our_en": "clever",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "knap = good-looking AND clever; the good-looking sense is missing."
+  },
+  {
+    "nl": "een poos",
+    "source_en": "a while",
+    "our_en": "undefined period of time / indefinite period",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "poos = a while/indefinite period; same sense, wordier gloss."
+  },
+  {
+    "nl": "strekken",
+    "source_en": "stretch",
+    "our_en": "to stretch / to extend / to reach",
+    "verdict": "TECHNICAL",
+    "subtype": "infinitive",
+    "note": "Bare 'stretch' vs 'to stretch'; same verb sense."
+  },
+  {
+    "nl": "stuur",
+    "source_en": "steering wheel",
+    "our_en": "steering device / handlebars on a bicycle",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "stuur = steering wheel/handlebars; same steering-device sense."
+  },
+  {
+    "nl": "kern",
+    "source_en": "core",
+    "our_en": "nucleus / physical core",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "kern = core/nucleus; same central sense."
+  },
+  {
+    "nl": "dun",
+    "source_en": "thin",
+    "our_en": "skinny",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "dun = thin; skinny is a near-synonym of same sense."
+  },
+  {
+    "nl": "troep",
+    "source_en": "mess",
+    "our_en": "group of people / animals",
+    "verdict": "MEANINGFUL",
+    "subtype": "different-sense",
+    "note": "troep = mess/junk vs troop/pack; the 'mess' sense is missing."
+  },
+  {
+    "nl": "tocht",
+    "source_en": "tour",
+    "our_en": "journey / expedition / march",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "tocht = journey/trip/tour; same excursion sense."
+  },
+  {
+    "nl": "maat",
+    "source_en": "measure",
+    "our_en": "size",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "maat = size/measure; same measurement sense."
+  },
+  {
+    "nl": "poot",
+    "source_en": "leg",
+    "our_en": "limb of an animal",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "poot = animal leg/paw; ours describes same referent."
+  },
+  {
+    "nl": "vent",
+    "source_en": "guy",
+    "our_en": "chap / fellow",
+    "verdict": "TECHNICAL",
+    "subtype": "synonym-same-sense",
+    "note": "vent = guy/chap/fellow; colloquial same sense."
+  },
+  {
+    "nl": "eer",
+    "source_en": "honor",
+    "our_en": "honour",
+    "verdict": "TECHNICAL",
+    "subtype": "br/am-spelling",
+    "note": "American vs British spelling of the same word."
+  }
+]

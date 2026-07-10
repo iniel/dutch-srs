@@ -8,7 +8,7 @@ import {
   LEECH_INCORRECT_THRESHOLD,
   type ReviewTask,
 } from "./session";
-import type { Card, ReviewState } from "../types";
+import type { ReviewState } from "../types";
 
 function state(partial: Partial<ReviewState>): ReviewState {
   return {
@@ -19,10 +19,6 @@ function state(partial: Partial<ReviewState>): ReviewState {
     burned: false,
     ...partial,
   };
-}
-
-function card(id: string, group = "g1", level?: string): Card {
-  return { id, group, level, dutch: id, english: [id], type: "word" };
 }
 
 // Both directions of each word, in queue insertion order (en_nl before nl_en).
@@ -69,8 +65,7 @@ describe("buildReviewQueue", () => {
 
 describe("buildLessonQueue", () => {
   it("emits both directions for new words up to batchSize words", () => {
-    const cards = [card("a"), card("b"), card("c")];
-    const queue = buildLessonQueue(cards, {}, 2);
+    const queue = buildLessonQueue(["a", "b", "c"], {}, 2);
     expect(queue).toHaveLength(4);
     expect(queue.map((t) => t.key)).toEqual([
       "a:en_nl",
@@ -81,8 +76,7 @@ describe("buildLessonQueue", () => {
   });
 
   it("interleaves words with a seed, keeping en_nl before nl_en per word", () => {
-    const cards = [card("a"), card("b"), card("c"), card("d")];
-    const order = buildLessonQueue(cards, {}, 5, undefined, 42).map((t) => t.key);
+    const order = buildLessonQueue(["a", "b", "c", "d"], {}, 5, 42).map((t) => t.key);
     expect([...order].sort()).toEqual(
       [
         "a:en_nl",
@@ -101,8 +95,7 @@ describe("buildLessonQueue", () => {
   });
 
   it("does not glue a word's two directions together", () => {
-    const cards = [card("a"), card("b"), card("c"), card("d")];
-    const order = buildLessonQueue(cards, {}, 5, undefined, 42).map((t) => t.key);
+    const order = buildLessonQueue(["a", "b", "c", "d"], {}, 5, 42).map((t) => t.key);
     const interleaved = order.some(
       (key, i) => i > 0 && key.split(":")[0] !== order[i - 1].split(":")[0],
     );
@@ -114,62 +107,52 @@ describe("buildLessonQueue", () => {
   });
 
   it("skips words already started (stage>0)", () => {
-    const cards = [card("a"), card("b")];
     const states: Record<string, ReviewState> = { a: state({ stage: 2 }) };
-    const queue = buildLessonQueue(cards, states, 5);
+    const queue = buildLessonQueue(["a", "b"], states, 5);
     expect(queue.map((t) => t.cardId)).toEqual(["b", "b"]);
   });
 
   it("includes a word still at stage 0", () => {
-    const cards = [card("a")];
     const states: Record<string, ReviewState> = { a: state({ stage: 0 }) };
-    const queue = buildLessonQueue(cards, states, 5);
+    const queue = buildLessonQueue(["a"], states, 5);
     expect(queue).toHaveLength(2);
   });
 
-  it("preserves group order from the cards array", () => {
-    const cards = [card("z"), card("a")];
-    const queue = buildLessonQueue(cards, {}, 5);
+  it("preserves the candidate id order", () => {
+    const queue = buildLessonQueue(["z", "a"], {}, 5);
     expect(queue.map((t) => t.cardId)).toEqual(["z", "z", "a", "a"]);
   });
 });
 
 describe("buildLessonQueue pinned", () => {
   it("emits pinned new words first, before normal selection", () => {
-    const cards = [card("a"), card("b"), card("c")];
-    const queue = buildLessonQueue(cards, {}, 5, undefined, undefined, ["c"]);
+    const queue = buildLessonQueue(["a", "b", "c"], {}, 5, undefined, ["c"]);
     expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "a", "a", "b", "b"]);
   });
 
-  it("includes a pinned word from a locked level, bypassing the level lock", () => {
-    const cards = [card("a", "g1", "L1"), card("b", "g1", "L9")];
-    const unlocked = new Set(["L1"]);
-    const queue = buildLessonQueue(cards, {}, 5, unlocked, undefined, ["b"]);
+  it("includes a pinned word absent from the candidate pool (bypasses the gate)", () => {
+    const queue = buildLessonQueue(["a"], {}, 5, undefined, ["b"]);
     expect(queue.map((t) => t.cardId)).toEqual(["b", "b", "a", "a"]);
   });
 
   it("counts pinned words toward batchSize", () => {
-    const cards = [card("a"), card("b"), card("c"), card("d")];
-    const queue = buildLessonQueue(cards, {}, 2, undefined, undefined, ["c"]);
+    const queue = buildLessonQueue(["a", "b", "c", "d"], {}, 2, undefined, ["c"]);
     expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "a", "a"]);
   });
 
   it("includes all pinned words even past batchSize, with no normal fill", () => {
-    const cards = [card("a"), card("b"), card("c"), card("d")];
-    const queue = buildLessonQueue(cards, {}, 2, undefined, undefined, ["b", "c", "d"]);
+    const queue = buildLessonQueue(["a", "b", "c", "d"], {}, 2, undefined, ["b", "c", "d"]);
     expect(queue.map((t) => t.cardId)).toEqual(["b", "b", "c", "c", "d", "d"]);
   });
 
   it("ignores a pinned word already started (stage>0)", () => {
-    const cards = [card("a"), card("b")];
     const states: Record<string, ReviewState> = { b: state({ stage: 3 }) };
-    const queue = buildLessonQueue(cards, states, 5, undefined, undefined, ["b"]);
+    const queue = buildLessonQueue(["a", "b"], states, 5, undefined, ["b"]);
     expect(queue.map((t) => t.cardId)).toEqual(["a", "a"]);
   });
 
   it("does not duplicate a pinned word also present in normal selection", () => {
-    const cards = [card("a"), card("b")];
-    const queue = buildLessonQueue(cards, {}, 5, undefined, undefined, ["a"]);
+    const queue = buildLessonQueue(["a", "b"], {}, 5, undefined, ["a"]);
     expect(queue.map((t) => t.cardId)).toEqual(["a", "a", "b", "b"]);
   });
 });
@@ -340,30 +323,6 @@ describe("buildLeechQueue", () => {
   });
 });
 
-describe("buildLessonQueue gating", () => {
-  function card(id: string, level?: string): Card {
-    return { id, group: "g", level, dutch: id, english: [id], type: "word" };
-  }
-
-  it("excludes words whose level is not unlocked", () => {
-    const cards = [card("a", "A1 · U1"), card("b", "A1 · U2")];
-    const tasks = buildLessonQueue(cards, {}, 10, new Set(["A1 · U1"]));
-    expect(tasks.map((t) => t.cardId)).toEqual(["a", "a"]);
-  });
-
-  it("includes a word with no level even when gated", () => {
-    const cards = [card("a")];
-    const tasks = buildLessonQueue(cards, {}, 10, new Set(["A1 · U1"]));
-    expect(tasks.map((t) => t.cardId)).toEqual(["a", "a"]);
-  });
-
-  it("ignores the gate when unlocked is omitted", () => {
-    const cards = [card("a", "A1 · U2")];
-    const tasks = buildLessonQueue(cards, {}, 10);
-    expect(tasks.length).toBe(2);
-  });
-});
-
 describe("disabled directions filtering", () => {
   it("buildReviewQueue omits a disabled direction, keeps the other", () => {
     const states: Record<string, ReviewState> = { a: state({ availableAt: 0 }) };
@@ -390,8 +349,7 @@ describe("disabled directions filtering", () => {
   });
 
   it("buildLessonQueue omits a disabled direction", () => {
-    const cards = [card("a")];
-    const queue = buildLessonQueue(cards, {}, 5, undefined, undefined, [], { a: ["nl_en"] });
+    const queue = buildLessonQueue(["a"], {}, 5, undefined, [], { a: ["nl_en"] });
     expect(queue.map((t) => t.key)).toEqual(["a:en_nl"]);
   });
 

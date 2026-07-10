@@ -1,0 +1,160 @@
+SYNONYM-SAME-SENSE × ENRICHMENT CHECK   (144 entries)
+Question: is the LIST's gloss present in our card's enrichment (senses/glossSummary)?
+FOUND 96 · ABSENT 46 · NO_ENRICHMENT 2
+
+
+========================================================================
+ABSENT (46)
+========================================================================
+  ✗ [easy] direct ⇒ directly  ::  NOT in enrichment  (ours: right away) — enr glosses: immediately
+  ✗ [easy] politie ⇒ law enforcement  ::  NOT in enrichment  (ours: police) — enr glosses: police / policy, governance
+  ✗ [easy] ontbreken ⇒ lack  ::  NOT in enrichment  (ours: to be missing) — enr glosses: to be missing
+  ✗ [easy] interesseren ⇒ to be interested  ::  NOT in enrichment  (ours: to interest) — enr glosses: to interest (to attract attention or concern) / to show interest
+  ✗ [easy] klassiek ⇒ classic  ::  NOT in enrichment  (ours: classical) — enr glosses: classical
+  ✗ [easy] mama ⇒ mom  ::  NOT in enrichment  (ours: mama/mother) — enr glosses: mama, mother
+  ✗ [medium] toch ⇒ however  ::  NOT in enrichment  (ours: nevertheless) — enr glosses: still, nevertheless, anyway / after all, despite what was expected / yes, surely; implies a positive contradiction, used to contradict a negative. / In positive statements, a modal particle indicating certainty or emphasis, implying that the speaker considers his statement to be obvious.
+  ✗ [medium] weg ⇒ away  ::  NOT in enrichment  (ours: missing) — enr glosses: way, road / manner, way (figuratively)
+  ✗ [medium] nou ⇒ well  ::  NOT in enrichment  (ours: come on) — enr glosses: come on; modal particle indicating a certain degree of urgency or impatience on behalf of the speaker. / modal particle expressing a certain contrast or disjuncture / alternative form of nu: now, at the present time
+  ✗ [medium] doel ⇒ target  ::  NOT in enrichment  (ours: aim/purpose) — enr glosses: aim, purpose / destination / goal
+  ✗ [medium] leuk ⇒ fun  ::  NOT in enrichment  (ours: nice) — enr glosses: nice, pleasant, enjoyable / attractive / calm, level-headed / lukewarm
+  ✗ [medium] huisarts ⇒ doctor  ::  NOT in enrichment  (ours: general practitioner) — enr glosses: general practitioner, primary care physician
+  ✗ [medium] rij ⇒ queue  ::  NOT in enrichment  (ours: to stand in line) — enr glosses: 
+  ✗ [medium] last ⇒ burden  ::  NOT in enrichment  (ours: I suffer from ...) — enr glosses: 
+  ✗ [medium] slot ⇒ key lock  ::  NOT in enrichment  (ours: locked) — enr glosses: locked, secured by a lock
+  ✗ [medium] buik ⇒ stomach  ::  NOT in enrichment  (ours: belly) — enr glosses: belly / paunch (referring euphemistically to a protrusive belly) / the lowest inner part of a ship's hull, where water accumulates
+  ✗ [medium] flink ⇒ hefty  ::  NOT in enrichment  (ours: large/considerable) — enr glosses: large, considerable / stalwart, brave, sturdy
+  ✗ [medium] pak ⇒ business suit  ::  NOT in enrichment  (ours: pack) — enr glosses: package / suit (set of clothes)
+  ✗ [medium] greep ⇒ grip  ::  NOT in enrichment  (ours: grasp/clutches) — enr glosses: grasp, clutches / fascination, obsession (in the phrase in de greep van) / guess / some samples that are reasonably representative for a larger collection
+  ✗ [medium] een poos ⇒ a while  ::  NOT in enrichment  (ours: undefined period of time/indefinite period) — enr glosses: undefined period of time, an indefinite period / eternity / pause, interruption
+  ✗ [medium] tocht ⇒ tour  ::  NOT in enrichment  (ours: journey/expedition/march) — enr glosses: journey, expedition, march / draught, air current / a small waterway that connects all the other waterways in a polder to a pump, windmill or sluice
+  ✗ [medium] vent ⇒ guy  ::  NOT in enrichment  (ours: chap/fellow) — enr glosses: chap, fellow
+  ✗ [hard] zeker ⇒ sure  ::  NOT in enrichment  (ours: certainly) — enr glosses: certainly, surely / particularly, especially / at least
+  ✗ [hard] vooral ⇒ mostly  ::  NOT in enrichment  (ours: especially) — enr glosses: especially, above all / most of the time
+  ✗ [hard] nodig ⇒ required  ::  NOT in enrichment  (ours: necessary/needed) — enr glosses: necessary, needed / inevitable
+  ✗ [hard] aantal ⇒ number of  ::  NOT in enrichment  (ours: number/amount) — enr glosses: countable amount / a number, a plurality / a few
+  ✗ [hard] allemaal ⇒ all of them  ::  NOT in enrichment  (ours: all) — enr glosses: all, everyone
+  ✗ [hard] daarna ⇒ after that  ::  NOT in enrichment  (ours: thereafter) — enr glosses: 
+  ✗ [hard] vroeger ⇒ back in the days  ::  NOT in enrichment  (ours: in former times/in the past) — enr glosses: formerly, previously / in the past / earlier
+  ✗ [hard] bepaald ⇒ determined  ::  NOT in enrichment  (ours: certain) — enr glosses: certain / specific / definite
+  ✗ [hard] richting ⇒ towards  ::  NOT in enrichment  (ours: direction) — enr glosses: direction / movement, tendency
+  ✗ [hard] overigens ⇒ moreover  ::  NOT in enrichment  (ours: besides) — enr glosses: besides
+  ✗ [hard] vervolgens ⇒ thereafter  ::  NOT in enrichment  (ours: subsequently) — enr glosses: subsequently
+  ✗ [hard] beneden ⇒ down  ::  NOT in enrichment  (ours: downstairs) — enr glosses: downstairs / below
+  ✗ [hard] prachtig ⇒ magnificent  ::  NOT in enrichment  (ours: beautiful) — enr glosses: splendid, marvelous
+  ✗ [hard] tegenstelling ⇒ contrary  ::  NOT in enrichment  (ours: opposite) — enr glosses: opposition, opposite / contrast
+  ✗ [hard] zekerheid ⇒ security  ::  NOT in enrichment  (ours: certainty) — enr glosses: certainty / collateral
+  ✗ [hard] voordeel ⇒ benefit  ::  NOT in enrichment  (ours: advantage) — enr glosses: advantage / front part
+  ✗ [hard] opmerking ⇒ comment  ::  NOT in enrichment  (ours: remark/observation) — enr glosses: remark, observation
+  ✗ [hard] toevallig ⇒ coincidentally  ::  NOT in enrichment  (ours: accidentally) — enr glosses: by chance, accidental, coincidental, fortuitous
+  ✗ [hard] eigenschap ⇒ charachteristic  ::  NOT in enrichment  (ours: property/feature/quality) — enr glosses: property, feature, quality
+  ✗ [hard] regeling ⇒ regulation  ::  NOT in enrichment  (ours: arrangement) — enr glosses: arrangement, (as in practical agreement)
+  ✗ [hard] afscheid ⇒ goodbye  ::  NOT in enrichment  (ours: farewell) — enr glosses: farewell
+  ✗ [hard] voorzitter ⇒ chairman  ::  NOT in enrichment  (ours: chairperson/president) — enr glosses: chairperson, president
+  ✗ [hard] verbazing ⇒ surprise  ::  NOT in enrichment  (ours: amazement) — enr glosses: amazement
+  ✗ [hard] jammer ⇒ unfortunately  ::  NOT in enrichment  (ours: pity/shame) — enr glosses: too bad, a pity / unfortunate, sad
+
+========================================================================
+NO_ENRICHMENT (2)
+========================================================================
+  – [medium] haast ⇒ rush  ::  card c1436 has no enrichment entry
+  – [medium] beurt ⇒ turn  ::  card c1567 has no enrichment entry
+
+========================================================================
+FOUND (96)
+========================================================================
+  ✓ [easy] zullen ⇒ shall  ::  enrichment has "shall"  (ours: to will [A2 · U4])
+  ✓ [easy] kunnen ⇒ can/to be able to  ::  enrichment has "can"  (ours: to be able/to can [A1 · U3])
+  ✓ [easy] zo ⇒ so  ::  enrichment has "so"  (ours: like that [A2 · U2])
+  ✓ [easy] moeten ⇒ should  ::  enrichment has "should"  (ours: to have to/to must [A1 · U2])
+  ✓ [easy] relatie ⇒ relationship  ::  enrichment has "relationship"  (ours: relation [A+])
+  ✓ [easy] menen ⇒ mean  ::  enrichment has "to mean (to be serious and sincere; to have conviction in)"  (ours: to think/to have an opinion/assumption [A+])
+  ✓ [easy] functie ⇒ function  ::  enrichment has "function"  (ours: job [A2 · U6])
+  ✓ [easy] warm ⇒ warm  ::  enrichment has "warm"  (ours: hot [A1 · U6])
+  ✓ [easy] stappen ⇒ to step  ::  enrichment has "to step"  (ours: to march [A+])
+  ✓ [easy] film ⇒ movie  ::  enrichment has "movie"  (ours: film [A1 · U8])
+  ✓ [easy] basis ⇒ base  ::  enrichment has "base (lower portion, foundation)"  (ours: basis [A+])
+  ✓ [easy] ziek ⇒ sick  ::  enrichment has "sick"  (ours: ill [A1 · U5])
+  ✓ [easy] schaduw ⇒ shadow  ::  enrichment has "shadow"  (ours: shade [A+])
+  ✓ [easy] leiding ⇒ leadership  ::  enrichment has "leadership"  (ours: lead/control [A+])
+  ✓ [easy] directeur ⇒ director  ::  enrichment has "director"  (ours: manager [A2 · U7])
+  ✓ [easy] koel ⇒ cool  ::  enrichment has "cool"  (ours: cold/chilly [A+])
+  ✓ [easy] klant ⇒ client  ::  enrichment has "client"  (ours: customer [A2 · U4])
+  ✓ [easy] kust ⇒ coast  ::  enrichment has "the coast, seaside"  (ours: shoreline [A+])
+  ✓ [easy] eindigen ⇒ to end  ::  enrichment has "to end"  (ours: to finish [A1 · U1])
+  ✓ [easy] klas ⇒ class  ::  enrichment has "a school class"  (ours: classroom [A1 · U2])
+  ✓ [easy] warmte ⇒ warmth  ::  enrichment has "warmth"  (ours: physical warmth/thermal energy/from moderate to heat [A+])
+  ✓ [easy] agent ⇒ agent  ::  enrichment has "an undercover agent; intelligence officer, secret agent"  (ours: policeman [A2 · U8])
+  ✓ [easy] dun ⇒ thin  ::  enrichment has "thin"  (ours: skinny [A2 · U7])
+  ✓ [easy] verspreiden ⇒ to spread  ::  enrichment has "to spread around"  (ours: to spread around [A+])
+  ✓ [easy] klas ⇒ class  ::  enrichment has "a school class"  (ours: classroom [A1 · U2])
+  ✓ [easy] economie ⇒ economy  ::  enrichment has "economy"  (ours: economics [A+])
+  ✓ [easy] dom ⇒ dumb  ::  enrichment has "dumb"  (ours: stupid [A1 · U4])
+  ✓ [medium] van ⇒ from / of  ::  enrichment has "from"  (ours: from/of [A1 · U3])
+  ✓ [medium] met ⇒ with  ::  enrichment has "with"  (ours: along with [B1])
+  ✓ [medium] als ⇒ if/when  ::  enrichment has "if"  (ours: if [A1 · U8])
+  ✓ [medium] naar ⇒ to  ::  enrichment has "to"  (ours: towards [A1 · U2])
+  ✓ [medium] even ⇒ for a bit, for a while  ::  enrichment has "for a while"  (ours: just/just a moment [A1 · U6])
+  ✓ [medium] een paar ⇒ a couple  ::  enrichment has "a couple"  (ours: a few [A2 · U5])
+  ✓ [medium] zaak ⇒ matter, business  ::  enrichment has "matter"  (ours: business [A2 · U6])
+  ✓ [medium] juist ⇒ right  ::  enrichment has "right"  (ours: correct [A2 · U4])
+  ✓ [medium] mooi ⇒ beautiful, pretty  ::  enrichment has "beautiful"  (ours: beautiful [A1 · U3])
+  ✓ [medium] pas ⇒ only  ::  enrichment has "only"  (ours: just [A2 · U1])
+  ✓ [medium] ooit ⇒ ever  ::  enrichment has "ever"  (ours: sometime/someday/at some point [A+])
+  ✓ [medium] kans ⇒ opportunity  ::  enrichment has "opportunity"  (ours: chance [A2 · U5])
+  ✓ [medium] macht ⇒ power  ::  enrichment has "power"  (ours: political power/control [A+])
+  ✓ [medium] menen ⇒ mean  ::  enrichment has "to mean (to be serious and sincere; to have conviction in)"  (ours: to think/to have an opinion/assumption [A+])
+  ✓ [medium] aarde ⇒ soil  ::  enrichment has "soil"  (ours: earth [A2 · U8])
+  ✓ [medium] lief ⇒ sweet  ::  enrichment has "sweet"  (ours: love [A2 · U2])
+  ✓ [medium] trap ⇒ stairs  ::  enrichment has "stairs"  (ours: stairway [A1 · U3])
+  ✓ [medium] grens ⇒ border  ::  enrichment has "physical, territorial border, frontier"  (ours: physical/territorial border/frontier [A+])
+  ✓ [medium] reis ⇒ trip, journey  ::  enrichment has "trip"  (ours: journey/trip [A2 · U3])
+  ✓ [medium] rust ⇒ peace/calm  ::  enrichment has "peace"  (ours: rest/inactivity [A2 · U3])
+  ✓ [medium] eis ⇒ demand  ::  enrichment has "demand"  (ours: requirement [B1])
+  ✓ [medium] geloof ⇒ faith, belief  ::  enrichment has "faith"  (ours: belief/conviction [A+])
+  ✓ [medium] zaal ⇒ hall  ::  enrichment has "hall"  (ours: (big) room [A2 · U2])
+  ✓ [medium] kust ⇒ coast  ::  enrichment has "the coast, seaside"  (ours: shoreline [A+])
+  ✓ [medium] vak ⇒ field, subject  ::  enrichment has "a subject, discipline, class, notably in education"  (ours: school subject [A2 · U3])
+  ✓ [medium] kast ⇒ closet  ::  enrichment has "closet"  (ours: cupboard/cabinet [A1 · U3])
+  ✓ [medium] klap ⇒ blow  ::  enrichment has "blow"  (ours: bang [A+])
+  ✓ [medium] stuur ⇒ steering wheel  ::  enrichment has "a steering device, notably a steering wheel in a vehicle or handlebars on a bicycle"  (ours: steering device/handlebars on a bicycle [A+])
+  ✓ [medium] kern ⇒ core  ::  enrichment has "nucleus, physical core"  (ours: nucleus/physical core [B1])
+  ✓ [medium] dun ⇒ thin  ::  enrichment has "thin"  (ours: skinny [A2 · U7])
+  ✓ [medium] maat ⇒ measure  ::  enrichment has "measure"  (ours: size [A1 · U6])
+  ✓ [medium] poot ⇒ leg  ::  enrichment has "limb (arm or leg) of an animal (sometimes human)"  (ours: limb of an animal [A+])
+  ✓ [hard] binnen ⇒ within, inside  ::  enrichment has "inside"  (ours: inside [A1 · U2])
+  ✓ [hard] weinig ⇒ little, few  ::  enrichment has "little"  (ours: few/little [A1 · U3])
+  ✓ [hard] iedereen ⇒ everyone  ::  enrichment has "everyone"  (ours: everybody [A1 · U8])
+  ✓ [hard] bijzonder ⇒ special  ::  enrichment has "special"  (ours: extraordinary [A2 · U2])
+  ✓ [hard] eerder ⇒ earlier  ::  enrichment has "earlier"  (ours: previously [A1 · U5])
+  ✓ [hard] volledig ⇒ complete  ::  enrichment has "complete"  (ours: entire [A2 · U6])
+  ✓ [hard] ongeveer ⇒ approximately  ::  enrichment has "approximately"  (ours: about [A1 · U6])
+  ✓ [hard] aarde ⇒ soil  ::  enrichment has "soil"  (ours: earth [A2 · U8])
+  ✓ [hard] trouwens ⇒ besides, by the way  ::  enrichment has "besides"  (ours: besides/by the way [A+])
+  ✓ [hard] opvatting ⇒ view  ::  enrichment has "view"  (ours: concept/idea [B2])
+  ✓ [hard] verhouding ⇒ ratio  ::  enrichment has "ratio"  (ours: proportion [B1])
+  ✓ [hard] gezin ⇒ family  ::  enrichment has "immediate family or nuclear family"  (ours: family household [A1 · U1])
+  ✓ [hard] onderwerp ⇒ topic, subject  ::  enrichment has "topic"  (ours: subject/issue [A2 · U2])
+  ✓ [hard] opdracht ⇒ assignment, exercise  ::  enrichment has "assignment"  (ours: assignment [A1 · U2])
+  ✓ [hard] lekker ⇒ tasty, nice  ::  enrichment has "tasty"  (ours: delicious [A1 · U4])
+  ✓ [hard] bestuur ⇒ board  ::  enrichment has "governing board"  (ours: management [B1])
+  ✓ [hard] stijgen ⇒ rise  ::  enrichment has "to climb, to go up, to rise"  (ours: to climb/to go up/to rise [A+])
+  ✓ [hard] spanning ⇒ tension, stress  ::  enrichment has "tension"  (ours: tension/suspense [A+])
+  ✓ [hard] heerlijk ⇒ delicious  ::  enrichment has "delicious"  (ours: delightful [A2 · U2])
+  ✓ [hard] tevreden ⇒ satisfied; pleased  ::  enrichment has "satisfied"  (ours: satisfied/content [A2 · U4])
+  ✓ [hard] uitstekend ⇒ excellent; outstanding  ::  enrichment has "excellent"  (ours: outstanding/excellent [A+])
+  ✓ [hard] ongetwijfeld ⇒ undoubtedly, surely  ::  enrichment has "undoubtedly"  (ours: undoubtedly/surely [B1])
+  ✓ [hard] voorwerp ⇒ object  ::  enrichment has "a physical object"  (ours: physical object [A+])
+  ✓ [hard] doelstelling ⇒ goal, objective  ::  enrichment has "goal"  (ours: objective/goal/aim [B1])
+  ✓ [hard] dichtbij ⇒ nearby  ::  enrichment has "nearby"  (ours: near [A1 · U7])
+  ✓ [hard] verstand ⇒ wit, wiseness  ::  enrichment has "wit"  (ours: reason/mind/intellect [A+])
+  ✓ [hard] onderscheid ⇒ difference, distinction  ::  enrichment has "difference"  (ours: difference [B1])
+  ✓ [hard] vereniging ⇒ association, club  ::  enrichment has "association"  (ours: association [A2 · U6])
+  ✓ [hard] geweldig ⇒ awesome, great  ::  enrichment has "awesome"  (ours: great [A2 · U4])
+  ✓ [hard] bodem ⇒ bottom, ground  ::  enrichment has "bottom"  (ours: bottom [A2 · U8])
+  ✓ [hard] definitief ⇒ final  ::  enrichment has "final"  (ours: definitive/conclusive [B1])
+  ✓ [hard] overleg ⇒ consultation  ::  enrichment has "consultation"  (ours: a meeting at work [A2 · U4])
+  ✓ [hard] kern ⇒ core  ::  enrichment has "nucleus, physical core"  (ours: nucleus/physical core [B1])
+  ✓ [hard] gevangenis ⇒ jail, prison  ::  enrichment has "a jail, a prison; especially an institution where convicts are incarcerated, but sometimes used more generally"  (ours: jail/prison [A+])
+  ✓ [hard] gemak ⇒ ease  ::  enrichment has "ease"  (ours: convenience [A+])
+  ✓ [hard] overig ⇒ other, remaining  ::  enrichment has "remaining"  (ours: remaining [B1])
+  ✓ [hard] nuttig ⇒ helpful; useful  ::  enrichment has "useful"  (ours: useful/handy [B1])

@@ -1,0 +1,1036 @@
+[
+  {
+    "nl": "van",
+    "source_en": "from / of",
+    "our_cards": [
+      {
+        "dutch": "van",
+        "english": [
+          "from",
+          "of"
+        ],
+        "level": "A1 · U3"
+      },
+      {
+        "dutch": "van",
+        "english": [
+          "from"
+        ],
+        "level": "A1 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "met",
+    "source_en": "with",
+    "our_cards": [
+      {
+        "dutch": "met",
+        "english": [
+          "along with"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "als",
+    "source_en": "if/when",
+    "our_cards": [
+      {
+        "dutch": "als",
+        "english": [
+          "if"
+        ],
+        "level": "A1 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "om",
+    "source_en": "around",
+    "our_cards": [
+      {
+        "dutch": "om",
+        "english": [
+          "at"
+        ],
+        "level": "A1 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "naar",
+    "source_en": "to",
+    "our_cards": [
+      {
+        "dutch": "naar",
+        "english": [
+          "towards"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "mens",
+    "source_en": "human",
+    "our_cards": [
+      {
+        "dutch": "de mensen",
+        "english": [
+          "people"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "toch",
+    "source_en": "however",
+    "our_cards": [
+      {
+        "dutch": "toch",
+        "english": [
+          "nevertheless"
+        ],
+        "level": "A1 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "even",
+    "source_en": "for a bit, for a while",
+    "our_cards": [
+      {
+        "dutch": "even",
+        "english": [
+          "just",
+          "just a moment"
+        ],
+        "level": "A1 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "een paar",
+    "source_en": "a couple",
+    "our_cards": [
+      {
+        "dutch": "een paar",
+        "english": [
+          "a few"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "keer",
+    "source_en": "times",
+    "our_cards": [
+      {
+        "dutch": "de keer",
+        "english": [
+          "time"
+        ],
+        "level": "A1 · U5"
+      },
+      {
+        "dutch": "nog een keer",
+        "english": [
+          "again"
+        ],
+        "level": "A1 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "weg",
+    "source_en": "away",
+    "our_cards": [
+      {
+        "dutch": "weg",
+        "english": [
+          "missing"
+        ],
+        "level": "A1 · U2"
+      },
+      {
+        "dutch": "de weg",
+        "english": [
+          "road",
+          "way"
+        ],
+        "level": "A1 · U7"
+      },
+      {
+        "dutch": "de weg",
+        "english": [
+          "way",
+          "route"
+        ],
+        "level": "A1 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "zaak",
+    "source_en": "matter, business",
+    "our_cards": [
+      {
+        "dutch": "de zaak",
+        "english": [
+          "business"
+        ],
+        "level": "A2 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "juist",
+    "source_en": "right",
+    "our_cards": [
+      {
+        "dutch": "juist",
+        "english": [
+          "correct"
+        ],
+        "level": "A2 · U4"
+      }
+    ]
+  },
+  {
+    "nl": "waar",
+    "source_en": "true",
+    "our_cards": [
+      {
+        "dutch": "waar",
+        "english": [
+          "where"
+        ],
+        "level": "A1 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "mooi",
+    "source_en": "beautiful, pretty",
+    "our_cards": [
+      {
+        "dutch": "mooi",
+        "english": [
+          "beautiful"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "nou",
+    "source_en": "well",
+    "our_cards": [
+      {
+        "dutch": "nou",
+        "english": [
+          "come on"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "pas",
+    "source_en": "only",
+    "our_cards": [
+      {
+        "dutch": "pas",
+        "english": [
+          "just"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "recht",
+    "source_en": "straight",
+    "our_cards": [
+      {
+        "dutch": "recht",
+        "english": [
+          "orderly"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "ooit",
+    "source_en": "ever",
+    "our_cards": [
+      {
+        "dutch": "ooit",
+        "english": [
+          "sometime",
+          "someday",
+          "at some point"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "blik",
+    "source_en": "look",
+    "our_cards": [
+      {
+        "dutch": "het blik",
+        "english": [
+          "can"
+        ],
+        "level": "A2 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "kans",
+    "source_en": "opportunity",
+    "our_cards": [
+      {
+        "dutch": "de kans",
+        "english": [
+          "chance"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "beeld",
+    "source_en": "statue",
+    "our_cards": [
+      {
+        "dutch": "het beeld",
+        "english": [
+          "image"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "macht",
+    "source_en": "power",
+    "our_cards": [
+      {
+        "dutch": "macht",
+        "english": [
+          "political power",
+          "control"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "lucht",
+    "source_en": "sky",
+    "our_cards": [
+      {
+        "dutch": "de lucht",
+        "english": [
+          "air"
+        ],
+        "level": "A2 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "doel",
+    "source_en": "target",
+    "our_cards": [
+      {
+        "dutch": "het doel",
+        "english": [
+          "aim",
+          "purpose"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "menen",
+    "source_en": "mean",
+    "our_cards": [
+      {
+        "dutch": "menen",
+        "english": [
+          "to think",
+          "to have an opinion",
+          "assumption"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "aarde",
+    "source_en": "soil",
+    "our_cards": [
+      {
+        "dutch": "de aarde",
+        "english": [
+          "earth"
+        ],
+        "level": "A2 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "lief",
+    "source_en": "sweet",
+    "our_cards": [
+      {
+        "dutch": "liefs",
+        "english": [
+          "love"
+        ],
+        "level": "A2 · U2"
+      },
+      {
+        "dutch": "lief",
+        "english": [
+          "dear"
+        ],
+        "level": "A2 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "trap",
+    "source_en": "stairs",
+    "our_cards": [
+      {
+        "dutch": "de trap",
+        "english": [
+          "stairway"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "blad",
+    "source_en": "sheet",
+    "our_cards": [
+      {
+        "dutch": "het blad",
+        "english": [
+          "leaf"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "hoop",
+    "source_en": "pile",
+    "our_cards": [
+      {
+        "dutch": "de hoop",
+        "english": [
+          "hope",
+          "aspiration",
+          "wish"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "grens",
+    "source_en": "border",
+    "our_cards": [
+      {
+        "dutch": "grens",
+        "english": [
+          "physical",
+          "territorial border",
+          "frontier"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "vlak",
+    "source_en": "flat",
+    "our_cards": [
+      {
+        "dutch": "vlak",
+        "english": [
+          "straight",
+          "immediately",
+          "just"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "buurt",
+    "source_en": "neighborhood",
+    "our_cards": [
+      {
+        "dutch": "de buurt",
+        "english": [
+          "neighbourhood"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "reis",
+    "source_en": "trip, journey",
+    "our_cards": [
+      {
+        "dutch": "de reis",
+        "english": [
+          "journey",
+          "trip"
+        ],
+        "level": "A2 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "druk",
+    "source_en": "pressure",
+    "our_cards": [
+      {
+        "dutch": "druk",
+        "english": [
+          "busy"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "vlug / snel",
+    "source_en": "quickly",
+    "our_cards": [
+      {
+        "dutch": "vlug",
+        "english": [
+          "quick"
+        ],
+        "level": "A2 · U6"
+      },
+      {
+        "dutch": "snel",
+        "english": [
+          "fast",
+          "quick"
+        ],
+        "level": "A1 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "leuk",
+    "source_en": "fun",
+    "our_cards": [
+      {
+        "dutch": "leuk",
+        "english": [
+          "nice"
+        ],
+        "level": "A1 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "huisarts",
+    "source_en": "doctor",
+    "our_cards": [
+      {
+        "dutch": "de huisarts",
+        "english": [
+          "general practitioner"
+        ],
+        "level": "A1 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "rust",
+    "source_en": "peace/calm",
+    "our_cards": [
+      {
+        "dutch": "de rust",
+        "english": [
+          "rest",
+          "inactivity"
+        ],
+        "level": "A2 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "haast",
+    "source_en": "rush",
+    "our_cards": [
+      {
+        "dutch": "haast hebben",
+        "english": [
+          "to hurry"
+        ],
+        "level": "A2 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "eis",
+    "source_en": "demand",
+    "our_cards": [
+      {
+        "dutch": "eis",
+        "english": [
+          "requirement"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "rij",
+    "source_en": "queue",
+    "our_cards": [
+      {
+        "dutch": "in de rij staan",
+        "english": [
+          "to stand in line"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "last",
+    "source_en": "burden",
+    "our_cards": [
+      {
+        "dutch": "Ik heb last van",
+        "english": [
+          "I suffer from ..."
+        ],
+        "level": "A1 · U5"
+      },
+      {
+        "dutch": "last hebben van",
+        "english": [
+          "to suffer from"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "slot",
+    "source_en": "key lock",
+    "our_cards": [
+      {
+        "dutch": "op slot",
+        "english": [
+          "locked"
+        ],
+        "level": "A1 · U3"
+      },
+      {
+        "dutch": "ten slotte",
+        "english": [
+          "finally"
+        ],
+        "level": "A2 · U1"
+      }
+    ]
+  },
+  {
+    "nl": "buik",
+    "source_en": "stomach",
+    "our_cards": [
+      {
+        "dutch": "de buik",
+        "english": [
+          "belly"
+        ],
+        "level": "A1 · U5"
+      }
+    ]
+  },
+  {
+    "nl": "flink",
+    "source_en": "hefty",
+    "our_cards": [
+      {
+        "dutch": "flink",
+        "english": [
+          "large",
+          "considerable"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "beurt",
+    "source_en": "turn",
+    "our_cards": [
+      {
+        "dutch": "aan de beurt zijn",
+        "english": [
+          "to have your turn"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "slag",
+    "source_en": "battle",
+    "our_cards": [
+      {
+        "dutch": "slag",
+        "english": [
+          "blow",
+          "knock",
+          "strike"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "sfeer",
+    "source_en": "ambiance",
+    "our_cards": [
+      {
+        "dutch": "sfeer",
+        "english": [
+          "sphere",
+          "round object"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "pak",
+    "source_en": "business suit",
+    "our_cards": [
+      {
+        "dutch": "het pak",
+        "english": [
+          "pack"
+        ],
+        "level": "A1 · U4"
+      },
+      {
+        "dutch": "het pak",
+        "english": [
+          "suit"
+        ],
+        "level": "A1 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "geloof",
+    "source_en": "faith, belief",
+    "our_cards": [
+      {
+        "dutch": "het geloof",
+        "english": [
+          "belief",
+          "conviction"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "zaal",
+    "source_en": "hall",
+    "our_cards": [
+      {
+        "dutch": "de zaal",
+        "english": [
+          "(big) room"
+        ],
+        "level": "A2 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "greep",
+    "source_en": "grip",
+    "our_cards": [
+      {
+        "dutch": "greep",
+        "english": [
+          "grasp",
+          "clutches"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "kust",
+    "source_en": "coast",
+    "our_cards": [
+      {
+        "dutch": "kust",
+        "english": [
+          "shoreline"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "vak",
+    "source_en": "field, subject",
+    "our_cards": [
+      {
+        "dutch": "het vak",
+        "english": [
+          "school subject"
+        ],
+        "level": "A2 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "trots",
+    "source_en": "pride",
+    "our_cards": [
+      {
+        "dutch": "trots (op)",
+        "english": [
+          "proud"
+        ],
+        "level": "A2 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "kast",
+    "source_en": "closet",
+    "our_cards": [
+      {
+        "dutch": "de kast",
+        "english": [
+          "cupboard",
+          "cabinet"
+        ],
+        "level": "A1 · U3"
+      }
+    ]
+  },
+  {
+    "nl": "klap",
+    "source_en": "blow",
+    "our_cards": [
+      {
+        "dutch": "klap",
+        "english": [
+          "bang"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "stroom",
+    "source_en": "flow",
+    "our_cards": [
+      {
+        "dutch": "de stroom",
+        "english": [
+          "electric current"
+        ],
+        "level": "A2 · U8"
+      }
+    ]
+  },
+  {
+    "nl": "knap",
+    "source_en": "good looking",
+    "our_cards": [
+      {
+        "dutch": "knap",
+        "english": [
+          "clever"
+        ],
+        "level": "A2 · U2"
+      }
+    ]
+  },
+  {
+    "nl": "een poos",
+    "source_en": "a while",
+    "our_cards": [
+      {
+        "dutch": "poos",
+        "english": [
+          "undefined period of time",
+          "indefinite period"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "strekken",
+    "source_en": "stretch",
+    "our_cards": [
+      {
+        "dutch": "strekken",
+        "english": [
+          "to stretch",
+          "to extend",
+          "to reach"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "stuur",
+    "source_en": "steering wheel",
+    "our_cards": [
+      {
+        "dutch": "het stuur",
+        "english": [
+          "steering device",
+          "handlebars on a bicycle"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "kern",
+    "source_en": "core",
+    "our_cards": [
+      {
+        "dutch": "kern",
+        "english": [
+          "nucleus",
+          "physical core"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "dun",
+    "source_en": "thin",
+    "our_cards": [
+      {
+        "dutch": "dun",
+        "english": [
+          "skinny"
+        ],
+        "level": "A2 · U7"
+      }
+    ]
+  },
+  {
+    "nl": "troep",
+    "source_en": "mess",
+    "our_cards": [
+      {
+        "dutch": "troep",
+        "english": [
+          "group of people",
+          "animals"
+        ],
+        "level": "B1"
+      }
+    ]
+  },
+  {
+    "nl": "tocht",
+    "source_en": "tour",
+    "our_cards": [
+      {
+        "dutch": "tocht",
+        "english": [
+          "journey",
+          "expedition",
+          "march"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "maat",
+    "source_en": "measure",
+    "our_cards": [
+      {
+        "dutch": "de maat",
+        "english": [
+          "size"
+        ],
+        "level": "A1 · U6"
+      }
+    ]
+  },
+  {
+    "nl": "poot",
+    "source_en": "leg",
+    "our_cards": [
+      {
+        "dutch": "poot",
+        "english": [
+          "limb of an animal"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "vent",
+    "source_en": "guy",
+    "our_cards": [
+      {
+        "dutch": "vent",
+        "english": [
+          "chap",
+          "fellow"
+        ],
+        "level": "A+"
+      }
+    ]
+  },
+  {
+    "nl": "eer",
+    "source_en": "honor",
+    "our_cards": [
+      {
+        "dutch": "de eer",
+        "english": [
+          "honour"
+        ],
+        "level": "A+"
+      }
+    ]
+  }
+]

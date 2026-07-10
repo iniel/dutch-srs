@@ -1,0 +1,1177 @@
+
+========================================================================
+EASY  (493 words)   — sorted by CEFR level (A1→A2→A+→B1→B2)
+========================================================================
+
+--- EXACT (395)  [CEFR · nl ⇒ en :: level] ---
+  ✓ [A1] antwoord  ⇒  answer  ::  A1 · U1
+  ✓ [A1] baby  ⇒  baby  ::  A1 · U1
+  ✓ [A1] beginnen  ⇒  to begin  ::  A1 · U1
+  ✓ [A1] broer  ⇒  brother  ::  A1 · U1
+  ✓ [A1] dochter  ⇒  daughter  ::  A1 · U1
+  ✓ [A1] en  ⇒  and  ::  A1 · U1
+  ✓ [A1] familie  ⇒  family  ::  A1 · U1
+  ✓ [A1] goed  ⇒  good  ::  A1 · U1
+  ✓ [A1] hebben  ⇒  to have  ::  A1 · U1
+  ✓ [A1] hier  ⇒  here  ::  A1 · U1
+  ✓ [A1] hij  ⇒  he  ::  A1 · U1
+  ✓ [A1] horen  ⇒  to hear  ::  A1 · U1
+  ✓ [A1] ik  ⇒  I  ::  A1 · U1
+  ✓ [A1] ja  ⇒  yes  ::  A1 · U1
+  ✓ [A1] jaar  ⇒  year  ::  A1 · U1
+  ✓ [A1] jij  ⇒  you  ::  A1 · U1
+  ✓ [A1] jullie  ⇒  you  ::  A1 · U1
+  ✓ [A1] man  ⇒  man  ::  A1 · U1
+  ✓ [A1] mijn  ⇒  my  ::  A1 · U1
+  ✓ [A1] moeder  ⇒  mother  ::  A1 · U1
+  ✓ [A1] naam  ⇒  name  ::  A1 · U1
+  ✓ [A1] nee  ⇒  no  ::  A1 · U1
+  ✓ [A1] niet  ⇒  not  ::  A1 · U1
+  ✓ [A1] tante  ⇒  aunt  ::  A1 · U1
+  ✓ [A1] u  ⇒  you  ::  A1 · U1, A2 · U4
+  ✓ [A1] vader  ⇒  father  ::  A1 · U1
+  ✓ [A1] wat  ⇒  what  ::  A1 · U1
+  ✓ [A1] wij  ⇒  we  ::  A1 · U1
+  ✓ [A1] woord  ⇒  word  ::  A1 · U1
+  ✓ [A1] zij  ⇒  she  ::  A1 · U1
+  ✓ [A1] zoon  ⇒  son  ::  A1 · U1
+  ✓ [A1] boek  ⇒  book  ::  A1 · U2
+  ✓ [A1] computer  ⇒  computer  ::  A1 · U2
+  ✓ [A1] dag  ⇒  day  ::  A1 · U2
+  ✓ [A1] ding  ⇒  thing  ::  A1 · U2
+  ✓ [A1] gaan  ⇒  to go  ::  A1 · U2
+  ✓ [A1] geven  ⇒  to give  ::  A1 · U2
+  ✓ [A1] helpen  ⇒  to help  ::  A1 · U2
+  ✓ [A1] juni  ⇒  june  ::  A1 · U2
+  ✓ [A1] koffie  ⇒  coffee  ::  A1 · U2
+  ✓ [A1] laatste  ⇒  last  ::  A1 · U2
+  ✓ [A1] leren  ⇒  to learn  ::  A1 · U2
+  ✓ [A1] leren  ⇒  to learn  ::  A1 · U2
+  ✓ [A1] maand  ⇒  month  ::  A1 · U2
+  ✓ [A1] maken  ⇒  to make  ::  A1 · U2
+  ✓ [A1] oktober  ⇒  October  ::  A1 · U2
+  ✓ [A1] papier  ⇒  paper  ::  A1 · U2
+  ✓ [A1] school  ⇒  school  ::  A1 · U2
+  ✓ [A1] spreken  ⇒  to speak  ::  A1 · U2
+  ✓ [A1] staan  ⇒  to stand  ::  A1 · U2
+  ✓ [A1] suiker  ⇒  sugar  ::  A1 · U2
+  ✓ [A1] tekst  ⇒  text  ::  A1 · U2
+  ✓ [A1] thee  ⇒  tea  ::  A1 · U2
+  ✓ [A1] titel  ⇒  title  ::  A1 · U2
+  ✓ [A1] wanneer  ⇒  when  ::  A1 · U2
+  ✓ [A1] week  ⇒  week  ::  A1 · U2
+  ✓ [A1] welk  ⇒  which  ::  A1 · U2
+  ✓ [A1] zitten  ⇒  to sit  ::  A1 · U2
+  ✓ [A1] zondag  ⇒  sunday  ::  A1 · U2
+  ✓ [A1] bed  ⇒  bed  ::  A1 · U3
+  ✓ [A1] blauw  ⇒  blue  ::  A1 · U3
+  ✓ [A1] bruin  ⇒  brown  ::  A1 · U3
+  ✓ [A1] derde  ⇒  third  ::  A1 · U3
+  ✓ [A1] deur  ⇒  door  ::  A1 · U3
+  ✓ [A1] groen  ⇒  green  ::  A1 · U3
+  ✓ [A1] huis  ⇒  house  ::  A1 · U3
+  ✓ [A1] kleur  ⇒  color  ::  A1 · U3
+  ✓ [A1] nieuw  ⇒  new  ::  A1 · U3
+  ✓ [A1] nu  ⇒  now  ::  A1 · U3
+  ✓ [A1] plaats  ⇒  place  ::  A1 · U3
+  ✓ [A1] prijs  ⇒  price  ::  A1 · U3
+  ✓ [A1] rood  ⇒  red  ::  A1 · U3
+  ✓ [A1] straat  ⇒  street  ::  A1 · U3
+  ✓ [A1] tafel  ⇒  table  ::  A1 · U3
+  ✓ [A1] televisie  ⇒  television  ::  A1 · U3
+  ✓ [A1] wit  ⇒  white  ::  A1 · U3
+  ✓ [A1] alle  ⇒  all  ::  A1 · U4
+  ✓ [A1] brood  ⇒  bread  ::  A1 · U4
+  ✓ [A1] dan  ⇒  then  ::  A1 · U4
+  ✓ [A1] doen  ⇒  to do  ::  A1 · U4
+  ✓ [A1] fruit  ⇒  fruit  ::  A1 · U4
+  ✓ [A1] glas  ⇒  glass  ::  A1 · U4
+  ✓ [A1] helft  ⇒  half  ::  A1 · U4
+  ✓ [A1] kaas  ⇒  cheese  ::  A1 · U4
+  ✓ [A1] kosten  ⇒  to cost  ::  A1 · U4
+  ✓ [A1] koud  ⇒  cold  ::  A1 · U4
+  ✓ [A1] markt  ⇒  market  ::  A1 · U4
+  ✓ [A1] meer  ⇒  more  ::  A1 · U4
+  ✓ [A1] meestal  ⇒  mostly  ::  A1 · U4
+  ✓ [A1] minuut  ⇒  minute  ::  A1 · U4
+  ✓ [A1] soort  ⇒  kind  ::  A1 · U4
+  ✓ [A1] vis  ⇒  fish  ::  A1 · U4
+  ✓ [A1] water  ⇒  water  ::  A1 · U4
+  ✓ [A1] wijn  ⇒  wine  ::  A1 · U4
+  ✓ [A1] ander  ⇒  other  ::  A1 · U5
+  ✓ [A1] arm  ⇒  arm  ::  A1 · U5
+  ✓ [A1] daar  ⇒  there  ::  A1 · U5
+  ✓ [A1] dokter  ⇒  doctor  ::  A1 · U5
+  ✓ [A1] elk  ⇒  each  ::  A1 · U5
+  ✓ [A1] foto  ⇒  photo  ::  A1 · U5
+  ✓ [A1] hand  ⇒  hand  ::  A1 · U5
+  ✓ [A1] jong  ⇒  young  ::  A1 · U5
+  ✓ [A1] knie  ⇒  knee  ::  A1 · U5
+  ✓ [A1] later  ⇒  later  ::  A1 · U5
+  ✓ [A1] lip  ⇒  lip  ::  A1 · U5
+  ✓ [A1] mond  ⇒  mouth  ::  A1 · U5
+  ✓ [A1] nek  ⇒  neck  ::  A1 · U5
+  ✓ [A1] neus  ⇒  nose  ::  A1 · U5
+  ✓ [A1] oor  ⇒  ear  ::  A1 · U5
+  ✓ [A1] oud  ⇒  old  ::  A1 · U5
+  ✓ [A1] oud  ⇒  old  ::  A1 · U5
+  ✓ [A1] pijn  ⇒  pain  ::  A1 · U5
+  ✓ [A1] probleem  ⇒  problem  ::  A1 · U5
+  ✓ [A1] schouder  ⇒  shoulder  ::  A1 · U5
+  ✓ [A1] sinds  ⇒  since  ::  A1 · U5
+  ✓ [A1] sommige  ⇒  some  ::  A1 · U5
+  ✓ [A1] soms  ⇒  sometimes  ::  A1 · U5
+  ✓ [A1] vinger  ⇒  finger  ::  A1 · U5
+  ✓ [A1] voet  ⇒  foot  ::  A1 · U5
+  ✓ [A1] vullen  ⇒  to fill  ::  A1 · U5
+  ✓ [A1] hoed  ⇒  hat  ::  A1 · U6
+  ✓ [A1] lang  ⇒  long  ::  A1 · U6
+  ✓ [A1] miljoen  ⇒  million  ::  A1 · U6
+  ✓ [A1] nacht  ⇒  night  ::  A1 · U6
+  ✓ [A1] open  ⇒  open  ::  A1 · U6
+  ✓ [A1] schoen  ⇒  shoe  ::  A1 · U6
+  ✓ [A1] seconde  ⇒  second  ::  A1 · U6
+  ✓ [A1] te  ⇒  too  ::  A1 · U6
+  ✓ [A1] uur  ⇒  hour  ::  A1 · U6
+  ✓ [A1] vrij  ⇒  free  ::  A1 · U6
+  ✓ [A1] wassen  ⇒  To wash  ::  A1 · U6
+  ✓ [A1] werk  ⇒  work  ::  A1 · U6
+  ✓ [A1] werken  ⇒  to work  ::  A1 · U6
+  ✓ [A1] zelf  ⇒  self  ::  A1 · U6
+  ✓ [A1] boot  ⇒  boat  ::  A1 · U7
+  ✓ [A1] bus  ⇒  bus  ::  A1 · U7
+  ✓ [A1] collega  ⇒  colleague  ::  A1 · U7
+  ✓ [A1] denken  ⇒  to think  ::  A1 · U7
+  ✓ [A1] eerst  ⇒  first  ::  A1 · U7
+  ✓ [A1] eerst  ⇒  first  ::  A1 · U7
+  ✓ [A1] eiland  ⇒  island  ::  A1 · U7
+  ✓ [A1] haar  ⇒  her  ::  A1 · U7
+  ✓ [A1] hoe  ⇒  how  ::  A1 · U7
+  ✓ [A1] in  ⇒  in  ::  A1 · U7
+  ✓ [A1] laat  ⇒  late  ::  A1 · U7
+  ✓ [A1] missen  ⇒  to miss  ::  A1 · U7
+  ✓ [A1] noorden  ⇒  north  ::  A1 · U7
+  ✓ [A1] op  ⇒  on  ::  A1 · U7
+  ✓ [A1] provincie  ⇒  province  ::  A1 · U7
+  ✓ [A1] rennen  ⇒  To run  ::  A1 · U7
+  ✓ [A1] slapen  ⇒  to sleep  ::  A1 · U7
+  ✓ [A1] station  ⇒  station  ::  A1 · U7
+  ✓ [A1] trein  ⇒  train  ::  A1 · U7
+  ✓ [A1] ver  ⇒  far  ::  A1 · U7
+  ✓ [A1] voor  ⇒  before  ::  A1 · U7
+  ✓ [A1] wachten  ⇒  to wait  ::  A1 · U7
+  ✓ [A1] westen  ⇒  west  ::  A1 · U7
+  ✓ [A1] adres  ⇒  address  ::  A1 · U8
+  ✓ [A1] bier  ⇒  beer  ::  A1 · U8
+  ✓ [A1] café  ⇒  cafe  ::  A1 · U8
+  ✓ [A1] dansen  ⇒  to dance  ::  A1 · U8
+  ✓ [A1] informatie  ⇒  information  ::  A1 · U8
+  ✓ [A1] kat  ⇒  cat  ::  A1 · U8
+  ✓ [A1] museum  ⇒  museum  ::  A1 · U8
+  ✓ [A1] muziek  ⇒  music  ::  A1 · U8
+  ✓ [A1] natuur  ⇒  nature  ::  A1 · U8
+  ✓ [A1] nummer  ⇒  number  ::  A1 · U8
+  ✓ [A1] radio  ⇒  radio  ::  A1 · U8
+  ✓ [A1] restaurant  ⇒  restaurant  ::  A1 · U8
+  ✓ [A1] telefoon  ⇒  phone  ::  A1 · U8
+  ✓ [A1] vertellen  ⇒  to tell  ::  A1 · U8
+  ✓ [A1] vriend  ⇒  friend  ::  A1 · U8
+  ✓ [A1] zee  ⇒  sea  ::  A1 · U8
+  ✓ [A1] zingen  ⇒  to sing  ::  A1 · U8
+  ✓ [A2] al  ⇒  already  ::  A2 · U1
+  ✓ [A2] gast  ⇒  guest  ::  A2 · U1
+  ✓ [A2] geboren  ⇒  born  ::  A2 · U1
+  ✓ [A2] hard  ⇒  hard  ::  A2 · U1
+  ✓ [A2] hulp  ⇒  help  ::  A2 · U1
+  ✓ [A2] licht  ⇒  light  ::  A2 · U1
+  ✓ [A2] materiaal  ⇒  material  ::  A2 · U1
+  ✓ [A2] meter  ⇒  meter  ::  A2 · U1
+  ✓ [A2] modern  ⇒  modern  ::  A2 · U1
+  ✓ [A2] rest  ⇒  rest  ::  A2 · U1
+  ✓ [A2] rond  ⇒  round  ::  A2 · U1
+  ✓ [A2] succes  ⇒  good luck  ::  A2 · U1
+  ✓ [A2] technisch  ⇒  technical  ::  A2 · U1
+  ✓ [A2] beide  ⇒  both  ::  A2 · U2
+  ✓ [A2] half  ⇒  half  ::  A2 · U2
+  ✓ [A2] heet  ⇒  hot  ::  A2 · U2
+  ✓ [A2] idee  ⇒  idea  ::  A2 · U2
+  ✓ [A2] interessant  ⇒  interesting  ::  A2 · U2
+  ✓ [A2] koning  ⇒  king  ::  A2 · U2
+  ✓ [A2] procent  ⇒  per cent  ::  A2 · U2
+  ✓ [A2] reden  ⇒  reason  ::  A2 · U2
+  ✓ [A2] reden  ⇒  reason  ::  A2 · U2
+  ✓ [A2] sneeuw  ⇒  snow  ::  A2 · U2
+  ✓ [A2] studeren  ⇒  to study  ::  A2 · U2
+  ✓ [A2] studeren  ⇒  to study  ::  A2 · U2
+  ✓ [A2] toen  ⇒  then (past)  ::  A2 · U2
+  ✓ [A2] top  ⇒  top  ::  A2 · U2
+  ✓ [A2] vuur  ⇒  fire  ::  A2 · U2
+  ✓ [A2] wensen  ⇒  to wish  ::  A2 · U2
+  ✓ [A2] wereld  ⇒  world  ::  A2 · U2
+  ✓ [A2] winter  ⇒  winter  ::  A2 · U2
+  ✓ [A2] zomer  ⇒  summer  ::  A2 · U2
+  ✓ [A2] activiteit  ⇒  activity  ::  A2 · U3
+  ✓ [A2] contact  ⇒  contact  ::  A2 · U3
+  ✓ [A2] cultuur  ⇒  culture  ::  A2 · U3
+  ✓ [A2] groeien  ⇒  to grow  ::  A2 · U3
+  ✓ [A2] groep  ⇒  group  ::  A2 · U3
+  ✓ [A2] hart  ⇒  heart  ::  A2 · U3
+  ✓ [A2] lijst  ⇒  list  ::  A2 · U3
+  ✓ [A2] organiseren  ⇒  to organize  ::  A2 · U3
+  ✓ [A2] periode  ⇒  period  ::  A2 · U3
+  ✓ [A2] persoon  ⇒  person  ::  A2 · U3
+  ✓ [A2] plan  ⇒  plan  ::  A2 · U3
+  ✓ [A2] reactie  ⇒  reaction  ::  A2 · U3
+  ✓ [A2] resultaat  ⇒  result  ::  A2 · U3
+  ✓ [A2] speciaal  ⇒  special  ::  A2 · U3
+  ✓ [A2] vriendelijk  ⇒  friendly  ::  A2 · U3
+  ✓ [A2] zodat  ⇒  so that  ::  A2 · U3
+  ✓ [A2] baas  ⇒  boss  ::  A2 · U4
+  ✓ [A2] hem  ⇒  him  ::  A2 · U4
+  ✓ [A2] jou  ⇒  you  ::  A2 · U4
+  ✓ [A2] leveren  ⇒  to deliver  ::  A2 · U4
+  ✓ [A2] mij  ⇒  me  ::  A2 · U4
+  ✓ [A2] partner  ⇒  partner  ::  A2 · U4
+  ✓ [A2] product  ⇒  product  ::  A2 · U4
+  ✓ [A2] studie  ⇒  study  ::  A2 · U4
+  ✓ [A2] systeem  ⇒  system  ::  A2 · U4
+  ✓ [A2] voelen  ⇒  to feel  ::  A2 · U4, A2 · U5
+  ✓ [A2] vol  ⇒  full  ::  A2 · U4
+  ✓ [A2] wakker  ⇒  awake  ::  A2 · U4
+  ✓ [A2] advies  ⇒  advice  ::  A2 · U5
+  ✓ [A2] bijten  ⇒  to bite  ::  A2 · U5
+  ✓ [A2] centrum  ⇒  centre  ::  A2 · U5
+  ✓ [A2] discussie  ⇒  discussion  ::  A2 · U5
+  ✓ [A2] dood  ⇒  dead  ::  A2 · U5
+  ✓ [A2] fabriek  ⇒  factory  ::  A2 · U5
+  ✓ [A2] gevoel  ⇒  feeling  ::  A2 · U5
+  ✓ [A2] hopen  ⇒  to hope  ::  A2 · U5
+  ✓ [A2] langs  ⇒  along  ::  A2 · U5
+  ✓ [A2] machine  ⇒  machine  ::  A2 · U5
+  ✓ [A2] plant  ⇒  plant  ::  A2 · U5
+  ✓ [A2] praktijk  ⇒  practice  ::  A2 · U5
+  ✓ [A2] rivier  ⇒  river  ::  A2 · U5
+  ✓ [A2] serieus  ⇒  serious  ::  A2 · U5
+  ✓ [A2] sociaal  ⇒  social  ::  A2 · U5
+  ✓ [A2] student  ⇒  student  ::  A2 · U5
+  ✓ [A2] terras  ⇒  terrace  ::  A2 · U5
+  ✓ [A2] theorie  ⇒  theory  ::  A2 · U5
+  ✓ [A2] totaal  ⇒  total  ::  A2 · U5
+  ✓ [A2] universiteit  ⇒  university  ::  A2 · U5
+  ✓ [A2] winnen  ⇒  to win  ::  A2 · U5
+  ✓ [A2] hotel  ⇒  hotel  ::  A2 · U6
+  ✓ [A2] kwaliteit  ⇒  quality  ::  A2 · U6
+  ✓ [A2] olie  ⇒  oil  ::  A2 · U6
+  ✓ [A2] laten  ⇒  to let  ::  A2 · U7
+  ✓ [A2] leven  ⇒  life  ::  A2 · U7
+  ✓ [A2] liefde  ⇒  love  ::  A2 · U7
+  ✓ [A2] maaltijd  ⇒  meal  ::  A2 · U7
+  ✓ [A2] negatief  ⇒  negative  ::  A2 · U7
+  ✓ [A2] openen  ⇒  to open  ::  A2 · U7
+  ✓ [A2] operatie  ⇒  operation  ::  A2 · U7
+  ✓ [A2] positief  ⇒  positive  ::  A2 · U7
+  ✓ [A2] pot  ⇒  pot  ::  A2 · U7
+  ✓ [A2] rijk  ⇒  rich  ::  A2 · U7
+  ✓ [A2] sigaret  ⇒  cigarette  ::  A2 · U7
+  ✓ [A2] ster  ⇒  star  ::  A2 · U7
+  ✓ [A2] vloer  ⇒  floor  ::  A2 · U7
+  ✓ [A2] bank  ⇒  bank  ::  A2 · U8
+  ✓ [A2] bloed  ⇒  blood  ::  A2 · U8
+  ✓ [A2] bodem  ⇒  bottom  ::  A2 · U8
+  ✓ [A2] klimmen  ⇒  to climb  ::  A2 · U8
+  ✓ [A2] los  ⇒  loose  ::  A2 · U8
+  ✓ [A2] maan  ⇒  moon  ::  A2 · U8
+  ✓ [A2] steen  ⇒  stone  ::  A2 · U8
+  ✓ [A2] vechten  ⇒  to fight  ::  A2 · U8
+  ✓ [A2] wind  ⇒  wind  ::  A2 · U8
+  ✓ [A+] accepteren  ⇒  to accept  ::  A+
+  ✓ [A+] actief  ⇒  active  ::  A+
+  ✓ [A+] bezig  ⇒  busy  ::  A+
+  ✓ [A+] bitter  ⇒  bitter  ::  A+
+  ✓ [A+] combinatie  ⇒  combination  ::  A+
+  ✓ [A+] conclusie  ⇒  conclusion  ::  A+
+  ✓ [A+] cultureel  ⇒  cultural  ::  A+
+  ✓ [A+] detail  ⇒  detail  ::  A+
+  ✓ [A+] diep  ⇒  deep  ::  A+
+  ✓ [A+] dromen  ⇒  to dream  ::  A+
+  ✓ [A+] droom  ⇒  dream  ::  A+
+  ✓ [A+] dubbel  ⇒  double  ::  A+
+  ✓ [A+] emotie  ⇒  emotion  ::  A+
+  ✓ [A+] energie  ⇒  energy  ::  A+
+  ✓ [A+] Engels  ⇒  english  ::  A+
+  ✓ [A+] enorm  ⇒  enormous  ::  A+
+  ✓ [A+] fase  ⇒  phase  ::  A+
+  ✓ [A+] figuur  ⇒  figure  ::  A+
+  ✓ [A+] gemeen  ⇒  mean  ::  A+
+  ✓ [A+] gouden  ⇒  golden  ::  A+
+  ✓ [A+] gras  ⇒  grass  ::  A+
+  ✓ [A+] historisch  ⇒  historical  ::  A+
+  ✓ [A+] hoop  ⇒  hope  ::  A+
+  ✓ [A+] hut  ⇒  hut  ::  A+
+  ✓ [A+] ideaal  ⇒  ideal  ::  A+
+  ✓ [A+] initiatief  ⇒  initiative  ::  A+
+  ✓ [A+] instrument  ⇒  instrument  ::  A+
+  ✓ [A+] internationaal  ⇒  international  ::  A+
+  ✓ [A+] invloed  ⇒  influence  ::  A+
+  ✓ [A+] jongeman  ⇒  young man  ::  A+
+  ✓ [A+] kalm  ⇒  calm  ::  A+
+  ✓ [A+] kamp  ⇒  camp  ::  A+
+  ✓ [A+] kruis  ⇒  cross  ::  A+
+  ✓ [A+] landschap  ⇒  landscape  ::  A+
+  ✓ [A+] leiden  ⇒  to lead  ::  A+
+  ✓ [A+] leider  ⇒  leader  ::  A+
+  ✓ [A+] literatuur  ⇒  literature  ::  A+
+  ✓ [A+] logisch  ⇒  logical  ::  A+
+  ✓ [A+] medisch  ⇒  medical  ::  A+
+  ✓ [A+] minister  ⇒  minister  ::  A+
+  ✓ [A+] nationaal  ⇒  national  ::  A+
+  ✓ [A+] organisatie  ⇒  organization  ::  A+
+  ✓ [A+] pad  ⇒  path  ::  A+
+  ✓ [A+] patiënt  ⇒  patient  ::  A+
+  ✓ [A+] plaat  ⇒  plate  ::  A+
+  ✓ [A+] praktisch  ⇒  practical  ::  A+
+  ✓ [A+] proces  ⇒  process  ::  A+
+  ✓ [A+] project  ⇒  project  ::  A+
+  ✓ [A+] publiceren  ⇒  to publish  ::  A+
+  ✓ [A+] risico  ⇒  risk  ::  A+
+  ✓ [A+] rol  ⇒  role  ::  A+
+  ✓ [A+] rusten  ⇒  to rest  ::  A+
+  ✓ [A+] slaap  ⇒  sleep  ::  A+
+  ✓ [A+] specifiek  ⇒  specific  ::  A+
+  ✓ [A+] staat  ⇒  state  ::  A+
+  ✓ [A+] stap  ⇒  step  ::  A+
+  ✓ [A+] stijf  ⇒  stiff  ::  A+
+  ✓ [A+] symbool  ⇒  symbol  ::  A+
+  ✓ [A+] tong  ⇒  tongue  ::  A+
+  ✓ [A+] traditie  ⇒  tradition  ::  A+
+  ✓ [A+] traditioneel  ⇒  traditional  ::  A+
+  ✓ [A+] typisch  ⇒  typical  ::  A+
+  ✓ [A+] veld  ⇒  field  ::  A+
+  ✓ [A+] verbieden  ⇒  to forbid  ::  A+
+  ✓ [A+] verder  ⇒  further  ::  A+
+  ✓ [A+] vluchten  ⇒  to flee  ::  A+
+  ✓ [A+] vorming  ⇒  formation  ::  A+
+  ✓ [A+] wapen  ⇒  weapon  ::  A+
+  ✓ [A+] wens  ⇒  wish  ::  A+
+  ✓ [A+] wijd  ⇒  wide  ::  A+
+  ✓ [A+] wild  ⇒  wild  ::  A+
+  ✓ [A+] zand  ⇒  sand  ::  A+
+  ✓ [A+] zenden  ⇒  to send  ::  A+
+  ✓ [A+] zuster  ⇒  sister  ::  A+
+  ✓ [B1] actie  ⇒  action  ::  B1
+  ✓ [B1] argument  ⇒  argument  ::  B1
+  ✓ [B1] artikel  ⇒  article  ::  B1
+  ✓ [B1] aspect  ⇒  aspect  ::  B1
+  ✓ [B1] auteur  ⇒  author  ::  B1
+  ✓ [B1] beïnvloeden  ⇒  to influence  ::  B1
+  ✓ [B1] categorie  ⇒  category  ::  B1
+  ✓ [B1] communicatie  ⇒  communication  ::  B1
+  ✓ [B1] consequentie  ⇒  consequence  ::  B1
+  ✓ [B1] crisis  ⇒  crisis  ::  B1
+  ✓ [B1] effect  ⇒  effect  ::  B1
+  ✓ [B1] eindeloos  ⇒  endless  ::  B1
+  ✓ [B1] emotioneel  ⇒  emotional  ::  B1
+  ✓ [B1] experiment  ⇒  experiment  ::  B1
+  ✓ [B1] factor  ⇒  factor  ::  B1
+  ✓ [B1] feit  ⇒  fact  ::  B1
+  ✓ [B1] financieel  ⇒  financial  ::  B1
+  ✓ [B1] formuleren  ⇒  to formulate  ::  B1
+  ✓ [B1] generatie  ⇒  generation  ::  B1
+  ✓ [B1] individu  ⇒  individual  ::  B1
+  ✓ [B1] karakter  ⇒  character  ::  B1
+  ✓ [B1] methode  ⇒  method  ::  B1
+  ✓ [B1] motief  ⇒  motive  ::  B1
+  ✓ [B1] officier  ⇒  officer  ::  B1
+  ✓ [B1] persoonlijkheid  ⇒  personality  ::  B1
+  ✓ [B1] pijnlijk  ⇒  painful  ::  B1
+  ✓ [B1] positie  ⇒  position  ::  B1
+  ✓ [B1] president  ⇒  president  ::  B1
+  ✓ [B1] produceren  ⇒  to produce  ::  B1
+  ✓ [B1] productie  ⇒  production  ::  B1
+  ✓ [B1] psychologisch  ⇒  psychological  ::  B1
+  ✓ [B1] psycholoog  ⇒  psychologist  ::  B1
+  ✓ [B1] sector  ⇒  sector  ::  B1
+  ✓ [B1] stijl  ⇒  style  ::  B1
+  ✓ [B1] structuur  ⇒  structure  ::  B1
+  ✓ [B1] term  ⇒  term  ::  B1
+  ✓ [B1] terrein  ⇒  terrain  ::  B1
+  ✓ [B1] visie  ⇒  vision  ::  B1
+  ✓ [B1] westers  ⇒  western  ::  B1
+  ✓ [B2] object  ⇒  object  ::  B2
+  ✓ [B2] psychologie  ⇒  psychology  ::  B2
+
+--- NL_DIFF_EN · TECHNICAL · ENRICHED (51)  [cosmetic; list gloss IS in enrichment] ---
+  = [A1] eindigen  ⇒  to end  ::  ours: eindigen = to finish [A1 · U1]  [synonym-same-sense]  {enr:✓ "to end"}
+  = [A1] komen  ⇒  come  ::  ours: Waar kom je vandaan? = Where are you from? [A1 · U1] | komen = to come [A1 · U3]  [infinitive]  {enr:✓ "come"}
+  = [A1] danken  ⇒  to thank  ::  ours: dank je wel = thank you [A1 · U2] | Nee = No thanks. [A1 · U2] | bedankt = thanks [A1 · U2]  [phrase-wrapper]  {enr:✓ "to thank"}
+  = [A1] drie  ⇒  three  ::  ours: drie = 3 [A1 · U2]  [digit]  {enr:✓ "three"}
+  = [A1] drinken  ⇒  drink  ::  ours: drinken = to drink [A1 · U2]  [infinitive]  {enr:✓ "drink"}
+  = [A1] klas  ⇒  class  ::  ours: de klas = classroom [A1 · U2]  [synonym-same-sense]  {enr:✓ "class"}
+  = [A1] klas  ⇒  class  ::  ours: de klas = classroom [A1 · U2]  [synonym-same-sense]  {enr:✓ "class"}
+  = [A1] luisteren  ⇒  listen  ::  ours: luisteren = to listen [A1 · U2]  [infinitive]  {enr:✓ "listen"}
+  = [A1] moeten  ⇒  should  ::  ours: moeten = to have to/to must [A1 · U2]  [synonym-same-sense]  {enr:✓ "should"}
+  = [A1] staan  ⇒  stand  ::  ours: staan = to stand [A1 · U2]  [infinitive]  {enr:✓ "stand"}
+  = [A1] tien  ⇒  ten  ::  ours: tien = 10 [A1 · U2]  [digit]  {enr:✓ "ten"}
+  = [A1] twee  ⇒  two  ::  ours: twee = 2 [A1 · U2]  [digit]  {enr:✓ "two"}
+  = [A1] vier  ⇒  four  ::  ours: vier = 4 [A1 · U2]  [digit]  {enr:✓ "four"}
+  = [A1] vijf  ⇒  five  ::  ours: vijf = 5 [A1 · U2]  [digit]  {enr:✓ "five"}
+  = [A1] zes  ⇒  six  ::  ours: zes = 6 [A1 · U2]  [digit]  {enr:✓ "six"}
+  = [A1] kunnen  ⇒  can/to be able to  ::  ours: kunnen = to be able/to can [A1 · U3]  [synonym-same-sense]  {enr:✓ "can"}
+  = [A1] lachen  ⇒  laugh  ::  ours: lachen = to laugh [A1 · U3]  [infinitive]  {enr:✓ "laugh"}
+  = [A1] vinden  ⇒  find  ::  ours: vinden = to find [A1 · U3] | vinden = to find/have an opinion [A1 · U4]  [infinitive]  {enr:✓ "find"}
+  = [A1] dom  ⇒  dumb  ::  ours: dom = stupid [A1 · U4]  [synonym-same-sense]  {enr:✓ "dumb"}
+  = [A1] ziek  ⇒  sick  ::  ours: ziek = ill [A1 · U5]  [synonym-same-sense]  {enr:✓ "sick"}
+  = [A1] brengen  ⇒  bring  ::  ours: brengen = to bring [A1 · U6]  [infinitive]  {enr:✓ "bring"}
+  = [A1] warm  ⇒  warm  ::  ours: warm = hot [A1 · U6]  [synonym-same-sense]  {enr:✓ "warm"}
+  = [A1] stoppen  ⇒  stop  ::  ours: stoppen = to stop [A1 · U7] | stoppen in = to insert [A2 · U1]  [infinitive]  {enr:✓ "stop"}
+  = [A1] film  ⇒  movie  ::  ours: de film = film [A1 · U8]  [synonym-same-sense]  {enr:✓ "movie"}
+  = [A2] normaal  ⇒  normal  ::  ours: normaal = usually [A2 · U1]  [adj/adv]  {enr:✓ "normal"}
+  = [A2] zo  ⇒  so  ::  ours: zo = like that [A2 · U2]  [synonym-same-sense]  {enr:✓ "so"}
+  = [A2] bespreken  ⇒  discuss  ::  ours: bespreken = to discuss [A2 · U3]  [infinitive]  {enr:✓ "discuss"}
+  = [A2] klant  ⇒  client  ::  ours: de klant = customer [A2 · U4]  [synonym-same-sense]  {enr:✓ "client"}
+  = [A2] vallen  ⇒  fall  ::  ours: vallen = to fall [A2 · U4]  [infinitive]  {enr:✓ "fall"}
+  = [A2] zullen  ⇒  shall  ::  ours: zullen = to will [A2 · U4]  [synonym-same-sense]  {enr:✓ "shall"}
+  = [A2] programma  ⇒  program  ::  ours: het programma = programme [A2 · U5]  [br/am-spelling]  {enr:✓ "program"}
+  = [A2] functie  ⇒  function  ::  ours: de functie = job [A2 · U6]  [synonym-same-sense]  {enr:✓ "function"}
+  = [A2] directeur  ⇒  director  ::  ours: de directeur = manager [A2 · U7]  [synonym-same-sense]  {enr:✓ "director"}
+  = [A2] dun  ⇒  thin  ::  ours: dun = skinny [A2 · U7]  [synonym-same-sense]  {enr:✓ "thin"}
+  = [A2] agent  ⇒  agent  ::  ours: de (politie)agent = policeman [A2 · U8]  [synonym-same-sense]  {enr:✓ "agent"}
+  = [A+] basis  ⇒  base  ::  ours: basis = basis [A+]  [synonym-same-sense]  {enr:✓ "base"}
+  = [A+] economie  ⇒  economy  ::  ours: economie = economics [A+]  [synonym-same-sense]  {enr:✓ "economy"}
+  = [A+] koel  ⇒  cool  ::  ours: koel = cold/chilly [A+]  [synonym-same-sense]  {enr:✓ "cool"}
+  = [A+] kust  ⇒  coast  ::  ours: kust = shoreline [A+]  [synonym-same-sense]  {enr:✓ "coast"}
+  = [A+] leiding  ⇒  leadership  ::  ours: leiding = lead/control [A+]  [synonym-same-sense]  {enr:✓ "leadership"}
+  = [A+] menen  ⇒  mean  ::  ours: menen = to think/to have an opinion/assumption [A+]  [synonym-same-sense]  {enr:✓ "mean"}
+  = [A+] passeren  ⇒  pass  ::  ours: passeren = to pass by [A+]  [infinitive]  {enr:✓ "pass"}
+  = [A+] plaatsen  ⇒  place  ::  ours: plaatsen = to place [A+]  [infinitive]  {enr:✓ "place"}
+  = [A+] relatie  ⇒  relationship  ::  ours: relatie = relation [A+]  [synonym-same-sense]  {enr:✓ "relationship"}
+  = [A+] schaduw  ⇒  shadow  ::  ours: schaduw = shade [A+]  [synonym-same-sense]  {enr:✓ "shadow"}
+  = [A+] stappen  ⇒  to step  ::  ours: stappen = to march [A+]  [synonym-same-sense]  {enr:✓ "to step"}
+  = [A+] verspreiden  ⇒  to spread  ::  ours: verspreiden = to spread around [A+]  [synonym-same-sense]  {enr:✓ "to spread"}
+  = [A+] vliegen  ⇒  fly  ::  ours: vliegen = to fly [A+]  [infinitive]  {enr:✓ "fly"}
+  = [A+] warmte  ⇒  warmth  ::  ours: de warmte = physical warmth/thermal energy/from moderate to heat [A+]  [synonym-same-sense]  {enr:✓ "warmth"}
+  = [B1] realiseren  ⇒  realize  ::  ours: realiseren = to realize/to achieve/to bring about [B1]  [infinitive]  {enr:✓ "realize"}
+  = [B1] vervullen  ⇒  fulfill  ::  ours: vervullen = to fulfill [B1]  [infinitive]  {enr:✓ "fulfill"}
+
+--- NL_DIFF_EN · TECHNICAL · NOT ENRICHED (21)  [cosmetic; list gloss NOT in enrichment] ---
+  = [A1] eind  ⇒  end  ::  ours: aan het eind = at the end [A1 · U3]  [phrase-wrapper]  {enr:✗ absent}
+  = [A1] moment  ⇒  moment  ::  ours: Een moment alstublieft. = A moment please. [A1 · U6] | op dit moment = at this moment [A2 · U5]  [phrase-wrapper]  {enr:✗ absent}
+  = [A1] kilometer  ⇒  kilometers  ::  ours: de kilometer = kilometer [A1 · U7]  [plural]  {enr:✗ absent}
+  = [A1] plezier  ⇒  pleasure  ::  ours: veel plezier = lots of fun [A1 · U8]  [phrase-wrapper]  {enr:✗ absent}
+  = [A2] geluk  ⇒  luck  ::  ours: geluk hebben = to be lucky [A2 · U1]  [phrase-wrapper]  {enr:✗ absent}
+  = [A2] persoonlijk  ⇒  personally  ::  ours: persoonlijk = personal [A2 · U3]  [adj/adv]  {enr:✗ absent}
+$M= [A2] direct  ⇒  directly  ::  ours: direct = right away [A2 · U4]  [synonym-same-sense]  {enr:✗ absent}
+  = [A2] begin  ⇒  get started  ::  ours: het begin = beginning [A2 · U5]  [pos-variant]  {enr:✗ absent}
+$M= [A2] dood  ⇒  death  ::  ours: dood = dead [A2 · U5]  [pos-variant]  {enr:✗ absent}
+  = [A2] techniek  ⇒  technic  ::  ours: de techniek = technics [A2 · U5]  [typo]  {enr:✗ absent}
+  = [A2] honger  ⇒  hungry  ::  ours: honger hebben = to be hungry [A2 · U7]  [phrase-wrapper]  {enr:✗ absent}
+  = [A2] officieel  ⇒  officially  ::  ours: officieel = official [A2 · U7]  [adj/adv]  {enr:✗ absent}
+$M= [A2] politie  ⇒  law enforcement  ::  ours: de politie = police [A2 · U8]  [synonym-same-sense]  {enr:✗ absent}
+  = [A+] absoluut  ⇒  absolutely  ::  ours: absoluut = absolute/complete/perfect [A+]  [adj/adv]  {enr:✗ absent}
+  = [A+] automatisch  ⇒  automatically  ::  ours: automatisch = automatic [A+]  [adj/adv]  {enr:✗ absent}
+  = [A+] individueel  ⇒  individually  ::  ours: individueel = individual [A+]  [adj/adv]  {enr:✗ absent}
+  = [A+] klassiek  ⇒  classic  ::  ours: klassiek = classical [A+]  [synonym-same-sense]  {enr:✗ absent}
+  = [B1] interesseren  ⇒  to be interested  ::  ours: interesseren = to interest [B1]  [synonym-same-sense]  {enr:✗ absent}
+  = [B1] mama  ⇒  mom  ::  ours: mama = mama/mother [B1]  [synonym-same-sense]  {enr:✗ absent}
+$N= [B1] ontbreken  ⇒  lack  ::  ours: ontbreken = to be missing [B1]  [synonym-same-sense]  {enr:✗ absent}
+  = [B1] relatief  ⇒  relatively  ::  ours: relatief = relative [B1]  [adj/adv]  {enr:✗ absent}
+
+--- NL_DIFF_EN · MEANINGFUL · ENRICHED (2)  [real sense gap; but enrichment carries list gloss] ---
+$N! [A2] houden  ⇒  to keep  ::  ours: houden voor = to hold in front of [A2 · U1]  [missing-sense] — Core houden='keep/hold' absent; only the phrasal 'houden voor' card exists.  {enr:✓ "to keep"}
+$M! [A2] meester  ⇒  master  ::  ours: de meester = male teacher [A2 · U3]  [missing-sense] — meester='master' sense missing; card only gives the primary-school 'male teacher' sense.  {enr:✓ "master"}
+
+--- NL_DIFF_EN · MEANINGFUL · NOT ENRICHED (3)  [real sense gap; list gloss nowhere] ---
+$N! [A1] alleen  ⇒  only  ::  ours: alleen = alone [A1 · U3]  [missing-sense] — alleen means both 'alone' and restrictive 'only'; the 'only' sense is missing.  {enr:✗ absent}
+$N! [A+] patroon  ⇒  pattern  ::  ours: patroon = patron saint [A+]  [different-sense] — Homonym: patroon='pattern' (source) vs 'patron saint' (ours) are distinct senses.  {enr:✗ absent}
+$N! [B1] beter  ⇒  better  ::  ours: beter = not sick anymore/recovered [B1]  [missing-sense] — Comparative 'better' (of goed) missing; only the 'recovered from illness' idiom taught.  {enr:✗ absent}
+
+--- OTHER_FORM (3)  [related form only] ---
+$N≈ [A1] pers  ⇒  press  ::  related: per = per [A1 · U3] | de persoon = person [A2 · U3] | p = abbreviation of paard [B1] | persen = to press tight/to squeeze [B1]
+  ≈ [A+] Holland  ⇒  Holland  ::  related: hollands = Hollandic [A+]
+$N≈ [B1] deze  ⇒  this  ::  related: d = abbreviation of dame [B1]
+
+--- MISSING (18)  [no card · alphabetical] ---
+$N✗ [—]  dat  ⇒  that
+$N✗ [—]  de  ⇒  the
+$N✗ [—]  dit  ⇒  this
+$N✗ [—]  een  ⇒  a
+$N✗ [—]  er  ⇒  there
+$N✗ [—]  fundamenteel  ⇒  fundamentally
+$N✗ [—]  geef  ⇒  give
+$N✗ [—]  goederen  ⇒  goods
+$N✗ [—]  het  ⇒  it
+$N✗ [—]  je  ⇒  you
+$N✗ [—]  jezelf  ⇒  yourself
+$N✗ [—]  luitenant  ⇒  lieutenant
+$N✗ [—]  me  ⇒  me
+$N✗ [—]  mezelf  ⇒  myself
+$N✗ [—]  of  ⇒  or
+$N✗ [—]  orgaan  ⇒  organ
+$N✗ [—]  theoretisch  ⇒  theoretically
+$N✗ [—]  we  ⇒  we
+
+========================================================================
+MEDIUM  (255 words)   — sorted by CEFR level (A1→A2→A+→B1→B2)
+========================================================================
+
+--- EXACT (177)  [CEFR · nl ⇒ en :: level] ---
+  ✓ [A1] kind  ⇒  child  ::  A1 · U1
+  ✓ [A1] klein  ⇒  small  ::  A1 · U1
+  ✓ [A1] ook  ⇒  also  ::  A1 · U1
+  ✓ [A1] oom  ⇒  uncle  ::  A1 · U1
+  ✓ [A1] vraag  ⇒  question  ::  A1 · U1
+  ✓ [A1] vrouw  ⇒  woman  ::  A1 · U1
+  ✓ [A1] zijn  ⇒  to be  ::  A1 · U1
+  ✓ [A1] zin  ⇒  sentence  ::  A1 · U1
+  ✓ [A1] fout  ⇒  mistake  ::  A1 · U2
+  ✓ [A1] graag  ⇒  gladly  ::  A1 · U2
+  ✓ [A1] makkelijk  ⇒  easy  ::  A1 · U2
+  ✓ [A1] snel  ⇒  fast  ::  A1 · U2
+  ✓ [A1] veel  ⇒  many  ::  A1 · U2
+  ✓ [A1] dak  ⇒  roof  ::  A1 · U3
+  ✓ [A1] dorp  ⇒  village  ::  A1 · U3
+  ✓ [A1] druk  ⇒  busy  ::  A1 · U3
+  ✓ [A1] gang  ⇒  corridor  ::  A1 · U3
+  ✓ [A1] geel  ⇒  yellow  ::  A1 · U3
+  ✓ [A1] grijs  ⇒  gray  ::  A1 · U3
+  ✓ [A1] hoog  ⇒  high  ::  A1 · U3
+  ✓ [A1] mooi  ⇒  beautiful  ::  A1 · U3
+  ✓ [A1] muur  ⇒  wall  ::  A1 · U3
+  ✓ [A1] raam  ⇒  window  ::  A1 · U3
+  ✓ [A1] stad  ⇒  city  ::  A1 · U3
+  ✓ [A1] stoel  ⇒  chair  ::  A1 · U3
+  ✓ [A1] stoel, de  ⇒  chair  ::  A1 · U3
+  ✓ [A1] thuis  ⇒  at home  ::  A1 · U3
+  ✓ [A1] vaak  ⇒  often  ::  A1 · U3
+  ✓ [A1] zwart  ⇒  black  ::  A1 · U3
+  ✓ [A1] bord  ⇒  plate  ::  A1 · U4
+  ✓ [A1] dom  ⇒  stupid  ::  A1 · U4
+  ✓ [A1] duur  ⇒  expensive  ::  A1 · U4
+  ✓ [A1] eten  ⇒  food  ::  A1 · U4
+  ✓ [A1] fijn  ⇒  nice  ::  A1 · U4
+  ✓ [A1] geld  ⇒  money  ::  A1 · U4
+  ✓ [A1] kaas  ⇒  cheese  ::  A1 · U4
+  ✓ [A1] klaar  ⇒  ready  ::  A1 · U4
+  ✓ [A1] mes  ⇒  knife  ::  A1 · U4
+  ✓ [A1] vlees  ⇒  meat  ::  A1 · U4
+  ✓ [A1] zak  ⇒  bag  ::  A1 · U4
+  ✓ [A1] been  ⇒  leg  ::  A1 · U5
+  ✓ [A1] elk  ⇒  each  ::  A1 · U5
+  ✓ [A1] hoofd  ⇒  head  ::  A1 · U5
+  ✓ [A1] keel  ⇒  throat  ::  A1 · U5
+  ✓ [A1] klacht  ⇒  complaint  ::  A1 · U5
+  ✓ [A1] lichaam  ⇒  body  ::  A1 · U5
+  ✓ [A1] maar  ⇒  but  ::  A1 · U5
+  ✓ [A1] mond  ⇒  mouth  ::  A1 · U5
+  ✓ [A1] nog  ⇒  yet  ::  A1 · U5
+  ✓ [A1] oog  ⇒  eye  ::  A1 · U5
+  ✓ [A1] rug  ⇒  back  ::  A1 · U5
+  ✓ [A1] tand  ⇒  tooth  ::  A1 · U5
+  ✓ [A1] broek  ⇒  pants  ::  A1 · U6
+  ✓ [A1] droog  ⇒  dry  ::  A1 · U6
+  ✓ [A1] feest  ⇒  party  ::  A1 · U6
+  ✓ [A1] gat  ⇒  hole  ::  A1 · U6
+  ✓ [A1] heel  ⇒  very  ::  A1 · U6
+  ✓ [A1] hoed  ⇒  hat  ::  A1 · U6
+  ✓ [A1] jas  ⇒  jacket  ::  A1 · U6
+  ✓ [A1] jurk  ⇒  dress  ::  A1 · U6
+  ✓ [A1] kort  ⇒  short  ::  A1 · U6
+  ✓ [A1] schoon  ⇒  clean  ::  A1 · U6
+  ✓ [A1] sturen  ⇒  to send  ::  A1 · U6
+  ✓ [A1] tijd  ⇒  time  ::  A1 · U6
+  ✓ [A1] zeer, heel  ⇒  very  ::  A2 · U5, A1 · U6
+  ✓ [A1] bij  ⇒  at  ::  A1 · U7
+  ✓ [A1] dus  ⇒  so  ::  A1 · U7
+  ✓ [A1] eerst  ⇒  first  ::  A1 · U7
+  ✓ [A1] fiets  ⇒  bicycle  ::  A1 · U7
+  ✓ [A1] kant  ⇒  side  ::  A1 · U7
+  ✓ [A1] links  ⇒  left  ::  A1 · U7
+  ✓ [A1] na  ⇒  after  ::  A1 · U7
+  ✓ [A1] net  ⇒  just  ::  A1 · U7
+  ✓ [A1] ons/onze  ⇒  our  ::  A1 · U7, A1 · U7
+  ✓ [A1] plek  ⇒  place  ::  A1 · U7
+  ✓ [A1] spoor  ⇒  track  ::  A1 · U7
+  ✓ [A1] tot  ⇒  until  ::  A1 · U7
+  ✓ [A1] ver  ⇒  far  ::  A1 · U7
+  ✓ [A1] via / door  ⇒  through  ::  A1 · U7, A2 · U7
+  ✓ [A1] bloem  ⇒  flower  ::  A1 · U8
+  ✓ [A1] dier  ⇒  animal  ::  A1 · U8
+  ✓ [A1] dik  ⇒  fat  ::  A1 · U8
+  ✓ [A1] hond  ⇒  dog  ::  A1 · U8
+  ✓ [A1] kwijt  ⇒  lost  ::  A1 · U8
+  ✓ [A1] langzaam  ⇒  slow  ::  A1 · U8
+  ✓ [A1] paard  ⇒  horse  ::  A1 · U8
+  ✓ [A1] strand  ⇒  beach  ::  A1 · U8
+  ✓ [A1] taal  ⇒  language  ::  A1 · U8
+  ✓ [A2] blij  ⇒  happy  ::  A2 · U1
+  ✓ [A2] boos  ⇒  angry  ::  A2 · U1
+  ✓ [A2] breed  ⇒  wide  ::  A2 · U1
+  ✓ [A2] kleed  ⇒  carpet  ::  A2 · U1
+  ✓ [A2] laag  ⇒  low  ::  A2 · U1
+  ✓ [A2] moe  ⇒  tired  ::  A2 · U1
+  ✓ [A2] ruim  ⇒  spacious  ::  A2 · U1
+  ✓ [A2] stil  ⇒  quiet  ::  A2 · U1
+  ✓ [A2] zacht  ⇒  soft  ::  A2 · U1, A2 · U4
+  ✓ [A2] zwaar  ⇒  heavy  ::  A2 · U1
+  ✓ [A2] boer  ⇒  farmer  ::  A2 · U2
+  ✓ [A2] brand  ⇒  fire  ::  A2 · U2
+  ✓ [A2] kerk  ⇒  church  ::  A2 · U2
+  ✓ [A2] nat  ⇒  wet  ::  A2 · U2
+  ✓ [A2] opnieuw  ⇒  again  ::  A2 · U2
+  ✓ [A2] vroeg  ⇒  early  ::  A2 · U2
+  ✓ [A2] zelfs  ⇒  even  ::  A2 · U2
+  ✓ [A2] bang  ⇒  afraid  ::  A2 · U3
+  ✓ [A2] bos  ⇒  forest  ::  A2 · U3
+  ✓ [A2] deel  ⇒  part  ::  A2 · U3
+  ✓ [A2] slecht  ⇒  bad  ::  A2 · U3
+  ✓ [A2] vast  ⇒  fixed  ::  A2 · U3
+  ✓ [A2] zorg  ⇒  care  ::  A2 · U3
+  ✓ [A2] fles  ⇒  bottle  ::  A2 · U4
+  ✓ [A2] gauw  ⇒  soon  ::  A2 · U4
+  ✓ [A2] klant  ⇒  customer  ::  A2 · U4
+  ✓ [A2] leeg  ⇒  empty  ::  A2 · U4
+  ✓ [A2] niks  ⇒  nothing  ::  A2 · U4
+  ✓ [A2] stem  ⇒  voice  ::  A2 · U4
+  ✓ [A2] dienst  ⇒  shift  ::  A2 · U5
+  ✓ [A2] hoek  ⇒  corner  ::  A2 · U5
+  ✓ [A2] sterk  ⇒  strong  ::  A2 · U5
+  ✓ [A2] straf  ⇒  punishment  ::  A2 · U5
+  ✓ [A2] streng  ⇒  strict  ::  A2 · U5
+  ✓ [A2] wet  ⇒  law  ::  A2 · U5
+  ✓ [A2] lid  ⇒  member  ::  A2 · U6
+  ✓ [A2] gek  ⇒  crazy  ::  A2 · U7
+  ✓ [A2] rijk  ⇒  rich  ::  A2 · U7
+  ✓ [A2] rook  ⇒  smoke  ::  A2 · U7
+  ✓ [A2] smaak  ⇒  taste  ::  A2 · U7
+  ✓ [A2] stuk  ⇒  piece  ::  A2 · U7
+  ✓ [A2] vloer  ⇒  floor  ::  A2 · U7
+  ✓ [A2] vreemd  ⇒  strange  ::  A2 · U7
+  ✓ [A2] zoet  ⇒  sweet  ::  A2 · U7
+  ✓ [A2] boom  ⇒  tree  ::  A2 · U8
+  ✓ [A2] boom, de  ⇒  tree  ::  A2 · U8
+  ✓ [A2] brug  ⇒  bridge  ::  A2 · U8
+  ✓ [A2] maan  ⇒  moon  ::  A2 · U8
+  ✓ [A2] schuld  ⇒  debt  ::  A2 · U8
+  ✓ [A2] tak  ⇒  branch  ::  A2 · U8
+  ✓ [A+] angst  ⇒  fear  ::  A+
+  ✓ [A+] boog  ⇒  bow  ::  A+
+  ✓ [A+] borst  ⇒  chest  ::  A+
+  ✓ [A+] brief  ⇒  letter  ::  A+
+  ✓ [A+] bron  ⇒  source  ::  A+
+  ✓ [A+] doos  ⇒  box  ::  A+
+  ✓ [A+] dwars  ⇒  transverse  ::  A+
+  ✓ [A+] eeuw  ⇒  century  ::  A+
+  ✓ [A+] geur  ⇒  smell  ::  A+
+  ✓ [A+] golf  ⇒  wave  ::  A+
+  ✓ [A+] hals  ⇒  neck  ::  A+
+  ✓ [A+] jeugd  ⇒  youth  ::  A+
+  ✓ [A+] kist  ⇒  chest  ::  A+
+  ✓ [A+] kracht  ⇒  power  ::  A+
+  ✓ [A+] kring  ⇒  circle  ::  A+
+  ✓ [A+] kruis  ⇒  cross  ::  A+
+  ✓ [A+] leer  ⇒  leather  ::  A+
+  ✓ [A+] maag  ⇒  stomach  ::  A+
+  ✓ [A+] moed  ⇒  courage  ::  A+
+  ✓ [A+] raad  ⇒  advice  ::  A+
+  ✓ [A+] rand  ⇒  edge  ::  A+
+  ✓ [A+] smal  ⇒  narrow  ::  A+
+  ✓ [A+] stof  ⇒  dust  ::  A+
+  ✓ [A+] strak  ⇒  tight  ::  A+
+  ✓ [A+] streek  ⇒  region  ::  A+
+  ✓ [A+] tong  ⇒  tongue  ::  A+
+  ✓ [A+] traan  ⇒  tear  ::  A+
+  ✓ [A+] veld  ⇒  field  ::  A+
+  ✓ [A+] vlucht  ⇒  flight  ::  A+
+  ✓ [A+] volk  ⇒  people  ::  A+
+  ✓ [A+] vrucht  ⇒  fruit  ::  A+
+  ✓ [A+] wand  ⇒  wall  ::  A+
+  ✓ [A+] wens  ⇒  wish  ::  A+
+  ✓ [A+] winst  ⇒  profit  ::  A+
+  ✓ [A+] wolk  ⇒  cloud  ::  A+
+  ✓ [A+] zwak  ⇒  weak  ::  A+
+  ✓ [B1] feit  ⇒  fact  ::  B1
+  ✓ [B1] groei  ⇒  growth  ::  B1
+  ✓ [B1] reeks  ⇒  series  ::  B1
+
+--- NL_DIFF_EN · TECHNICAL · ENRICHED (35)  [cosmetic; list gloss IS in enrichment] ---
+  = [A1] mens  ⇒  human  ::  ours: de mensen = people [A1 · U2]  [plural]  {enr:✓ "human"}
+  = [A1] naar  ⇒  to  ::  ours: naar = towards [A1 · U2]  [synonym-same-sense]  {enr:✓ "to"}
+  = [A1] buurt  ⇒  neighborhood  ::  ours: de buurt = neighbourhood [A1 · U3]  [br/am-spelling]  {enr:✓ "neighborhood"}
+  = [A1] kast  ⇒  closet  ::  ours: de kast = cupboard/cabinet [A1 · U3]  [synonym-same-sense]  {enr:✓ "closet"}
+  = [A1] mooi  ⇒  beautiful, pretty  ::  ours: mooi = beautiful [A1 · U3]  [synonym-same-sense]  {enr:✓ "beautiful"}
+  = [A1] trap  ⇒  stairs  ::  ours: de trap = stairway [A1 · U3]  [synonym-same-sense]  {enr:✓ "stairs"}
+  = [A1] van  ⇒  from / of  ::  ours: van = from/of [A1 · U3] | van = from [A1 · U7]  [synonym-same-sense]  {enr:✓ "from"}
+  = [A1] even  ⇒  for a bit, for a while  ::  ours: even = just/just a moment [A1 · U6]  [synonym-same-sense]  {enr:✓ "for a while"}
+  = [A1] maat  ⇒  measure  ::  ours: de maat = size [A1 · U6]  [synonym-same-sense]  {enr:✓ "measure"}
+  = [A1] als  ⇒  if/when  ::  ours: als = if [A1 · U8]  [synonym-same-sense]  {enr:✓ "if"}
+  = [A2] pas  ⇒  only  ::  ours: pas = just [A2 · U1]  [synonym-same-sense]  {enr:✓ "only"}
+  = [A2] lief  ⇒  sweet  ::  ours: liefs = love [A2 · U2] | lief = dear [A2 · U2]  [synonym-same-sense]  {enr:✓ "sweet"}
+  = [A2] zaal  ⇒  hall  ::  ours: de zaal = (big) room [A2 · U2]  [synonym-same-sense]  {enr:✓ "hall"}
+  = [A2] reis  ⇒  trip, journey  ::  ours: de reis = journey/trip [A2 · U3]  [synonym-same-sense]  {enr:✓ "trip"}
+  = [A2] rust  ⇒  peace/calm  ::  ours: de rust = rest/inactivity [A2 · U3]  [synonym-same-sense]  {enr:✓ "peace"}
+  = [A2] vak  ⇒  field, subject  ::  ours: het vak = school subject [A2 · U3]  [synonym-same-sense]  {enr:✓ "subject"}
+  = [A2] juist  ⇒  right  ::  ours: juist = correct [A2 · U4]  [synonym-same-sense]  {enr:✓ "right"}
+  = [A2] een paar  ⇒  a couple  ::  ours: een paar = a few [A2 · U5]  [synonym-same-sense]  {enr:✓ "a couple"}
+  = [A2] kans  ⇒  opportunity  ::  ours: de kans = chance [A2 · U5]  [synonym-same-sense]  {enr:✓ "opportunity"}
+  = [A2] zaak  ⇒  matter, business  ::  ours: de zaak = business [A2 · U6]  [synonym-same-sense]  {enr:✓ "matter"}
+  = [A2] dun  ⇒  thin  ::  ours: dun = skinny [A2 · U7]  [synonym-same-sense]  {enr:✓ "thin"}
+  = [A2] aarde  ⇒  soil  ::  ours: de aarde = earth [A2 · U8]  [synonym-same-sense]  {enr:✓ "soil"}
+  = [A+] geloof  ⇒  faith, belief  ::  ours: het geloof = belief/conviction [A+]  [synonym-same-sense]  {enr:✓ "faith"}
+  = [A+] grens  ⇒  border  ::  ours: grens = physical/territorial border/frontier [A+]  [synonym-same-sense]  {enr:✓ "border"}
+  = [A+] klap  ⇒  blow  ::  ours: klap = bang [A+]  [synonym-same-sense]  {enr:✓ "blow"}
+  = [A+] kust  ⇒  coast  ::  ours: kust = shoreline [A+]  [synonym-same-sense]  {enr:✓ "coast"}
+  = [A+] macht  ⇒  power  ::  ours: macht = political power/control [A+]  [synonym-same-sense]  {enr:✓ "power"}
+  = [A+] menen  ⇒  mean  ::  ours: menen = to think/to have an opinion/assumption [A+]  [synonym-same-sense]  {enr:✓ "mean"}
+  = [A+] ooit  ⇒  ever  ::  ours: ooit = sometime/someday/at some point [A+]  [synonym-same-sense]  {enr:✓ "ever"}
+  = [A+] poot  ⇒  leg  ::  ours: poot = limb of an animal [A+]  [synonym-same-sense]  {enr:✓ "leg"}
+  = [A+] strekken  ⇒  stretch  ::  ours: strekken = to stretch/to extend/to reach [A+]  [infinitive]  {enr:✓ "stretch"}
+  = [A+] stuur  ⇒  steering wheel  ::  ours: het stuur = steering device/handlebars on a bicycle [A+]  [synonym-same-sense]  {enr:✓ "steering wheel"}
+  = [B1] eis  ⇒  demand  ::  ours: eis = requirement [B1]  [synonym-same-sense]  {enr:✓ "demand"}
+  = [B1] kern  ⇒  core  ::  ours: kern = nucleus/physical core [B1]  [synonym-same-sense]  {enr:✓ "core"}
+  = [B1] met  ⇒  with  ::  ours: met = along with [B1]  [synonym-same-sense]  {enr:✓ "with"}
+
+--- NL_DIFF_EN · TECHNICAL · NOT ENRICHED (22)  [cosmetic; list gloss NOT in enrichment] ---
+$M= [A1] leuk  ⇒  fun  ::  ours: leuk = nice [A1 · U1]  [synonym-same-sense]  {enr:✗ absent}
+$J2= [A1] vlug / snel  ⇒  quickly  ::  ours: vlug = quick [A2 · U6] | snel = fast/quick [A1 · U2]  [adj/adv]  {enr:✗ absent}
+$M= [A1] weg  ⇒  away  ::  ours: weg = missing [A1 · U2] | de weg = road/way [A1 · U7] | de weg = way/route [A1 · U7]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] slot  ⇒  key lock  ::  ours: op slot = locked [A1 · U3] | ten slotte = finally [A2 · U1]  [synonym-same-sense]  {enr:✗ absent}
+$J2= [A1] pak  ⇒  business suit  ::  ours: het pak = pack [A1 · U4] | het pak = suit [A1 · U6]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] buik  ⇒  stomach  ::  ours: de buik = belly [A1 · U5]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] huisarts  ⇒  doctor  ::  ours: de huisarts = general practitioner [A1 · U5]  [synonym-same-sense]  {enr:✗ absent}
+  = [A1] keer  ⇒  times  ::  ours: de keer = time [A1 · U5] | nog een keer = again [A1 · U8]  [plural]  {enr:✗ absent}
+$N= [A1] last  ⇒  burden  ::  ours: Ik heb last van = I suffer from ... [A1 · U5] | last hebben van = to suffer from [A2 · U1]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] toch  ⇒  however  ::  ours: toch = nevertheless [A1 · U6]  [synonym-same-sense]  {enr:✗ absent}
+  = [A2] haast  ⇒  rush  ::  ours: haast hebben = to hurry [A2 · U5]  [synonym-same-sense]  {enr:– none}
+  = [A2] beurt  ⇒  turn  ::  ours: aan de beurt zijn = to have your turn [A2 · U7]  [synonym-same-sense]  {enr:– none}
+  = [A2] rij  ⇒  queue  ::  ours: in de rij staan = to stand in line [A2 · U7]  [synonym-same-sense]  {enr:✗ absent}
+  = [A2] trots  ⇒  pride  ::  ours: trots (op) = proud [A2 · U8]  [noun/adj]  {enr:✗ absent}
+  = [A+] doel  ⇒  target  ::  ours: het doel = aim/purpose [A+]  [synonym-same-sense]  {enr:✗ absent}
+$N= [A+] een poos  ⇒  a while  ::  ours: poos = undefined period of time/indefinite period [A+]  [synonym-same-sense]  {enr:✗ absent}
+  = [A+] eer  ⇒  honor  ::  ours: de eer = honour [A+]  [br/am-spelling]  {enr:✗ absent}
+$M= [A+] flink  ⇒  hefty  ::  ours: flink = large/considerable [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] greep  ⇒  grip  ::  ours: greep = grasp/clutches [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] nou  ⇒  well  ::  ours: nou = come on [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] tocht  ⇒  tour  ::  ours: tocht = journey/expedition/march [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] vent  ⇒  guy  ::  ours: vent = chap/fellow [A+]  [synonym-same-sense]  {enr:✗ absent}
+
+--- NL_DIFF_EN · MEANINGFUL · ENRICHED (7)  [real sense gap; but enrichment carries list gloss] ---
+$M! [A1] om  ⇒  around  ::  ours: om = at [A1 · U7]  [missing-sense] — Ours teaches temporal 'at'; spatial 'around' (om de hoek) is missing.  {enr:✓ "around"}
+$M! [A2] lucht  ⇒  sky  ::  ours: de lucht = air [A2 · U2]  [missing-sense] — Ours teaches 'air'; the distinct 'sky' referent is missing.  {enr:✓ "sky"}
+$M! [A2] recht  ⇒  straight  ::  ours: recht = orderly [A2 · U7]  [missing-sense] — recht = straight/upright; 'orderly' doesn't convey the spatial sense.  {enr:✓ "straight"}
+$M! [A2] stroom  ⇒  flow  ::  ours: de stroom = electric current [A2 · U8]  [missing-sense] — Ours restricts to electricity; water/stream 'flow' sense missing.  {enr:✓ "flow"}
+$M! [A+] beeld  ⇒  statue  ::  ours: het beeld = image [A+]  [missing-sense] — Ours teaches 'image'; concrete 'statue/sculpture' sense is missing.  {enr:✓ "statue"}
+$N! [A+] sfeer  ⇒  ambiance  ::  ours: sfeer = sphere/round object [A+]  [different-sense] — Common sense atmosphere/ambiance missing; ours teaches rare geometric sphere.  {enr:✓ "ambiance"}
+$N! [B1] troep  ⇒  mess  ::  ours: troep = group of people/animals [B1]  [different-sense] — troep = mess/junk vs troop/pack; the 'mess' sense is missing.  {enr:✓ "mess"}
+
+--- NL_DIFF_EN · MEANINGFUL · NOT ENRICHED (8)  [real sense gap; list gloss nowhere] ---
+$N! [A1] waar  ⇒  true  ::  ours: waar = where [A1 · U1]  [different-sense] — Homonyms: waar = true (adj) vs waar = where (interrogative).  {enr:✗ absent}
+$N! [A1] druk  ⇒  pressure  ::  ours: druk = busy [A1 · U3]  [different-sense] — de druk = pressure (noun) vs druk = busy (adj); different sense.  {enr:✗ absent}
+$M! [A2] knap  ⇒  good looking  ::  ours: knap = clever [A2 · U2]  [different-sense] — knap = good-looking AND clever; the good-looking sense is missing.  {enr:✗ absent}
+$N! [A2] blik  ⇒  look  ::  ours: het blik = can [A2 · U8]  [different-sense] — Homonyms: de blik = look/glance vs het blik = can/tin.  {enr:✗ absent}
+$N! [A+] blad  ⇒  sheet  ::  ours: het blad = leaf [A+]  [different-sense] — blad = leaf (plant) vs sheet (of paper); distinct referents.  {enr:✗ absent}
+$N! [A+] hoop  ⇒  pile  ::  ours: de hoop = hope/aspiration/wish [A+]  [different-sense] — Homonyms: de hoop = hope vs een hoop = pile/heap.  {enr:✗ absent}
+$M! [A+] slag  ⇒  battle  ::  ours: slag = blow/knock/strike [A+]  [missing-sense] — Ours teaches blow/strike; military 'battle' (de slag) sense missing.  {enr:✗ absent}
+$M! [A+] vlak  ⇒  flat  ::  ours: vlak = straight/immediately/just [A+]  [missing-sense] — Adjective vlak = flat/level not covered; ours gives adverbial 'just'.  {enr:✗ absent}
+
+--- OTHER_FORM (4)  [related form only] ---
+$J2≈ [A1] spel  ⇒  game  ::  related: Hoe spel je dat? = How do you spell that? [A1 · U2] | spelen = to play [A1 · U8] | 's = clipping of eens [A+] | speler = player [A+]
+  ≈ [A1] wangen  ⇒  cheeks  ::  related: de wang = cheek [A1 · U5]
+$N≈ [A2] het liefst  ⇒  most preferably  ::  related: liefs = love [A2 · U2] | lief = dear [A2 · U2]
+$N≈ [A2] lijk  ⇒  corpse  ::  related: lijken = to appear [A2 · U2] | lijkwit = extremely pale [B1]
+
+--- MISSING (2)  [no card · alphabetical] ---
+$N✗ [—]  er  ⇒  there
+$N✗ [—]  heen  ⇒  away
+
+========================================================================
+HARD  (364 words)   — sorted by CEFR level (A1→A2→A+→B1→B2)
+========================================================================
+
+--- EXACT (255)  [CEFR · nl ⇒ en :: level] ---
+  ✓ [A1] dezelfde  ⇒  the same  ::  A1 · U1
+  ✓ [A1] mevrouw  ⇒  Mrs.  ::  A1 · U1
+  ✓ [A1] verschillend  ⇒  different  ::  A1 · U1
+  ✓ [A1] bijvoorbeeld  ⇒  for example  ::  A1 · U2
+  ✓ [A1] buiten  ⇒  outside  ::  A1 · U2
+  ✓ [A1] iemand  ⇒  someone  ::  A1 · U2
+  ✓ [A1] makkelijk  ⇒  easy  ::  A1 · U2
+  ✓ [A1] moeilijk  ⇒  difficult  ::  A1 · U2
+  ✓ [A1] samen  ⇒  together  ::  A1 · U2
+  ✓ [A1] vandaag  ⇒  today  ::  A1 · U2
+  ✓ [A1] boven  ⇒  upstairs  ::  A1 · U3
+  ✓ [A1] kamer  ⇒  room  ::  A1 · U3
+  ✓ [A1] keuken  ⇒  kitchen  ::  A1 · U3
+  ✓ [A1] rustig  ⇒  quiet  ::  A1 · U3
+  ✓ [A1] slaapkamer  ⇒  bedroom  ::  A1 · U3
+  ✓ [A1] sleutel  ⇒  key  ::  A1 · U3
+  ✓ [A1] verdieping  ⇒  floor  ::  A1 · U3
+  ✓ [A1] zonder  ⇒  without  ::  A1 · U3
+  ✓ [A1] altijd  ⇒  always  ::  A1 · U4
+  ✓ [A1] bijna  ⇒  almost  ::  A1 · U4
+  ✓ [A1] genoeg  ⇒  enough  ::  A1 · U4
+  ✓ [A1] goedkoop  ⇒  cheap  ::  A1 · U4
+  ✓ [A1] hetzelfde  ⇒  the same  ::  A1 · U4
+  ✓ [A1] meestal  ⇒  mostly  ::  A1 · U4
+  ✓ [A1] terug  ⇒  back  ::  A1 · U4
+  ✓ [A1] afspraak  ⇒  appointment  ::  A1 · U5
+  ✓ [A1] ander  ⇒  other  ::  A1 · U5
+  ✓ [A1] dagelijks  ⇒  daily  ::  A1 · U5
+  ✓ [A1] gezicht  ⇒  face  ::  A1 · U5
+  ✓ [A1] helemaal  ⇒  completely  ::  A1 · U5
+  ✓ [A1] misschien  ⇒  maybe  ::  A1 · U5
+  ✓ [A1] natuurlijk  ⇒  of course  ::  A1 · U5
+  ✓ [A1] waarschijnlijk  ⇒  probably  ::  A1 · U5
+  ✓ [A1] ziekenhuis  ⇒  hospital  ::  A1 · U5
+  ✓ [A1] allebei  ⇒  both  ::  A1 · U6
+  ✓ [A1] behalve  ⇒  except  ::  A1 · U6
+  ✓ [A1] donker  ⇒  dark  ::  A1 · U6
+  ✓ [A1] kapot  ⇒  broken  ::  A1 · U6
+  ✓ [A1] kleren  ⇒  clothes  ::  A1 · U6
+  ✓ [A1] meteen  ⇒  right away  ::  A1 · U6
+  ✓ [A1] betekenis  ⇒  meaning  ::  A1 · U7
+  ✓ [A1] eiland  ⇒  island  ::  A1 · U7
+  ✓ [A1] eindelijk  ⇒  finally  ::  A1 · U7
+  ✓ [A1] gelukkig  ⇒  happy  ::  A1 · U7
+  ✓ [A1] over  ⇒  about  ::  A1 · U7
+  ✓ [A1] regel  ⇒  rule  ::  A1 · U7
+  ✓ [A1] tegenover  ⇒  opposite  ::  A1 · U7
+  ✓ [A1] daarom  ⇒  therefore  ::  A1 · U8
+  ✓ [A1] gezond  ⇒  healthy  ::  A1 · U8
+  ✓ [A1] herhalen  ⇒  to repeat  ::  A1 · U8
+  ✓ [A1] inderdaad  ⇒  indeed  ::  A1 · U8
+  ✓ [A1] manier  ⇒  way  ::  A1 · U8
+  ✓ [A1] overal  ⇒  everywhere  ::  A1 · U8
+  ✓ [A1] vriendin  ⇒  girlfriend  ::  A1 · U8
+  ✓ [A2] ergens  ⇒  somewhere  ::  A2 · U1
+  ✓ [A2] gesprek  ⇒  conversation  ::  A2 · U1
+  ✓ [A2] leeftijd  ⇒  age  ::  A2 · U1
+  ✓ [A2] spiegel  ⇒  mirror  ::  A2 · U1
+  ✓ [A2] veilig  ⇒  safe  ::  A2 · U1
+  ✓ [A2] vergelijking  ⇒  comparison  ::  A2 · U1
+  ✓ [A2] verschil  ⇒  difference  ::  A2 · U1
+  ✓ [A2] gevaarlijk  ⇒  dangerous  ::  A2 · U2
+  ✓ [A2] huwelijk  ⇒  wedding  ::  A2 · U2
+  ✓ [A2] namelijk  ⇒  namely  ::  A2 · U2
+  ✓ [A2] ongeluk  ⇒  accident  ::  A2 · U2
+  ✓ [A2] opnieuw  ⇒  again  ::  A2 · U2
+  ✓ [A2] reden  ⇒  reason  ::  A2 · U2
+  ✓ [A2] rekening  ⇒  bill  ::  A2 · U2
+  ✓ [A2] verdrietig  ⇒  sad  ::  A2 · U2
+  ✓ [A2] verhaal  ⇒  story  ::  A2 · U2
+  ✓ [A2] wereld  ⇒  world  ::  A2 · U2
+  ✓ [A2] ziekte  ⇒  disease  ::  A2 · U2
+  ✓ [A2] aandacht  ⇒  attention  ::  A2 · U3
+  ✓ [A2] geschiedenis  ⇒  history  ::  A2 · U3
+  ✓ [A2] gezondheid  ⇒  health  ::  A2 · U3
+  ✓ [A2] leerling  ⇒  pupil  ::  A2 · U3
+  ✓ [A2] mening  ⇒  opinion  ::  A2 · U3
+  ✓ [A2] niemand  ⇒  nobody  ::  A2 · U3
+  ✓ [A2] onderzoek  ⇒  research  ::  A2 · U3
+  ✓ [A2] ontwikkeling  ⇒  development  ::  A2 · U3
+  ✓ [A2] oorlog  ⇒  war  ::  A2 · U3
+  ✓ [A2] overheid  ⇒  government  ::  A2 · U3
+  ✓ [A2] personeel  ⇒  staff  ::  A2 · U3
+  ✓ [A2] volgens  ⇒  according to  ::  A2 · U3
+  ✓ [A2] voorstel  ⇒  proposal  ::  A2 · U3
+  ✓ [A2] beroep  ⇒  profession  ::  A2 · U4
+  ✓ [A2] geleden  ⇒  ago  ::  A2 · U4
+  ✓ [A2] moeite  ⇒  effort  ::  A2 · U4
+  ✓ [A2] nergens  ⇒  nowhere  ::  A2 · U4
+  ✓ [A2] onmiddellijk  ⇒  immediately  ::  A2 · U4
+  ✓ [A2] opleiding  ⇒  education  ::  A2 · U4
+  ✓ [A2] oplossing  ⇒  solution  ::  A2 · U4
+  ✓ [A2] schrijver  ⇒  writer  ::  A2 · U4
+  ✓ [A2] vergadering  ⇒  meeting  ::  A2 · U4
+  ✓ [A2] bedrijf  ⇒  company  ::  A2 · U5
+  ✓ [A2] deken  ⇒  blanket  ::  A2 · U5
+  ✓ [A2] eigen  ⇒  own  ::  A2 · U5
+  ✓ [A2] ervaring  ⇒  experience  ::  A2 · U5
+  ✓ [A2] geluid  ⇒  sound  ::  A2 · U5
+  ✓ [A2] gevoel  ⇒  feeling  ::  A2 · U5
+  ✓ [A2] leraar  ⇒  teacher  ::  A2 · U5
+  ✓ [A2] mogelijk  ⇒  possible  ::  A2 · U5
+  ✓ [A2] omhoog  ⇒  up  ::  A2 · U5
+  ✓ [A2] onderwijs  ⇒  education  ::  A2 · U5
+  ✓ [A2] prettig  ⇒  pleasant  ::  A2 · U5
+  ✓ [A2] regering  ⇒  government  ::  A2 · U5
+  ✓ [A2] tijdschrift  ⇒  magazine  ::  A2 · U5
+  ✓ [A2] toekomst  ⇒  future  ::  A2 · U5
+  ✓ [A2] vreselijk  ⇒  horrible  ::  A2 · U5
+  ✓ [A2] vrijheid  ⇒  freedom  ::  A2 · U5
+  ✓ [A2] afdeling  ⇒  department  ::  A2 · U6
+  ✓ [A2] gebouw  ⇒  building  ::  A2 · U6
+  ✓ [A2] kantoor  ⇒  office  ::  A2 · U6
+  ✓ [A2] zoals  ⇒  such as  ::  A2 · U6
+  ✓ [A2] aanwezig  ⇒  present  ::  A2 · U7
+  ✓ [A2] bureau  ⇒  desk  ::  A2 · U7
+  ✓ [A2] geheim  ⇒  secret  ::  A2 · U7
+  ✓ [A2] gevaar  ⇒  danger  ::  A2 · U7
+  ✓ [A2] lelijk  ⇒  ugly  ::  A2 · U7
+  ✓ [A2] verslag  ⇒  report  ::  A2 · U7
+  ✓ [A2] vrolijk  ⇒  cheerful  ::  A2 · U7
+  ✓ [A2] eigenaar  ⇒  owner  ::  A2 · U8
+  ✓ [A2] keuze  ⇒  choice  ::  A2 · U8
+  ✓ [A2] koffer  ⇒  suitcase  ::  A2 · U8
+  ✓ [A2] plotseling  ⇒  suddenly  ::  A2 · U8
+  ✓ [A2] woning  ⇒  house  ::  A2 · U8
+  ✓ [A+] aantrekkelijk  ⇒  attractive  ::  A+
+  ✓ [A+] aanval  ⇒  attack  ::  A+
+  ✓ [A+] afstand  ⇒  distance  ::  A+
+  ✓ [A+] algemeen  ⇒  general  ::  A+
+  ✓ [A+] arbeider  ⇒  worker  ::  A+
+  ✓ [A+] begrip  ⇒  understanding  ::  A+
+  ✓ [A+] belang  ⇒  interest  ::  A+
+  ✓ [A+] beleid  ⇒  policy  ::  A+
+  ✓ [A+] bereid  ⇒  prepared  ::  A+
+  ✓ [A+] beslissing  ⇒  decision  ::  A+
+  ✓ [A+] besluit  ⇒  decision  ::  A+
+  ✓ [A+] beweging  ⇒  movement  ::  A+
+  ✓ [A+] bewijs  ⇒  proof  ::  A+
+  ✓ [A+] bewust  ⇒  conscious  ::  A+
+  ✓ [A+] bezig  ⇒  busy  ::  A+
+  ✓ [A+] boodschap  ⇒  message  ::  A+
+  ✓ [A+] bovendien  ⇒  moreover  ::  A+
+  ✓ [A+] buitenlands  ⇒  foreign  ::  A+
+  ✓ [A+] eenmaal  ⇒  once  ::  A+
+  ✓ [A+] eenvoudig  ⇒  simple  ::  A+
+  ✓ [A+] ernstig  ⇒  serious  ::  A+
+  ✓ [A+] gebied  ⇒  area  ::  A+
+  ✓ [A+] gebruik  ⇒  use  ::  A+
+  ✓ [A+] gedachte  ⇒  thought  ::  A+
+  ✓ [A+] gedicht  ⇒  poem  ::  A+
+  ✓ [A+] gelegenheid  ⇒  opportunity  ::  A+
+  ✓ [A+] gemakkelijk  ⇒  easy  ::  A+
+  ✓ [A+] gemeen  ⇒  mean  ::  A+
+  ✓ [A+] geur  ⇒  smell  ::  A+
+  ✓ [A+] geval  ⇒  case  ::  A+
+  ✓ [A+] gevolg  ⇒  consequence  ::  A+
+  ✓ [A+] gewoonte  ⇒  habit  ::  A+
+  ✓ [A+] glimlach  ⇒  smile  ::  A+
+  ✓ [A+] godsdienst  ⇒  religion  ::  A+
+  ✓ [A+] heuvel  ⇒  hill  ::  A+
+  ✓ [A+] indruk  ⇒  impression  ::  A+
+  ✓ [A+] inmiddels  ⇒  in the meantime  ::  A+
+  ✓ [A+] intussen  ⇒  meanwhile  ::  A+
+  ✓ [A+] invloed  ⇒  influence  ::  A+
+  ✓ [A+] koningin  ⇒  queen  ::  A+
+  ✓ [A+] kunstenaar  ⇒  artist  ::  A+
+  ✓ [A+] landschap  ⇒  landscape  ::  A+
+  ✓ [A+] man, echtgenoot  ⇒  husband  ::  A+
+  ✓ [A+] menselijk  ⇒  human  ::  A+
+  ✓ [A+] moeilijkheid  ⇒  difficulty  ::  A+
+  ✓ [A+] mogelijkheid  ⇒  possibility  ::  A+
+  ✓ [A+] nogal  ⇒  quite  ::  A+
+  ✓ [A+] omgeving  ⇒  surroundings  ::  A+
+  ✓ [A+] onmogelijk  ⇒  impossible  ::  A+
+  ✓ [A+] ontmoeting  ⇒  meeting  ::  A+
+  ✓ [A+] onverwacht  ⇒  unexpected  ::  A+
+  ✓ [A+] oorzaak  ⇒  cause  ::  A+
+  ✓ [A+] openbaar  ⇒  public  ::  A+
+  ✓ [A+] opvoeding  ⇒  education  ::  A+
+  ✓ [A+] rechter  ⇒  judge  ::  A+
+  ✓ [A+] ruimte  ⇒  space  ::  A+
+  ✓ [A+] snelheid  ⇒  speed  ::  A+
+  ✓ [A+] soldaat  ⇒  soldier  ::  A+
+  ✓ [A+] stilte  ⇒  silence  ::  A+
+  ✓ [A+] tegenstander  ⇒  opponent  ::  A+
+  ✓ [A+] tenminste  ⇒  at least  ::  A+
+  ✓ [A+] tenslotte  ⇒  finally  ::  A+
+  ✓ [A+] toekomstig  ⇒  future  ::  A+
+  ✓ [A+] twijfel  ⇒  doubt  ::  A+
+  ✓ [A+] uitdrukking  ⇒  expression  ::  A+
+  ✓ [A+] uitspraak  ⇒  pronunciation  ::  A+
+  ✓ [A+] verandering  ⇒  change  ::  A+
+  ✓ [A+] verbaasd  ⇒  surprised  ::  A+
+  ✓ [A+] verband  ⇒  bandage  ::  A+
+  ✓ [A+] verder  ⇒  further  ::  A+
+  ✓ [A+] verdriet  ⇒  sadness  ::  A+
+  ✓ [A+] verlangen  ⇒  desire  ::  A+
+  ✓ [A+] verleden  ⇒  past  ::  A+
+  ✓ [A+] verlies  ⇒  loss  ::  A+
+  ✓ [A+] verschrikkelijk  ⇒  terrible  ::  A+
+  ✓ [A+] vertrek  ⇒  departure  ::  A+
+  ✓ [A+] verwachting  ⇒  expectation  ::  A+
+  ✓ [A+] vijand  ⇒  enemy  ::  A+
+  ✓ [A+] vochtig  ⇒  moist  ::  A+
+  ✓ [A+] voedsel  ⇒  food  ::  A+
+  ✓ [A+] voorbeeld  ⇒  example  ::  A+
+  ✓ [A+] voorhoofd  ⇒  forehead  ::  A+
+  ✓ [A+] voorkeur  ⇒  preference  ::  A+
+  ✓ [A+] voorzichtig  ⇒  careful  ::  A+
+  ✓ [A+] vrede  ⇒  peace  ::  A+
+  ✓ [A+] vreugde  ⇒  joy  ::  A+
+  ✓ [A+] waarde  ⇒  value  ::  A+
+  ✓ [A+] waarheid  ⇒  truth  ::  A+
+  ✓ [A+] werkelijkheid  ⇒  reality  ::  A+
+  ✓ [A+] wetenschappelijk  ⇒  scientific  ::  A+
+  ✓ [A+] zolang  ⇒  as long as  ::  A+
+  ✓ [B1] achtergrond  ⇒  background  ::  B1
+  ✓ [B1] ambtenaar  ⇒  civil servant  ::  B1
+  ✓ [B1] behandeling  ⇒  therapy  ::  B1
+  ✓ [B1] behoefte  ⇒  need  ::  B1
+  ✓ [B1] bezit  ⇒  possession  ::  B1
+  ✓ [B1] bijdrage  ⇒  contribution  ::  B1
+  ✓ [B1] burgemeester  ⇒  mayor  ::  B1
+  ✓ [B1] echter  ⇒  however  ::  B1
+  ✓ [B1] evenwicht  ⇒  balance  ::  B1
+  ✓ [B1] gedeelte  ⇒  part  ::  B1
+  ✓ [B1] gedrag  ⇒  behaviour  ::  B1
+  ✓ [B1] geheel  ⇒  whole  ::  B1
+  ✓ [B1] geweld  ⇒  violence  ::  B1
+  ✓ [B1] gewoonlijk  ⇒  usually  ::  B1
+  ✓ [B1] gezag  ⇒  authority  ::  B1
+  ✓ [B1] handeling  ⇒  act  ::  B1
+  ✓ [B1] hoogte  ⇒  height  ::  B1
+  ✓ [B1] houding  ⇒  attitude  ::  B1
+  ✓ [B1] maatregel  ⇒  measure  ::  B1
+  ✓ [B1] milieu  ⇒  environment  ::  B1
+  ✓ [B1] nauwelijks  ⇒  barely  ::  B1
+  ✓ [B1] nauwkeurig  ⇒  accurate  ::  B1
+  ✓ [B1] noodzaak  ⇒  need  ::  B1
+  ✓ [B1] noodzakelijk  ⇒  necessary  ::  B1
+  ✓ [B1] omstandigheid  ⇒  circumstance  ::  B1
+  ✓ [B1] poging  ⇒  attempt  ::  B1
+  ✓ [B1] samenleving  ⇒  society  ::  B1
+  ✓ [B1] samenwerking  ⇒  cooperation  ::  B1
+  ✓ [B1] schade  ⇒  damage  ::  B1
+  ✓ [B1] uitsluitend  ⇒  exclusively  ::  B1
+  ✓ [B1] uitzondering  ⇒  exception  ::  B1
+  ✓ [B1] verantwoordelijkheid  ⇒  responsibility  ::  B1
+  ✓ [B1] verklaring  ⇒  statement  ::  B1
+  ✓ [B1] verzoek  ⇒  request  ::  B1
+  ✓ [B1] vrijwel  ⇒  almost  ::  B1
+  ✓ [B1] wellicht  ⇒  perhaps  ::  B1
+  ✓ [B2] burgerlijk  ⇒  civil  ::  B2
+  ✓ [B2] geheugen  ⇒  memory  ::  B2
+
+--- NL_DIFF_EN · TECHNICAL · ENRICHED (43)  [cosmetic; list gloss IS in enrichment] ---
+  = [A1] gezin  ⇒  family  ::  ours: het gezin = family household [A1 · U1]  [synonym-same-sense]  {enr:✓ "family"}
+  = [A1] binnen  ⇒  within, inside  ::  ours: binnen = inside [A1 · U2] | binnen = within [A2 · U8]  [synonym-same-sense]  {enr:✓ "inside"}
+  = [A1] opdracht  ⇒  assignment, exercise  ::  ours: de opdracht = assignment [A1 · U2]  [synonym-same-sense]  {enr:✓ "assignment"}
+  = [A1] gezellig  ⇒  cozy  ::  ours: gezellig = cosy [A1 · U3]  [br/am-spelling]  {enr:✓ "cozy"}
+  = [A1] weinig  ⇒  little, few  ::  ours: weinig = few/little [A1 · U3]  [synonym-same-sense]  {enr:✓ "little"}
+  = [A1] lekker  ⇒  tasty, nice  ::  ours: lekker = delicious [A1 · U4]  [synonym-same-sense]  {enr:✓ "tasty"}
+  = [A1] bellen  ⇒  dial  ::  ours: bellen = to dial/to call by phone [A1 · U5]  [infinitive]  {enr:✓ "dial"}
+  = [A1] eerder  ⇒  earlier  ::  ours: eerder = previously [A1 · U5]  [synonym-same-sense]  {enr:✓ "earlier"}
+  = [A1] alles  ⇒  everything  ::  ours: alles = all/everythingh [A1 · U6]  [typo]  {enr:✓ "everything"}
+  = [A1] ongeveer  ⇒  approximately  ::  ours: ongeveer = about [A1 · U6]  [synonym-same-sense]  {enr:✓ "approximately"}
+  = [A1] dichtbij  ⇒  nearby  ::  ours: dichtbij = near [A1 · U7]  [synonym-same-sense]  {enr:✓ "nearby"}
+  = [A1] iedereen  ⇒  everyone  ::  ours: iedereen = everybody [A1 · U8]  [synonym-same-sense]  {enr:✓ "everyone"}
+  = [A2] bijzonder  ⇒  special  ::  ours: bijzonder = extraordinary [A2 · U2]  [synonym-same-sense]  {enr:✓ "special"}
+  = [A2] heerlijk  ⇒  delicious  ::  ours: heerlijk = delightful [A2 · U2]  [synonym-same-sense]  {enr:✓ "delicious"}
+  = [A2] onderwerp  ⇒  topic, subject  ::  ours: het onderwerp = subject/issue [A2 · U2]  [synonym-same-sense]  {enr:✓ "topic"}
+  = [A2] geweldig  ⇒  awesome, great  ::  ours: geweldig = great [A2 · U4]  [synonym-same-sense]  {enr:✓ "awesome"}
+  = [A2] overleg  ⇒  consultation  ::  ours: het overleg = a meeting at work [A2 · U4]  [synonym-same-sense]  {enr:✓ "consultation"}
+  = [A2] tevreden  ⇒  satisfied; pleased  ::  ours: tevreden = satisfied/content [A2 · U4]  [synonym-same-sense]  {enr:✓ "satisfied"}
+  = [A2] vereniging  ⇒  association, club  ::  ours: de vereniging = association [A2 · U6]  [synonym-same-sense]  {enr:✓ "association"}
+  = [A2] volledig  ⇒  complete  ::  ours: volledig = entire [A2 · U6]  [synonym-same-sense]  {enr:✓ "complete"}
+  = [A2] aarde  ⇒  soil  ::  ours: de aarde = earth [A2 · U8]  [synonym-same-sense]  {enr:✓ "soil"}
+  = [A2] bodem  ⇒  bottom, ground  ::  ours: de bodem = bottom [A2 · U8]  [synonym-same-sense]  {enr:✓ "bottom"}
+  = [A+] bevatten  ⇒  contain  ::  ours: bevatten = to contain [A+]  [infinitive]  {enr:✓ "contain"}
+  = [A+] gemak  ⇒  ease  ::  ours: het gemak = convenience [A+]  [synonym-same-sense]  {enr:✓ "ease"}
+  = [A+] gevangenis  ⇒  jail, prison  ::  ours: gevangenis = jail/prison [A+]  [synonym-same-sense]  {enr:✓ "jail"}
+  = [A+] redelijk  ⇒  reasonable, reasonably  ::  ours: redelijk = reasonable [A+]  [adj/adv]  {enr:✓ "reasonable"}
+  = [A+] spanning  ⇒  tension, stress  ::  ours: spanning = tension/suspense [A+]  [synonym-same-sense]  {enr:✓ "tension"}
+  = [A+] stijgen  ⇒  rise  ::  ours: stijgen = to climb/to go up/to rise [A+]  [synonym-same-sense]  {enr:✓ "rise"}
+  = [A+] trouwens  ⇒  besides, by the way  ::  ours: trouwens = besides/by the way [A+]  [synonym-same-sense]  {enr:✓ "besides"}
+  = [A+] uitstekend  ⇒  excellent; outstanding  ::  ours: uitstekend = outstanding/excellent [A+]  [synonym-same-sense]  {enr:✓ "excellent"}
+  = [A+] verstand  ⇒  wit, wiseness  ::  ours: het verstand = reason/mind/intellect [A+]  [synonym-same-sense]  {enr:✓ "wit"}
+  = [A+] voorwerp  ⇒  object  ::  ours: het voorwerp = physical object [A+]  [synonym-same-sense]  {enr:✓ "object"}
+  = [B1] bestuur  ⇒  board  ::  ours: het bestuur = management [B1]  [synonym-same-sense]  {enr:✓ "board"}
+  = [B1] definitief  ⇒  final  ::  ours: definitief = definitive/conclusive [B1]  [synonym-same-sense]  {enr:✓ "final"}
+  = [B1] doelstelling  ⇒  goal, objective  ::  ours: doelstelling = objective/goal/aim [B1]  [synonym-same-sense]  {enr:✓ "goal"}
+  = [B1] kern  ⇒  core  ::  ours: kern = nucleus/physical core [B1]  [synonym-same-sense]  {enr:✓ "core"}
+  = [B1] nuttig  ⇒  helpful; useful  ::  ours: nuttig = useful/handy [B1]  [synonym-same-sense]  {enr:✓ "useful"}
+  = [B1] onderscheid  ⇒  difference, distinction  ::  ours: het onderscheid = difference [B1]  [synonym-same-sense]  {enr:✓ "difference"}
+  = [B1] ongetwijfeld  ⇒  undoubtedly, surely  ::  ours: ongetwijfeld = undoubtedly/surely [B1]  [synonym-same-sense]  {enr:✓ "undoubtedly"}
+  = [B1] oordeel  ⇒  judgment  ::  ours: het oordeel = opinion/judgement [B1]  [br/am-spelling]  {enr:✓ "judgment"}
+  = [B1] overig  ⇒  other, remaining  ::  ours: overig = remaining [B1]  [synonym-same-sense]  {enr:✓ "remaining"}
+  = [B1] verhouding  ⇒  ratio  ::  ours: verhouding = proportion [B1]  [synonym-same-sense]  {enr:✓ "ratio"}
+  = [B2] opvatting  ⇒  view  ::  ours: opvatting = concept/idea [B2]  [synonym-same-sense]  {enr:✓ "view"}
+
+--- NL_DIFF_EN · TECHNICAL · NOT ENRICHED (34)  [cosmetic; list gloss NOT in enrichment] ---
+  = [A1] aantal  ⇒  number of  ::  ours: het aantal = number/amount [A1 · U3]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] beneden  ⇒  down  ::  ours: beneden = downstairs [A1 · U3]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] allemaal  ⇒  all of them  ::  ours: allemaal = all [A1 · U4]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] daarna  ⇒  after that  ::  ours: daarna = thereafter [A1 · U4]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A1] jammer  ⇒  unfortunately  ::  ours: jammer = pity/shame [A1 · U6]  [synonym-same-sense]  {enr:✗ absent}
+  = [A1] bezoek  ⇒  visit  ::  ours: op bezoek = visiting [A1 · U8]  [article-wrapper]  {enr:✗ absent}
+  = [A1] langzaam  ⇒  slowly  ::  ours: langzaam = slow [A1 · U8]  [adj/adv]  {enr:✗ absent}
+  = [A1] tegenstelling  ⇒  contrary  ::  ours: de tegenstelling = opposite [A1 · U8]  [synonym-same-sense]  {enr:✗ absent}
+  = [A2] duidelijk  ⇒  clearly  ::  ours: duidelijk = clear [A2 · U1]  [adj/adv]  {enr:✗ absent}
+$M= [A2] vervolgens  ⇒  thereafter  ::  ours: vervolgens = subsequently [A2 · U1]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] prachtig  ⇒  magnificent  ::  ours: prachtig = beautiful [A2 · U2]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] vroeger  ⇒  back in the days  ::  ours: vroeger = in former times/in the past [A2 · U2]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] persoonlijk  ⇒  in person  ::  ours: persoonlijk = personal [A2 · U3]  [adj/adv]  {enr:✗ absent}
+$M= [A2] zeker  ⇒  sure  ::  ours: zeker = certainly [A2 · U4]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] toevallig  ⇒  coincidentally  ::  ours: toevallig = accidentally [A2 · U5]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] vooral  ⇒  mostly  ::  ours: vooral = especially [A2 · U6]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] voordeel  ⇒  benefit  ::  ours: het voordeel = advantage [A2 · U6]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A2] richting  ⇒  towards  ::  ours: de richting = direction [A2 · U8]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] afscheid  ⇒  goodbye  ::  ours: het afscheid = farewell [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] bepaald  ⇒  determined  ::  ours: bepaald = certain [A+]  [synonym-same-sense]  {enr:✗ absent}
+  = [A+] eigenlijk  ⇒  actually  ::  ours: eigenlijk = actual [A+]  [adj/adv]  {enr:✗ absent}
+  = [A+] eigenlijk  ⇒  actually  ::  ours: eigenlijk = actual [A+]  [adj/adv]  {enr:✗ absent}
+$M= [A+] eigenschap  ⇒  charachteristic  ::  ours: eigenschap = property/feature/quality [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] nodig  ⇒  required  ::  ours: nodig = necessary/needed [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] uiteindelijk  ⇒  in the end  ::  ours: uiteindelijk = eventual [A+]  [adj/adv]  {enr:✗ absent}
+$M= [A+] verbazing  ⇒  surprise  ::  ours: de verbazing = amazement [A+]  [synonym-same-sense]  {enr:✗ absent}
+$M= [A+] zekerheid  ⇒  security  ::  ours: zekerheid = certainty [A+]  [synonym-same-sense]  {enr:✗ absent}
+  = [B1] arbeid  ⇒  labor  ::  ours: de arbeid = labour/work [B1]  [br/am-spelling]  {enr:✗ absent}
+$M= [B1] blijkbaar  ⇒  apparently  ::  ours: blijkbaar = evident/apparent [B1]  [adj/adv]  {enr:✗ absent}
+  = [B1] gunstig  ⇒  favorable  ::  ours: gunstig = favourable [B1]  [br/am-spelling]  {enr:✗ absent}
+$M= [B1] opmerking  ⇒  comment  ::  ours: opmerking = remark/observation [B1]  [synonym-same-sense]  {enr:✗ absent}
+$M= [B1] overigens  ⇒  moreover  ::  ours: overigens = besides [B1]  [synonym-same-sense]  {enr:✗ absent}
+$M= [B1] regeling  ⇒  regulation  ::  ours: regeling = arrangement [B1]  [synonym-same-sense]  {enr:✗ absent}
+  = [B1] voorzitter  ⇒  chairman  ::  ours: voorzitter = chairperson/president [B1]  [synonym-same-sense]  {enr:✗ absent}
+
+--- NL_DIFF_EN · MEANINGFUL · ENRICHED (5)  [real sense gap; but enrichment carries list gloss] ---
+$M! [A+] herinnering  ⇒  reminder  ::  ours: herinnering = memory/something that one remembers [A+]  [missing-sense] — 'reminder' sense (herinnering sturen) missing; ours only 'memory/recollection'.  {enr:✓ "reminder"}
+$N! [A+] maatschappij  ⇒  society  ::  ours: maatschappij = company [A+]  [different-sense] — 'maatschappij' = society vs company/firm; two distinct senses, ours teaches company.  {enr:✓ "society"}
+$N! [A+] maatschappij  ⇒  society  ::  ours: maatschappij = company [A+]  [different-sense] — 'maatschappij' = society vs company/firm; two distinct senses, ours teaches company.  {enr:✓ "society"}
+$N! [A+] overeenkomst  ⇒  agreement  ::  ours: overeenkomst = similarity [A+]  [different-sense] — 'overeenkomst' = agreement/contract vs similarity/resemblance; ours teaches similarity.  {enr:✓ "agreement"}
+$N! [A+] wetenschap  ⇒  science  ::  ours: de wetenschap = knowledge [A+]  [different-sense] — Primary modern sense 'science' missing; ours teaches archaic/secondary 'knowledge'.  {enr:✓ "science"}
+
+--- NL_DIFF_EN · MEANINGFUL · NOT ENRICHED (7)  [real sense gap; list gloss nowhere] ---
+$N! [A1] anders  ⇒  different  ::  ours: Anders nog iets? = Anything else? [A1 · U4] | anders = otherwise [A2 · U4]  [missing-sense] — Primary adjectival sense 'different/differently' not taught; only 'otherwise/else'.  {enr:✗ absent}
+$N! [A2] gelijk  ⇒  equal  ::  ours: gelijk hebben = to be right [A2 · U1]  [missing-sense] — Core sense 'equal/same' missing; our card only teaches idiom 'gelijk hebben'.  {enr:✗ absent}
+$N! [A2] gewoon  ⇒  just  ::  ours: gewoon = normal [A2 · U5]  [missing-sense] — Very common particle sense 'just/simply' missing; ours only has 'normal/ordinary'.  {enr:✗ absent}
+$N! [A+] enkel  ⇒  only  ::  ours: enkel = ankle [A+]  [different-sense] — Homograph: 'enkel' = only/single (adv) vs ankle (noun); ours teaches the noun.  {enr:✗ absent}
+$M! [A+] kop  ⇒  headline  ::  ours: kop = cup [A+]  [different-sense] — 'kop' = head/cup/headline; ours teaches 'cup', source the newspaper-headline sense.  {enr:✗ absent}
+  ! [A+] verschillen  ⇒  differences  ::  ours: verschillen = to differ [A+]  [different-sense] — Homograph: noun plural 'differences' vs verb infinitive 'to differ'; ours teaches the verb.  {enr:✗ absent}
+  ! [B1] kenmerken  ⇒  characteristics  ::  ours: kenmerken = to characterize [B1]  [different-sense] — Homograph: noun plural 'characteristics' (kenmerk) vs verb 'to characterize'; ours teaches the verb.  {enr:✗ absent}
+
+--- OTHER_FORM (13)  [related form only] ---
+  ≈ [A1] verschillende  ⇒  various  ::  related: verschillend = different [A1 · U1] | verschillen = to differ [A+]
+$N≈ [A1] vanuit  ⇒  from  ::  related: van = from/of [A1 · U3] | van = from [A1 · U7]
+$N≈ [A1] allen  ⇒  all  ::  related: alle = all [A1 · U4] | al = already [A2 · U1]
+$N≈ [A1] zaken  ⇒  affairs  ::  related: de zak = bag [A1 · U4] | zakenman = businessman/man in business [A+]
+  ≈ [A1] volgende  ⇒  next  ::  related: volgend = next [A1 · U7] | volgen = to attend [A2 · U6]
+$N≈ [A1] voordat  ⇒  before  ::  related: voor = before/earlier than [A1 · U7] | voor = in front of [A1 · U7]
+$N≈ [A1] alsof  ⇒  as if  ::  related: als = if [A1 · U8] | al = already [A2 · U1]
+$N≈ [A2] doordat  ⇒  because  ::  related: door = because of [A2 · U2] | door = through [A2 · U7]
+$N≈ [A2] zodra  ⇒  as soon as  ::  related: zo = like that [A2 · U2]
+  ≈ [A2] vorige  ⇒  last, previous  ::  related: vorig = previous [A2 · U3]
+  ≈ [A2] gordijnen  ⇒  curtains  ::  related: het gordijn = curtain [A2 · U8]
+$J2≈ [A+] krachtige  ⇒  powerful  ::  related: kracht = power/force/strength [A+] | krachtig = powerful/strong [A+]
+$N≈ [B1] voldoende  ⇒  enough  ::  related: voldoen = to satisfy/to meet [B1]
+
+--- MISSING (7)  [no card · alphabetical] ---
+$N✗ [—]  bescherming  ⇒  protection
+$N✗ [—]  noch  ⇒  neither
+$N✗ [—]  ondanks  ⇒  despite
+$N✗ [—]  opeens  ⇒  suddenly
+$N✗ [—]  terwijl  ⇒  while
+$N✗ [—]  zichzelf  ⇒  himself
+$N✗ [—]  zoveel  ⇒  that much
+
+########################################################################
+SUMMARY
+########################################################################
+┌─────────┬───────┬───────┬──────────┬──────────┬──────────┬──────────┬────────────┬─────────┐
+│ (index) │ total │ EXACT │ tech·enr │ tech·NOT │ mean·enr │ mean·NOT │ OTHER_FORM │ MISSING │
+├─────────┼───────┼───────┼──────────┼──────────┼──────────┼──────────┼────────────┼─────────┤
+│ easy    │ 493   │ 395   │ 51       │ 21       │ 2        │ 3        │ 3          │ 18      │
+│ medium  │ 255   │ 177   │ 35       │ 22       │ 7        │ 8        │ 4          │ 2       │
+│ hard    │ 364   │ 255   │ 43       │ 34       │ 5        │ 7        │ 13         │ 7       │
+└─────────┴───────┴───────┴──────────┴──────────┴──────────┴──────────┴────────────┴─────────┘

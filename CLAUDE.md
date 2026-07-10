@@ -21,6 +21,9 @@ npm run test:e2e     # full-flow browser test (system Chrome, ~1min)
 npm run convert      # regenerate public/cards.json from the .apkg decks (A1/A2)
 npm run convert:nt2lex # append A+/B1/B2 freq vocab; run AFTER convert
 npm run clean        # drop dup cards + junk/truncated glosses; run AFTER convert:nt2lex, before enrich
+npm run a2:map       # (re)build a2-mapping.json + scripts/a2-overrides.json from a2-analysis.txt marks
+npm run a2:apply     # apply A2-list overrides (add senses + new A+ cards); run AFTER clean, before enrich
+npm run a2:idlists   # write easy/medium/hard .ids.json; run LAST (after enrich), regen after any convert*
 ```
 Iterate against the running dev server + `npm test` (pure, fast, parallel-safe). Run the full
 `npm run build && npm test && npm run test:e2e` only when **shipping** or when directly asked — it

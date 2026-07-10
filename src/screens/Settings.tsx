@@ -75,7 +75,7 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
       </label>
 
       <label className="setting-row">
-        <span>Unlock all levels</span>
+        <span>Unlock all units in all paths</span>
         <span className="toggle">
           <input
             type="checkbox"

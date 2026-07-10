@@ -8,6 +8,18 @@ Priority order is roughly top-down. Items are independent unless noted.
 
 ---
 
+## DONE — Progression paths decoupled from the card DB
+**What:** The card database and SRS state were coupled to a single linear course (`Card.level`). Added a
+path abstraction so multiple progression tracks share one path-agnostic card DB + SRS state.
+**Fix:** `src/paths/` (`build.ts` + pure `engine.ts`), `data/loadPaths.ts` + `public/paths.json` (emitted by
+`scripts/build-a2-idlists.mjs`, IO tiers made disjoint keep-lowest). `buildLessonQueue` now takes an ordered
+candidate id list; `App.tsx`/`Dashboard.tsx` render one section per path (ring + Lessons + unlock count);
+`WordList.tsx` browses by section (level or unit). Two paths ship: **TaalCompleet** (derived from
+`Card.level`) and **Inburgering Online** (easy/medium/hard, chunked into units of 100). Reviews, mastery
+breakdown, pins, and the progress file stay global. See `docs/ARCHITECTURE.md` › Paths.
+
+---
+
 ## DONE — Card collisions & gloss noise
 **What:** Same Dutch / different English (44 groups) and same English / different Dutch (~2k groups) were
 marked wrong for valid synonyms; exact-duplicate cards were drilled twice; auto-extracted glosses carried
