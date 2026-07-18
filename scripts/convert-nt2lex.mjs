@@ -1,10 +1,4 @@
-// Append frequency-graded vocabulary (levels A+, B1, B2) to public/cards.json.
-// Source word lists from NT2Lex-CGN+ODWN-v01.tsv (CEFR-graded Dutch frequency
-// list); source the quiz answer (english) from Kaikki glosses. Runs AFTER
-// convert-anki.mjs and consumes its output. Idempotent: re-running drops the
-// previously appended A+/B1/B2 block and rebuilds it, leaving the Anki block
-// (c0..cN) and its ids untouched.
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { normalizeHead, pickEntry, extractKaikki } from "./enrich/extract.mjs";
@@ -153,7 +147,8 @@ async function main() {
     });
   }
 
-  const maxIdx = ankiCards.reduce((m, c) => Math.max(m, Number(c.id.slice(1)) || 0), -1);
+  // Throwaway ids so clean-cards has a stable ordering key; import-merge reassigns them.
+  const maxIdx = all.reduce((m, c) => Math.max(m, Number(String(c.id).slice(1)) || 0), -1);
   newCards.forEach((c, i) => (c.id = `c${maxIdx + 1 + i}`));
 
   const ordered = newCards.map((c) => ({
@@ -161,13 +156,16 @@ async function main() {
     dutch: c.dutch, english: c.english, type: c.type, pos: c.pos, lemma: c.lemma,
   }));
 
-  writeFileSync(CARDS, JSON.stringify([...ankiCards, ...ordered], null, 0));
+  const OUT = join(root, "scripts", "import", "nt2lex.staging.json");
+  mkdirSync(dirname(OUT), { recursive: true });
+  writeFileSync(OUT, JSON.stringify(ordered, null, 0));
 
   const perLevel = {};
   for (const c of ordered) perLevel[c.level] = (perLevel[c.level] ?? 0) + 1;
-  console.log("added per level:", perLevel);
+  console.log("staged per level:", perLevel);
   console.log(`dropped (no usable gloss): ${droppedNoGloss}`);
-  console.log(`cards.json: ${ankiCards.length} anki + ${ordered.length} new = ${ankiCards.length + ordered.length}`);
+  console.log(`staged ${ordered.length} candidates -> scripts/import/nt2lex.staging.json`);
+  console.log("next: npm run clean scripts/import/nt2lex.staging.json && npm run import:merge");
 }
 
 main();

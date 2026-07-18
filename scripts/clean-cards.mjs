@@ -1,8 +1,3 @@
-// Regen-safe cleaning pass over public/cards.json. Runs AFTER convert-anki.mjs
-// and convert-nt2lex.mjs, BEFORE enrich-cards.mjs. Idempotent and DROP-ONLY:
-// it removes junk glosses and exact-duplicate cards but NEVER renumbers ids, so
-// public/enrichment.json (keyed by id) and saved localStorage progress stay valid.
-//
 // What it fixes (see scripts/enrich/analyze-collisions.mjs for the audit):
 //   - junk function-word glosses ("of", "from", "to be", ...)         [cat 3]
 //   - register tags / "etc."/"e.g." remnants in glosses               [cat 5b, 5c]
@@ -17,12 +12,19 @@
 // ("cousin (male)" should also accept "cousin") is done at runtime in
 // src/review/synonyms.ts so the EN->NL prompt keeps its disambiguator.
 import { readFileSync, writeFileSync } from "node:fs";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { resolve } from "node:path";
 import { stripArticle } from "./enrich/extract.mjs";
 
-const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const CARDS = join(root, "public/cards.json");
+const FILE = process.argv[2];
+if (!FILE) {
+  console.error(
+    "usage: node scripts/clean-cards.mjs <staging.json>\n" +
+      "refusing to run without an explicit staging file — clean is a pre-merge candidate\n" +
+      "cleaner and must never rewrite public/cards.json (the hand-owned source of truth).",
+  );
+  process.exit(1);
+}
+const CARDS = resolve(FILE);
 
 const PUNCT = /[.'’/\-,!?;:"()]/g;
 const normalize = (s) =>

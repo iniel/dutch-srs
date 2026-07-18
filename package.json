@@ -12,9 +12,9 @@
     "test:watch": "vitest",
     "convert": "node scripts/convert-anki.mjs",
     "convert:nt2lex": "node scripts/convert-nt2lex.mjs",
-    "clean": "node scripts/clean-cards.mjs",
+    "clean": "node scripts/clean-cards.mjs scripts/import/nt2lex.staging.json",
+    "import:merge": "node scripts/import-merge.mjs",
     "a2:map": "node scripts/build-a2-mapping.mjs",
-    "a2:apply": "node scripts/apply-a2-overrides.mjs",
     "a2:idlists": "node scripts/build-a2-idlists.mjs",
     "enrich": "node scripts/enrich-cards.mjs"
   },

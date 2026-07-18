@@ -1,21 +1,21 @@
 {
   "summary": {
-    "totalCards": 10047,
-    "dutchCollisions": 44,
-    "dutchCollisionCards": 92,
-    "englishCollisions": 2023,
-    "englishCollisionCards": 4033,
-    "junkGlossCollisions": 6,
+    "totalCards": 10104,
+    "dutchCollisions": 62,
+    "dutchCollisionCards": 128,
+    "englishCollisions": 2050,
+    "englishCollisionCards": 4083,
+    "junkGlossCollisions": 8,
     "exactDuplicates": 0,
     "extraWords": {
-      "parenthetical": 23,
+      "parenthetical": 31,
       "bracket": 0,
-      "slash_alt": 0,
+      "slash_alt": 1,
       "multi_clause": 0,
       "placeholder": 83,
       "register_tag": 0,
       "abbrev_etc": 0,
-      "infinitive_to": 2744
+      "infinitive_to": 2745
     }
   },
   "dutchCollisions": [
@@ -89,7 +89,7 @@
           "id": "c1262",
           "dutch": "u",
           "english": [
-            "you"
+            "you (object polite)"
           ],
           "level": "A2 · U4"
         }
@@ -192,6 +192,31 @@
             "No thanks."
           ],
           "level": "A1 · U2"
+        }
+      ]
+    },
+    {
+      "key": "waar",
+      "ids": [
+        "c94",
+        "c10128"
+      ],
+      "variants": [
+        {
+          "id": "c94",
+          "dutch": "waar",
+          "english": [
+            "where"
+          ],
+          "level": "A1 · U1"
+        },
+        {
+          "id": "c10128",
+          "dutch": "waar",
+          "english": [
+            "true"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -317,7 +342,8 @@
           "id": "c246",
           "dutch": "weg",
           "english": [
-            "missing"
+            "missing",
+            "away"
           ],
           "level": "A1 · U2"
         },
@@ -338,6 +364,31 @@
             "route"
           ],
           "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "druk",
+      "ids": [
+        "c266",
+        "c10132"
+      ],
+      "variants": [
+        {
+          "id": "c266",
+          "dutch": "druk",
+          "english": [
+            "busy"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c10132",
+          "dutch": "druk",
+          "english": [
+            "pressure"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -363,6 +414,31 @@
             "above"
           ],
           "level": "A1 · U7"
+        }
+      ]
+    },
+    {
+      "key": "alleen",
+      "ids": [
+        "c290",
+        "c10114"
+      ],
+      "variants": [
+        {
+          "id": "c290",
+          "dutch": "alleen",
+          "english": [
+            "alone"
+          ],
+          "level": "A1 · U3"
+        },
+        {
+          "id": "c10114",
+          "dutch": "alleen",
+          "english": [
+            "only"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -1017,6 +1093,31 @@
       ]
     },
     {
+      "key": "anders",
+      "ids": [
+        "c1301",
+        "c10140"
+      ],
+      "variants": [
+        {
+          "id": "c1301",
+          "dutch": "anders",
+          "english": [
+            "otherwise"
+          ],
+          "level": "A2 · U4"
+        },
+        {
+          "id": "c10140",
+          "dutch": "anders",
+          "english": [
+            "different"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
       "key": "nog eens",
       "ids": [
         "c1304",
@@ -1064,6 +1165,31 @@
             "sore"
           ],
           "level": "A2 · U8"
+        }
+      ]
+    },
+    {
+      "key": "gewoon",
+      "ids": [
+        "c1404",
+        "c10144"
+      ],
+      "variants": [
+        {
+          "id": "c1404",
+          "dutch": "gewoon",
+          "english": [
+            "normal"
+          ],
+          "level": "A2 · U5"
+        },
+        {
+          "id": "c10144",
+          "dutch": "gewoon",
+          "english": [
+            "just"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -1144,6 +1270,56 @@
       ]
     },
     {
+      "key": "blik",
+      "ids": [
+        "c1730",
+        "c10129"
+      ],
+      "variants": [
+        {
+          "id": "c1730",
+          "dutch": "het blik",
+          "english": [
+            "can"
+          ],
+          "level": "A2 · U8"
+        },
+        {
+          "id": "c10129",
+          "dutch": "blik",
+          "english": [
+            "look"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "maatschappij",
+      "ids": [
+        "c2011",
+        "c10148"
+      ],
+      "variants": [
+        {
+          "id": "c2011",
+          "dutch": "maatschappij",
+          "english": [
+            "company"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10148",
+          "dutch": "maatschappij",
+          "english": [
+            "society"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
       "key": "email",
       "ids": [
         "c2226",
@@ -1163,6 +1339,235 @@
           "dutch": "het email",
           "english": [
             "enamel"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "wetenschap",
+      "ids": [
+        "c2247",
+        "c10154"
+      ],
+      "variants": [
+        {
+          "id": "c2247",
+          "dutch": "de wetenschap",
+          "english": [
+            "knowledge"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10154",
+          "dutch": "wetenschap",
+          "english": [
+            "science"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "hoop",
+      "ids": [
+        "c2259",
+        "c10131"
+      ],
+      "variants": [
+        {
+          "id": "c2259",
+          "dutch": "de hoop",
+          "english": [
+            "hope",
+            "aspiration",
+            "wish"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10131",
+          "dutch": "hoop",
+          "english": [
+            "pile"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "blad",
+      "ids": [
+        "c2314",
+        "c10130"
+      ],
+      "variants": [
+        {
+          "id": "c2314",
+          "dutch": "het blad",
+          "english": [
+            "leaf"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10130",
+          "dutch": "blad",
+          "english": [
+            "sheet"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "overeenkomst",
+      "ids": [
+        "c2388",
+        "c10159"
+      ],
+      "variants": [
+        {
+          "id": "c2388",
+          "dutch": "overeenkomst",
+          "english": [
+            "similarity"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10159",
+          "dutch": "overeenkomst",
+          "english": [
+            "agreement"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "sfeer",
+      "ids": [
+        "c2521",
+        "c10134"
+      ],
+      "variants": [
+        {
+          "id": "c2521",
+          "dutch": "sfeer",
+          "english": [
+            "sphere",
+            "round object"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10134",
+          "dutch": "sfeer",
+          "english": [
+            "ambiance"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "enkel",
+      "ids": [
+        "c2894",
+        "c10141"
+      ],
+      "variants": [
+        {
+          "id": "c2894",
+          "dutch": "enkel",
+          "english": [
+            "ankle"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10141",
+          "dutch": "enkel",
+          "english": [
+            "only"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "poos",
+      "ids": [
+        "c3013",
+        "c10135"
+      ],
+      "variants": [
+        {
+          "id": "c3013",
+          "dutch": "poos",
+          "english": [
+            "undefined period of time",
+            "indefinite period"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10135",
+          "dutch": "een poos",
+          "english": [
+            "a while"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "patroon",
+      "ids": [
+        "c4476",
+        "c10122"
+      ],
+      "variants": [
+        {
+          "id": "c4476",
+          "dutch": "patroon",
+          "english": [
+            "patron saint"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10122",
+          "dutch": "patroon",
+          "english": [
+            "pattern"
+          ],
+          "level": "A+"
+        }
+      ]
+    },
+    {
+      "key": "ontbreken",
+      "ids": [
+        "c5517",
+        "c10116"
+      ],
+      "variants": [
+        {
+          "id": "c5517",
+          "dutch": "ontbreken",
+          "english": [
+            "to be missing"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c10116",
+          "dutch": "ontbreken",
+          "english": [
+            "lack"
           ],
           "level": "A+"
         }
@@ -1389,7 +1794,7 @@
     },
     {
       "gloss": "just",
-      "count": 8,
+      "count": 9,
       "words": [
         {
           "id": "c640",
@@ -1422,7 +1827,8 @@
           "english": [
             "straight",
             "immediately",
-            "just"
+            "just",
+            "flat"
           ],
           "level": "A+"
         },
@@ -1461,6 +1867,14 @@
             "just"
           ],
           "level": "B1"
+        },
+        {
+          "id": "c10144",
+          "dutch": "gewoon",
+          "english": [
+            "just"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -1549,7 +1963,8 @@
           "id": "c85",
           "dutch": "leuk",
           "english": [
-            "nice"
+            "nice",
+            "fun"
           ],
           "level": "A1 · U1"
         },
@@ -1893,7 +2308,8 @@
           "english": [
             "journey",
             "expedition",
-            "march"
+            "march",
+            "tour"
           ],
           "level": "A+"
         },
@@ -2355,6 +2771,64 @@
       ]
     },
     {
+      "gloss": "tour",
+      "count": 6,
+      "words": [
+        {
+          "id": "c2540",
+          "dutch": "tocht",
+          "english": [
+            "journey",
+            "expedition",
+            "march",
+            "tour"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c6171",
+          "dutch": "tournee",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c6952",
+          "dutch": "rondreis",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c7235",
+          "dutch": "rondgang",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c8171",
+          "dutch": "toertocht",
+          "english": [
+            "tour"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c9134",
+          "dutch": "excursie",
+          "english": [
+            "excursion",
+            "tour"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
       "gloss": "rough",
       "count": 6,
       "words": [
@@ -2464,6 +2938,54 @@
             "student"
           ],
           "level": "B1"
+        }
+      ]
+    },
+    {
+      "gloss": "all",
+      "count": 5,
+      "words": [
+        {
+          "id": "c403",
+          "dutch": "allemaal",
+          "english": [
+            "all",
+            "all of them"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c451",
+          "dutch": "alle",
+          "english": [
+            "all"
+          ],
+          "level": "A1 · U4"
+        },
+        {
+          "id": "c667",
+          "dutch": "alles",
+          "english": [
+            "all",
+            "everythingh"
+          ],
+          "level": "A1 · U6"
+        },
+        {
+          "id": "c5292",
+          "dutch": "gezamenlijk",
+          "english": [
+            "all"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "c10156",
+          "dutch": "allen",
+          "english": [
+            "all"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -3728,53 +4250,6 @@
       ]
     },
     {
-      "gloss": "tour",
-      "count": 5,
-      "words": [
-        {
-          "id": "c6171",
-          "dutch": "tournee",
-          "english": [
-            "tour"
-          ],
-          "level": "B1"
-        },
-        {
-          "id": "c6952",
-          "dutch": "rondreis",
-          "english": [
-            "tour"
-          ],
-          "level": "B1"
-        },
-        {
-          "id": "c7235",
-          "dutch": "rondgang",
-          "english": [
-            "tour"
-          ],
-          "level": "B1"
-        },
-        {
-          "id": "c8171",
-          "dutch": "toertocht",
-          "english": [
-            "tour"
-          ],
-          "level": "B1"
-        },
-        {
-          "id": "c9134",
-          "dutch": "excursie",
-          "english": [
-            "excursion",
-            "tour"
-          ],
-          "level": "B2"
-        }
-      ]
-    },
-    {
       "gloss": "turn",
       "count": 5,
       "words": [
@@ -3943,6 +4418,45 @@
             "teacher"
           ],
           "level": "B2"
+        }
+      ]
+    },
+    {
+      "gloss": "towards",
+      "count": 4,
+      "words": [
+        {
+          "id": "c113",
+          "dutch": "naar",
+          "english": [
+            "towards"
+          ],
+          "level": "A1 · U2"
+        },
+        {
+          "id": "c721",
+          "dutch": "naartoe",
+          "english": [
+            "towards"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c1683",
+          "dutch": "de richting",
+          "english": [
+            "direction",
+            "towards"
+          ],
+          "level": "A2 · U8"
+        },
+        {
+          "id": "c2145",
+          "dutch": "tegemoet",
+          "english": [
+            "towards"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -4284,7 +4798,8 @@
           "id": "c1068",
           "dutch": "prachtig",
           "english": [
-            "beautiful"
+            "beautiful",
+            "magnificent"
           ],
           "level": "A2 · U2"
         },
@@ -4463,45 +4978,6 @@
             "prepared"
           ],
           "level": "B2"
-        }
-      ]
-    },
-    {
-      "gloss": "all",
-      "count": 4,
-      "words": [
-        {
-          "id": "c403",
-          "dutch": "allemaal",
-          "english": [
-            "all"
-          ],
-          "level": "A1 · U4"
-        },
-        {
-          "id": "c451",
-          "dutch": "alle",
-          "english": [
-            "all"
-          ],
-          "level": "A1 · U4"
-        },
-        {
-          "id": "c667",
-          "dutch": "alles",
-          "english": [
-            "all",
-            "everythingh"
-          ],
-          "level": "A1 · U6"
-        },
-        {
-          "id": "c5292",
-          "dutch": "gezamenlijk",
-          "english": [
-            "all"
-          ],
-          "level": "B1"
         }
       ]
     },
@@ -5161,46 +5637,6 @@
           "level": "B2"
         }
       ]
-    },
-    {
-      "gloss": "form",
-      "count": 4,
-      "words": [
-        {
-          "id": "c764",
-          "dutch": "de vorm",
-          "english": [
-            "form"
-          ],
-          "level": "A1 · U7"
-        },
-        {
-          "id": "c856",
-          "dutch": "het formulier",
-          "english": [
-            "form"
-          ],
-          "level": "A1 · U8"
-        },
-        {
-          "id": "c3761",
-          "dutch": "gedaante",
-          "english": [
-            "form",
-            "appearance"
-          ],
-          "level": "A+"
-        },
-        {
-          "id": "c8511",
-          "dutch": "beelden",
-          "english": [
-            "to shape",
-            "form"
-          ],
-          "level": "B2"
-        }
-      ]
     }
   ],
   "junkGlossCollisions": [
@@ -5245,6 +5681,28 @@
             "no"
           ],
           "level": "A1 · U1"
+        }
+      ]
+    },
+    {
+      "gloss": "from",
+      "count": 2,
+      "words": [
+        {
+          "id": "c699",
+          "dutch": "van",
+          "english": [
+            "from"
+          ],
+          "level": "A1 · U7"
+        },
+        {
+          "id": "c10146",
+          "dutch": "vanuit",
+          "english": [
+            "from"
+          ],
+          "level": "A+"
         }
       ]
     },
@@ -5301,7 +5759,8 @@
           "id": "c693",
           "dutch": "om",
           "english": [
-            "at"
+            "at",
+            "around"
           ],
           "level": "A1 · U7"
         },
@@ -5336,6 +5795,28 @@
           "level": "A1 · U7"
         }
       ]
+    },
+    {
+      "gloss": "this",
+      "count": 2,
+      "words": [
+        {
+          "id": "c10109",
+          "dutch": "deze",
+          "english": [
+            "this"
+          ],
+          "level": "A+"
+        },
+        {
+          "id": "c10111",
+          "dutch": "dit",
+          "english": [
+            "this"
+          ],
+          "level": "A+"
+        }
+      ]
     }
   ],
   "exactDuplicates": [],
@@ -5360,6 +5841,11 @@
         "id": "c47",
         "dutch": "u",
         "english": "you (polite)"
+      },
+      {
+        "id": "c50",
+        "dutch": "wij",
+        "english": "we (stressed)"
       },
       {
         "id": "c51",
@@ -5407,6 +5893,11 @@
         "english": "our (neuter)"
       },
       {
+        "id": "c782",
+        "dutch": "onze",
+        "english": "our (masculine/feminine/plural)"
+      },
+      {
         "id": "c783",
         "dutch": "jullie",
         "english": "your (plural)"
@@ -5442,23 +5933,29 @@
         "english": "to answer (phone)"
       },
       {
-        "id": "c1345",
-        "dutch": "het hbo",
-        "english": "vocational education (high level)"
+        "id": "c1260",
+        "dutch": "mij",
+        "english": "me (stressed)"
       },
       {
-        "id": "c1347",
-        "dutch": "het mbo",
-        "english": "vocational education (medium level)"
+        "id": "c1261",
+        "dutch": "jou",
+        "english": "you (object)"
       },
       {
-        "id": "c1422",
-        "dutch": "de dienst",
-        "english": "shift (work)"
+        "id": "c1262",
+        "dutch": "u",
+        "english": "you (object polite)"
       }
     ],
     "bracket": [],
-    "slash_alt": [],
+    "slash_alt": [
+      {
+        "id": "c782",
+        "dutch": "onze",
+        "english": "our (masculine/feminine/plural)"
+      }
+    ],
     "multi_clause": [],
     "placeholder": [
       {

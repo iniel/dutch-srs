@@ -1,4 +1,3 @@
-// Convert TaalCompleet .apkg decks into public/cards.json.
 // .apkg = zip containing collection.anki21 (SQLite). We read the notes table,
 // map the TaalCompleet fields (Dutch / English / POS / ...) to Card records,
 // dedupe, and group by Section.
@@ -159,9 +158,12 @@ cards.forEach((c, i) => {
 });
 
 const levels = [...new Set(cards.map((c) => c.level))];
-mkdirSync(join(root, "public"), { recursive: true });
-writeFileSync(join(root, "public", "cards.json"), JSON.stringify(cards, null, 0));
+const OUT = join(root, "scripts", "import", "anki.staging.json");
+mkdirSync(dirname(OUT), { recursive: true });
+writeFileSync(OUT, JSON.stringify(cards, null, 0));
 
-console.log(`cards: ${cards.length}, levels: ${levels.length}, dropped: ${dropped}`);
+console.log(`staged ${cards.length} anki candidates -> scripts/import/anki.staging.json`);
+console.log(`levels: ${levels.length}, dropped: ${dropped}`);
 console.log("first level:", levels[0], "last level:", levels.at(-1));
 console.log("sample:", JSON.stringify(cards.slice(0, 3), null, 2));
+console.log("next: npm run import:merge (dedupes + appends new cards to public/cards.json)");

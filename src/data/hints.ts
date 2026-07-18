@@ -16,8 +16,9 @@ const HINTS: Record<string, string> = {
   // dag — greeting vs noun
   "c18:nl_en": "greeting",
   "c171:nl_en": "noun · time",
-  // u — polite/formal you
+  // u — polite/formal you (subject vs object)
   "c47:nl_en": "formal",
+  "c1262:nl_en": "object",
   // zij — she vs they
   "c49:nl_en": "singular",
   "c52:nl_en": "plural",
@@ -122,6 +123,19 @@ const HINTS: Record<string, string> = {
   // hint on a unique prompt is noise). The hint names the register/number/nuance
   // without printing the answer. Pure synonyms with no clean distinguisher
   // (very, nice, beautiful, ...) are left to the example button.
+  // "we" — wij (stressed) / we (unstressed)
+  "c50:en_nl": "stressed",
+  "c10110:en_nl": "unstressed",
+  // "me" — mij (stressed) / me (unstressed)
+  "c1260:en_nl": "stressed",
+  "c10112:en_nl": "unstressed",
+  // "you" — je (unstressed) / jou (object) / u (formal object)
+  "c10107:en_nl": "unstressed",
+  "c1261:en_nl": "object",
+  "c1262:en_nl": "formal · object",
+  // "myself" — zelf / mezelf
+  "c678:en_nl": "on its own",
+  "c10118:en_nl": "with 'me-'",
   // "you are" — jij bent / u bent / jullie zijn
   "c67:en_nl": "informal",
   "c69:en_nl": "formal",

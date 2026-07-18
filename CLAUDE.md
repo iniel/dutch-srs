@@ -7,7 +7,8 @@ Single user, no backend, no accounts. Hosted on GitHub Pages, installed as a PWA
 
 ## What it is
 - Vite + React 18 + TypeScript. No router lib, no state lib (plain React state in `App.tsx`).
-- Cards loaded from static `public/cards.json` (generated from Anki decks).
+- Cards loaded from static `public/cards.json` — **hand-owned data** (stable ids), not regenerated. Fixes
+  are direct edits; new bulk vocab is appended via the staging importers (see Commands / `docs/VOCABULARY.md`).
 - Progress stored in `localStorage`. Export/import/reset in Settings.
 - Each card is drilled **both directions** (NL→EN and EN→NL) as **two independent SRS items**.
 
@@ -18,12 +19,15 @@ npm run dev          # http://localhost:5173 (dev server)
 npm run build        # tsc -b + vite build -> dist/
 npm test             # vitest: 85 unit tests (pure logic + storage)
 npm run test:e2e     # full-flow browser test (system Chrome, ~1min)
-npm run convert      # regenerate public/cards.json from the .apkg decks (A1/A2)
-npm run convert:nt2lex # append A+/B1/B2 freq vocab; run AFTER convert
-npm run clean        # drop dup cards + junk/truncated glosses; run AFTER convert:nt2lex, before enrich
+# public/cards.json is HAND-OWNED data (stable ids, never renumbered). Fix cards by editing it directly.
+# The importers below never write it — they stage candidates; import:merge appends new ones. Rarely needed.
+npm run convert      # stage TaalCompleet .apkg decks -> scripts/import/anki.staging.json
+npm run convert:nt2lex # stage A+/B1/B2 freq vocab   -> scripts/import/nt2lex.staging.json (reads cards.json read-only)
+npm run clean scripts/import/nt2lex.staging.json # drop junk glosses + dup candidates (in place; needs explicit file)
+npm run import:merge # dedupe vs live + append new cards to public/cards.json (ONLY writer; assigns next-free ids)
 npm run a2:map       # (re)build a2-mapping.json + scripts/a2-overrides.json from a2-analysis.txt marks
-npm run a2:apply     # apply A2-list overrides (add senses + new A+ cards); run AFTER clean, before enrich
-npm run a2:idlists   # write easy/medium/hard .ids.json; run LAST (after enrich), regen after any convert*
+npm run a2:idlists   # write easy/medium/hard .ids.json + public/paths.json (read-only over cards.json)
+npm run enrich       # (re)build public/enrichment.json, keyed by id (read-only over cards.json)
 ```
 Iterate against the running dev server + `npm test` (pure, fast, parallel-safe). Run the full
 `npm run build && npm test && npm run test:e2e` only when **shipping** or when directly asked — it
@@ -59,7 +63,8 @@ attach to the user's already-open browser/tab.
 | Screens | `src/screens/` | Dashboard, Lessons, Reviews, Summary, Settings |
 | Shared quiz engine | `src/components/Quiz.tsx` | used by both Reviews and Lessons quiz |
 | Styles | `src/styles/base.css` (tokens + dark mode), `app.css` (components) |
-| Anki→JSON converter | `scripts/convert-anki.mjs` | reads `.apkg` SQLite |
+| Vocab importers (staging) | `scripts/convert-anki.mjs`, `scripts/convert-nt2lex.mjs`, `scripts/clean-cards.mjs` | write `scripts/import/*.staging.json`, never `cards.json` |
+| Card DB merge (sole writer) | `scripts/import-merge.mjs` | append-only, dedupes + assigns next-free ids |
 | E2E | `tests/e2e.mjs` | standalone Playwright script |
 | Deploy | `.github/workflows/deploy.yml` | uploads prebuilt `dist/` |
 

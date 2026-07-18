@@ -4,3 +4,4 @@ node_modules
 *.apkg
 /data
 tsconfig.tsbuildinfo
+scripts/import/*.staging.json

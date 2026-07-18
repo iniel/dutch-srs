@@ -1,8 +1,13 @@
 # Vocabulary
 
-Cards live in `public/cards.json` (committed). The first 1748 cards (ids `c0`–`c1747`) come from two
-TaalCompleet Anki decks (`A1 · U1` … `A2 · U8`). Three further levels — `A+`, `B1`, `B2` (~8350 cards,
-ids `c1748`+) — are appended from the NT2Lex frequency list; see "Frequency vocabulary" below.
+Cards live in `public/cards.json` (committed) — this file is the **hand-owned source of truth**, not a
+generated artifact. The first 1748 cards (ids `c0`–`c1747`) originally came from two TaalCompleet Anki
+decks (`A1 · U1` … `A2 · U8`); three further levels — `A+`, `B1`, `B2` (~8350 cards, ids `c1748`+) — were
+imported from the NT2Lex frequency list. All of it now lives in `cards.json` and is edited directly.
+
+**Ids are permanent and never renumbered.** Fixes are plain edits to `cards.json`. New bulk vocabulary is
+imported through the append-only staging flow (see "Importing new vocabulary" below) — the importers never
+rewrite the live file. This is why enrichment/paths/progress (all keyed by id) stay valid across edits.
 
 ## `cards.json` schema
 Array of `Card` (see `src/types.ts`):
@@ -25,15 +30,24 @@ A1/A2/B1/B2 levels whose name already conveys it.
 `group` ordering matters: lessons are introduced in array order (which the converter sorts by level then
 numeric section). Don't shuffle the array.
 
-## Regenerate from the decks
-```bash
-npm run convert     # node scripts/convert-anki.mjs
-```
-Prints: total cards, group count, dropped count, first/last group, a 3-card sample. Sanity-check those.
+## Importing new vocabulary (append-only staging flow)
+`cards.json` is owned data — the importers **never** write to it. They emit throwaway *staging candidates*
+to `scripts/import/*.staging.json` (gitignored); a single merge step appends the genuinely-new ones with
+next-free ids. Nothing is renumbered.
 
-Source decks: `TaalCompleet_A1_*.apkg`, `TaalCompleet_A2_*.apkg` in the repo root. They are **gitignored**
-(36 MB) — keep local copies; only the generated `cards.json` is committed. If a teammate lacks the
-`.apkg` files, they can't regenerate, but they can still edit `cards.json` directly.
+```bash
+npm run convert                                   # TaalCompleet decks -> scripts/import/anki.staging.json
+npm run convert:nt2lex                            # NT2Lex freq list  -> scripts/import/nt2lex.staging.json
+npm run clean scripts/import/nt2lex.staging.json  # drop junk glosses + dup candidates (in place)
+npm run import:merge                              # dedupe vs live + append new cards to public/cards.json
+```
+`import:merge` (`scripts/import-merge.mjs`) is the **only** writer of `cards.json`. It skips any candidate
+whose article-stripped Dutch + English set already exists, assigns ids `c{max+1…}` to the rest, appends
+them, and asserts every existing id is unchanged. Run it deliberately — a normal working tree never needs it.
+
+Source decks: `TaalCompleet_A1_*.apkg`, `TaalCompleet_A2_*.apkg` in the repo root, and
+`NT2Lex-CGN+ODWN-v01.tsv`. They are **gitignored** — keep local copies; only `cards.json` is committed.
+A teammate without them can't import, but can still edit `cards.json` directly (the normal way to fix cards).
 
 ## How the converter works (`scripts/convert-anki.mjs`)
 - `.apkg` is a zip; it `unzip`s `collection.anki21` (uncompressed SQLite) to a temp dir.
@@ -42,36 +56,28 @@ Source decks: `TaalCompleet_A1_*.apkg`, `TaalCompleet_A2_*.apkg` in the repo roo
   Uses **Dutch + English (+ POS/Lemma/Other forms)**. **Ignores Persian/Farsi and audio.**
 - `english` is split on `, ; /` and `or` into multiple accepted answers.
 - HTML and `[sound:…]` tags are stripped.
-- Dedupes by `group|dutch|english`. Sorts by level then numeric section. Reassigns ids `c0..cN`.
+- Dedupes by `group|dutch|english`. Sorts by level then numeric section. Assigns **throwaway** candidate
+  ids `c0..cN` (reassigned to next-free ids by `import:merge`).
 - Uses Node's built-in `node:sqlite` (Node 22+) — no dependency.
+- Writes `scripts/import/anki.staging.json`, never `public/cards.json`.
 
 ## Frequency vocabulary — levels `A+`, `B1`, `B2` (`scripts/convert-nt2lex.mjs`)
 Source: `NT2Lex-CGN+ODWN-v01.tsv` (repo root) — a CEFR-graded Dutch frequency list (one row per word
 sense; columns `word`, `tag`, then `F@A1 … U@TOTAL` per band). It carries **no translations** — the quiz
 answer comes from Kaikki glosses at convert time, everything else from the normal enrichment pass.
 
-```bash
-npm run convert          # rebuild the Anki block first (owns c0..c1747)
-npm run convert:nt2lex   # append A+/B1/B2; consumes + rewrites cards.json
-npm run clean            # drop dup cards + junk/truncated glosses (drop-only, never renumbers)
-npm run a2:apply         # apply A2-list overrides: add senses + append new A+ cards (idempotent)
-npm run enrich           # generate enrichment.json for all cards (new ones included)
-```
-Run order matters: `convert:nt2lex` reads the Anki block, so it must run **after** `convert`. Re-running
-`convert` alone drops the appended levels. `convert:nt2lex` is idempotent (strips any prior `A+`/`B1`/`B2`
-cards before rebuilding) and never touches the Anki ids/progress. `clean` runs **after** both and **before**
-`enrich` so enrichment keys match the final card set.
+Import via the staging flow (see "Importing new vocabulary" above): `convert:nt2lex` reads the live card DB
+**read-only** to skip words already present, then writes only the new A+/B1/B2 candidates to
+`scripts/import/nt2lex.staging.json`. It does **not** rewrite or renumber `cards.json`. Run `clean` on that
+staging file, then `import:merge` to append the new cards; ids are permanent from then on.
 
-### A2-list overrides (`scripts/apply-a2-overrides.mjs`)
-Applies the curated decisions from the A2 exam-list audit (marks in `a2-analysis.txt`). Runs **after
-`clean`, before `enrich`** so the appended cards get enriched. Idempotent — safe to re-run.
-- `scripts/a2-overrides.json` (data, generated by `npm run a2:map` from `a2-analysis.txt` + `cards.json`):
-  - `addSenses` — append a source-list gloss as an extra sense on an existing card (matched by
-    Dutch + level + first-gloss anchor, never by id, so it survives the volatile A+/B1/B2 renumbering);
-  - `newCards` — words marked `$N`, appended as fresh `A+` cards with ids `c{max+1…}`.
-- Because `convert:nt2lex` rebuilds + renumbers the whole A+/B1/B2 block, the appended-card ids are only
-  stable within one full pipeline pass. Re-run `npm run a2:apply` after any `convert*`, then regenerate the
-  id lists with `npm run a2:idlists` (writes `easy.ids.json` / `medium.ids.json` / `hard.ids.json`).
+### A2-list overrides — historical (`scripts/apply-a2-overrides.mjs`)
+The curated decisions from the A2 exam-list audit (marks in `a2-analysis.txt`) are **already baked into the
+committed `cards.json`**, so this script is retired from the routine flow (no `npm run a2:apply`). The file +
+`scripts/a2-overrides.json` are kept for provenance. Because ids are now permanent, further sense/gloss fixes
+are **direct edits to `cards.json`** — no anchor-matching, no re-apply, no id volatility. `npm run a2:map`
+still (re)builds `a2-overrides.json` + `a2-mapping.json` from `a2-analysis.txt`, and `npm run a2:idlists`
+still emits the `easy.ids.json` / `medium.ids.json` / `hard.ids.json` tier lists (read-only over `cards.json`).
 
 ### `public/paths.json` — the "Inburgering Online" progression path
 `npm run a2:idlists` also emits `public/paths.json`, the runtime definition of the **Inburgering Online**
@@ -80,8 +86,9 @@ at runtime and is *not* in this file). Shape:
 `{ version, paths: [{ id: "inburgering", name, unitSize: 100, difficulties: [{ key, label, cardIds }] }] }`.
 The three tiers are made **disjoint** here: walking easy → medium → hard, each card id is kept only in its
 lowest tier (so no card is drilled twice within the path). The app chunks each tier into units of `unitSize`
-at load time. Since it references the volatile A+ ids, **regenerate it after any `convert*` (and rebuild
-`dist/`)** — same cadence as the id lists. See `docs/ARCHITECTURE.md` › Paths.
+at load time. It references A+ ids, which are now **permanent**, so `paths.json` stays valid across edits —
+only regenerate it (and `dist/`) after an `import:merge` actually appends new cards. See
+`docs/ARCHITECTURE.md` › Paths.
 
 What it does:
 - Keeps content words only (NT2Lex tags `N( WW( ADJ( BW(`), one per lemma, at its lowest band.
@@ -93,8 +100,10 @@ What it does:
 - Shares the Kaikki streaming index with `enrich-cards.mjs` (`scripts/enrich/kaikki-index.mjs`).
 
 ## Cleaning pass (`scripts/clean-cards.mjs`)
-Regen-safe, **idempotent, drop-only** (never renumbers, so `enrichment.json` and saved progress stay valid).
-Runs after `convert:nt2lex`, before `enrich`. It:
+**Idempotent, drop-only** pre-merge cleaner. It takes an explicit staging file
+(`node scripts/clean-cards.mjs <staging.json>`) and refuses to run without one, so it can never touch
+`public/cards.json`. Run it on `scripts/import/nt2lex.staging.json` after `convert:nt2lex`, before
+`import:merge`. It:
 - drops glosses that are pure function words (`of`, `from`, `to be`, …) unless that would empty the card;
 - strips register tags (`(formal)`, `(informal)`, …) and `etc.`/`e.g.`/`i.e.` remnants from glosses;
 - salvages truncated/unbalanced-parenthesis fragments (`article (een` → `article`, `moss …)` → `moss …`);
@@ -116,9 +125,11 @@ Quiz prompt. `acceptedAnswers()` still accepts the bare answer for a parenthetic
 convenience, **not** synonym pooling, and never mutates the EN→NL prompt.
 
 ## Editing cards directly
-Hand-editing `public/cards.json` is fine for small fixes. Keep the schema, keep ids unique and stable
-(changing an id orphans that item's saved progress). Then `npm run build`, commit `cards.json` + `dist/`,
-deploy.
+Hand-editing `public/cards.json` is the **normal, preferred** way to fix cards — it is owned data. Change
+glosses, articles, notes, POS, add senses, whatever. Keep the schema, and **never change an existing `id`**
+(that orphans the item's saved progress and its enrichment/paths entries). To add a card by hand, give it
+`c{highest+1}`. Then `npm run enrich` / `npm run a2:idlists` if you touched anything they key on, `npm run
+build`, commit `cards.json` + `dist/`, deploy.
 
 ## Adding a different deck / language
 Adjust the field mapping in `convert-anki.mjs` (`fieldIndex` + the `get(...)` calls) to match the new
