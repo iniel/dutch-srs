@@ -185,6 +185,15 @@ const HINTS: Record<string, string> = {
   // "difficult" — moeilijk / lastig
   "c197:en_nl": "hard",
   "c1427:en_nl": "tricky / annoying",
+  // "this" — deze (de-word) / dit (het-word)
+  "c10109:en_nl": "de",
+  "c10111:en_nl": "het",
+  // "that" — die (de-word) / dat (het-word)
+  "c10161:en_nl": "de",
+  "c10105:en_nl": "het",
+  // "there" — daar (specific / pointing) / er (neutral / dummy)
+  "c552:en_nl": "specific",
+  "c10106:en_nl": "neutral",
 };
 
 export function getHint(cardId: string, dir: Direction): string | undefined {
