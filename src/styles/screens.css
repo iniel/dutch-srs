@@ -43,8 +43,7 @@
   color: var(--text);
   border-radius: var(--radius-sm);
   padding: 11px 16px;
-  /* Long press pins a word to the next lesson; keep iOS from popping the
-     text-selection callout instead. */
+  /* Rows are tap targets, so suppress iOS's text-selection callout on them. */
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -65,6 +64,39 @@
   border-radius: 50%;
   background: var(--accent);
   vertical-align: middle;
+}
+
+.word-row-wrap {
+  position: relative;
+}
+.word-row.has-add {
+  padding-right: 52px;
+}
+/* Overlaid rather than nested: the row is itself a button. */
+.word-row-add {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-faint);
+  font-size: 1.15rem;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+.word-row-add.on {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.word-row-add:active {
+  background: var(--surface-2);
 }
 .word-row-en {
   grid-area: en;

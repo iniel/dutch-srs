@@ -6,7 +6,6 @@ import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
 import { cefrBadge, LEVEL_PASS_THRESHOLD } from "../srs/levels";
 import { unitProgress } from "../paths/engine";
 import type { LearningPath } from "../paths/types";
-import { useLongPress } from "../util/useLongPress";
 
 export interface WordSection {
   id: string;
@@ -77,26 +76,37 @@ interface WordRowProps {
 }
 
 function WordRow({ item, color, showCefr, pinned, onOpen, onTogglePin }: WordRowProps) {
-  const handlers = useLongPress({
-    onLongPress: () => onTogglePin(item.cardId),
-    onClick: () => onOpen(item.cardId),
-    enabled: item.stage === NOT_STARTED_STAGE,
-  });
+  const canQueue = item.stage === NOT_STARTED_STAGE;
 
   return (
-    <button
-      className={`word-row tinted${pinned ? " pinned" : ""}`}
-      style={{ borderLeftColor: color }}
-      title={pinned ? "In next lesson" : undefined}
-      {...handlers}
-    >
-      <span className="word-row-dutch">
-        {pinned && <span className="word-row-pin" aria-hidden />}
-        {item.dutch}
-      </span>
-      <span className="word-row-en">{item.english}</span>
-      {showCefr && item.cefr && <span className="word-row-tag">{item.cefr}</span>}
-    </button>
+    <div className="word-row-wrap">
+      <button
+        className={`word-row tinted${canQueue ? " has-add" : ""}${pinned ? " pinned" : ""}`}
+        style={{ borderLeftColor: color }}
+        onClick={() => onOpen(item.cardId)}
+      >
+        <span className="word-row-dutch">
+          {pinned && <span className="word-row-pin" aria-hidden />}
+          {item.dutch}
+        </span>
+        <span className="word-row-en">{item.english}</span>
+        {showCefr && item.cefr && <span className="word-row-tag">{item.cefr}</span>}
+      </button>
+      {canQueue && (
+        <button
+          className={`word-row-add${pinned ? " on" : ""}`}
+          onClick={() => onTogglePin(item.cardId)}
+          aria-pressed={pinned}
+          aria-label={
+            pinned
+              ? `Remove ${item.dutch} from the next lesson`
+              : `Add ${item.dutch} to the next lesson`
+          }
+        >
+          {pinned ? "✓" : "+"}
+        </button>
+      )}
+    </div>
   );
 }
 
