@@ -17,6 +17,7 @@ import { useEnrichment } from "./data/loadEnrichment";
 import { usePaths } from "./data/loadPaths";
 import { now } from "./util/now";
 import { useVisualViewportVars } from "./util/visualViewport";
+import { useScrollMemory } from "./util/useScrollMemory";
 import { buildPaths } from "./paths/build";
 import {
   availableLessonIds,
@@ -67,6 +68,7 @@ export function App() {
   const applyUpdate = useRef<((reload?: boolean) => Promise<void>) | null>(null);
 
   useVisualViewportVars(screen === "reviews" || screen === "lessons");
+  useScrollMemory(screen === "wordlist" ? `wordlist:${listPathId}:${listSectionId}` : screen);
 
   const unlockAll = !!progress.settings.unlockAllLevels;
   const paths = useMemo(
