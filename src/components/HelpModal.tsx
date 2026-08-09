@@ -61,6 +61,12 @@ export function HelpModal({ onClose }: HelpModalProps) {
             spelling slips are still accepted.
           </p>
 
+          <p>
+            If an answer is marked wrong but you know you had it right, tap the ? next to the arrow
+            and confirm. The word counts as correct and moves up as usual. Only use it when you
+            really knew the answer, otherwise you are only cheating yourself.
+          </p>
+
           <h3>Removing the Dutch to English question</h3>
           <p>
             Sometimes the Dutch to English translation adds nothing, for example when the word is
