@@ -1,6 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ProgressData } from "./types";
-import { loadProgress, saveProgress, setLessonQueue, setState, setDirectionDisabled } from "./storage/progress";
+import {
+  loadProgress,
+  saveProgress,
+  setLessonQueue,
+  setState,
+  setDirectionDisabled,
+  toggleLessonQueue,
+} from "./storage/progress";
 import { newLessonState, startLesson, answerCorrect, answerIncorrect } from "./srs/schedule";
 import { buildLessonQueue, buildReviewQueue, createSession, singleWordLessonTasks } from "./review/session";
 import type { Session, WordResult } from "./review/session";
@@ -150,6 +157,11 @@ export function App() {
     persist(setLessonQueue(progress, progress.lessonQueue.filter((id) => id !== cardId)));
   }
 
+  function toggleLessonPin(cardId: string) {
+    if ((progress.states[cardId]?.stage ?? 0) > 0) return;
+    persist(toggleLessonQueue(progress, cardId));
+  }
+
   function applyWordReview(cardId: string, passed: boolean) {
     setProgress((prev) => {
       const cur = prev.states[cardId] ?? newLessonState();
@@ -262,6 +274,7 @@ export function App() {
           onSelectSection={setListSectionId}
           showCefr={listPath.id !== "inburgering"}
           onOpen={(id) => openWordCard(id, "wordlist")}
+          onTogglePin={toggleLessonPin}
           onBack={() => setScreen("dashboard")}
         />
       )}

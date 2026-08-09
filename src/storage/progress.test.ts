@@ -14,6 +14,7 @@ import {
   setDirectionDisabled,
   setLessonQueue,
   setState,
+  toggleLessonQueue,
   updateSettings,
 } from "./progress";
 
@@ -248,6 +249,28 @@ describe("lessonQueue", () => {
     let data = setLessonQueue(loadProgress(), ["c1"]);
     saveProgress(data);
     expect(resetProgress().lessonQueue).toEqual([]);
+  });
+
+  it("toggleLessonQueue appends a card that is not queued", () => {
+    const data = setLessonQueue(loadProgress(), ["c1"]);
+    expect(toggleLessonQueue(data, "c2").lessonQueue).toEqual(["c1", "c2"]);
+  });
+
+  it("toggleLessonQueue removes a card that is already queued", () => {
+    const data = setLessonQueue(loadProgress(), ["c1", "c2"]);
+    expect(toggleLessonQueue(data, "c1").lessonQueue).toEqual(["c2"]);
+  });
+
+  it("toggleLessonQueue does not mutate the original", () => {
+    const data = setLessonQueue(loadProgress(), ["c1"]);
+    const next = toggleLessonQueue(data, "c2");
+    expect(next).not.toBe(data);
+    expect(data.lessonQueue).toEqual(["c1"]);
+  });
+
+  it("toggleLessonQueue round-trips back to the original queue", () => {
+    const data = setLessonQueue(loadProgress(), ["c1"]);
+    expect(toggleLessonQueue(toggleLessonQueue(data, "c2"), "c2").lessonQueue).toEqual(["c1"]);
   });
 });
 

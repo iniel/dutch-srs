@@ -126,6 +126,14 @@ export function setLessonQueue(data: ProgressData, lessonQueue: string[]): Progr
   return { ...data, lessonQueue };
 }
 
+export function toggleLessonQueue(data: ProgressData, cardId: string): ProgressData {
+  const queued = data.lessonQueue.includes(cardId);
+  return setLessonQueue(
+    data,
+    queued ? data.lessonQueue.filter((id) => id !== cardId) : [...data.lessonQueue, cardId],
+  );
+}
+
 // Toggle a single direction for one card. Immutable. Refuses to disable the
 // last remaining direction so a word is never left with nothing to review.
 export function setDirectionDisabled(

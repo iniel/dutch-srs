@@ -6,6 +6,7 @@ import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
 import { cefrBadge, LEVEL_PASS_THRESHOLD } from "../srs/levels";
 import { unitProgress } from "../paths/engine";
 import type { LearningPath } from "../paths/types";
+import { useLongPress } from "../util/useLongPress";
 
 export interface WordSection {
   id: string;
@@ -23,6 +24,7 @@ interface WordListProps {
   /** Show the purple CEFR badge on rows. Off for paths where it is noise (e.g. Inburgering Online). */
   showCefr?: boolean;
   onOpen: (cardId: string) => void;
+  onTogglePin: (cardId: string) => void;
   onBack: () => void;
 }
 
@@ -65,6 +67,39 @@ function buildStageGroups(index: CardIndex, progress: ProgressData, cardIds: str
 
 const STAGE_ORDER_WITH_UNSTARTED = [...STAGE_ORDER, NOT_STARTED_STAGE];
 
+interface WordRowProps {
+  item: ListItem;
+  color: string;
+  showCefr: boolean;
+  pinned: boolean;
+  onOpen: (cardId: string) => void;
+  onTogglePin: (cardId: string) => void;
+}
+
+function WordRow({ item, color, showCefr, pinned, onOpen, onTogglePin }: WordRowProps) {
+  const handlers = useLongPress({
+    onLongPress: () => onTogglePin(item.cardId),
+    onClick: () => onOpen(item.cardId),
+    enabled: item.stage === NOT_STARTED_STAGE,
+  });
+
+  return (
+    <button
+      className={`word-row tinted${pinned ? " pinned" : ""}`}
+      style={{ borderLeftColor: color }}
+      title={pinned ? "In next lesson" : undefined}
+      {...handlers}
+    >
+      <span className="word-row-dutch">
+        {pinned && <span className="word-row-pin" aria-hidden />}
+        {item.dutch}
+      </span>
+      <span className="word-row-en">{item.english}</span>
+      {showCefr && item.cefr && <span className="word-row-tag">{item.cefr}</span>}
+    </button>
+  );
+}
+
 export function WordList({
   index,
   progress,
@@ -74,12 +109,15 @@ export function WordList({
   onSelectSection,
   showCefr = true,
   onOpen,
+  onTogglePin,
   onBack,
 }: WordListProps) {
   const selected = useMemo(
     () => sections.find((s) => s.id === selectedId) ?? sections[0],
     [sections, selectedId],
   );
+
+  const pinnedIds = useMemo(() => new Set(progress.lessonQueue), [progress.lessonQueue]);
 
   const groups = useMemo(
     () => buildStageGroups(index, progress, selected?.cardIds ?? []),
@@ -134,15 +172,14 @@ export function WordList({
             <ul className="word-rows">
               {items.map((item) => (
                 <li key={item.cardId}>
-                  <button
-                    className="word-row tinted"
-                    style={{ borderLeftColor: color }}
-                    onClick={() => onOpen(item.cardId)}
-                  >
-                    <span className="word-row-dutch">{item.dutch}</span>
-                    <span className="word-row-en">{item.english}</span>
-                    {showCefr && item.cefr && <span className="word-row-tag">{item.cefr}</span>}
-                  </button>
+                  <WordRow
+                    item={item}
+                    color={color}
+                    showCefr={showCefr}
+                    pinned={pinnedIds.has(item.cardId)}
+                    onOpen={onOpen}
+                    onTogglePin={onTogglePin}
+                  />
                 </li>
               ))}
             </ul>

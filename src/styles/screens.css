@@ -43,6 +43,11 @@
   color: var(--text);
   border-radius: var(--radius-sm);
   padding: 11px 16px;
+  /* Long press pins a word to the next lesson; keep iOS from popping the
+     text-selection callout instead. */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 .word-row.tinted {
   border-left: 4px solid var(--border);
@@ -51,6 +56,15 @@
   grid-area: dutch;
   font-weight: 600;
   color: var(--text-strong);
+}
+.word-row-pin {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  vertical-align: middle;
 }
 .word-row-en {
   grid-area: en;

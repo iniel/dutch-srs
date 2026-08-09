@@ -69,6 +69,12 @@ async function answerAll(page, cards) {
       console.error(`      byDutch? ${!!cards.find((c) => c.dutch === info.prompt)} byEngJoin? ${!!cards.find((c) => c.english.join(" / ") === info.prompt)}`);
       throw new Error(`unmatched prompt: ${info.prompt}`);
     }
+    // The quiz remounts its input as a question comes up and a fill landing
+    // mid-remount is discarded, so only type once the prompt has stopped moving.
+    await page.waitForTimeout(80);
+    const settled = await page.evaluate(() => document.querySelector(".prompt-text")?.textContent || "");
+    if (settled !== info.prompt) continue;
+
     await page.fill(".answer-input", ans);
     await page.waitForTimeout(15);
     await page.keyboard.press("Enter");
