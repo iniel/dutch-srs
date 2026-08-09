@@ -33,6 +33,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   const [flash, setFlash] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [showRemoveSheet, setShowRemoveSheet] = useState(false);
+  const [showIgnoreSheet, setShowIgnoreSheet] = useState(false);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -48,6 +49,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     setFlash(false);
     setShowHint(false);
     setShowRemoveSheet(false);
+    setShowIgnoreSheet(false);
   }
 
   useEffect(() => {
@@ -108,6 +110,21 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     setShowRemoveSheet(false);
     onRemoveDirection?.(cardId);
     const completion = session.removeDirection(cardId, "nl_en");
+    if (completion) onWordCleared(completion.cardId, completion.passed);
+    setPhase("input");
+    setValue("");
+    force((n) => n + 1);
+    if (session.isComplete()) onComplete();
+  }
+
+  function closeIgnoreSheet() {
+    setShowIgnoreSheet(false);
+    inputRef.current?.focus();
+  }
+
+  function confirmIgnoreWrong() {
+    setShowIgnoreSheet(false);
+    const completion = session.markCorrect();
     if (completion) onWordCleared(completion.cardId, completion.passed);
     setPhase("input");
     setValue("");
@@ -269,17 +286,32 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
             aria-label="answer"
           />
           {wrong ? (
-            <button
-              type="button"
-              className="answer-next"
-              // Keep focus on the input so tapping to advance doesn't collapse
-              // the mobile keyboard.
-              onMouseDown={(e) => e.preventDefault()}
-              onClick={advanceAfterWrong}
-              aria-label="next"
-            >
-              →
-            </button>
+            <>
+              <button
+                type="button"
+                className="answer-ignore"
+                // Unlike the next-arrow, this one drops input focus on purpose so
+                // the mobile keyboard collapses behind the sheet.
+                onClick={() => {
+                  inputRef.current?.blur();
+                  setShowIgnoreSheet(true);
+                }}
+                aria-label="Ignore incorrect answer"
+              >
+                ?
+              </button>
+              <button
+                type="button"
+                className="answer-next"
+                // Keep focus on the input so tapping to advance doesn't collapse
+                // the mobile keyboard.
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={advanceAfterWrong}
+                aria-label="next"
+              >
+                →
+              </button>
+            </>
           ) : (
             <span className={`answer-check ${flash ? "correct" : ""}`} aria-hidden="true">✓</span>
           )}
@@ -310,6 +342,37 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
               className="sheet-cancel"
               onMouseDown={(e) => e.preventDefault()}
               onClick={closeRemoveSheet}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
+      {showIgnoreSheet && (
+        <div
+          className="sheet-backdrop"
+          onMouseDown={(e) => e.preventDefault()}
+          onClick={closeIgnoreSheet}
+        >
+          <div className="bottom-sheet" onClick={(e) => e.stopPropagation()}>
+            <h2 className="sheet-title">Ignore incorrect answer?</h2>
+            <p className="sheet-note">
+              Don't cheat! Only use this if you promise you knew the correct answer.
+            </p>
+            <button
+              type="button"
+              className="sheet-action"
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={confirmIgnoreWrong}
+            >
+              My answer was correct
+            </button>
+            <button
+              type="button"
+              className="sheet-cancel"
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={closeIgnoreSheet}
             >
               Cancel
             </button>

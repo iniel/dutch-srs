@@ -444,7 +444,7 @@
   opacity: 0.85;
 }
 
-/* Bottom sheet (Quiz remove-direction) */
+/* Bottom sheets (Quiz remove-direction, ignore-incorrect) */
 .sheet-backdrop {
   position: fixed;
   inset: 0;
@@ -468,6 +468,12 @@
   gap: 12px;
   box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.3);
   animation: sheet-up 0.2s ease;
+}
+.sheet-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
 }
 .sheet-action {
   border: 1px solid var(--border);
@@ -679,6 +685,25 @@
   display: grid;
   place-items: center;
   font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+/* Only rendered in the wrong phase, so it always sits on the red panel. */
+.answer-ignore {
+  position: absolute;
+  right: 44px;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
   line-height: 1;
   cursor: pointer;
 }

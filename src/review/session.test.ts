@@ -398,6 +398,39 @@ describe("session.removeDirection", () => {
   });
 });
 
+describe("session.markCorrect", () => {
+  it("clears the current task without requeuing it", () => {
+    const s = createSession(tasksFor("a", "b"));
+    expect(s.remaining()).toBe(4);
+    expect(s.markCorrect()).toBeUndefined(); // a:en_nl cleared, a:nl_en pending
+    expect(s.remaining()).toBe(3);
+    expect(s.current()?.key).toBe("a:nl_en");
+  });
+
+  it("undoes a first-try miss on the same item", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.submit(false)).toBeUndefined(); // a:en_nl wrong -> requeued to back
+    s.submit(true); // a:nl_en
+    expect(s.markCorrect()).toEqual({ cardId: "a", passed: true }); // requeued a:en_nl
+    const a = s.results()[0];
+    expect(a.passed).toBe(true);
+    expect(a.missedDirs).toEqual([]);
+  });
+
+  it("keeps the other direction's first-try failure", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.submit(false)).toBeUndefined(); // a:en_nl wrong -> requeued to back
+    expect(s.markCorrect()).toBeUndefined(); // a:nl_en marked correct
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: false }); // requeued a:en_nl
+    expect(s.results()[0].missedDirs).toEqual(["en_nl"]);
+  });
+
+  it("is a no-op (returns undefined) on an empty queue", () => {
+    const s = createSession([]);
+    expect(s.markCorrect()).toBeUndefined();
+  });
+});
+
 describe("lessonsRemainingToday", () => {
   it("returns the cap minus what was already started", () => {
     expect(lessonsRemainingToday(15, 0)).toBe(15);

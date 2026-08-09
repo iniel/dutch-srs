@@ -81,14 +81,11 @@ function WordRow({ item, color, showCefr, pinned, onOpen, onTogglePin }: WordRow
   return (
     <div className="word-row-wrap">
       <button
-        className={`word-row tinted${canQueue ? " has-add" : ""}${pinned ? " pinned" : ""}`}
+        className={`word-row tinted${canQueue ? " has-add" : ""}`}
         style={{ borderLeftColor: color }}
         onClick={() => onOpen(item.cardId)}
       >
-        <span className="word-row-dutch">
-          {pinned && <span className="word-row-pin" aria-hidden />}
-          {item.dutch}
-        </span>
+        <span className="word-row-dutch">{item.dutch}</span>
         <span className="word-row-en">{item.english}</span>
         {showCefr && item.cefr && <span className="word-row-tag">{item.cefr}</span>}
       </button>

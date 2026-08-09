@@ -56,16 +56,6 @@
   font-weight: 600;
   color: var(--text-strong);
 }
-.word-row-pin {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 6px;
-  border-radius: 50%;
-  background: var(--accent);
-  vertical-align: middle;
-}
-
 .word-row-wrap {
   position: relative;
 }
@@ -93,7 +83,6 @@
 }
 .word-row-add.on {
   color: var(--accent);
-  background: var(--accent-soft);
 }
 .word-row-add:active {
   background: var(--surface-2);

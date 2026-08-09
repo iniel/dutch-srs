@@ -213,6 +213,11 @@ export interface Session {
   current(): ReviewTask | undefined;
   submit(wasCorrect: boolean): WordCompletion | undefined;
   /**
+   * Learner asserts the current item was actually correct. Overrides an earlier
+   * first-try miss on this item, then clears it exactly like a correct answer.
+   */
+  markCorrect(): WordCompletion | undefined;
+  /**
    * Drop a direction from the running session (learner switched it off). Removes
    * its queued task(s) and stops counting it; returns a `WordCompletion` if this
    * was the word's last outstanding direction.
@@ -256,6 +261,16 @@ export function createSession(tasks: ReviewTask[]): Session {
     return missed;
   }
 
+  function clearCurrent(): WordCompletion | undefined {
+    const task = queue.shift()!;
+    const remaining = wordDirs.get(task.cardId)!;
+    remaining.delete(task.dir);
+    if (remaining.size > 0) return undefined;
+
+    clearedWords.add(task.cardId);
+    return { cardId: task.cardId, passed: missedDirsFor(task.cardId).length === 0 };
+  }
+
   return {
     current() {
       return queue[0];
@@ -266,18 +281,19 @@ export function createSession(tasks: ReviewTask[]): Session {
 
       if (!firstTry.has(task.key)) firstTry.set(task.key, wasCorrect);
 
-      queue.shift();
       if (!wasCorrect) {
+        queue.shift();
         queue.push(task);
         return undefined;
       }
 
-      const remaining = wordDirs.get(task.cardId)!;
-      remaining.delete(task.dir);
-      if (remaining.size > 0) return undefined;
-
-      clearedWords.add(task.cardId);
-      return { cardId: task.cardId, passed: missedDirsFor(task.cardId).length === 0 };
+      return clearCurrent();
+    },
+    markCorrect() {
+      const task = queue[0];
+      if (!task) return undefined;
+      firstTry.set(task.key, true);
+      return clearCurrent();
     },
     removeDirection(cardId: string, dir: Direction) {
       const remaining = wordDirs.get(cardId);
