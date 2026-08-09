@@ -37,6 +37,13 @@ export function HelpModal({ onClose }: HelpModalProps) {
             your learning batch. By default a batch is 5 words at a time; you can raise this in
             Settings.
           </p>
+          <p>
+            You can also pick which words come next. In a path’s word list, every word you have not
+            started yet has a + on the right: tap it to put that word in your next batch, and tap the
+            check to take it back out. The same choice sits on the word’s own card, as Add to next
+            lesson. Words you pick this way are always included in the next batch, even if their unit
+            has not unlocked yet, so you can learn something you need right now.
+          </p>
 
           <h3>The quiz</h3>
           <p>

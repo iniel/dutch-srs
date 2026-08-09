@@ -212,10 +212,6 @@ export interface WordResult {
 export interface Session {
   current(): ReviewTask | undefined;
   submit(wasCorrect: boolean): WordCompletion | undefined;
-  /**
-   * Learner asserts the current item was actually correct. Overrides an earlier
-   * first-try miss on this item, then clears it exactly like a correct answer.
-   */
   markCorrect(): WordCompletion | undefined;
   /**
    * Drop a direction from the running session (learner switched it off). Removes

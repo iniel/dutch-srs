@@ -290,8 +290,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
               <button
                 type="button"
                 className="answer-ignore"
-                // Unlike the next-arrow, this one drops input focus on purpose so
-                // the mobile keyboard collapses behind the sheet.
+                // No preventDefault: the input must lose focus so the iOS keyboard drops.
                 onClick={() => {
                   inputRef.current?.blur();
                   setShowIgnoreSheet(true);
