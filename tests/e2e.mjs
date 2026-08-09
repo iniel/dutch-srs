@@ -69,24 +69,24 @@ async function answerAll(page, cards) {
       console.error(`      byDutch? ${!!cards.find((c) => c.dutch === info.prompt)} byEngJoin? ${!!cards.find((c) => c.english.join(" / ") === info.prompt)}`);
       throw new Error(`unmatched prompt: ${info.prompt}`);
     }
-    // The quiz remounts its input as a question comes up and a fill landing
-    // mid-remount is discarded, so only type once the prompt has stopped moving.
-    await page.waitForTimeout(80);
-    const settled = await page.evaluate(() => document.querySelector(".prompt-text")?.textContent || "");
-    if (settled !== info.prompt) continue;
-
     await page.fill(".answer-input", ans);
-    await page.waitForTimeout(15);
     await page.keyboard.press("Enter");
-    await page.waitForTimeout(20);
+    // A correct answer only advances after the 350ms flash. Without waiting for
+    // that to land, the next pass can read this card's prompt, then fill its
+    // answer into the card that replaced it — scoring a miss the app never made.
+    await page.waitForFunction(
+      (p) =>
+        !!document.querySelector(".summary-pct") ||
+        !!document.querySelector(".answer-input.wrong") ||
+        (document.querySelector(".prompt-text")?.textContent || "") !== p,
+      info.prompt,
+      { timeout: 5000 },
+    );
   }
 }
 
-// Submit a deliberately wrong answer. Retries the fill because the quiz's
-// mount reset effect can clear a too-early fill.
+// Submit a deliberately wrong answer.
 async function missAnswer(page) {
-  // Let the quiz mount/reset effect settle so it doesn't clear our input.
-  await page.waitForTimeout(250);
   const input = page.locator(".answer-input");
   await input.click();
   await input.pressSequentially("zzzwrong", { delay: 25 });

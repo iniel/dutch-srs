@@ -38,13 +38,17 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
 
   const task = session.current();
 
-  useEffect(() => {
+  // Reset during render, not in an effect: an effect-based reset clears the box
+  // before paint only by winning a race React does not guarantee it wins.
+  const [resetKey, setResetKey] = useState(task?.key);
+  if (task?.key !== resetKey) {
+    setResetKey(task?.key);
     setPhase("input");
     setValue("");
     setFlash(false);
     setShowHint(false);
     setShowRemoveSheet(false);
-  }, [task?.key]);
+  }
 
   useEffect(() => {
     if (!task || task.dir !== "nl_en") return;
