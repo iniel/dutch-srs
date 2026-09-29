@@ -1,8 +1,10 @@
 import {
   newLessonState,
   startLesson,
+  setCustomProgress,
   answerCorrect,
   answerIncorrect,
+  type CustomProgressTarget,
 } from "./schedule";
 import { STAGE_INTERVALS_MS } from "./stages";
 
@@ -24,6 +26,32 @@ describe("startLesson", () => {
     expect(s.stage).toBe(1);
     expect(s.availableAt).toBe(NOW + STAGE_INTERVALS_MS[1]);
     expect(s.lastReviewedAt).toBe(NOW);
+  });
+});
+
+describe("setCustomProgress", () => {
+  it.each([
+    ["guru", 5],
+    ["master", 7],
+  ] as const)("sets an unstarted word to %s (stage %i) on its normal schedule", (target, stage) => {
+    const s = setCustomProgress(newLessonState(), target, NOW);
+    expect(s).toEqual({
+      stage,
+      availableAt: NOW + STAGE_INTERVALS_MS[stage],
+      lastReviewedAt: NOW,
+      incorrectCount: 0,
+      burned: false,
+    });
+  });
+
+  it("does not overwrite progress for a word that has already started", () => {
+    const started = startLesson(newLessonState(), NOW);
+    expect(setCustomProgress(started, "master", NOW + 1)).toBe(started);
+  });
+
+  it("refuses an unexpected runtime target without changing the word", () => {
+    const unstarted = newLessonState();
+    expect(setCustomProgress(unstarted, "burned" as CustomProgressTarget, NOW)).toBe(unstarted);
   });
 });
 

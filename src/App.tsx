@@ -8,7 +8,14 @@ import {
   setDirectionDisabled,
   toggleLessonQueue,
 } from "./storage/progress";
-import { newLessonState, startLesson, answerCorrect, answerIncorrect } from "./srs/schedule";
+import {
+  newLessonState,
+  startLesson,
+  setCustomProgress,
+  answerCorrect,
+  answerIncorrect,
+  type CustomProgressTarget,
+} from "./srs/schedule";
 import { buildLessonQueue, buildReviewQueue, createSession, singleWordLessonTasks } from "./review/session";
 import type { Session, WordResult } from "./review/session";
 import type { Card } from "./types";
@@ -159,6 +166,24 @@ export function App() {
     persist(setLessonQueue(progress, progress.lessonQueue.filter((id) => id !== cardId)));
   }
 
+  function applyCustomProgress(cardId: string, target: CustomProgressTarget) {
+    setProgress((prev) => {
+      const current = prev.states[cardId] ?? newLessonState();
+      const updated = setCustomProgress(current, target, now());
+      // The SRS helper refuses changes after a word has started. This also
+      // protects against a stale detail card left open in another tab.
+      if (updated === current) return prev;
+
+      let next = setState(prev, cardId, updated);
+      // A promoted word is no longer eligible for a lesson, including a pin.
+      if (next.lessonQueue.includes(cardId)) {
+        next = setLessonQueue(next, next.lessonQueue.filter((id) => id !== cardId));
+      }
+      saveProgress(next);
+      return next;
+    });
+  }
+
   function toggleLessonPin(cardId: string) {
     if ((progress.states[cardId]?.stage ?? 0) > 0) return;
     persist(toggleLessonQueue(progress, cardId));
@@ -297,6 +322,7 @@ export function App() {
           onLearnNow={learnNow}
           onPin={pinLesson}
           onUnpin={unpinLesson}
+          onSetCustomProgress={applyCustomProgress}
           onSearchWord={(w) => openSearch(w)}
           onToggleDirection={(id, enabled) =>
             persist(setDirectionDisabled(progress, id, "nl_en", !enabled))

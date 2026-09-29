@@ -284,6 +284,79 @@ try {
   await page.waitForTimeout(120);
   await missAnswer(page);
   check(!!(await page.$(".quiz-reveal")), "wrong state shows again on a later miss (BUG 3)");
+
+  console.log("FEATURE — custom progress keeps unrelated progress intact:");
+  const customContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
+  await customContext.addInitScript(initScript);
+  const customPage = await customContext.newPage();
+  try {
+    await customPage.goto(BASE_URL);
+    await customPage.waitForSelector(".action-card");
+    await customPage.click('[aria-label="search"]');
+    await customPage.waitForSelector(".search-input");
+    await customPage.fill(".search-input", "bedankt");
+    await customPage.waitForSelector(".word-row");
+    // Seed by opening the target and resolving its stable id from card data.
+    await customPage.click(".word-row");
+    await customPage.waitForSelector(".word-detail");
+    const selectedCardId = await customPage.evaluate(async () => {
+      const cards = await (await fetch("cards.json")).json();
+      return cards.find((card) => card.dutch.toLowerCase() === "bedankt")?.id;
+    });
+    check(!!selectedCardId, "custom-progress test found a concrete unstarted word");
+    await customPage.evaluate(({ cardId }) => {
+      localStorage.setItem("dutch-srs-progress-v1", JSON.stringify({
+        version: 2,
+        states: {
+          control: { stage: 2, availableAt: 1234, lastReviewedAt: 1000, incorrectCount: 1, burned: false },
+        },
+        lessonQueue: [cardId, "other-pinned-word"],
+        disabledDirections: { control: ["nl_en"] },
+        settings: { lessonBatchSize: 5, dailyLessonCap: 15, theme: "dark" },
+      }));
+    }, { cardId: selectedCardId });
+    await customPage.reload();
+    await customPage.waitForSelector(".action-card");
+    await customPage.click('[aria-label="search"]');
+    await customPage.waitForSelector(".search-input");
+    await customPage.fill(".search-input", "bedankt");
+    await customPage.waitForSelector(".word-row");
+    await customPage.click(".word-row");
+    await customPage.waitForSelector(".word-detail");
+    check(await customPage.$('.srs-action:has-text("Custom progress")') !== null, "custom control is only shown for an unstarted word");
+    await customPage.click('.srs-action:has-text("Custom progress")');
+    await customPage.waitForSelector(".bottom-sheet");
+    check(
+      (await customPage.textContent(".bottom-sheet")).includes("Don’t cheat") ||
+        (await customPage.textContent(".bottom-sheet")).includes("Don't cheat"),
+      "custom-progress warning is shown before choosing a stage",
+    );
+    await customPage.click('.sheet-action:has-text("Master")');
+    await customPage.waitForSelector(".bottom-sheet", { state: "detached" });
+
+    const customState = await readState(customPage);
+    const promoted = customState.states[selectedCardId];
+    check(promoted?.stage === 7, "Master sets exactly stage 7");
+    check(promoted?.availableAt - promoted?.lastReviewedAt === 30 * 24 * HOUR, "Master keeps its normal 30-day schedule");
+    check(
+      JSON.stringify(customState.states.control) === JSON.stringify({ stage: 2, availableAt: 1234, lastReviewedAt: 1000, incorrectCount: 1, burned: false }),
+      "custom progress leaves every other SRS state untouched",
+    );
+    check(
+      JSON.stringify(customState.lessonQueue) === JSON.stringify(["other-pinned-word"]),
+      "custom progress removes only the promoted word from lessonQueue",
+    );
+    const disabledDirections = await customPage.evaluate(
+      () => JSON.parse(localStorage.getItem("dutch-srs-progress-v1") || "{}").disabledDirections,
+    );
+    check(
+      JSON.stringify(disabledDirections) === JSON.stringify({ control: ["nl_en"] }),
+      "custom progress preserves direction settings",
+    );
+    check(await customPage.$('.srs-action:has-text("Custom progress")') === null, "a started word cannot be promoted again");
+  } finally {
+    await customContext.close();
+  }
 } catch (e) {
   console.error("E2E threw:", e);
   exitCode = 1;

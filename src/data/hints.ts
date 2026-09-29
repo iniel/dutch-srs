@@ -42,7 +42,7 @@ const HINTS: Record<string, string> = {
   "c223:nl_en": "when giving",
   "c248:nl_en": "when asking",
   // weg — adjective sense
-  "c246:nl_en": "adjective · gone",
+  "c246:nl_en": "adjective · gone / absent",
   // boven — in a house vs position
   "c282:nl_en": "in a house",
   "c727:nl_en": "position",
@@ -83,7 +83,7 @@ const HINTS: Record<string, string> = {
   "c766:nl_en": "to make it in time",
   // net — adjective vs adverb
   "c623:nl_en": "adjective",
-  "c791:nl_en": "adverb · time",
+  "c791:nl_en": "time · just now / nearly",
   // over — time vs topic
   "c695:nl_en": "time · remaining",
   "c732:nl_en": "topic",
@@ -116,7 +116,72 @@ const HINTS: Record<string, string> = {
   "c1510:nl_en": "abstract",
   // stuk — adjective vs noun
   "c1527:nl_en": "adjective",
-  "c1615:nl_en": "noun",
+  "c1615:nl_en": "piece / individual item",
+
+  // ---- Inburgering Online · Medium 1: near-translation contrasts.
+  // These cards do not have duplicate Dutch prompts. The hint distinguishes
+  // closely translated words so the learner recalls the intended nuance.
+  // even / net / pas — all can be translated "just"
+  "c640:nl_en": "briefly · for a moment",
+  "c640:en_nl": "briefly · for a moment",
+  "c791:en_nl": "time · just now / nearly",
+  "c906:nl_en": "only · not until",
+  "c906:en_nl": "only · not until",
+  // om / bij — both may be "at"
+  "c693:nl_en": "time / around",
+  "c693:en_nl": "time / around",
+  "c749:nl_en": "near / with",
+  "c749:en_nl": "near / with",
+  // tijd / keer — both may be "time"
+  "c599:nl_en": "time · duration",
+  "c599:en_nl": "time · duration",
+  "c559:nl_en": "time · occasion / count",
+  "c559:en_nl": "time · occasion / count",
+  // weg / heen — both may be "away"
+  "c246:en_nl": "gone / absent",
+  "c10127:nl_en": "direction · away / towards",
+  "c10127:en_nl": "direction · away / towards",
+  // deel / stuk — both may be "part"
+  "c1235:nl_en": "part of a whole",
+  "c1235:en_nl": "part of a whole",
+  "c1615:en_nl": "piece / individual item",
+  // mensen / volk — both may be "people"
+  "c196:nl_en": "individual people / humans",
+  "c196:en_nl": "individual people / humans",
+  "c2121:nl_en": "a nation / community",
+  "c2121:en_nl": "a nation / community",
+  // sterk / kracht / macht — strength, force, authority
+  "c1467:nl_en": "adjective · strong",
+  "c1467:en_nl": "adjective · strong",
+  "c2361:nl_en": "physical force / strength",
+  "c2361:en_nl": "physical force / strength",
+  "c2426:nl_en": "authority / control",
+  "c2426:en_nl": "authority / control",
+  // bang / angst — the feeling vs the noun
+  "c1155:nl_en": "adjective · afraid",
+  "c1155:en_nl": "adjective · afraid",
+  "c1861:nl_en": "noun · fear",
+  "c1861:en_nl": "noun · fear",
+  // juist / waar — correct vs factually true
+  "c1319:nl_en": "correct / right",
+  "c1319:en_nl": "correct / right",
+  "c10128:nl_en": "factually true",
+  "c10128:en_nl": "factually true",
+  // zachter / stil — quietness, but not the same form or meaning
+  "c998:nl_en": "comparative · softer / quieter",
+  "c998:en_nl": "comparative · softer / quieter",
+  "c994:nl_en": "quiet / silent / still",
+  "c994:en_nl": "quiet / silent / still",
+  // oog / blik — organ vs a look
+  "c503:nl_en": "physical organ",
+  "c503:en_nl": "physical organ",
+  "c10129:nl_en": "a glance / manner of looking",
+  "c10129:en_nl": "a glance / manner of looking",
+  // zin / doel — sentence or meaning vs an objective
+  "c64:nl_en": "grammar · sentence",
+  "c64:en_nl": "grammar · sentence",
+  "c2266:nl_en": "aim / objective",
+  "c2266:en_nl": "aim / objective",
 
   // ---- EN→NL collisions. Only listed where ≥2 cards share the EXACT English
   // prompt, so the hint actually disambiguates which Dutch word is wanted (a
