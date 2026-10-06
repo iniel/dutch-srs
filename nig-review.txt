@@ -1,0 +1,1505 @@
+NEDERLANDS IN GANG · merge review
+Unmarked lines use the shown decision. To override, put a mark at the very start of a [cNNNNN] line:
+  $1 / $2  take reviewer 1 / reviewer 2 (disputed only)    $N  keep as a new card
+  $J<n>    reuse candidate n                               $M<n>  reuse candidate n and add the book's English
+Then run: node scripts/nig-match/apply.mjs
+
+========================================================================
+DISPUTED (21)
+========================================================================
+  [c10174] je = your (singular)  (ch 1)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) reuse c777 jouw = your (singular)  {same-word, medium} Possessive je is the unstressed variant of jouw, which already means your (singular).
+      2) keep new  {not-in-deck, medium} Possessive je is the reduced form of jouw, not a regular inflection, and c10107 je = you is a different sense; the deck has no je = your card.
+      candidates: J1 c10107 je = you (unstressed) | J2 c46 jij = you (singular) | J3 c777 jouw = your (singular) | J4 c778 uw = your (polite) | J5 c783 jullie = your (plural)
+  [c10190] gaan verder (verdergaan) = go on (continue)  (ch 1)
+      ⇒ reuse c1341 verdergaan = to continue   {regular-form; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c1341 verdergaan = to continue  +[to go on]  {synonym-same-sense, medium} gaan verder is the split regular plural present of verdergaan; target lacks go on.
+      2) reuse c1341 verdergaan = to continue  {regular-form, high} gaan verder is the split plural present of the separable verb verdergaan, and c1341 'to continue' conveys 'go on'.
+      candidates: J1 c1341 verdergaan = to continue
+  [c10191] heeft (hebben) = has  (ch 1)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) keep new  {irregular-form, medium} heeft is an irregular form of hebben; c4784 heeft = have is a junk-ish form card with a different person.
+      2) reuse +sense c4784 heeft = have  +[has]  {same-word, medium} c4784 is a card for the exact form heeft (of hebben) but only accepts 'have'; it is not the hebben lemma, so the irregular-form rule is respected.
+      candidates: J1 c4784 heeft = have | J2 c97 hebben = to have | J3 c98 ik heb = I have | J4 c99 jij hebt = you have | J5 c100 heb jij? = do you have? | J6 c101 u hebt = you have
+  [c10203] pas = only  (ch 2)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) keep new  {different-sense, low} pas = only/not until is a distinct sense from c906 pas = just (recently).
+      2) reuse +sense c906 pas = just  +[only]  {missing-sense, low} Same adverb pas; c906 'just' already overlaps with the 'only / not until' sense (pas 20 = just 20), but 'only' is not accepted.
+      candidates: J1 c906 pas = just | J2 c612 passen = to fit | J3 c993 passen op = to keep an eye on | J4 c10114 alleen = only | J5 c10141 enkel = only | J6 c1884 slechts = only/just
+  [c10243] neem (nemen) = have (take)  (ch 3)
+      ⇒ reuse c685 nemen = to take   {regular-form; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c685 nemen = to take  +[to have]  {missing-sense, medium} neem is the regular present of nemen; the book's ordering sense 'have' is missing from the target.
+      2) reuse c685 nemen = to take  {regular-form, medium} neem is the regular present of nemen; the book's 'have (take)' is the take/consume sense c685 already covers.
+      candidates: J1 c685 nemen = to take | J2 c87 nee = no | J3 c229 Nee = No thanks. | J4 c4784 heeft = have | J5 c97 hebben = to have
+  [c10287] hartstikke = very / completely  (ch 4)
+      ⇒ reuse c2459 hartstikke = very / freaking / hella   {same-word; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c2459 hartstikke = very / freaking / hella  +[completely]  {missing-sense, medium} Same intensifier hartstikke; target lacks completely (hartstikke dood).
+      2) reuse c2459 hartstikke = very / freaking / hella  {same-word, high} Same intensifier hartstikke; c2459 already accepts very.
+      candidates: J1 c2459 hartstikke = very/freaking/hella | J2 c1385 zeer = very | J3 c1451 ontzettend = very
+  [c10328] wel = quite  (ch 5)
+      ⇒ keep new   {different-sense; tiebreak: second reviewer more confident}
+      1) reuse +sense c648 wel = for sure / indeed  +[quite]  {missing-sense, low} Same affirmative adverb wel used as a softening intensifier (het is wel lekker); c648 lacks 'quite'.
+      2) keep new  {different-sense, medium} wel = quite (degree) is a different sense from the affirmative wel = indeed/for sure
+      candidates: J1 c648 wel = for sure/indeed | J2 c10213 wel = certainly | J3 c1957 nogal = rather/quite
+  [c10380] probeert (proberen) = try on  (ch 7)
+      ⇒ reuse c1146 proberen = to try   {regular-form; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c1146 proberen = to try  +[to try on]  {missing-sense, medium} probeert is the regular present of proberen; the book uses it for trying on clothes, which c1146 (to try) does not accept.
+      2) reuse c1146 proberen = to try  {regular-form, medium} probeert is the regular present of proberen; try on is the contextual use of to try
+      candidates: J1 c1146 proberen = to try
+  [c10395] liggen = are (lie)  (ch 7)
+      ⇒ reuse c350 liggen = to lie / to lie down   {same-word; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c350 liggen = to lie / to lie down  +[to be located]  {missing-sense, medium} Book uses liggen in the 'to be (located)' sense, which c350 (to lie) does not accept.
+      2) reuse c350 liggen = to lie / to lie down  {same-word, medium} book glosses liggen as 'are (lie)', i.e. the positional verb to lie, which c350 already teaches
+      candidates: J1 c350 liggen = to lie/to lie down
+  [c10413] dicht bij = close to  (ch 8)
+      ⇒ reuse c750 dichtbij = near   {pos-variant; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c750 dichtbij = near  +[close to]  {pos-variant, low} dicht bij is the prepositional spelling of dichtbij (near); target lacks 'close to'.
+      2) reuse c750 dichtbij = near  {pos-variant, low} dicht bij is the prepositional spelling of dichtbij; c750 'near' already conveys 'close to'.
+  [c10476] kapot = open  (ch 9)
+      ⇒ reuse c644 kapot = broken   {same-word; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c644 kapot = broken  +[open]  {missing-sense, low} Book glosses kapot (damaged, e.g. skin scratched open) as open; same word, contextual sense missing from the card.
+      2) reuse c644 kapot = broken  {same-word, low} Same word kapot; the book's 'open' is a contextual gloss (torn/punctured) of the broken sense, not a separate meaning.
+      candidates: J1 c644 kapot = broken | J2 c3942 kap = cap | J3 c1609 openen = to open | J4 c2176 openmaken = to open | J5 c2290 opendoen = to open
+  [c10494] staan = are (stand)  (ch 10)
+      ⇒ reuse c212 staan = to stand   {same-word; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c212 staan = to stand  +[to be located]  {missing-sense, medium} Book uses staan in its locative to-be sense, which the card lacks; added as an uninflected gloss.
+      2) reuse c212 staan = to stand  {same-word, medium} Same verb staan; the book's '(stand)' matches to stand and 'are' is only an inflected contextual rendering.
+      candidates: J1 c212 staan = to stand
+  [c10556] het station = train station  (ch 12)
+      ⇒ reuse c687 het station = station   {same-word; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse +sense c687 het station = station  +[train station]  {synonym-same-sense, medium} Same noun het station; target lacks the book's 'train station'.
+      2) reuse c687 het station = station  {same-word, high} het station is the same word; station already conveys train station.
+      candidates: J1 c687 het station = station | J2 c7963 het treinstation = railway station/train station
+  [c10566] het stuk = short distance  (ch 12)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) reuse +sense c1615 het stuk = piece / part  +[stretch, short distance]  {missing-sense, low} een stuk (lopen) = a stretch/part of the way, an extension of the piece/part noun.
+      2) keep new  {different-sense, low} een stuk as a stretch/short distance is a distinct sense from piece/part on c1615.
+      candidates: J1 c1527 stuk = broken | J2 c1615 het stuk = piece/part | J3 c464 het stukje = piece/little piece
+  [c10599] hè = isn't it  (ch 13)
+      ⇒ keep new   {different-sense; tiebreak: first reviewer more confident}
+      1) keep new  {different-sense, medium} Tag-question hè (isn't it?) is a different sense from the surprised interjection huh on c1778.
+      2) reuse +sense c1778 hè = huh / said when surprised / puzzled.  +[isn't it, right]  {missing-sense, low} Same particle hè; its tag-question use is listed for c1778 but its answers only cover surprise.
+      candidates: J1 c1778 hè = huh/said when surprised/puzzled.
+  [c10660] gaat in (ingaan) = becomes effective  (ch 14)
+      ⇒ keep new   {different-sense; tiebreak: first reviewer more confident}
+      1) keep new  {different-sense, medium} ingaan = take effect is a different sense from c2699 to enter / go inside
+      2) reuse +sense c2699 ingaan = to enter / to go inside  +[to take effect]  {missing-sense, low} gaat in is the regular split present of ingaan; the take-effect sense is missing from the target
+      candidates: J1 c2699 ingaan = to enter/to go inside
+  [c10663] aandoen = put on  (ch 14)
+      ⇒ keep new   {different-sense; tiebreak: first reviewer more confident}
+      1) keep new  {different-sense, medium} aandoen = put on (clothes) is a different sense from c3065 to turn on (a light)
+      2) reuse +sense c3065 aandoen = to turn on  +[to put on]  {missing-sense, low} same verb aandoen; its put-on (clothes) sense is in the dictionary but not in the target's answers
+      candidates: J1 c3065 aandoen = to turn on | J2 c7429 aandoening = ailment
+  [c10671] laden = charge  (ch 14)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) keep new  {different-sense, medium} laden = charge (electricity) is a different sense from c3268 to load
+      2) reuse +sense c3268 laden = to load  +[to charge]  {missing-sense, medium} same verb laden; the electrical-charge sense is listed in its dictionary but missing from its answers
+      candidates: J1 c3268 laden = to load | J2 c1321 de la = drawer | J3 c977 opladen = to charge
+  [c10681] dragen = carry  (ch 15)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) keep new  {different-sense, medium} Book teaches dragen = to carry; c617 is the separate 'to wear (clothing)' sense and no carry card exists.
+      2) reuse +sense c617 dragen = to wear (clothing)  +[to carry]  {missing-sense, medium} same verb dragen; its core carry sense is missing from the target, which has only wear
+      candidates: J1 c617 dragen = to wear (clothing) | J2 c3986 sjouwen = to carry/tote/schlep
+  [c10686] lekker = nicely  (ch 15)
+      ⇒ keep new   {book-phrase; tiebreak: equal confidence, keep separate}
+      1) reuse +sense c10201 lekker = nice / delicious  +[nicely]  {adj/adv, medium} Adverbial use of lekker in the generic 'nice/pleasant' sense taught by the earlier book card c10201.
+      2) reuse +sense c420 lekker = delicious  +[nice, nicely]  {adj/adv, medium} same word lekker, used adverbially in its general nice/pleasant sense, which the target (delicious only) lacks
+      candidates: J1 c420 lekker = delicious | J2 c6780 lek = leaky | J3 c10201 lekker = nice/delicious | J4 c10594 lekker = well | J5 c4726 lekkerbek = gourmand | J6 c9152 het lekkers = sweets/treats
+  [c10756] de politie = police station  (ch 18)
+      ⇒ reuse c1708 de politie = police / law enforcement   {same-word; tiebreak: same target, only one reviewer adds a sense}
+      1) reuse c1708 de politie = police / law enforcement  {same-word, medium} de politie is police (c1708); the book's police station gloss is contextual, the station is het politiebureau.
+      2) reuse +sense c1708 de politie = police / law enforcement  +[police station]  {missing-sense, medium} Same noun de politie; Van Dale lists 'politiebureau' as a sense (naar de politie gaan), which c1708 lacks.
+      candidates: J1 c1708 de politie = police/law enforcement | J2 c1366 de politiek = politics | J3 c4874 politieman = synonym of politieagent | J4 c2552 het politiebureau = police station
+
+========================================================================
+AGREED · REUSE (174)
+========================================================================
+  [c10163] Nederlands = Dutch  (ch 1)
+      ⇒ reuse c27 het Nederlands = Dutch   {same-word; tier A}
+  [c10165] docenten (docent) = teachers  (ch 1)
+      ⇒ reuse c110 de docent = teacher   {regular-form; first}
+  [c10166] andere = other  (ch 1)
+      ⇒ reuse c524 ander = other   {regular-form; first}
+  [c10168] geeft les (lesgeven) = teaches  (ch 1)
+      ⇒ reuse c1188 lesgeven = to teach   {regular-form; first}
+  [c10169] dagen (de dag) = days  (ch 1)
+      ⇒ reuse c171 de dag = day   {regular-form; first}
+  [c10177] kom (komen) = come  (ch 1)
+      ⇒ reuse c296 komen = to come   {regular-form; first}
+  [c10178] van = of  (ch 1)
+      ⇒ reuse c355 van = from / of   {same-word; tier A}
+  [c10179] hoe = how (what)  (ch 1)
+      ⇒ reuse c701 hoe = how   {same-word; first}
+  [c10181] heet (heten) = is called  (ch 1)
+      ⇒ reuse c35 heten = to be called   {regular-form; first}
+  [c10185] mevrouw = Ms / Mrs  (ch 1)
+      ⇒ reuse c26 de mevrouw = Mrs.   {same-word; tier A}
+  [c10187] zeg (zeggen) = call (say)  (ch 1)
+      ⇒ reuse c118 zeggen = to say   {regular-form; both}
+  [c10188] maar = but (just)  (ch 1)
+      ⇒ reuse c520 maar = but   {same-word; both}
+  [c10197] zitten (zitten) = are sitting  (ch 2)
+      ⇒ reuse c214 zitten = to sit   {regular-form; both}
+  [c10209] krijg (krijgen) = get / receive  (ch 2)
+      ⇒ reuse c254 krijgen = to get / to receive   {regular-form; first}
+  [c10216] broers (broer) = brothers  (ch 2)
+      ⇒ reuse c31 de broer = brother   {regular-form; first}
+  [c10217] zussen (zus) = sisters  (ch 2)
+      ⇒ reuse c42 de zus = sister   {regular-form; first}
+  [c10219] kijk (kijken) = look  (ch 2)
+      ⇒ reuse c241 kijken = to look   {regular-form; first}
+  [c10223] de ouders = parents  (ch 2)
+      ⇒ reuse c39 de ouder = parent   {regular-form; first}
+  [c10226] doen (doen) = are doing  (ch 2)
+      ⇒ reuse c391 doen = to do   {regular-form; first}
+  [c10227] daar = there  (ch 2)
+      ⇒ reuse c552 daar = there / over there   {same-word; tier A}
+  [c10230] weet (weten) = know  (ch 2)
+      ⇒ reuse c245 weten = to know   {regular-form; both}
+  [c10231] vertel (vertellen) = tell  (ch 2)
+      ⇒ reuse c848 vertellen = to tell   {regular-form; first}
+  [c10236] viert (vieren) = is celebrating  (ch 3)
+      ⇒ reuse c997 vieren = to celebrate   {regular-form; first}
+  [c10240] ik trakteer (trakteren) = it's my treat  (ch 3)
+      ⇒ reuse c2784 trakteren = to treat   {regular-form; both}
+  [c10244] rode (rood) = red  (ch 3)
+      ⇒ reuse c321 rood = red   {regular-form; first}
+  [c10245] roep (roepen) = call  (ch 3)
+      ⇒ reuse c412 roepen = to call / to call somebody   {regular-form; first}
+  [c10247] Franse (Frans) = French  (ch 3)
+      ⇒ reuse c1928 frans = French   {regular-form; first}
+  [c10248] Spaanse (Spaans) = Spanish  (ch 3)
+      ⇒ reuse c2271 spaans = Spanish   {regular-form; first}
+  [c10249] Zuid-Afrikaanse (Zuid-Afrikaans) = South African  (ch 3)
+      ⇒ reuse c9038 zuid-afrikaans = South African   {regular-form; first}
+  [c10250] nou = well then  (ch 3)
+      ⇒ reuse c1748 nou = come on / well   {same-word; first}
+  [c10257] betaal (betalen) = pay  (ch 3)
+      ⇒ reuse c371 betalen = to pay   {regular-form; first}
+  [c10263] leuk = nice  (ch 4)
+      ⇒ reuse c85 leuk = nice / fun   {same-word; tier A}
+  [c10266] problemen (het probleem) = problems  (ch 4)
+      ⇒ reuse c530 het probleem = problem   {regular-form; first}
+  [c10270] wauw = wow  (ch 4)
+      ⇒ reuse c4901 wow = wow   {same-word; both}
+  [c10272] veel = many  (ch 4)
+      ⇒ reuse c200 veel = many / much   {same-word; tier A}
+  [c10274] romantische (romantisch) = romantic  (ch 4)
+      ⇒ reuse c2732 romantisch = romantic   {regular-form; first}
+  [c10282] blijf (blijven) = stay  (ch 4)
+      ⇒ reuse c785 blijven = to stay   {regular-form; first}
+  [c10285] schrijf (schrijven) = write  (ch 4)
+      ⇒ reuse c167 schrijven = to write   {regular-form; first}
+  [c10293] fijne (fijn) = nice / good  (ch 4)
+      ⇒ reuse c443 fijn = nice   {regular-form; both}
+  [c10295] volgende = next  (ch 4)
+      ⇒ reuse c796 volgend = next   {regular-form; first}
+  [c10298] de markt = market  (ch 5)
+      ⇒ reuse c366 de markt = market / marketplace   {same-word; tier A}
+  [c10301] kleine (klein) = small  (ch 5)
+      ⇒ reuse c84 klein = small   {regular-form; first}
+  [c10303] gele (geel) = yellow  (ch 5)
+      ⇒ reuse c315 geel = yellow   {regular-form; first}
+  [c10304] paprika's (de paprika) = bell peppers / sweet peppers  (ch 5)
+      ⇒ reuse c4155 paprika = sweet pepper / bell pepper   {regular-form; first}
+  [c10306] tomaten (de tomaat) = tomatoes  (ch 5)
+      ⇒ reuse c400 de tomaat = tomato   {regular-form; first}
+  [c10308] buitenlanders (de buitenlander) = foreigners  (ch 5)
+      ⇒ reuse c2224 buitenlander = foreigner / alien   {regular-form; first}
+  [c10313] goedkope (goedkoop) = cheap  (ch 5)
+      ⇒ reuse c469 goedkoop = cheap   {regular-form; first}
+  [c10314] heb nodig (nodig hebben) = need  (ch 5)
+      ⇒ reuse c392 nodig hebben = to need   {regular-form; first}
+  [c10315] personen (de persoon) = people  (ch 5)
+      ⇒ reuse c1230 de persoon = person   {regular-form; first}
+  [c10316] halve (half) = half  (ch 5)
+      ⇒ reuse c1032 half = half   {regular-form; first}
+  [c10317] aardappels (de aardappel) = potatoes  (ch 5)
+      ⇒ reuse c380 de aardappel = potato   {regular-form; first}
+  [c10318] de slager = butcher  (ch 5)
+      ⇒ reuse c367 de slager = butcher / butchery   {same-word; tier A}
+  [c10326] verse (vers) = fresh  (ch 5)
+      ⇒ reuse c1496 vers = fresh   {regular-form; first}
+  [c10327] komkommers (de komkommer) = cucumbers  (ch 5)
+      ⇒ reuse c446 de komkommer = cucumber   {regular-form; first}
+  [c10339] de dorst = thirst  (ch 6)
+      ⇒ reuse c2423 de dorst = thirst / physical need / desire to drink   {same-word; tier A}
+  [c10342] ik heb honger = I'm hungry  (ch 6)
+      ⇒ reuse c1641 honger hebben = to be hungry   {regular-form; first}
+  [c10351] vegetarische (vegetarisch) = vegetarian  (ch 6)
+      ⇒ reuse c6860 vegetarisch = vegetarian   {regular-form; first}
+  [c10354] halen = fetch  (ch 6)
+      ⇒ reuse c527 halen = to get / to fetch   {same-word; tier A}
+  [c10356] het gaat wel = it's okay  (ch 6)
+      ⇒ reuse c57 Het gaat wel. = It's okay.   {same-word; tier A}
+  [c10357] de soort = kind  (ch 6)
+      ⇒ reuse c460 het soort = kind / type   {same-word; tier A}
+  [c10360] de mosselen = mussels  (ch 6)
+      ⇒ reuse c5119 mossel = mussel   {regular-form; first}
+  [c10363] een beetje = a bit  (ch 6)
+      ⇒ reuse c293 een beetje = bit   {same-word; first}
+  [c10366] het ijs = ice cream  (ch 6)
+      ⇒ reuse c408 het ijs = ice / ice cream   {same-word; tier A}
+  [c10367] vruchten (de vrucht) = fruit  (ch 6)
+      ⇒ reuse c3533 vrucht = fruit   {regular-form; first}
+  [c10377] lichte (licht) = light  (ch 7)
+      ⇒ reuse c939 licht = light   {regular-form; both}
+  [c10378] verschillende (verschillend) = different  (ch 7)
+      ⇒ reuse c55 verschillend = different   {regular-form; first}
+  [c10379] merken (het merk) = brands  (ch 7)
+      ⇒ reuse c1190 het merk = brand   {regular-form; first}
+  [c10388] wijd = wide  (ch 7)
+      ⇒ reuse c2456 wijd = wide / outstretched / far apart   {same-word; first}
+  [c10390] het spijt me = I'm sorry  (ch 7)
+      ⇒ reuse c918 Het spijt me. = I am sorry.   {same-word; first}
+  [c10393] de bon = receipt  (ch 7)
+      ⇒ reuse c466 de bon = coupon / receipt   {same-word; tier A}
+  [c10394] T-shirts (het T-shirt) = T-shirts  (ch 7)
+      ⇒ reuse c586 het T-shirt = T-shirt   {regular-form; first}
+  [c10403] bepaald = certain  (ch 8)
+      ⇒ reuse c1815 bepaald = certain / determined   {same-word; first}
+  [c10406] zie (zien) = see  (ch 8)
+      ⇒ reuse c213 zien = to see   {regular-form; first}
+  [c10407] maximale (maximaal) = maximum  (ch 8)
+      ⇒ reuse c1237 maximaal = maximum   {regular-form; first}
+  [c10411] oude (oud) = old  (ch 8)
+      ⇒ reuse c537 oud = old   {regular-form; first}
+  [c10415] vierkante (vierkant) = square  (ch 8)
+      ⇒ reuse c944 vierkant = square   {regular-form; first}
+  [c10416] ruime (ruim) = spacious  (ch 8)
+      ⇒ reuse c942 ruim = spacious   {regular-form; first}
+  [c10417] slaapkamers (de slaapkamer) = bedrooms  (ch 8)
+      ⇒ reuse c286 de slaapkamer = bedroom   {regular-form; first}
+  [c10419] eenvoudige (eenvoudig) = simple  (ch 8)
+      ⇒ reuse c2029 eenvoudig = simple / plain   {regular-form; first}
+  [c10421] het bad = bath  (ch 8)
+      ⇒ reuse c302 het bad = bath / bathtub   {same-word; first}
+  [c10422] geschikte (geschikt) = suitable  (ch 8)
+      ⇒ reuse c1924 geschikt = adequate / suitable / appropriate   {regular-form; first}
+  [c10423] huizen (het huis) = houses  (ch 8)
+      ⇒ reuse c260 het huis = house   {regular-form; first}
+  [c10427] kasten (de kast) = cupboards  (ch 8)
+      ⇒ reuse c306 de kast = cupboard / cabinet   {regular-form; first}
+  [c10428] bedden (het bed) = beds  (ch 8)
+      ⇒ reuse c304 het bed = bed   {regular-form; first}
+  [c10429] stoelen (de stoel) = chairs  (ch 8)
+      ⇒ reuse c309 de stoel = chair   {regular-form; first}
+  [c10430] het voordeel = advantage  (ch 8)
+      ⇒ reuse c1485 het voordeel = advantage / benefit   {same-word; tier A}
+  [c10431] zonnige (zonnig) = sunny  (ch 8)
+      ⇒ reuse c2633 zonnig = sunny   {regular-form; first}
+  [c10437] nieuwe (nieuw) = new  (ch 8)
+      ⇒ reuse c298 nieuw = new   {regular-form; first}
+  [c10442] armen (de arm) = arms  (ch 9)
+      ⇒ reuse c478 de arm = arm   {regular-form; first}
+  [c10443] benen (het been) = legs  (ch 9)
+      ⇒ reuse c479 het been = leg   {regular-form; first}
+  [c10444] de buik = stomach  (ch 9)
+      ⇒ reuse c481 de buik = belly / stomach   {same-word; tier A}
+  [c10455] de voetbalvereniging = football club  (ch 9)
+      ⇒ reuse c9905 de voetbalvereniging = football association / football club   {same-word; tier A}
+  [c10459] daarna = after that  (ch 9)
+      ⇒ reuse c467 daarna = thereafter / after that   {same-word; tier A}
+  [c10465] denken = think  (ch 9)
+      ⇒ reuse c739 denken = to think   {same-word; tier A}
+  [c10467] emmers (de emmer) = buckets  (ch 9)
+      ⇒ reuse c2988 emmer = bucket   {regular-form; first}
+  [c10469] klachten (de klacht) = complaints  (ch 9)
+      ⇒ reuse c545 de klacht = complaint   {regular-form; first}
+  [c10471] allergische (allergisch) = allergic  (ch 9)
+      ⇒ reuse c4976 allergisch = allergic   {regular-form; first}
+  [c10473] de zalf = ointment  (ch 9)
+      ⇒ reuse c563 de zalf = ointment / salve   {same-word; tier A}
+  [c10474] de jeuk = itch  (ch 9)
+      ⇒ reuse c4706 de jeuk = itch / itching   {same-word; first}
+  [c10475] krabt (krabben) = scratch  (ch 9)
+      ⇒ reuse c3698 krabben = to scratch   {regular-form; first}
+  [c10490] zelf = myself  (ch 10)
+      ⇒ reuse c678 zelf = self / myself   {same-word; tier A}
+  [c10495] scheef = crooked  (ch 10)
+      ⇒ reuse c3227 scheef = crooked / not level / straight   {same-word; tier A}
+  [c10499] bedoelt (bedoelen) = mean  (ch 10)
+      ⇒ reuse c878 bedoelen = to mean   {regular-form; first}
+  [c10501] banden (de band) = tyres  (ch 10)
+      ⇒ reuse c1535 de band = tyre   {regular-form; first}
+  [c10503] helemaal = completely  (ch 10)
+      ⇒ reuse c569 helemaal = altogether / completely   {same-word; tier A}
+  [c10504] rijdt (rijden) = goes (rides)  (ch 10)
+      ⇒ reuse c707 rijden = to drive / to ride   {regular-form; both}
+  [c10505] remmen (de rem) = brakes  (ch 10)
+      ⇒ reuse c1542 de rem = brake   {regular-form; first}
+  [c10509] leer (leren) = learn  (ch 10)
+      ⇒ reuse c161 leren = to learn   {regular-form; first}
+  [c10510] uitdrukkingen (de uitdrukking) = expressions  (ch 10)
+      ⇒ reuse c2598 uitdrukking = expression / act / process of expressing something   {regular-form; first}
+  [c10521] hoop (hopen) = hope  (ch 11)
+      ⇒ reuse c1437 hopen = to hope   {regular-form; first}
+  [c10525] me herinneren (zich herinneren) = remember  (ch 11)
+      ⇒ reuse c1628 zich herinneren = to remember   {regular-form; both}
+  [c10527] de taart = cake  (ch 11)
+      ⇒ reuse c437 de taart = pie / cake   {same-word; tier A}
+  [c10529] doe open = open  (ch 11)
+      ⇒ reuse c2290 opendoen = to open   {regular-form; both}
+  [c10533] hoor (horen) = hear  (ch 11)
+      ⇒ reuse c81 horen = to hear   {regular-form; first}
+  [c10537] studeer (studeren) = study  (ch 11)
+      ⇒ reuse c1041 studeren = to study   {regular-form; first}
+  [c10543] begrijp (begrijpen) = understand  (ch 11)
+      ⇒ reuse c194 begrijpen = to understand   {regular-form; first}
+  [c10544] snel = fast  (ch 11)
+      ⇒ reuse c198 snel = fast / quick   {same-word; first}
+  [c10546] zwemmen = swimming  (ch 11)
+      ⇒ reuse c851 zwemmen = to swim   {same-word; first}
+  [c10552] de reis = trip  (ch 11)
+      ⇒ reuse c1220 de reis = journey / trip   {same-word; first}
+  [c10558] bekend = known  (ch 12)
+      ⇒ reuse c1124 bekend = known / well-known   {same-word; first}
+  [c10559] de bus = bus  (ch 12)
+      ⇒ reuse c681 de bus = bus / coach   {same-word; tier A}
+  [c10560] zeker = certainly  (ch 12)
+      ⇒ reuse c1280 zeker = certainly / sure   {same-word; tier A}
+  [c10562] de lijn = line (number)  (ch 12)
+      ⇒ reuse c217 de lijn = line   {same-word; first}
+  [c10563] hebt geluk (geluk hebben) = are lucky  (ch 12)
+      ⇒ reuse c936 geluk hebben = to be lucky   {regular-form; both}
+  [c10564] komt aan (aankomen) = is arriving  (ch 12)
+      ⇒ reuse c768 aankomen = to arrive   {regular-form; first}
+  [c10567] over ... steken (oversteken) = cross  (ch 12)
+      ⇒ reuse c755 oversteken = to cross   {regular-form; first}
+  [c10569] ga op (opgaan) = go up  (ch 12)
+      ⇒ reuse c4422 opgaan = to go up / ascend   {regular-form; both}
+  [c10572] herkent (herkennen) = recognize  (ch 12)
+      ⇒ reuse c1705 herkennen = to recognize   {regular-form; first}
+  [c10574] het eind = end  (ch 12)
+      ⇒ reuse c1318 het einde = end   {same-word; first}
+  [c10575] neemt mee (meenemen) = take  (ch 12)
+      ⇒ reuse c645 meenemen = to take along   {regular-form; first}
+  [c10576] toiletten (het toilet) = toilets  (ch 12)
+      ⇒ reuse c1562 het toilet = toilet   {regular-form; first}
+  [c10577] beneden = downstairs  (ch 12)
+      ⇒ reuse c281 beneden = downstairs / down   {same-word; tier A}
+  [c10585] bezoekt (bezoeken) = is visiting  (ch 13)
+      ⇒ reuse c1804 bezoeken = to visit   {regular-form; first}
+  [c10598] doe uit (uitdoen) = take off  (ch 13)
+      ⇒ reuse c2968 uitdoen = to take off   {regular-form; first}
+  [c10604] belachelijk = ridiculous  (ch 13)
+      ⇒ reuse c2191 belachelijk = ridiculous / risible   {same-word; tier A}
+  [c10605] geloof (geloven) = believe  (ch 13)
+      ⇒ reuse c1492 geloven = to believe   {regular-form; first}
+  [c10612] bloemen (de bloem) = flowers  (ch 13)
+      ⇒ reuse c809 de bloem = flower   {regular-form; first}
+  [c10613] snijd (snijden) = cut  (ch 13)
+      ⇒ reuse c398 snijden = to cut   {regular-form; first}
+  [c10616] dieren (het dier) = animals  (ch 13)
+      ⇒ reuse c798 het dier = animal   {regular-form; first}
+  [c10617] katten (de kat) = cats  (ch 13)
+      ⇒ reuse c801 de kat = cat   {regular-form; first}
+  [c10618] vissen (de vis) = fish  (ch 13)
+      ⇒ reuse c424 de vis = fish   {regular-form; first}
+  [c10626] het verdriet = grief  (ch 13)
+      ⇒ reuse c1880 het verdriet = grief / sadness / sorrow   {same-word; tier A}
+  [c10627] de dood = death  (ch 13)
+      ⇒ reuse c1402 dood = dead / death   {pos-variant; both}
+  [c10629] kom mee (meekomen) = come  (ch 13)
+      ⇒ reuse c3306 meekomen = to come along with / accompany / join   {regular-form; both}
+  [c10630] de schuur = shed  (ch 13)
+      ⇒ reuse c263 de schuur = shed / shack   {same-word; tier A}
+  [c10636] mensen (de mens) = people (person)  (ch 14)
+      ⇒ reuse c196 de mensen = people   {same-word; first}
+  [c10637] elke (elk) = each  (ch 14)
+      ⇒ reuse c564 elk = each   {regular-form; first}
+  [c10639] onbeperkt = unlimited  (ch 14)
+      ⇒ reuse c9614 onbeperkt = unrestricted / unlimited   {same-word; tier A}
+  [c10641] speciale (speciaal) = special  (ch 14)
+      ⇒ reuse c1243 speciaal = special   {regular-form; first}
+  [c10645] spieren (de spier) = muscles  (ch 14)
+      ⇒ reuse c550 de spier = muscle   {regular-form; first}
+  [c10649] aantrekkelijke (aantrekkelijk) = attractive  (ch 14)
+      ⇒ reuse c2236 aantrekkelijk = attractive / beautiful   {regular-form; first}
+  [c10651] de kracht = strength / power  (ch 14)
+      ⇒ reuse c2361 kracht = power / force / strength   {same-word; tier A}
+  [c10655] bieden aan (aanbieden) = offer  (ch 14)
+      ⇒ reuse c1299 aanbieden = to offer   {regular-form; first}
+  [c10656] virtuele (virtueel) = virtual  (ch 14)
+      ⇒ reuse c5846 virtueel = virtual   {regular-form; first}
+  [c10658] klinkt (klinken) = sound  (ch 14)
+      ⇒ reuse c1202 klinken = to sound   {regular-form; first}
+  [c10664] maak klaar (klaarmaken) = prepare / get ready  (ch 14)
+      ⇒ reuse c3095 klaarmaken = to prepare / to make ready   {regular-form; first}
+  [c10680] vertrekt (vertrekken) = leaves  (ch 15)
+      ⇒ reuse c772 vertrekken = to leave   {regular-form; first}
+  [c10687] buiten = outside  (ch 15)
+      ⇒ reuse c108 buiten = outside / outdoors   {same-word; tier A}
+  [c10688] reis (reizen) = travel  (ch 15)
+      ⇒ reuse c686 reizen = to travel   {regular-form; first}
+  [c10697] het gebied = area  (ch 15)
+      ⇒ reuse c1846 het gebied = area / region   {same-word; first}
+  [c10699] de lucht = sky  (ch 15)
+      ⇒ reuse c1084 de lucht = air / sky   {same-word; tier A}
+  [c10700] schilderijen (het schilderij) = paintings  (ch 15)
+      ⇒ reuse c1466 het schilderij = painting   {regular-form; first}
+  [c10701] het stukje (het stuk) = piece  (ch 15)
+      ⇒ reuse c464 het stukje = piece / little piece   {same-word; first}
+  [c10704] welterusten = sleep well  (ch 15)
+      ⇒ reuse c4208 welterusten = good night / sleep well   {same-word; tier A}
+  [c10708] de voorstelling = show / session  (ch 16)
+      ⇒ reuse c2196 voorstelling = show / performance   {same-word; first}
+  [c10720] de ondertiteling = subtitles  (ch 16)
+      ⇒ reuse c1283 de ondertiteling = subtitle   {same-word; first}
+  [c10723] het studentenhuis = student house  (ch 17)
+      ⇒ reuse c2408 het studentenhuis = student residence / student house   {same-word; tier A}
+  [c10728] vogels (de vogel) = birds (bird)  (ch 17)
+      ⇒ reuse c817 de vogel = bird   {regular-form; first}
+  [c10744] ontzettend = really / very  (ch 17)
+      ⇒ reuse c1451 ontzettend = very   {same-word; first}
+  [c10747] komt terug (terugkomen) = coming back  (ch 17)
+      ⇒ reuse c1954 terugkomen = to come back / to return   {regular-form; first}
+  [c10750] rustig = quiet  (ch 17)
+      ⇒ reuse c273 rustig = quiet / calm   {same-word; tier A}
+  [c10753] het deel = part / episode  (ch 17)
+      ⇒ reuse c1235 het deel = part   {same-word; first}
+  [c10755] de lieverd = sweetheart  (ch 17)
+      ⇒ reuse c2791 lieverd = person who is kind / sweet / sweetheart   {same-word; tier A}
+  [c10783] vervelend = annoying  (ch 18)
+      ⇒ reuse c574 vervelend = tedious / annoying   {same-word; tier A}
+
+========================================================================
+AGREED · REUSE + ADD SENSE (152)
+========================================================================
+  [c10162] allemaal = everyone  (ch 1)
+      ⇒ reuse +sense c403 allemaal = all / all of them  +[everyone]   {missing-sense; first}
+  [c10170] beginnen (beginnen) = begin / start  (ch 1)
+      ⇒ reuse +sense c91 beginnen = to begin  +[to start]   {synonym-same-sense; first}
+  [c10171] met = with  (ch 1)
+      ⇒ reuse +sense c6977 met = along with  +[with]   {missing-sense; both}
+  [c10172] kennismaken = get to know  (ch 1)
+      ⇒ reuse +sense c2481 kennismaken = to acquaint / to make someone's acquaintance  +[to get to know]   {synonym-same-sense; first}
+  [c10173] ben (zijn) = are  (ch 1)
+      ⇒ reuse +sense c10164 ben = am  +[are]   {missing-sense; first}
+  [c10175] uit = from  (ch 1)
+      ⇒ reuse +sense c735 uit = out of  +[from]   {missing-sense; first}
+  [c10184] woon (wonen) = live  (ch 1)
+      ⇒ reuse +sense c9 wonen = to live in  +[to live]   {synonym-same-sense; both}
+  [c10186] woont (wonen) = live  (ch 1)
+      ⇒ reuse +sense c9 wonen = to live in  +[to live]   {synonym-same-sense; both}
+  [c10193] naar = to  (ch 1,2)
+      ⇒ reuse +sense c113 naar = towards  +[to]   {missing-sense; first}
+  [c10194] even = for a moment  (ch 1)
+      ⇒ reuse +sense c640 even = just / just a moment  +[for a moment]   {missing-sense; first}
+  [c10195] de pauze = break  (ch 1)
+      ⇒ reuse +sense c114 de pauze = pause  +[break]   {synonym-same-sense; first}
+  [c10198] de plaats = seat / place  (ch 2)
+      ⇒ reuse +sense c271 de plaats = place  +[seat]   {missing-sense; both}
+  [c10201] lekker = nice / delicious  (ch 2)
+      ⇒ reuse +sense c420 lekker = delicious  +[nice]   {missing-sense; first}
+  [c10204] welke = what  (ch 2)
+      ⇒ reuse +sense c247 welk = which  +[what]   {regular-form; both}
+  [c10205] eigenlijk = actually / really  (ch 2)
+      ⇒ reuse +sense c1753 eigenlijk = actual  +[actually, really]   {adj/adv; both}
+  [c10208] dus = so / therefore  (ch 2)
+      ⇒ reuse +sense c741 dus = so  +[therefore]   {synonym-same-sense; first}
+  [c10213] wel = certainly  (ch 2)
+      ⇒ reuse +sense c648 wel = for sure / indeed  +[certainly]   {synonym-same-sense; first}
+  [c10218] nog = as well  (ch 2)
+      ⇒ reuse +sense c10210 nog = any  +[as well]   {synonym-same-sense; both}
+  [c10220] goh = oh  (ch 2)
+      ⇒ reuse +sense c8148 goh = gosh / gee  +[oh]   {synonym-same-sense; both}
+  [c10221] ander = different / other  (ch 2)
+      ⇒ reuse +sense c524 ander = other  +[different]   {missing-sense; first}
+  [c10222] het type = type  (ch 2)
+      ⇒ reuse +sense c3640 het type = type: a class / someone  +[type]   {same-word; first}
+  [c10235] moeten (moeten) = should / have to  (ch 2)
+      ⇒ reuse +sense c218 moeten = to have to / to must  +[should]   {missing-sense; first}
+  [c10237] gefeliciteerd = happy birthday  (ch 3)
+      ⇒ reuse +sense c935 gefeliciteerd = congratulations  +[happy birthday]   {missing-sense; both}
+  [c10254] zullen (zullen) = shall  (ch 3)
+      ⇒ reuse +sense c1281 zullen = to will  +[shall]   {synonym-same-sense; first}
+  [c10259] afrekenen = pay / settle the bill  (ch 3)
+      ⇒ reuse +sense c6345 afrekenen = to pay  +[to settle the bill]   {synonym-same-sense; first}
+  [c10260] alles = everything  (ch 3)
+      ⇒ reuse +sense c667 alles = all / everythingh  +[everything]   {typo; first}
+  [c10261] daarom = that's why  (ch 3)
+      ⇒ reuse +sense c854 daarom = therefore  +[that's why]   {synonym-same-sense; first}
+  [c10262] komt tegen (tegenkomen) = meets  (ch 4)
+      ⇒ reuse +sense c2046 tegenkomen = to encounter  +[to meet, to run into]   {synonym-same-sense; first}
+  [c10264] prima = wonderful  (ch 4)
+      ⇒ reuse +sense c745 prima = fine  +[great, wonderful]   {synonym-same-sense; both}
+  [c10265] het gaat wel = all right  (ch 4)
+      ⇒ reuse +sense c57 Het gaat wel. = It's okay.  +[All right.]   {synonym-same-sense; first}
+  [c10271] prachtig = fine / splendid  (ch 4)
+      ⇒ reuse +sense c1068 prachtig = beautiful / magnificent  +[splendid]   {synonym-same-sense; both}
+  [c10276] direct = right now  (ch 4)
+      ⇒ reuse +sense c1268 direct = right away / directly  +[right now]   {synonym-same-sense; first}
+  [c10277] afspreken = set a date / make an appointment  (ch 4)
+      ⇒ reuse +sense c1199 afspreken = to agree upon  +[to make an appointment, to set a date]   {missing-sense; first}
+  [c10278] goed = okay  (ch 4)
+      ⇒ reuse +sense c56 goed = good  +[okay]   {missing-sense; both}
+  [c10279] de afspraak = date / appointment  (ch 4)
+      ⇒ reuse +sense c512 de afspraak = appointment  +[date]   {missing-sense; both}
+  [c10286] de agenda = diary  (ch 4)
+      ⇒ reuse +sense c170 de agenda = agenda / calendar  +[diary]   {synonym-same-sense; first}
+  [c10292] gauw = quickly  (ch 4)
+      ⇒ reuse +sense c1306 gauw = soon  +[quickly]   {missing-sense; first}
+  [c10297] boodschappen doen = go shopping  (ch 5)
+      ⇒ reuse +sense c361 boodschappen doen = to shop / to buy groceries  +[to go shopping]   {synonym-same-sense; first}
+  [c10305] mooie (mooi) = nice  (ch 5)
+      ⇒ reuse +sense c330 mooi = beautiful  +[nice]   {missing-sense; both}
+  [c10310] de stamppot = mashed potato and vegetables  (ch 5)
+      ⇒ reuse +sense c2811 stamppot = often with bacon  +[mashed potato and vegetables]   {missing-sense; first}
+  [c10312] heerlijk = delicious  (ch 5)
+      ⇒ reuse +sense c1131 heerlijk = delightful  +[delicious]   {missing-sense; both}
+  [c10320] het bakje (de bak) = punnet  (ch 5)
+      ⇒ reuse +sense c1284 het bakje = bowl  +[punnet, small container]   {missing-sense; both}
+  [c10332] prettig = nice  (ch 5)
+      ⇒ reuse +sense c1367 prettig = pleasant  +[nice]   {synonym-same-sense; first}
+  [c10333] de vriendin = (girl)friend  (ch 6)
+      ⇒ reuse +sense c894 de vriendin = girlfriend  +[friend, female friend]   {missing-sense; both}
+  [c10336] alvast = in the meantime  (ch 6)
+      ⇒ reuse +sense c737 alvast = already  +[in the meantime, in advance]   {missing-sense; both}
+  [c10340] alleen = only / just  (ch 6)
+      ⇒ reuse +sense c10114 alleen = only  +[just]   {synonym-same-sense; first}
+  [c10348] eh = um  (ch 6)
+      ⇒ reuse +sense c2454 eh = er / uh  +[um]   {synonym-same-sense; first}
+  [c10350] toch = after all  (ch 6)
+      ⇒ reuse +sense c661 toch = nevertheless / however  +[after all]   {missing-sense; both}
+  [c10352] de dagschotel = today's special  (ch 6)
+      ⇒ reuse +sense c5046 dagschotel = plat du jour / special  +[today's special, dish of the day]   {synonym-same-sense; first}
+  [c10355] beetje = a little  (ch 6)
+      ⇒ reuse +sense c293 een beetje = bit  +[a little, a bit]   {missing-sense; both}
+  [c10359] houd (houden) van = like  (ch 6)
+      ⇒ reuse +sense c845 houden van = to love  +[to like]   {regular-form; both}
+  [c10361] proef (proeven) = try  (ch 6)
+      ⇒ reuse +sense c1368 proeven = to taste  +[to try]   {missing-sense; both}
+  [c10364] vet = greasy / rich  (ch 6)
+      ⇒ reuse +sense c5231 vet = fat  +[greasy, rich]   {missing-sense; both}
+  [c10369] laten = leave  (ch 6)
+      ⇒ reuse +sense c1571 laten = to let  +[to leave]   {missing-sense; first}
+  [c10372] de zaak = shop / store  (ch 7)
+      ⇒ reuse +sense c1501 de zaak = business  +[shop, store]   {missing-sense; first}
+  [c10374] zoek (zoeken) = am looking  (ch 7)
+      ⇒ reuse +sense c275 zoeken = to search  +[to look for]   {synonym-same-sense; first}
+  [c10376] het model = style  (ch 7)
+      ⇒ reuse +sense c5985 het model = model  +[style]   {missing-sense; both}
+  [c10383] passen = try on  (ch 7)
+      ⇒ reuse +sense c612 passen = to fit  +[to try on]   {missing-sense; first}
+  [c10384] paskamers (de paskamer) = changing rooms  (ch 7)
+      ⇒ reuse +sense c611 de paskamer = fitting room  +[changing room]   {synonym-same-sense; first}
+  [c10387] hem = it  (ch 7)
+      ⇒ reuse +sense c1263 hem = him  +[it]   {missing-sense; both}
+  [c10392] eventueel = if necessary  (ch 7)
+      ⇒ reuse +sense c2061 eventueel = possible  +[if necessary, possibly]   {adj/adv; both}
+  [c10396] zo = so  (ch 7)
+      ⇒ reuse +sense c1091 zo = like that  +[so]   {missing-sense; first}
+  [c10399] de makelaar = real estate agent  (ch 8)
+      ⇒ reuse +sense c3352 makelaar = broker  +[real estate agent]   {missing-sense; first}
+  [c10400] de woonruimte = accommodation / somewhere to live  (ch 8)
+      ⇒ reuse +sense c6221 de woonruimte = living space  +[accommodation, somewhere to live]   {synonym-same-sense; both}
+  [c10401] de stad = city / town  (ch 8)
+      ⇒ reuse +sense c332 de stad = city  +[town]   {synonym-same-sense; first}
+  [c10402] de vriend = (boy)friend  (ch 8)
+      ⇒ reuse +sense c849 de vriend = friend  +[boyfriend]   {missing-sense; both}
+  [c10405] mogelijkheden (de mogelijkheid) = possibilities / options  (ch 8)
+      ⇒ reuse +sense c4028 de mogelijkheid = possibility  +[option]   {regular-form; both}
+  [c10410] de verdieping = floor / storey  (ch 8)
+      ⇒ reuse +sense c334 de verdieping = floor  +[storey]   {synonym-same-sense; first}
+  [c10412] het centrum = city centre  (ch 8)
+      ⇒ reuse +sense c1447 het centrum = centre  +[city centre]   {missing-sense; first}
+  [c10418] de gang = passage(way)  (ch 8)
+      ⇒ reuse +sense c283 de gang = corridor  +[passage, passageway]   {synonym-same-sense; first}
+  [c10425] verhuren = to let out  (ch 8)
+      ⇒ reuse +sense c3127 verhuren = to rent / rent out  +[to let out]   {synonym-same-sense; first}
+  [c10432] de kamer = living room  (ch 8)
+      ⇒ reuse +sense c284 de kamer = room  +[living room]   {missing-sense; both}
+  [c10435] bel (bellen) = phone  (ch 8)
+      ⇒ reuse +sense c514 bellen = to dial / to call by phone  +[to phone, to call]   {regular-form; first}
+  [c10439] zoals = as  (ch 9)
+      ⇒ reuse +sense c1531 zoals = such as  +[as, like]   {missing-sense; first}
+  [c10449] gisteravond = last night  (ch 9)
+      ⇒ reuse +sense c2496 gisteravond = yesterday evening  +[last night]   {synonym-same-sense; first}
+  [c10451] overdag = during the day  (ch 9)
+      ⇒ reuse +sense c1334 overdag = during daytime  +[during the day]   {synonym-same-sense; first}
+  [c10453] klanten (de klant) = clients  (ch 9)
+      ⇒ reuse +sense c1252 de klant = customer  +[client]   {synonym-same-sense; first}
+  [c10461] bijzonders (bijzonder) = special  (ch 9)
+      ⇒ reuse +sense c1094 bijzonder = extraordinary  +[special]   {regular-form; both}
+  [c10468] vorig = last  (ch 9)
+      ⇒ reuse +sense c1149 vorig = previous  +[last]   {missing-sense; first}
+  [c10477] de fiets = bike / bicycle  (ch 10)
+      ⇒ reuse +sense c682 de fiets = bicycle  +[bike]   {synonym-same-sense; first}
+  [c10479] lijkt (lijken) = seems / appears  (ch 10)
+      ⇒ reuse +sense c1065 lijken = to appear  +[to seem]   {synonym-same-sense; first}
+  [c10485] fietsen = cycle  (ch 10)
+      ⇒ reuse +sense c810 fietsen = to ride a bicycle  +[to cycle]   {synonym-same-sense; first}
+  [c10492] het stuur = handlebars  (ch 10)
+      ⇒ reuse +sense c2638 het stuur = steering device / handlebars on a bicycle  +[handlebars]   {synonym-same-sense; first}
+  [c10493] het zadel = seat  (ch 10)
+      ⇒ reuse +sense c2550 zadel = saddle  +[seat]   {synonym-same-sense; both}
+  [c10512] de feestdag = public holiday  (ch 10)
+      ⇒ reuse +sense c654 de feestdag = holiday  +[public holiday]   {synonym-same-sense; first}
+  [c10513] het feest = party / celebration  (ch 10)
+      ⇒ reuse +sense c605 het feest = feast / party  +[celebration]   {synonym-same-sense; first}
+  [c10515] ophalen = collect  (ch 10)
+      ⇒ reuse +sense c659 ophalen = to pick up / to fetch  +[to collect]   {synonym-same-sense; both}
+  [c10531] vergis ik me (zich vergissen) = am I mistaken  (ch 11)
+      ⇒ reuse +sense c2299 vergissen = to make a mistake  +[to be mistaken]   {regular-form; both}
+  [c10534] dat klopt = that's right  (ch 11)
+      ⇒ reuse +sense c1420 Dat klopt. = That is correct.  +[That's right.]   {synonym-same-sense; first}
+  [c10539] naast = besides  (ch 11)
+      ⇒ reuse +sense c729 naast = next to  +[besides, in addition to]   {missing-sense; both}
+  [c10541] iedere (ieder) = each / every  (ch 11)
+      ⇒ reuse +sense c812 ieder = each  +[every]   {regular-form; first}
+  [c10547] wandelen = walking / hiking  (ch 11)
+      ⇒ reuse +sense c818 wandelen = to walk  +[to hike]   {missing-sense; both}
+  [c10550] bereid me voor op (zich voorbereiden op) = am getting ready for  (ch 11)
+      ⇒ reuse +sense c1224 voorbereiden = to prepare  +[to get ready]   {regular-form; both}
+  [c10555] praten = speak  (ch 11)
+      ⇒ reuse +sense c88 praten = to talk  +[to speak]   {synonym-same-sense; both}
+  [c10561] vanaf = from  (ch 12)
+      ⇒ reuse +sense c836 vanaf = since  +[from]   {missing-sense; first}
+  [c10565] direct = straightaway  (ch 12)
+      ⇒ reuse +sense c1268 direct = right away / directly  +[straightaway]   {synonym-same-sense; first}
+  [c10568] de balie = information desk  (ch 12)
+      ⇒ reuse +sense c1622 de balie = counter  +[desk, information desk]   {missing-sense; first}
+  [c10570] rechtdoor = straight ahead  (ch 12)
+      ⇒ reuse +sense c756 rechtdoor = straight  +[straight ahead]   {synonym-same-sense; first}
+  [c10571] tot = as far as  (ch 12)
+      ⇒ reuse +sense c698 tot = until  +[as far as, up to]   {missing-sense; both}
+  [c10573] linksaf = to the left  (ch 12)
+      ⇒ reuse +sense c753 linksaf = turn left  +[to the left]   {synonym-same-sense; first}
+  [c10580] uitlopen = walk down  (ch 12)
+      ⇒ reuse +sense c4093 uitlopen = to walk out  +[to walk down]   {missing-sense; both}
+  [c10581] vanzelf = as a matter of course  (ch 12)
+      ⇒ reuse +sense c1327 vanzelf = by itself  +[as a matter of course, automatically]   {missing-sense; both}
+  [c10583] volgen = follow  (ch 12)
+      ⇒ reuse +sense c1497 volgen = to attend  +[to follow]   {missing-sense; first}
+  [c10586] kom binnen (binnenkomen) = come in  (ch 13)
+      ⇒ reuse +sense c1568 binnenkomen = to enter  +[to come in]   {synonym-same-sense; first}
+  [c10590] gelukkig = fortunately  (ch 13)
+      ⇒ reuse +sense c765 gelukkig = happy / fortunate  +[fortunately, luckily]   {adj/adv; both}
+  [c10593] brengen = take  (ch 13)
+      ⇒ reuse +sense c652 brengen = to bring  +[to take]   {missing-sense; both}
+  [c10597] verontschuldigen = apologize  (ch 13)
+      ⇒ reuse +sense c6610 verontschuldigen = to excuse / to forgive  +[to apologize]   {missing-sense; both}
+  [c10603] hebben aan (aanhebben) = have on  (ch 13)
+      ⇒ reuse +sense c616 aanhebben = to wear (clothing)  +[to have on]   {synonym-same-sense; first}
+  [c10609] warm = warm  (ch 13)
+      ⇒ reuse +sense c676 warm = hot  +[warm]   {missing-sense; first}
+  [c10614] schuin = at an angle  (ch 13)
+      ⇒ reuse +sense c2624 schuin = slanted / slanting  +[at an angle]   {synonym-same-sense; first}
+  [c10615] houden van = like / fond of / love  (ch 13)
+      ⇒ reuse +sense c845 houden van = to love  +[to like, to be fond of]   {synonym-same-sense; first}
+  [c10619] jawel = oh yes  (ch 13)
+      ⇒ reuse +sense c890 jawel = yes  +[oh yes]   {synonym-same-sense; first}
+  [c10620] meestal = usually  (ch 13)
+      ⇒ reuse +sense c421 meistal = mostly  +[usually]   {typo; first}
+  [c10621] gezellig = pleasant / sociable  (ch 13)
+      ⇒ reuse +sense c294 gezellig = cosy  +[pleasant, sociable]   {synonym-same-sense; first}
+  [c10634] de sportschool = sports club  (ch 14)
+      ⇒ reuse +sense c2656 sportschool = gym  +[sports club]   {synonym-same-sense; both}
+  [c10635] zich inschrijven = enrol / to register  (ch 14)
+      ⇒ reuse +sense c858 inschrijven = to register / to sign up  +[to enrol]   {synonym-same-sense; both}
+  [c10638] opzeggen = cancel  (ch 14)
+      ⇒ reuse +sense c8663 opzeggen = to end a contract  +[to cancel]   {synonym-same-sense; first}
+  [c10640] sporten = play sports  (ch 14)
+      ⇒ reuse +sense c833 sporten = to exercise  +[to play sports]   {synonym-same-sense; first}
+  [c10643] zeker = sure / certain  (ch 14)
+      ⇒ reuse +sense c1280 zeker = certainly / sure  +[certain]   {adj/adv; both}
+  [c10644] de conditie = physical condition / fitness  (ch 14)
+      ⇒ reuse +sense c5478 de conditie = condition / state  +[fitness, physical condition]   {missing-sense; both}
+  [c10646] doelen (het doel) = goals / targets  (ch 14)
+      ⇒ reuse +sense c2266 het doel = aim / purpose  +[goal, target]   {synonym-same-sense; first}
+  [c10648] fitte (fit) = healthy  (ch 14)
+      ⇒ reuse +sense c2826 fit = fit  +[healthy]   {synonym-same-sense; both}
+  [c10662] meedoen = join in  (ch 14)
+      ⇒ reuse +sense c2004 meedoen = to take part / participate  +[to join in]   {synonym-same-sense; first}
+  [c10668] de automaat = vending machine  (ch 14)
+      ⇒ reuse +sense c911 de automaat = machine  +[vending machine]   {missing-sense; first}
+  [c10672] veel plezier = have fun  (ch 14)
+      ⇒ reuse +sense c893 veel plezier = lots of fun  +[have fun]   {missing-sense; first}
+  [c10678] pakken (het pak) = packets  (ch 15)
+      ⇒ reuse +sense c474 het pak = pack  +[packet, package]   {regular-form; both}
+  [c10679] geweldig = fantastic  (ch 15)
+      ⇒ reuse +sense c1269 geweldig = great  +[fantastic]   {synonym-same-sense; first}
+  [c10685] vroeger = in the old days  (ch 15)
+      ⇒ reuse +sense c1042 vroeger = in former times / in the past / back in the days  +[in the old days]   {synonym-same-sense; first}
+  [c10689] het spoor = platform  (ch 15)
+      ⇒ reuse +sense c771 het spoor = track  +[platform]   {missing-sense; both}
+  [c10698] echt = real  (ch 15)
+      ⇒ reuse +sense c1130 echt = really  +[real]   {adj/adv; first}
+  [c10702] de molen = windmill  (ch 15)
+      ⇒ reuse +sense c2864 molen = mill  +[windmill]   {missing-sense; first}
+  [c10715] eerder = earlier  (ch 16)
+      ⇒ reuse +sense c516 eerder = previously  +[earlier]   {synonym-same-sense; first}
+  [c10726] heerlijk = wonderful  (ch 17)
+      ⇒ reuse +sense c1131 heerlijk = delightful  +[wonderful]   {synonym-same-sense; first}
+  [c10729] helemaal = at all  (ch 17)
+      ⇒ reuse +sense c569 helemaal = altogether / completely  +[at all]   {missing-sense; both}
+  [c10731] sta op (opstaan) = get up  (ch 17)
+      ⇒ reuse +sense c1255 opstaan = to get out of bed  +[to get up]   {regular-form; both}
+  [c10733] gewoon = ordinary  (ch 17)
+      ⇒ reuse +sense c1404 gewoon = normal  +[ordinary]   {synonym-same-sense; first}
+  [c10737] het avondeten = dinner / evening meal  (ch 17)
+      ⇒ reuse +sense c381 het avondeten = supper  +[dinner, evening meal]   {synonym-same-sense; first}
+  [c10740] de storing = fault  (ch 17)
+      ⇒ reuse +sense c1697 de storing = outage  +[fault]   {synonym-same-sense; first}
+  [c10745] de zaal = room / hall  (ch 17)
+      ⇒ reuse +sense c1106 de zaal = (big) room  +[hall]   {synonym-same-sense; first}
+  [c10748] mooi = great  (ch 17)
+      ⇒ reuse +sense c330 mooi = beautiful  +[great]   {missing-sense; both}
+  [c10749] lust (lusten) = fancy  (ch 17)
+      ⇒ reuse +sense c3172 lusten = to please  +[to fancy, to like]   {missing-sense; both}
+  [c10751] behalve = besides  (ch 17)
+      ⇒ reuse +sense c650 behalve = except  +[besides, apart from]   {synonym-same-sense; both}
+  [c10752] vaste (vast) = regular  (ch 17)
+      ⇒ reuse +sense c1244 vast = fixed  +[regular]   {regular-form; both}
+  [c10758] de portemonnee = wallet / purse  (ch 18)
+      ⇒ reuse +sense c1709 de portemonnee = purse  +[wallet]   {synonym-same-sense; first}
+  [c10761] via = by way of  (ch 18)
+      ⇒ reuse +sense c774 via = through  +[by way of]   {synonym-same-sense; first}
+  [c10769] steeds = always  (ch 18)
+      ⇒ reuse +sense c1453 steeds = again and again  +[always, continually, all the time]   {synonym-same-sense; both}
+  [c10772] de dader = culprit  (ch 18)
+      ⇒ reuse +sense c5379 dader = doer / perpetrator  +[culprit]   {synonym-same-sense; first}
+  [c10773] namelijk = it so happens  (ch 18)
+      ⇒ reuse +sense c1134 namelijk = namely  +[it so happens, you see]   {missing-sense; both}
+  [c10777] verder = otherwise  (ch 18)
+      ⇒ reuse +sense c2582 verder = further  +[otherwise, for the rest]   {missing-sense; both}
+  [c10779] onmiddellijk = immediately / at once  (ch 18)
+      ⇒ reuse +sense c1311 onmiddellijk = immediately  +[at once]   {synonym-same-sense; first}
+  [c10781] hoezo = how come  (ch 18)
+      ⇒ reuse +sense c3521 hoezo = in what way / in what respect  +[how come, how so]   {synonym-same-sense; first}
+  [c10782] ophalen = get  (ch 18)
+      ⇒ reuse +sense c659 ophalen = to pick up / to fetch  +[to get]   {synonym-same-sense; both}
+
+========================================================================
+AGREED · KEEP NEW (278)
+========================================================================
+  [c10164] ben (zijn) = am  (ch 1)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c59 Hoe is het? = How is it going? | J2 c65 zijn = to be | J3 c66 ik ben = I am | J4 c67 jij bent = you are | J5 c68 ben jij? = are you? | J6 c69 u bent = you are
+  [c10167] is (zijn) = is  (ch 1)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c72 het is = it is | J2 c59 Hoe is het? = How is it going? | J3 c65 zijn = to be | J4 c66 ik ben = I am | J5 c67 jij bent = you are | J6 c68 ben jij? = are you?
+  [c10176] Engeland = England  (ch 1)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c2938 engel = angel
+  [c10180] hoe heet jij? = what's your name?  (ch 1)
+      ⇒ keep new   {book-phrase; first}
+  [c10182] waar ... vandaan = where ... from  (ch 1)
+      ⇒ keep new   {book-phrase; first}
+  [c10183] China = China  (ch 1)
+      ⇒ keep new   {not-in-deck; first}
+  [c10189] hoor = (particle expressing friendliness)  (ch 1)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c81 horen = to hear | J2 c10533 hoor = hear | J3 c3929 hoorn = horn/bugle
+  [c10192] het = the  (ch 1)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c10104 het = it | J2 c2 het jaar = year | J3 c3 het kind = child | J4 c10 het kleinkind = grandchild | J5 c43 het alfabet = alphabet | J6 c63 het woord = word
+  [c10196] straks = soon / later  (ch 1)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c748 tot straks = see you later | J2 c2311 strak = tight | J3 c1139 binnenkort = soon | J4 c1306 gauw = soon | J5 c519 later = later
+  [c10199] ja hoor = yes  (ch 2)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c82 ja = yes | J2 c890 jawel = yes
+  [c10200] zo = okay / right  (ch 2)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1091 zo = like that | J2 c10396 zo = so | J3 c1785 terecht = just/right/for good reason | J4 c435 oké = okay | J5 c758 rechts = right
+  [c10202] al lang = for a long time  (ch 2)
+      ⇒ keep new   {book-phrase; first}
+  [c10206] ik ben jarig (jarig zijn) = it's my birthday  (ch 2)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1114 jarig zijn = having your birthday
+  [c10207] wat leuk = how nice  (ch 2)
+      ⇒ keep new   {book-phrase; first}
+  [c10210] nog = any  (ch 2)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c547 nog = still/yet | J2 c10218 nog = as well | J3 c1774 dan ook = any/ever
+  [c10211] het bezoek = visit / visitors  (ch 2)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c870 op bezoek = visiting | J2 c1804 bezoeken = to visit | J3 c2199 bezoeker = visitor | J4 c1690 langskomen = to visit | J5 c2413 de visite = visit
+  [c10212] jonger (jong) = younger  (ch 2)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c535 jong = young | J2 c902 de jongste = youngest | J3 c5419 de jongere = young person/adolescent
+  [c10214] langer (lang) = taller  (ch 2)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c622 lang = long
+  [c10215] nog meer = any more  (ch 2)
+      ⇒ keep new   {not-in-deck; first}
+  [c10224] komen op bezoek (op bezoek komen) = pay a visit  (ch 2)
+      ⇒ keep new   {book-phrase; first}
+  [c10225] Indonesië = Indonesia  (ch 2)
+      ⇒ keep new   {not-in-deck; first}
+  [c10228] op vakantie = on holiday  (ch 2)
+      ⇒ keep new   {book-phrase; first}
+  [c10229] voor = for  (ch 2)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c700 voor = before/earlier than | J2 c736 voor = in front of | J3 c1225 voorbij = over | J4 c1498 vooral = especially/mostly | J5 c1859 vooruit = ahead/onward | J6 c2342 voorop = at the front
+  [c10232] eens = (particle softening a request)  (ch 2)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1304 (nog) eens = once/once again | J2 c1330 Ik ben het er (niet) mee eens. = I don't agree | J3 c10103 een = a
+  [c10233] wil (willen) = want / would like  (ch 2)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2902 wil = will | J2 c233 willen = to want
+  [c10234] 11.00 uur = 11 o'clock  (ch 2)
+      ⇒ keep new   {book-phrase; first}
+  [c10238] dit is = this is  (ch 3)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c10111 dit = this
+  [c10239] prettig met je kennis te maken (kennismaken) = pleased to meet you  (ch 3)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c2481 kennismaken = to acquaint/to make someone's acquaintance
+  [c10241] wil graag (graag willen) = would like  (ch 3)
+      ⇒ keep new   {irregular-form; first}
+  [c10242] biertje (het bier) = beer  (ch 3)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c885 het bier = beer
+  [c10246] mag (mogen) = may  (ch 3)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c610 mogen = to may/te be allowed | J2 c127 mei = May
+  [c10251] proost = cheers  (ch 3)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c2871 proost = provost
+  [c10252] op je verjaardag = happy birthday  (ch 3)
+      ⇒ keep new   {book-phrase; first}
+  [c10253] het poosje = short while  (ch 3)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c3013 poos = undefined period of time/indefinite period | J2 c10135 een poos = a while
+  [c10255] dat is = that is  (ch 3)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c10105 dat = that
+  [c10256] ja, graag = yes please  (ch 3)
+      ⇒ keep new   {book-phrase; first}
+  [c10258] nog maar = another  (ch 3)
+      ⇒ keep new   {book-phrase; first}
+  [c10267] niet zo = not so  (ch 4)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c61 niet = not
+  [c10268] een paar dagen (dag) = a few days  (ch 4)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c18 dag = hello/bye | J2 c171 de dag = day | J3 c867 een dagje weg = a day out
+  [c10269] Venetië = Venice  (ch 4)
+      ⇒ keep new   {not-in-deck; first}
+  [c10273] foto's maken = take photos  (ch 4)
+      ⇒ keep new   {book-phrase; first}
+  [c10275] kijken naar = look at  (ch 4)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c1775 bekijken = to look at/to view | J2 c3036 aankijken = to look at
+  [c10280] dat lukt niet (lukken) = that doesn't work  (ch 4)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c1438 lukken = to succeed
+  [c10281] kan (kunnen) = can  (ch 4)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c3390 kan = jug | J2 c348 kunnen = to be able/to can | J3 c1730 het blik = can
+  [c10283] zal (zullen) = will / shall  (ch 4)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1281 zullen = to will | J2 c2902 wil = will
+  [c10284] de spaghetti carbonara = spaghetti carbonara  (ch 4)
+      ⇒ keep new   {not-in-deck; first}
+  [c10288] hartstikke leuk = terrific / fantastic  (ch 4)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c934 fantastisch = fantastic
+  [c10289] vind ik ook (vinden) = I think so too  (ch 4)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c357 vinden = to find | J2 c423 vinden = to find/have an opinion
+  [c10290] ik moet ervandoor = I have to go  (ch 4)
+      ⇒ keep new   {book-phrase; first}
+  [c10291] ervandoor = away / off  (ch 4)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c10127 heen = away | J2 c246 weg = missing/away | J3 c4004 verdringen = to push aside/away
+  [c10294] doe de groeten aan (de groeten doen aan) = give my regards to  (ch 4)
+      ⇒ keep new   {book-phrase; first}
+  [c10296] tot dan = until then  (ch 4)
+      ⇒ keep new   {book-phrase; first}
+  [c10299] wie is er aan de beurt? = who's next?  (ch 5)
+      ⇒ keep new   {book-phrase; first}
+  [c10300] de beurt = turn  (ch 5)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c1567 aan de beurt zijn = to have your turn | J2 c6136 beu = fed up/having had enough | J3 c1718 draaien = to turn | J4 c7071 draai = rotation/spin/turn | J5 c7665 toer = turn/rotation/revolution
+  [c10302] de courgette = courgette  (ch 5)
+      ⇒ keep new   {not-in-deck; first}
+  [c10307] het gerecht = dish  (ch 5)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c2155 het gerecht = justice/judiciary | J2 c4048 schotel = dish
+  [c10309] de andijvie = endive  (ch 5)
+      ⇒ keep new   {not-in-deck; first}
+  [c10311] spekjes (het spekje) = bacon  (ch 5)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2613 spek = bacon
+  [c10319] was (zijn) = was  (ch 5)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c3091 was = wash/washing/laundry | J2 c59 Hoe is het? = How is it going? | J3 c65 zijn = to be | J4 c66 ik ben = I am | J5 c67 jij bent = you are | J6 c68 ben jij? = are you?
+  [c10321] champignons (de champignon) = mushrooms  (ch 5)
+      ⇒ keep new   {not-in-deck; first}
+  [c10322] de peterselie = parsley  (ch 5)
+      ⇒ keep new   {not-in-deck; first}
+  [c10323] het bosje (de bos) = bunch  (ch 5)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1213 het bos = forest | J2 c3542 boel = lot/bunch | J3 c4674 druiventros = cluster of grapes/bunch
+  [c10324] verder nog iets? = anything else?  (ch 5)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c440 Anders nog iets? = Anything else?
+  [c10325] boontjes (het boontje) = beans  (ch 5)
+      ⇒ keep new   {irregular-form; first}
+  [c10329] waarnaartoe = where to  (ch 5)
+      ⇒ keep new   {not-in-deck; first}
+  [c10330] erbij = with it  (ch 5)
+      ⇒ keep new   {not-in-deck; first}
+  [c10331] geeft niet = doesn't matter  (ch 5)
+      ⇒ keep new   {book-phrase; both}
+  [c10334] de serveerster = waitress  (ch 6)
+      ⇒ keep new   {not-in-deck; first}
+  [c10335] gaan zitten = sit down  (ch 6)
+      ⇒ keep new   {book-phrase; first}
+  [c10337] te = to  (ch 6)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c613 te = too
+  [c10338] ik heb dorst = I'm thirsty  (ch 6)
+      ⇒ keep new   {book-phrase; first}
+  [c10341] het hoofdgerecht = main course  (ch 6)
+      ⇒ keep new   {not-in-deck; first}
+  [c10343] de honger = hunger  (ch 6)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c1641 honger hebben = to be hungry
+  [c10344] de mosterdsoep = mustard soup  (ch 6)
+      ⇒ keep new   {not-in-deck; first}
+  [c10345] de mosterd = mustard  (ch 6)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c8651 most = must
+  [c10346] als = as  (ch 6)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c865 als = if
+  [c10347] frietjes (het frietje) = chips  (ch 6)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1030 de friet = French fries | J2 c3383 patat = chips/french fries
+  [c10349] o nee = oh no  (ch 6)
+      ⇒ keep new   {book-phrase; first}
+  [c10353] momentje (het moment) = one moment  (ch 6)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c604 Een moment alstublieft. = A moment please. | J2 c1452 op dit moment = at this moment
+  [c10358] de paella = paella  (ch 6)
+      ⇒ keep new   {not-in-deck; first}
+  [c10362] wat = a little / a bit  (ch 6)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c95 wat = what | J2 c293 een beetje = bit | J3 c335 weinig = few/little | J4 c6091 gering = little
+  [c10365] het toetje = dessert  (ch 6)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c5049 toet = face | J2 c3939 het dessert = dessert | J3 c5047 het nagerecht = dessert
+  [c10368] laat de rest maar zitten = that's fine / keep the change  (ch 6)
+      ⇒ keep new   {book-phrase; first}
+  [c10370] dank u = thank you  (ch 6)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c383 dan = then | J2 c3421 de dank = gratitude/thanks | J3 c224 dank je wel = thank you
+  [c10371] de kledingzaak = clothes shop  (ch 7)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c5236 kledingwinkel = clothes shop
+  [c10373] om = (in order) to  (ch 7)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c693 om = at/around
+  [c10375] groter (groot) = larger  (ch 7)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c79 groot = big
+  [c10381] ze = them  (ch 7)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c49 zij = she | J2 c52 zij = they | J3 c1267 hen = them
+  [c10382] maar even = just  (ch 7)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c10144 gewoon = just | J2 c1772 vlak = straight/immediately/just/flat | J3 c1785 terecht = just/right/for good reason
+  [c10385] zitten = fit  (ch 7)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c214 zitten = to sit | J2 c1714 zitten in = to be located | J3 c4777 zit = act of sitting | J4 c10197 zitten = are sitting | J5 c2826 fit = fit | J6 c4497 het breekijzer = crowbar/fit
+  [c10386] dan = than  (ch 7)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c383 dan = then
+  [c10389] kleinere (klein) = smaller  (ch 7)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c84 klein = small | J2 c9344 kleineren = to belittle/disparage
+  [c10391] kleinste (klein) = smallest  (ch 7)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c84 klein = small
+  [c10397] staat me het best (staan) = suits me best  (ch 7)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c212 staan = to stand
+  [c10398] het best (goed) = best  (ch 7)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1093 beste = dear | J2 c56 goed = good | J3 c1358 bestaan = to exist | J4 c4406 het bestel = order/establishment | J5 c4738 het bestand = archive/file | J6 c5301 het bestuur = management
+  [c10404] de bovenwoning = upstairs flat  (ch 8)
+      ⇒ keep new   {not-in-deck; first}
+  [c10408] de huurprijs = rent  (ch 8)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c267 huren = to rent | J2 c3127 verhuren = to rent/rent out | J3 c938 de huur = rent
+  [c10409] laten zien = show  (ch 8)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c2196 voorstelling = show/performance | J2 c2861 vertonen = to show/exhibit | J3 c5248 tonen = to show/to demonstrate
+  [c10414] de vierkante meter = square metres  (ch 8)
+      ⇒ keep new   {not-in-deck; first}
+  [c10420] hoeven = need  (ch 8)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c1006 hoeven niet = don't have to | J2 c4104 hoef = hoof | J3 c701 hoe = how | J4 c392 nodig hebben = to need | J5 c5279 behoefte = need | J6 c5691 vereisen = to need/require
+  [c10424] het huisje (het huis) = house  (ch 8)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c260 het huis = house | J2 c1670 de woning = house | J3 c6070 huisvesten = to house/to accommodate
+  [c10426] gemeubileerd = furnished  (ch 8)
+      ⇒ keep new   {not-in-deck; first}
+  [c10433] benedenwoning = ground-floor flat  (ch 8)
+      ⇒ keep new   {not-in-deck; first}
+  [c10434] dat lijkt me fantastisch = that sounds great  (ch 8)
+      ⇒ keep new   {book-phrase; first}
+  [c10436] zo snel mogelijk = as soon as possible  (ch 8)
+      ⇒ keep new   {book-phrase; first}
+  [c10438] wat is er aan de hand? = what's wrong?  (ch 9)
+      ⇒ keep new   {book-phrase; first}
+  [c10440] zit ik onder de bultjes = I'm covered in lumps / I have a rash  (ch 9)
+      ⇒ keep new   {book-phrase; first}
+  [c10441] bultjes (de bult) = lumps  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c8133 bult = bump
+  [c10445] van alles = everything  (ch 9)
+      ⇒ keep new   {book-phrase; first}
+  [c10446] geprobeerd (proberen) = tried  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1146 proberen = to try
+  [c10447] geholpen (helpen) = helped  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c252 helpen = to help
+  [c10448] begonnen (beginnen) = begun  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c91 beginnen = to begin
+  [c10450] gedaan (doen) = done  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c251 graag gedaan = you're welcome | J2 c391 doen = to do | J3 c3761 gedaante = form/appearance | J4 c4149 gaar = well-cooked/done/ready for consumption
+  [c10452] gewerkt (werken) = worked  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c649 werken = to work | J2 c1508 hard werken = to work hard
+  [c10454] bekeken (bekijken) = looked at  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1775 bekijken = to look at/to view
+  [c10456] geweest (zijn) = been  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c59 Hoe is het? = How is it going? | J2 c65 zijn = to be | J3 c66 ik ben = I am | J4 c67 jij bent = you are | J5 c68 ben jij? = are you? | J6 c69 u bent = you are
+  [c10457] het wedstrijdje (de wedstrijd) = match  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c838 de wedstrijd = match/game | J2 c2677 lucifer = match | J3 c7052 overeenstemmen = to match/fit/go together | J4 c8099 stroken = to match/fit together/be in agreement
+  [c10458] gespeeld (spelen) = played  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c832 spelen = to play
+  [c10460] gedronken (drinken) = drunk  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c225 drinken = to drink | J2 c2306 dronken = drunk/drunken
+  [c10462] gegeten (eten) = eaten  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c384 eten = to eat | J2 c406 het eten = food | J3 c874 uit eten = dining out
+  [c10463] afgelopen = past / last few  (ch 9)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c1417 afgelopen zijn = to finish | J2 c1856 aflopen = to walk down | J3 c2053 het verleden = past
+  [c10464] vergeten (vergeten) = forgotten  (ch 9)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c356 vergeten = to forget
+  [c10466] o ja = oh yes  (ch 9)
+      ⇒ keep new   {book-phrase; first}
+  [c10470] lijkt op (lijken op) = looks like  (ch 9)
+      ⇒ keep new   {different-sense; both}
+  [c10472] geef mee (meegeven) = give  (ch 9)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c10117 geef = give | J2 c250 geven = to give
+  [c10478] de fietsenmaker = cycle repairman  (ch 10)
+      ⇒ keep new   {not-in-deck; first}
+  [c10480] total loss = a write-off  (ch 10)
+      ⇒ keep new   {not-in-deck; first}
+  [c10481] gebeurd (gebeuren) = happened  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1052 gebeuren = to happen | J2 c1762 beuren = to lift/to raise
+  [c10482] gevallen (vallen) = fallen  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2395 gevallen = to happen/to occur | J2 c1326 vallen = to fall | J3 c2071 het geval = case/situation/instance
+  [c10483] regende (regenen) = was raining  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1069 regenen = to rain | J2 c2025 regen = rain
+  [c10484] fietste weg (wegfietsen) = cycled away  (ch 10)
+      ⇒ keep new   {irregular-form; first}
+  [c10486] wilde (willen) = wanted  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c233 willen = to want | J2 c1984 wild = wild | J3 c2902 wil = will
+  [c10487] rechts afslaan = turn right  (ch 10)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c757 rechtsaf = turn right
+  [c10488] gleed weg (wegglijden) = slipped  (ch 10)
+      ⇒ keep new   {irregular-form; first}
+  [c10489] mankeerde (mankeren) = was wrong  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c6936 mankeren = to be sick/to ail
+  [c10491] een slag in het wiel = the wheel is crooked  (ch 10)
+      ⇒ keep new   {book-phrase; first}
+  [c10496] zo'n = such a  (ch 10)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c9057 zo niet = if not
+  [c10497] de bagagedrager = carrier  (ch 10)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c5988 drager = carrier/one who carries/bears something
+  [c10498] afgebroken (afbreken) = broken  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c8749 afbreken = to break off | J2 c1527 stuk = broken | J3 c644 kapot = broken
+  [c10500] de trapper = pedal  (ch 10)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c333 de trap = stairway
+  [c10502] verstaan (verstaan) = heard  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c882 verstaan = to understand/to hear
+  [c10506] deden (doen) = worked  (ch 10)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c251 graag gedaan = you're welcome | J2 c391 doen = to do
+  [c10507] in orde maken = fix  (ch 10)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c8631 vastzetten = to fix/to fasten
+  [c10508] tiptop in orde = in tip-top condition  (ch 10)
+      ⇒ keep new   {book-phrase; first}
+  [c10511] Koningsdag = King's Day  (ch 10)
+      ⇒ keep new   {not-in-deck; first}
+  [c10514] betekent (betekenen) = means  (ch 10)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c201 Wat betekent dat? = What does that mean? | J2 c2479 het middel = means | J3 c9556 het medium = means/system
+  [c10516] hoera = hooray  (ch 11)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c701 hoe = how | J2 c3703 hoer = whore/prostitute
+  [c10517] van harte gefeliciteerd = happy birthday  (ch 11)
+      ⇒ keep new   {book-phrase; first}
+  [c10518] feliciteren met = congratulate on  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10519] het cadeautje (het cadeau) = present  (ch 11)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1003 het cadeau = present/gift | J2 c1596 aanwezig = present | J3 c1903 tegenwoordig = present/current
+  [c10520] het kaartje = ticket  (ch 11)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1096 het kaartje = postcard | J2 c717 de kaart = map | J3 c973 de kaart = card | J4 c3226 ticket = ticket/voucher
+  [c10522] nog geen = not yet  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10523] Cubaanse = Cuban  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10524] ben gek op (gek zijn op) = am crazy about  (ch 11)
+      ⇒ keep new   {irregular-form; first}
+  [c10526] verteld (vertellen) = told  (ch 11)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c848 vertellen = to tell | J2 c1857 de verte = distance
+  [c10528] je weet de weg (de weg weten) = you know the way  (ch 11)
+      ⇒ keep new   {book-phrase; first}
+  [c10530] gezien (zien) = seen  (ch 11)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c213 zien = to see
+  [c10532] verveel me (zich vervelen) = am bored  (ch 11)
+      ⇒ keep new   {different-sense; both}
+  [c10535] sinds kort = recently  (ch 11)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c1926 laatst = recently | J2 c5447 onlangs = recently | J3 c7263 recentelijk = recently
+  [c10536] het bevalt me = I enjoy it  (ch 11)
+      ⇒ keep new   {book-phrase; first}
+  [c10538] de logopedie = speech therapy  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10540] het bijbaantje = job on the side / part-time job  (ch 11)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c4146 bijbaan = side job/extra job | J2 c6079 deeltijdbaan = part-time job
+  [c10542] interesseer je (zich interesseren) = are you interested  (ch 11)
+      ⇒ keep new   {different-sense; both}
+  [c10545] niet echt = not really  (ch 11)
+      ⇒ keep new   {book-phrase; first}
+  [c10548] wat toevallig = what a coincidence  (ch 11)
+      ⇒ keep new   {book-phrase; first}
+  [c10549] de Wandelbeurs = Walking Fair  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10551] de wandelreis = walking tour  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10553] Chili = Chile  (ch 11)
+      ⇒ keep new   {not-in-deck; first}
+  [c10554] langzamer (langzaam) = more slowly  (ch 11)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c880 langzaam = slow
+  [c10557] Bent u hier bekend? = Do you know your way around here?  (ch 12)
+      ⇒ keep new   {book-phrase; first}
+  [c10578] ga ... om (omgaan) = turn  (ch 12)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1348 omgaan met = interact | J2 c1718 draaien = to turn | J3 c7071 draai = rotation/spin/turn | J4 c7665 toer = turn/rotation/revolution
+  [c10579] ga ... af (afgaan) = go down  (ch 12)
+      ⇒ keep new   {not-in-deck; first}
+  [c10582] bordjes (het bordje) = signs  (ch 12)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c159 het bord = blackboard | J2 c404 het bord = plate | J3 c702 het bord = traffic sign
+  [c10584] makkelijker ((ge)makkelijk) = easier  (ch 12)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c209 makkelijk = easy
+  [c10587] zei (zeggen) = said  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c118 zeggen = to say | J2 c203 Wat zeg je? = What do you say? | J3 c204 Wat zegt u? = What did you say? | J4 c539 zeggen tegen = to say to somebody
+  [c10588] kon (kunnen) = could  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c348 kunnen = to be able/to can
+  [c10589] missen = go wrong / fail  (ch 13)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c769 missen = to miss | J2 c1947 mis = wrong | J3 c4447 misgaan = to go wrong/fail | J4 c1400 zakken = to fail | J5 c2485 mislukken = to fail
+  [c10591] meegenomen (meenemen) = brought  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c645 meenemen = to take along
+  [c10592] moest (moeten) = had to  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c218 moeten = to have to/to must | J2 c991 moe = tired | J3 c9851 moestuin = vegetable garden/kitchen garden
+  [c10594] lekker = well  (ch 13)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c420 lekker = delicious | J2 c6780 lek = leaky | J3 c10201 lekker = nice/delicious | J4 c10686 lekker = nicely | J5 c4726 lekkerbek = gourmand | J6 c9152 het lekkers = sweets/treats
+  [c10595] groeten = greetings  (ch 13)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c23 groeten = to greet | J2 c811 groetjes = greetings
+  [c10596] Doe haar de groeten terug = Give her our regards  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10600] Zeg dat wel! = You can say that again!  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10601] ben verkouden = have a cold  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1458 verkouden = to have a cold
+  [c10602] ik ben toe aan (toe zijn aan) = I need  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10606] schijnt (schijnen) = seems  (ch 13)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1071 schijnen = to shine
+  [c10607] kom ... verder (verderkomen) = come in  (ch 13)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c2836 inkomen = to come in | J2 c6389 binnenbrengen = to come in/to move in/to get closer
+  [c10608] lekker warm = nice and warm  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10610] bonbons (de bonbon) = chocolates  (ch 13)
+      ⇒ keep new   {not-in-deck; first}
+  [c10611] de bos = bunch  (ch 13)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1213 het bos = forest | J2 c3542 boel = lot/bunch | J3 c4674 druiventros = cluster of grapes/bunch
+  [c10622] hadden (hebben) = used to have / had  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c97 hebben = to have | J2 c98 ik heb = I have | J3 c99 jij hebt = you have | J4 c100 heb jij? = do you have? | J5 c101 u hebt = you have | J6 c102 hij heeft = he has
+  [c10623] hebben gehad (hebben) = had  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c97 hebben = to have | J2 c98 ik heb = I have | J3 c99 jij hebt = you have | J4 c100 heb jij? = do you have? | J5 c101 u hebt = you have | J6 c102 hij heeft = he has
+  [c10624] onder de auto gekomen (onder de auto komen) = was run over  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10625] hebben verdriet gehad om (verdriet hebben om) = grieved for  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10628] volgens mij = in my opinion  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10631] twee weken geleden = two weeks ago  (ch 13)
+      ⇒ keep new   {book-phrase; first}
+  [c10632] jongen (het jong) = litter  (ch 13)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c83 de jongen = boy | J2 c535 jong = young | J3 c902 de jongste = youngest | J4 c8072 het zwerfafval = litter
+  [c10633] gekregen (krijgen) = had  (ch 13)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c254 krijgen = to get/to receive
+  [c10642] de aanbieding = offer  (ch 14)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c471 in de aanbieding = on sale | J2 c1299 aanbieden = to offer | J3 c3532 het aanbod = offer | J4 c5380 indienen = to offer/to hand in
+  [c10647] bent van plan (van plan zijn) = intend  (ch 14)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2860 bestemmen = to intend/destine | J2 c8562 beogen = to intend/aim/seek
+  [c10650] de krachttraining = weight training  (ch 14)
+      ⇒ keep new   {not-in-deck; first}
+  [c10652] de cardio = cardio fitness  (ch 14)
+      ⇒ keep new   {not-in-deck; first}
+  [c10653] de groepsles = group lesson  (ch 14)
+      ⇒ keep new   {not-in-deck; first}
+  [c10654] kijk mee (meekijken) = watch  (ch 14)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c3250 wacht = function/duty of standing guard/watch | J2 c3931 aanzien = to watch/to view | J3 c632 het horloge = watch
+  [c10657] op die manier = in that way  (ch 14)
+      ⇒ keep new   {book-phrase; first}
+  [c10659] de sportkleren = sports clothes  (ch 14)
+      ⇒ keep new   {not-in-deck; first}
+  [c10661] het buikspierkwartier = abs workout  (ch 14)
+      ⇒ keep new   {not-in-deck; first}
+  [c10665] het pasje = card  (ch 14)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c906 pas = just | J2 c973 de kaart = card
+  [c10666] energiedrankjes (het energiedrankje) = energy drinks  (ch 14)
+      ⇒ keep new   {not-in-deck; first}
+  [c10667] het drankje = drink  (ch 14)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1029 de drank = drink/beverage | J2 c225 drinken = to drink
+  [c10669] het muntgeld = cash  (ch 14)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c6764 de cash = cash
+  [c10670] het saldo = balance  (ch 14)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c3603 balans = balance/scales for weighing | J2 c5593 het evenwicht = balance/equilibrium
+  [c10673] het plezier = fun  (ch 14)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c893 veel plezier = lots of fun | J2 c7697 plezierig = pleasant/fun | J3 c2632 lol = fun | J4 c85 leuk = nice/fun
+  [c10674] het openbaar vervoer = public transport  (ch 15)
+      ⇒ keep new   {not-in-deck; first}
+  [c10675] Colombia = Colombia  (ch 15)
+      ⇒ keep new   {not-in-deck; first}
+  [c10676] ging (gaan) = went  (ch 15)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c57 Het gaat wel. = It's okay. | J2 c58 Hoe gaat het? = How are you? | J3 c111 gaan = to go | J4 c1636 gaan over = to be about
+  [c10677] duurde (duren) = took / lasted  (ch 15)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c589 duren = to last | J2 c442 duur = expensive
+  [c10682] het grapje = joke  (ch 15)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1676 de grap = joke | J2 c5688 mop = joke/jest
+  [c10683] het raampje (raam) = window  (ch 15)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c262 het raam = window | J2 c1694 de ruit = window | J3 c5066 het venster = window
+  [c10684] net als = like  (ch 15)
+      ⇒ keep new   {not-in-deck; first}
+  [c10690] achter de rug = behind (you)  (ch 15)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c3633 achterna = after/behind/following | J2 c3864 achterop = on the back/rear/behind | J3 c491 achter = behind
+  [c10691] pony's (de pony) = ponies  (ch 15)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c3575 inspannen = to put horses/ponies/donkeys
+  [c10692] de wei = field  (ch 15)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c2840 het veld = field/open country | J2 c3842 het grasveld = field/lawn | J3 c8487 het vakgebied = field/specialism/domain
+  [c10693] net = like  (ch 15)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c623 net = neat/well taken care of | J2 c791 net = just
+  [c10694] de shetlandpony = Shetland pony  (ch 15)
+      ⇒ keep new   {not-in-deck; first}
+  [c10695] gewend = used to  (ch 15)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1639 gewend zijn = to be used to | J2 c1150 wennen = to get used to | J3 c2228 gewennen = to feel comfortable/to get used to | J4 c9087 wenden = to direct oneself/turn | J5 c7808 voorheen = formerly/used to
+  [c10696] zo meteen = very soon  (ch 15)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c6639 dadelijk = presently/very soon/at once
+  [c10703] broodjes (het broodje) = bread rolls  (ch 15)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c363 het brood = bread
+  [c10705] goede reis = have a good trip  (ch 15)
+      ⇒ keep new   {book-phrase; first}
+  [c10706] maak wakker (wakker maken) = wake you up  (ch 15)
+      ⇒ keep new   {book-phrase; first}
+  [c10707] de caissière = box office assistant  (ch 16)
+      ⇒ keep new   {not-in-deck; first}
+  [c10709] wat stom = how stupid  (ch 16)
+      ⇒ keep new   {book-phrase; first}
+  [c10710] gekeken (kijken) = looked  (ch 16)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c241 kijken = to look
+  [c10711] is al bezig = has started  (ch 16)
+      ⇒ keep new   {book-phrase; first}
+  [c10712] gemist (missen) = missed  (ch 16)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c769 missen = to miss
+  [c10713] draaien = are showing  (ch 16)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1718 draaien = to turn | J2 c7071 draai = rotation/spin/turn
+  [c10714] de zomerhitte = summer heat  (ch 16)
+      ⇒ keep new   {not-in-deck; first}
+  [c10716] opgenomen (opnemen) = filmed  (ch 16)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1192 opnemen = to answer (phone) | J2 c1747 opnemen = to record
+  [c10717] naar een verhaal van = based on a story by  (ch 16)
+      ⇒ keep new   {book-phrase; first}
+  [c10718] de natuurdocumentaire = nature documentary  (ch 16)
+      ⇒ keep new   {not-in-deck; first}
+  [c10719] gesproken (spreken) = spoken  (ch 16)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c168 spreken = to speak
+  [c10721] ondertiteld (ondertitelen) = subtitled  (ch 16)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c8960 ondertitelen = to caption/to subtitle | J2 c6296 ondertitel = caption
+  [c10722] de rang = class  (ch 16)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c853 de cursus = course/class
+  [c10724] de informatietechnologie = information technology  (ch 17)
+      ⇒ keep new   {not-in-deck; first}
+  [c10725] de schat = darling  (ch 17)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1997 schat = treasure/amassed valuables | J2 c6017 schatten = to estimate
+  [c10727] gedroomd (dromen) = dreamt  (ch 17)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2123 dromen = to dream
+  [c10730] ben uitgerust (uitgerust zijn) = feel well-rested  (ch 17)
+      ⇒ keep new   {book-phrase; first}
+  [c10732] het ontbijtje (het ontbijt) = breakfast  (ch 17)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c388 het ontbijt = breakfast | J2 c2430 ontbijten = to breakfast/have breakfast
+  [c10734] het college = lecture / class  (ch 17)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c5682 het college = collegial board/either advisory/as an authority | J2 c853 de cursus = course/class
+  [c10735] de filosofiegeschiedenis = history of philosophy  (ch 17)
+      ⇒ keep new   {not-in-deck; first}
+  [c10736] de hypotheek = mortgage  (ch 17)
+      ⇒ keep new   {not-in-deck; first}
+  [c10738] gehaktballetjes (het gehaktballetje) = meatballs  (ch 17)
+      ⇒ keep new   {not-in-deck; first}
+  [c10739] de tomatensaus = tomato sauce  (ch 17)
+      ⇒ keep new   {not-in-deck; first}
+  [c10741] ben kwijt (kwijt zijn) = lost  (ch 17)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2161 zoek = lost/missing/gone | J2 c4043 vermist = missing/lost | J3 c803 kwijt = lost
+  [c10742] gekookt (koken) = cooked  (ch 17)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c394 koken = to cook/to boil
+  [c10743] pittig = spicy  (ch 17)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c7406 pikant = hot/spicy/piquant
+  [c10746] geluncht (lunchen) = had lunch  (ch 17)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c3086 lunchen = to lunch
+  [c10754] uitgenodigd (uitnodigen) = invited  (ch 17)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1104 uitnodigen = to invite
+  [c10757] nadat = after  (ch 18)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c3633 achterna = after/behind/following | J2 c692 na = after
+  [c10759] gestolen (stelen) = stolen  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1430 stelen = to steal
+  [c10760] aangifte doen = report  (ch 18)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c1619 het verslag = report | J2 c5537 melding = report/notification/message | J3 c6431 berichten = to report/inform
+  [c10762] zat (zitten) = was sitting  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1463 Ik ben het zat. = I'm fed up | J2 c214 zitten = to sit | J3 c1714 zitten in = to be located
+  [c10763] zulk = such  (ch 18)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c5282 dergelijk = such/similar
+  [c10764] toen = when  (ch 18)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1136 toen = then | J2 c5343 de toename = increase | J3 c185 wanneer = when
+  [c10765] lag (liggen) = was / lay  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c350 liggen = to lie/to lie down | J2 c1083 leggen = to lay
+  [c10766] gezocht (zoeken) = searched  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c275 zoeken = to search
+  [c10767] gelegd (leggen) = placed  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1083 leggen = to lay | J2 c6786 gel = gel
+  [c10768] had (hebben) = had  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c97 hebben = to have | J2 c98 ik heb = I have | J3 c99 jij hebt = you have | J4 c100 heb jij? = do you have? | J5 c101 u hebt = you have | J6 c102 hij heeft = he has
+  [c10770] viel (vallen) = fell  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c1326 vallen = to fall
+  [c10771] gehaald (halen) = took  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c527 halen = to get/to fetch | J2 c766 halen = to be in time for
+  [c10774] ziet eruit (eruitzien) = looks like  (ch 18)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c937 Hoe ziet... eruit? = How does it look?
+  [c10775] oei = um / oh  (ch 18)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c1967 o = oh
+  [c10776] in ieder geval = at any rate  (ch 18)
+      ⇒ keep new   {book-phrase; both}
+      candidates: J1 c5960 althans = at least/anyway/at any rate
+  [c10778] de rekening = account  (ch 18)
+      ⇒ keep new   {different-sense; both}
+      candidates: J1 c1038 de rekening = bill
+  [c10780] hoewel = although  (ch 18)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c701 hoe = how
+  [c10784] opgeschreven (opschrijven) = written down  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c2040 opschrijven = to write down
+  [c10785] gevonden (vinden) = found  (ch 18)
+      ⇒ keep new   {irregular-form; both}
+      candidates: J1 c357 vinden = to find | J2 c423 vinden = to find/have an opinion | J3 c5544 stichten = to found/establish
+  [c10786] nemen contact op (contact opnemen) = contact / get in touch  (ch 18)
+      ⇒ keep new   {not-in-deck; both}
+      candidates: J1 c1141 het contact = contact | J2 c1598 bereiken = to contact | J3 c7989 de contactpersoon = contact/contact person

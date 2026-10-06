@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, mkdtempSync, rmSync
 import { join, dirname, resolve } from "node:path";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
-import { prepareEntries, cardFromEntry, buildChapterPath, strictSignature } from "./nig.mjs";
+import { prepareEntries, cardFromEntry, buildChapterPath, strictSignature, chosenCardId } from "./nig.mjs";
 import { mergeCandidates } from "./import-merge.mjs";
 import { writePath } from "./paths-file.mjs";
 
@@ -67,9 +67,10 @@ const byId = new Map(live.map(c => [c.id, c]));
 const previous = existsSync(mappingPath) ? read(mappingPath) : { records: [] };
 if (previous.sourceSha256 && previous.sourceSha256 !== source.sha256) throw new Error("Source archive changed; review the saved mapping before importing a new edition");
 const pinned = new Map(previous.records.map(r => [r.sourceId, r.cardId]));
-const candidates = entries.map(e => {
+const chosen = entries.map(e => chosenCardId(e.id, corrections[e.id], pinned));
+const candidates = entries.map((e, i) => {
   const correction = corrections[e.id];
-  const id = pinned.get(e.id) ?? correction?.reuseId;
+  const id = chosen[i];
   if (id && !byId.has(id)) throw new Error(`Saved mapping points to missing ${id}`);
   if (correction?.reuseId && strictSignature(byId.get(correction.reuseId)) !== strictSignature({ dutch: correction.expectedDutch, english: correction.expectedEnglish })) {
     throw new Error(`Reviewed card changed: ${correction.reuseId}`);
@@ -77,7 +78,7 @@ const candidates = entries.map(e => {
   return id ? byId.get(id) : cardFromEntry(e);
 });
 const merged = mergeCandidates(live, candidates, { signature: strictSignature });
-const ids = merged.candidateIds.map((id, i) => pinned.get(entries[i].id) ?? id);
+const ids = merged.candidateIds.map((id, i) => chosen[i] ?? id);
 const path = buildChapterPath(entries, ids, new Set(merged.cards.map(c => c.id)));
 const mapping = { sourceSha256: source.sha256, records: entries.flatMap((e, i) => e.sourceIds.map(sourceId => ({
   sourceId, cardId: ids[i], chapter: e.chapter, ...(sourceId !== e.id ? { mergedInto: e.id } : {}),

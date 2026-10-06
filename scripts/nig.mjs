@@ -25,9 +25,27 @@ export function prepareEntries(raw, fixes) {
     return { ...r, front, back, sourceIds: [r.id, ...(f.mergeWith ? [f.mergeWith] : [])],
       ...(f.english ? { english: f.english } : {}),
       ...(f.reason ? { correction: f.reason } : {}),
-      // A recording of half a broken source row is not a recording of the repaired phrase.
-      audio: f.mergeWith || f.front ? undefined : r.audio };
+      // A recording of half a broken source row is not a recording of the repaired phrase,
+      // and a recording of "broers" does not belong on the "de broer" card it was mapped to.
+      audio: f.mergeWith || f.front || f.form ? undefined : r.audio };
   }).sort((a, b) => a.chapter - b.chapter || a.position - b.position || a.id.localeCompare(b.id));
+}
+
+export const chosenCardId = (sourceId, correction, pinned) => correction?.reuseId ?? pinned.get(sourceId);
+
+export function pruneBookCards({ cards, enrichment, bookIds, audio, referenced, expectRemoved }) {
+  const removed = bookIds.filter(id => !referenced.has(id));
+  if (expectRemoved !== undefined && removed.length !== expectRemoved) {
+    throw new Error(`Expected to prune ${expectRemoved} book cards, found ${removed.length}`);
+  }
+  const gone = new Set(removed);
+  return {
+    removed,
+    cards: cards.filter(c => !gone.has(c.id)),
+    enrichment: Object.fromEntries(Object.entries(enrichment).filter(([id]) => !gone.has(id))),
+    bookIds: bookIds.filter(id => !gone.has(id)),
+    audio: Object.fromEntries(Object.entries(audio).filter(([id]) => !gone.has(id))),
+  };
 }
 
 export function cardFromEntry(entry) {

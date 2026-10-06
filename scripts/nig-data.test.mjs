@@ -14,10 +14,18 @@ const paths = read("public/paths.json");
 const source = read("scripts/sources/nig-source.json");
 const mapping = read("scripts/sources/nig-mapping.json");
 const baseline = read("scripts/sources/nig-baseline.json");
+const review = read("scripts/sources/nig-review.json");
 
 describe("shipped Nederlands in gang data", () => {
-  it("preserves every pre-existing card and all Inburgering units", () => {
-    const prefix = cards.slice(0, baseline.cardsCount);
+  it("preserves every pre-existing card, except reviewed gloss additions, and all Inburgering units", () => {
+    const prefix = structuredClone(cards.slice(0, baseline.cardsCount));
+    const position = new Map(prefix.map((c, i) => [c.id, i]));
+    for (const { cardId, gloss } of review.addedGlosses) {
+      if (!position.has(cardId)) continue;
+      const english = prefix[position.get(cardId)].english;
+      expect(english).toContain(gloss);
+      english.splice(english.lastIndexOf(gloss), 1);
+    }
     expect(createHash("sha256").update(JSON.stringify(prefix)).digest("hex")).toBe(baseline.cardsSha256);
     const io = paths.paths.find(p => p.id === "inburgering");
     expect(createHash("sha256").update(JSON.stringify(io)).digest("hex")).toBe(baseline.inburgeringSha256);
@@ -36,12 +44,35 @@ describe("shipped Nederlands in gang data", () => {
     expect(newIds.every(id => !byId.get(id).level)).toBe(true);
     expect(path.units.flatMap(u => u.cardIds).every(id => byId.get(id).english.every(s => s.trim()))).toBe(true);
   });
-  it("preserves grammatical forms, meanings and complete repaired phrases", () => {
+  it("maps regular forms to their lemma card, keeps irregular forms, and never crosses homographs", () => {
     const mapped = sourceId => byId.get(mapping.records.find(r => r.sourceId === sourceId).cardId);
-    expect(mapped("1570504901685")).toMatchObject({ dutch: "dagen", english: ["days"] });
-    expect(mapped("1570504901706")).toMatchObject({ dutch: "kom", english: ["come"] });
-    expect(mapped("1570505221343").english).toContain("make an appointment");
+    expect(mapped("1570504901685")).toMatchObject({ id: "c171", dutch: "de dag" });
+    expect(mapped("1570504901706")).toMatchObject({ id: "c296", dutch: "komen" });
+    expect(mapped("1570504901706").id).not.toBe("c1082");
+    expect(mapped("1570504901673")).toMatchObject({ dutch: "ben", english: ["am", "are"] });
+    expect(mapped("1570504901692").id).toBe(mapped("1570504901673").id);
+    expect(mapped("1570505221343").english).toContain("to make an appointment");
     expect(mapped("1570505313569").english).toContain("get in touch");
+  });
+  it("redirects saved progress of every merged-away card to a card that still exists", () => {
+    const redirects = read("src/data/cardRedirects.json");
+    const merged = review.decisions.filter(d => d.action !== "keep-new");
+    expect(Object.keys(redirects).sort()).toEqual(merged.map(d => d.nigCardId).sort());
+    for (const [from, to] of Object.entries(redirects)) {
+      expect(byId.has(from)).toBe(false);
+      expect(byId.has(to)).toBe(true);
+    }
+  });
+  it("leaves no orphaned book card and applies every reviewed merge", () => {
+    const pathIds = new Set(paths.paths.find(p => p.id === "nederlands-in-gang").units.flatMap(u => u.cardIds));
+    expect(read("scripts/sources/nig-new-ids.json").every(id => pathIds.has(id))).toBe(true);
+    for (const d of review.decisions) {
+      if (d.action === "keep-new") expect(pathIds.has(d.nigCardId)).toBe(true);
+      else {
+        expect(byId.has(d.nigCardId)).toBe(false);
+        expect(pathIds.has(d.targetId)).toBe(true);
+      }
+    }
   });
   it("keeps paths.json readable by clients still running the cached tier-only build", () => {
     const known = new Set(cards.map(c => c.id));

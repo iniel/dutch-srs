@@ -1,0 +1,5939 @@
+{
+  "addedGlosses": [
+    {
+      "cardId": "c403",
+      "gloss": "everyone"
+    },
+    {
+      "cardId": "c91",
+      "gloss": "to start"
+    },
+    {
+      "cardId": "c6977",
+      "gloss": "with"
+    },
+    {
+      "cardId": "c2481",
+      "gloss": "to get to know"
+    },
+    {
+      "cardId": "c10164",
+      "gloss": "are"
+    },
+    {
+      "cardId": "c735",
+      "gloss": "from"
+    },
+    {
+      "cardId": "c9",
+      "gloss": "to live"
+    },
+    {
+      "cardId": "c113",
+      "gloss": "to"
+    },
+    {
+      "cardId": "c640",
+      "gloss": "for a moment"
+    },
+    {
+      "cardId": "c114",
+      "gloss": "break"
+    },
+    {
+      "cardId": "c271",
+      "gloss": "seat"
+    },
+    {
+      "cardId": "c420",
+      "gloss": "nice"
+    },
+    {
+      "cardId": "c247",
+      "gloss": "what"
+    },
+    {
+      "cardId": "c1753",
+      "gloss": "actually"
+    },
+    {
+      "cardId": "c1753",
+      "gloss": "really"
+    },
+    {
+      "cardId": "c741",
+      "gloss": "therefore"
+    },
+    {
+      "cardId": "c648",
+      "gloss": "certainly"
+    },
+    {
+      "cardId": "c10210",
+      "gloss": "as well"
+    },
+    {
+      "cardId": "c8148",
+      "gloss": "oh"
+    },
+    {
+      "cardId": "c524",
+      "gloss": "different"
+    },
+    {
+      "cardId": "c3640",
+      "gloss": "type"
+    },
+    {
+      "cardId": "c218",
+      "gloss": "should"
+    },
+    {
+      "cardId": "c935",
+      "gloss": "happy birthday"
+    },
+    {
+      "cardId": "c1281",
+      "gloss": "shall"
+    },
+    {
+      "cardId": "c6345",
+      "gloss": "to settle the bill"
+    },
+    {
+      "cardId": "c667",
+      "gloss": "everything"
+    },
+    {
+      "cardId": "c854",
+      "gloss": "that's why"
+    },
+    {
+      "cardId": "c2046",
+      "gloss": "to meet"
+    },
+    {
+      "cardId": "c2046",
+      "gloss": "to run into"
+    },
+    {
+      "cardId": "c745",
+      "gloss": "great"
+    },
+    {
+      "cardId": "c745",
+      "gloss": "wonderful"
+    },
+    {
+      "cardId": "c57",
+      "gloss": "All right."
+    },
+    {
+      "cardId": "c1068",
+      "gloss": "splendid"
+    },
+    {
+      "cardId": "c1268",
+      "gloss": "right now"
+    },
+    {
+      "cardId": "c1199",
+      "gloss": "to make an appointment"
+    },
+    {
+      "cardId": "c1199",
+      "gloss": "to set a date"
+    },
+    {
+      "cardId": "c56",
+      "gloss": "okay"
+    },
+    {
+      "cardId": "c512",
+      "gloss": "date"
+    },
+    {
+      "cardId": "c170",
+      "gloss": "diary"
+    },
+    {
+      "cardId": "c1306",
+      "gloss": "quickly"
+    },
+    {
+      "cardId": "c361",
+      "gloss": "to go shopping"
+    },
+    {
+      "cardId": "c330",
+      "gloss": "nice"
+    },
+    {
+      "cardId": "c2811",
+      "gloss": "mashed potato and vegetables"
+    },
+    {
+      "cardId": "c1131",
+      "gloss": "delicious"
+    },
+    {
+      "cardId": "c1284",
+      "gloss": "punnet"
+    },
+    {
+      "cardId": "c1284",
+      "gloss": "small container"
+    },
+    {
+      "cardId": "c1367",
+      "gloss": "nice"
+    },
+    {
+      "cardId": "c894",
+      "gloss": "friend"
+    },
+    {
+      "cardId": "c894",
+      "gloss": "female friend"
+    },
+    {
+      "cardId": "c737",
+      "gloss": "in the meantime"
+    },
+    {
+      "cardId": "c737",
+      "gloss": "in advance"
+    },
+    {
+      "cardId": "c10114",
+      "gloss": "just"
+    },
+    {
+      "cardId": "c2454",
+      "gloss": "um"
+    },
+    {
+      "cardId": "c661",
+      "gloss": "after all"
+    },
+    {
+      "cardId": "c5046",
+      "gloss": "today's special"
+    },
+    {
+      "cardId": "c5046",
+      "gloss": "dish of the day"
+    },
+    {
+      "cardId": "c293",
+      "gloss": "a little"
+    },
+    {
+      "cardId": "c845",
+      "gloss": "to like"
+    },
+    {
+      "cardId": "c1368",
+      "gloss": "to try"
+    },
+    {
+      "cardId": "c5231",
+      "gloss": "greasy"
+    },
+    {
+      "cardId": "c5231",
+      "gloss": "rich"
+    },
+    {
+      "cardId": "c1571",
+      "gloss": "to leave"
+    },
+    {
+      "cardId": "c1501",
+      "gloss": "shop"
+    },
+    {
+      "cardId": "c1501",
+      "gloss": "store"
+    },
+    {
+      "cardId": "c275",
+      "gloss": "to look for"
+    },
+    {
+      "cardId": "c5985",
+      "gloss": "style"
+    },
+    {
+      "cardId": "c612",
+      "gloss": "to try on"
+    },
+    {
+      "cardId": "c611",
+      "gloss": "changing room"
+    },
+    {
+      "cardId": "c1263",
+      "gloss": "it"
+    },
+    {
+      "cardId": "c2061",
+      "gloss": "if necessary"
+    },
+    {
+      "cardId": "c2061",
+      "gloss": "possibly"
+    },
+    {
+      "cardId": "c1091",
+      "gloss": "so"
+    },
+    {
+      "cardId": "c3352",
+      "gloss": "real estate agent"
+    },
+    {
+      "cardId": "c6221",
+      "gloss": "accommodation"
+    },
+    {
+      "cardId": "c6221",
+      "gloss": "somewhere to live"
+    },
+    {
+      "cardId": "c332",
+      "gloss": "town"
+    },
+    {
+      "cardId": "c849",
+      "gloss": "boyfriend"
+    },
+    {
+      "cardId": "c4028",
+      "gloss": "option"
+    },
+    {
+      "cardId": "c334",
+      "gloss": "storey"
+    },
+    {
+      "cardId": "c1447",
+      "gloss": "city centre"
+    },
+    {
+      "cardId": "c283",
+      "gloss": "passage"
+    },
+    {
+      "cardId": "c283",
+      "gloss": "passageway"
+    },
+    {
+      "cardId": "c3127",
+      "gloss": "to let out"
+    },
+    {
+      "cardId": "c284",
+      "gloss": "living room"
+    },
+    {
+      "cardId": "c514",
+      "gloss": "to phone"
+    },
+    {
+      "cardId": "c514",
+      "gloss": "to call"
+    },
+    {
+      "cardId": "c1531",
+      "gloss": "as"
+    },
+    {
+      "cardId": "c1531",
+      "gloss": "like"
+    },
+    {
+      "cardId": "c2496",
+      "gloss": "last night"
+    },
+    {
+      "cardId": "c1334",
+      "gloss": "during the day"
+    },
+    {
+      "cardId": "c1252",
+      "gloss": "client"
+    },
+    {
+      "cardId": "c1094",
+      "gloss": "special"
+    },
+    {
+      "cardId": "c1149",
+      "gloss": "last"
+    },
+    {
+      "cardId": "c682",
+      "gloss": "bike"
+    },
+    {
+      "cardId": "c1065",
+      "gloss": "to seem"
+    },
+    {
+      "cardId": "c810",
+      "gloss": "to cycle"
+    },
+    {
+      "cardId": "c2638",
+      "gloss": "handlebars"
+    },
+    {
+      "cardId": "c2550",
+      "gloss": "seat"
+    },
+    {
+      "cardId": "c654",
+      "gloss": "public holiday"
+    },
+    {
+      "cardId": "c605",
+      "gloss": "celebration"
+    },
+    {
+      "cardId": "c659",
+      "gloss": "to collect"
+    },
+    {
+      "cardId": "c2299",
+      "gloss": "to be mistaken"
+    },
+    {
+      "cardId": "c1420",
+      "gloss": "That's right."
+    },
+    {
+      "cardId": "c729",
+      "gloss": "besides"
+    },
+    {
+      "cardId": "c729",
+      "gloss": "in addition to"
+    },
+    {
+      "cardId": "c812",
+      "gloss": "every"
+    },
+    {
+      "cardId": "c818",
+      "gloss": "to hike"
+    },
+    {
+      "cardId": "c1224",
+      "gloss": "to get ready"
+    },
+    {
+      "cardId": "c88",
+      "gloss": "to speak"
+    },
+    {
+      "cardId": "c836",
+      "gloss": "from"
+    },
+    {
+      "cardId": "c1268",
+      "gloss": "straightaway"
+    },
+    {
+      "cardId": "c1622",
+      "gloss": "desk"
+    },
+    {
+      "cardId": "c1622",
+      "gloss": "information desk"
+    },
+    {
+      "cardId": "c756",
+      "gloss": "straight ahead"
+    },
+    {
+      "cardId": "c698",
+      "gloss": "as far as"
+    },
+    {
+      "cardId": "c698",
+      "gloss": "up to"
+    },
+    {
+      "cardId": "c753",
+      "gloss": "to the left"
+    },
+    {
+      "cardId": "c4093",
+      "gloss": "to walk down"
+    },
+    {
+      "cardId": "c1327",
+      "gloss": "as a matter of course"
+    },
+    {
+      "cardId": "c1327",
+      "gloss": "automatically"
+    },
+    {
+      "cardId": "c1497",
+      "gloss": "to follow"
+    },
+    {
+      "cardId": "c1568",
+      "gloss": "to come in"
+    },
+    {
+      "cardId": "c765",
+      "gloss": "fortunately"
+    },
+    {
+      "cardId": "c765",
+      "gloss": "luckily"
+    },
+    {
+      "cardId": "c652",
+      "gloss": "to take"
+    },
+    {
+      "cardId": "c6610",
+      "gloss": "to apologize"
+    },
+    {
+      "cardId": "c616",
+      "gloss": "to have on"
+    },
+    {
+      "cardId": "c676",
+      "gloss": "warm"
+    },
+    {
+      "cardId": "c2624",
+      "gloss": "at an angle"
+    },
+    {
+      "cardId": "c845",
+      "gloss": "to be fond of"
+    },
+    {
+      "cardId": "c890",
+      "gloss": "oh yes"
+    },
+    {
+      "cardId": "c421",
+      "gloss": "usually"
+    },
+    {
+      "cardId": "c294",
+      "gloss": "pleasant"
+    },
+    {
+      "cardId": "c294",
+      "gloss": "sociable"
+    },
+    {
+      "cardId": "c2656",
+      "gloss": "sports club"
+    },
+    {
+      "cardId": "c858",
+      "gloss": "to enrol"
+    },
+    {
+      "cardId": "c8663",
+      "gloss": "to cancel"
+    },
+    {
+      "cardId": "c833",
+      "gloss": "to play sports"
+    },
+    {
+      "cardId": "c1280",
+      "gloss": "certain"
+    },
+    {
+      "cardId": "c5478",
+      "gloss": "fitness"
+    },
+    {
+      "cardId": "c5478",
+      "gloss": "physical condition"
+    },
+    {
+      "cardId": "c2266",
+      "gloss": "goal"
+    },
+    {
+      "cardId": "c2266",
+      "gloss": "target"
+    },
+    {
+      "cardId": "c2826",
+      "gloss": "healthy"
+    },
+    {
+      "cardId": "c2004",
+      "gloss": "to join in"
+    },
+    {
+      "cardId": "c911",
+      "gloss": "vending machine"
+    },
+    {
+      "cardId": "c893",
+      "gloss": "have fun"
+    },
+    {
+      "cardId": "c474",
+      "gloss": "packet"
+    },
+    {
+      "cardId": "c474",
+      "gloss": "package"
+    },
+    {
+      "cardId": "c1269",
+      "gloss": "fantastic"
+    },
+    {
+      "cardId": "c1042",
+      "gloss": "in the old days"
+    },
+    {
+      "cardId": "c771",
+      "gloss": "platform"
+    },
+    {
+      "cardId": "c1130",
+      "gloss": "real"
+    },
+    {
+      "cardId": "c2864",
+      "gloss": "windmill"
+    },
+    {
+      "cardId": "c516",
+      "gloss": "earlier"
+    },
+    {
+      "cardId": "c1131",
+      "gloss": "wonderful"
+    },
+    {
+      "cardId": "c569",
+      "gloss": "at all"
+    },
+    {
+      "cardId": "c1255",
+      "gloss": "to get up"
+    },
+    {
+      "cardId": "c1404",
+      "gloss": "ordinary"
+    },
+    {
+      "cardId": "c381",
+      "gloss": "dinner"
+    },
+    {
+      "cardId": "c381",
+      "gloss": "evening meal"
+    },
+    {
+      "cardId": "c1697",
+      "gloss": "fault"
+    },
+    {
+      "cardId": "c1106",
+      "gloss": "hall"
+    },
+    {
+      "cardId": "c330",
+      "gloss": "great"
+    },
+    {
+      "cardId": "c3172",
+      "gloss": "to fancy"
+    },
+    {
+      "cardId": "c3172",
+      "gloss": "to like"
+    },
+    {
+      "cardId": "c650",
+      "gloss": "besides"
+    },
+    {
+      "cardId": "c650",
+      "gloss": "apart from"
+    },
+    {
+      "cardId": "c1244",
+      "gloss": "regular"
+    },
+    {
+      "cardId": "c1709",
+      "gloss": "wallet"
+    },
+    {
+      "cardId": "c774",
+      "gloss": "by way of"
+    },
+    {
+      "cardId": "c1453",
+      "gloss": "always"
+    },
+    {
+      "cardId": "c1453",
+      "gloss": "continually"
+    },
+    {
+      "cardId": "c1453",
+      "gloss": "all the time"
+    },
+    {
+      "cardId": "c5379",
+      "gloss": "culprit"
+    },
+    {
+      "cardId": "c1134",
+      "gloss": "it so happens"
+    },
+    {
+      "cardId": "c1134",
+      "gloss": "you see"
+    },
+    {
+      "cardId": "c2582",
+      "gloss": "otherwise"
+    },
+    {
+      "cardId": "c2582",
+      "gloss": "for the rest"
+    },
+    {
+      "cardId": "c1311",
+      "gloss": "at once"
+    },
+    {
+      "cardId": "c3521",
+      "gloss": "how come"
+    },
+    {
+      "cardId": "c3521",
+      "gloss": "how so"
+    },
+    {
+      "cardId": "c659",
+      "gloss": "to get"
+    }
+  ],
+  "decisions": [
+    {
+      "nigCardId": "c10162",
+      "book": "allemaal",
+      "action": "reuse-add-sense",
+      "targetId": "c403",
+      "addGloss": [
+        "everyone"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10163",
+      "book": "Nederlands",
+      "action": "reuse",
+      "targetId": "c27",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10164",
+      "book": "ben",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10165",
+      "book": "docenten",
+      "action": "reuse",
+      "targetId": "c110",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10166",
+      "book": "andere",
+      "action": "reuse",
+      "targetId": "c524",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10167",
+      "book": "is",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10168",
+      "book": "geeft les",
+      "action": "reuse",
+      "targetId": "c1188",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10169",
+      "book": "dagen",
+      "action": "reuse",
+      "targetId": "c171",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10170",
+      "book": "beginnen",
+      "action": "reuse-add-sense",
+      "targetId": "c91",
+      "addGloss": [
+        "to start"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10171",
+      "book": "met",
+      "action": "reuse-add-sense",
+      "targetId": "c6977",
+      "addGloss": [
+        "with"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10172",
+      "book": "kennismaken",
+      "action": "reuse-add-sense",
+      "targetId": "c2481",
+      "addGloss": [
+        "to get to know"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10173",
+      "book": "ben",
+      "action": "reuse-add-sense",
+      "targetId": "c10164",
+      "addGloss": [
+        "are"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10174",
+      "book": "je",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10175",
+      "book": "uit",
+      "action": "reuse-add-sense",
+      "targetId": "c735",
+      "addGloss": [
+        "from"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10176",
+      "book": "Engeland",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10177",
+      "book": "kom",
+      "action": "reuse",
+      "targetId": "c296",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10178",
+      "book": "van",
+      "action": "reuse",
+      "targetId": "c355",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10179",
+      "book": "hoe",
+      "action": "reuse",
+      "targetId": "c701",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10180",
+      "book": "hoe heet jij?",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10181",
+      "book": "heet",
+      "action": "reuse",
+      "targetId": "c35",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10182",
+      "book": "waar ... vandaan",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10183",
+      "book": "China",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10184",
+      "book": "woon",
+      "action": "reuse-add-sense",
+      "targetId": "c9",
+      "addGloss": [
+        "to live"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10185",
+      "book": "mevrouw",
+      "action": "reuse",
+      "targetId": "c26",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10186",
+      "book": "woont",
+      "action": "reuse-add-sense",
+      "targetId": "c9",
+      "addGloss": [
+        "to live"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10187",
+      "book": "zeg",
+      "action": "reuse",
+      "targetId": "c118",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10188",
+      "book": "maar",
+      "action": "reuse",
+      "targetId": "c520",
+      "subtype": "same-word",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10189",
+      "book": "hoor",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10190",
+      "book": "gaan verder",
+      "action": "reuse",
+      "targetId": "c1341",
+      "subtype": "regular-form",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10191",
+      "book": "heeft",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10192",
+      "book": "het",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10193",
+      "book": "naar",
+      "action": "reuse-add-sense",
+      "targetId": "c113",
+      "addGloss": [
+        "to"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10194",
+      "book": "even",
+      "action": "reuse-add-sense",
+      "targetId": "c640",
+      "addGloss": [
+        "for a moment"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10195",
+      "book": "de pauze",
+      "action": "reuse-add-sense",
+      "targetId": "c114",
+      "addGloss": [
+        "break"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10196",
+      "book": "straks",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10197",
+      "book": "zitten",
+      "action": "reuse",
+      "targetId": "c214",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10198",
+      "book": "de plaats",
+      "action": "reuse-add-sense",
+      "targetId": "c271",
+      "addGloss": [
+        "seat"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10199",
+      "book": "ja hoor",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10200",
+      "book": "zo",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10201",
+      "book": "lekker",
+      "action": "reuse-add-sense",
+      "targetId": "c420",
+      "addGloss": [
+        "nice"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10202",
+      "book": "al lang",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10203",
+      "book": "pas",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10204",
+      "book": "welke",
+      "action": "reuse-add-sense",
+      "targetId": "c247",
+      "addGloss": [
+        "what"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10205",
+      "book": "eigenlijk",
+      "action": "reuse-add-sense",
+      "targetId": "c1753",
+      "addGloss": [
+        "actually",
+        "really"
+      ],
+      "subtype": "adj/adv",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10206",
+      "book": "ik ben jarig",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10207",
+      "book": "wat leuk",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10208",
+      "book": "dus",
+      "action": "reuse-add-sense",
+      "targetId": "c741",
+      "addGloss": [
+        "therefore"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10209",
+      "book": "krijg",
+      "action": "reuse",
+      "targetId": "c254",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10210",
+      "book": "nog",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10211",
+      "book": "het bezoek",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10212",
+      "book": "jonger",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10213",
+      "book": "wel",
+      "action": "reuse-add-sense",
+      "targetId": "c648",
+      "addGloss": [
+        "certainly"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10214",
+      "book": "langer",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10215",
+      "book": "nog meer",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10216",
+      "book": "broers",
+      "action": "reuse",
+      "targetId": "c31",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10217",
+      "book": "zussen",
+      "action": "reuse",
+      "targetId": "c42",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10218",
+      "book": "nog",
+      "action": "reuse-add-sense",
+      "targetId": "c10210",
+      "addGloss": [
+        "as well"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10219",
+      "book": "kijk",
+      "action": "reuse",
+      "targetId": "c241",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10220",
+      "book": "goh",
+      "action": "reuse-add-sense",
+      "targetId": "c8148",
+      "addGloss": [
+        "oh"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10221",
+      "book": "ander",
+      "action": "reuse-add-sense",
+      "targetId": "c524",
+      "addGloss": [
+        "different"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10222",
+      "book": "het type",
+      "action": "reuse-add-sense",
+      "targetId": "c3640",
+      "addGloss": [
+        "type"
+      ],
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10223",
+      "book": "de ouders",
+      "action": "reuse",
+      "targetId": "c39",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10224",
+      "book": "komen op bezoek",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10225",
+      "book": "Indonesië",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10226",
+      "book": "doen",
+      "action": "reuse",
+      "targetId": "c391",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10227",
+      "book": "daar",
+      "action": "reuse",
+      "targetId": "c552",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10228",
+      "book": "op vakantie",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10229",
+      "book": "voor",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10230",
+      "book": "weet",
+      "action": "reuse",
+      "targetId": "c245",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10231",
+      "book": "vertel",
+      "action": "reuse",
+      "targetId": "c848",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10232",
+      "book": "eens",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10233",
+      "book": "wil",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10234",
+      "book": "11.00 uur",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10235",
+      "book": "moeten",
+      "action": "reuse-add-sense",
+      "targetId": "c218",
+      "addGloss": [
+        "should"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10236",
+      "book": "viert",
+      "action": "reuse",
+      "targetId": "c997",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10237",
+      "book": "gefeliciteerd",
+      "action": "reuse-add-sense",
+      "targetId": "c935",
+      "addGloss": [
+        "happy birthday"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10238",
+      "book": "dit is",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10239",
+      "book": "prettig met je kennis te maken",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10240",
+      "book": "ik trakteer",
+      "action": "reuse",
+      "targetId": "c2784",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10241",
+      "book": "wil graag",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10242",
+      "book": "biertje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10243",
+      "book": "neem",
+      "action": "reuse",
+      "targetId": "c685",
+      "subtype": "regular-form",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10244",
+      "book": "rode",
+      "action": "reuse",
+      "targetId": "c321",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10245",
+      "book": "roep",
+      "action": "reuse",
+      "targetId": "c412",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10246",
+      "book": "mag",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10247",
+      "book": "Franse",
+      "action": "reuse",
+      "targetId": "c1928",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10248",
+      "book": "Spaanse",
+      "action": "reuse",
+      "targetId": "c2271",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10249",
+      "book": "Zuid-Afrikaanse",
+      "action": "reuse",
+      "targetId": "c9038",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10250",
+      "book": "nou",
+      "action": "reuse",
+      "targetId": "c1748",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10251",
+      "book": "proost",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10252",
+      "book": "op je verjaardag",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10253",
+      "book": "het poosje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10254",
+      "book": "zullen",
+      "action": "reuse-add-sense",
+      "targetId": "c1281",
+      "addGloss": [
+        "shall"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10255",
+      "book": "dat is",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10256",
+      "book": "ja, graag",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10257",
+      "book": "betaal",
+      "action": "reuse",
+      "targetId": "c371",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10258",
+      "book": "nog maar",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10259",
+      "book": "afrekenen",
+      "action": "reuse-add-sense",
+      "targetId": "c6345",
+      "addGloss": [
+        "to settle the bill"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10260",
+      "book": "alles",
+      "action": "reuse-add-sense",
+      "targetId": "c667",
+      "addGloss": [
+        "everything"
+      ],
+      "subtype": "typo",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10261",
+      "book": "daarom",
+      "action": "reuse-add-sense",
+      "targetId": "c854",
+      "addGloss": [
+        "that's why"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10262",
+      "book": "komt tegen",
+      "action": "reuse-add-sense",
+      "targetId": "c2046",
+      "addGloss": [
+        "to meet",
+        "to run into"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10263",
+      "book": "leuk",
+      "action": "reuse",
+      "targetId": "c85",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10264",
+      "book": "prima",
+      "action": "reuse-add-sense",
+      "targetId": "c745",
+      "addGloss": [
+        "great",
+        "wonderful"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10265",
+      "book": "het gaat wel",
+      "action": "reuse-add-sense",
+      "targetId": "c57",
+      "addGloss": [
+        "All right."
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10266",
+      "book": "problemen",
+      "action": "reuse",
+      "targetId": "c530",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10267",
+      "book": "niet zo",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10268",
+      "book": "een paar dagen",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10269",
+      "book": "Venetië",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10270",
+      "book": "wauw",
+      "action": "reuse",
+      "targetId": "c4901",
+      "subtype": "same-word",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10271",
+      "book": "prachtig",
+      "action": "reuse-add-sense",
+      "targetId": "c1068",
+      "addGloss": [
+        "splendid"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10272",
+      "book": "veel",
+      "action": "reuse",
+      "targetId": "c200",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10273",
+      "book": "foto's maken",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10274",
+      "book": "romantische",
+      "action": "reuse",
+      "targetId": "c2732",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10275",
+      "book": "kijken naar",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10276",
+      "book": "direct",
+      "action": "reuse-add-sense",
+      "targetId": "c1268",
+      "addGloss": [
+        "right now"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10277",
+      "book": "afspreken",
+      "action": "reuse-add-sense",
+      "targetId": "c1199",
+      "addGloss": [
+        "to make an appointment",
+        "to set a date"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10278",
+      "book": "goed",
+      "action": "reuse-add-sense",
+      "targetId": "c56",
+      "addGloss": [
+        "okay"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10279",
+      "book": "de afspraak",
+      "action": "reuse-add-sense",
+      "targetId": "c512",
+      "addGloss": [
+        "date"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10280",
+      "book": "dat lukt niet",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10281",
+      "book": "kan",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10282",
+      "book": "blijf",
+      "action": "reuse",
+      "targetId": "c785",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10283",
+      "book": "zal",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10284",
+      "book": "de spaghetti carbonara",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10285",
+      "book": "schrijf",
+      "action": "reuse",
+      "targetId": "c167",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10286",
+      "book": "de agenda",
+      "action": "reuse-add-sense",
+      "targetId": "c170",
+      "addGloss": [
+        "diary"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10287",
+      "book": "hartstikke",
+      "action": "reuse",
+      "targetId": "c2459",
+      "subtype": "same-word",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10288",
+      "book": "hartstikke leuk",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10289",
+      "book": "vind ik ook",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10290",
+      "book": "ik moet ervandoor",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10291",
+      "book": "ervandoor",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10292",
+      "book": "gauw",
+      "action": "reuse-add-sense",
+      "targetId": "c1306",
+      "addGloss": [
+        "quickly"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10293",
+      "book": "fijne",
+      "action": "reuse",
+      "targetId": "c443",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10294",
+      "book": "doe de groeten aan",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10295",
+      "book": "volgende",
+      "action": "reuse",
+      "targetId": "c796",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10296",
+      "book": "tot dan",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10297",
+      "book": "boodschappen doen",
+      "action": "reuse-add-sense",
+      "targetId": "c361",
+      "addGloss": [
+        "to go shopping"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10298",
+      "book": "de markt",
+      "action": "reuse",
+      "targetId": "c366",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10299",
+      "book": "wie is er aan de beurt?",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10300",
+      "book": "de beurt",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10301",
+      "book": "kleine",
+      "action": "reuse",
+      "targetId": "c84",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10302",
+      "book": "de courgette",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10303",
+      "book": "gele",
+      "action": "reuse",
+      "targetId": "c315",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10304",
+      "book": "paprika's",
+      "action": "reuse",
+      "targetId": "c4155",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10305",
+      "book": "mooie",
+      "action": "reuse-add-sense",
+      "targetId": "c330",
+      "addGloss": [
+        "nice"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10306",
+      "book": "tomaten",
+      "action": "reuse",
+      "targetId": "c400",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10307",
+      "book": "het gerecht",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10308",
+      "book": "buitenlanders",
+      "action": "reuse",
+      "targetId": "c2224",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10309",
+      "book": "de andijvie",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10310",
+      "book": "de stamppot",
+      "action": "reuse-add-sense",
+      "targetId": "c2811",
+      "addGloss": [
+        "mashed potato and vegetables"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10311",
+      "book": "spekjes",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10312",
+      "book": "heerlijk",
+      "action": "reuse-add-sense",
+      "targetId": "c1131",
+      "addGloss": [
+        "delicious"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10313",
+      "book": "goedkope",
+      "action": "reuse",
+      "targetId": "c469",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10314",
+      "book": "heb nodig",
+      "action": "reuse",
+      "targetId": "c392",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10315",
+      "book": "personen",
+      "action": "reuse",
+      "targetId": "c1230",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10316",
+      "book": "halve",
+      "action": "reuse",
+      "targetId": "c1032",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10317",
+      "book": "aardappels",
+      "action": "reuse",
+      "targetId": "c380",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10318",
+      "book": "de slager",
+      "action": "reuse",
+      "targetId": "c367",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10319",
+      "book": "was",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10320",
+      "book": "het bakje",
+      "action": "reuse-add-sense",
+      "targetId": "c1284",
+      "addGloss": [
+        "punnet",
+        "small container"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10321",
+      "book": "champignons",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10322",
+      "book": "de peterselie",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10323",
+      "book": "het bosje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10324",
+      "book": "verder nog iets?",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10325",
+      "book": "boontjes",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10326",
+      "book": "verse",
+      "action": "reuse",
+      "targetId": "c1496",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10327",
+      "book": "komkommers",
+      "action": "reuse",
+      "targetId": "c446",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10328",
+      "book": "wel",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "tiebreak: second reviewer more confident"
+    },
+    {
+      "nigCardId": "c10329",
+      "book": "waarnaartoe",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10330",
+      "book": "erbij",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10331",
+      "book": "geeft niet",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10332",
+      "book": "prettig",
+      "action": "reuse-add-sense",
+      "targetId": "c1367",
+      "addGloss": [
+        "nice"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10333",
+      "book": "de vriendin",
+      "action": "reuse-add-sense",
+      "targetId": "c894",
+      "addGloss": [
+        "friend",
+        "female friend"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10334",
+      "book": "de serveerster",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10335",
+      "book": "gaan zitten",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10336",
+      "book": "alvast",
+      "action": "reuse-add-sense",
+      "targetId": "c737",
+      "addGloss": [
+        "in the meantime",
+        "in advance"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10337",
+      "book": "te",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10338",
+      "book": "ik heb dorst",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10339",
+      "book": "de dorst",
+      "action": "reuse",
+      "targetId": "c2423",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10340",
+      "book": "alleen",
+      "action": "reuse-add-sense",
+      "targetId": "c10114",
+      "addGloss": [
+        "just"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10341",
+      "book": "het hoofdgerecht",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10342",
+      "book": "ik heb honger",
+      "action": "reuse",
+      "targetId": "c1641",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10343",
+      "book": "de honger",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10344",
+      "book": "de mosterdsoep",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10345",
+      "book": "de mosterd",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10346",
+      "book": "als",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10347",
+      "book": "frietjes",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10348",
+      "book": "eh",
+      "action": "reuse-add-sense",
+      "targetId": "c2454",
+      "addGloss": [
+        "um"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10349",
+      "book": "o nee",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10350",
+      "book": "toch",
+      "action": "reuse-add-sense",
+      "targetId": "c661",
+      "addGloss": [
+        "after all"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10351",
+      "book": "vegetarische",
+      "action": "reuse",
+      "targetId": "c6860",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10352",
+      "book": "de dagschotel",
+      "action": "reuse-add-sense",
+      "targetId": "c5046",
+      "addGloss": [
+        "today's special",
+        "dish of the day"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10353",
+      "book": "momentje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10354",
+      "book": "halen",
+      "action": "reuse",
+      "targetId": "c527",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10355",
+      "book": "beetje",
+      "action": "reuse-add-sense",
+      "targetId": "c293",
+      "addGloss": [
+        "a little",
+        "a bit"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10356",
+      "book": "het gaat wel",
+      "action": "reuse",
+      "targetId": "c57",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10357",
+      "book": "de soort",
+      "action": "reuse",
+      "targetId": "c460",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10358",
+      "book": "de paella",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10359",
+      "book": "houd (houden) van",
+      "action": "reuse-add-sense",
+      "targetId": "c845",
+      "addGloss": [
+        "to like"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10360",
+      "book": "de mosselen",
+      "action": "reuse",
+      "targetId": "c5119",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10361",
+      "book": "proef",
+      "action": "reuse-add-sense",
+      "targetId": "c1368",
+      "addGloss": [
+        "to try"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10362",
+      "book": "wat",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10363",
+      "book": "een beetje",
+      "action": "reuse",
+      "targetId": "c293",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10364",
+      "book": "vet",
+      "action": "reuse-add-sense",
+      "targetId": "c5231",
+      "addGloss": [
+        "greasy",
+        "rich"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10365",
+      "book": "het toetje",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10366",
+      "book": "het ijs",
+      "action": "reuse",
+      "targetId": "c408",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10367",
+      "book": "vruchten",
+      "action": "reuse",
+      "targetId": "c3533",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10368",
+      "book": "laat de rest maar zitten",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10369",
+      "book": "laten",
+      "action": "reuse-add-sense",
+      "targetId": "c1571",
+      "addGloss": [
+        "to leave"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10370",
+      "book": "dank u",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10371",
+      "book": "de kledingzaak",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10372",
+      "book": "de zaak",
+      "action": "reuse-add-sense",
+      "targetId": "c1501",
+      "addGloss": [
+        "shop",
+        "store"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10373",
+      "book": "om",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10374",
+      "book": "zoek",
+      "action": "reuse-add-sense",
+      "targetId": "c275",
+      "addGloss": [
+        "to look for"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10375",
+      "book": "groter",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10376",
+      "book": "het model",
+      "action": "reuse-add-sense",
+      "targetId": "c5985",
+      "addGloss": [
+        "style"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10377",
+      "book": "lichte",
+      "action": "reuse",
+      "targetId": "c939",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10378",
+      "book": "verschillende",
+      "action": "reuse",
+      "targetId": "c55",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10379",
+      "book": "merken",
+      "action": "reuse",
+      "targetId": "c1190",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10380",
+      "book": "probeert",
+      "action": "reuse",
+      "targetId": "c1146",
+      "subtype": "regular-form",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10381",
+      "book": "ze",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10382",
+      "book": "maar even",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10383",
+      "book": "passen",
+      "action": "reuse-add-sense",
+      "targetId": "c612",
+      "addGloss": [
+        "to try on"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10384",
+      "book": "paskamers",
+      "action": "reuse-add-sense",
+      "targetId": "c611",
+      "addGloss": [
+        "changing room"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10385",
+      "book": "zitten",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10386",
+      "book": "dan",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10387",
+      "book": "hem",
+      "action": "reuse-add-sense",
+      "targetId": "c1263",
+      "addGloss": [
+        "it"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10388",
+      "book": "wijd",
+      "action": "reuse",
+      "targetId": "c2456",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10389",
+      "book": "kleinere",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10390",
+      "book": "het spijt me",
+      "action": "reuse",
+      "targetId": "c918",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10391",
+      "book": "kleinste",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10392",
+      "book": "eventueel",
+      "action": "reuse-add-sense",
+      "targetId": "c2061",
+      "addGloss": [
+        "if necessary",
+        "possibly"
+      ],
+      "subtype": "adj/adv",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10393",
+      "book": "de bon",
+      "action": "reuse",
+      "targetId": "c466",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10394",
+      "book": "T-shirts",
+      "action": "reuse",
+      "targetId": "c586",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10395",
+      "book": "liggen",
+      "action": "reuse",
+      "targetId": "c350",
+      "subtype": "same-word",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10396",
+      "book": "zo",
+      "action": "reuse-add-sense",
+      "targetId": "c1091",
+      "addGloss": [
+        "so"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10397",
+      "book": "staat me het best",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10398",
+      "book": "het best",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10399",
+      "book": "de makelaar",
+      "action": "reuse-add-sense",
+      "targetId": "c3352",
+      "addGloss": [
+        "real estate agent"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10400",
+      "book": "de woonruimte",
+      "action": "reuse-add-sense",
+      "targetId": "c6221",
+      "addGloss": [
+        "accommodation",
+        "somewhere to live"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10401",
+      "book": "de stad",
+      "action": "reuse-add-sense",
+      "targetId": "c332",
+      "addGloss": [
+        "town"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10402",
+      "book": "de vriend",
+      "action": "reuse-add-sense",
+      "targetId": "c849",
+      "addGloss": [
+        "boyfriend"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10403",
+      "book": "bepaald",
+      "action": "reuse",
+      "targetId": "c1815",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10404",
+      "book": "de bovenwoning",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10405",
+      "book": "mogelijkheden",
+      "action": "reuse-add-sense",
+      "targetId": "c4028",
+      "addGloss": [
+        "option"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10406",
+      "book": "zie",
+      "action": "reuse",
+      "targetId": "c213",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10407",
+      "book": "maximale",
+      "action": "reuse",
+      "targetId": "c1237",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10408",
+      "book": "de huurprijs",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10409",
+      "book": "laten zien",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10410",
+      "book": "de verdieping",
+      "action": "reuse-add-sense",
+      "targetId": "c334",
+      "addGloss": [
+        "storey"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10411",
+      "book": "oude",
+      "action": "reuse",
+      "targetId": "c537",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10412",
+      "book": "het centrum",
+      "action": "reuse-add-sense",
+      "targetId": "c1447",
+      "addGloss": [
+        "city centre"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10413",
+      "book": "dicht bij",
+      "action": "reuse",
+      "targetId": "c750",
+      "subtype": "pos-variant",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10414",
+      "book": "de vierkante meter",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10415",
+      "book": "vierkante",
+      "action": "reuse",
+      "targetId": "c944",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10416",
+      "book": "ruime",
+      "action": "reuse",
+      "targetId": "c942",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10417",
+      "book": "slaapkamers",
+      "action": "reuse",
+      "targetId": "c286",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10418",
+      "book": "de gang",
+      "action": "reuse-add-sense",
+      "targetId": "c283",
+      "addGloss": [
+        "passage",
+        "passageway"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10419",
+      "book": "eenvoudige",
+      "action": "reuse",
+      "targetId": "c2029",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10420",
+      "book": "hoeven",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10421",
+      "book": "het bad",
+      "action": "reuse",
+      "targetId": "c302",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10422",
+      "book": "geschikte",
+      "action": "reuse",
+      "targetId": "c1924",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10423",
+      "book": "huizen",
+      "action": "reuse",
+      "targetId": "c260",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10424",
+      "book": "het huisje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10425",
+      "book": "verhuren",
+      "action": "reuse-add-sense",
+      "targetId": "c3127",
+      "addGloss": [
+        "to let out"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10426",
+      "book": "gemeubileerd",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10427",
+      "book": "kasten",
+      "action": "reuse",
+      "targetId": "c306",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10428",
+      "book": "bedden",
+      "action": "reuse",
+      "targetId": "c304",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10429",
+      "book": "stoelen",
+      "action": "reuse",
+      "targetId": "c309",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10430",
+      "book": "het voordeel",
+      "action": "reuse",
+      "targetId": "c1485",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10431",
+      "book": "zonnige",
+      "action": "reuse",
+      "targetId": "c2633",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10432",
+      "book": "de kamer",
+      "action": "reuse-add-sense",
+      "targetId": "c284",
+      "addGloss": [
+        "living room"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10433",
+      "book": "benedenwoning",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10434",
+      "book": "dat lijkt me fantastisch",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10435",
+      "book": "bel",
+      "action": "reuse-add-sense",
+      "targetId": "c514",
+      "addGloss": [
+        "to phone",
+        "to call"
+      ],
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10436",
+      "book": "zo snel mogelijk",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10437",
+      "book": "nieuwe",
+      "action": "reuse",
+      "targetId": "c298",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10438",
+      "book": "wat is er aan de hand?",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10439",
+      "book": "zoals",
+      "action": "reuse-add-sense",
+      "targetId": "c1531",
+      "addGloss": [
+        "as",
+        "like"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10440",
+      "book": "zit ik onder de bultjes",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10441",
+      "book": "bultjes",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10442",
+      "book": "armen",
+      "action": "reuse",
+      "targetId": "c478",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10443",
+      "book": "benen",
+      "action": "reuse",
+      "targetId": "c479",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10444",
+      "book": "de buik",
+      "action": "reuse",
+      "targetId": "c481",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10445",
+      "book": "van alles",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10446",
+      "book": "geprobeerd",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10447",
+      "book": "geholpen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10448",
+      "book": "begonnen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10449",
+      "book": "gisteravond",
+      "action": "reuse-add-sense",
+      "targetId": "c2496",
+      "addGloss": [
+        "last night"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10450",
+      "book": "gedaan",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10451",
+      "book": "overdag",
+      "action": "reuse-add-sense",
+      "targetId": "c1334",
+      "addGloss": [
+        "during the day"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10452",
+      "book": "gewerkt",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10453",
+      "book": "klanten",
+      "action": "reuse-add-sense",
+      "targetId": "c1252",
+      "addGloss": [
+        "client"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10454",
+      "book": "bekeken",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10455",
+      "book": "de voetbalvereniging",
+      "action": "reuse",
+      "targetId": "c9905",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10456",
+      "book": "geweest",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10457",
+      "book": "het wedstrijdje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10458",
+      "book": "gespeeld",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10459",
+      "book": "daarna",
+      "action": "reuse",
+      "targetId": "c467",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10460",
+      "book": "gedronken",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10461",
+      "book": "bijzonders",
+      "action": "reuse-add-sense",
+      "targetId": "c1094",
+      "addGloss": [
+        "special"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10462",
+      "book": "gegeten",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10463",
+      "book": "afgelopen",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10464",
+      "book": "vergeten",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10465",
+      "book": "denken",
+      "action": "reuse",
+      "targetId": "c739",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10466",
+      "book": "o ja",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10467",
+      "book": "emmers",
+      "action": "reuse",
+      "targetId": "c2988",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10468",
+      "book": "vorig",
+      "action": "reuse-add-sense",
+      "targetId": "c1149",
+      "addGloss": [
+        "last"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10469",
+      "book": "klachten",
+      "action": "reuse",
+      "targetId": "c545",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10470",
+      "book": "lijkt op",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10471",
+      "book": "allergische",
+      "action": "reuse",
+      "targetId": "c4976",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10472",
+      "book": "geef mee",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10473",
+      "book": "de zalf",
+      "action": "reuse",
+      "targetId": "c563",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10474",
+      "book": "de jeuk",
+      "action": "reuse",
+      "targetId": "c4706",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10475",
+      "book": "krabt",
+      "action": "reuse",
+      "targetId": "c3698",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10476",
+      "book": "kapot",
+      "action": "reuse",
+      "targetId": "c644",
+      "subtype": "same-word",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10477",
+      "book": "de fiets",
+      "action": "reuse-add-sense",
+      "targetId": "c682",
+      "addGloss": [
+        "bike"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10478",
+      "book": "de fietsenmaker",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10479",
+      "book": "lijkt",
+      "action": "reuse-add-sense",
+      "targetId": "c1065",
+      "addGloss": [
+        "to seem"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10480",
+      "book": "total loss",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10481",
+      "book": "gebeurd",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10482",
+      "book": "gevallen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10483",
+      "book": "regende",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10484",
+      "book": "fietste weg",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10485",
+      "book": "fietsen",
+      "action": "reuse-add-sense",
+      "targetId": "c810",
+      "addGloss": [
+        "to cycle"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10486",
+      "book": "wilde",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10487",
+      "book": "rechts afslaan",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10488",
+      "book": "gleed weg",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10489",
+      "book": "mankeerde",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10490",
+      "book": "zelf",
+      "action": "reuse",
+      "targetId": "c678",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10491",
+      "book": "een slag in het wiel",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10492",
+      "book": "het stuur",
+      "action": "reuse-add-sense",
+      "targetId": "c2638",
+      "addGloss": [
+        "handlebars"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10493",
+      "book": "het zadel",
+      "action": "reuse-add-sense",
+      "targetId": "c2550",
+      "addGloss": [
+        "seat"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10494",
+      "book": "staan",
+      "action": "reuse",
+      "targetId": "c212",
+      "subtype": "same-word",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10495",
+      "book": "scheef",
+      "action": "reuse",
+      "targetId": "c3227",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10496",
+      "book": "zo'n",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10497",
+      "book": "de bagagedrager",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10498",
+      "book": "afgebroken",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10499",
+      "book": "bedoelt",
+      "action": "reuse",
+      "targetId": "c878",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10500",
+      "book": "de trapper",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10501",
+      "book": "banden",
+      "action": "reuse",
+      "targetId": "c1535",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10502",
+      "book": "verstaan",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10503",
+      "book": "helemaal",
+      "action": "reuse",
+      "targetId": "c569",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10504",
+      "book": "rijdt",
+      "action": "reuse",
+      "targetId": "c707",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10505",
+      "book": "remmen",
+      "action": "reuse",
+      "targetId": "c1542",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10506",
+      "book": "deden",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10507",
+      "book": "in orde maken",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10508",
+      "book": "tiptop in orde",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10509",
+      "book": "leer",
+      "action": "reuse",
+      "targetId": "c161",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10510",
+      "book": "uitdrukkingen",
+      "action": "reuse",
+      "targetId": "c2598",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10511",
+      "book": "Koningsdag",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10512",
+      "book": "de feestdag",
+      "action": "reuse-add-sense",
+      "targetId": "c654",
+      "addGloss": [
+        "public holiday"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10513",
+      "book": "het feest",
+      "action": "reuse-add-sense",
+      "targetId": "c605",
+      "addGloss": [
+        "celebration"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10514",
+      "book": "betekent",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10515",
+      "book": "ophalen",
+      "action": "reuse-add-sense",
+      "targetId": "c659",
+      "addGloss": [
+        "to collect"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10516",
+      "book": "hoera",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10517",
+      "book": "van harte gefeliciteerd",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10518",
+      "book": "feliciteren met",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10519",
+      "book": "het cadeautje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10520",
+      "book": "het kaartje",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10521",
+      "book": "hoop",
+      "action": "reuse",
+      "targetId": "c1437",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10522",
+      "book": "nog geen",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10523",
+      "book": "Cubaanse",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10524",
+      "book": "ben gek op",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10525",
+      "book": "me herinneren",
+      "action": "reuse",
+      "targetId": "c1628",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10526",
+      "book": "verteld",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10527",
+      "book": "de taart",
+      "action": "reuse",
+      "targetId": "c437",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10528",
+      "book": "je weet de weg",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10529",
+      "book": "doe open",
+      "action": "reuse",
+      "targetId": "c2290",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10530",
+      "book": "gezien",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10531",
+      "book": "vergis ik me",
+      "action": "reuse-add-sense",
+      "targetId": "c2299",
+      "addGloss": [
+        "to be mistaken"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10532",
+      "book": "verveel me",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10533",
+      "book": "hoor",
+      "action": "reuse",
+      "targetId": "c81",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10534",
+      "book": "dat klopt",
+      "action": "reuse-add-sense",
+      "targetId": "c1420",
+      "addGloss": [
+        "That's right."
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10535",
+      "book": "sinds kort",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10536",
+      "book": "het bevalt me",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10537",
+      "book": "studeer",
+      "action": "reuse",
+      "targetId": "c1041",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10538",
+      "book": "de logopedie",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10539",
+      "book": "naast",
+      "action": "reuse-add-sense",
+      "targetId": "c729",
+      "addGloss": [
+        "besides",
+        "in addition to"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10540",
+      "book": "het bijbaantje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10541",
+      "book": "iedere",
+      "action": "reuse-add-sense",
+      "targetId": "c812",
+      "addGloss": [
+        "every"
+      ],
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10542",
+      "book": "interesseer je",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10543",
+      "book": "begrijp",
+      "action": "reuse",
+      "targetId": "c194",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10544",
+      "book": "snel",
+      "action": "reuse",
+      "targetId": "c198",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10545",
+      "book": "niet echt",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10546",
+      "book": "zwemmen",
+      "action": "reuse",
+      "targetId": "c851",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10547",
+      "book": "wandelen",
+      "action": "reuse-add-sense",
+      "targetId": "c818",
+      "addGloss": [
+        "to hike"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10548",
+      "book": "wat toevallig",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10549",
+      "book": "de Wandelbeurs",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10550",
+      "book": "bereid me voor op",
+      "action": "reuse-add-sense",
+      "targetId": "c1224",
+      "addGloss": [
+        "to get ready"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10551",
+      "book": "de wandelreis",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10552",
+      "book": "de reis",
+      "action": "reuse",
+      "targetId": "c1220",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10553",
+      "book": "Chili",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10554",
+      "book": "langzamer",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10555",
+      "book": "praten",
+      "action": "reuse-add-sense",
+      "targetId": "c88",
+      "addGloss": [
+        "to speak"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10556",
+      "book": "het station",
+      "action": "reuse",
+      "targetId": "c687",
+      "subtype": "same-word",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10557",
+      "book": "Bent u hier bekend?",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10558",
+      "book": "bekend",
+      "action": "reuse",
+      "targetId": "c1124",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10559",
+      "book": "de bus",
+      "action": "reuse",
+      "targetId": "c681",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10560",
+      "book": "zeker",
+      "action": "reuse",
+      "targetId": "c1280",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10561",
+      "book": "vanaf",
+      "action": "reuse-add-sense",
+      "targetId": "c836",
+      "addGloss": [
+        "from"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10562",
+      "book": "de lijn",
+      "action": "reuse",
+      "targetId": "c217",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10563",
+      "book": "hebt geluk",
+      "action": "reuse",
+      "targetId": "c936",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10564",
+      "book": "komt aan",
+      "action": "reuse",
+      "targetId": "c768",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10565",
+      "book": "direct",
+      "action": "reuse-add-sense",
+      "targetId": "c1268",
+      "addGloss": [
+        "straightaway"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10566",
+      "book": "het stuk",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10567",
+      "book": "over ... steken",
+      "action": "reuse",
+      "targetId": "c755",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10568",
+      "book": "de balie",
+      "action": "reuse-add-sense",
+      "targetId": "c1622",
+      "addGloss": [
+        "desk",
+        "information desk"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10569",
+      "book": "ga op",
+      "action": "reuse",
+      "targetId": "c4422",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10570",
+      "book": "rechtdoor",
+      "action": "reuse-add-sense",
+      "targetId": "c756",
+      "addGloss": [
+        "straight ahead"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10571",
+      "book": "tot",
+      "action": "reuse-add-sense",
+      "targetId": "c698",
+      "addGloss": [
+        "as far as",
+        "up to"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10572",
+      "book": "herkent",
+      "action": "reuse",
+      "targetId": "c1705",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10573",
+      "book": "linksaf",
+      "action": "reuse-add-sense",
+      "targetId": "c753",
+      "addGloss": [
+        "to the left"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10574",
+      "book": "het eind",
+      "action": "reuse",
+      "targetId": "c1318",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10575",
+      "book": "neemt mee",
+      "action": "reuse",
+      "targetId": "c645",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10576",
+      "book": "toiletten",
+      "action": "reuse",
+      "targetId": "c1562",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10577",
+      "book": "beneden",
+      "action": "reuse",
+      "targetId": "c281",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10578",
+      "book": "ga ... om",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10579",
+      "book": "ga ... af",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10580",
+      "book": "uitlopen",
+      "action": "reuse-add-sense",
+      "targetId": "c4093",
+      "addGloss": [
+        "to walk down"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10581",
+      "book": "vanzelf",
+      "action": "reuse-add-sense",
+      "targetId": "c1327",
+      "addGloss": [
+        "as a matter of course",
+        "automatically"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10582",
+      "book": "bordjes",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10583",
+      "book": "volgen",
+      "action": "reuse-add-sense",
+      "targetId": "c1497",
+      "addGloss": [
+        "to follow"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10584",
+      "book": "makkelijker",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10585",
+      "book": "bezoekt",
+      "action": "reuse",
+      "targetId": "c1804",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10586",
+      "book": "kom binnen",
+      "action": "reuse-add-sense",
+      "targetId": "c1568",
+      "addGloss": [
+        "to come in"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10587",
+      "book": "zei",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10588",
+      "book": "kon",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10589",
+      "book": "missen",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10590",
+      "book": "gelukkig",
+      "action": "reuse-add-sense",
+      "targetId": "c765",
+      "addGloss": [
+        "fortunately",
+        "luckily"
+      ],
+      "subtype": "adj/adv",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10591",
+      "book": "meegenomen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10592",
+      "book": "moest",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10593",
+      "book": "brengen",
+      "action": "reuse-add-sense",
+      "targetId": "c652",
+      "addGloss": [
+        "to take"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10594",
+      "book": "lekker",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10595",
+      "book": "groeten",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10596",
+      "book": "Doe haar de groeten terug",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10597",
+      "book": "verontschuldigen",
+      "action": "reuse-add-sense",
+      "targetId": "c6610",
+      "addGloss": [
+        "to apologize"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10598",
+      "book": "doe uit",
+      "action": "reuse",
+      "targetId": "c2968",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10599",
+      "book": "hè",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "tiebreak: first reviewer more confident"
+    },
+    {
+      "nigCardId": "c10600",
+      "book": "Zeg dat wel!",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10601",
+      "book": "ben verkouden",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10602",
+      "book": "ik ben toe aan",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10603",
+      "book": "hebben aan",
+      "action": "reuse-add-sense",
+      "targetId": "c616",
+      "addGloss": [
+        "to have on"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10604",
+      "book": "belachelijk",
+      "action": "reuse",
+      "targetId": "c2191",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10605",
+      "book": "geloof",
+      "action": "reuse",
+      "targetId": "c1492",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10606",
+      "book": "schijnt",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10607",
+      "book": "kom ... verder",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10608",
+      "book": "lekker warm",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10609",
+      "book": "warm",
+      "action": "reuse-add-sense",
+      "targetId": "c676",
+      "addGloss": [
+        "warm"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10610",
+      "book": "bonbons",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10611",
+      "book": "de bos",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10612",
+      "book": "bloemen",
+      "action": "reuse",
+      "targetId": "c809",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10613",
+      "book": "snijd",
+      "action": "reuse",
+      "targetId": "c398",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10614",
+      "book": "schuin",
+      "action": "reuse-add-sense",
+      "targetId": "c2624",
+      "addGloss": [
+        "at an angle"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10615",
+      "book": "houden van",
+      "action": "reuse-add-sense",
+      "targetId": "c845",
+      "addGloss": [
+        "to like",
+        "to be fond of"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10616",
+      "book": "dieren",
+      "action": "reuse",
+      "targetId": "c798",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10617",
+      "book": "katten",
+      "action": "reuse",
+      "targetId": "c801",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10618",
+      "book": "vissen",
+      "action": "reuse",
+      "targetId": "c424",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10619",
+      "book": "jawel",
+      "action": "reuse-add-sense",
+      "targetId": "c890",
+      "addGloss": [
+        "oh yes"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10620",
+      "book": "meestal",
+      "action": "reuse-add-sense",
+      "targetId": "c421",
+      "addGloss": [
+        "usually"
+      ],
+      "subtype": "typo",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10621",
+      "book": "gezellig",
+      "action": "reuse-add-sense",
+      "targetId": "c294",
+      "addGloss": [
+        "pleasant",
+        "sociable"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10622",
+      "book": "hadden",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10623",
+      "book": "hebben gehad",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10624",
+      "book": "onder de auto gekomen",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10625",
+      "book": "hebben verdriet gehad om",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10626",
+      "book": "het verdriet",
+      "action": "reuse",
+      "targetId": "c1880",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10627",
+      "book": "de dood",
+      "action": "reuse",
+      "targetId": "c1402",
+      "subtype": "pos-variant",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10628",
+      "book": "volgens mij",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10629",
+      "book": "kom mee",
+      "action": "reuse",
+      "targetId": "c3306",
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10630",
+      "book": "de schuur",
+      "action": "reuse",
+      "targetId": "c263",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10631",
+      "book": "twee weken geleden",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10632",
+      "book": "jongen",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10633",
+      "book": "gekregen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10634",
+      "book": "de sportschool",
+      "action": "reuse-add-sense",
+      "targetId": "c2656",
+      "addGloss": [
+        "sports club"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10635",
+      "book": "zich inschrijven",
+      "action": "reuse-add-sense",
+      "targetId": "c858",
+      "addGloss": [
+        "to enrol"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10636",
+      "book": "mensen",
+      "action": "reuse",
+      "targetId": "c196",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10637",
+      "book": "elke",
+      "action": "reuse",
+      "targetId": "c564",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10638",
+      "book": "opzeggen",
+      "action": "reuse-add-sense",
+      "targetId": "c8663",
+      "addGloss": [
+        "to cancel"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10639",
+      "book": "onbeperkt",
+      "action": "reuse",
+      "targetId": "c9614",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10640",
+      "book": "sporten",
+      "action": "reuse-add-sense",
+      "targetId": "c833",
+      "addGloss": [
+        "to play sports"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10641",
+      "book": "speciale",
+      "action": "reuse",
+      "targetId": "c1243",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10642",
+      "book": "de aanbieding",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10643",
+      "book": "zeker",
+      "action": "reuse-add-sense",
+      "targetId": "c1280",
+      "addGloss": [
+        "certain"
+      ],
+      "subtype": "adj/adv",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10644",
+      "book": "de conditie",
+      "action": "reuse-add-sense",
+      "targetId": "c5478",
+      "addGloss": [
+        "fitness",
+        "physical condition"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10645",
+      "book": "spieren",
+      "action": "reuse",
+      "targetId": "c550",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10646",
+      "book": "doelen",
+      "action": "reuse-add-sense",
+      "targetId": "c2266",
+      "addGloss": [
+        "goal",
+        "target"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10647",
+      "book": "bent van plan",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10648",
+      "book": "fitte",
+      "action": "reuse-add-sense",
+      "targetId": "c2826",
+      "addGloss": [
+        "healthy"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10649",
+      "book": "aantrekkelijke",
+      "action": "reuse",
+      "targetId": "c2236",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10650",
+      "book": "de krachttraining",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10651",
+      "book": "de kracht",
+      "action": "reuse",
+      "targetId": "c2361",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10652",
+      "book": "de cardio",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10653",
+      "book": "de groepsles",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10654",
+      "book": "kijk mee",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10655",
+      "book": "bieden aan",
+      "action": "reuse",
+      "targetId": "c1299",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10656",
+      "book": "virtuele",
+      "action": "reuse",
+      "targetId": "c5846",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10657",
+      "book": "op die manier",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10658",
+      "book": "klinkt",
+      "action": "reuse",
+      "targetId": "c1202",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10659",
+      "book": "de sportkleren",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10660",
+      "book": "gaat in",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "tiebreak: first reviewer more confident"
+    },
+    {
+      "nigCardId": "c10661",
+      "book": "het buikspierkwartier",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10662",
+      "book": "meedoen",
+      "action": "reuse-add-sense",
+      "targetId": "c2004",
+      "addGloss": [
+        "to join in"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10663",
+      "book": "aandoen",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "tiebreak: first reviewer more confident"
+    },
+    {
+      "nigCardId": "c10664",
+      "book": "maak klaar",
+      "action": "reuse",
+      "targetId": "c3095",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10665",
+      "book": "het pasje",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10666",
+      "book": "energiedrankjes",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10667",
+      "book": "het drankje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10668",
+      "book": "de automaat",
+      "action": "reuse-add-sense",
+      "targetId": "c911",
+      "addGloss": [
+        "vending machine"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10669",
+      "book": "het muntgeld",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10670",
+      "book": "het saldo",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10671",
+      "book": "laden",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10672",
+      "book": "veel plezier",
+      "action": "reuse-add-sense",
+      "targetId": "c893",
+      "addGloss": [
+        "have fun"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10673",
+      "book": "het plezier",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10674",
+      "book": "het openbaar vervoer",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10675",
+      "book": "Colombia",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10676",
+      "book": "ging",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10677",
+      "book": "duurde",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10678",
+      "book": "pakken",
+      "action": "reuse-add-sense",
+      "targetId": "c474",
+      "addGloss": [
+        "packet",
+        "package"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10679",
+      "book": "geweldig",
+      "action": "reuse-add-sense",
+      "targetId": "c1269",
+      "addGloss": [
+        "fantastic"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10680",
+      "book": "vertrekt",
+      "action": "reuse",
+      "targetId": "c772",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10681",
+      "book": "dragen",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10682",
+      "book": "het grapje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10683",
+      "book": "het raampje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10684",
+      "book": "net als",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10685",
+      "book": "vroeger",
+      "action": "reuse-add-sense",
+      "targetId": "c1042",
+      "addGloss": [
+        "in the old days"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10686",
+      "book": "lekker",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "tiebreak: equal confidence, keep separate"
+    },
+    {
+      "nigCardId": "c10687",
+      "book": "buiten",
+      "action": "reuse",
+      "targetId": "c108",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10688",
+      "book": "reis",
+      "action": "reuse",
+      "targetId": "c686",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10689",
+      "book": "het spoor",
+      "action": "reuse-add-sense",
+      "targetId": "c771",
+      "addGloss": [
+        "platform"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10690",
+      "book": "achter de rug",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10691",
+      "book": "pony's",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10692",
+      "book": "de wei",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10693",
+      "book": "net",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10694",
+      "book": "de shetlandpony",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10695",
+      "book": "gewend",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10696",
+      "book": "zo meteen",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10697",
+      "book": "het gebied",
+      "action": "reuse",
+      "targetId": "c1846",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10698",
+      "book": "echt",
+      "action": "reuse-add-sense",
+      "targetId": "c1130",
+      "addGloss": [
+        "real"
+      ],
+      "subtype": "adj/adv",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10699",
+      "book": "de lucht",
+      "action": "reuse",
+      "targetId": "c1084",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10700",
+      "book": "schilderijen",
+      "action": "reuse",
+      "targetId": "c1466",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10701",
+      "book": "het stukje",
+      "action": "reuse",
+      "targetId": "c464",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10702",
+      "book": "de molen",
+      "action": "reuse-add-sense",
+      "targetId": "c2864",
+      "addGloss": [
+        "windmill"
+      ],
+      "subtype": "missing-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10703",
+      "book": "broodjes",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10704",
+      "book": "welterusten",
+      "action": "reuse",
+      "targetId": "c4208",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10705",
+      "book": "goede reis",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10706",
+      "book": "maak wakker",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10707",
+      "book": "de caissière",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10708",
+      "book": "de voorstelling",
+      "action": "reuse",
+      "targetId": "c2196",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10709",
+      "book": "wat stom",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10710",
+      "book": "gekeken",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10711",
+      "book": "is al bezig",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10712",
+      "book": "gemist",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10713",
+      "book": "draaien",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10714",
+      "book": "de zomerhitte",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10715",
+      "book": "eerder",
+      "action": "reuse-add-sense",
+      "targetId": "c516",
+      "addGloss": [
+        "earlier"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10716",
+      "book": "opgenomen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10717",
+      "book": "naar een verhaal van",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10718",
+      "book": "de natuurdocumentaire",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10719",
+      "book": "gesproken",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10720",
+      "book": "de ondertiteling",
+      "action": "reuse",
+      "targetId": "c1283",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10721",
+      "book": "ondertiteld",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10722",
+      "book": "de rang",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10723",
+      "book": "het studentenhuis",
+      "action": "reuse",
+      "targetId": "c2408",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10724",
+      "book": "de informatietechnologie",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10725",
+      "book": "de schat",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10726",
+      "book": "heerlijk",
+      "action": "reuse-add-sense",
+      "targetId": "c1131",
+      "addGloss": [
+        "wonderful"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10727",
+      "book": "gedroomd",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10728",
+      "book": "vogels",
+      "action": "reuse",
+      "targetId": "c817",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10729",
+      "book": "helemaal",
+      "action": "reuse-add-sense",
+      "targetId": "c569",
+      "addGloss": [
+        "at all"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10730",
+      "book": "ben uitgerust",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10731",
+      "book": "sta op",
+      "action": "reuse-add-sense",
+      "targetId": "c1255",
+      "addGloss": [
+        "to get up"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10732",
+      "book": "het ontbijtje",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10733",
+      "book": "gewoon",
+      "action": "reuse-add-sense",
+      "targetId": "c1404",
+      "addGloss": [
+        "ordinary"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10734",
+      "book": "het college",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10735",
+      "book": "de filosofiegeschiedenis",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10736",
+      "book": "de hypotheek",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10737",
+      "book": "het avondeten",
+      "action": "reuse-add-sense",
+      "targetId": "c381",
+      "addGloss": [
+        "dinner",
+        "evening meal"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10738",
+      "book": "gehaktballetjes",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10739",
+      "book": "de tomatensaus",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10740",
+      "book": "de storing",
+      "action": "reuse-add-sense",
+      "targetId": "c1697",
+      "addGloss": [
+        "fault"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10741",
+      "book": "ben kwijt",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10742",
+      "book": "gekookt",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10743",
+      "book": "pittig",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10744",
+      "book": "ontzettend",
+      "action": "reuse",
+      "targetId": "c1451",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10745",
+      "book": "de zaal",
+      "action": "reuse-add-sense",
+      "targetId": "c1106",
+      "addGloss": [
+        "hall"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10746",
+      "book": "geluncht",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10747",
+      "book": "komt terug",
+      "action": "reuse",
+      "targetId": "c1954",
+      "subtype": "regular-form",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10748",
+      "book": "mooi",
+      "action": "reuse-add-sense",
+      "targetId": "c330",
+      "addGloss": [
+        "great"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10749",
+      "book": "lust",
+      "action": "reuse-add-sense",
+      "targetId": "c3172",
+      "addGloss": [
+        "to fancy",
+        "to like"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10750",
+      "book": "rustig",
+      "action": "reuse",
+      "targetId": "c273",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10751",
+      "book": "behalve",
+      "action": "reuse-add-sense",
+      "targetId": "c650",
+      "addGloss": [
+        "besides",
+        "apart from"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10752",
+      "book": "vaste",
+      "action": "reuse-add-sense",
+      "targetId": "c1244",
+      "addGloss": [
+        "regular"
+      ],
+      "subtype": "regular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10753",
+      "book": "het deel",
+      "action": "reuse",
+      "targetId": "c1235",
+      "subtype": "same-word",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10754",
+      "book": "uitgenodigd",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10755",
+      "book": "de lieverd",
+      "action": "reuse",
+      "targetId": "c2791",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10756",
+      "book": "de politie",
+      "action": "reuse",
+      "targetId": "c1708",
+      "subtype": "same-word",
+      "by": "tiebreak: same target, only one reviewer adds a sense"
+    },
+    {
+      "nigCardId": "c10757",
+      "book": "nadat",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10758",
+      "book": "de portemonnee",
+      "action": "reuse-add-sense",
+      "targetId": "c1709",
+      "addGloss": [
+        "wallet"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10759",
+      "book": "gestolen",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10760",
+      "book": "aangifte doen",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10761",
+      "book": "via",
+      "action": "reuse-add-sense",
+      "targetId": "c774",
+      "addGloss": [
+        "by way of"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10762",
+      "book": "zat",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10763",
+      "book": "zulk",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10764",
+      "book": "toen",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10765",
+      "book": "lag",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10766",
+      "book": "gezocht",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10767",
+      "book": "gelegd",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10768",
+      "book": "had",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10769",
+      "book": "steeds",
+      "action": "reuse-add-sense",
+      "targetId": "c1453",
+      "addGloss": [
+        "always",
+        "continually",
+        "all the time"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10770",
+      "book": "viel",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10771",
+      "book": "gehaald",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10772",
+      "book": "de dader",
+      "action": "reuse-add-sense",
+      "targetId": "c5379",
+      "addGloss": [
+        "culprit"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10773",
+      "book": "namelijk",
+      "action": "reuse-add-sense",
+      "targetId": "c1134",
+      "addGloss": [
+        "it so happens",
+        "you see"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10774",
+      "book": "ziet eruit",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10775",
+      "book": "oei",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10776",
+      "book": "in ieder geval",
+      "action": "keep-new",
+      "subtype": "book-phrase",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10777",
+      "book": "verder",
+      "action": "reuse-add-sense",
+      "targetId": "c2582",
+      "addGloss": [
+        "otherwise",
+        "for the rest"
+      ],
+      "subtype": "missing-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10778",
+      "book": "de rekening",
+      "action": "keep-new",
+      "subtype": "different-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10779",
+      "book": "onmiddellijk",
+      "action": "reuse-add-sense",
+      "targetId": "c1311",
+      "addGloss": [
+        "at once"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10780",
+      "book": "hoewel",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10781",
+      "book": "hoezo",
+      "action": "reuse-add-sense",
+      "targetId": "c3521",
+      "addGloss": [
+        "how come",
+        "how so"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "first"
+    },
+    {
+      "nigCardId": "c10782",
+      "book": "ophalen",
+      "action": "reuse-add-sense",
+      "targetId": "c659",
+      "addGloss": [
+        "to get"
+      ],
+      "subtype": "synonym-same-sense",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10783",
+      "book": "vervelend",
+      "action": "reuse",
+      "targetId": "c574",
+      "subtype": "same-word",
+      "by": "tier A"
+    },
+    {
+      "nigCardId": "c10784",
+      "book": "opgeschreven",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10785",
+      "book": "gevonden",
+      "action": "keep-new",
+      "subtype": "irregular-form",
+      "by": "both"
+    },
+    {
+      "nigCardId": "c10786",
+      "book": "nemen contact op",
+      "action": "keep-new",
+      "subtype": "not-in-deck",
+      "by": "both"
+    }
+  ]
+}

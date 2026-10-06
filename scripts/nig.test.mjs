@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { prepareEntries, cardFromEntry, buildChapterPath, strictSignature } from "./nig.mjs";
+import { prepareEntries, cardFromEntry, buildChapterPath, strictSignature, chosenCardId, pruneBookCards } from "./nig.mjs";
 
 describe("Nederlands in gang import", () => {
   it("repairs explicit split records and accounts for both source ids", () => {
@@ -31,5 +31,31 @@ describe("Nederlands in gang import", () => {
     expect(buildChapterPath(entries, ids, new Set(ids)).units).toHaveLength(18);
     expect(() => buildChapterPath(entries.slice(1), ids.slice(1), new Set(ids))).toThrow();
     expect(() => buildChapterPath(entries, ids, new Set())).toThrow();
+  });
+  it("lets a reviewed reuse override the saved mapping", () => {
+    const pinned = new Map([["1", "c900"]]);
+    expect(chosenCardId("1", { reuseId: "c31" }, pinned)).toBe("c31");
+    expect(chosenCardId("1", undefined, pinned)).toBe("c900");
+    expect(chosenCardId("2", undefined, pinned)).toBeUndefined();
+  });
+  it("drops the book recording when a form is mapped onto its lemma card", () => {
+    const [entry] = prepareEntries([{ id: "1", chapter: 2, position: 1, front: "broers (broer)", back: "brothers", audio: "audio/x.mp3" }],
+      { "1": { reuseId: "c31", form: true } });
+    expect(entry.audio).toBeUndefined();
+    const [kept] = prepareEntries([{ id: "1", chapter: 2, position: 1, front: "de markt", back: "market", audio: "audio/x.mp3" }],
+      { "1": { reuseId: "c366" } });
+    expect(kept.audio).toBe("audio/x.mp3");
+  });
+  it("prunes only book cards that nothing references any more", () => {
+    const cards = [{ id: "c1" }, { id: "c10" }, { id: "c11" }];
+    const out = pruneBookCards({ cards, enrichment: { c1: {}, c10: {}, c11: {} }, bookIds: ["c10", "c11"],
+      audio: { c10: "audio/a.mp3", c11: "audio/b.mp3" }, referenced: new Set(["c1", "c11"]) });
+    expect(out.removed).toEqual(["c10"]);
+    expect(out.cards.map(c => c.id)).toEqual(["c1", "c11"]);
+    expect(Object.keys(out.enrichment)).toEqual(["c1", "c11"]);
+    expect(out.bookIds).toEqual(["c11"]);
+    expect(out.audio).toEqual({ c11: "audio/b.mp3" });
+    expect(() => pruneBookCards({ cards, enrichment: {}, bookIds: ["c10"], audio: {}, referenced: new Set(["c1"]),
+      expectRemoved: 2 })).toThrow();
   });
 });

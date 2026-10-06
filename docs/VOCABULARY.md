@@ -3,8 +3,8 @@
 Cards live in `public/cards.json` (committed) — this file is the **hand-owned source of truth**, not a
 generated artifact. The first 1748 cards (ids `c0`–`c1747`) originally came from two TaalCompleet Anki
 decks (`A1 · U1` … `A2 · U8`); three further levels — `A+`, `B1`, `B2` (~8350 cards, ids `c1748`+) — were
-imported from the NT2Lex frequency list. 625 cards (ids `c10162`–`c10786`, groups `Nederlands in gang · N`,
-**no `level`**) came from the *Nederlands in gang* textbook deck (see below). All of it now lives in
+imported from the NT2Lex frequency list. 289 cards (ids within `c10162`–`c10786`, with gaps; groups
+`Nederlands in gang · N`, **no `level`**) came from the *Nederlands in gang* textbook deck (see below). All of it now lives in
 `cards.json` and is edited directly.
 
 **Ids are permanent and never renumbered.** Fixes are plain edits to `cards.json`. New bulk vocabulary is
@@ -122,9 +122,13 @@ Committed provenance in `scripts/sources/`:
 
 Rules: no note is dropped silently — each is mapped, merged into its pair, or the import throws. Only an
 exact match on normalized Dutch text + English answer set (whitespace, case, HTML) reuses an existing card
-automatically. Lemma/gloss/article look-alikes are reuse *candidates* for review, never merged
-automatically. Forms stay separate cards (`wilde (willen)` → `dutch: "wilde"`, `notes: "Book annotation:
-willen"`). Within a chapter a repeat is collapsed. Across chapters it stays as the **same id** in both
+automatically. Every other reuse is a reviewed `reuseId` in `nig-corrections.json`, and a reviewed `reuseId`
+overrides the pinned mapping. **Forms:** regular forms map to their lemma card (`broers (broer)` → `de broer`,
+`kom (komen)` → `komen`, `andere` → `ander`), with `form: true` so the book recording is not attached to the
+lemma. Irregular or meaning-shifting forms stay separate cards: irregular present tenses (`ben`, `heeft`,
+modals), past tenses, comparatives, irregular plurals and diminutives (`wilde (willen)` → `dutch: "wilde"`,
+`notes: "Book annotation: willen"`). A form never maps to a homograph (`kom` is never `de kom` = bowl).
+Within a chapter a repeat is collapsed. Across chapters it stays as the **same id** in both
 units, so it is learned and counted once. Chapters are numeric; inside a chapter, order is the Anki new-card
 position, then note id (this is not verified against the book's page order).
 
@@ -138,9 +142,41 @@ npm run enrich:nig                                 # enrich nig-new-ids.json, th
 path, and records new ids and per-card audio. `finish:nig` installs the Anki recording
 (`public/audio/nederlands-in-gang/<sha256>.mp3`, relative URL) **only where the card has no dictionary
 audio**, then writes the coverage report `nig-coverage.json` (per field: covered count + missing list).
-`scripts/nig-data.test.mjs` pins the shipped data: the pre-import cards and Inburgering path (hashes in
-`nig-baseline.json`), all 1092 notes accounted for, 18 chapters rebuilt identically, and every local
-recording present.
+`scripts/nig-data.test.mjs` pins the shipped data: the pre-import cards (hash in `nig-baseline.json`, checked
+after stripping the reviewed gloss additions listed in `nig-review.json`) and the Inburgering path, all 1092
+notes accounted for, 18 chapters rebuilt identically, no orphaned book card, every reviewed merge applied,
+and every local recording present.
+
+### Merge review (`scripts/nig-match/`)
+The first import added 625 book cards. 336 of them turned out to be the same word as an existing card in a
+different surface form (`beginnen = begin / start` vs `to begin`, `broers` vs `de broer`). A one-off review
+re-matched them. That leaves 289 book cards, and the 18 chapters now hold 1039 unique cards. The scripts are
+kept so a later edition can be reviewed the same way. Working files go to the gitignored
+`scripts/import/nig-review/`.
+
+```bash
+node scripts/nig-match/candidates.mjs       # items.json + batch-NN.json: candidates per book card, tiers A/B/C
+node scripts/nig-match/lookup.mjs nl|en <q> # search the deck (used by reviewers)
+node scripts/nig-match/validate.mjs [--plan-second]  # check verdict-NN.json; plan the second blind pass
+node scripts/nig-match/report.mjs           # nig-review.txt: agreed vs disputed, $-marks override
+node scripts/nig-match/apply.mjs            # reuseId corrections + gloss additions (+ nig-review.json)
+npm run import:nig && node scripts/nig-match/prune.mjs && npm run finish:nig
+```
+- **Candidates** are found by headword, book annotation, the paradigm of existing cards (`notes: "forms: …"`
+  and enrichment grammar), near-forms, other book cards, and shared English answers. **Tier A** (one
+  headword match that already accepts every book answer, and no competing form) is accepted without review.
+- **Reviewers** are parallel subagents, one batch of ~30 each, following
+  `scripts/nig-match/REVIEWER-INSTRUCTIONS.md`. Their verdicts are `reuse`, `reuse-add-sense` (append 1–3
+  English answers to the target) or `keep-new`. A second blind reviewer re-judged every low- or
+  medium-confidence verdict and every `keep-new` that had candidates. If the two pick the same target and only
+  one adds a sense, the card is reused without the new sense. Other disagreements go to the more confident
+  reviewer, and ties stay separate cards.
+- `prune.mjs` is the one deliberate exception to append-only. It deletes only book ids that nothing
+  references any more (cards, enrichment, id and audio lists, unused mp3s), and asserts that no other card
+  changed. It also records each deleted id's target in `src/data/cardRedirects.json`. The app moves saved
+  progress (SRS state, lesson queue, disabled directions) onto the target whenever progress is loaded or a
+  backup is imported (`redirectCardIds` in `src/storage/progress.ts`), keeping the more advanced state when
+  both cards were studied. Never remove an entry from that file: old backups may still hold the old ids.
 
 What it does:
 - Keeps content words only (NT2Lex tags `N( WW( ADJ( BW(`), one per lemma, at its lowest band.

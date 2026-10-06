@@ -1,5 +1,6 @@
 import type { AppSettings, Direction, ItemKey, ProgressData, ReviewState } from "../types";
 import { DIRECTIONS } from "../types";
+import cardRedirects from "../data/cardRedirects.json";
 
 export const STORAGE_KEY = "dutch-srs-progress-v1";
 export const CURRENT_VERSION = 2;
@@ -71,6 +72,35 @@ function migrateV1ToV2(legacy: Record<string, ReviewState>): Record<string, Revi
   return out;
 }
 
+function moreAdvanced(a: ReviewState, b: ReviewState): ReviewState {
+  const order = Number(b.burned) - Number(a.burned) || b.stage - a.stage || b.lastReviewedAt - a.lastReviewedAt;
+  return order > 0 ? b : a;
+}
+
+// Cards merged into another card are deleted from the deck; their saved progress follows them
+// so a word studied on either card keeps the furthest progress reached.
+export function redirectCardIds(data: ProgressData, redirects: Record<string, string>): ProgressData {
+  const moved = (id: string) => Object.prototype.hasOwnProperty.call(redirects, id);
+  const disabled = data.disabledDirections ?? {};
+  if (!Object.keys(data.states).some(moved) && !data.lessonQueue.some(moved) && !Object.keys(disabled).some(moved)) {
+    return data;
+  }
+  const states: Record<string, ReviewState> = {};
+  for (const [id, st] of Object.entries(data.states)) if (!moved(id)) states[id] = st;
+  for (const [id, st] of Object.entries(data.states)) {
+    if (!moved(id)) continue;
+    const target = redirects[id];
+    states[target] = states[target] ? moreAdvanced(states[target], st) : st;
+  }
+  const disabledDirections: Record<string, Direction[]> = {};
+  for (const [id, dirs] of Object.entries(disabled)) if (!moved(id)) disabledDirections[id] = dirs;
+  for (const [id, dirs] of Object.entries(disabled)) {
+    if (moved(id) && !disabledDirections[redirects[id]]) disabledDirections[redirects[id]] = dirs;
+  }
+  const lessonQueue = [...new Set(data.lessonQueue.map((id) => (moved(id) ? redirects[id] : id)))];
+  return { ...data, states, lessonQueue, disabledDirections };
+}
+
 function coerceProgress(value: unknown): ProgressData {
   if (typeof value !== "object" || value === null) return freshProgress();
   const obj = value as Record<string, unknown>;
@@ -103,11 +133,21 @@ export function loadProgress(): ProgressData {
     return freshProgress();
   }
   if (raw === null) return freshProgress();
+  let coerced: ProgressData;
   try {
-    return coerceProgress(JSON.parse(raw));
+    coerced = coerceProgress(JSON.parse(raw));
   } catch {
     return freshProgress();
   }
+  const data = redirectCardIds(coerced, cardRedirects);
+  if (data !== coerced) {
+    try {
+      saveProgress(data);
+    } catch {
+      /* the redirect is re-applied on the next load */
+    }
+  }
+  return data;
 }
 
 export function saveProgress(data: ProgressData): void {
@@ -184,7 +224,7 @@ export function importProgress(json: string): ProgressData {
   if (typeof obj.states !== "object" || obj.states === null) {
     throw new Error("Invalid progress data: missing states.");
   }
-  return coerceProgress(parsed);
+  return redirectCardIds(coerceProgress(parsed), cardRedirects);
 }
 
 export function resetProgress(): ProgressData {

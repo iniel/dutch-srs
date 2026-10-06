@@ -9,37 +9,82 @@
     "mergeWith": "1570505190113",
     "front": "Zuid-Afrikaanse (Zuid-Afrikaans)",
     "back": "South African",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c9038",
+    "expectedDutch": "zuid-afrikaans",
+    "expectedEnglish": [
+      "South African"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): Zuid-Afrikaanse -> zuid-afrikaans"
   },
   "1570505221321": {
     "mergeWith": "1570505221322",
     "front": "problemen (het probleem)",
     "back": "problems",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c530",
+    "expectedDutch": "het probleem",
+    "expectedEnglish": [
+      "problem"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): problemen -> het probleem"
   },
   "1570505221343": {
     "mergeWith": "1570505221344",
     "front": "afspreken",
     "back": "set a date / make an appointment",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c1199",
+    "expectedDutch": "afspreken",
+    "expectedEnglish": [
+      "to agree upon",
+      "to make an appointment",
+      "to set a date"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): afspreken -> afspreken"
   },
   "1570505226578": {
     "mergeWith": "1570505226579",
     "front": "paprika's (de paprika)",
     "back": "bell peppers / sweet peppers",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c4155",
+    "expectedDutch": "paprika",
+    "expectedEnglish": [
+      "sweet pepper",
+      "bell pepper"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): paprika's -> paprika"
   },
   "1570505226588": {
     "mergeWith": "1570505226589",
     "front": "buitenlanders (de buitenlander)",
     "back": "foreigners",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c2224",
+    "expectedDutch": "buitenlander",
+    "expectedEnglish": [
+      "foreigner",
+      "alien"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): buitenlanders -> buitenlander"
   },
   "1570505226614": {
     "mergeWith": "1570505226615",
     "front": "komkommers (de komkommer)",
     "back": "cucumbers",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c446",
+    "expectedDutch": "de komkommer",
+    "expectedEnglish": [
+      "cucumber"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): komkommers -> de komkommer"
   },
   "1570505234011": {
     "mergeWith": "1570505234012",
@@ -51,13 +96,28 @@
     "mergeWith": "1570505246530",
     "front": "mogelijkheden (de mogelijkheid)",
     "back": "possibilities / options",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c4028",
+    "expectedDutch": "de mogelijkheid",
+    "expectedEnglish": [
+      "possibility",
+      "option"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): mogelijkheden -> de mogelijkheid"
   },
   "1570505246553": {
     "mergeWith": "1570505246554",
     "front": "slaapkamers (de slaapkamer)",
     "back": "bedrooms",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c286",
+    "expectedDutch": "de slaapkamer",
+    "expectedEnglish": [
+      "bedroom"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): slaapkamers -> de slaapkamer"
   },
   "1570505252065": {
     "mergeWith": "1570505252066",
@@ -75,7 +135,16 @@
     "mergeWith": "1570505258098",
     "front": "uitdrukkingen (de uitdrukking)",
     "back": "expressions",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c2598",
+    "expectedDutch": "uitdrukking",
+    "expectedEnglish": [
+      "expression",
+      "act",
+      "process of expressing something"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): uitdrukkingen -> uitdrukking"
   },
   "1570505264083": {
     "mergeWith": "1570505264084",
@@ -133,11 +202,25 @@
   },
   "1570505241305": {
     "back": "brands",
-    "reason": "Preserve plural in translation"
+    "reason": "Preserve plural in translation",
+    "reuseId": "c1190",
+    "expectedDutch": "het merk",
+    "expectedEnglish": [
+      "brand"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): merken -> het merk"
   },
   "1570505234004": {
     "back": "ice cream",
-    "reason": "Correct English spelling"
+    "reason": "Correct English spelling",
+    "reuseId": "c408",
+    "expectedDutch": "het ijs",
+    "expectedEnglish": [
+      "ice",
+      "ice cream"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): het ijs -> het ijs"
   },
   "1570504901729": {
     "back": "(particle expressing friendliness)",
@@ -159,28 +242,64 @@
     "english": [
       "enrol",
       "to register"
-    ]
+    ],
+    "reuseId": "c858",
+    "expectedDutch": "inschrijven",
+    "expectedEnglish": [
+      "to register",
+      "to sign up",
+      "to enrol"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, both): zich inschrijven -> inschrijven"
   },
   "1570505285027": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "sure",
       "certain"
-    ]
+    ],
+    "reuseId": "c1280",
+    "expectedDutch": "zeker",
+    "expectedEnglish": [
+      "certainly",
+      "sure",
+      "certain"
+    ],
+    "reuseReason": "Merge review (adj/adv, both): zeker -> zeker"
   },
   "1570505285028": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "physical condition",
       "fitness"
-    ]
+    ],
+    "reuseId": "c5478",
+    "expectedDutch": "de conditie",
+    "expectedEnglish": [
+      "condition",
+      "state",
+      "fitness",
+      "physical condition"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): de conditie -> de conditie"
   },
   "1570505285034": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "goals",
       "targets"
-    ]
+    ],
+    "reuseId": "c2266",
+    "expectedDutch": "het doel",
+    "expectedEnglish": [
+      "aim",
+      "purpose",
+      "goal",
+      "target"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): doelen -> het doel"
   },
   "1570505285035": {
     "reason": "Explicitly separate English synonyms",
@@ -194,7 +313,15 @@
     "english": [
       "strength",
       "power"
-    ]
+    ],
+    "reuseId": "c2361",
+    "expectedDutch": "kracht",
+    "expectedEnglish": [
+      "power",
+      "force",
+      "strength"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de kracht -> kracht"
   },
   "1570505285056": {
     "reason": "Explicitly separate English synonyms",
@@ -208,35 +335,70 @@
     "english": [
       "prepare",
       "get ready"
-    ]
+    ],
+    "reuseId": "c3095",
+    "expectedDutch": "klaarmaken",
+    "expectedEnglish": [
+      "to prepare",
+      "to make ready"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): maak klaar -> klaarmaken"
   },
   "1570505306195": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "dinner",
       "evening meal"
-    ]
+    ],
+    "reuseId": "c381",
+    "expectedDutch": "het avondeten",
+    "expectedEnglish": [
+      "supper",
+      "dinner",
+      "evening meal"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): het avondeten -> het avondeten"
   },
   "1570505306208": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "really",
       "very"
-    ]
+    ],
+    "reuseId": "c1451",
+    "expectedDutch": "ontzettend",
+    "expectedEnglish": [
+      "very"
+    ],
+    "reuseReason": "Merge review (same-word, first): ontzettend -> ontzettend"
   },
   "1570505306209": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "room",
       "hall"
-    ]
+    ],
+    "reuseId": "c1106",
+    "expectedDutch": "de zaal",
+    "expectedEnglish": [
+      "(big) room",
+      "hall"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de zaal -> de zaal"
   },
   "1570505306220": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "part",
       "episode"
-    ]
+    ],
+    "reuseId": "c1235",
+    "expectedDutch": "het deel",
+    "expectedEnglish": [
+      "part"
+    ],
+    "reuseReason": "Merge review (same-word, first): het deel -> het deel"
   },
   "1570504901666": {
     "reuseId": "c117",
@@ -484,7 +646,8 @@
     "reuseId": "c849",
     "expectedDutch": "de vriend",
     "expectedEnglish": [
-      "friend"
+      "friend",
+      "boyfriend"
     ],
     "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
   },
@@ -1227,5 +1390,2948 @@
       "to block"
     ],
     "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901668": {
+    "reuseId": "c403",
+    "expectedDutch": "allemaal",
+    "expectedEnglish": [
+      "all",
+      "all of them",
+      "everyone"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): allemaal -> allemaal"
+  },
+  "1570504901671": {
+    "reuseId": "c27",
+    "expectedDutch": "het Nederlands",
+    "expectedEnglish": [
+      "Dutch"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): Nederlands -> het Nederlands"
+  },
+  "1570504901677": {
+    "reuseId": "c110",
+    "expectedDutch": "de docent",
+    "expectedEnglish": [
+      "teacher"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): docenten -> de docent"
+  },
+  "1570504901681": {
+    "reuseId": "c524",
+    "expectedDutch": "ander",
+    "expectedEnglish": [
+      "other",
+      "different"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): andere -> ander"
+  },
+  "1570504901684": {
+    "reuseId": "c1188",
+    "expectedDutch": "lesgeven",
+    "expectedEnglish": [
+      "to teach"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): geeft les -> lesgeven"
+  },
+  "1570504901685": {
+    "reuseId": "c171",
+    "expectedDutch": "de dag",
+    "expectedEnglish": [
+      "day"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): dagen -> de dag"
+  },
+  "1570504901688": {
+    "reuseId": "c91",
+    "expectedDutch": "beginnen",
+    "expectedEnglish": [
+      "to begin",
+      "to start"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): beginnen -> beginnen"
+  },
+  "1570504901689": {
+    "reuseId": "c6977",
+    "expectedDutch": "met",
+    "expectedEnglish": [
+      "along with",
+      "with"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): met -> met"
+  },
+  "1570504901690": {
+    "reuseId": "c2481",
+    "expectedDutch": "kennismaken",
+    "expectedEnglish": [
+      "to acquaint",
+      "to make someone's acquaintance",
+      "to get to know"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): kennismaken -> kennismaken"
+  },
+  "1570504901692": {
+    "reuseId": "c10164",
+    "expectedDutch": "ben",
+    "expectedEnglish": [
+      "am",
+      "are"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): ben -> ben"
+  },
+  "1570504901702": {
+    "reuseId": "c735",
+    "expectedDutch": "uit",
+    "expectedEnglish": [
+      "out of",
+      "from"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): uit -> uit"
+  },
+  "1570504901706": {
+    "reuseId": "c296",
+    "expectedDutch": "komen",
+    "expectedEnglish": [
+      "to come"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): kom -> komen"
+  },
+  "1570504901708": {
+    "reuseId": "c355",
+    "expectedDutch": "van",
+    "expectedEnglish": [
+      "from",
+      "of"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): van -> van"
+  },
+  "1570504901709": {
+    "reuseId": "c701",
+    "expectedDutch": "hoe",
+    "expectedEnglish": [
+      "how"
+    ],
+    "reuseReason": "Merge review (same-word, first): hoe -> hoe"
+  },
+  "1570504901711": {
+    "reuseId": "c35",
+    "expectedDutch": "heten",
+    "expectedEnglish": [
+      "to be called"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): heet -> heten"
+  },
+  "1570504901715": {
+    "reuseId": "c9",
+    "expectedDutch": "wonen",
+    "expectedEnglish": [
+      "to live in",
+      "to live"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, both): woon -> wonen"
+  },
+  "1570504901723": {
+    "reuseId": "c26",
+    "expectedDutch": "de mevrouw",
+    "expectedEnglish": [
+      "Mrs."
+    ],
+    "reuseReason": "Merge review (same-word, tier A): mevrouw -> de mevrouw"
+  },
+  "1570504901724": {
+    "reuseId": "c9",
+    "expectedDutch": "wonen",
+    "expectedEnglish": [
+      "to live in",
+      "to live"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, both): woont -> wonen"
+  },
+  "1570504901727": {
+    "reuseId": "c118",
+    "expectedDutch": "zeggen",
+    "expectedEnglish": [
+      "to say"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): zeg -> zeggen"
+  },
+  "1570504901728": {
+    "reuseId": "c520",
+    "expectedDutch": "maar",
+    "expectedEnglish": [
+      "but"
+    ],
+    "reuseReason": "Merge review (same-word, both): maar -> maar"
+  },
+  "1570504901735": {
+    "reuseId": "c1341",
+    "expectedDutch": "verdergaan",
+    "expectedEnglish": [
+      "to continue"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, tiebreak: same target, only one reviewer adds a sense): gaan verder -> verdergaan"
+  },
+  "1570504901747": {
+    "reuseId": "c113",
+    "expectedDutch": "naar",
+    "expectedEnglish": [
+      "towards",
+      "to"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): naar -> naar"
+  },
+  "1570505175640": {
+    "reuseId": "c113",
+    "expectedDutch": "naar",
+    "expectedEnglish": [
+      "towards",
+      "to"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): naar -> naar"
+  },
+  "1570504901750": {
+    "reuseId": "c640",
+    "expectedDutch": "even",
+    "expectedEnglish": [
+      "just",
+      "just a moment",
+      "for a moment"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): even -> even"
+  },
+  "1570504901752": {
+    "reuseId": "c114",
+    "expectedDutch": "de pauze",
+    "expectedEnglish": [
+      "pause",
+      "break"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de pauze -> de pauze"
+  },
+  "1570505175564": {
+    "reuseId": "c214",
+    "expectedDutch": "zitten",
+    "expectedEnglish": [
+      "to sit"
+    ],
+    "reuseReason": "Merge review (regular-form, both): zitten -> zitten"
+  },
+  "1570505175567": {
+    "reuseId": "c271",
+    "expectedDutch": "de plaats",
+    "expectedEnglish": [
+      "place",
+      "seat"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): de plaats -> de plaats"
+  },
+  "1570505175572": {
+    "reuseId": "c420",
+    "expectedDutch": "lekker",
+    "expectedEnglish": [
+      "delicious",
+      "nice"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): lekker -> lekker"
+  },
+  "1570505175578": {
+    "reuseId": "c247",
+    "expectedDutch": "welk",
+    "expectedEnglish": [
+      "which",
+      "what"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): welke -> welk"
+  },
+  "1570505175579": {
+    "reuseId": "c1753",
+    "expectedDutch": "eigenlijk",
+    "expectedEnglish": [
+      "actual",
+      "actually",
+      "really"
+    ],
+    "reuseReason": "Merge review (adj/adv, both): eigenlijk -> eigenlijk"
+  },
+  "1570505175587": {
+    "reuseId": "c741",
+    "expectedDutch": "dus",
+    "expectedEnglish": [
+      "so",
+      "therefore"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): dus -> dus"
+  },
+  "1570505175589": {
+    "reuseId": "c254",
+    "expectedDutch": "krijgen",
+    "expectedEnglish": [
+      "to get",
+      "to receive"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): krijg -> krijgen"
+  },
+  "1570505175595": {
+    "reuseId": "c648",
+    "expectedDutch": "wel",
+    "expectedEnglish": [
+      "for sure",
+      "indeed",
+      "certainly"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): wel -> wel"
+  },
+  "1570505175598": {
+    "reuseId": "c31",
+    "expectedDutch": "de broer",
+    "expectedEnglish": [
+      "brother"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): broers -> de broer"
+  },
+  "1570505175599": {
+    "reuseId": "c42",
+    "expectedDutch": "de zus",
+    "expectedEnglish": [
+      "sister"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): zussen -> de zus"
+  },
+  "1570505175601": {
+    "reuseId": "c10210",
+    "expectedDutch": "nog",
+    "expectedEnglish": [
+      "any",
+      "as well"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): nog -> nog"
+  },
+  "1570505175602": {
+    "reuseId": "c241",
+    "expectedDutch": "kijken",
+    "expectedEnglish": [
+      "to look"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): kijk -> kijken"
+  },
+  "1570505175604": {
+    "reuseId": "c8148",
+    "expectedDutch": "goh",
+    "expectedEnglish": [
+      "gosh",
+      "gee",
+      "oh"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): goh -> goh"
+  },
+  "1570505175606": {
+    "reuseId": "c524",
+    "expectedDutch": "ander",
+    "expectedEnglish": [
+      "other",
+      "different"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): ander -> ander"
+  },
+  "1570505175607": {
+    "reuseId": "c3640",
+    "expectedDutch": "het type",
+    "expectedEnglish": [
+      "type: a class",
+      "someone",
+      "type"
+    ],
+    "reuseReason": "Merge review (same-word, first): het type -> het type"
+  },
+  "1570505175612": {
+    "reuseId": "c39",
+    "expectedDutch": "de ouder",
+    "expectedEnglish": [
+      "parent"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): de ouders -> de ouder"
+  },
+  "1570505175617": {
+    "reuseId": "c391",
+    "expectedDutch": "doen",
+    "expectedEnglish": [
+      "to do"
+    ],
+    "reuseReason": "Merge review (regular-form, first): doen -> doen"
+  },
+  "1570505175618": {
+    "reuseId": "c552",
+    "expectedDutch": "daar",
+    "expectedEnglish": [
+      "there",
+      "over there"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): daar -> daar"
+  },
+  "1570505175628": {
+    "reuseId": "c245",
+    "expectedDutch": "weten",
+    "expectedEnglish": [
+      "to know"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): weet -> weten"
+  },
+  "1570505175630": {
+    "reuseId": "c848",
+    "expectedDutch": "vertellen",
+    "expectedEnglish": [
+      "to tell"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vertel -> vertellen"
+  },
+  "1570505175638": {
+    "reuseId": "c218",
+    "expectedDutch": "moeten",
+    "expectedEnglish": [
+      "to have to",
+      "to must",
+      "should"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): moeten -> moeten"
+  },
+  "1570505190087": {
+    "reuseId": "c997",
+    "expectedDutch": "vieren",
+    "expectedEnglish": [
+      "to celebrate"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): viert -> vieren"
+  },
+  "1570505190091": {
+    "reuseId": "c935",
+    "expectedDutch": "gefeliciteerd",
+    "expectedEnglish": [
+      "congratulations",
+      "happy birthday"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): gefeliciteerd -> gefeliciteerd"
+  },
+  "1570505190098": {
+    "reuseId": "c2784",
+    "expectedDutch": "trakteren",
+    "expectedEnglish": [
+      "to treat"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): ik trakteer -> trakteren"
+  },
+  "1570505190102": {
+    "reuseId": "c685",
+    "expectedDutch": "nemen",
+    "expectedEnglish": [
+      "to take"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, tiebreak: same target, only one reviewer adds a sense): neem -> nemen"
+  },
+  "1570505190103": {
+    "reuseId": "c321",
+    "expectedDutch": "rood",
+    "expectedEnglish": [
+      "red"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): rode -> rood"
+  },
+  "1570505190105": {
+    "reuseId": "c412",
+    "expectedDutch": "roepen",
+    "expectedEnglish": [
+      "to call",
+      "to call somebody"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): roep -> roepen"
+  },
+  "1570505190110": {
+    "reuseId": "c1928",
+    "expectedDutch": "frans",
+    "expectedEnglish": [
+      "French"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): Franse -> frans"
+  },
+  "1570505190111": {
+    "reuseId": "c2271",
+    "expectedDutch": "spaans",
+    "expectedEnglish": [
+      "Spanish"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): Spaanse -> spaans"
+  },
+  "1570505190115": {
+    "reuseId": "c1748",
+    "expectedDutch": "nou",
+    "expectedEnglish": [
+      "come on",
+      "well"
+    ],
+    "reuseReason": "Merge review (same-word, first): nou -> nou"
+  },
+  "1570505190121": {
+    "reuseId": "c1281",
+    "expectedDutch": "zullen",
+    "expectedEnglish": [
+      "to will",
+      "shall"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): zullen -> zullen"
+  },
+  "1570505190130": {
+    "reuseId": "c371",
+    "expectedDutch": "betalen",
+    "expectedEnglish": [
+      "to pay"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): betaal -> betalen"
+  },
+  "1570505190134": {
+    "reuseId": "c6345",
+    "expectedDutch": "afrekenen",
+    "expectedEnglish": [
+      "to pay",
+      "to settle the bill"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): afrekenen -> afrekenen"
+  },
+  "1570505190135": {
+    "reuseId": "c667",
+    "expectedDutch": "alles",
+    "expectedEnglish": [
+      "all",
+      "everythingh",
+      "everything"
+    ],
+    "reuseReason": "Merge review (typo, first): alles -> alles"
+  },
+  "1570505190136": {
+    "reuseId": "c854",
+    "expectedDutch": "daarom",
+    "expectedEnglish": [
+      "therefore",
+      "that's why"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): daarom -> daarom"
+  },
+  "1570505221314": {
+    "reuseId": "c2046",
+    "expectedDutch": "tegenkomen",
+    "expectedEnglish": [
+      "to encounter",
+      "to meet",
+      "to run into"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): komt tegen -> tegenkomen"
+  },
+  "1570505221317": {
+    "reuseId": "c85",
+    "expectedDutch": "leuk",
+    "expectedEnglish": [
+      "nice",
+      "fun"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): leuk -> leuk"
+  },
+  "1570505221318": {
+    "reuseId": "c745",
+    "expectedDutch": "prima",
+    "expectedEnglish": [
+      "fine",
+      "great",
+      "wonderful"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): prima -> prima"
+  },
+  "1570505221320": {
+    "reuseId": "c57",
+    "expectedDutch": "Het gaat wel.",
+    "expectedEnglish": [
+      "It's okay.",
+      "All right."
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): het gaat wel -> Het gaat wel."
+  },
+  "1570505221330": {
+    "reuseId": "c4901",
+    "expectedDutch": "wow",
+    "expectedEnglish": [
+      "wow"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (same-word, both): wauw -> wow"
+  },
+  "1570505221331": {
+    "reuseId": "c1068",
+    "expectedDutch": "prachtig",
+    "expectedEnglish": [
+      "beautiful",
+      "magnificent",
+      "splendid"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): prachtig -> prachtig"
+  },
+  "1570505221332": {
+    "reuseId": "c200",
+    "expectedDutch": "veel",
+    "expectedEnglish": [
+      "many",
+      "much"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): veel -> veel"
+  },
+  "1570505221337": {
+    "reuseId": "c2732",
+    "expectedDutch": "romantisch",
+    "expectedEnglish": [
+      "romantic"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): romantische -> romantisch"
+  },
+  "1570505221341": {
+    "reuseId": "c1268",
+    "expectedDutch": "direct",
+    "expectedEnglish": [
+      "right away",
+      "directly",
+      "right now",
+      "straightaway"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): direct -> direct"
+  },
+  "1570505221345": {
+    "reuseId": "c56",
+    "expectedDutch": "goed",
+    "expectedEnglish": [
+      "good",
+      "okay"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): goed -> goed"
+  },
+  "1570505221347": {
+    "reuseId": "c512",
+    "expectedDutch": "de afspraak",
+    "expectedEnglish": [
+      "appointment",
+      "date"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): de afspraak -> de afspraak"
+  },
+  "1570505221353": {
+    "reuseId": "c785",
+    "expectedDutch": "blijven",
+    "expectedEnglish": [
+      "to stay"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): blijf -> blijven"
+  },
+  "1570505221358": {
+    "reuseId": "c167",
+    "expectedDutch": "schrijven",
+    "expectedEnglish": [
+      "to write"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): schrijf -> schrijven"
+  },
+  "1570505221359": {
+    "reuseId": "c170",
+    "expectedDutch": "de agenda",
+    "expectedEnglish": [
+      "agenda",
+      "calendar",
+      "diary"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de agenda -> de agenda"
+  },
+  "1570505221360": {
+    "reuseId": "c2459",
+    "expectedDutch": "hartstikke",
+    "expectedEnglish": [
+      "very",
+      "freaking",
+      "hella"
+    ],
+    "reuseReason": "Merge review (same-word, tiebreak: same target, only one reviewer adds a sense): hartstikke -> hartstikke"
+  },
+  "1570505221365": {
+    "reuseId": "c1306",
+    "expectedDutch": "gauw",
+    "expectedEnglish": [
+      "soon",
+      "quickly"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): gauw -> gauw"
+  },
+  "1570505221369": {
+    "reuseId": "c443",
+    "expectedDutch": "fijn",
+    "expectedEnglish": [
+      "nice"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): fijne -> fijn"
+  },
+  "1570505221371": {
+    "reuseId": "c796",
+    "expectedDutch": "volgend",
+    "expectedEnglish": [
+      "next"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): volgende -> volgend"
+  },
+  "1570505226568": {
+    "reuseId": "c361",
+    "expectedDutch": "boodschappen doen",
+    "expectedEnglish": [
+      "to shop",
+      "to buy groceries",
+      "to go shopping"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): boodschappen doen -> boodschappen doen"
+  },
+  "1570505226569": {
+    "reuseId": "c366",
+    "expectedDutch": "de markt",
+    "expectedEnglish": [
+      "market",
+      "marketplace"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de markt -> de markt"
+  },
+  "1570505226575": {
+    "reuseId": "c84",
+    "expectedDutch": "klein",
+    "expectedEnglish": [
+      "small"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): kleine -> klein"
+  },
+  "1570505226577": {
+    "reuseId": "c315",
+    "expectedDutch": "geel",
+    "expectedEnglish": [
+      "yellow"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): gele -> geel"
+  },
+  "1570505226580": {
+    "reuseId": "c330",
+    "expectedDutch": "mooi",
+    "expectedEnglish": [
+      "beautiful",
+      "nice",
+      "great"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (missing-sense, both): mooie -> mooi"
+  },
+  "1570505226581": {
+    "reuseId": "c400",
+    "expectedDutch": "de tomaat",
+    "expectedEnglish": [
+      "tomato"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): tomaten -> de tomaat"
+  },
+  "1570505226591": {
+    "reuseId": "c2811",
+    "expectedDutch": "stamppot",
+    "expectedEnglish": [
+      "often with bacon",
+      "mashed potato and vegetables"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): de stamppot -> stamppot"
+  },
+  "1570505226594": {
+    "reuseId": "c1131",
+    "expectedDutch": "heerlijk",
+    "expectedEnglish": [
+      "delightful",
+      "delicious",
+      "wonderful"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): heerlijk -> heerlijk"
+  },
+  "1570505226595": {
+    "reuseId": "c469",
+    "expectedDutch": "goedkoop",
+    "expectedEnglish": [
+      "cheap"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): goedkope -> goedkoop"
+  },
+  "1570505226597": {
+    "reuseId": "c392",
+    "expectedDutch": "nodig hebben",
+    "expectedEnglish": [
+      "to need"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): heb nodig -> nodig hebben"
+  },
+  "1570505226598": {
+    "reuseId": "c1230",
+    "expectedDutch": "de persoon",
+    "expectedEnglish": [
+      "person"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): personen -> de persoon"
+  },
+  "1570505226600": {
+    "reuseId": "c1032",
+    "expectedDutch": "half",
+    "expectedEnglish": [
+      "half"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): halve -> half"
+  },
+  "1570505226602": {
+    "reuseId": "c380",
+    "expectedDutch": "de aardappel",
+    "expectedEnglish": [
+      "potato"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): aardappels -> de aardappel"
+  },
+  "1570505226603": {
+    "reuseId": "c367",
+    "expectedDutch": "de slager",
+    "expectedEnglish": [
+      "butcher",
+      "butchery"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de slager -> de slager"
+  },
+  "1570505226606": {
+    "reuseId": "c1284",
+    "expectedDutch": "het bakje",
+    "expectedEnglish": [
+      "bowl",
+      "punnet",
+      "small container"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): het bakje -> het bakje"
+  },
+  "1570505226612": {
+    "reuseId": "c1496",
+    "expectedDutch": "vers",
+    "expectedEnglish": [
+      "fresh"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): verse -> vers"
+  },
+  "1570505226623": {
+    "reuseId": "c1367",
+    "expectedDutch": "prettig",
+    "expectedEnglish": [
+      "pleasant",
+      "nice"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): prettig -> prettig"
+  },
+  "1570505233946": {
+    "reuseId": "c894",
+    "expectedDutch": "de vriendin",
+    "expectedEnglish": [
+      "girlfriend",
+      "friend",
+      "female friend"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): de vriendin -> de vriendin"
+  },
+  "1570505233955": {
+    "reuseId": "c737",
+    "expectedDutch": "alvast",
+    "expectedEnglish": [
+      "already",
+      "in the meantime",
+      "in advance"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): alvast -> alvast"
+  },
+  "1570505233959": {
+    "reuseId": "c2423",
+    "expectedDutch": "de dorst",
+    "expectedEnglish": [
+      "thirst",
+      "physical need",
+      "desire to drink"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de dorst -> de dorst"
+  },
+  "1570505233961": {
+    "reuseId": "c10114",
+    "expectedDutch": "alleen",
+    "expectedEnglish": [
+      "only",
+      "just"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): alleen -> alleen"
+  },
+  "1570505233963": {
+    "reuseId": "c1641",
+    "expectedDutch": "honger hebben",
+    "expectedEnglish": [
+      "to be hungry"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): ik heb honger -> honger hebben"
+  },
+  "1570505233975": {
+    "reuseId": "c2454",
+    "expectedDutch": "eh",
+    "expectedEnglish": [
+      "er",
+      "uh",
+      "um"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): eh -> eh"
+  },
+  "1570505233982": {
+    "reuseId": "c661",
+    "expectedDutch": "toch",
+    "expectedEnglish": [
+      "nevertheless",
+      "however",
+      "after all"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): toch -> toch"
+  },
+  "1570505233983": {
+    "reuseId": "c6860",
+    "expectedDutch": "vegetarisch",
+    "expectedEnglish": [
+      "vegetarian"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vegetarische -> vegetarisch"
+  },
+  "1570505233984": {
+    "reuseId": "c5046",
+    "expectedDutch": "dagschotel",
+    "expectedEnglish": [
+      "plat du jour",
+      "special",
+      "today's special",
+      "dish of the day"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de dagschotel -> dagschotel"
+  },
+  "1570505233991": {
+    "reuseId": "c527",
+    "expectedDutch": "halen",
+    "expectedEnglish": [
+      "to get",
+      "to fetch"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): halen -> halen"
+  },
+  "1570505233992": {
+    "reuseId": "c293",
+    "expectedDutch": "een beetje",
+    "expectedEnglish": [
+      "bit",
+      "a little"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): beetje -> een beetje"
+  },
+  "1570505233994": {
+    "reuseId": "c57",
+    "expectedDutch": "Het gaat wel.",
+    "expectedEnglish": [
+      "It's okay.",
+      "All right."
+    ],
+    "reuseReason": "Merge review (same-word, tier A): het gaat wel -> Het gaat wel."
+  },
+  "1570505233995": {
+    "reuseId": "c460",
+    "expectedDutch": "het soort",
+    "expectedEnglish": [
+      "kind",
+      "type"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de soort -> het soort"
+  },
+  "1570505233997": {
+    "reuseId": "c845",
+    "expectedDutch": "houden van",
+    "expectedEnglish": [
+      "to love",
+      "to like",
+      "to be fond of"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): houd (houden) van -> houden van"
+  },
+  "1570505233998": {
+    "reuseId": "c5119",
+    "expectedDutch": "mossel",
+    "expectedEnglish": [
+      "mussel"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): de mosselen -> mossel"
+  },
+  "1570505233999": {
+    "reuseId": "c1368",
+    "expectedDutch": "proeven",
+    "expectedEnglish": [
+      "to taste",
+      "to try"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (missing-sense, both): proef -> proeven"
+  },
+  "1570505234001": {
+    "reuseId": "c293",
+    "expectedDutch": "een beetje",
+    "expectedEnglish": [
+      "bit",
+      "a little"
+    ],
+    "reuseReason": "Merge review (same-word, first): een beetje -> een beetje"
+  },
+  "1570505234002": {
+    "reuseId": "c5231",
+    "expectedDutch": "vet",
+    "expectedEnglish": [
+      "fat",
+      "greasy",
+      "rich"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): vet -> vet"
+  },
+  "1570505234005": {
+    "reuseId": "c3533",
+    "expectedDutch": "vrucht",
+    "expectedEnglish": [
+      "fruit"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vruchten -> vrucht"
+  },
+  "1570505234013": {
+    "reuseId": "c1571",
+    "expectedDutch": "laten",
+    "expectedEnglish": [
+      "to let",
+      "to leave"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): laten -> laten"
+  },
+  "1570505241284": {
+    "reuseId": "c1501",
+    "expectedDutch": "de zaak",
+    "expectedEnglish": [
+      "business",
+      "shop",
+      "store"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): de zaak -> de zaak"
+  },
+  "1570505241293": {
+    "reuseId": "c275",
+    "expectedDutch": "zoeken",
+    "expectedEnglish": [
+      "to search",
+      "to look for"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): zoek -> zoeken"
+  },
+  "1570505241301": {
+    "reuseId": "c5985",
+    "expectedDutch": "het model",
+    "expectedEnglish": [
+      "model",
+      "style"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): het model -> het model"
+  },
+  "1570505241302": {
+    "reuseId": "c939",
+    "expectedDutch": "licht",
+    "expectedEnglish": [
+      "light"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): lichte -> licht"
+  },
+  "1570505241304": {
+    "reuseId": "c55",
+    "expectedDutch": "verschillend",
+    "expectedEnglish": [
+      "different"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): verschillende -> verschillend"
+  },
+  "1570505241306": {
+    "reuseId": "c1146",
+    "expectedDutch": "proberen",
+    "expectedEnglish": [
+      "to try"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, tiebreak: same target, only one reviewer adds a sense): probeert -> proberen"
+  },
+  "1570505241311": {
+    "reuseId": "c612",
+    "expectedDutch": "passen",
+    "expectedEnglish": [
+      "to fit",
+      "to try on"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): passen -> passen"
+  },
+  "1570505241312": {
+    "reuseId": "c611",
+    "expectedDutch": "de paskamer",
+    "expectedEnglish": [
+      "fitting room",
+      "changing room"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): paskamers -> de paskamer"
+  },
+  "1570505241317": {
+    "reuseId": "c1263",
+    "expectedDutch": "hem",
+    "expectedEnglish": [
+      "him",
+      "it"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): hem -> hem"
+  },
+  "1570505241318": {
+    "reuseId": "c2456",
+    "expectedDutch": "wijd",
+    "expectedEnglish": [
+      "wide",
+      "outstretched",
+      "far apart"
+    ],
+    "reuseReason": "Merge review (same-word, first): wijd -> wijd"
+  },
+  "1570505241320": {
+    "reuseId": "c918",
+    "expectedDutch": "Het spijt me.",
+    "expectedEnglish": [
+      "I am sorry."
+    ],
+    "reuseReason": "Merge review (same-word, first): het spijt me -> Het spijt me."
+  },
+  "1570505241323": {
+    "reuseId": "c2061",
+    "expectedDutch": "eventueel",
+    "expectedEnglish": [
+      "possible",
+      "if necessary",
+      "possibly"
+    ],
+    "reuseReason": "Merge review (adj/adv, both): eventueel -> eventueel"
+  },
+  "1570505241326": {
+    "reuseId": "c466",
+    "expectedDutch": "de bon",
+    "expectedEnglish": [
+      "coupon",
+      "receipt"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de bon -> de bon"
+  },
+  "1570505241327": {
+    "reuseId": "c586",
+    "expectedDutch": "het T-shirt",
+    "expectedEnglish": [
+      "T-shirt"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): T-shirts -> het T-shirt"
+  },
+  "1570505241328": {
+    "reuseId": "c350",
+    "expectedDutch": "liggen",
+    "expectedEnglish": [
+      "to lie",
+      "to lie down"
+    ],
+    "reuseReason": "Merge review (same-word, tiebreak: same target, only one reviewer adds a sense): liggen -> liggen"
+  },
+  "1570505241335": {
+    "reuseId": "c1091",
+    "expectedDutch": "zo",
+    "expectedEnglish": [
+      "like that",
+      "so"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): zo -> zo"
+  },
+  "1570505246518": {
+    "reuseId": "c3352",
+    "expectedDutch": "makelaar",
+    "expectedEnglish": [
+      "broker",
+      "real estate agent"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): de makelaar -> makelaar"
+  },
+  "1570505246519": {
+    "reuseId": "c6221",
+    "expectedDutch": "de woonruimte",
+    "expectedEnglish": [
+      "living space",
+      "accommodation",
+      "somewhere to live"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): de woonruimte -> de woonruimte"
+  },
+  "1570505246520": {
+    "reuseId": "c332",
+    "expectedDutch": "de stad",
+    "expectedEnglish": [
+      "city",
+      "town"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de stad -> de stad"
+  },
+  "1570505246522": {
+    "reuseId": "c849",
+    "expectedDutch": "de vriend",
+    "expectedEnglish": [
+      "friend",
+      "boyfriend"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): de vriend -> de vriend"
+  },
+  "1570505246524": {
+    "reuseId": "c1815",
+    "expectedDutch": "bepaald",
+    "expectedEnglish": [
+      "certain",
+      "determined"
+    ],
+    "reuseReason": "Merge review (same-word, first): bepaald -> bepaald"
+  },
+  "1570505246531": {
+    "reuseId": "c213",
+    "expectedDutch": "zien",
+    "expectedEnglish": [
+      "to see"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): zie -> zien"
+  },
+  "1570505246533": {
+    "reuseId": "c1237",
+    "expectedDutch": "maximaal",
+    "expectedEnglish": [
+      "maximum"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): maximale -> maximaal"
+  },
+  "1570505246539": {
+    "reuseId": "c334",
+    "expectedDutch": "de verdieping",
+    "expectedEnglish": [
+      "floor",
+      "storey"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de verdieping -> de verdieping"
+  },
+  "1570505246540": {
+    "reuseId": "c537",
+    "expectedDutch": "oud",
+    "expectedEnglish": [
+      "old"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): oude -> oud"
+  },
+  "1570505246543": {
+    "reuseId": "c1447",
+    "expectedDutch": "het centrum",
+    "expectedEnglish": [
+      "centre",
+      "city centre"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): het centrum -> het centrum"
+  },
+  "1570505246544": {
+    "reuseId": "c750",
+    "expectedDutch": "dichtbij",
+    "expectedEnglish": [
+      "near"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (pos-variant, tiebreak: same target, only one reviewer adds a sense): dicht bij -> dichtbij"
+  },
+  "1570505246548": {
+    "reuseId": "c944",
+    "expectedDutch": "vierkant",
+    "expectedEnglish": [
+      "square"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vierkante -> vierkant"
+  },
+  "1570505246552": {
+    "reuseId": "c942",
+    "expectedDutch": "ruim",
+    "expectedEnglish": [
+      "spacious"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): ruime -> ruim"
+  },
+  "1570505246557": {
+    "reuseId": "c283",
+    "expectedDutch": "de gang",
+    "expectedEnglish": [
+      "corridor",
+      "passage",
+      "passageway"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de gang -> de gang"
+  },
+  "1570505246559": {
+    "reuseId": "c2029",
+    "expectedDutch": "eenvoudig",
+    "expectedEnglish": [
+      "simple",
+      "plain"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): eenvoudige -> eenvoudig"
+  },
+  "1570505246563": {
+    "reuseId": "c302",
+    "expectedDutch": "het bad",
+    "expectedEnglish": [
+      "bath",
+      "bathtub"
+    ],
+    "reuseReason": "Merge review (same-word, first): het bad -> het bad"
+  },
+  "1570505246565": {
+    "reuseId": "c1924",
+    "expectedDutch": "geschikt",
+    "expectedEnglish": [
+      "adequate",
+      "suitable",
+      "appropriate"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): geschikte -> geschikt"
+  },
+  "1570505246566": {
+    "reuseId": "c260",
+    "expectedDutch": "het huis",
+    "expectedEnglish": [
+      "house"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): huizen -> het huis"
+  },
+  "1570505246571": {
+    "reuseId": "c3127",
+    "expectedDutch": "verhuren",
+    "expectedEnglish": [
+      "to rent",
+      "rent out",
+      "to let out"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): verhuren -> verhuren"
+  },
+  "1570505246573": {
+    "reuseId": "c306",
+    "expectedDutch": "de kast",
+    "expectedEnglish": [
+      "cupboard",
+      "cabinet"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): kasten -> de kast"
+  },
+  "1570505246574": {
+    "reuseId": "c304",
+    "expectedDutch": "het bed",
+    "expectedEnglish": [
+      "bed"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): bedden -> het bed"
+  },
+  "1570505246575": {
+    "reuseId": "c309",
+    "expectedDutch": "de stoel",
+    "expectedEnglish": [
+      "chair"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): stoelen -> de stoel"
+  },
+  "1570505246578": {
+    "reuseId": "c1485",
+    "expectedDutch": "het voordeel",
+    "expectedEnglish": [
+      "advantage",
+      "benefit"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): het voordeel -> het voordeel"
+  },
+  "1570505246580": {
+    "reuseId": "c2633",
+    "expectedDutch": "zonnig",
+    "expectedEnglish": [
+      "sunny"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): zonnige -> zonnig"
+  },
+  "1570505246581": {
+    "reuseId": "c284",
+    "expectedDutch": "de kamer",
+    "expectedEnglish": [
+      "room",
+      "living room"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): de kamer -> de kamer"
+  },
+  "1570505246586": {
+    "reuseId": "c514",
+    "expectedDutch": "bellen",
+    "expectedEnglish": [
+      "to dial",
+      "to call by phone",
+      "to phone",
+      "to call"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): bel -> bellen"
+  },
+  "1570505246588": {
+    "reuseId": "c298",
+    "expectedDutch": "nieuw",
+    "expectedEnglish": [
+      "new"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): nieuwe -> nieuw"
+  },
+  "1570505252064": {
+    "reuseId": "c1531",
+    "expectedDutch": "zoals",
+    "expectedEnglish": [
+      "such as",
+      "as",
+      "like"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): zoals -> zoals"
+  },
+  "1570505252068": {
+    "reuseId": "c478",
+    "expectedDutch": "de arm",
+    "expectedEnglish": [
+      "arm"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): armen -> de arm"
+  },
+  "1570505252069": {
+    "reuseId": "c479",
+    "expectedDutch": "het been",
+    "expectedEnglish": [
+      "leg"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): benen -> het been"
+  },
+  "1570505252070": {
+    "reuseId": "c481",
+    "expectedDutch": "de buik",
+    "expectedEnglish": [
+      "belly",
+      "stomach"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de buik -> de buik"
+  },
+  "1570505252079": {
+    "reuseId": "c2496",
+    "expectedDutch": "gisteravond",
+    "expectedEnglish": [
+      "yesterday evening",
+      "last night"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): gisteravond -> gisteravond"
+  },
+  "1570505252081": {
+    "reuseId": "c1334",
+    "expectedDutch": "overdag",
+    "expectedEnglish": [
+      "during daytime",
+      "during the day"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): overdag -> overdag"
+  },
+  "1570505252083": {
+    "reuseId": "c1252",
+    "expectedDutch": "de klant",
+    "expectedEnglish": [
+      "customer",
+      "client"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): klanten -> de klant"
+  },
+  "1570505252085": {
+    "reuseId": "c9905",
+    "expectedDutch": "de voetbalvereniging",
+    "expectedEnglish": [
+      "football association",
+      "football club"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de voetbalvereniging -> de voetbalvereniging"
+  },
+  "1570505252090": {
+    "reuseId": "c467",
+    "expectedDutch": "daarna",
+    "expectedEnglish": [
+      "thereafter",
+      "after that"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): daarna -> daarna"
+  },
+  "1570505252092": {
+    "reuseId": "c1094",
+    "expectedDutch": "bijzonder",
+    "expectedEnglish": [
+      "extraordinary",
+      "special"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): bijzonders -> bijzonder"
+  },
+  "1570505252096": {
+    "reuseId": "c739",
+    "expectedDutch": "denken",
+    "expectedEnglish": [
+      "to think"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): denken -> denken"
+  },
+  "1570505252099": {
+    "reuseId": "c2988",
+    "expectedDutch": "emmer",
+    "expectedEnglish": [
+      "bucket"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): emmers -> emmer"
+  },
+  "1570505252101": {
+    "reuseId": "c1149",
+    "expectedDutch": "vorig",
+    "expectedEnglish": [
+      "previous",
+      "last"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): vorig -> vorig"
+  },
+  "1570505252102": {
+    "reuseId": "c545",
+    "expectedDutch": "de klacht",
+    "expectedEnglish": [
+      "complaint"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): klachten -> de klacht"
+  },
+  "1570505252104": {
+    "reuseId": "c4976",
+    "expectedDutch": "allergisch",
+    "expectedEnglish": [
+      "allergic"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): allergische -> allergisch"
+  },
+  "1570505252107": {
+    "reuseId": "c563",
+    "expectedDutch": "de zalf",
+    "expectedEnglish": [
+      "ointment",
+      "salve"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de zalf -> de zalf"
+  },
+  "1570505252109": {
+    "reuseId": "c4706",
+    "expectedDutch": "de jeuk",
+    "expectedEnglish": [
+      "itch",
+      "itching"
+    ],
+    "reuseReason": "Merge review (same-word, first): de jeuk -> de jeuk"
+  },
+  "1570505252111": {
+    "reuseId": "c3698",
+    "expectedDutch": "krabben",
+    "expectedEnglish": [
+      "to scratch"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): krabt -> krabben"
+  },
+  "1570505252113": {
+    "reuseId": "c644",
+    "expectedDutch": "kapot",
+    "expectedEnglish": [
+      "broken"
+    ],
+    "reuseReason": "Merge review (same-word, tiebreak: same target, only one reviewer adds a sense): kapot -> kapot"
+  },
+  "1570505258055": {
+    "reuseId": "c682",
+    "expectedDutch": "de fiets",
+    "expectedEnglish": [
+      "bicycle",
+      "bike"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de fiets -> de fiets"
+  },
+  "1570505258059": {
+    "reuseId": "c1065",
+    "expectedDutch": "lijken",
+    "expectedEnglish": [
+      "to appear",
+      "to seem"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): lijkt -> lijken"
+  },
+  "1570505258066": {
+    "reuseId": "c810",
+    "expectedDutch": "fietsen",
+    "expectedEnglish": [
+      "to ride a bicycle",
+      "to cycle"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): fietsen -> fietsen"
+  },
+  "1570505258072": {
+    "reuseId": "c678",
+    "expectedDutch": "zelf",
+    "expectedEnglish": [
+      "self",
+      "myself"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): zelf -> zelf"
+  },
+  "1570505258075": {
+    "reuseId": "c2638",
+    "expectedDutch": "het stuur",
+    "expectedEnglish": [
+      "steering device",
+      "handlebars on a bicycle",
+      "handlebars"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): het stuur -> het stuur"
+  },
+  "1570505258076": {
+    "reuseId": "c2550",
+    "expectedDutch": "zadel",
+    "expectedEnglish": [
+      "saddle",
+      "seat"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): het zadel -> zadel"
+  },
+  "1570505258077": {
+    "reuseId": "c212",
+    "expectedDutch": "staan",
+    "expectedEnglish": [
+      "to stand"
+    ],
+    "reuseReason": "Merge review (same-word, tiebreak: same target, only one reviewer adds a sense): staan -> staan"
+  },
+  "1570505258078": {
+    "reuseId": "c3227",
+    "expectedDutch": "scheef",
+    "expectedEnglish": [
+      "crooked",
+      "not level",
+      "straight"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): scheef -> scheef"
+  },
+  "1570505258083": {
+    "reuseId": "c878",
+    "expectedDutch": "bedoelen",
+    "expectedEnglish": [
+      "to mean"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): bedoelt -> bedoelen"
+  },
+  "1570505258086": {
+    "reuseId": "c1535",
+    "expectedDutch": "de band",
+    "expectedEnglish": [
+      "tyre"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): banden -> de band"
+  },
+  "1570505258089": {
+    "reuseId": "c569",
+    "expectedDutch": "helemaal",
+    "expectedEnglish": [
+      "altogether",
+      "completely",
+      "at all"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): helemaal -> helemaal"
+  },
+  "1570505258090": {
+    "reuseId": "c707",
+    "expectedDutch": "rijden",
+    "expectedEnglish": [
+      "to drive",
+      "to ride"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): rijdt -> rijden"
+  },
+  "1570505258091": {
+    "reuseId": "c1542",
+    "expectedDutch": "de rem",
+    "expectedEnglish": [
+      "brake"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): remmen -> de rem"
+  },
+  "1570505258096": {
+    "reuseId": "c161",
+    "expectedDutch": "leren",
+    "expectedEnglish": [
+      "to learn"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): leer -> leren"
+  },
+  "1570505258101": {
+    "reuseId": "c654",
+    "expectedDutch": "de feestdag",
+    "expectedEnglish": [
+      "holiday",
+      "public holiday"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de feestdag -> de feestdag"
+  },
+  "1570505258102": {
+    "reuseId": "c605",
+    "expectedDutch": "het feest",
+    "expectedEnglish": [
+      "feast",
+      "party",
+      "celebration"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): het feest -> het feest"
+  },
+  "1570505258106": {
+    "reuseId": "c659",
+    "expectedDutch": "ophalen",
+    "expectedEnglish": [
+      "to pick up",
+      "to fetch",
+      "to collect",
+      "to get"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): ophalen -> ophalen"
+  },
+  "1570505264087": {
+    "reuseId": "c1437",
+    "expectedDutch": "hopen",
+    "expectedEnglish": [
+      "to hope"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): hoop -> hopen"
+  },
+  "1570505264093": {
+    "reuseId": "c1628",
+    "expectedDutch": "zich herinneren",
+    "expectedEnglish": [
+      "to remember"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): me herinneren -> zich herinneren"
+  },
+  "1570505264096": {
+    "reuseId": "c437",
+    "expectedDutch": "de taart",
+    "expectedEnglish": [
+      "pie",
+      "cake"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de taart -> de taart"
+  },
+  "1570505264099": {
+    "reuseId": "c2290",
+    "expectedDutch": "opendoen",
+    "expectedEnglish": [
+      "to open"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): doe open -> opendoen"
+  },
+  "1570505264105": {
+    "reuseId": "c2299",
+    "expectedDutch": "vergissen",
+    "expectedEnglish": [
+      "to make a mistake",
+      "to be mistaken"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): vergis ik me -> vergissen"
+  },
+  "1570505264114": {
+    "reuseId": "c81",
+    "expectedDutch": "horen",
+    "expectedEnglish": [
+      "to hear"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): hoor -> horen"
+  },
+  "1570505264117": {
+    "reuseId": "c1420",
+    "expectedDutch": "Dat klopt.",
+    "expectedEnglish": [
+      "That is correct.",
+      "That's right."
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): dat klopt -> Dat klopt."
+  },
+  "1570505264120": {
+    "reuseId": "c1041",
+    "expectedDutch": "studeren",
+    "expectedEnglish": [
+      "to study"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): studeer -> studeren"
+  },
+  "1570505264123": {
+    "reuseId": "c729",
+    "expectedDutch": "naast",
+    "expectedEnglish": [
+      "next to",
+      "besides",
+      "in addition to"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): naast -> naast"
+  },
+  "1570505264126": {
+    "reuseId": "c812",
+    "expectedDutch": "ieder",
+    "expectedEnglish": [
+      "each",
+      "every"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): iedere -> ieder"
+  },
+  "1570505264130": {
+    "reuseId": "c194",
+    "expectedDutch": "begrijpen",
+    "expectedEnglish": [
+      "to understand"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): begrijp -> begrijpen"
+  },
+  "1570505264131": {
+    "reuseId": "c198",
+    "expectedDutch": "snel",
+    "expectedEnglish": [
+      "fast",
+      "quick"
+    ],
+    "reuseReason": "Merge review (same-word, first): snel -> snel"
+  },
+  "1570505264135": {
+    "reuseId": "c851",
+    "expectedDutch": "zwemmen",
+    "expectedEnglish": [
+      "to swim"
+    ],
+    "reuseReason": "Merge review (same-word, first): zwemmen -> zwemmen"
+  },
+  "1570505264136": {
+    "reuseId": "c818",
+    "expectedDutch": "wandelen",
+    "expectedEnglish": [
+      "to walk",
+      "to hike"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): wandelen -> wandelen"
+  },
+  "1570505264139": {
+    "reuseId": "c1224",
+    "expectedDutch": "voorbereiden",
+    "expectedEnglish": [
+      "to prepare",
+      "to get ready"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): bereid me voor op -> voorbereiden"
+  },
+  "1570505264141": {
+    "reuseId": "c1220",
+    "expectedDutch": "de reis",
+    "expectedEnglish": [
+      "journey",
+      "trip"
+    ],
+    "reuseReason": "Merge review (same-word, first): de reis -> de reis"
+  },
+  "1570505264150": {
+    "reuseId": "c88",
+    "expectedDutch": "praten",
+    "expectedEnglish": [
+      "to talk",
+      "to speak"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): praten -> praten"
+  },
+  "1570505272156": {
+    "reuseId": "c687",
+    "expectedDutch": "het station",
+    "expectedEnglish": [
+      "station"
+    ],
+    "reuseReason": "Merge review (same-word, tiebreak: same target, only one reviewer adds a sense): het station -> het station"
+  },
+  "1570505272158": {
+    "reuseId": "c1124",
+    "expectedDutch": "bekend",
+    "expectedEnglish": [
+      "known",
+      "well-known"
+    ],
+    "reuseReason": "Merge review (same-word, first): bekend -> bekend"
+  },
+  "1570505272161": {
+    "reuseId": "c681",
+    "expectedDutch": "de bus",
+    "expectedEnglish": [
+      "bus",
+      "coach"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de bus -> de bus"
+  },
+  "1570505272165": {
+    "reuseId": "c1280",
+    "expectedDutch": "zeker",
+    "expectedEnglish": [
+      "certainly",
+      "sure",
+      "certain"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): zeker -> zeker"
+  },
+  "1570505272166": {
+    "reuseId": "c836",
+    "expectedDutch": "vanaf",
+    "expectedEnglish": [
+      "since",
+      "from"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): vanaf -> vanaf"
+  },
+  "1570505272168": {
+    "reuseId": "c217",
+    "expectedDutch": "de lijn",
+    "expectedEnglish": [
+      "line"
+    ],
+    "reuseReason": "Merge review (same-word, first): de lijn -> de lijn"
+  },
+  "1570505272169": {
+    "reuseId": "c936",
+    "expectedDutch": "geluk hebben",
+    "expectedEnglish": [
+      "to be lucky"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): hebt geluk -> geluk hebben"
+  },
+  "1570505272170": {
+    "reuseId": "c768",
+    "expectedDutch": "aankomen",
+    "expectedEnglish": [
+      "to arrive"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): komt aan -> aankomen"
+  },
+  "1570505272172": {
+    "reuseId": "c1268",
+    "expectedDutch": "direct",
+    "expectedEnglish": [
+      "right away",
+      "directly",
+      "right now",
+      "straightaway"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): direct -> direct"
+  },
+  "1570505272176": {
+    "reuseId": "c755",
+    "expectedDutch": "oversteken",
+    "expectedEnglish": [
+      "to cross"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): over ... steken -> oversteken"
+  },
+  "1570505272177": {
+    "reuseId": "c1622",
+    "expectedDutch": "de balie",
+    "expectedEnglish": [
+      "counter",
+      "desk",
+      "information desk"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): de balie -> de balie"
+  },
+  "1570505272181": {
+    "reuseId": "c4422",
+    "expectedDutch": "opgaan",
+    "expectedEnglish": [
+      "to go up",
+      "ascend"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): ga op -> opgaan"
+  },
+  "1570505272183": {
+    "reuseId": "c756",
+    "expectedDutch": "rechtdoor",
+    "expectedEnglish": [
+      "straight",
+      "straight ahead"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): rechtdoor -> rechtdoor"
+  },
+  "1570505272184": {
+    "reuseId": "c698",
+    "expectedDutch": "tot",
+    "expectedEnglish": [
+      "until",
+      "as far as",
+      "up to"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): tot -> tot"
+  },
+  "1570505272185": {
+    "reuseId": "c1705",
+    "expectedDutch": "herkennen",
+    "expectedEnglish": [
+      "to recognize"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): herkent -> herkennen"
+  },
+  "1570505272186": {
+    "reuseId": "c753",
+    "expectedDutch": "linksaf",
+    "expectedEnglish": [
+      "turn left",
+      "to the left"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): linksaf -> linksaf"
+  },
+  "1570505272187": {
+    "reuseId": "c1318",
+    "expectedDutch": "het einde",
+    "expectedEnglish": [
+      "end"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (same-word, first): het eind -> het einde"
+  },
+  "1570505272189": {
+    "reuseId": "c645",
+    "expectedDutch": "meenemen",
+    "expectedEnglish": [
+      "to take along"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): neemt mee -> meenemen"
+  },
+  "1570505272191": {
+    "reuseId": "c1562",
+    "expectedDutch": "het toilet",
+    "expectedEnglish": [
+      "toilet"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): toiletten -> het toilet"
+  },
+  "1570505272192": {
+    "reuseId": "c281",
+    "expectedDutch": "beneden",
+    "expectedEnglish": [
+      "downstairs",
+      "down"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): beneden -> beneden"
+  },
+  "1570505272196": {
+    "reuseId": "c4093",
+    "expectedDutch": "uitlopen",
+    "expectedEnglish": [
+      "to walk out",
+      "to walk down"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): uitlopen -> uitlopen"
+  },
+  "1570505272197": {
+    "reuseId": "c1327",
+    "expectedDutch": "vanzelf",
+    "expectedEnglish": [
+      "by itself",
+      "as a matter of course",
+      "automatically"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): vanzelf -> vanzelf"
+  },
+  "1570505272199": {
+    "reuseId": "c1497",
+    "expectedDutch": "volgen",
+    "expectedEnglish": [
+      "to attend",
+      "to follow"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): volgen -> volgen"
+  },
+  "1570505279266": {
+    "reuseId": "c1804",
+    "expectedDutch": "bezoeken",
+    "expectedEnglish": [
+      "to visit"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): bezoekt -> bezoeken"
+  },
+  "1570505279267": {
+    "reuseId": "c1568",
+    "expectedDutch": "binnenkomen",
+    "expectedEnglish": [
+      "to enter",
+      "to come in"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): kom binnen -> binnenkomen"
+  },
+  "1570505279272": {
+    "reuseId": "c765",
+    "expectedDutch": "gelukkig",
+    "expectedEnglish": [
+      "happy",
+      "fortunate",
+      "fortunately",
+      "luckily"
+    ],
+    "reuseReason": "Merge review (adj/adv, both): gelukkig -> gelukkig"
+  },
+  "1570505279276": {
+    "reuseId": "c652",
+    "expectedDutch": "brengen",
+    "expectedEnglish": [
+      "to bring",
+      "to take"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): brengen -> brengen"
+  },
+  "1570505279281": {
+    "reuseId": "c6610",
+    "expectedDutch": "verontschuldigen",
+    "expectedEnglish": [
+      "to excuse",
+      "to forgive",
+      "to apologize"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): verontschuldigen -> verontschuldigen"
+  },
+  "1570505279282": {
+    "reuseId": "c2968",
+    "expectedDutch": "uitdoen",
+    "expectedEnglish": [
+      "to take off"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): doe uit -> uitdoen"
+  },
+  "1570505279291": {
+    "reuseId": "c616",
+    "expectedDutch": "aanhebben",
+    "expectedEnglish": [
+      "to wear (clothing)",
+      "to have on"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, first): hebben aan -> aanhebben"
+  },
+  "1570505279293": {
+    "reuseId": "c2191",
+    "expectedDutch": "belachelijk",
+    "expectedEnglish": [
+      "ridiculous",
+      "risible"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): belachelijk -> belachelijk"
+  },
+  "1570505279294": {
+    "reuseId": "c1492",
+    "expectedDutch": "geloven",
+    "expectedEnglish": [
+      "to believe"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): geloof -> geloven"
+  },
+  "1570505279299": {
+    "reuseId": "c676",
+    "expectedDutch": "warm",
+    "expectedEnglish": [
+      "hot",
+      "warm"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): warm -> warm"
+  },
+  "1570505279303": {
+    "reuseId": "c809",
+    "expectedDutch": "de bloem",
+    "expectedEnglish": [
+      "flower"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): bloemen -> de bloem"
+  },
+  "1570505279306": {
+    "reuseId": "c398",
+    "expectedDutch": "snijden",
+    "expectedEnglish": [
+      "to cut"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): snijd -> snijden"
+  },
+  "1570505279307": {
+    "reuseId": "c2624",
+    "expectedDutch": "schuin",
+    "expectedEnglish": [
+      "slanted",
+      "slanting",
+      "at an angle"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): schuin -> schuin"
+  },
+  "1570505279309": {
+    "reuseId": "c845",
+    "expectedDutch": "houden van",
+    "expectedEnglish": [
+      "to love",
+      "to like",
+      "to be fond of"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): houden van -> houden van"
+  },
+  "1570505279310": {
+    "reuseId": "c798",
+    "expectedDutch": "het dier",
+    "expectedEnglish": [
+      "animal"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): dieren -> het dier"
+  },
+  "1570505279312": {
+    "reuseId": "c801",
+    "expectedDutch": "de kat",
+    "expectedEnglish": [
+      "cat"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): katten -> de kat"
+  },
+  "1570505279313": {
+    "reuseId": "c424",
+    "expectedDutch": "de vis",
+    "expectedEnglish": [
+      "fish"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vissen -> de vis"
+  },
+  "1570505279314": {
+    "reuseId": "c890",
+    "expectedDutch": "jawel",
+    "expectedEnglish": [
+      "yes",
+      "oh yes"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): jawel -> jawel"
+  },
+  "1570505279315": {
+    "reuseId": "c421",
+    "expectedDutch": "meistal",
+    "expectedEnglish": [
+      "mostly",
+      "usually"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (typo, first): meestal -> meistal"
+  },
+  "1570505279316": {
+    "reuseId": "c294",
+    "expectedDutch": "gezellig",
+    "expectedEnglish": [
+      "cosy",
+      "pleasant",
+      "sociable"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): gezellig -> gezellig"
+  },
+  "1570505279322": {
+    "reuseId": "c1880",
+    "expectedDutch": "het verdriet",
+    "expectedEnglish": [
+      "grief",
+      "sadness",
+      "sorrow"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): het verdriet -> het verdriet"
+  },
+  "1570505279323": {
+    "reuseId": "c1402",
+    "expectedDutch": "dood",
+    "expectedEnglish": [
+      "dead",
+      "death"
+    ],
+    "reuseReason": "Merge review (pos-variant, both): de dood -> dood"
+  },
+  "1570505279329": {
+    "reuseId": "c3306",
+    "expectedDutch": "meekomen",
+    "expectedEnglish": [
+      "to come along with",
+      "accompany",
+      "join"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): kom mee -> meekomen"
+  },
+  "1570505279330": {
+    "reuseId": "c263",
+    "expectedDutch": "de schuur",
+    "expectedEnglish": [
+      "shed",
+      "shack"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de schuur -> de schuur"
+  },
+  "1570505285008": {
+    "reuseId": "c2656",
+    "expectedDutch": "sportschool",
+    "expectedEnglish": [
+      "gym",
+      "sports club"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): de sportschool -> sportschool"
+  },
+  "1570505285011": {
+    "reuseId": "c196",
+    "expectedDutch": "de mensen",
+    "expectedEnglish": [
+      "people"
+    ],
+    "reuseReason": "Merge review (same-word, first): mensen -> de mensen"
+  },
+  "1570505285016": {
+    "reuseId": "c564",
+    "expectedDutch": "elk",
+    "expectedEnglish": [
+      "each"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): elke -> elk"
+  },
+  "1570505285017": {
+    "reuseId": "c8663",
+    "expectedDutch": "opzeggen",
+    "expectedEnglish": [
+      "to end a contract",
+      "to cancel"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): opzeggen -> opzeggen"
+  },
+  "1570505285020": {
+    "reuseId": "c9614",
+    "expectedDutch": "onbeperkt",
+    "expectedEnglish": [
+      "unrestricted",
+      "unlimited"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): onbeperkt -> onbeperkt"
+  },
+  "1570505285021": {
+    "reuseId": "c833",
+    "expectedDutch": "sporten",
+    "expectedEnglish": [
+      "to exercise",
+      "to play sports"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): sporten -> sporten"
+  },
+  "1570505285022": {
+    "reuseId": "c1243",
+    "expectedDutch": "speciaal",
+    "expectedEnglish": [
+      "special"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): speciale -> speciaal"
+  },
+  "1570505285030": {
+    "reuseId": "c550",
+    "expectedDutch": "de spier",
+    "expectedEnglish": [
+      "muscle"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): spieren -> de spier"
+  },
+  "1570505285041": {
+    "reuseId": "c2826",
+    "expectedDutch": "fit",
+    "expectedEnglish": [
+      "fit",
+      "healthy"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (synonym-same-sense, both): fitte -> fit"
+  },
+  "1570505285042": {
+    "reuseId": "c2236",
+    "expectedDutch": "aantrekkelijk",
+    "expectedEnglish": [
+      "attractive",
+      "beautiful"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): aantrekkelijke -> aantrekkelijk"
+  },
+  "1570505285053": {
+    "reuseId": "c1299",
+    "expectedDutch": "aanbieden",
+    "expectedEnglish": [
+      "to offer"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): bieden aan -> aanbieden"
+  },
+  "1570505285054": {
+    "reuseId": "c5846",
+    "expectedDutch": "virtueel",
+    "expectedEnglish": [
+      "virtual"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): virtuele -> virtueel"
+  },
+  "1570505285063": {
+    "reuseId": "c1202",
+    "expectedDutch": "klinken",
+    "expectedEnglish": [
+      "to sound"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): klinkt -> klinken"
+  },
+  "1570505285069": {
+    "reuseId": "c2004",
+    "expectedDutch": "meedoen",
+    "expectedEnglish": [
+      "to take part",
+      "participate",
+      "to join in"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): meedoen -> meedoen"
+  },
+  "1570505285078": {
+    "reuseId": "c911",
+    "expectedDutch": "de automaat",
+    "expectedEnglish": [
+      "machine",
+      "vending machine"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): de automaat -> de automaat"
+  },
+  "1570505285082": {
+    "reuseId": "c893",
+    "expectedDutch": "veel plezier",
+    "expectedEnglish": [
+      "lots of fun",
+      "have fun"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): veel plezier -> veel plezier"
+  },
+  "1570505291967": {
+    "reuseId": "c474",
+    "expectedDutch": "het pak",
+    "expectedEnglish": [
+      "pack",
+      "packet",
+      "package"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): pakken -> het pak"
+  },
+  "1570505291971": {
+    "reuseId": "c1269",
+    "expectedDutch": "geweldig",
+    "expectedEnglish": [
+      "great",
+      "fantastic"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): geweldig -> geweldig"
+  },
+  "1570505291972": {
+    "reuseId": "c772",
+    "expectedDutch": "vertrekken",
+    "expectedEnglish": [
+      "to leave"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vertrekt -> vertrekken"
+  },
+  "1570505291978": {
+    "reuseId": "c1042",
+    "expectedDutch": "vroeger",
+    "expectedEnglish": [
+      "in former times",
+      "in the past",
+      "back in the days",
+      "in the old days"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): vroeger -> vroeger"
+  },
+  "1570505291980": {
+    "reuseId": "c108",
+    "expectedDutch": "buiten",
+    "expectedEnglish": [
+      "outside",
+      "outdoors"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): buiten -> buiten"
+  },
+  "1570505291981": {
+    "reuseId": "c686",
+    "expectedDutch": "reizen",
+    "expectedEnglish": [
+      "to travel"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): reis -> reizen"
+  },
+  "1570505291982": {
+    "reuseId": "c771",
+    "expectedDutch": "het spoor",
+    "expectedEnglish": [
+      "track",
+      "platform"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): het spoor -> het spoor"
+  },
+  "1570505291997": {
+    "reuseId": "c1846",
+    "expectedDutch": "het gebied",
+    "expectedEnglish": [
+      "area",
+      "region"
+    ],
+    "reuseReason": "Merge review (same-word, first): het gebied -> het gebied"
+  },
+  "1570505291998": {
+    "reuseId": "c1130",
+    "expectedDutch": "echt",
+    "expectedEnglish": [
+      "really",
+      "real"
+    ],
+    "reuseReason": "Merge review (adj/adv, first): echt -> echt"
+  },
+  "1570505291999": {
+    "reuseId": "c1084",
+    "expectedDutch": "de lucht",
+    "expectedEnglish": [
+      "air",
+      "sky"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de lucht -> de lucht"
+  },
+  "1570505292000": {
+    "reuseId": "c1466",
+    "expectedDutch": "het schilderij",
+    "expectedEnglish": [
+      "painting"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): schilderijen -> het schilderij"
+  },
+  "1570505292001": {
+    "reuseId": "c464",
+    "expectedDutch": "het stukje",
+    "expectedEnglish": [
+      "piece",
+      "little piece"
+    ],
+    "reuseReason": "Merge review (same-word, first): het stukje -> het stukje"
+  },
+  "1570505292002": {
+    "reuseId": "c2864",
+    "expectedDutch": "molen",
+    "expectedEnglish": [
+      "mill",
+      "windmill"
+    ],
+    "reuseReason": "Merge review (missing-sense, first): de molen -> molen"
+  },
+  "1570505292007": {
+    "reuseId": "c4208",
+    "expectedDutch": "welterusten",
+    "expectedEnglish": [
+      "good night",
+      "sleep well"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): welterusten -> welterusten"
+  },
+  "1570505297067": {
+    "reuseId": "c2196",
+    "expectedDutch": "voorstelling",
+    "expectedEnglish": [
+      "show",
+      "performance"
+    ],
+    "reuseReason": "Merge review (same-word, first): de voorstelling -> voorstelling"
+  },
+  "1570505297078": {
+    "reuseId": "c516",
+    "expectedDutch": "eerder",
+    "expectedEnglish": [
+      "previously",
+      "earlier"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): eerder -> eerder"
+  },
+  "1570505297084": {
+    "reuseId": "c1283",
+    "expectedDutch": "de ondertiteling",
+    "expectedEnglish": [
+      "subtitle"
+    ],
+    "reuseReason": "Merge review (same-word, first): de ondertiteling -> de ondertiteling"
+  },
+  "1570505306166": {
+    "reuseId": "c2408",
+    "expectedDutch": "het studentenhuis",
+    "expectedEnglish": [
+      "student residence",
+      "student house"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): het studentenhuis -> het studentenhuis"
+  },
+  "1570505306172": {
+    "reuseId": "c1131",
+    "expectedDutch": "heerlijk",
+    "expectedEnglish": [
+      "delightful",
+      "delicious",
+      "wonderful"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): heerlijk -> heerlijk"
+  },
+  "1570505306176": {
+    "reuseId": "c817",
+    "expectedDutch": "de vogel",
+    "expectedEnglish": [
+      "bird"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): vogels -> de vogel"
+  },
+  "1570505306177": {
+    "reuseId": "c569",
+    "expectedDutch": "helemaal",
+    "expectedEnglish": [
+      "altogether",
+      "completely",
+      "at all"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): helemaal -> helemaal"
+  },
+  "1570505306181": {
+    "reuseId": "c1255",
+    "expectedDutch": "opstaan",
+    "expectedEnglish": [
+      "to get out of bed",
+      "to get up"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): sta op -> opstaan"
+  },
+  "1570505306186": {
+    "reuseId": "c1404",
+    "expectedDutch": "gewoon",
+    "expectedEnglish": [
+      "normal",
+      "ordinary"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): gewoon -> gewoon"
+  },
+  "1570505306201": {
+    "reuseId": "c1697",
+    "expectedDutch": "de storing",
+    "expectedEnglish": [
+      "outage",
+      "fault"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de storing -> de storing"
+  },
+  "1570505306211": {
+    "reuseId": "c1954",
+    "expectedDutch": "terugkomen",
+    "expectedEnglish": [
+      "to come back",
+      "to return"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, first): komt terug -> terugkomen"
+  },
+  "1570505306212": {
+    "reuseId": "c330",
+    "expectedDutch": "mooi",
+    "expectedEnglish": [
+      "beautiful",
+      "nice",
+      "great"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): mooi -> mooi"
+  },
+  "1570505306213": {
+    "reuseId": "c3172",
+    "expectedDutch": "lusten",
+    "expectedEnglish": [
+      "to please",
+      "to fancy",
+      "to like"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (missing-sense, both): lust -> lusten"
+  },
+  "1570505306215": {
+    "reuseId": "c273",
+    "expectedDutch": "rustig",
+    "expectedEnglish": [
+      "quiet",
+      "calm"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): rustig -> rustig"
+  },
+  "1570505306216": {
+    "reuseId": "c650",
+    "expectedDutch": "behalve",
+    "expectedEnglish": [
+      "except",
+      "besides",
+      "apart from"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): behalve -> behalve"
+  },
+  "1570505306217": {
+    "reuseId": "c1244",
+    "expectedDutch": "vast",
+    "expectedEnglish": [
+      "fixed",
+      "regular"
+    ],
+    "form": true,
+    "reuseReason": "Merge review (regular-form, both): vaste -> vast"
+  },
+  "1570505306223": {
+    "reuseId": "c2791",
+    "expectedDutch": "lieverd",
+    "expectedEnglish": [
+      "person who is kind",
+      "sweet",
+      "sweetheart"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): de lieverd -> lieverd"
+  },
+  "1570505313521": {
+    "reuseId": "c1708",
+    "expectedDutch": "de politie",
+    "expectedEnglish": [
+      "police",
+      "law enforcement"
+    ],
+    "reuseReason": "Merge review (same-word, tiebreak: same target, only one reviewer adds a sense): de politie -> de politie"
+  },
+  "1570505313523": {
+    "reuseId": "c1709",
+    "expectedDutch": "de portemonnee",
+    "expectedEnglish": [
+      "purse",
+      "wallet"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de portemonnee -> de portemonnee"
+  },
+  "1570505313527": {
+    "reuseId": "c774",
+    "expectedDutch": "via",
+    "expectedEnglish": [
+      "through",
+      "by way of"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): via -> via"
+  },
+  "1570505313542": {
+    "reuseId": "c1453",
+    "expectedDutch": "steeds",
+    "expectedEnglish": [
+      "again and again",
+      "always",
+      "continually",
+      "all the time"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): steeds -> steeds"
+  },
+  "1570505313545": {
+    "reuseId": "c5379",
+    "expectedDutch": "dader",
+    "expectedEnglish": [
+      "doer",
+      "perpetrator",
+      "culprit"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): de dader -> dader"
+  },
+  "1570505313547": {
+    "reuseId": "c1134",
+    "expectedDutch": "namelijk",
+    "expectedEnglish": [
+      "namely",
+      "it so happens",
+      "you see"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): namelijk -> namelijk"
+  },
+  "1570505313553": {
+    "reuseId": "c2582",
+    "expectedDutch": "verder",
+    "expectedEnglish": [
+      "further",
+      "otherwise",
+      "for the rest"
+    ],
+    "reuseReason": "Merge review (missing-sense, both): verder -> verder"
+  },
+  "1570505313560": {
+    "reuseId": "c1311",
+    "expectedDutch": "onmiddellijk",
+    "expectedEnglish": [
+      "immediately",
+      "at once"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): onmiddellijk -> onmiddellijk"
+  },
+  "1570505313563": {
+    "reuseId": "c3521",
+    "expectedDutch": "hoezo",
+    "expectedEnglish": [
+      "in what way",
+      "in what respect",
+      "how come",
+      "how so"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, first): hoezo -> hoezo"
+  },
+  "1570505313564": {
+    "reuseId": "c659",
+    "expectedDutch": "ophalen",
+    "expectedEnglish": [
+      "to pick up",
+      "to fetch",
+      "to collect",
+      "to get"
+    ],
+    "reuseReason": "Merge review (synonym-same-sense, both): ophalen -> ophalen"
+  },
+  "1570505313565": {
+    "reuseId": "c574",
+    "expectedDutch": "vervelend",
+    "expectedEnglish": [
+      "tedious",
+      "annoying"
+    ],
+    "reuseReason": "Merge review (same-word, tier A): vervelend -> vervelend"
   }
 }

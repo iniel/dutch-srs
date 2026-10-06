@@ -8,6 +8,7 @@ import {
   getState,
   importProgress,
   loadProgress,
+  redirectCardIds,
   resetAll,
   resetProgress,
   saveProgress,
@@ -320,6 +321,46 @@ describe("disabledDirections", () => {
       }),
     );
     expect(loadProgress().disabledDirections).toEqual({ a: ["nl_en"] });
+  });
+});
+
+describe("redirectCardIds (merged-away cards)", () => {
+  const base = (over: Partial<ProgressData>): ProgressData => ({
+    version: CURRENT_VERSION, states: {}, lessonQueue: [], disabledDirections: {}, settings: DEFAULT_SETTINGS, ...over,
+  });
+  const at = (stage: number): ReviewState => ({ ...sampleState, stage });
+
+  it("moves a removed card's progress onto its target", () => {
+    const out = redirectCardIds(base({ states: { old: at(4) }, lessonQueue: ["old"], disabledDirections: { old: ["en_nl"] } }), { old: "new" });
+    expect(out.states).toEqual({ new: at(4) });
+    expect(out.lessonQueue).toEqual(["new"]);
+    expect(out.disabledDirections).toEqual({ new: ["en_nl"] });
+  });
+
+  it("keeps the more advanced state when both cards were studied", () => {
+    expect(redirectCardIds(base({ states: { old: at(5), new: at(2) } }), { old: "new" }).states).toEqual({ new: at(5) });
+    expect(redirectCardIds(base({ states: { old: at(1), new: at(3) } }), { old: "new" }).states).toEqual({ new: at(3) });
+    const burned = { ...at(9), burned: true };
+    expect(redirectCardIds(base({ states: { old: burned, new: at(8) } }), { old: "new" }).states).toEqual({ new: burned });
+  });
+
+  it("keeps the target's own direction settings and de-duplicates the lesson queue", () => {
+    const out = redirectCardIds(base({ lessonQueue: ["old", "new", "x"], disabledDirections: { old: ["nl_en"], new: ["en_nl"] } }), { old: "new" });
+    expect(out.lessonQueue).toEqual(["new", "x"]);
+    expect(out.disabledDirections).toEqual({ new: ["en_nl"] });
+  });
+
+  it("returns the same object when nothing needs redirecting", () => {
+    const data = base({ states: { a: at(2) } });
+    expect(redirectCardIds(data, { old: "new" })).toBe(data);
+  });
+
+  it("is applied on load and on import", () => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: CURRENT_VERSION, states: { c10166: at(3) }, settings: DEFAULT_SETTINGS }));
+    expect(loadProgress().states).toEqual({ c524: at(3) });
+    expect(JSON.parse(localStorage.getItem(STORAGE_KEY)!).states).toEqual({ c524: at(3) });
+    const backup = JSON.stringify({ version: CURRENT_VERSION, states: { c10216: at(6) }, settings: DEFAULT_SETTINGS });
+    expect(importProgress(backup).states).toEqual({ c31: at(6) });
   });
 });
 

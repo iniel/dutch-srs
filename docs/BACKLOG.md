@@ -8,6 +8,18 @@ Priority order is roughly top-down. Items are independent unless noted.
 
 ---
 
+## DONE — Nederlands in gang merged with the existing deck
+**What:** About half the book's new cards were existing words in another surface form, because only exact
+Dutch + English matches were reused (`beginnen = begin / start` vs `to begin`, `broers` vs `de broer`).
+**Fix:** `scripts/nig-match/` generates candidates, then two rounds of parallel reviewer subagents judge them
+under the forms policy in `docs/VOCABULARY.md` › Merge review. The result: 336 book cards now point at
+existing cards (183 English answers added to 146 cards), 336 duplicate book cards were pruned, and 289 remain.
+The chapters hold 1039 unique cards. Decisions are in `nig-review.txt` and `scripts/sources/nig-review.json`.
+**Coverage (1039 cards):** translation 1039, audio 1027, examples 967, Russian 833, dictionary senses 799,
+IPA 785, grammar 673.
+
+---
+
 ## DONE — Nederlands in gang as a third path
 **What:** The *Nederlands in gang* textbook vocabulary (AnkiWeb deck 304232421, 2019 edition, chapters 1–18)
 as a path next to TaalCompleet and Inburgering Online, with one unit per chapter (`Hoofdstuk N`).

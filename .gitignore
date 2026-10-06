@@ -5,3 +5,4 @@ node_modules
 /data
 tsconfig.tsbuildinfo
 scripts/import/*.staging.json
+scripts/import/nig-review/

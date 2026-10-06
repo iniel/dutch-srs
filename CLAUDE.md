@@ -17,7 +17,7 @@ Single user, no backend, no accounts. Hosted on GitHub Pages, installed as a PWA
 npm install
 npm run dev          # http://localhost:5173 (dev server)
 npm run build        # tsc -b + vite build -> dist/
-npm test             # vitest: 323 unit tests (pure logic, storage, importers, shipped-data invariants)
+npm test             # vitest: 327 unit tests (pure logic, storage, importers, shipped-data invariants)
 npm run test:e2e     # full-flow browser test (system Chrome, ~1min)
 # public/cards.json is HAND-OWNED data (stable ids, never renumbered). Fix cards by editing it directly.
 # The importers below never write it — they stage candidates; import:merge appends new ones. Rarely needed.
@@ -70,6 +70,7 @@ attach to the user's already-open browser/tab.
 | Vocab importers (staging) | `scripts/convert-anki.mjs`, `scripts/convert-nt2lex.mjs`, `scripts/clean-cards.mjs` | write `scripts/import/*.staging.json`, never `cards.json` |
 | Card DB merge | `scripts/import-merge.mjs` | append-only `mergeCandidates`, dedupes + assigns next-free ids |
 | Nederlands in gang import | `scripts/import-nig.mjs`, `scripts/nig.mjs`, `scripts/sources/nig-*.json` | book deck → cards + 18-chapter path; provenance + mapping committed |
+| NIG merge review | `scripts/nig-match/`, `nig-review.txt`, `scripts/sources/nig-review.json` | subagent review that re-matched book cards to existing ones (see `docs/VOCABULARY.md`) |
 | Paths file | `scripts/paths-file.mjs` | generators upsert only their own path in `public/paths.json` |
 | E2E | `tests/e2e.mjs` | standalone Playwright script |
 | Deploy | `.github/workflows/deploy.yml` | uploads prebuilt `dist/` |
