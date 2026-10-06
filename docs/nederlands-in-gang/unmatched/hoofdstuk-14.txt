@@ -1,0 +1,18 @@
+de aanbieding — offer — DROP (c471 in de aanbieding = on sale; c3532 het aanbod = offer; bare noun missing)
+bent van plan — intend — DROP (c1207 het plan only; "van plan zijn" missing)
+de krachttraining — weight training — KEEP
+de cardio — cardio fitness — KEEP
+de groepsles — group lesson — KEEP
+kijk mee — watch — DROP (c241 kijken only; meekijken missing)
+op die manier — in that way — DROP (c821 de manier only; phrase missing)
+de sportkleren — sports clothes — KEEP
+gaat in — becomes effective — ADD (c2699 ingaan = to enter; "take effect" sense missing)
+het buikspierkwartier — abs workout — KEEP
+aandoen — put on — EXTRA (c3065 aandoen = to turn on; "put on clothes" sense missing)
+het pasje — card — ADD (c979 de pinpas / c6414 bankpas = bank card; c906 pas = just)
+energiedrankjes — energy drinks — KEEP
+het drankje — drink — DROP (c1029 de drank)
+het muntgeld — cash — ADD (c378 de munt = coin; c6764 de cash = cash)
+het saldo — balance — KEEP
+laden — charge — DROP (c3268 laden = to load; c977 opladen = to charge)
+het plezier — fun — DROP (c893 veel plezier = have fun, lemma plezier; bare noun missing)

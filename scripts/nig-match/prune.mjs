@@ -24,7 +24,7 @@ const redirectsPath = "src/data/cardRedirects.json";
 const remaining = new Set(out.cards.map(c => c.id));
 const redirects = existsSync(join(root, redirectsPath)) ? read(redirectsPath) : {};
 for (const d of read("scripts/sources/nig-review.json").decisions) {
-  if (d.action === "keep-new" || remaining.has(d.nigCardId)) continue;
+  if (d.action === "keep-new" || d.action === "drop" || remaining.has(d.nigCardId)) continue;
   if (!remaining.has(d.targetId)) throw new Error(`Redirect target ${d.targetId} is missing`);
   redirects[d.nigCardId] = d.targetId;
 }

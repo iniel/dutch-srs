@@ -1,0 +1,16 @@
+wie is er aan de beurt? — who's next? — DROP (c1567 aan de beurt zijn)
+de beurt — turn — DROP (c1567 aan de beurt zijn = phrase only, no bare noun card)
+de courgette — courgette — KEEP
+het gerecht — dish — EXTRA (c2155 het gerecht = justice; dish sense missing)
+de andijvie — endive — KEEP
+spekjes — bacon — DROP (c2613 spek)
+was — was — DROP (c65 zijn)
+champignons — mushrooms — KEEP
+de peterselie — parsley — KEEP
+het bosje — bunch — ADD (c1213 het bos = forest; bunch sense missing)
+verder nog iets? — anything else? — DROP (c440 Anders nog iets? = same meaning, different wording)
+boontjes — beans — DROP (c453 de boon)
+wel — quite — DROP (c648 wel = indeed/certainly; "quite" sense missing)
+waarnaartoe — where to — ADD (c3927 waarheen = synonym; c721 naartoe = part only)
+erbij — with it — KEEP
+geeft niet — doesn't matter — DROP (c1489 Dat geeft niet.)

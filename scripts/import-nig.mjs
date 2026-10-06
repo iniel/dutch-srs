@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, mkdtempSync, rmSync
 import { join, dirname, resolve } from "node:path";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
-import { prepareEntries, cardFromEntry, buildChapterPath, strictSignature, chosenCardId } from "./nig.mjs";
+import { prepareEntries, droppedNotes, cardFromEntry, buildChapterPath, strictSignature, chosenCardId } from "./nig.mjs";
 import { mergeCandidates } from "./import-merge.mjs";
 import { writePath } from "./paths-file.mjs";
 
@@ -80,11 +80,12 @@ const candidates = entries.map((e, i) => {
 const merged = mergeCandidates(live, candidates, { signature: strictSignature });
 const ids = merged.candidateIds.map((id, i) => chosen[i] ?? id);
 const path = buildChapterPath(entries, ids, new Set(merged.cards.map(c => c.id)));
-const mapping = { sourceSha256: source.sha256, records: entries.flatMap((e, i) => e.sourceIds.map(sourceId => ({
+const dropped = droppedNotes(source.records, corrections);
+const mapping = { sourceSha256: source.sha256, records: [...entries.flatMap((e, i) => e.sourceIds.map(sourceId => ({
   sourceId, cardId: ids[i], chapter: e.chapter, ...(sourceId !== e.id ? { mergedInto: e.id } : {}),
-}))) };
+}))), ...dropped.map(d => ({ ...d, dropped: true }))] };
 const report = { source: source.url, sourceSha256: source.sha256, sourceRecords: source.records.length,
-  repairedRecords: entries.length, uniqueCards: new Set(ids).size,
+  repairedRecords: entries.length, droppedRecords: dropped.length, uniqueCards: new Set(ids).size,
   chapters: path.units.map((u, i) => ({ chapter: i + 1, cards: u.cardIds.length })),
   corrections: entries.filter(e => e.correction).map(e => ({ sourceIds: e.sourceIds, reason: e.correction })),
   reviewedReuse: entries.filter(e => corrections[e.id]?.reuseId).map(e => ({ sourceId: e.id, cardId: corrections[e.id].reuseId })),

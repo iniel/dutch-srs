@@ -1,0 +1,20 @@
+nadat — after — KEEP
+gestolen — stolen — DROP (c1430 stelen)
+aangifte doen — report — DROP (c3391 aangifte = declaration; "report to police" expression missing)
+zat — was sitting — DROP (c214 zitten)
+zulk — such — KEEP
+toen — when — EXTRA (c1136 toen = then; conjunction "when" sense missing)
+lag — was, lay — DROP (c350 liggen)
+gezocht — searched — DROP (c275 zoeken)
+gelegd — placed — DROP (c1083 leggen)
+had — had — DROP (c97 hebben)
+viel — fell — DROP (c1326 vallen)
+gehaald — took — DROP (c527 halen)
+ziet eruit — looks like — DROP (c937 Hoe ziet... eruit?)
+oei — um, oh — KEEP
+in ieder geval — at any rate — ADD (c2071 het geval head word only; c5960 althans / c5599 sowieso are synonyms)
+de rekening — account — EXTRA (c1038 de rekening = bill; bank-account sense missing, c8080 rekeningnummer)
+hoewel — although — KEEP
+opgeschreven — written down — DROP (c2040 opschrijven)
+gevonden — found — DROP (c357 vinden)
+nemen contact op — contact, get in touch — DROP (c1141 het contact + c1192 opnemen = answer phone; "contact opnemen" expression missing)

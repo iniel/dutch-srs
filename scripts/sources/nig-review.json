@@ -731,6 +731,102 @@
     {
       "cardId": "c659",
       "gloss": "to get"
+    },
+    {
+      "cardId": "c1091",
+      "gloss": "okay"
+    },
+    {
+      "cardId": "c1091",
+      "gloss": "right"
+    },
+    {
+      "cardId": "c906",
+      "gloss": "only"
+    },
+    {
+      "cardId": "c547",
+      "gloss": "any"
+    },
+    {
+      "cardId": "c547",
+      "gloss": "as well"
+    },
+    {
+      "cardId": "c700",
+      "gloss": "for"
+    },
+    {
+      "cardId": "c2871",
+      "gloss": "cheers"
+    },
+    {
+      "cardId": "c2155",
+      "gloss": "dish"
+    },
+    {
+      "cardId": "c865",
+      "gloss": "as"
+    },
+    {
+      "cardId": "c95",
+      "gloss": "a little"
+    },
+    {
+      "cardId": "c95",
+      "gloss": "a bit"
+    },
+    {
+      "cardId": "c693",
+      "gloss": "(in order) to"
+    },
+    {
+      "cardId": "c214",
+      "gloss": "to fit"
+    },
+    {
+      "cardId": "c383",
+      "gloss": "than"
+    },
+    {
+      "cardId": "c1096",
+      "gloss": "ticket"
+    },
+    {
+      "cardId": "c1615",
+      "gloss": "short distance"
+    },
+    {
+      "cardId": "c769",
+      "gloss": "to go wrong"
+    },
+    {
+      "cardId": "c769",
+      "gloss": "to fail"
+    },
+    {
+      "cardId": "c3065",
+      "gloss": "to put on"
+    },
+    {
+      "cardId": "c791",
+      "gloss": "like"
+    },
+    {
+      "cardId": "c1718",
+      "gloss": "to show (a film)"
+    },
+    {
+      "cardId": "c1997",
+      "gloss": "darling"
+    },
+    {
+      "cardId": "c1136",
+      "gloss": "when"
+    },
+    {
+      "cardId": "c1038",
+      "gloss": "account"
     }
   ],
   "decisions": [
@@ -756,9 +852,10 @@
     {
       "nigCardId": "c10164",
       "book": "ben",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c65",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10165",
@@ -779,9 +876,10 @@
     {
       "nigCardId": "c10167",
       "book": "is",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c65",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10168",
@@ -836,7 +934,7 @@
       "nigCardId": "c10173",
       "book": "ben",
       "action": "reuse-add-sense",
-      "targetId": "c10164",
+      "targetId": "c65",
       "addGloss": [
         "are"
       ],
@@ -846,9 +944,10 @@
     {
       "nigCardId": "c10174",
       "book": "je",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse",
+      "targetId": "c777",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10175",
@@ -865,8 +964,8 @@
       "nigCardId": "c10176",
       "book": "Engeland",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10177",
@@ -895,9 +994,10 @@
     {
       "nigCardId": "c10180",
       "book": "hoe heet jij?",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c35",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10181",
@@ -910,16 +1010,17 @@
     {
       "nigCardId": "c10182",
       "book": "waar ... vandaan",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c89",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10183",
       "book": "China",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10184",
@@ -971,8 +1072,8 @@
       "nigCardId": "c10189",
       "book": "hoor",
       "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "subtype": "extra-spelled-differently",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10190",
@@ -985,16 +1086,18 @@
     {
       "nigCardId": "c10191",
       "book": "heeft",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse",
+      "targetId": "c97",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10192",
       "book": "het",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c10104",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10193",
@@ -1033,8 +1136,8 @@
       "nigCardId": "c10196",
       "book": "straks",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "extra-spelled-differently",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10197",
@@ -1059,15 +1162,20 @@
       "nigCardId": "c10199",
       "book": "ja hoor",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "subtype": "extra-spelled-differently",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10200",
       "book": "zo",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c1091",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "okay",
+        "right"
+      ]
     },
     {
       "nigCardId": "c10201",
@@ -1084,15 +1192,19 @@
       "nigCardId": "c10202",
       "book": "al lang",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10203",
       "book": "pas",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse-add-sense",
+      "targetId": "c906",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "only"
+      ]
     },
     {
       "nigCardId": "c10204",
@@ -1120,16 +1232,18 @@
     {
       "nigCardId": "c10206",
       "book": "ik ben jarig",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1114",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10207",
       "book": "wat leuk",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c85",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10208",
@@ -1153,23 +1267,30 @@
     {
       "nigCardId": "c10210",
       "book": "nog",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c547",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "any",
+        "as well"
+      ]
     },
     {
       "nigCardId": "c10211",
       "book": "het bezoek",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c870",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10212",
       "book": "jonger",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c535",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10213",
@@ -1185,16 +1306,18 @@
     {
       "nigCardId": "c10214",
       "book": "langer",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c622",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10215",
       "book": "nog meer",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c547",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10216",
@@ -1216,7 +1339,7 @@
       "nigCardId": "c10218",
       "book": "nog",
       "action": "reuse-add-sense",
-      "targetId": "c10210",
+      "targetId": "c547",
       "addGloss": [
         "as well"
       ],
@@ -1275,16 +1398,18 @@
     {
       "nigCardId": "c10224",
       "book": "komen op bezoek",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c870",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10225",
       "book": "Indonesië",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c4069",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10226",
@@ -1305,16 +1430,21 @@
     {
       "nigCardId": "c10228",
       "book": "op vakantie",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c814",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10229",
       "book": "voor",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c700",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "for"
+      ]
     },
     {
       "nigCardId": "c10230",
@@ -1335,23 +1465,26 @@
     {
       "nigCardId": "c10232",
       "book": "eens",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1304",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10233",
       "book": "wil",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c233",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10234",
       "book": "11.00 uur",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c600",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10235",
@@ -1386,16 +1519,18 @@
     {
       "nigCardId": "c10238",
       "book": "dit is",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c10111",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10239",
       "book": "prettig met je kennis te maken",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c2481",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10240",
@@ -1408,16 +1543,18 @@
     {
       "nigCardId": "c10241",
       "book": "wil graag",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c233",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10242",
       "book": "biertje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c885",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10243",
@@ -1446,9 +1583,10 @@
     {
       "nigCardId": "c10246",
       "book": "mag",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c610",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10247",
@@ -1485,23 +1623,29 @@
     {
       "nigCardId": "c10251",
       "book": "proost",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c2871",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "cheers"
+      ]
     },
     {
       "nigCardId": "c10252",
       "book": "op je verjaardag",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c996",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10253",
       "book": "het poosje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c10135",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10254",
@@ -1517,16 +1661,18 @@
     {
       "nigCardId": "c10255",
       "book": "dat is",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c10105",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10256",
       "book": "ja, graag",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c82",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10257",
@@ -1540,8 +1686,8 @@
       "nigCardId": "c10258",
       "book": "nog maar",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10259",
@@ -1630,23 +1776,25 @@
     {
       "nigCardId": "c10267",
       "book": "niet zo",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c61",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10268",
       "book": "een paar dagen",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1441",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10269",
       "book": "Venetië",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "drop",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10270",
@@ -1678,9 +1826,10 @@
     {
       "nigCardId": "c10273",
       "book": "foto's maken",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c565",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10274",
@@ -1693,9 +1842,10 @@
     {
       "nigCardId": "c10275",
       "book": "kijken naar",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c241",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10276",
@@ -1745,16 +1895,18 @@
     {
       "nigCardId": "c10280",
       "book": "dat lukt niet",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1438",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10281",
       "book": "kan",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c348",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10282",
@@ -1767,16 +1919,18 @@
     {
       "nigCardId": "c10283",
       "book": "zal",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1281",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10284",
       "book": "de spaghetti carbonara",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c4135",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10285",
@@ -1808,30 +1962,33 @@
     {
       "nigCardId": "c10288",
       "book": "hartstikke leuk",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c2459",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10289",
       "book": "vind ik ook",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c423",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10290",
       "book": "ik moet ervandoor",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c218",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10291",
       "book": "ervandoor",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10292",
@@ -1856,8 +2013,8 @@
       "nigCardId": "c10294",
       "book": "doe de groeten aan",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10295",
@@ -1870,9 +2027,10 @@
     {
       "nigCardId": "c10296",
       "book": "tot dan",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c698",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10297",
@@ -1896,16 +2054,18 @@
     {
       "nigCardId": "c10299",
       "book": "wie is er aan de beurt?",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1567",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10300",
       "book": "de beurt",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1567",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10301",
@@ -1919,8 +2079,8 @@
       "nigCardId": "c10302",
       "book": "de courgette",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10303",
@@ -1960,9 +2120,13 @@
     {
       "nigCardId": "c10307",
       "book": "het gerecht",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c2155",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "dish"
+      ]
     },
     {
       "nigCardId": "c10308",
@@ -1976,8 +2140,8 @@
       "nigCardId": "c10309",
       "book": "de andijvie",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10310",
@@ -1993,9 +2157,10 @@
     {
       "nigCardId": "c10311",
       "book": "spekjes",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c2613",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10312",
@@ -2059,9 +2224,10 @@
     {
       "nigCardId": "c10319",
       "book": "was",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c65",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10320",
@@ -2079,36 +2245,38 @@
       "nigCardId": "c10321",
       "book": "champignons",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10322",
       "book": "de peterselie",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10323",
       "book": "het bosje",
       "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10324",
       "book": "verder nog iets?",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c440",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10325",
       "book": "boontjes",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c453",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10326",
@@ -2129,30 +2297,32 @@
     {
       "nigCardId": "c10328",
       "book": "wel",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "tiebreak: second reviewer more confident"
+      "action": "reuse",
+      "targetId": "c648",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10329",
       "book": "waarnaartoe",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10330",
       "book": "erbij",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10331",
       "book": "geeft niet",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1489",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10332",
@@ -2181,15 +2351,16 @@
       "nigCardId": "c10334",
       "book": "de serveerster",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10335",
       "book": "gaan zitten",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c214",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10336",
@@ -2206,16 +2377,18 @@
     {
       "nigCardId": "c10337",
       "book": "te",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c613",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10338",
       "book": "ik heb dorst",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c2423",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10339",
@@ -2240,8 +2413,8 @@
       "nigCardId": "c10341",
       "book": "het hoofdgerecht",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10342",
@@ -2254,37 +2427,43 @@
     {
       "nigCardId": "c10343",
       "book": "de honger",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1641",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10344",
       "book": "de mosterdsoep",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10345",
       "book": "de mosterd",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10346",
       "book": "als",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c865",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "as"
+      ]
     },
     {
       "nigCardId": "c10347",
       "book": "frietjes",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1030",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10348",
@@ -2300,9 +2479,10 @@
     {
       "nigCardId": "c10349",
       "book": "o nee",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1967",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10350",
@@ -2338,9 +2518,10 @@
     {
       "nigCardId": "c10353",
       "book": "momentje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c604",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10354",
@@ -2382,8 +2563,8 @@
       "nigCardId": "c10358",
       "book": "de paella",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10359",
@@ -2418,9 +2599,14 @@
     {
       "nigCardId": "c10362",
       "book": "wat",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c95",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "a little",
+        "a bit"
+      ]
     },
     {
       "nigCardId": "c10363",
@@ -2446,8 +2632,8 @@
       "nigCardId": "c10365",
       "book": "het toetje",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10366",
@@ -2469,8 +2655,8 @@
       "nigCardId": "c10368",
       "book": "laat de rest maar zitten",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10369",
@@ -2486,16 +2672,17 @@
     {
       "nigCardId": "c10370",
       "book": "dank u",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c224",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10371",
       "book": "de kledingzaak",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10372",
@@ -2512,9 +2699,13 @@
     {
       "nigCardId": "c10373",
       "book": "om",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c693",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "(in order) to"
+      ]
     },
     {
       "nigCardId": "c10374",
@@ -2530,9 +2721,10 @@
     {
       "nigCardId": "c10375",
       "book": "groter",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c79",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10376",
@@ -2580,16 +2772,18 @@
     {
       "nigCardId": "c10381",
       "book": "ze",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c52",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10382",
       "book": "maar even",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c640",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10383",
@@ -2616,16 +2810,24 @@
     {
       "nigCardId": "c10385",
       "book": "zitten",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c214",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "to fit"
+      ]
     },
     {
       "nigCardId": "c10386",
       "book": "dan",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c383",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "than"
+      ]
     },
     {
       "nigCardId": "c10387",
@@ -2649,9 +2851,10 @@
     {
       "nigCardId": "c10389",
       "book": "kleinere",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c84",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10390",
@@ -2664,9 +2867,10 @@
     {
       "nigCardId": "c10391",
       "book": "kleinste",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c84",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10392",
@@ -2718,16 +2922,18 @@
     {
       "nigCardId": "c10397",
       "book": "staat me het best",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c212",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10398",
       "book": "het best",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c56",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10399",
@@ -2785,9 +2991,9 @@
     {
       "nigCardId": "c10404",
       "book": "de bovenwoning",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "drop",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10405",
@@ -2820,15 +3026,15 @@
       "nigCardId": "c10408",
       "book": "de huurprijs",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10409",
       "book": "laten zien",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10410",
@@ -2871,9 +3077,10 @@
     {
       "nigCardId": "c10414",
       "book": "de vierkante meter",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c944",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10415",
@@ -2922,9 +3129,10 @@
     {
       "nigCardId": "c10420",
       "book": "hoeven",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1006",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10421",
@@ -2953,9 +3161,10 @@
     {
       "nigCardId": "c10424",
       "book": "het huisje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c260",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10425",
@@ -2972,8 +3181,8 @@
       "nigCardId": "c10426",
       "book": "gemeubileerd",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10427",
@@ -3030,15 +3239,16 @@
       "nigCardId": "c10433",
       "book": "benedenwoning",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10434",
       "book": "dat lijkt me fantastisch",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1065",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10435",
@@ -3055,9 +3265,10 @@
     {
       "nigCardId": "c10436",
       "book": "zo snel mogelijk",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c198",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10437",
@@ -3070,9 +3281,9 @@
     {
       "nigCardId": "c10438",
       "book": "wat is er aan de hand?",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "drop",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10439",
@@ -3089,16 +3300,18 @@
     {
       "nigCardId": "c10440",
       "book": "zit ik onder de bultjes",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c8133",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10441",
       "book": "bultjes",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c8133",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10442",
@@ -3127,30 +3340,34 @@
     {
       "nigCardId": "c10445",
       "book": "van alles",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c667",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10446",
       "book": "geprobeerd",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1146",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10447",
       "book": "geholpen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c252",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10448",
       "book": "begonnen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c91",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10449",
@@ -3166,9 +3383,10 @@
     {
       "nigCardId": "c10450",
       "book": "gedaan",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c391",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10451",
@@ -3184,9 +3402,10 @@
     {
       "nigCardId": "c10452",
       "book": "gewerkt",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c649",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10453",
@@ -3202,9 +3421,10 @@
     {
       "nigCardId": "c10454",
       "book": "bekeken",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1775",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10455",
@@ -3217,23 +3437,26 @@
     {
       "nigCardId": "c10456",
       "book": "geweest",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c65",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10457",
       "book": "het wedstrijdje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c838",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10458",
       "book": "gespeeld",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c832",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10459",
@@ -3246,9 +3469,10 @@
     {
       "nigCardId": "c10460",
       "book": "gedronken",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c225",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10461",
@@ -3264,23 +3488,26 @@
     {
       "nigCardId": "c10462",
       "book": "gegeten",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c384",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10463",
       "book": "afgelopen",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1417",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10464",
       "book": "vergeten",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c356",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10465",
@@ -3293,9 +3520,10 @@
     {
       "nigCardId": "c10466",
       "book": "o ja",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c890",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10467",
@@ -3328,8 +3556,8 @@
       "nigCardId": "c10470",
       "book": "lijkt op",
       "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10471",
@@ -3343,8 +3571,8 @@
       "nigCardId": "c10472",
       "book": "geef mee",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10473",
@@ -3393,8 +3621,8 @@
       "nigCardId": "c10478",
       "book": "de fietsenmaker",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10479",
@@ -3411,36 +3639,40 @@
       "nigCardId": "c10480",
       "book": "total loss",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10481",
       "book": "gebeurd",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1052",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10482",
       "book": "gevallen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1326",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10483",
       "book": "regende",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1069",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10484",
       "book": "fietste weg",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c810",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10485",
@@ -3456,30 +3688,32 @@
     {
       "nigCardId": "c10486",
       "book": "wilde",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c233",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10487",
       "book": "rechts afslaan",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c757",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10488",
       "book": "gleed weg",
       "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10489",
       "book": "mankeerde",
       "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10490",
@@ -3492,9 +3726,10 @@
     {
       "nigCardId": "c10491",
       "book": "een slag in het wiel",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c2880",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10492",
@@ -3538,22 +3773,23 @@
       "nigCardId": "c10496",
       "book": "zo'n",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10497",
       "book": "de bagagedrager",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10498",
       "book": "afgebroken",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c8749",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10499",
@@ -3567,8 +3803,8 @@
       "nigCardId": "c10500",
       "book": "de trapper",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10501",
@@ -3581,9 +3817,10 @@
     {
       "nigCardId": "c10502",
       "book": "verstaan",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c882",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10503",
@@ -3612,23 +3849,25 @@
     {
       "nigCardId": "c10506",
       "book": "deden",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c391",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10507",
       "book": "in orde maken",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10508",
       "book": "tiptop in orde",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c570",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10509",
@@ -3650,8 +3889,8 @@
       "nigCardId": "c10511",
       "book": "Koningsdag",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10512",
@@ -3678,9 +3917,10 @@
     {
       "nigCardId": "c10514",
       "book": "betekent",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c201",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10515",
@@ -3697,36 +3937,43 @@
       "nigCardId": "c10516",
       "book": "hoera",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10517",
       "book": "van harte gefeliciteerd",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c935",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10518",
       "book": "feliciteren met",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c935",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10519",
       "book": "het cadeautje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1003",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10520",
       "book": "het kaartje",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c1096",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "ticket"
+      ]
     },
     {
       "nigCardId": "c10521",
@@ -3739,23 +3986,24 @@
     {
       "nigCardId": "c10522",
       "book": "nog geen",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c547",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10523",
       "book": "Cubaanse",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10524",
       "book": "ben gek op",
       "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10525",
@@ -3768,9 +4016,10 @@
     {
       "nigCardId": "c10526",
       "book": "verteld",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c848",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10527",
@@ -3783,9 +4032,10 @@
     {
       "nigCardId": "c10528",
       "book": "je weet de weg",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c245",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10529",
@@ -3798,9 +4048,10 @@
     {
       "nigCardId": "c10530",
       "book": "gezien",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c213",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10531",
@@ -3816,9 +4067,10 @@
     {
       "nigCardId": "c10532",
       "book": "verveel me",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c9551",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10533",
@@ -3842,16 +4094,17 @@
     {
       "nigCardId": "c10535",
       "book": "sinds kort",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c549",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10536",
       "book": "het bevalt me",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10537",
@@ -3865,8 +4118,8 @@
       "nigCardId": "c10538",
       "book": "de logopedie",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10539",
@@ -3883,9 +4136,10 @@
     {
       "nigCardId": "c10540",
       "book": "het bijbaantje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c4146",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10541",
@@ -3901,9 +4155,10 @@
     {
       "nigCardId": "c10542",
       "book": "interesseer je",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c5261",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10543",
@@ -3924,9 +4179,10 @@
     {
       "nigCardId": "c10545",
       "book": "niet echt",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1130",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10546",
@@ -3950,16 +4206,18 @@
     {
       "nigCardId": "c10548",
       "book": "wat toevallig",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1455",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10549",
       "book": "de Wandelbeurs",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c818",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10550",
@@ -3976,8 +4234,8 @@
       "nigCardId": "c10551",
       "book": "de wandelreis",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10552",
@@ -3991,15 +4249,16 @@
       "nigCardId": "c10553",
       "book": "Chili",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10554",
       "book": "langzamer",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c880",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10555",
@@ -4023,9 +4282,10 @@
     {
       "nigCardId": "c10557",
       "book": "Bent u hier bekend?",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1124",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10558",
@@ -4100,9 +4360,13 @@
     {
       "nigCardId": "c10566",
       "book": "het stuk",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse-add-sense",
+      "targetId": "c1615",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "short distance"
+      ]
     },
     {
       "nigCardId": "c10567",
@@ -4210,15 +4474,15 @@
       "nigCardId": "c10578",
       "book": "ga ... om",
       "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10579",
       "book": "ga ... af",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10580",
@@ -4246,9 +4510,10 @@
     {
       "nigCardId": "c10582",
       "book": "bordjes",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c702",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10583",
@@ -4264,9 +4529,10 @@
     {
       "nigCardId": "c10584",
       "book": "makkelijker",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c209",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10585",
@@ -4290,23 +4556,30 @@
     {
       "nigCardId": "c10587",
       "book": "zei",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c118",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10588",
       "book": "kon",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c348",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10589",
       "book": "missen",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c769",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "to go wrong",
+        "to fail"
+      ]
     },
     {
       "nigCardId": "c10590",
@@ -4323,16 +4596,18 @@
     {
       "nigCardId": "c10591",
       "book": "meegenomen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c645",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10592",
       "book": "moest",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c218",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10593",
@@ -4348,23 +4623,25 @@
     {
       "nigCardId": "c10594",
       "book": "lekker",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c420",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10595",
       "book": "groeten",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c23",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10596",
       "book": "Doe haar de groeten terug",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "drop",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10597",
@@ -4388,30 +4665,32 @@
     {
       "nigCardId": "c10599",
       "book": "hè",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "tiebreak: first reviewer more confident"
+      "action": "reuse",
+      "targetId": "c1778",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10600",
       "book": "Zeg dat wel!",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "drop",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10601",
       "book": "ben verkouden",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1458",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10602",
       "book": "ik ben toe aan",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10603",
@@ -4444,22 +4723,24 @@
       "nigCardId": "c10606",
       "book": "schijnt",
       "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10607",
       "book": "kom ... verder",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c2582",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10608",
       "book": "lekker warm",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c420",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10609",
@@ -4476,15 +4757,15 @@
       "nigCardId": "c10610",
       "book": "bonbons",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10611",
       "book": "de bos",
       "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "subtype": "extra-spelled-differently",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10612",
@@ -4586,30 +4867,33 @@
     {
       "nigCardId": "c10622",
       "book": "hadden",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c97",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10623",
       "book": "hebben gehad",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c97",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10624",
       "book": "onder de auto gekomen",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10625",
       "book": "hebben verdriet gehad om",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1880",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10626",
@@ -4631,8 +4915,8 @@
       "nigCardId": "c10628",
       "book": "volgens mij",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10629",
@@ -4653,23 +4937,26 @@
     {
       "nigCardId": "c10631",
       "book": "twee weken geleden",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1307",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10632",
       "book": "jongen",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c83",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10633",
       "book": "gekregen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c254",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10634",
@@ -4750,9 +5037,10 @@
     {
       "nigCardId": "c10642",
       "book": "de aanbieding",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c471",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10643",
@@ -4800,9 +5088,10 @@
     {
       "nigCardId": "c10647",
       "book": "bent van plan",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1207",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10648",
@@ -4827,8 +5116,8 @@
       "nigCardId": "c10650",
       "book": "de krachttraining",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10651",
@@ -4842,22 +5131,23 @@
       "nigCardId": "c10652",
       "book": "de cardio",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10653",
       "book": "de groepsles",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10654",
       "book": "kijk mee",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c241",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10655",
@@ -4878,9 +5168,10 @@
     {
       "nigCardId": "c10657",
       "book": "op die manier",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c821",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10658",
@@ -4894,22 +5185,22 @@
       "nigCardId": "c10659",
       "book": "de sportkleren",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10660",
       "book": "gaat in",
       "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "tiebreak: first reviewer more confident"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10661",
       "book": "het buikspierkwartier",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10662",
@@ -4925,9 +5216,13 @@
     {
       "nigCardId": "c10663",
       "book": "aandoen",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "tiebreak: first reviewer more confident"
+      "action": "reuse-add-sense",
+      "targetId": "c3065",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "to put on"
+      ]
     },
     {
       "nigCardId": "c10664",
@@ -4941,22 +5236,23 @@
       "nigCardId": "c10665",
       "book": "het pasje",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10666",
       "book": "energiedrankjes",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10667",
       "book": "het drankje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1029",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10668",
@@ -4973,22 +5269,23 @@
       "nigCardId": "c10669",
       "book": "het muntgeld",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10670",
       "book": "het saldo",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10671",
       "book": "laden",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse",
+      "targetId": "c3268",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10672",
@@ -5004,37 +5301,40 @@
     {
       "nigCardId": "c10673",
       "book": "het plezier",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c893",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10674",
       "book": "het openbaar vervoer",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10675",
       "book": "Colombia",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10676",
       "book": "ging",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c111",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10677",
       "book": "duurde",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c589",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10678",
@@ -5070,30 +5370,33 @@
     {
       "nigCardId": "c10681",
       "book": "dragen",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse",
+      "targetId": "c617",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10682",
       "book": "het grapje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1676",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10683",
       "book": "het raampje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c262",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10684",
       "book": "net als",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10685",
@@ -5109,9 +5412,10 @@
     {
       "nigCardId": "c10686",
       "book": "lekker",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "tiebreak: equal confidence, keep separate"
+      "action": "reuse",
+      "targetId": "c420",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10687",
@@ -5144,50 +5448,56 @@
       "nigCardId": "c10690",
       "book": "achter de rug",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10691",
       "book": "pony's",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10692",
       "book": "de wei",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10693",
       "book": "net",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c791",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "like"
+      ]
     },
     {
       "nigCardId": "c10694",
       "book": "de shetlandpony",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10695",
       "book": "gewend",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1639",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10696",
       "book": "zo meteen",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c672",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10697",
@@ -5246,9 +5556,10 @@
     {
       "nigCardId": "c10703",
       "book": "broodjes",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c363",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10704",
@@ -5261,23 +5572,25 @@
     {
       "nigCardId": "c10705",
       "book": "goede reis",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c56",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10706",
       "book": "maak wakker",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1258",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10707",
       "book": "de caissière",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10708",
@@ -5290,44 +5603,52 @@
     {
       "nigCardId": "c10709",
       "book": "wat stom",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1684",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10710",
       "book": "gekeken",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c241",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10711",
       "book": "is al bezig",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10712",
       "book": "gemist",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c769",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10713",
       "book": "draaien",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c1718",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "to show (a film)"
+      ]
     },
     {
       "nigCardId": "c10714",
       "book": "de zomerhitte",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1075",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10715",
@@ -5343,30 +5664,33 @@
     {
       "nigCardId": "c10716",
       "book": "opgenomen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1747",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10717",
       "book": "naar een verhaal van",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10718",
       "book": "de natuurdocumentaire",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c813",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10719",
       "book": "gesproken",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c168",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10720",
@@ -5379,16 +5703,17 @@
     {
       "nigCardId": "c10721",
       "book": "ondertiteld",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c8960",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10722",
       "book": "de rang",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10723",
@@ -5401,16 +5726,21 @@
     {
       "nigCardId": "c10724",
       "book": "de informatietechnologie",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c831",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10725",
       "book": "de schat",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c1997",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "darling"
+      ]
     },
     {
       "nigCardId": "c10726",
@@ -5426,9 +5756,10 @@
     {
       "nigCardId": "c10727",
       "book": "gedroomd",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c2123",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10728",
@@ -5452,9 +5783,10 @@
     {
       "nigCardId": "c10730",
       "book": "ben uitgerust",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c1456",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10731",
@@ -5470,9 +5802,10 @@
     {
       "nigCardId": "c10732",
       "book": "het ontbijtje",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c388",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10733",
@@ -5488,23 +5821,25 @@
     {
       "nigCardId": "c10734",
       "book": "het college",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c5682",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10735",
       "book": "de filosofiegeschiedenis",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c6506",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10736",
       "book": "de hypotheek",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10737",
@@ -5522,15 +5857,16 @@
       "nigCardId": "c10738",
       "book": "gehaktballetjes",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10739",
       "book": "de tomatensaus",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "first"
+      "action": "reuse",
+      "targetId": "c400",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10740",
@@ -5546,23 +5882,25 @@
     {
       "nigCardId": "c10741",
       "book": "ben kwijt",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c803",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10742",
       "book": "gekookt",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c394",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10743",
       "book": "pittig",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10744",
@@ -5586,9 +5924,10 @@
     {
       "nigCardId": "c10746",
       "book": "geluncht",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c3086",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10747",
@@ -5663,9 +6002,10 @@
     {
       "nigCardId": "c10754",
       "book": "uitgenodigd",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1104",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10755",
@@ -5687,8 +6027,8 @@
       "nigCardId": "c10757",
       "book": "nadat",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10758",
@@ -5704,16 +6044,18 @@
     {
       "nigCardId": "c10759",
       "book": "gestolen",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1430",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10760",
       "book": "aangifte doen",
-      "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c3391",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10761",
@@ -5729,51 +6071,60 @@
     {
       "nigCardId": "c10762",
       "book": "zat",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c214",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10763",
       "book": "zulk",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10764",
       "book": "toen",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c1136",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "when"
+      ]
     },
     {
       "nigCardId": "c10765",
       "book": "lag",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c350",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10766",
       "book": "gezocht",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c275",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10767",
       "book": "gelegd",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1083",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10768",
       "book": "had",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c97",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10769",
@@ -5791,16 +6142,18 @@
     {
       "nigCardId": "c10770",
       "book": "viel",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1326",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10771",
       "book": "gehaald",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c527",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10772",
@@ -5828,23 +6181,24 @@
     {
       "nigCardId": "c10774",
       "book": "ziet eruit",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c937",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10775",
       "book": "oei",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10776",
       "book": "in ieder geval",
       "action": "keep-new",
-      "subtype": "book-phrase",
-      "by": "both"
+      "subtype": "add",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10777",
@@ -5861,9 +6215,13 @@
     {
       "nigCardId": "c10778",
       "book": "de rekening",
-      "action": "keep-new",
-      "subtype": "different-sense",
-      "by": "both"
+      "action": "reuse-add-sense",
+      "targetId": "c1038",
+      "subtype": "extra",
+      "by": "unmatched review",
+      "addGloss": [
+        "account"
+      ]
     },
     {
       "nigCardId": "c10779",
@@ -5880,8 +6238,8 @@
       "nigCardId": "c10780",
       "book": "hoewel",
       "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "subtype": "keep",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10781",
@@ -5917,23 +6275,26 @@
     {
       "nigCardId": "c10784",
       "book": "opgeschreven",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c2040",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10785",
       "book": "gevonden",
-      "action": "keep-new",
-      "subtype": "irregular-form",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c357",
+      "subtype": "drop",
+      "by": "unmatched review"
     },
     {
       "nigCardId": "c10786",
       "book": "nemen contact op",
-      "action": "keep-new",
-      "subtype": "not-in-deck",
-      "by": "both"
+      "action": "reuse",
+      "targetId": "c1141",
+      "subtype": "drop",
+      "by": "unmatched review"
     }
   ]
 }

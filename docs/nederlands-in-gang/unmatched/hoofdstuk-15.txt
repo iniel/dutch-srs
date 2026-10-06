@@ -1,0 +1,19 @@
+het openbaar vervoer — public transport — ADD (c1873 openbaar + c1547 het vervoer exist separately; fixed phrase missing)
+Colombia — Colombia — KEEP
+ging — went — DROP (c111 gaan)
+duurde — took, lasted — DROP (c589 duren)
+dragen — carry — DROP (c617 dragen = to wear; carry sense missing)
+het grapje — joke — DROP (c1676 de grap)
+het raampje — window — DROP (c262 het raam)
+net als — like — ADD (c791 net = just, c1531 zoals = like; phrase missing)
+lekker — nicely — DROP (c420 lekker)
+achter de rug — behind (you) — ADD (c491 achter, c486 de rug; idiom missing)
+pony's — ponies — KEEP
+de wei — field — ADD (c3284 het weiland = pasture, synonym; wei itself missing)
+net — like — EXTRA (c791 net = just, c623 net = neat; "like" sense missing)
+de shetlandpony — Shetland pony — KEEP
+gewend — used to — DROP (c1639 gewend zijn)
+zo meteen — very soon — DROP (c672 meteen = right away; zo meteen = soon)
+broodjes — bread rolls — DROP (c363 het brood = bread; broodje = roll is a distinct diminutive)
+goede reis — have a good trip — DROP (c56 goed + c1220 de reis; set greeting missing)
+maak wakker — wake you up — DROP (c1258 wakker, c3345 wekken = to wake; wakker maken missing)

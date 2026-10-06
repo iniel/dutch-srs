@@ -1,0 +1,11 @@
+ben — am, are — DROP (c65 zijn)
+is — is — DROP (c65 zijn)
+je — your (singular) — DROP (c777 jouw)
+Engeland — England — KEEP
+hoe heet jij? — what's your name? — DROP (c35 heten)
+waar ... vandaan — where ... from — DROP (c89 Waar kom je vandaan?)
+China — China — KEEP
+hoor — (particle expressing friendliness) — EXTRA (c81 horen = to hear; particle sense missing)
+heeft — has — DROP (c97 hebben)
+het — the — DROP (c10104 het = it, c10102 de = the; neuter article sense missing)
+straks — soon, later — EXTRA (c748 tot straks = see you later; bare straks missing)

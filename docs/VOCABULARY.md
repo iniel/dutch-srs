@@ -3,7 +3,7 @@
 Cards live in `public/cards.json` (committed) — this file is the **hand-owned source of truth**, not a
 generated artifact. The first 1748 cards (ids `c0`–`c1747`) originally came from two TaalCompleet Anki
 decks (`A1 · U1` … `A2 · U8`); three further levels — `A+`, `B1`, `B2` (~8350 cards, ids `c1748`+) — were
-imported from the NT2Lex frequency list. 289 cards (ids within `c10162`–`c10786`, with gaps; groups
+imported from the NT2Lex frequency list. 83 cards (ids within `c10162`–`c10786`, with gaps; groups
 `Nederlands in gang · N`, **no `level`**) came from the *Nederlands in gang* textbook deck (see below). All of it now lives in
 `cards.json` and is edited directly.
 
@@ -120,7 +120,8 @@ Committed provenance in `scripts/sources/`:
   checksum aborts). `nig-report.json` — counts per chapter, corrections, reviewed reuses.
 - `nig-new-ids.json`, `nig-audio.json`, `nig-coverage.json`, `nig-baseline.json` — see below.
 
-Rules: no note is dropped silently — each is mapped, merged into its pair, or the import throws. Only an
+Rules: no note is dropped silently — each is mapped, merged into its pair, dropped by a reviewed `drop: true`
+correction (recorded in `nig-mapping.json` as `dropped: true`, no `cardId`), or the import throws. Only an
 exact match on normalized Dutch text + English answer set (whitespace, case, HTML) reuses an existing card
 automatically. Every other reuse is a reviewed `reuseId` in `nig-corrections.json`, and a reviewed `reuseId`
 overrides the pinned mapping. **Forms:** regular forms map to their lemma card (`broers (broer)` → `de broer`,
@@ -161,7 +162,19 @@ node scripts/nig-match/validate.mjs [--plan-second]  # check verdict-NN.json; pl
 node scripts/nig-match/report.mjs           # nig-review.txt: agreed vs disputed, $-marks override
 node scripts/nig-match/apply.mjs            # reuseId corrections + gloss additions (+ nig-review.json)
 npm run import:nig && node scripts/nig-match/prune.mjs && npm run finish:nig
+node scripts/nig-match/unmatched.mjs        # docs/nederlands-in-gang/unmatched/hoofdstuk-NN.txt: unmatched "Dutch — English" pairs
 ```
+**Second round (hand review of the 289 leftovers).** One subagent per chapter searched the existing cards
+again, then each line in `docs/nederlands-in-gang/unmatched/hoofdstuk-NN.txt` got a hand-set final status:
+`KEEP`/`ADD` (stays a book card), `EXTRA` (merge into the first card named, appending the book's answers),
+or `DROP` (merge into the first card named, or with no card named, drop the note from the chapter).
+`node scripts/nig-match/apply-unmatched.mjs` turns the files into `reuseId`/`drop` corrections, gloss
+additions and `nig-review.json` decisions (`by: "unmatched review"`), then the same
+`import:nig && prune.mjs && finish:nig` run applies them. EXTRA lines whose named card is a different word
+(`hoor` → `horen`, `straks` → `tot straks`, `ja hoor` → `ja`, `de bos` → `het bos`) stayed separate cards.
+Result: 181 merged, 20 merged with 24 added answers, 5 dropped, 83 book cards remain; the chapters hold 930
+unique cards. The annotated files are the record of these decisions, so **do not re-run `unmatched.mjs`**:
+it overwrites them.
 - **Candidates** are found by headword, book annotation, the paradigm of existing cards (`notes: "forms: …"`
   and enrichment grammar), near-forms, other book cards, and shared English answers. **Tier A** (one
   headword match that already accepts every book answer, and no competing form) is accepted without review.

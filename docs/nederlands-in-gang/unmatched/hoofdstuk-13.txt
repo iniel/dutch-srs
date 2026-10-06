@@ -1,0 +1,25 @@
+zei — said — DROP (c118 zeggen)
+kon — could — DROP (c348 kunnen)
+missen — go wrong, fail — EXTRA (c769 missen = to miss; c4447 misgaan = go wrong; "can't fail" sense missing)
+meegenomen — brought — DROP (c645 meenemen)
+moest — had to — DROP (c218 moeten)
+lekker — well — DROP (c420 lekker = delicious, nice; adverbial "well" sense missing)
+groeten — greetings — DROP (c23 groeten = to greet verb; c811 groetjes = greetings)
+Doe haar de groeten terug — Give her our regards — DROP
+hè — isn't it — DROP (c1778 hè = huh, surprised; tag-question sense missing)
+Zeg dat wel! — You can say that again! — DROP
+ben verkouden — have a cold — DROP (c1458 verkouden)
+ik ben toe aan — I need — KEEP
+schijnt — seems — ADD (c1071 schijnen = to shine; "seem" sense missing)
+kom ... verder — come in — DROP (c2582 verder = further; c1568 binnenkomen = come in; idiom missing)
+lekker warm — nice and warm — DROP (c420 lekker, c676 warm)
+bonbons — chocolates — KEEP
+de bos — bunch — EXTRA (c1213 het bos = forest; de bos = bunch is different word)
+hadden — used to have, had — DROP (c97 hebben)
+hebben gehad — had — DROP (c97 hebben)
+onder de auto gekomen — was run over — KEEP
+hebben verdriet gehad om — grieved for — DROP (c1880 het verdriet = grief; "verdriet hebben om" phrase missing)
+volgens mij — in my opinion — ADD (c1168 volgens = according to; fixed phrase missing)
+twee weken geleden — two weeks ago — DROP (c1307 geleden)
+jongen — litter — DROP (c83 de jongen = boy; animal-young sense missing)
+gekregen — had — DROP (c254 krijgen)

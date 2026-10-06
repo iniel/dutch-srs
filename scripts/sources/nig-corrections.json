@@ -3,7 +3,14 @@
     "mergeWith": "1570505175614",
     "front": "komen op bezoek (op bezoek komen)",
     "back": "pay a visit",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c870",
+    "expectedDutch": "op bezoek",
+    "expectedEnglish": [
+      "visiting"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): komen op bezoek -> op bezoek"
   },
   "1570505190112": {
     "mergeWith": "1570505190113",
@@ -123,13 +130,28 @@
     "mergeWith": "1570505252066",
     "front": "zit ik onder de bultjes",
     "back": "I'm covered in lumps / I have a rash",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c8133",
+    "expectedDutch": "bult",
+    "expectedEnglish": [
+      "bump"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): zit ik onder de bultjes -> bult"
   },
   "1570505252087": {
     "mergeWith": "1570505252088",
     "front": "het wedstrijdje (de wedstrijd)",
     "back": "match",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c838",
+    "expectedDutch": "de wedstrijd",
+    "expectedEnglish": [
+      "match",
+      "game"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het wedstrijdje -> de wedstrijd"
   },
   "1570505258097": {
     "mergeWith": "1570505258098",
@@ -150,13 +172,28 @@
     "mergeWith": "1570505264084",
     "front": "het cadeautje (het cadeau)",
     "back": "present",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c1003",
+    "expectedDutch": "het cadeau",
+    "expectedEnglish": [
+      "present",
+      "gift"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het cadeautje -> het cadeau"
   },
   "1570505264097": {
     "mergeWith": "1570505264098",
     "front": "je weet de weg (de weg weten)",
     "back": "you know the way",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c245",
+    "expectedDutch": "weten",
+    "expectedEnglish": [
+      "to know"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): je weet de weg -> weten"
   },
   "1570505279289": {
     "mergeWith": "1570505279290",
@@ -168,7 +205,14 @@
     "mergeWith": "1570505285037",
     "front": "bent van plan (van plan zijn)",
     "back": "intend",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c1207",
+    "expectedDutch": "het plan",
+    "expectedEnglish": [
+      "plan"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): bent van plan -> het plan"
   },
   "1570505285074": {
     "mergeWith": "1570505285075",
@@ -180,13 +224,27 @@
     "mergeWith": "1570505306180",
     "front": "ben uitgerust (uitgerust zijn)",
     "back": "feel well-rested",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c1456",
+    "expectedDutch": "uitrusten",
+    "expectedEnglish": [
+      "to rest"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ben uitgerust -> uitrusten"
   },
   "1570505313569": {
     "mergeWith": "1570505313570",
     "front": "nemen contact op (contact opnemen)",
     "back": "contact / get in touch",
-    "reason": "Repair a source row split across two Anki notes"
+    "reason": "Repair a source row split across two Anki notes",
+    "reuseId": "c1141",
+    "expectedDutch": "het contact",
+    "expectedEnglish": [
+      "contact"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): nemen contact op -> het contact"
   },
   "1570505226584": {
     "front": "natuurlijk",
@@ -228,14 +286,29 @@
   },
   "1570505175631": {
     "back": "(particle softening a request)",
-    "reason": "Replace unanswerable usage note with a descriptive answer"
+    "reason": "Replace unanswerable usage note with a descriptive answer",
+    "reuseId": "c1304",
+    "expectedDutch": "(nog) eens",
+    "expectedEnglish": [
+      "once",
+      "once again"
+    ],
+    "reuseReason": "Unmatched review (DROP): eens -> (nog) eens"
   },
   "1570505234000": {
     "reason": "Explicitly separate English synonyms",
     "english": [
       "a little",
       "a bit"
-    ]
+    ],
+    "reuseId": "c95",
+    "expectedDutch": "wat",
+    "expectedEnglish": [
+      "what",
+      "a little",
+      "a bit"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): wat -> wat"
   },
   "1570505285010": {
     "reason": "Explicitly separate English synonyms",
@@ -1475,13 +1548,13 @@
     "reuseReason": "Merge review (synonym-same-sense, first): kennismaken -> kennismaken"
   },
   "1570504901692": {
-    "reuseId": "c10164",
-    "expectedDutch": "ben",
+    "reuseId": "c65",
+    "expectedDutch": "zijn",
     "expectedEnglish": [
-      "am",
-      "are"
+      "to be"
     ],
-    "reuseReason": "Merge review (missing-sense, first): ben -> ben"
+    "reuseReason": "Unmatched review (DROP): ben -> zijn",
+    "form": true
   },
   "1570504901702": {
     "reuseId": "c735",
@@ -1622,7 +1695,8 @@
     "reuseId": "c214",
     "expectedDutch": "zitten",
     "expectedEnglish": [
-      "to sit"
+      "to sit",
+      "to fit"
     ],
     "reuseReason": "Merge review (regular-form, both): zitten -> zitten"
   },
@@ -1712,13 +1786,15 @@
     "reuseReason": "Merge review (regular-form, first): zussen -> de zus"
   },
   "1570505175601": {
-    "reuseId": "c10210",
+    "reuseId": "c547",
     "expectedDutch": "nog",
     "expectedEnglish": [
+      "still",
+      "yet",
       "any",
       "as well"
     ],
-    "reuseReason": "Merge review (synonym-same-sense, both): nog -> nog"
+    "reuseReason": "Unmatched review (EXTRA): nog -> nog"
   },
   "1570505175602": {
     "reuseId": "c241",
@@ -2603,7 +2679,9 @@
     "expectedDutch": "zo",
     "expectedEnglish": [
       "like that",
-      "so"
+      "so",
+      "okay",
+      "right"
     ],
     "reuseReason": "Merge review (missing-sense, first): zo -> zo"
   },
@@ -4333,5 +4411,1814 @@
       "annoying"
     ],
     "reuseReason": "Merge review (same-word, tier A): vervelend -> vervelend"
+  },
+  "1570504901673": {
+    "reuseId": "c65",
+    "expectedDutch": "zijn",
+    "expectedEnglish": [
+      "to be"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ben -> zijn"
+  },
+  "1570504901682": {
+    "reuseId": "c65",
+    "expectedDutch": "zijn",
+    "expectedEnglish": [
+      "to be"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): is -> zijn"
+  },
+  "1570504901699": {
+    "reuseId": "c777",
+    "expectedDutch": "jouw",
+    "expectedEnglish": [
+      "your (singular)"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): je -> jouw"
+  },
+  "1570504901710": {
+    "reuseId": "c35",
+    "expectedDutch": "heten",
+    "expectedEnglish": [
+      "to be called"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): hoe heet jij? -> heten"
+  },
+  "1570504901712": {
+    "reuseId": "c89",
+    "expectedDutch": "Waar kom je vandaan?",
+    "expectedEnglish": [
+      "Where are you from?"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): waar ... vandaan -> Waar kom je vandaan?"
+  },
+  "1570504901737": {
+    "reuseId": "c97",
+    "expectedDutch": "hebben",
+    "expectedEnglish": [
+      "to have"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): heeft -> hebben"
+  },
+  "1570504901740": {
+    "reuseId": "c10104",
+    "expectedDutch": "het",
+    "expectedEnglish": [
+      "it"
+    ],
+    "reuseReason": "Unmatched review (DROP): het -> het"
+  },
+  "1570505175570": {
+    "reuseId": "c1091",
+    "expectedDutch": "zo",
+    "expectedEnglish": [
+      "like that",
+      "so",
+      "okay",
+      "right"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): zo -> zo"
+  },
+  "1570505175576": {
+    "reuseId": "c906",
+    "expectedDutch": "pas",
+    "expectedEnglish": [
+      "just",
+      "only"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): pas -> pas"
+  },
+  "1570505175584": {
+    "reuseId": "c1114",
+    "expectedDutch": "jarig zijn",
+    "expectedEnglish": [
+      "having your birthday"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ik ben jarig -> jarig zijn"
+  },
+  "1570505175585": {
+    "reuseId": "c85",
+    "expectedDutch": "leuk",
+    "expectedEnglish": [
+      "nice",
+      "fun"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wat leuk -> leuk"
+  },
+  "1570505175590": {
+    "reuseId": "c547",
+    "expectedDutch": "nog",
+    "expectedEnglish": [
+      "still",
+      "yet",
+      "any",
+      "as well"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): nog -> nog"
+  },
+  "1570505175591": {
+    "reuseId": "c870",
+    "expectedDutch": "op bezoek",
+    "expectedEnglish": [
+      "visiting"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het bezoek -> op bezoek"
+  },
+  "1570505175593": {
+    "reuseId": "c535",
+    "expectedDutch": "jong",
+    "expectedEnglish": [
+      "young"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): jonger -> jong"
+  },
+  "1570505175596": {
+    "reuseId": "c622",
+    "expectedDutch": "lang",
+    "expectedEnglish": [
+      "long"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): langer -> lang"
+  },
+  "1570505175597": {
+    "reuseId": "c547",
+    "expectedDutch": "nog",
+    "expectedEnglish": [
+      "still",
+      "yet",
+      "any",
+      "as well"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): nog meer -> nog"
+  },
+  "1570505175616": {
+    "reuseId": "c4069",
+    "expectedDutch": "indonesisch",
+    "expectedEnglish": [
+      "Indonesian"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): Indonesië -> indonesisch"
+  },
+  "1570505175619": {
+    "reuseId": "c814",
+    "expectedDutch": "op vakantie gaan",
+    "expectedEnglish": [
+      "go on holiday"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): op vakantie -> op vakantie gaan"
+  },
+  "1570505175622": {
+    "reuseId": "c700",
+    "expectedDutch": "voor",
+    "expectedEnglish": [
+      "before",
+      "earlier than",
+      "for"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): voor -> voor"
+  },
+  "1570505175635": {
+    "reuseId": "c233",
+    "expectedDutch": "willen",
+    "expectedEnglish": [
+      "to want"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wil -> willen"
+  },
+  "1570505175637": {
+    "reuseId": "c600",
+    "expectedDutch": "een uur",
+    "expectedEnglish": [
+      "hour"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): 11.00 uur -> een uur"
+  },
+  "1570505190093": {
+    "reuseId": "c10111",
+    "expectedDutch": "dit",
+    "expectedEnglish": [
+      "this"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): dit is -> dit"
+  },
+  "1570505190094": {
+    "reuseId": "c2481",
+    "expectedDutch": "kennismaken",
+    "expectedEnglish": [
+      "to acquaint",
+      "to make someone's acquaintance",
+      "to get to know"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): prettig met je kennis te maken -> kennismaken"
+  },
+  "1570505190099": {
+    "reuseId": "c233",
+    "expectedDutch": "willen",
+    "expectedEnglish": [
+      "to want"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wil graag -> willen"
+  },
+  "1570505190101": {
+    "reuseId": "c885",
+    "expectedDutch": "het bier",
+    "expectedEnglish": [
+      "beer"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): biertje -> het bier"
+  },
+  "1570505190107": {
+    "reuseId": "c610",
+    "expectedDutch": "mogen",
+    "expectedEnglish": [
+      "to may",
+      "te be allowed"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): mag -> mogen"
+  },
+  "1570505190116": {
+    "reuseId": "c2871",
+    "expectedDutch": "proost",
+    "expectedEnglish": [
+      "provost",
+      "cheers"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): proost -> proost"
+  },
+  "1570505190117": {
+    "reuseId": "c996",
+    "expectedDutch": "de verjaardag",
+    "expectedEnglish": [
+      "birthday"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): op je verjaardag -> de verjaardag"
+  },
+  "1570505190119": {
+    "reuseId": "c10135",
+    "expectedDutch": "een poos",
+    "expectedEnglish": [
+      "a while"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het poosje -> een poos"
+  },
+  "1570505190123": {
+    "reuseId": "c10105",
+    "expectedDutch": "dat",
+    "expectedEnglish": [
+      "that"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): dat is -> dat"
+  },
+  "1570505190127": {
+    "reuseId": "c82",
+    "expectedDutch": "ja",
+    "expectedEnglish": [
+      "yes"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ja, graag -> ja"
+  },
+  "1570505221324": {
+    "reuseId": "c61",
+    "expectedDutch": "niet",
+    "expectedEnglish": [
+      "not"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): niet zo -> niet"
+  },
+  "1570505221328": {
+    "reuseId": "c1441",
+    "expectedDutch": "een paar",
+    "expectedEnglish": [
+      "a few"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): een paar dagen -> een paar"
+  },
+  "1570505221329": {
+    "drop": true,
+    "dropReason": "Unmatched review: Venetië dropped"
+  },
+  "1570505221333": {
+    "reuseId": "c565",
+    "expectedDutch": "foto",
+    "expectedEnglish": [
+      "photo"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): foto's maken -> foto"
+  },
+  "1570505221340": {
+    "reuseId": "c241",
+    "expectedDutch": "kijken",
+    "expectedEnglish": [
+      "to look"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kijken naar -> kijken"
+  },
+  "1570505221350": {
+    "reuseId": "c1438",
+    "expectedDutch": "lukken",
+    "expectedEnglish": [
+      "to succeed"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): dat lukt niet -> lukken"
+  },
+  "1570505221352": {
+    "reuseId": "c348",
+    "expectedDutch": "kunnen",
+    "expectedEnglish": [
+      "to be able",
+      "to can"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kan -> kunnen"
+  },
+  "1570505221355": {
+    "reuseId": "c1281",
+    "expectedDutch": "zullen",
+    "expectedEnglish": [
+      "to will",
+      "shall"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): zal -> zullen"
+  },
+  "1570505221356": {
+    "reuseId": "c4135",
+    "expectedDutch": "de spaghetti",
+    "expectedEnglish": [
+      "spaghetti"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de spaghetti carbonara -> de spaghetti"
+  },
+  "1570505221361": {
+    "reuseId": "c2459",
+    "expectedDutch": "hartstikke",
+    "expectedEnglish": [
+      "very",
+      "freaking",
+      "hella"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): hartstikke leuk -> hartstikke"
+  },
+  "1570505221362": {
+    "reuseId": "c423",
+    "expectedDutch": "vinden",
+    "expectedEnglish": [
+      "to find",
+      "have an opinion"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): vind ik ook -> vinden"
+  },
+  "1570505221363": {
+    "reuseId": "c218",
+    "expectedDutch": "moeten",
+    "expectedEnglish": [
+      "to have to",
+      "to must",
+      "should"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ik moet ervandoor -> moeten"
+  },
+  "1570505221372": {
+    "reuseId": "c698",
+    "expectedDutch": "tot",
+    "expectedEnglish": [
+      "until",
+      "as far as",
+      "up to"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): tot dan -> tot"
+  },
+  "1570505226572": {
+    "reuseId": "c1567",
+    "expectedDutch": "aan de beurt zijn",
+    "expectedEnglish": [
+      "to have your turn"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wie is er aan de beurt? -> aan de beurt zijn"
+  },
+  "1570505226573": {
+    "reuseId": "c1567",
+    "expectedDutch": "aan de beurt zijn",
+    "expectedEnglish": [
+      "to have your turn"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de beurt -> aan de beurt zijn"
+  },
+  "1570505226587": {
+    "reuseId": "c2155",
+    "expectedDutch": "het gerecht",
+    "expectedEnglish": [
+      "justice",
+      "judiciary",
+      "dish"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): het gerecht -> het gerecht"
+  },
+  "1570505226592": {
+    "reuseId": "c2613",
+    "expectedDutch": "spek",
+    "expectedEnglish": [
+      "bacon"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): spekjes -> spek"
+  },
+  "1570505226604": {
+    "reuseId": "c65",
+    "expectedDutch": "zijn",
+    "expectedEnglish": [
+      "to be"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): was -> zijn"
+  },
+  "1570505226610": {
+    "reuseId": "c440",
+    "expectedDutch": "Anders nog iets?",
+    "expectedEnglish": [
+      "Anything else?"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): verder nog iets? -> Anders nog iets?"
+  },
+  "1570505226611": {
+    "reuseId": "c453",
+    "expectedDutch": "de boon",
+    "expectedEnglish": [
+      "bean"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): boontjes -> de boon"
+  },
+  "1570505226617": {
+    "reuseId": "c648",
+    "expectedDutch": "wel",
+    "expectedEnglish": [
+      "for sure",
+      "indeed",
+      "certainly"
+    ],
+    "reuseReason": "Unmatched review (DROP): wel -> wel"
+  },
+  "1570505226622": {
+    "reuseId": "c1489",
+    "expectedDutch": "Dat geeft niet.",
+    "expectedEnglish": [
+      "That doesn't matter."
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): geeft niet -> Dat geeft niet."
+  },
+  "1570505233953": {
+    "reuseId": "c214",
+    "expectedDutch": "zitten",
+    "expectedEnglish": [
+      "to sit",
+      "to fit"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gaan zitten -> zitten"
+  },
+  "1570505233956": {
+    "reuseId": "c613",
+    "expectedDutch": "te",
+    "expectedEnglish": [
+      "too"
+    ],
+    "reuseReason": "Unmatched review (DROP): te -> te"
+  },
+  "1570505233958": {
+    "reuseId": "c2423",
+    "expectedDutch": "de dorst",
+    "expectedEnglish": [
+      "thirst",
+      "physical need",
+      "desire to drink"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ik heb dorst -> de dorst"
+  },
+  "1570505233964": {
+    "reuseId": "c1641",
+    "expectedDutch": "honger hebben",
+    "expectedEnglish": [
+      "to be hungry"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de honger -> honger hebben"
+  },
+  "1570505233972": {
+    "reuseId": "c865",
+    "expectedDutch": "als",
+    "expectedEnglish": [
+      "if",
+      "as"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): als -> als"
+  },
+  "1570505233974": {
+    "reuseId": "c1030",
+    "expectedDutch": "de friet",
+    "expectedEnglish": [
+      "French fries"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): frietjes -> de friet"
+  },
+  "1570505233979": {
+    "reuseId": "c1967",
+    "expectedDutch": "o",
+    "expectedEnglish": [
+      "oh"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): o nee -> o"
+  },
+  "1570505233989": {
+    "reuseId": "c604",
+    "expectedDutch": "Een moment alstublieft.",
+    "expectedEnglish": [
+      "A moment please."
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): momentje -> Een moment alstublieft."
+  },
+  "1570505234014": {
+    "reuseId": "c224",
+    "expectedDutch": "dank je wel",
+    "expectedEnglish": [
+      "thank you"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): dank u -> dank je wel"
+  },
+  "1570505241285": {
+    "reuseId": "c693",
+    "expectedDutch": "om",
+    "expectedEnglish": [
+      "at",
+      "around",
+      "(in order) to"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): om -> om"
+  },
+  "1570505241298": {
+    "reuseId": "c79",
+    "expectedDutch": "groot",
+    "expectedEnglish": [
+      "big"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): groter -> groot"
+  },
+  "1570505241307": {
+    "reuseId": "c52",
+    "expectedDutch": "zij",
+    "expectedEnglish": [
+      "they"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ze -> zij"
+  },
+  "1570505241309": {
+    "reuseId": "c640",
+    "expectedDutch": "even",
+    "expectedEnglish": [
+      "just",
+      "just a moment",
+      "for a moment"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): maar even -> even"
+  },
+  "1570505241313": {
+    "reuseId": "c214",
+    "expectedDutch": "zitten",
+    "expectedEnglish": [
+      "to sit",
+      "to fit"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): zitten -> zitten"
+  },
+  "1570505241315": {
+    "reuseId": "c383",
+    "expectedDutch": "dan",
+    "expectedEnglish": [
+      "then",
+      "than"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): dan -> dan"
+  },
+  "1570505241319": {
+    "reuseId": "c84",
+    "expectedDutch": "klein",
+    "expectedEnglish": [
+      "small"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kleinere -> klein"
+  },
+  "1570505241321": {
+    "reuseId": "c84",
+    "expectedDutch": "klein",
+    "expectedEnglish": [
+      "small"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kleinste -> klein"
+  },
+  "1570505241337": {
+    "reuseId": "c212",
+    "expectedDutch": "staan",
+    "expectedEnglish": [
+      "to stand"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): staat me het best -> staan"
+  },
+  "1570505241338": {
+    "reuseId": "c56",
+    "expectedDutch": "goed",
+    "expectedEnglish": [
+      "good",
+      "okay"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het best -> goed"
+  },
+  "1570505246527": {
+    "drop": true,
+    "dropReason": "Unmatched review: de bovenwoning dropped"
+  },
+  "1570505246547": {
+    "reuseId": "c944",
+    "expectedDutch": "vierkant",
+    "expectedEnglish": [
+      "square"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de vierkante meter -> vierkant"
+  },
+  "1570505246562": {
+    "reuseId": "c1006",
+    "expectedDutch": "hoeven niet",
+    "expectedEnglish": [
+      "don't have to"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): hoeven -> hoeven niet"
+  },
+  "1570505246569": {
+    "reuseId": "c260",
+    "expectedDutch": "het huis",
+    "expectedEnglish": [
+      "house"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het huisje -> het huis"
+  },
+  "1570505246583": {
+    "reuseId": "c1065",
+    "expectedDutch": "lijken",
+    "expectedEnglish": [
+      "to appear",
+      "to seem"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): dat lijkt me fantastisch -> lijken"
+  },
+  "1570505246587": {
+    "reuseId": "c198",
+    "expectedDutch": "snel",
+    "expectedEnglish": [
+      "fast",
+      "quick"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): zo snel mogelijk -> snel"
+  },
+  "1570505252063": {
+    "drop": true,
+    "dropReason": "Unmatched review: wat is er aan de hand? dropped"
+  },
+  "1570505252067": {
+    "reuseId": "c8133",
+    "expectedDutch": "bult",
+    "expectedEnglish": [
+      "bump"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): bultjes -> bult"
+  },
+  "1570505252075": {
+    "reuseId": "c667",
+    "expectedDutch": "alles",
+    "expectedEnglish": [
+      "all",
+      "everythingh",
+      "everything"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): van alles -> alles"
+  },
+  "1570505252076": {
+    "reuseId": "c1146",
+    "expectedDutch": "proberen",
+    "expectedEnglish": [
+      "to try"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): geprobeerd -> proberen"
+  },
+  "1570505252077": {
+    "reuseId": "c252",
+    "expectedDutch": "helpen",
+    "expectedEnglish": [
+      "to help"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): geholpen -> helpen"
+  },
+  "1570505252078": {
+    "reuseId": "c91",
+    "expectedDutch": "beginnen",
+    "expectedEnglish": [
+      "to begin",
+      "to start"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): begonnen -> beginnen"
+  },
+  "1570505252080": {
+    "reuseId": "c391",
+    "expectedDutch": "doen",
+    "expectedEnglish": [
+      "to do"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gedaan -> doen"
+  },
+  "1570505252082": {
+    "reuseId": "c649",
+    "expectedDutch": "werken",
+    "expectedEnglish": [
+      "to work"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gewerkt -> werken"
+  },
+  "1570505252084": {
+    "reuseId": "c1775",
+    "expectedDutch": "bekijken",
+    "expectedEnglish": [
+      "to look at",
+      "to view"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): bekeken -> bekijken"
+  },
+  "1570505252086": {
+    "reuseId": "c65",
+    "expectedDutch": "zijn",
+    "expectedEnglish": [
+      "to be"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): geweest -> zijn"
+  },
+  "1570505252089": {
+    "reuseId": "c832",
+    "expectedDutch": "spelen",
+    "expectedEnglish": [
+      "to play"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gespeeld -> spelen"
+  },
+  "1570505252091": {
+    "reuseId": "c225",
+    "expectedDutch": "drinken",
+    "expectedEnglish": [
+      "to drink"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gedronken -> drinken"
+  },
+  "1570505252093": {
+    "reuseId": "c384",
+    "expectedDutch": "eten",
+    "expectedEnglish": [
+      "to eat"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gegeten -> eten"
+  },
+  "1570505252094": {
+    "reuseId": "c1417",
+    "expectedDutch": "afgelopen zijn",
+    "expectedEnglish": [
+      "to finish"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): afgelopen -> afgelopen zijn"
+  },
+  "1570505252095": {
+    "reuseId": "c356",
+    "expectedDutch": "vergeten",
+    "expectedEnglish": [
+      "to forget"
+    ],
+    "reuseReason": "Unmatched review (DROP): vergeten -> vergeten"
+  },
+  "1570505252097": {
+    "reuseId": "c890",
+    "expectedDutch": "jawel",
+    "expectedEnglish": [
+      "yes",
+      "oh yes"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): o ja -> jawel"
+  },
+  "1570505258061": {
+    "reuseId": "c1052",
+    "expectedDutch": "gebeuren",
+    "expectedEnglish": [
+      "to happen"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gebeurd -> gebeuren"
+  },
+  "1570505258062": {
+    "reuseId": "c1326",
+    "expectedDutch": "vallen",
+    "expectedEnglish": [
+      "to fall"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gevallen -> vallen"
+  },
+  "1570505258063": {
+    "reuseId": "c1069",
+    "expectedDutch": "regenen",
+    "expectedEnglish": [
+      "to rain"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): regende -> regenen"
+  },
+  "1570505258065": {
+    "reuseId": "c810",
+    "expectedDutch": "fietsen",
+    "expectedEnglish": [
+      "to ride a bicycle",
+      "to cycle"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): fietste weg -> fietsen"
+  },
+  "1570505258068": {
+    "reuseId": "c233",
+    "expectedDutch": "willen",
+    "expectedEnglish": [
+      "to want"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wilde -> willen"
+  },
+  "1570505258069": {
+    "reuseId": "c757",
+    "expectedDutch": "rechtsaf",
+    "expectedEnglish": [
+      "turn right"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): rechts afslaan -> rechtsaf"
+  },
+  "1570505258073": {
+    "reuseId": "c2880",
+    "expectedDutch": "slag",
+    "expectedEnglish": [
+      "blow",
+      "knock",
+      "strike",
+      "battle"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): een slag in het wiel -> slag"
+  },
+  "1570505258082": {
+    "reuseId": "c8749",
+    "expectedDutch": "afbreken",
+    "expectedEnglish": [
+      "to break off"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): afgebroken -> afbreken"
+  },
+  "1570505258087": {
+    "reuseId": "c882",
+    "expectedDutch": "verstaan",
+    "expectedEnglish": [
+      "to understand",
+      "to hear"
+    ],
+    "reuseReason": "Unmatched review (DROP): verstaan -> verstaan"
+  },
+  "1570505258092": {
+    "reuseId": "c391",
+    "expectedDutch": "doen",
+    "expectedEnglish": [
+      "to do"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): deden -> doen"
+  },
+  "1570505258095": {
+    "reuseId": "c570",
+    "expectedDutch": "in orde",
+    "expectedEnglish": [
+      "alright"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): tiptop in orde -> in orde"
+  },
+  "1570505258103": {
+    "reuseId": "c201",
+    "expectedDutch": "Wat betekent dat?",
+    "expectedEnglish": [
+      "What does that mean?"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): betekent -> Wat betekent dat?"
+  },
+  "1570505264081": {
+    "reuseId": "c935",
+    "expectedDutch": "gefeliciteerd",
+    "expectedEnglish": [
+      "congratulations",
+      "happy birthday"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): van harte gefeliciteerd -> gefeliciteerd"
+  },
+  "1570505264082": {
+    "reuseId": "c935",
+    "expectedDutch": "gefeliciteerd",
+    "expectedEnglish": [
+      "congratulations",
+      "happy birthday"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): feliciteren met -> gefeliciteerd"
+  },
+  "1570505264085": {
+    "reuseId": "c1096",
+    "expectedDutch": "het kaartje",
+    "expectedEnglish": [
+      "postcard",
+      "ticket"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): het kaartje -> het kaartje"
+  },
+  "1570505264089": {
+    "reuseId": "c547",
+    "expectedDutch": "nog",
+    "expectedEnglish": [
+      "still",
+      "yet",
+      "any",
+      "as well"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): nog geen -> nog"
+  },
+  "1570505264095": {
+    "reuseId": "c848",
+    "expectedDutch": "vertellen",
+    "expectedEnglish": [
+      "to tell"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): verteld -> vertellen"
+  },
+  "1570505264102": {
+    "reuseId": "c213",
+    "expectedDutch": "zien",
+    "expectedEnglish": [
+      "to see"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gezien -> zien"
+  },
+  "1570505264111": {
+    "reuseId": "c9551",
+    "expectedDutch": "verveeld",
+    "expectedEnglish": [
+      "bored"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): verveel me -> verveeld"
+  },
+  "1570505264118": {
+    "reuseId": "c549",
+    "expectedDutch": "sinds",
+    "expectedEnglish": [
+      "since"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): sinds kort -> sinds"
+  },
+  "1570505264124": {
+    "reuseId": "c4146",
+    "expectedDutch": "bijbaan",
+    "expectedEnglish": [
+      "side job",
+      "extra job"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het bijbaantje -> bijbaan"
+  },
+  "1570505264128": {
+    "reuseId": "c5261",
+    "expectedDutch": "interesseren",
+    "expectedEnglish": [
+      "to interest"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): interesseer je -> interesseren"
+  },
+  "1570505264133": {
+    "reuseId": "c1130",
+    "expectedDutch": "echt",
+    "expectedEnglish": [
+      "really",
+      "real"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): niet echt -> echt"
+  },
+  "1570505264137": {
+    "reuseId": "c1455",
+    "expectedDutch": "toevallig",
+    "expectedEnglish": [
+      "accidentally",
+      "coincidentally"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wat toevallig -> toevallig"
+  },
+  "1570505264138": {
+    "reuseId": "c818",
+    "expectedDutch": "wandelen",
+    "expectedEnglish": [
+      "to walk",
+      "to hike"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de Wandelbeurs -> wandelen"
+  },
+  "1570505264147": {
+    "reuseId": "c880",
+    "expectedDutch": "langzaam",
+    "expectedEnglish": [
+      "slow"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): langzamer -> langzaam"
+  },
+  "1570505272157": {
+    "reuseId": "c1124",
+    "expectedDutch": "bekend",
+    "expectedEnglish": [
+      "known",
+      "well-known"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): Bent u hier bekend? -> bekend"
+  },
+  "1570505272174": {
+    "reuseId": "c1615",
+    "expectedDutch": "het stuk",
+    "expectedEnglish": [
+      "piece",
+      "part",
+      "short distance"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): het stuk -> het stuk"
+  },
+  "1570505272198": {
+    "reuseId": "c702",
+    "expectedDutch": "het bord",
+    "expectedEnglish": [
+      "traffic sign"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): bordjes -> het bord"
+  },
+  "1570505272200": {
+    "reuseId": "c209",
+    "expectedDutch": "makkelijk",
+    "expectedEnglish": [
+      "easy"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): makkelijker -> makkelijk"
+  },
+  "1570505279269": {
+    "reuseId": "c118",
+    "expectedDutch": "zeggen",
+    "expectedEnglish": [
+      "to say"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): zei -> zeggen"
+  },
+  "1570505279270": {
+    "reuseId": "c348",
+    "expectedDutch": "kunnen",
+    "expectedEnglish": [
+      "to be able",
+      "to can"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kon -> kunnen"
+  },
+  "1570505279271": {
+    "reuseId": "c769",
+    "expectedDutch": "missen",
+    "expectedEnglish": [
+      "to miss",
+      "to go wrong",
+      "to fail"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): missen -> missen"
+  },
+  "1570505279273": {
+    "reuseId": "c645",
+    "expectedDutch": "meenemen",
+    "expectedEnglish": [
+      "to take along"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): meegenomen -> meenemen"
+  },
+  "1570505279274": {
+    "reuseId": "c218",
+    "expectedDutch": "moeten",
+    "expectedEnglish": [
+      "to have to",
+      "to must",
+      "should"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): moest -> moeten"
+  },
+  "1570505279277": {
+    "reuseId": "c420",
+    "expectedDutch": "lekker",
+    "expectedEnglish": [
+      "delicious",
+      "nice"
+    ],
+    "reuseReason": "Unmatched review (DROP): lekker -> lekker"
+  },
+  "1570505279278": {
+    "reuseId": "c23",
+    "expectedDutch": "groeten",
+    "expectedEnglish": [
+      "to greet"
+    ],
+    "reuseReason": "Unmatched review (DROP): groeten -> groeten"
+  },
+  "1570505279279": {
+    "drop": true,
+    "dropReason": "Unmatched review: Doe haar de groeten terug dropped"
+  },
+  "1570505279284": {
+    "reuseId": "c1778",
+    "expectedDutch": "hè",
+    "expectedEnglish": [
+      "huh",
+      "said when surprised",
+      "puzzled."
+    ],
+    "reuseReason": "Unmatched review (DROP): hè -> hè"
+  },
+  "1570505279285": {
+    "drop": true,
+    "dropReason": "Unmatched review: Zeg dat wel! dropped"
+  },
+  "1570505279288": {
+    "reuseId": "c1458",
+    "expectedDutch": "verkouden",
+    "expectedEnglish": [
+      "to have a cold"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ben verkouden -> verkouden"
+  },
+  "1570505279296": {
+    "reuseId": "c2582",
+    "expectedDutch": "verder",
+    "expectedEnglish": [
+      "further",
+      "otherwise",
+      "for the rest"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kom ... verder -> verder"
+  },
+  "1570505279298": {
+    "reuseId": "c420",
+    "expectedDutch": "lekker",
+    "expectedEnglish": [
+      "delicious",
+      "nice"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): lekker warm -> lekker"
+  },
+  "1570505279317": {
+    "reuseId": "c97",
+    "expectedDutch": "hebben",
+    "expectedEnglish": [
+      "to have"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): hadden -> hebben"
+  },
+  "1570505279319": {
+    "reuseId": "c97",
+    "expectedDutch": "hebben",
+    "expectedEnglish": [
+      "to have"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): hebben gehad -> hebben"
+  },
+  "1570505279321": {
+    "reuseId": "c1880",
+    "expectedDutch": "het verdriet",
+    "expectedEnglish": [
+      "grief",
+      "sadness",
+      "sorrow"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): hebben verdriet gehad om -> het verdriet"
+  },
+  "1570505279331": {
+    "reuseId": "c1307",
+    "expectedDutch": "geleden",
+    "expectedEnglish": [
+      "ago"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): twee weken geleden -> geleden"
+  },
+  "1570505279332": {
+    "reuseId": "c83",
+    "expectedDutch": "de jongen",
+    "expectedEnglish": [
+      "boy"
+    ],
+    "reuseReason": "Unmatched review (DROP): jongen -> de jongen"
+  },
+  "1570505279333": {
+    "reuseId": "c254",
+    "expectedDutch": "krijgen",
+    "expectedEnglish": [
+      "to get",
+      "to receive"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gekregen -> krijgen"
+  },
+  "1570505285023": {
+    "reuseId": "c471",
+    "expectedDutch": "in de aanbieding",
+    "expectedEnglish": [
+      "on sale"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de aanbieding -> in de aanbieding"
+  },
+  "1570505285051": {
+    "reuseId": "c241",
+    "expectedDutch": "kijken",
+    "expectedEnglish": [
+      "to look"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): kijk mee -> kijken"
+  },
+  "1570505285057": {
+    "reuseId": "c821",
+    "expectedDutch": "de manier",
+    "expectedEnglish": [
+      "way",
+      "manner"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): op die manier -> de manier"
+  },
+  "1570505285070": {
+    "reuseId": "c3065",
+    "expectedDutch": "aandoen",
+    "expectedEnglish": [
+      "to turn on",
+      "to put on"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): aandoen -> aandoen"
+  },
+  "1570505285077": {
+    "reuseId": "c1029",
+    "expectedDutch": "de drank",
+    "expectedEnglish": [
+      "drink",
+      "beverage"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het drankje -> de drank"
+  },
+  "1570505285081": {
+    "reuseId": "c3268",
+    "expectedDutch": "laden",
+    "expectedEnglish": [
+      "to load"
+    ],
+    "reuseReason": "Unmatched review (DROP): laden -> laden"
+  },
+  "1570505285083": {
+    "reuseId": "c893",
+    "expectedDutch": "veel plezier",
+    "expectedEnglish": [
+      "lots of fun",
+      "have fun"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het plezier -> veel plezier"
+  },
+  "1570505291962": {
+    "reuseId": "c111",
+    "expectedDutch": "gaan",
+    "expectedEnglish": [
+      "to go"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ging -> gaan"
+  },
+  "1570505291964": {
+    "reuseId": "c589",
+    "expectedDutch": "duren",
+    "expectedEnglish": [
+      "to last"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): duurde -> duren"
+  },
+  "1570505291974": {
+    "reuseId": "c617",
+    "expectedDutch": "dragen",
+    "expectedEnglish": [
+      "to wear (clothing)"
+    ],
+    "reuseReason": "Unmatched review (DROP): dragen -> dragen"
+  },
+  "1570505291975": {
+    "reuseId": "c1676",
+    "expectedDutch": "de grap",
+    "expectedEnglish": [
+      "joke"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het grapje -> de grap"
+  },
+  "1570505291976": {
+    "reuseId": "c262",
+    "expectedDutch": "het raam",
+    "expectedEnglish": [
+      "window"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het raampje -> het raam"
+  },
+  "1570505291979": {
+    "reuseId": "c420",
+    "expectedDutch": "lekker",
+    "expectedEnglish": [
+      "delicious",
+      "nice"
+    ],
+    "reuseReason": "Unmatched review (DROP): lekker -> lekker"
+  },
+  "1570505291986": {
+    "reuseId": "c791",
+    "expectedDutch": "net",
+    "expectedEnglish": [
+      "just",
+      "like"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): net -> net"
+  },
+  "1570505291992": {
+    "reuseId": "c1639",
+    "expectedDutch": "gewend zijn",
+    "expectedEnglish": [
+      "to be used to"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gewend -> gewend zijn"
+  },
+  "1570505291994": {
+    "reuseId": "c672",
+    "expectedDutch": "meteen",
+    "expectedEnglish": [
+      "right away"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): zo meteen -> meteen"
+  },
+  "1570505292003": {
+    "reuseId": "c363",
+    "expectedDutch": "het brood",
+    "expectedEnglish": [
+      "bread"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): broodjes -> het brood"
+  },
+  "1570505292008": {
+    "reuseId": "c56",
+    "expectedDutch": "goed",
+    "expectedEnglish": [
+      "good",
+      "okay"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): goede reis -> goed"
+  },
+  "1570505292009": {
+    "reuseId": "c1258",
+    "expectedDutch": "wakker",
+    "expectedEnglish": [
+      "awake"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): maak wakker -> wakker"
+  },
+  "1570505297068": {
+    "reuseId": "c1684",
+    "expectedDutch": "stom",
+    "expectedEnglish": [
+      "foolish"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): wat stom -> stom"
+  },
+  "1570505297070": {
+    "reuseId": "c241",
+    "expectedDutch": "kijken",
+    "expectedEnglish": [
+      "to look"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gekeken -> kijken"
+  },
+  "1570505297073": {
+    "reuseId": "c769",
+    "expectedDutch": "missen",
+    "expectedEnglish": [
+      "to miss",
+      "to go wrong",
+      "to fail"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gemist -> missen"
+  },
+  "1570505297074": {
+    "reuseId": "c1718",
+    "expectedDutch": "draaien",
+    "expectedEnglish": [
+      "to turn",
+      "to show (a film)"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): draaien -> draaien"
+  },
+  "1570505297075": {
+    "reuseId": "c1075",
+    "expectedDutch": "de zomer",
+    "expectedEnglish": [
+      "summer"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de zomerhitte -> de zomer"
+  },
+  "1570505297079": {
+    "reuseId": "c1747",
+    "expectedDutch": "opnemen",
+    "expectedEnglish": [
+      "to record"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): opgenomen -> opnemen"
+  },
+  "1570505297081": {
+    "reuseId": "c813",
+    "expectedDutch": "de natuur",
+    "expectedEnglish": [
+      "nature"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de natuurdocumentaire -> de natuur"
+  },
+  "1570505297083": {
+    "reuseId": "c168",
+    "expectedDutch": "spreken",
+    "expectedEnglish": [
+      "to speak"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gesproken -> spreken"
+  },
+  "1570505297085": {
+    "reuseId": "c8960",
+    "expectedDutch": "ondertitelen",
+    "expectedEnglish": [
+      "to caption",
+      "to subtitle"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ondertiteld -> ondertitelen"
+  },
+  "1570505306168": {
+    "reuseId": "c831",
+    "expectedDutch": "de informatie",
+    "expectedEnglish": [
+      "information"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de informatietechnologie -> de informatie"
+  },
+  "1570505306171": {
+    "reuseId": "c1997",
+    "expectedDutch": "schat",
+    "expectedEnglish": [
+      "treasure",
+      "amassed valuables",
+      "darling"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): de schat -> schat"
+  },
+  "1570505306173": {
+    "reuseId": "c2123",
+    "expectedDutch": "dromen",
+    "expectedEnglish": [
+      "to dream"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gedroomd -> dromen"
+  },
+  "1570505306184": {
+    "reuseId": "c388",
+    "expectedDutch": "het ontbijt",
+    "expectedEnglish": [
+      "breakfast"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): het ontbijtje -> het ontbijt"
+  },
+  "1570505306188": {
+    "reuseId": "c5682",
+    "expectedDutch": "het college",
+    "expectedEnglish": [
+      "collegial board",
+      "either advisory",
+      "as an authority"
+    ],
+    "reuseReason": "Unmatched review (DROP): het college -> het college"
+  },
+  "1570505306191": {
+    "reuseId": "c6506",
+    "expectedDutch": "filosofie",
+    "expectedEnglish": [
+      "philosophy"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de filosofiegeschiedenis -> filosofie"
+  },
+  "1570505306198": {
+    "reuseId": "c400",
+    "expectedDutch": "de tomaat",
+    "expectedEnglish": [
+      "tomato"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): de tomatensaus -> de tomaat"
+  },
+  "1570505306203": {
+    "reuseId": "c803",
+    "expectedDutch": "kwijt",
+    "expectedEnglish": [
+      "lost"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ben kwijt -> kwijt"
+  },
+  "1570505306206": {
+    "reuseId": "c394",
+    "expectedDutch": "koken",
+    "expectedEnglish": [
+      "to cook",
+      "to boil"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gekookt -> koken"
+  },
+  "1570505306210": {
+    "reuseId": "c3086",
+    "expectedDutch": "lunchen",
+    "expectedEnglish": [
+      "to lunch"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): geluncht -> lunchen"
+  },
+  "1570505306222": {
+    "reuseId": "c1104",
+    "expectedDutch": "uitnodigen",
+    "expectedEnglish": [
+      "to invite"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): uitgenodigd -> uitnodigen"
+  },
+  "1570505313524": {
+    "reuseId": "c1430",
+    "expectedDutch": "stelen",
+    "expectedEnglish": [
+      "to steal"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gestolen -> stelen"
+  },
+  "1570505313525": {
+    "reuseId": "c3391",
+    "expectedDutch": "aangifte",
+    "expectedEnglish": [
+      "declaration"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): aangifte doen -> aangifte"
+  },
+  "1570505313528": {
+    "reuseId": "c214",
+    "expectedDutch": "zitten",
+    "expectedEnglish": [
+      "to sit",
+      "to fit"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): zat -> zitten"
+  },
+  "1570505313531": {
+    "reuseId": "c1136",
+    "expectedDutch": "toen",
+    "expectedEnglish": [
+      "then",
+      "when"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): toen -> toen"
+  },
+  "1570505313532": {
+    "reuseId": "c350",
+    "expectedDutch": "liggen",
+    "expectedEnglish": [
+      "to lie",
+      "to lie down"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): lag -> liggen"
+  },
+  "1570505313534": {
+    "reuseId": "c275",
+    "expectedDutch": "zoeken",
+    "expectedEnglish": [
+      "to search",
+      "to look for"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gezocht -> zoeken"
+  },
+  "1570505313536": {
+    "reuseId": "c1083",
+    "expectedDutch": "leggen",
+    "expectedEnglish": [
+      "to lay"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gelegd -> leggen"
+  },
+  "1570505313537": {
+    "reuseId": "c97",
+    "expectedDutch": "hebben",
+    "expectedEnglish": [
+      "to have"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): had -> hebben"
+  },
+  "1570505313543": {
+    "reuseId": "c1326",
+    "expectedDutch": "vallen",
+    "expectedEnglish": [
+      "to fall"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): viel -> vallen"
+  },
+  "1570505313544": {
+    "reuseId": "c527",
+    "expectedDutch": "halen",
+    "expectedEnglish": [
+      "to get",
+      "to fetch"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gehaald -> halen"
+  },
+  "1570505313549": {
+    "reuseId": "c937",
+    "expectedDutch": "Hoe ziet... eruit?",
+    "expectedEnglish": [
+      "How does it look?"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): ziet eruit -> Hoe ziet... eruit?"
+  },
+  "1570505313558": {
+    "reuseId": "c1038",
+    "expectedDutch": "de rekening",
+    "expectedEnglish": [
+      "bill",
+      "account"
+    ],
+    "reuseReason": "Unmatched review (EXTRA): de rekening -> de rekening"
+  },
+  "1570505313566": {
+    "reuseId": "c2040",
+    "expectedDutch": "opschrijven",
+    "expectedEnglish": [
+      "to write down"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): opgeschreven -> opschrijven"
+  },
+  "1570505313568": {
+    "reuseId": "c357",
+    "expectedDutch": "vinden",
+    "expectedEnglish": [
+      "to find"
+    ],
+    "form": true,
+    "reuseReason": "Unmatched review (DROP): gevonden -> vinden"
   }
 }

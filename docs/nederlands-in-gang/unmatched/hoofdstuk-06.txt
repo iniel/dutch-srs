@@ -1,0 +1,17 @@
+de serveerster — waitress — KEEP
+gaan zitten — sit down — DROP (c214 zitten = to sit; "gaan zitten" sit down missing)
+te — to — DROP (c613 te = too; infinitive-marker sense missing)
+ik heb dorst — I'm thirsty — DROP (c2423 de dorst = thirst; "dorst hebben" phrase missing)
+het hoofdgerecht — main course — KEEP
+de honger — hunger — DROP (c1641 honger hebben)
+de mosterdsoep — mustard soup — KEEP
+de mosterd — mustard — KEEP
+als — as — EXTRA (c865 als = if; "as" sense missing, c1531 zoals = as)
+frietjes — chips — DROP (c1030 de friet; c3383 patat)
+o nee — oh no — DROP (c1967 o; c87 nee)
+momentje — one moment — DROP (c604 Een moment alstublieft.)
+de paella — paella — KEEP
+wat — a little, a bit — EXTRA (c95 wat = what; "a little" sense missing, c293 een beetje)
+het toetje — dessert — ADD (c3939 het dessert, c5047 het nagerecht = synonyms; toetje itself missing)
+laat de rest maar zitten — that's fine, keep the change — KEEP
+dank u — thank you — DROP (c224 dank je wel)

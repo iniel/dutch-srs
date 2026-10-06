@@ -1,0 +1,23 @@
+hoera — hooray — KEEP
+van harte gefeliciteerd — happy birthday — DROP (c935 gefeliciteerd)
+feliciteren met — congratulate on — DROP (c935 gefeliciteerd = interjection only; verb + met missing)
+het cadeautje — present — DROP (c1003 het cadeau)
+het kaartje — ticket — EXTRA (c1096 het kaartje = postcard; ticket sense missing)
+nog geen — not yet — DROP (c547 nog = still; yet, c77 geen = no; combination only)
+Cubaanse — Cuban — KEEP
+ben gek op — am crazy about — ADD (c1638 gek = crazy; "gek zijn op" phrase missing)
+verteld — told — DROP (c848 vertellen)
+je weet de weg — you know the way — DROP (c245 weten + c712 de weg; phrase only compositional)
+gezien — seen — DROP (c213 zien)
+verveel me — am bored — DROP (c9551 verveeld = bored; c1988 vervelen = to annoy; reflexive missing)
+sinds kort — recently — DROP (c549 sinds, c9383 kortgeleden = recently; phrase itself missing)
+het bevalt me — I enjoy it — ADD (c898 bevallen = to give birth; "to please" sense missing)
+de logopedie — speech therapy — KEEP
+het bijbaantje — job on the side, part-time job — DROP (c4146 bijbaan)
+interesseer je — are you interested — DROP (c5261 interesseren)
+niet echt — not really — DROP (c1130 echt)
+wat toevallig — what a coincidence — DROP (c1455 toevallig)
+de Wandelbeurs — Walking Fair — DROP (c818 wandelen, c3046 beurs = purse; proper name, fair sense missing)
+de wandelreis — walking tour — KEEP
+Chili — Chile — KEEP
+langzamer — more slowly — DROP (c880 langzaam)

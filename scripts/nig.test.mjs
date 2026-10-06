@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { prepareEntries, cardFromEntry, buildChapterPath, strictSignature, chosenCardId, pruneBookCards } from "./nig.mjs";
+import { prepareEntries, droppedNotes, cardFromEntry, buildChapterPath, strictSignature, chosenCardId, pruneBookCards } from "./nig.mjs";
 
 describe("Nederlands in gang import", () => {
   it("repairs explicit split records and accounts for both source ids", () => {
@@ -20,6 +20,20 @@ describe("Nederlands in gang import", () => {
       .toEqual(["(for friendliness, usually not translated)"]);
     expect(cardFromEntry({ front: "<b>het café</b>", back: "café / pub", chapter: 3 }).english).toEqual(["café", "pub"]);
     expect(strictSignature(c)).not.toBe(strictSignature({ ...c, dutch: "willen" }));
+  });
+  it("leaves out explicitly dropped notes but still accounts for them", () => {
+    const raw = [
+      { id: "1", chapter: 4, position: 1, front: "Venetië", back: "Venice" },
+      { id: "2", chapter: 4, position: 2, front: "zeg dat", back: "" },
+      { id: "3", chapter: 4, position: 3, front: "wel!", back: "you can say that again" },
+      { id: "4", chapter: 4, position: 4, front: "de markt", back: "market" },
+    ];
+    const fixes = { "1": { drop: true }, "2": { mergeWith: "3", front: "zeg dat wel!", back: "you can say that again", drop: true } };
+    expect(prepareEntries(raw, fixes).map(e => e.id)).toEqual(["4"]);
+    expect(droppedNotes(raw, fixes)).toEqual([
+      { sourceId: "1", chapter: 4 }, { sourceId: "2", chapter: 4 }, { sourceId: "3", chapter: 4, mergedInto: "2" },
+    ]);
+    expect(() => prepareEntries(raw, { "1": { drop: true, reuseId: "c1" } })).toThrow();
   });
   it("refuses uncorrected empty translations and invalid chapters", () => {
     expect(() => prepareEntries([{ id: "1", chapter: 1, front: "x", back: "" }], {})).toThrow();

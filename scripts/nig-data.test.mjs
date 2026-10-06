@@ -33,8 +33,10 @@ describe("shipped Nederlands in gang data", () => {
   it("accounts for every source note and reconstructs all 18 chapters", () => {
     expect(source.records).toHaveLength(1092);
     expect(new Set(mapping.records.map(r => r.sourceId))).toEqual(new Set(source.records.map(r => r.id)));
-    expect(mapping.records.every(r => byId.has(r.cardId))).toBe(true);
-    const entries = prepareEntries(source.records, read("scripts/sources/nig-corrections.json"));
+    const corrections = read("scripts/sources/nig-corrections.json");
+    expect(mapping.records.filter(r => r.dropped).every(r => corrections[r.mergedInto ?? r.sourceId]?.drop)).toBe(true);
+    expect(mapping.records.filter(r => !r.dropped).every(r => byId.has(r.cardId))).toBe(true);
+    const entries = prepareEntries(source.records, corrections);
     const ids = new Map(mapping.records.map(r => [r.sourceId, r.cardId]));
     const path = buildChapterPath(entries, entries.map(e => ids.get(e.id)), new Set(byId.keys()));
     expect(path).toEqual(paths.paths.find(p => p.id === "nederlands-in-gang"));
@@ -49,14 +51,15 @@ describe("shipped Nederlands in gang data", () => {
     expect(mapped("1570504901685")).toMatchObject({ id: "c171", dutch: "de dag" });
     expect(mapped("1570504901706")).toMatchObject({ id: "c296", dutch: "komen" });
     expect(mapped("1570504901706").id).not.toBe("c1082");
-    expect(mapped("1570504901673")).toMatchObject({ dutch: "ben", english: ["am", "are"] });
+    expect(mapped("1570504901673")).toMatchObject({ id: "c65", dutch: "zijn" });
     expect(mapped("1570504901692").id).toBe(mapped("1570504901673").id);
+    expect(mapped("1570505279295")).toMatchObject({ dutch: "schijnt", notes: "Book annotation: schijnen" });
     expect(mapped("1570505221343").english).toContain("to make an appointment");
-    expect(mapped("1570505313569").english).toContain("get in touch");
+    expect(mapped("1570505313569")).toMatchObject({ id: "c1141", dutch: "het contact" });
   });
   it("redirects saved progress of every merged-away card to a card that still exists", () => {
     const redirects = read("src/data/cardRedirects.json");
-    const merged = review.decisions.filter(d => d.action !== "keep-new");
+    const merged = review.decisions.filter(d => d.action !== "keep-new" && d.action !== "drop");
     expect(Object.keys(redirects).sort()).toEqual(merged.map(d => d.nigCardId).sort());
     for (const [from, to] of Object.entries(redirects)) {
       expect(byId.has(from)).toBe(false);
@@ -68,6 +71,7 @@ describe("shipped Nederlands in gang data", () => {
     expect(read("scripts/sources/nig-new-ids.json").every(id => pathIds.has(id))).toBe(true);
     for (const d of review.decisions) {
       if (d.action === "keep-new") expect(pathIds.has(d.nigCardId)).toBe(true);
+      else if (d.action === "drop") expect(byId.has(d.nigCardId)).toBe(false);
       else {
         expect(byId.has(d.nigCardId)).toBe(false);
         expect(pathIds.has(d.targetId)).toBe(true);

@@ -12,13 +12,14 @@ export function prepareEntries(raw, fixes) {
   const consumed = new Set();
   for (const [id, fix] of Object.entries(fixes)) {
     if (!byId.has(id)) throw new Error(`Unknown correction ${id}`);
+    if (fix.drop && fix.reuseId) throw new Error(`Correction ${id} both drops and reuses`);
     if (fix.mergeWith) {
       const other = byId.get(fix.mergeWith);
       if (!other || other.chapter !== byId.get(id).chapter || consumed.has(fix.mergeWith)) throw new Error(`Invalid merge ${id}`);
       consumed.add(fix.mergeWith);
     }
   }
-  return raw.filter(r => !consumed.has(r.id)).map(r => {
+  return raw.filter(r => !consumed.has(r.id) && !fixes[r.id]?.drop).map(r => {
     const f = fixes[r.id] ?? {};
     const front = text(f.front ?? r.front), back = text(f.back ?? r.back);
     if (!front || !back || !Number.isInteger(r.chapter) || r.chapter < 1 || r.chapter > 18) throw new Error(`Invalid source record ${r.id}`);
@@ -30,6 +31,11 @@ export function prepareEntries(raw, fixes) {
       audio: f.mergeWith || f.front || f.form ? undefined : r.audio };
   }).sort((a, b) => a.chapter - b.chapter || a.position - b.position || a.id.localeCompare(b.id));
 }
+
+export const droppedNotes = (raw, fixes) => raw.filter(r => fixes[r.id]?.drop).flatMap(r => [
+  { sourceId: r.id, chapter: r.chapter },
+  ...(fixes[r.id].mergeWith ? [{ sourceId: fixes[r.id].mergeWith, chapter: r.chapter, mergedInto: r.id }] : []),
+]);
 
 export const chosenCardId = (sourceId, correction, pinned) => correction?.reuseId ?? pinned.get(sourceId);
 

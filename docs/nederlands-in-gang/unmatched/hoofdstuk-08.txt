@@ -1,0 +1,10 @@
+de bovenwoning — upstairs flat — DROP
+de huurprijs — rent — ADD (c938 de huur = rent; compound huurprijs itself missing)
+laten zien — show — ADD (c1571 laten, c213 zien separate; c5248 tonen = to show synonym only)
+de vierkante meter — square metres — DROP (c944 vierkant + c940 meter separate; combination missing)
+hoeven — need — DROP (c1006 hoeven niet)
+het huisje — house — DROP (c260 het huis)
+gemeubileerd — furnished — KEEP
+benedenwoning — ground-floor flat — KEEP
+dat lijkt me fantastisch — that sounds great — DROP (c1065 lijken = to seem, c934 fantastisch; "lijkt me" phrase missing)
+zo snel mogelijk — as soon as possible — DROP (c198 snel, c1364 mogelijk, c10158 zodra = as soon as; set phrase missing)

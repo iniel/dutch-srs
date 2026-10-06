@@ -1,0 +1,13 @@
+de caissière — box office assistant — KEEP
+wat stom — how stupid — DROP (c1684 stom)
+gekeken — looked — DROP (c241 kijken)
+is al bezig — has started — ADD (c1316 bezig zijn = to be busy; "in progress" sense missing)
+gemist — missed — DROP (c769 missen)
+draaien — are showing — EXTRA (c1718 draaien = to turn; film-showing sense missing)
+de zomerhitte — summer heat — DROP (c1075 zomer + c3243 hitte; compound itself missing)
+opgenomen — filmed — DROP (c1747 opnemen)
+naar een verhaal van — based on a story by — ADD (c1028 verhaal; "naar" = based on missing)
+de natuurdocumentaire — nature documentary — DROP (c813 natuur + c3696 documentaire; compound itself missing)
+gesproken — spoken — DROP (c168 spreken)
+ondertiteld — subtitled — DROP (c8960 ondertitelen)
+de rang — class — KEEP

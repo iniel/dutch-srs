@@ -14,9 +14,11 @@ Dutch + English matches were reused (`beginnen = begin / start` vs `to begin`, `
 **Fix:** `scripts/nig-match/` generates candidates, then two rounds of parallel reviewer subagents judge them
 under the forms policy in `docs/VOCABULARY.md` › Merge review. The result: 336 book cards now point at
 existing cards (183 English answers added to 146 cards), 336 duplicate book cards were pruned, and 289 remain.
-The chapters hold 1039 unique cards. Decisions are in `nig-review.txt` and `scripts/sources/nig-review.json`.
-**Coverage (1039 cards):** translation 1039, audio 1027, examples 967, Russian 833, dictionary senses 799,
-IPA 785, grammar 673.
+A second, hand-reviewed round over those 289 (`docs/nederlands-in-gang/unmatched/`) merged 201 more and
+dropped 5, leaving 83 book cards; the chapters hold 930 unique cards. Decisions are in `nig-review.txt`,
+the annotated unmatched files, and `scripts/sources/nig-review.json`.
+**Coverage (930 cards):** translation 930, audio 914, examples 885, dictionary senses 849, Russian 825,
+IPA 793, grammar 647.
 
 ---
 

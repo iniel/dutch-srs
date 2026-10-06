@@ -1,0 +1,21 @@
+de fietsenmaker — cycle repairman — KEEP
+total loss — a write-off — KEEP
+gebeurd — happened — DROP (c1052 gebeuren)
+gevallen — fallen — DROP (c1326 vallen)
+regende — was raining — DROP (c1069 regenen)
+fietste weg — cycled away — DROP (c810 fietsen + c246 weg; no wegfietsen card)
+wilde — wanted — DROP (c233 willen)
+rechts afslaan — turn right — DROP (c757 rechtsaf)
+gleed weg — slipped — ADD (c2084 glijden = to slide; no wegglijden card)
+mankeerde — was wrong — ADD (c6936 mankeren = to be sick/ail; "be wrong with" sense not explicit)
+een slag in het wiel — the wheel is crooked — DROP (c2880 slag = blow/strike, c3860 wiel; buckle sense missing)
+zo'n — such a — KEEP
+de bagagedrager — carrier — KEEP
+afgebroken — broken — DROP (c8749 afbreken)
+de trapper — pedal — KEEP
+verstaan — heard — DROP (c882 verstaan)
+deden — worked — DROP (c391 doen = to do; "het doen" = to work/function sense missing)
+in orde maken — fix — ADD (c570 in orde = alright; "maken" = fix phrase not covered)
+tiptop in orde — in tip-top condition — DROP (c570 in orde = alright; tiptop not covered)
+Koningsdag — King's Day — KEEP
+betekent — means — DROP (c201 Wat betekent dat?)
