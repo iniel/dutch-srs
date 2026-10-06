@@ -5,11 +5,12 @@ import { createReadStream } from "node:fs";
 import { createInterface } from "node:readline";
 import { normalizeHead } from "./extract.mjs";
 import { extractRuGlosses } from "./extract-ru.mjs";
+import { addByPos } from "./ru-pos.mjs";
 
 const MAX_GLOSSES_PER_HEAD = 4;
 
 export async function buildRuGlossIndex(ruPath, wantedHeads) {
-  const index = new Map();
+  const index = Object.assign(new Map(), { byPos: new Map() });
   let nlEntries = 0;
   const rl = createInterface({ input: createReadStream(ruPath), crlfDelay: Infinity });
   for await (const line of rl) {
@@ -25,6 +26,7 @@ export async function buildRuGlossIndex(ruPath, wantedHeads) {
     const merged = index.get(head) ?? [];
     for (const g of glosses) if (!merged.includes(g)) merged.push(g);
     index.set(head, merged.slice(0, MAX_GLOSSES_PER_HEAD));
+    addByPos(index, head, e.pos, glosses, MAX_GLOSSES_PER_HEAD);
   }
   console.log(`ru-gloss: ${nlEntries} Dutch entries, glosses for ${index.size}/${wantedHeads.size} wanted heads`);
   return index;

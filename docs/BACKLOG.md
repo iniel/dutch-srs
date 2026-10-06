@@ -8,6 +8,22 @@ Priority order is roughly top-down. Items are independent unless noted.
 
 ---
 
+## DONE — Nederlands in gang as a third path
+**What:** The *Nederlands in gang* textbook vocabulary (AnkiWeb deck 304232421, 2019 edition, chapters 1–18)
+as a path next to TaalCompleet and Inburgering Online, with one unit per chapter (`Hoofdstuk N`).
+**Fix:** `scripts/import-nig.mjs` + `scripts/nig.mjs` import the 1092 notes, repairing 20 split rows, into
+1065 unique cards: 440 reused, 625 new `c10162`–`c10786`, no `level`. A pinned mapping and reviewed corrections
+live in `scripts/sources/`. `PathDef` gained an explicit-units shape (`ChapterPathDef`), and generators upsert
+only their own path (`scripts/paths-file.mjs`). `enrich -- --ids` enriches only the new cards; book forms
+resolve to their lemma and get POS-matched Russian glosses. Anki audio is a fallback only.
+**Coverage (1065 cards):** translation 1065, audio 1055, examples 985, Russian 742, IPA 707, grammar 656,
+dictionary senses 640. Missing lists are in `scripts/sources/nig-coverage.json`.
+**Open:** Tatoeba examples for function words can show another sense. 684 pre-book Russian glosses
+carry wiki links until a full `npm run enrich`. Inburgering's `a2:idlists` drifted from hand edits (see
+`docs/VOCABULARY.md`).
+
+---
+
 ## DONE — Progression paths decoupled from the card DB
 **What:** The card database and SRS state were coupled to a single linear course (`Card.level`). Added a
 path abstraction so multiple progression tracks share one path-agnostic card DB + SRS state.

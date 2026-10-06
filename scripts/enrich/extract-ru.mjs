@@ -10,12 +10,14 @@ const MAX_GLOSSES = 4;
 // another lemma, not a meaning. Real glosses never start with "форма".
 const isInflectionGloss = (g) => /^форма\s/i.test(g);
 
+export const stripWikiLinks = (s) => s.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1");
+
 export function extractRuGlosses(entry, { maxGlosses = MAX_GLOSSES } = {}) {
   const out = [];
   const seen = new Set();
   for (const sense of entry?.senses ?? []) {
     for (const raw of sense.glosses ?? []) {
-      const gloss = (raw ?? "").trim();
+      const gloss = stripWikiLinks(raw ?? "").trim();
       if (!gloss || isInflectionGloss(gloss)) continue;
       if (seen.has(gloss)) continue;
       seen.add(gloss);

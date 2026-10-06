@@ -21,23 +21,28 @@ export const sig = (c) =>
 
 const idNum = (id) => Number(String(id).slice(1)) || 0;
 
-export function mergeCandidates(live, candidates) {
+export function mergeCandidates(live, candidates, { signature = sig } = {}) {
   const originalIds = live.map((c) => c.id);
   let maxId = live.reduce((m, c) => Math.max(m, idNum(c.id)), -1);
-  const seen = new Set(live.map(sig));
+  const seen = new Map();
+  for (const card of live) if (!seen.has(signature(card))) seen.set(signature(card), card.id);
+  const candidateIds = [];
   const out = [...live];
   let added = 0;
   let skipped = 0;
 
   for (const cand of candidates) {
-    const s = sig(cand);
+    const s = signature(cand);
     if (seen.has(s)) {
       skipped++;
+      candidateIds.push(seen.get(s));
       continue;
     }
-    seen.add(s);
     const { id: _throwaway, ...rest } = cand;
-    out.push({ id: `c${++maxId}`, ...rest });
+    const id = `c${++maxId}`;
+    seen.set(s, id);
+    candidateIds.push(id);
+    out.push({ id, ...rest });
     added++;
   }
 
@@ -52,7 +57,7 @@ export function mergeCandidates(live, candidates) {
     ids.add(c.id);
   }
 
-  return { cards: out, added, skipped };
+  return { cards: out, added, skipped, candidateIds };
 }
 
 function main() {

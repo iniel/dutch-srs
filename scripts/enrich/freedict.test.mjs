@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { parseFreedictTei } from "./freedict.mjs";
+import { posKey } from "./ru-pos.mjs";
 
 const TEI = `
 <body>
@@ -20,6 +21,11 @@ const TEI = `
     <sense><cit type="trans" xml:lang="ru"><quote>называ́ться</quote><quote>именова́ться</quote></cit></sense>
   </entry>
   <entry>
+    <form><orth>fit</orth></form>
+    <gramGrp><pos>adj</pos></gramGrp>
+    <sense><cit type="trans" xml:lang="ru"><quote>в [[хороший|хоро́шей]] [[форма|фо́рме]]</quote></cit></sense>
+  </entry>
+  <entry>
     <form><orth>nogloss</orth></form>
     <gramGrp><pos>n</pos></gramGrp>
   </entry>
@@ -34,6 +40,17 @@ describe("parseFreedictTei", () => {
   it("merges multiple senses and dedupes", () => {
     const map = parseFreedictTei(TEI);
     expect(map.get("heten")).toEqual(["именоваться", "называться"]);
+  });
+
+  it("renders wiki links as their displayed text", () => {
+    expect(parseFreedictTei(TEI).get("fit")).toEqual(["в хорошей форме"]);
+  });
+
+  it("also indexes translations by headword and part of speech", () => {
+    const map = parseFreedictTei(TEI);
+    expect(map.byPos.get(posKey("greet", "verb"))).toEqual(["встретить", "здороваться", "приветствовать"]);
+    expect(map.byPos.get(posKey("greet", "noun"))).toBeUndefined();
+    expect([...map.byPos.keys()].some(k => k.startsWith("heten"))).toBe(false);
   });
 
   it("skips entries with no translation and applies keyFn", () => {

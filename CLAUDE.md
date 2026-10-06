@@ -17,17 +17,21 @@ Single user, no backend, no accounts. Hosted on GitHub Pages, installed as a PWA
 npm install
 npm run dev          # http://localhost:5173 (dev server)
 npm run build        # tsc -b + vite build -> dist/
-npm test             # vitest: 85 unit tests (pure logic + storage)
+npm test             # vitest: 323 unit tests (pure logic, storage, importers, shipped-data invariants)
 npm run test:e2e     # full-flow browser test (system Chrome, ~1min)
 # public/cards.json is HAND-OWNED data (stable ids, never renumbered). Fix cards by editing it directly.
 # The importers below never write it — they stage candidates; import:merge appends new ones. Rarely needed.
+# (import:nig is the one exception: it appends via the same append-only mergeCandidates.)
 npm run convert      # stage TaalCompleet .apkg decks -> scripts/import/anki.staging.json
 npm run convert:nt2lex # stage A+/B1/B2 freq vocab   -> scripts/import/nt2lex.staging.json (reads cards.json read-only)
 npm run clean scripts/import/nt2lex.staging.json # drop junk glosses + dup candidates (in place; needs explicit file)
-npm run import:merge # dedupe vs live + append new cards to public/cards.json (ONLY writer; assigns next-free ids)
+npm run import:merge # dedupe vs live + append new cards to public/cards.json (append-only; assigns next-free ids)
 npm run a2:map       # (re)build a2-mapping.json + scripts/a2-overrides.json from a2-analysis.txt marks
-npm run a2:idlists   # write easy/medium/hard .ids.json + public/paths.json (read-only over cards.json)
+npm run a2:idlists   # write easy/medium/hard .ids.json + upsert Inburgering in public/paths.json (see VOCABULARY caveat)
 npm run enrich       # (re)build public/enrichment.json, keyed by id (read-only over cards.json)
+                     #   `-- --ids file.json` enriches only those ids and merges into the existing file
+npm run import:nig   # Nederlands in gang: append new book cards + upsert its 18-chapter path (pinned mapping)
+npm run enrich:nig   # enrich the book's new ids, then finish:nig (Anki audio fallback + coverage report)
 ```
 Iterate against the running dev server + `npm test` (pure, fast, parallel-safe). Run the full
 `npm run build && npm test && npm run test:e2e` only when **shipping** or when directly asked — it
@@ -64,7 +68,9 @@ attach to the user's already-open browser/tab.
 | Shared quiz engine | `src/components/Quiz.tsx` | used by both Reviews and Lessons quiz |
 | Styles | `src/styles/base.css` (tokens + dark mode), `app.css` (components) |
 | Vocab importers (staging) | `scripts/convert-anki.mjs`, `scripts/convert-nt2lex.mjs`, `scripts/clean-cards.mjs` | write `scripts/import/*.staging.json`, never `cards.json` |
-| Card DB merge (sole writer) | `scripts/import-merge.mjs` | append-only, dedupes + assigns next-free ids |
+| Card DB merge | `scripts/import-merge.mjs` | append-only `mergeCandidates`, dedupes + assigns next-free ids |
+| Nederlands in gang import | `scripts/import-nig.mjs`, `scripts/nig.mjs`, `scripts/sources/nig-*.json` | book deck → cards + 18-chapter path; provenance + mapping committed |
+| Paths file | `scripts/paths-file.mjs` | generators upsert only their own path in `public/paths.json` |
 | E2E | `tests/e2e.mjs` | standalone Playwright script |
 | Deploy | `.github/workflows/deploy.yml` | uploads prebuilt `dist/` |
 

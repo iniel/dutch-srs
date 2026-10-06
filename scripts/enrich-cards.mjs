@@ -5,7 +5,7 @@
 // Dumps (see docs/VOCABULARY.md):
 //   data/kaikki/kaikki-Dutch.jsonl
 //   data/tatoeba/{nld,eng,rus}_sentences.tsv, data/tatoeba/links.csv
-import { createReadStream, readFileSync, writeFileSync } from "node:fs";
+import { createReadStream, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { createInterface } from "node:readline";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -16,6 +16,9 @@ import { buildNlRuGlossIndex } from "./enrich/nl-ru-index.mjs";
 import { buildEnRuGlossIndex } from "./enrich/en-ru-index.mjs";
 import { englishKeys } from "./enrich/extract-en-ru.mjs";
 import { loadFreedictIndex } from "./enrich/freedict.mjs";
+import { selectCards, mergeEnrichment } from "./enrich/selection.mjs";
+import { bookLemma, selectBookEntry, matchingSenses } from "./enrich/book-entry.mjs";
+import { posKey } from "./enrich/ru-pos.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KAIKKI = join(root, "data/kaikki/kaikki-Dutch.jsonl");
@@ -130,12 +133,19 @@ function enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex, enRuIndex, fd
   const heads = cardHeads(card);
   const candidates = heads.flatMap((h) => kaikkiIndex.get(h) ?? []);
   let { entry, matchedBy } = pickEntry(candidates, card);
+  const book = card.group.startsWith("Nederlands in gang ·");
+  const selection = book ? selectBookEntry(card, kaikkiIndex) : undefined;
+  if (selection) { entry = matchingSenses(selection.entry, card.english); matchedBy = selection.matchedBy; }
   if (!entryMatchesCard(entry, card)) entry = undefined;
 
   const out = { id: card.id, match: { source: "none", matchedBy: "none" } };
   const kaikkiExamples = [];
   if (entry) {
     Object.assign(out, extractKaikki(entry, { english: card.english }));
+    if (selection?.base) {
+      const base = extractKaikki(matchingSenses(selection.base, card.english), { english: card.english });
+      if (base.grammar) out.grammar = base.grammar;
+    }
     out.match = { source: "kaikki", matchedBy, matchedWord: entry.word };
     for (const s of out.senses ?? []) for (const ex of s.examples ?? []) kaikkiExamples.push(ex);
   }
@@ -153,11 +163,20 @@ function enrichOne(card, kaikkiIndex, tatoeba, ruIndex, nlRuIndex, enRuIndex, fd
     const addGlosses = (list) => { for (const g of list ?? []) if (!ruGlosses.includes(g)) ruGlosses.push(g); };
     const byHead = (index) => heads.map((h) => index.get(h)).find((g) => g?.length);
     const byKey = (index) => keys.map((k) => index.get(k)).find((g) => g?.length);
-    addGlosses(byHead(ruIndex));
-    addGlosses(byHead(fdNldIndex));
-    addGlosses(byHead(nlRuIndex));
-    addGlosses(byKey(fdEngIndex));
-    addGlosses(byKey(enRuIndex));
+    if (book) {
+      // EN→RU bridges lose the part of speech ("may" -> month, "live" -> live broadcast).
+      // For book forms, only use a directly matched Dutch lexical entry, and only its own
+      // part of speech: headword-wide lists mix homographs ("zijn": to be / his).
+      const lexical = selection?.base ?? (entry?.senses?.some(s => !s.form_of?.length) ? entry : undefined);
+      const key = lexical && posKey(normalizeHead(lexical.word), lexical.pos);
+      if (key) addGlosses(fdNldIndex.byPos.get(key) ?? ruIndex.byPos.get(key) ?? nlRuIndex.byPos.get(key));
+    } else {
+      addGlosses(byHead(ruIndex));
+      addGlosses(byHead(fdNldIndex));
+      addGlosses(byHead(nlRuIndex));
+      addGlosses(byKey(fdEngIndex));
+      addGlosses(byKey(enRuIndex));
+    }
     if (ruGlosses.length) out.glossRu = ruGlosses.slice(0, MAX_RU_GLOSSES);
   }
 
@@ -177,12 +196,31 @@ const headsHit = (index, heads) => heads.some((h) => index.get(h)?.length);
 const keysHit = (index, keys) => keys.some((k) => index.get(k)?.length);
 
 async function main() {
-  const cards = JSON.parse(readFileSync(join(root, "public/cards.json"), "utf8"));
+  const allCards = JSON.parse(readFileSync(join(root, "public/cards.json"), "utf8"));
+  const args = process.argv.slice(2);
+  if (args.length && (args.length !== 2 || args[0] !== "--ids")) throw new Error("Usage: npm run enrich -- [--ids path/to/ids.json]");
+  const selected = args[0] === "--ids";
+  const cards = selected ? selectCards(allCards, JSON.parse(readFileSync(args[1], "utf8"))) : allCards;
+  if (!cards.length) { console.log("No cards selected"); return; }
+  const outputPath = join(root, "public/enrichment.json");
+  const existing = selected && existsSync(outputPath) ? JSON.parse(readFileSync(outputPath, "utf8")) : {};
   const wantedHeads = new Set();
   for (const c of cards) for (const h of cardHeads(c)) wantedHeads.add(h);
+  for (const c of cards) if (bookLemma(c)) wantedHeads.add(bookLemma(c));
   console.log(`cards: ${cards.length}, wanted heads: ${wantedHeads.size}`);
 
   const kaikkiIndex = await buildKaikkiIndex(KAIKKI, wantedHeads);
+  const formHeads = new Set();
+  for (const entries of kaikkiIndex.values()) for (const entry of entries) for (const s of entry.senses ?? []) {
+    for (const form of s.form_of ?? []) {
+      const h = normalizeHead(form.word);
+      if (!wantedHeads.has(h)) formHeads.add(h);
+    }
+  }
+  if (formHeads.size) {
+    const bases = await buildKaikkiIndex(KAIKKI, formHeads);
+    for (const [head, entries] of bases) { kaikkiIndex.set(head, entries); wantedHeads.add(head); }
+  }
   const ruIndex = await buildRuGlossIndex(KAIKKI_RU, wantedHeads);
   const nlRuIndex = await buildNlRuGlossIndex(KAIKKI_NL, wantedHeads);
   const wantedEngKeys = new Set();
@@ -216,7 +254,7 @@ async function main() {
     }
   }
 
-  writeFileSync(join(root, "public/enrichment.json"), JSON.stringify(result));
+  writeFileSync(outputPath, JSON.stringify(mergeEnrichment(existing, result)));
   console.log("\n=== coverage ===");
   console.log("by source:", stats);
   console.log("by matchedBy:", byMatch);

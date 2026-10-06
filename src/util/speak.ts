@@ -12,3 +12,13 @@ export function speak(text: string, lang = "nl-NL"): void {
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(u);
 }
+
+/** Play a recorded pronunciation when there is one; fall back to speech synthesis. */
+export function pronounce(text: string, audioUrl?: string): void {
+  if (!audioUrl) return speak(text);
+  new Audio(audioUrl).play().catch(() => speak(text));
+}
+
+export function canPronounce(audioUrl?: string): boolean {
+  return Boolean(audioUrl) || speechSupported();
+}

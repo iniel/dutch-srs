@@ -62,7 +62,7 @@ export interface Grammar {
 
 export interface MatchInfo {
   source: "kaikki" | "kaikki+tatoeba" | "tatoeba" | "none";
-  matchedBy?: "lemma+pos" | "lemma" | "dutch-stripped" | "none";
+  matchedBy?: "lemma+pos" | "lemma" | "meaning" | "book-form" | "dutch-stripped" | "none";
   matchedWord?: string;
 }
 

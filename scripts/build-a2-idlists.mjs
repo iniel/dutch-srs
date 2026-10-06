@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { writePath } from "./paths-file.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const cards = JSON.parse(readFileSync(join(root, "public/cards.json"), "utf8"));
@@ -79,7 +80,7 @@ const paths = {
     },
   ],
 };
-writeFileSync(join(root, "public/paths.json"), JSON.stringify(paths));
+writePath(join(root, "public/paths.json"), paths.paths[0]);
 
 console.log("\n=== public/paths.json (Inburgering Online) ===");
 for (const d of difficulties)

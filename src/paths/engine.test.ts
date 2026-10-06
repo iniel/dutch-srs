@@ -75,6 +75,17 @@ describe("unlockedUnits", () => {
 });
 
 describe("availableLessonIds", () => {
+  it("shares mastery across chapters and counts a repeated word once in the path ring", () => {
+    const shared: LearningPath = { id: "book", name: "Book", units: [
+      { id: "ch1", label: "1", cardIds: ["a", "b"] },
+      { id: "ch2", label: "2", cardIds: ["a", "c"] },
+    ] };
+    const states = statesOf({ a: 5, b: 5 });
+    expect(currentUnitIndex(shared, states)).toBe(1);
+    expect(availableLessonIds(shared, states, false)).toEqual(["c"]);
+    expect(availableLessonIds(shared, {}, true)).toEqual(["a", "b", "c"]);
+    expect(pathRingPct(shared, states)).toBe(2 / 3);
+  });
   it("returns stage-0 cards in unlocked units, in order", () => {
     const s = statesOf({ a: 5, b: 6 }); // u1 passed; a,b started. u2 unlocked, c,d new.
     expect(availableLessonIds(path, s, false)).toEqual(["c", "d"]);

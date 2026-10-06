@@ -20,12 +20,20 @@ export interface PathDifficultyDef {
 }
 
 /** A path definition as stored in `public/paths.json`. */
-export interface PathDef {
+export interface DifficultyPathDef {
   id: string;
   name: string;
   unitSize: number;
   difficulties: PathDifficultyDef[];
 }
+
+export interface ChapterPathDef {
+  id: string;
+  name: string;
+  units: PathUnit[];
+}
+
+export type PathDef = DifficultyPathDef | ChapterPathDef;
 
 export interface PathsFile {
   version: number;

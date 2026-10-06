@@ -1,6 +1,6 @@
 import type { Card } from "../types";
 import { levelOrder } from "../srs/levels";
-import type { LearningPath, PathDef, PathUnit } from "./types";
+import type { LearningPath, PathDef, PathUnit, DifficultyPathDef } from "./types";
 
 export const TAALCOMPLEET_ID = "taalcompleet";
 
@@ -28,7 +28,7 @@ export function buildTaalCompleetPath(cards: Card[]): LearningPath {
 }
 
 /** A data-defined path: each difficulty tier chunked into units of `unitSize`. */
-export function buildInburgeringPath(cards: Card[], def: PathDef): LearningPath {
+export function buildInburgeringPath(cards: Card[], def: DifficultyPathDef): LearningPath {
   const known = new Set(cards.map((c) => c.id));
   const units: PathUnit[] = [];
   for (const tier of def.difficulties) {
@@ -46,5 +46,10 @@ export function buildInburgeringPath(cards: Card[], def: PathDef): LearningPath 
 
 /** Assemble every path: the derived TaalCompleet course first, then data-defined paths. */
 export function buildPaths(cards: Card[], defs: PathDef[]): LearningPath[] {
-  return [buildTaalCompleetPath(cards), ...defs.map((def) => buildInburgeringPath(cards, def))];
+  const known = new Set(cards.map(c => c.id));
+  return [buildTaalCompleetPath(cards), ...defs.map((def) => "units" in def
+    ? { id: def.id, name: def.name, units: def.units.map(u => ({
+      ...u, cardIds: [...new Set(u.cardIds)].filter(id => known.has(id)),
+    })) }
+    : buildInburgeringPath(cards, def))];
 }

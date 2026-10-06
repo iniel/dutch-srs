@@ -1,0 +1,829 @@
+{
+  "source": "https://ankiweb.net/shared/info/304232421",
+  "sourceSha256": "e3e22bb20c5c00454106b1dc16ab9fc2a38f4b6bc7aeff80368b1bcb375052d4",
+  "sourceRecords": 1092,
+  "repairedRecords": 1072,
+  "uniqueCards": 1065,
+  "chapters": [
+    {
+      "chapter": 1,
+      "cards": 89
+    },
+    {
+      "chapter": 2,
+      "cards": 76
+    },
+    {
+      "chapter": 3,
+      "cards": 51
+    },
+    {
+      "chapter": 4,
+      "cards": 59
+    },
+    {
+      "chapter": 5,
+      "cards": 54
+    },
+    {
+      "chapter": 6,
+      "cards": 69
+    },
+    {
+      "chapter": 7,
+      "cards": 58
+    },
+    {
+      "chapter": 8,
+      "cards": 69
+    },
+    {
+      "chapter": 9,
+      "cards": 53
+    },
+    {
+      "chapter": 10,
+      "cards": 51
+    },
+    {
+      "chapter": 11,
+      "cards": 71
+    },
+    {
+      "chapter": 12,
+      "cards": 45
+    },
+    {
+      "chapter": 13,
+      "cards": 69
+    },
+    {
+      "chapter": 14,
+      "cards": 76
+    },
+    {
+      "chapter": 15,
+      "cards": 50
+    },
+    {
+      "chapter": 16,
+      "cards": 23
+    },
+    {
+      "chapter": 17,
+      "cards": 57
+    },
+    {
+      "chapter": 18,
+      "cards": 52
+    }
+  ],
+  "corrections": [
+    {
+      "sourceIds": [
+        "1570504901729"
+      ],
+      "reason": "Replace unanswerable usage note with a descriptive answer"
+    },
+    {
+      "sourceIds": [
+        "1570505175613",
+        "1570505175614"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505175631"
+      ],
+      "reason": "Replace unanswerable usage note with a descriptive answer"
+    },
+    {
+      "sourceIds": [
+        "1570505190112",
+        "1570505190113"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505221321",
+        "1570505221322"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505221343",
+        "1570505221344"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505226578",
+        "1570505226579"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505226584"
+      ],
+      "reason": "Expand optional prefix (na)tuurlijk for answer checking; colloquial form: tuurlijk"
+    },
+    {
+      "sourceIds": [
+        "1570505226588",
+        "1570505226589"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505226614",
+        "1570505226615"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505234000"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505234004"
+      ],
+      "reason": "Correct English spelling"
+    },
+    {
+      "sourceIds": [
+        "1570505234011",
+        "1570505234012"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505241305"
+      ],
+      "reason": "Preserve plural in translation"
+    },
+    {
+      "sourceIds": [
+        "1570505246529",
+        "1570505246530"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505246553",
+        "1570505246554"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505252065",
+        "1570505252066"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505252087",
+        "1570505252088"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505258097",
+        "1570505258098"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505264083",
+        "1570505264084"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505264097",
+        "1570505264098"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505279289",
+        "1570505279290"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505285010"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285027"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285028"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285034"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285035"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285036",
+        "1570505285037"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505285045"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285056"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285071"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505285074",
+        "1570505285075"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505291961"
+      ],
+      "reason": "Correct English country name"
+    },
+    {
+      "sourceIds": [
+        "1570505297065"
+      ],
+      "reason": "Correct Dutch spelling"
+    },
+    {
+      "sourceIds": [
+        "1570505306179",
+        "1570505306180"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    },
+    {
+      "sourceIds": [
+        "1570505306195"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505306208"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505306209"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505306220"
+      ],
+      "reason": "Explicitly separate English synonyms"
+    },
+    {
+      "sourceIds": [
+        "1570505313569",
+        "1570505313570"
+      ],
+      "reason": "Repair a source row split across two Anki notes"
+    }
+  ],
+  "reviewedReuse": [
+    {
+      "sourceId": "1570504901666",
+      "cardId": "c117"
+    },
+    {
+      "sourceId": "1570504901669",
+      "cardId": "c853"
+    },
+    {
+      "sourceId": "1570504901679",
+      "cardId": "c97"
+    },
+    {
+      "sourceId": "1570504901680",
+      "cardId": "c139"
+    },
+    {
+      "sourceId": "1570504901686",
+      "cardId": "c140"
+    },
+    {
+      "sourceId": "1570504901687",
+      "cardId": "c10110"
+    },
+    {
+      "sourceId": "1570504901693",
+      "cardId": "c46"
+    },
+    {
+      "sourceId": "1570504901698",
+      "cardId": "c171"
+    },
+    {
+      "sourceId": "1570504901707",
+      "cardId": "c291"
+    },
+    {
+      "sourceId": "1570504901721",
+      "cardId": "c861"
+    },
+    {
+      "sourceId": "1570504901722",
+      "cardId": "c47"
+    },
+    {
+      "sourceId": "1570504901733",
+      "cardId": "c157"
+    },
+    {
+      "sourceId": "1570504901738",
+      "cardId": "c830"
+    },
+    {
+      "sourceId": "1570504901742",
+      "cardId": "c138"
+    },
+    {
+      "sourceId": "1570504901745",
+      "cardId": "c145"
+    },
+    {
+      "sourceId": "1570504901746",
+      "cardId": "c163"
+    },
+    {
+      "sourceId": "1570504901748",
+      "cardId": "c162"
+    },
+    {
+      "sourceId": "1570504901749",
+      "cardId": "c710"
+    },
+    {
+      "sourceId": "1570505175565",
+      "cardId": "c3725"
+    },
+    {
+      "sourceId": "1570505175571",
+      "cardId": "c10103"
+    },
+    {
+      "sourceId": "1570505175603",
+      "cardId": "c565"
+    },
+    {
+      "sourceId": "1570505175609",
+      "cardId": "c1623"
+    },
+    {
+      "sourceId": "1570505175615",
+      "cardId": "c1452"
+    },
+    {
+      "sourceId": "1570505190089",
+      "cardId": "c886"
+    },
+    {
+      "sourceId": "1570505190095",
+      "cardId": "c536"
+    },
+    {
+      "sourceId": "1570505190096",
+      "cardId": "c887"
+    },
+    {
+      "sourceId": "1570505190097",
+      "cardId": "c225"
+    },
+    {
+      "sourceId": "1570505190100",
+      "cardId": "c3898"
+    },
+    {
+      "sourceId": "1570505190108",
+      "cardId": "c651"
+    },
+    {
+      "sourceId": "1570505190122",
+      "cardId": "c881"
+    },
+    {
+      "sourceId": "1570505221313",
+      "cardId": "c849"
+    },
+    {
+      "sourceId": "1570505221319",
+      "cardId": "c1261"
+    },
+    {
+      "sourceId": "1570505221323",
+      "cardId": "c899"
+    },
+    {
+      "sourceId": "1570505221326",
+      "cardId": "c111"
+    },
+    {
+      "sourceId": "1570505221336",
+      "cardId": "c5320"
+    },
+    {
+      "sourceId": "1570505221354",
+      "cardId": "c384"
+    },
+    {
+      "sourceId": "1570505221368",
+      "cardId": "c51"
+    },
+    {
+      "sourceId": "1570505226570",
+      "cardId": "c9845"
+    },
+    {
+      "sourceId": "1570505226613",
+      "cardId": "c2664"
+    },
+    {
+      "sourceId": "1570505233960",
+      "cardId": "c1260"
+    },
+    {
+      "sourceId": "1570505233965",
+      "cardId": "c5050"
+    },
+    {
+      "sourceId": "1570505233966",
+      "cardId": "c572"
+    },
+    {
+      "sourceId": "1570505233973",
+      "cardId": "c5045"
+    },
+    {
+      "sourceId": "1570505233985",
+      "cardId": "c215"
+    },
+    {
+      "sourceId": "1570505233986",
+      "cardId": "c405"
+    },
+    {
+      "sourceId": "1570505234010",
+      "cardId": "c9863"
+    },
+    {
+      "sourceId": "1570505241283",
+      "cardId": "c606"
+    },
+    {
+      "sourceId": "1570505241286",
+      "cardId": "c576"
+    },
+    {
+      "sourceId": "1570505241287",
+      "cardId": "c365"
+    },
+    {
+      "sourceId": "1570505241288",
+      "cardId": "c6670"
+    },
+    {
+      "sourceId": "1570505241289",
+      "cardId": "c51"
+    },
+    {
+      "sourceId": "1570505241290",
+      "cardId": "c252"
+    },
+    {
+      "sourceId": "1570505241299",
+      "cardId": "c318"
+    },
+    {
+      "sourceId": "1570505241324",
+      "cardId": "c646"
+    },
+    {
+      "sourceId": "1570505241336",
+      "cardId": "c1911"
+    },
+    {
+      "sourceId": "1570505241339",
+      "cardId": "c475"
+    },
+    {
+      "sourceId": "1570505246523",
+      "cardId": "c5412"
+    },
+    {
+      "sourceId": "1570505246535",
+      "cardId": "c267"
+    },
+    {
+      "sourceId": "1570505246549",
+      "cardId": "c940"
+    },
+    {
+      "sourceId": "1570505246564",
+      "cardId": "c376"
+    },
+    {
+      "sourceId": "1570505246567",
+      "cardId": "c274"
+    },
+    {
+      "sourceId": "1570505246568",
+      "cardId": "c938"
+    },
+    {
+      "sourceId": "1570505246585",
+      "cardId": "c1603"
+    },
+    {
+      "sourceId": "1570505252060",
+      "cardId": "c25"
+    },
+    {
+      "sourceId": "1570505252061",
+      "cardId": "c517"
+    },
+    {
+      "sourceId": "1570505252073",
+      "cardId": "c4707"
+    },
+    {
+      "sourceId": "1570505252074",
+      "cardId": "c1872"
+    },
+    {
+      "sourceId": "1570505258093",
+      "cardId": "c1229"
+    },
+    {
+      "sourceId": "1570505264078",
+      "cardId": "c292"
+    },
+    {
+      "sourceId": "1570505264079",
+      "cardId": "c804"
+    },
+    {
+      "sourceId": "1570505264104",
+      "cardId": "c7034"
+    },
+    {
+      "sourceId": "1570505264134",
+      "cardId": "c1776"
+    },
+    {
+      "sourceId": "1570505264145",
+      "cardId": "c2040"
+    },
+    {
+      "sourceId": "1570505264146",
+      "cardId": "c822"
+    },
+    {
+      "sourceId": "1570505272159",
+      "cardId": "c4212"
+    },
+    {
+      "sourceId": "1570505272160",
+      "cardId": "c2218"
+    },
+    {
+      "sourceId": "1570505272163",
+      "cardId": "c112"
+    },
+    {
+      "sourceId": "1570505272173",
+      "cardId": "c790"
+    },
+    {
+      "sourceId": "1570505272179",
+      "cardId": "c4349"
+    },
+    {
+      "sourceId": "1570505272182",
+      "cardId": "c333"
+    },
+    {
+      "sourceId": "1570505272188",
+      "cardId": "c758"
+    },
+    {
+      "sourceId": "1570505272190",
+      "cardId": "c3737"
+    },
+    {
+      "sourceId": "1570505279300",
+      "cardId": "c1943"
+    },
+    {
+      "sourceId": "1570505279304",
+      "cardId": "c2980"
+    },
+    {
+      "sourceId": "1570505279305",
+      "cardId": "c414"
+    },
+    {
+      "sourceId": "1570505279308",
+      "cardId": "c4216"
+    },
+    {
+      "sourceId": "1570505279327",
+      "cardId": "c349"
+    },
+    {
+      "sourceId": "1570505285012",
+      "cardId": "c1570"
+    },
+    {
+      "sourceId": "1570505285029",
+      "cardId": "c5398"
+    },
+    {
+      "sourceId": "1570505285031",
+      "cardId": "c5603"
+    },
+    {
+      "sourceId": "1570505285033",
+      "cardId": "c1195"
+    },
+    {
+      "sourceId": "1570505285038",
+      "cardId": "c614"
+    },
+    {
+      "sourceId": "1570505285046",
+      "cardId": "c3719"
+    },
+    {
+      "sourceId": "1570505285052",
+      "cardId": "c1370"
+    },
+    {
+      "sourceId": "1570505285055",
+      "cardId": "c1223"
+    },
+    {
+      "sourceId": "1570505285059",
+      "cardId": "c647"
+    },
+    {
+      "sourceId": "1570505285060",
+      "cardId": "c8155"
+    },
+    {
+      "sourceId": "1570505285062",
+      "cardId": "c1754"
+    },
+    {
+      "sourceId": "1570505285068",
+      "cardId": "c672"
+    },
+    {
+      "sourceId": "1570505285073",
+      "cardId": "c959"
+    },
+    {
+      "sourceId": "1570505285084",
+      "cardId": "c5167"
+    },
+    {
+      "sourceId": "1570505291963",
+      "cardId": "c690"
+    },
+    {
+      "sourceId": "1570505291966",
+      "cardId": "c1922"
+    },
+    {
+      "sourceId": "1570505291993",
+      "cardId": "c1573"
+    },
+    {
+      "sourceId": "1570505297066",
+      "cardId": "c1102"
+    },
+    {
+      "sourceId": "1570505297082",
+      "cardId": "c3696"
+    },
+    {
+      "sourceId": "1570505306167",
+      "cardId": "c6506"
+    },
+    {
+      "sourceId": "1570505306169",
+      "cardId": "c8261"
+    },
+    {
+      "sourceId": "1570505306170",
+      "cardId": "c6340"
+    },
+    {
+      "sourceId": "1570505306182",
+      "cardId": "c2684"
+    },
+    {
+      "sourceId": "1570505306187",
+      "cardId": "c1369"
+    },
+    {
+      "sourceId": "1570505306199",
+      "cardId": "c9272"
+    },
+    {
+      "sourceId": "1570505306200",
+      "cardId": "c677"
+    },
+    {
+      "sourceId": "1570505306204",
+      "cardId": "c1626"
+    },
+    {
+      "sourceId": "1570505306221",
+      "cardId": "c3341"
+    },
+    {
+      "sourceId": "1570505313526",
+      "cardId": "c2407"
+    },
+    {
+      "sourceId": "1570505313539",
+      "cardId": "c1710"
+    },
+    {
+      "sourceId": "1570505313554",
+      "cardId": "c1513"
+    },
+    {
+      "sourceId": "1570505313555",
+      "cardId": "c8690"
+    },
+    {
+      "sourceId": "1570505313556",
+      "cardId": "c6414"
+    },
+    {
+      "sourceId": "1570505313559",
+      "cardId": "c8221"
+    }
+  ]
+}

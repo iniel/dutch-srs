@@ -1,0 +1,5485 @@
+{
+  "sourceSha256": "e3e22bb20c5c00454106b1dc16ab9fc2a38f4b6bc7aeff80368b1bcb375052d4",
+  "records": [
+    {
+      "sourceId": "1570504901666",
+      "cardId": "c117",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901667",
+      "cardId": "c21",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901668",
+      "cardId": "c10162",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901669",
+      "cardId": "c853",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901670",
+      "cardId": "c10102",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901671",
+      "cardId": "c10163",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901672",
+      "cardId": "c45",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901673",
+      "cardId": "c10164",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901674",
+      "cardId": "c33",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901675",
+      "cardId": "c783",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901676",
+      "cardId": "c110",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901677",
+      "cardId": "c10165",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901678",
+      "cardId": "c51",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901679",
+      "cardId": "c97",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901680",
+      "cardId": "c139",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901681",
+      "cardId": "c10166",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901682",
+      "cardId": "c10167",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901683",
+      "cardId": "c48",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901684",
+      "cardId": "c10168",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901685",
+      "cardId": "c10169",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901686",
+      "cardId": "c140",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901687",
+      "cardId": "c10110",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901688",
+      "cardId": "c10170",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901689",
+      "cardId": "c10171",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901690",
+      "cardId": "c10172",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901691",
+      "cardId": "c96",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901692",
+      "cardId": "c10173",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901693",
+      "cardId": "c46",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901694",
+      "cardId": "c95",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901695",
+      "cardId": "c777",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901696",
+      "cardId": "c6",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901697",
+      "cardId": "c11",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901698",
+      "cardId": "c171",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901699",
+      "cardId": "c10174",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901700",
+      "cardId": "c538",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901701",
+      "cardId": "c534",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901702",
+      "cardId": "c10175",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901703",
+      "cardId": "c247",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901704",
+      "cardId": "c718",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901705",
+      "cardId": "c10176",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901706",
+      "cardId": "c10177",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901707",
+      "cardId": "c291",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901708",
+      "cardId": "c10178",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901709",
+      "cardId": "c10179",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901710",
+      "cardId": "c10180",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901711",
+      "cardId": "c10181",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901712",
+      "cardId": "c10182",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901713",
+      "cardId": "c94",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901714",
+      "cardId": "c10183",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901715",
+      "cardId": "c10184",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901716",
+      "cardId": "c269",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901717",
+      "cardId": "c852",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901718",
+      "cardId": "c860",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901719",
+      "cardId": "c90",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901720",
+      "cardId": "c87",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901721",
+      "cardId": "c861",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901722",
+      "cardId": "c47",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901723",
+      "cardId": "c10185",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901724",
+      "cardId": "c10186",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901725",
+      "cardId": "c60",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901726",
+      "cardId": "c691",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901727",
+      "cardId": "c10187",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901728",
+      "cardId": "c10188",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901729",
+      "cardId": "c10189",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901730",
+      "cardId": "c82",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901731",
+      "cardId": "c80",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901732",
+      "cardId": "c897",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901733",
+      "cardId": "c157",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901734",
+      "cardId": "c2",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901735",
+      "cardId": "c10190",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901736",
+      "cardId": "c242",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901737",
+      "cardId": "c10191",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901738",
+      "cardId": "c830",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901739",
+      "cardId": "c158",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901740",
+      "cardId": "c10192",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901741",
+      "cardId": "c169",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901742",
+      "cardId": "c138",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901743",
+      "cardId": "c694",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901744",
+      "cardId": "c238",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901745",
+      "cardId": "c145",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901746",
+      "cardId": "c163",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901747",
+      "cardId": "c10193",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901748",
+      "cardId": "c162",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901749",
+      "cardId": "c710",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901750",
+      "cardId": "c10194",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901751",
+      "cardId": "c72",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901752",
+      "cardId": "c10195",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901753",
+      "cardId": "c748",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570504901754",
+      "cardId": "c10196",
+      "chapter": 1
+    },
+    {
+      "sourceId": "1570505175564",
+      "cardId": "c10197",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175565",
+      "cardId": "c3725",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175566",
+      "cardId": "c10109",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175567",
+      "cardId": "c10198",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175568",
+      "cardId": "c625",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175569",
+      "cardId": "c10199",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175570",
+      "cardId": "c10200",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175571",
+      "cardId": "c10103",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175572",
+      "cardId": "c10201",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175573",
+      "cardId": "c297",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175574",
+      "cardId": "c227",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175575",
+      "cardId": "c10202",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175576",
+      "cardId": "c10203",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175577",
+      "cardId": "c10108",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175578",
+      "cardId": "c10204",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175579",
+      "cardId": "c10205",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175580",
+      "cardId": "c173",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175581",
+      "cardId": "c179",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175582",
+      "cardId": "c130",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175583",
+      "cardId": "c172",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175584",
+      "cardId": "c10206",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175585",
+      "cardId": "c10207",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175586",
+      "cardId": "c134",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175587",
+      "cardId": "c10208",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175588",
+      "cardId": "c1017",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175589",
+      "cardId": "c10209",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175590",
+      "cardId": "c10210",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175591",
+      "cardId": "c10211",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175592",
+      "cardId": "c31",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175593",
+      "cardId": "c10212",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175594",
+      "cardId": "c520",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175595",
+      "cardId": "c10213",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175596",
+      "cardId": "c10214",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175597",
+      "cardId": "c10215",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175598",
+      "cardId": "c10216",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175599",
+      "cardId": "c10217",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175600",
+      "cardId": "c42",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175601",
+      "cardId": "c10218",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175602",
+      "cardId": "c10219",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175603",
+      "cardId": "c565",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175604",
+      "cardId": "c10220",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175605",
+      "cardId": "c642",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175606",
+      "cardId": "c10221",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175607",
+      "cardId": "c10222",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175608",
+      "cardId": "c620",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175609",
+      "cardId": "c1623",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175610",
+      "cardId": "c497",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175611",
+      "cardId": "c669",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175612",
+      "cardId": "c10223",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175613",
+      "cardId": "c10224",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175614",
+      "cardId": "c10224",
+      "chapter": 2,
+      "mergedInto": "1570505175613"
+    },
+    {
+      "sourceId": "1570505175615",
+      "cardId": "c1452",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175616",
+      "cardId": "c10225",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175617",
+      "cardId": "c10226",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175618",
+      "cardId": "c10227",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175619",
+      "cardId": "c10228",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175620",
+      "cardId": "c816",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175621",
+      "cardId": "c40",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175622",
+      "cardId": "c10229",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175623",
+      "cardId": "c779",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175624",
+      "cardId": "c626",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175625",
+      "cardId": "c3058",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175626",
+      "cardId": "c185",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175627",
+      "cardId": "c1075",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175628",
+      "cardId": "c10230",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175629",
+      "cardId": "c61",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175630",
+      "cardId": "c10231",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175631",
+      "cardId": "c10232",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175632",
+      "cardId": "c732",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175633",
+      "cardId": "c34",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175634",
+      "cardId": "c10105",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175635",
+      "cardId": "c10233",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175636",
+      "cardId": "c683",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175637",
+      "cardId": "c10234",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175638",
+      "cardId": "c10235",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175639",
+      "cardId": "c850",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505175640",
+      "cardId": "c10193",
+      "chapter": 2
+    },
+    {
+      "sourceId": "1570505190087",
+      "cardId": "c10236",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190088",
+      "cardId": "c996",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190089",
+      "cardId": "c886",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190090",
+      "cardId": "c115",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190091",
+      "cardId": "c10237",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190092",
+      "cardId": "c224",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190093",
+      "cardId": "c10238",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190094",
+      "cardId": "c10239",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190095",
+      "cardId": "c536",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190096",
+      "cardId": "c887",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190097",
+      "cardId": "c225",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190098",
+      "cardId": "c10240",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190099",
+      "cardId": "c10241",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190100",
+      "cardId": "c3898",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190101",
+      "cardId": "c10242",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190102",
+      "cardId": "c10243",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190103",
+      "cardId": "c10244",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190104",
+      "cardId": "c390",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190105",
+      "cardId": "c10245",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190106",
+      "cardId": "c1036",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190107",
+      "cardId": "c10246",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190108",
+      "cardId": "c651",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190109",
+      "cardId": "c439",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190110",
+      "cardId": "c10247",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190111",
+      "cardId": "c10248",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190112",
+      "cardId": "c10249",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190113",
+      "cardId": "c10249",
+      "chapter": 3,
+      "mergedInto": "1570505190112"
+    },
+    {
+      "sourceId": "1570505190114",
+      "cardId": "c10102",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190115",
+      "cardId": "c10250",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190116",
+      "cardId": "c10251",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190117",
+      "cardId": "c10252",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190118",
+      "cardId": "c249",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190119",
+      "cardId": "c10253",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190120",
+      "cardId": "c519",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190121",
+      "cardId": "c10254",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190122",
+      "cardId": "c881",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190123",
+      "cardId": "c10255",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190124",
+      "cardId": "c56",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190125",
+      "cardId": "c1034",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190126",
+      "cardId": "c379",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190127",
+      "cardId": "c10256",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190128",
+      "cardId": "c10111",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190129",
+      "cardId": "c220",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190130",
+      "cardId": "c10257",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190131",
+      "cardId": "c10117",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190132",
+      "cardId": "c10258",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190133",
+      "cardId": "c407",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190134",
+      "cardId": "c10259",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190135",
+      "cardId": "c10260",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190136",
+      "cardId": "c10261",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190137",
+      "cardId": "c120",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505190138",
+      "cardId": "c337",
+      "chapter": 3
+    },
+    {
+      "sourceId": "1570505221312",
+      "cardId": "c299",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221313",
+      "cardId": "c849",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221314",
+      "cardId": "c10262",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221315",
+      "cardId": "c1878",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221316",
+      "cardId": "c1307",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221317",
+      "cardId": "c10263",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221318",
+      "cardId": "c10264",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221319",
+      "cardId": "c1261",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221320",
+      "cardId": "c10265",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221321",
+      "cardId": "c10266",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221322",
+      "cardId": "c10266",
+      "chapter": 4,
+      "mergedInto": "1570505221321"
+    },
+    {
+      "sourceId": "1570505221323",
+      "cardId": "c899",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221324",
+      "cardId": "c10267",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221325",
+      "cardId": "c714",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221326",
+      "cardId": "c111",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221327",
+      "cardId": "c174",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221328",
+      "cardId": "c10268",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221329",
+      "cardId": "c10269",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221330",
+      "cardId": "c10270",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221331",
+      "cardId": "c10271",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221332",
+      "cardId": "c10272",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221333",
+      "cardId": "c10273",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221334",
+      "cardId": "c549",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221335",
+      "cardId": "c298",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221336",
+      "cardId": "c5320",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221337",
+      "cardId": "c10274",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221338",
+      "cardId": "c888",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221339",
+      "cardId": "c692",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221340",
+      "cardId": "c10275",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221341",
+      "cardId": "c10276",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221342",
+      "cardId": "c470",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221343",
+      "cardId": "c10277",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221344",
+      "cardId": "c10277",
+      "chapter": 4,
+      "mergedInto": "1570505221343"
+    },
+    {
+      "sourceId": "1570505221345",
+      "cardId": "c10278",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221346",
+      "cardId": "c300",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221347",
+      "cardId": "c10279",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221348",
+      "cardId": "c164",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221349",
+      "cardId": "c119",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221350",
+      "cardId": "c10280",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221351",
+      "cardId": "c383",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221352",
+      "cardId": "c10281",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221353",
+      "cardId": "c10282",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221354",
+      "cardId": "c384",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221355",
+      "cardId": "c10283",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221356",
+      "cardId": "c10284",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221357",
+      "cardId": "c1207",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221358",
+      "cardId": "c10285",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221359",
+      "cardId": "c10286",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221360",
+      "cardId": "c10287",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221361",
+      "cardId": "c10288",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221362",
+      "cardId": "c10289",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221363",
+      "cardId": "c10290",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221364",
+      "cardId": "c10291",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221365",
+      "cardId": "c10292",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221366",
+      "cardId": "c336",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221367",
+      "cardId": "c2073",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221368",
+      "cardId": "c51",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221369",
+      "cardId": "c10293",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221370",
+      "cardId": "c10294",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221371",
+      "cardId": "c10295",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505221372",
+      "cardId": "c10296",
+      "chapter": 4
+    },
+    {
+      "sourceId": "1570505226568",
+      "cardId": "c10297",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226569",
+      "cardId": "c10298",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226570",
+      "cardId": "c9845",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226571",
+      "cardId": "c10106",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226572",
+      "cardId": "c10299",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226573",
+      "cardId": "c10300",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226574",
+      "cardId": "c248",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226575",
+      "cardId": "c10301",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226576",
+      "cardId": "c10302",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226577",
+      "cardId": "c10303",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226578",
+      "cardId": "c10304",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226579",
+      "cardId": "c10304",
+      "chapter": 5,
+      "mergedInto": "1570505226578"
+    },
+    {
+      "sourceId": "1570505226580",
+      "cardId": "c10305",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226581",
+      "cardId": "c10306",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226582",
+      "cardId": "c415",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226583",
+      "cardId": "c199",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226584",
+      "cardId": "c546",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226585",
+      "cardId": "c440",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226586",
+      "cardId": "c1995",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226587",
+      "cardId": "c10307",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226588",
+      "cardId": "c10308",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226589",
+      "cardId": "c10308",
+      "chapter": 5,
+      "mergedInto": "1570505226588"
+    },
+    {
+      "sourceId": "1570505226590",
+      "cardId": "c10309",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226591",
+      "cardId": "c10310",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226592",
+      "cardId": "c10311",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226593",
+      "cardId": "c354",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226594",
+      "cardId": "c10312",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226595",
+      "cardId": "c10313",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226596",
+      "cardId": "c136",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226597",
+      "cardId": "c10314",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226598",
+      "cardId": "c10315",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226599",
+      "cardId": "c665",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226600",
+      "cardId": "c10316",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226601",
+      "cardId": "c445",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226602",
+      "cardId": "c10317",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226603",
+      "cardId": "c10318",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226604",
+      "cardId": "c10319",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226605",
+      "cardId": "c416",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226606",
+      "cardId": "c10320",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226607",
+      "cardId": "c10321",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226608",
+      "cardId": "c10322",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226609",
+      "cardId": "c10323",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226610",
+      "cardId": "c10324",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226611",
+      "cardId": "c10325",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226612",
+      "cardId": "c10326",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226613",
+      "cardId": "c2664",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226614",
+      "cardId": "c10327",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226615",
+      "cardId": "c10327",
+      "chapter": 5,
+      "mergedInto": "1570505226614"
+    },
+    {
+      "sourceId": "1570505226616",
+      "cardId": "c375",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226617",
+      "cardId": "c10328",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226618",
+      "cardId": "c430",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226619",
+      "cardId": "c10329",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226620",
+      "cardId": "c374",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226621",
+      "cardId": "c10330",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226622",
+      "cardId": "c10331",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226623",
+      "cardId": "c10332",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505226624",
+      "cardId": "c175",
+      "chapter": 5
+    },
+    {
+      "sourceId": "1570505233946",
+      "cardId": "c10333",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233947",
+      "cardId": "c872",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233948",
+      "cardId": "c10334",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233949",
+      "cardId": "c310",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233950",
+      "cardId": "c1265",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233951",
+      "cardId": "c749",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233952",
+      "cardId": "c262",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233953",
+      "cardId": "c10335",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233954",
+      "cardId": "c1035",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233955",
+      "cardId": "c10336",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233956",
+      "cardId": "c10337",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233957",
+      "cardId": "c6766",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233958",
+      "cardId": "c10338",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233959",
+      "cardId": "c10339",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233960",
+      "cardId": "c1260",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233961",
+      "cardId": "c10340",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233962",
+      "cardId": "c10341",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233963",
+      "cardId": "c10342",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233964",
+      "cardId": "c10343",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233965",
+      "cardId": "c5050",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233966",
+      "cardId": "c572",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233967",
+      "cardId": "c5047",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233968",
+      "cardId": "c10344",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233969",
+      "cardId": "c10345",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233970",
+      "cardId": "c399",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233971",
+      "cardId": "c541",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233972",
+      "cardId": "c10346",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233973",
+      "cardId": "c5045",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233974",
+      "cardId": "c10347",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233975",
+      "cardId": "c10348",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233976",
+      "cardId": "c1039",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233977",
+      "cardId": "c419",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233978",
+      "cardId": "c422",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233979",
+      "cardId": "c10349",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233980",
+      "cardId": "c77",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233981",
+      "cardId": "c369",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233982",
+      "cardId": "c10350",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233983",
+      "cardId": "c10351",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233984",
+      "cardId": "c10352",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233985",
+      "cardId": "c215",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233986",
+      "cardId": "c405",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233987",
+      "cardId": "c410",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233988",
+      "cardId": "c413",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233989",
+      "cardId": "c10353",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233990",
+      "cardId": "c409",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233991",
+      "cardId": "c10354",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233992",
+      "cardId": "c10355",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233993",
+      "cardId": "c197",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233994",
+      "cardId": "c10356",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233995",
+      "cardId": "c10357",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233996",
+      "cardId": "c10358",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233997",
+      "cardId": "c10359",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233998",
+      "cardId": "c10360",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505233999",
+      "cardId": "c10361",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234000",
+      "cardId": "c10362",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234001",
+      "cardId": "c10363",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234002",
+      "cardId": "c10364",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234003",
+      "cardId": "c10365",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234004",
+      "cardId": "c10366",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234005",
+      "cardId": "c10367",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234006",
+      "cardId": "c1004",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234007",
+      "cardId": "c3946",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234008",
+      "cardId": "c276",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234009",
+      "cardId": "c10114",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234010",
+      "cardId": "c9863",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234011",
+      "cardId": "c10368",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234012",
+      "cardId": "c10368",
+      "chapter": 6,
+      "mergedInto": "1570505234011"
+    },
+    {
+      "sourceId": "1570505234013",
+      "cardId": "c10369",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234014",
+      "cardId": "c10370",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505234015",
+      "cardId": "c588",
+      "chapter": 6
+    },
+    {
+      "sourceId": "1570505241282",
+      "cardId": "c10371",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241283",
+      "cardId": "c606",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241284",
+      "cardId": "c10372",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241285",
+      "cardId": "c10373",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241286",
+      "cardId": "c576",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241287",
+      "cardId": "c365",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241288",
+      "cardId": "c6670",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241289",
+      "cardId": "c51",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241290",
+      "cardId": "c252",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241291",
+      "cardId": "c86",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241292",
+      "cardId": "c83",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241293",
+      "cardId": "c10374",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241294",
+      "cardId": "c1634",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241295",
+      "cardId": "c608",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241296",
+      "cardId": "c921",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241297",
+      "cardId": "c531",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241298",
+      "cardId": "c10375",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241299",
+      "cardId": "c318",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241300",
+      "cardId": "c1499",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241301",
+      "cardId": "c10376",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241302",
+      "cardId": "c10377",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241303",
+      "cardId": "c954",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241304",
+      "cardId": "c10378",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241305",
+      "cardId": "c10379",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241306",
+      "cardId": "c10380",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241307",
+      "cardId": "c10381",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241308",
+      "cardId": "c615",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241309",
+      "cardId": "c10382",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241310",
+      "cardId": "c914",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241311",
+      "cardId": "c10383",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241312",
+      "cardId": "c10384",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241313",
+      "cardId": "c10385",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241314",
+      "cardId": "c10115",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241315",
+      "cardId": "c10386",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241316",
+      "cardId": "c10161",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241317",
+      "cardId": "c10387",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241318",
+      "cardId": "c10388",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241319",
+      "cardId": "c10389",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241320",
+      "cardId": "c10390",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241321",
+      "cardId": "c10391",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241322",
+      "cardId": "c10111",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241323",
+      "cardId": "c10392",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241324",
+      "cardId": "c646",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241325",
+      "cardId": "c1657",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241326",
+      "cardId": "c10393",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241327",
+      "cardId": "c10394",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241328",
+      "cardId": "c10395",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241329",
+      "cardId": "c1234",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241330",
+      "cardId": "c323",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241331",
+      "cardId": "c324",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241332",
+      "cardId": "c322",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241333",
+      "cardId": "c317",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241334",
+      "cardId": "c313",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241335",
+      "cardId": "c10396",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241336",
+      "cardId": "c1911",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241337",
+      "cardId": "c10397",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241338",
+      "cardId": "c10398",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505241339",
+      "cardId": "c475",
+      "chapter": 7
+    },
+    {
+      "sourceId": "1570505246518",
+      "cardId": "c10399",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246519",
+      "cardId": "c10400",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246520",
+      "cardId": "c10401",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246521",
+      "cardId": "c10118",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246522",
+      "cardId": "c10402",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246523",
+      "cardId": "c5412",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246524",
+      "cardId": "c10403",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246525",
+      "cardId": "c1670",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246526",
+      "cardId": "c264",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246527",
+      "cardId": "c10404",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246528",
+      "cardId": "c2060",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246529",
+      "cardId": "c10405",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246530",
+      "cardId": "c10405",
+      "chapter": 8,
+      "mergedInto": "1570505246529"
+    },
+    {
+      "sourceId": "1570505246531",
+      "cardId": "c10406",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246532",
+      "cardId": "c856",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246533",
+      "cardId": "c10407",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246534",
+      "cardId": "c10408",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246535",
+      "cardId": "c267",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246536",
+      "cardId": "c10409",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246537",
+      "cardId": "c160",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246538",
+      "cardId": "c338",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246539",
+      "cardId": "c10410",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246540",
+      "cardId": "c10411",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246541",
+      "cardId": "c326",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246542",
+      "cardId": "c759",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246543",
+      "cardId": "c10412",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246544",
+      "cardId": "c10413",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246545",
+      "cardId": "c331",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246546",
+      "cardId": "c288",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246547",
+      "cardId": "c10414",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246548",
+      "cardId": "c10415",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246549",
+      "cardId": "c940",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246550",
+      "cardId": "c657",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246551",
+      "cardId": "c285",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246552",
+      "cardId": "c10416",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246553",
+      "cardId": "c10417",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246554",
+      "cardId": "c10417",
+      "chapter": 8,
+      "mergedInto": "1570505246553"
+    },
+    {
+      "sourceId": "1570505246555",
+      "cardId": "c255",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246556",
+      "cardId": "c724",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246557",
+      "cardId": "c10418",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246558",
+      "cardId": "c287",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246559",
+      "cardId": "c10419",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246560",
+      "cardId": "c280",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246561",
+      "cardId": "c305",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246562",
+      "cardId": "c10420",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246563",
+      "cardId": "c10421",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246564",
+      "cardId": "c376",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246565",
+      "cardId": "c10422",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246566",
+      "cardId": "c10423",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246567",
+      "cardId": "c274",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246568",
+      "cardId": "c938",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246569",
+      "cardId": "c10424",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246570",
+      "cardId": "c476",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246571",
+      "cardId": "c10425",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246572",
+      "cardId": "c10426",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246573",
+      "cardId": "c10427",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246574",
+      "cardId": "c10428",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246575",
+      "cardId": "c10429",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246576",
+      "cardId": "c1553",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246577",
+      "cardId": "c303",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246578",
+      "cardId": "c10430",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246579",
+      "cardId": "c1162",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246580",
+      "cardId": "c10431",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246581",
+      "cardId": "c10432",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246582",
+      "cardId": "c10433",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246583",
+      "cardId": "c10434",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246584",
+      "cardId": "c10128",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246585",
+      "cardId": "c1603",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246586",
+      "cardId": "c10435",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246587",
+      "cardId": "c10436",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505246588",
+      "cardId": "c10437",
+      "chapter": 8
+    },
+    {
+      "sourceId": "1570505252060",
+      "cardId": "c25",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252061",
+      "cardId": "c517",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252062",
+      "cardId": "c526",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252063",
+      "cardId": "c10438",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252064",
+      "cardId": "c10439",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252065",
+      "cardId": "c10440",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252066",
+      "cardId": "c10440",
+      "chapter": 9,
+      "mergedInto": "1570505252065"
+    },
+    {
+      "sourceId": "1570505252067",
+      "cardId": "c10441",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252068",
+      "cardId": "c10442",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252069",
+      "cardId": "c10443",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252070",
+      "cardId": "c10444",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252071",
+      "cardId": "c486",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252072",
+      "cardId": "c496",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252073",
+      "cardId": "c4707",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252074",
+      "cardId": "c1872",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252075",
+      "cardId": "c10445",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252076",
+      "cardId": "c10446",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252077",
+      "cardId": "c10447",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252078",
+      "cardId": "c10448",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252079",
+      "cardId": "c10449",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252080",
+      "cardId": "c10450",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252081",
+      "cardId": "c10451",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252082",
+      "cardId": "c10452",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252083",
+      "cardId": "c10453",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252084",
+      "cardId": "c10454",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252085",
+      "cardId": "c10455",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252086",
+      "cardId": "c10456",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252087",
+      "cardId": "c10457",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252088",
+      "cardId": "c10457",
+      "chapter": 9,
+      "mergedInto": "1570505252087"
+    },
+    {
+      "sourceId": "1570505252089",
+      "cardId": "c10458",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252090",
+      "cardId": "c10459",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252091",
+      "cardId": "c10460",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252092",
+      "cardId": "c10461",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252093",
+      "cardId": "c10462",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252094",
+      "cardId": "c10463",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252095",
+      "cardId": "c10464",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252096",
+      "cardId": "c10465",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252097",
+      "cardId": "c10466",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252098",
+      "cardId": "c4131",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252099",
+      "cardId": "c10467",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252100",
+      "cardId": "c1328",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252101",
+      "cardId": "c10468",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252102",
+      "cardId": "c10469",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252103",
+      "cardId": "c10470",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252104",
+      "cardId": "c10471",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252105",
+      "cardId": "c1180",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252106",
+      "cardId": "c10472",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252107",
+      "cardId": "c10473",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252108",
+      "cardId": "c1565",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252109",
+      "cardId": "c10474",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252110",
+      "cardId": "c1301",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252111",
+      "cardId": "c10475",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252112",
+      "cardId": "c557",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252113",
+      "cardId": "c10476",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505252114",
+      "cardId": "c1119",
+      "chapter": 9
+    },
+    {
+      "sourceId": "1570505258055",
+      "cardId": "c10477",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258056",
+      "cardId": "c10478",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258057",
+      "cardId": "c889",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258058",
+      "cardId": "c913",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258059",
+      "cardId": "c10479",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258060",
+      "cardId": "c10480",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258061",
+      "cardId": "c10481",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258062",
+      "cardId": "c10482",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258063",
+      "cardId": "c10483",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258064",
+      "cardId": "c1583",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258065",
+      "cardId": "c10484",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258066",
+      "cardId": "c10485",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258067",
+      "cardId": "c1350",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258068",
+      "cardId": "c10486",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258069",
+      "cardId": "c10487",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258070",
+      "cardId": "c10488",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258071",
+      "cardId": "c10489",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258072",
+      "cardId": "c10490",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258073",
+      "cardId": "c10491",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258074",
+      "cardId": "c3860",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258075",
+      "cardId": "c10492",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258076",
+      "cardId": "c10493",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258077",
+      "cardId": "c10494",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258078",
+      "cardId": "c10495",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258079",
+      "cardId": "c205",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258080",
+      "cardId": "c10496",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258081",
+      "cardId": "c10497",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258082",
+      "cardId": "c10498",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258083",
+      "cardId": "c10499",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258084",
+      "cardId": "c10500",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258085",
+      "cardId": "c644",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258086",
+      "cardId": "c10501",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258087",
+      "cardId": "c10502",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258088",
+      "cardId": "c2127",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258089",
+      "cardId": "c10503",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258090",
+      "cardId": "c10504",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258091",
+      "cardId": "c10505",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258092",
+      "cardId": "c10506",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258093",
+      "cardId": "c1229",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258094",
+      "cardId": "c10507",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258095",
+      "cardId": "c10508",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258096",
+      "cardId": "c10509",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258097",
+      "cardId": "c10510",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258098",
+      "cardId": "c10510",
+      "chapter": 10,
+      "mergedInto": "1570505258097"
+    },
+    {
+      "sourceId": "1570505258099",
+      "cardId": "c393",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258100",
+      "cardId": "c10511",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258101",
+      "cardId": "c10512",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258102",
+      "cardId": "c10513",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258103",
+      "cardId": "c10514",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258104",
+      "cardId": "c655",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258105",
+      "cardId": "c1318",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505258106",
+      "cardId": "c10515",
+      "chapter": 10
+    },
+    {
+      "sourceId": "1570505264078",
+      "cardId": "c292",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264079",
+      "cardId": "c804",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264080",
+      "cardId": "c10516",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264081",
+      "cardId": "c10517",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264082",
+      "cardId": "c10518",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264083",
+      "cardId": "c10519",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264084",
+      "cardId": "c10519",
+      "chapter": 11,
+      "mergedInto": "1570505264083"
+    },
+    {
+      "sourceId": "1570505264085",
+      "cardId": "c10520",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264086",
+      "cardId": "c5335",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264087",
+      "cardId": "c10521",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264088",
+      "cardId": "c10105",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264089",
+      "cardId": "c10522",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264090",
+      "cardId": "c10523",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264091",
+      "cardId": "c846",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264092",
+      "cardId": "c10524",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264093",
+      "cardId": "c10525",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264094",
+      "cardId": "c559",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264095",
+      "cardId": "c10526",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264096",
+      "cardId": "c10527",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264097",
+      "cardId": "c10528",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264098",
+      "cardId": "c10528",
+      "chapter": 11,
+      "mergedInto": "1570505264097"
+    },
+    {
+      "sourceId": "1570505264099",
+      "cardId": "c10529",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264100",
+      "cardId": "c257",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264101",
+      "cardId": "c751",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264102",
+      "cardId": "c10530",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264103",
+      "cardId": "c1372",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264104",
+      "cardId": "c7034",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264105",
+      "cardId": "c10531",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264106",
+      "cardId": "c1509",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264107",
+      "cardId": "c1361",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264108",
+      "cardId": "c1248",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264109",
+      "cardId": "c266",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264110",
+      "cardId": "c599",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264111",
+      "cardId": "c10532",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264112",
+      "cardId": "c347",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264113",
+      "cardId": "c1140",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264114",
+      "cardId": "c10533",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264115",
+      "cardId": "c2065",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264116",
+      "cardId": "c5614",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264117",
+      "cardId": "c10534",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264118",
+      "cardId": "c10535",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264119",
+      "cardId": "c10536",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264120",
+      "cardId": "c10537",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264121",
+      "cardId": "c1394",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264122",
+      "cardId": "c10538",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264123",
+      "cardId": "c10539",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264124",
+      "cardId": "c10540",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264125",
+      "cardId": "c1276",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264126",
+      "cardId": "c10541",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264127",
+      "cardId": "c1716",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264128",
+      "cardId": "c10542",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264129",
+      "cardId": "c10144",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264130",
+      "cardId": "c10543",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264131",
+      "cardId": "c10544",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264132",
+      "cardId": "c844",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264133",
+      "cardId": "c10545",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264134",
+      "cardId": "c1776",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264135",
+      "cardId": "c10546",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264136",
+      "cardId": "c10547",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264137",
+      "cardId": "c10548",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264138",
+      "cardId": "c10549",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264139",
+      "cardId": "c10550",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264140",
+      "cardId": "c10551",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264141",
+      "cardId": "c10552",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264142",
+      "cardId": "c10553",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264143",
+      "cardId": "c831",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264144",
+      "cardId": "c1132",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264145",
+      "cardId": "c2040",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264146",
+      "cardId": "c822",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264147",
+      "cardId": "c10554",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264148",
+      "cardId": "c166",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264149",
+      "cardId": "c210",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505264150",
+      "cardId": "c10555",
+      "chapter": 11
+    },
+    {
+      "sourceId": "1570505272156",
+      "cardId": "c10556",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272157",
+      "cardId": "c10557",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272158",
+      "cardId": "c10558",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272159",
+      "cardId": "c4212",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272160",
+      "cardId": "c2218",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272161",
+      "cardId": "c10559",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272162",
+      "cardId": "c786",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272163",
+      "cardId": "c112",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272164",
+      "cardId": "c613",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272165",
+      "cardId": "c10560",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272166",
+      "cardId": "c10561",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272167",
+      "cardId": "c688",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272168",
+      "cardId": "c10562",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272169",
+      "cardId": "c10563",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272170",
+      "cardId": "c10564",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272171",
+      "cardId": "c791",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272172",
+      "cardId": "c10565",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272173",
+      "cardId": "c790",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272174",
+      "cardId": "c10566",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272175",
+      "cardId": "c1555",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272176",
+      "cardId": "c10567",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272177",
+      "cardId": "c10568",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272178",
+      "cardId": "c1362",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272179",
+      "cardId": "c4349",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272180",
+      "cardId": "c282",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272181",
+      "cardId": "c10569",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272182",
+      "cardId": "c333",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272183",
+      "cardId": "c10570",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272184",
+      "cardId": "c10571",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272185",
+      "cardId": "c10572",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272186",
+      "cardId": "c10573",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272187",
+      "cardId": "c10574",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272188",
+      "cardId": "c758",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272189",
+      "cardId": "c10575",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272190",
+      "cardId": "c3737",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272191",
+      "cardId": "c10576",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272192",
+      "cardId": "c10577",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272193",
+      "cardId": "c1405",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272194",
+      "cardId": "c10578",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272195",
+      "cardId": "c10579",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272196",
+      "cardId": "c10580",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272197",
+      "cardId": "c10581",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272198",
+      "cardId": "c10582",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272199",
+      "cardId": "c10583",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505272200",
+      "cardId": "c10584",
+      "chapter": 12
+    },
+    {
+      "sourceId": "1570505279266",
+      "cardId": "c10585",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279267",
+      "cardId": "c10586",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279268",
+      "cardId": "c1007",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279269",
+      "cardId": "c10587",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279270",
+      "cardId": "c10588",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279271",
+      "cardId": "c10589",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279272",
+      "cardId": "c10590",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279273",
+      "cardId": "c10591",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279274",
+      "cardId": "c10592",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279275",
+      "cardId": "c679",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279276",
+      "cardId": "c10593",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279277",
+      "cardId": "c10594",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279278",
+      "cardId": "c10595",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279279",
+      "cardId": "c10596",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279280",
+      "cardId": "c1015",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279281",
+      "cardId": "c10597",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279282",
+      "cardId": "c10598",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279283",
+      "cardId": "c819",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279284",
+      "cardId": "c10599",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279285",
+      "cardId": "c10600",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279286",
+      "cardId": "c432",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279287",
+      "cardId": "c1066",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279288",
+      "cardId": "c10601",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279289",
+      "cardId": "c10602",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279290",
+      "cardId": "c10602",
+      "chapter": 13,
+      "mergedInto": "1570505279289"
+    },
+    {
+      "sourceId": "1570505279291",
+      "cardId": "c10603",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279292",
+      "cardId": "c1382",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279293",
+      "cardId": "c10604",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279294",
+      "cardId": "c10605",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279295",
+      "cardId": "c10606",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279296",
+      "cardId": "c10607",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279297",
+      "cardId": "c3710",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279298",
+      "cardId": "c10608",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279299",
+      "cardId": "c10609",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279300",
+      "cardId": "c1943",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279301",
+      "cardId": "c10610",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279302",
+      "cardId": "c10611",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279303",
+      "cardId": "c10612",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279304",
+      "cardId": "c2980",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279305",
+      "cardId": "c414",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279306",
+      "cardId": "c10613",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279307",
+      "cardId": "c10614",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279308",
+      "cardId": "c4216",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279309",
+      "cardId": "c10615",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279310",
+      "cardId": "c10616",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279311",
+      "cardId": "c800",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279312",
+      "cardId": "c10617",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279313",
+      "cardId": "c10618",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279314",
+      "cardId": "c10619",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279315",
+      "cardId": "c10620",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279316",
+      "cardId": "c10621",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279317",
+      "cardId": "c10622",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279318",
+      "cardId": "c1058",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279319",
+      "cardId": "c10623",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279320",
+      "cardId": "c10624",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279321",
+      "cardId": "c10625",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279322",
+      "cardId": "c10626",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279323",
+      "cardId": "c10627",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279324",
+      "cardId": "c10628",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279325",
+      "cardId": "c1168",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279326",
+      "cardId": "c1172",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279327",
+      "cardId": "c349",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279328",
+      "cardId": "c843",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279329",
+      "cardId": "c10629",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279330",
+      "cardId": "c10630",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279331",
+      "cardId": "c10631",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279332",
+      "cardId": "c10632",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279333",
+      "cardId": "c10633",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279334",
+      "cardId": "c253",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505279335",
+      "cardId": "c121",
+      "chapter": 13
+    },
+    {
+      "sourceId": "1570505285008",
+      "cardId": "c10634",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285009",
+      "cardId": "c116",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285010",
+      "cardId": "c10635",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285011",
+      "cardId": "c10636",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285012",
+      "cardId": "c1570",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285013",
+      "cardId": "c1521",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285014",
+      "cardId": "c5581",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285015",
+      "cardId": "c1002",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285016",
+      "cardId": "c10637",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285017",
+      "cardId": "c10638",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285018",
+      "cardId": "c370",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285019",
+      "cardId": "c1078",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285020",
+      "cardId": "c10639",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285021",
+      "cardId": "c10640",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285022",
+      "cardId": "c10641",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285023",
+      "cardId": "c10642",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285024",
+      "cardId": "c1059",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285025",
+      "cardId": "c1309",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285026",
+      "cardId": "c456",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285027",
+      "cardId": "c10643",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285028",
+      "cardId": "c10644",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285029",
+      "cardId": "c5398",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285030",
+      "cardId": "c10645",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285031",
+      "cardId": "c5603",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285032",
+      "cardId": "c1112",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285033",
+      "cardId": "c1195",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285034",
+      "cardId": "c10646",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285035",
+      "cardId": "c1957",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285036",
+      "cardId": "c10647",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285037",
+      "cardId": "c10647",
+      "chapter": 14,
+      "mergedInto": "1570505285036"
+    },
+    {
+      "sourceId": "1570505285038",
+      "cardId": "c614",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285039",
+      "cardId": "c1630",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285040",
+      "cardId": "c1643",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285041",
+      "cardId": "c10648",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285042",
+      "cardId": "c10649",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285043",
+      "cardId": "c5",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285044",
+      "cardId": "c10650",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285045",
+      "cardId": "c10651",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285046",
+      "cardId": "c3719",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285047",
+      "cardId": "c551",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285048",
+      "cardId": "c10652",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285049",
+      "cardId": "c10653",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285050",
+      "cardId": "c1201",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285051",
+      "cardId": "c10654",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285052",
+      "cardId": "c1370",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285053",
+      "cardId": "c10655",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285054",
+      "cardId": "c10656",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285055",
+      "cardId": "c1223",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285056",
+      "cardId": "c821",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285057",
+      "cardId": "c10657",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285058",
+      "cardId": "c1241",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285059",
+      "cardId": "c647",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285060",
+      "cardId": "c8155",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285061",
+      "cardId": "c1057",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285062",
+      "cardId": "c1754",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285063",
+      "cardId": "c10658",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285064",
+      "cardId": "c10659",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285065",
+      "cardId": "c619",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285066",
+      "cardId": "c10660",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285067",
+      "cardId": "c10661",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285068",
+      "cardId": "c672",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285069",
+      "cardId": "c10662",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285070",
+      "cardId": "c10663",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285071",
+      "cardId": "c10664",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285072",
+      "cardId": "c10665",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285073",
+      "cardId": "c959",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285074",
+      "cardId": "c10666",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285075",
+      "cardId": "c10666",
+      "chapter": 14,
+      "mergedInto": "1570505285074"
+    },
+    {
+      "sourceId": "1570505285076",
+      "cardId": "c1866",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285077",
+      "cardId": "c10667",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285078",
+      "cardId": "c10668",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285079",
+      "cardId": "c10669",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285080",
+      "cardId": "c10670",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285081",
+      "cardId": "c10671",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285082",
+      "cardId": "c10672",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285083",
+      "cardId": "c10673",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285084",
+      "cardId": "c5167",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505285085",
+      "cardId": "c1155",
+      "chapter": 14
+    },
+    {
+      "sourceId": "1570505291960",
+      "cardId": "c10674",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291961",
+      "cardId": "c10675",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291962",
+      "cardId": "c10676",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291963",
+      "cardId": "c690",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291964",
+      "cardId": "c10677",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291965",
+      "cardId": "c568",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291966",
+      "cardId": "c1922",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291967",
+      "cardId": "c10678",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291968",
+      "cardId": "c983",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291969",
+      "cardId": "c689",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291970",
+      "cardId": "c584",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291971",
+      "cardId": "c10679",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291972",
+      "cardId": "c10680",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291973",
+      "cardId": "c1736",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291974",
+      "cardId": "c10681",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291975",
+      "cardId": "c10682",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291976",
+      "cardId": "c10683",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291977",
+      "cardId": "c10684",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291978",
+      "cardId": "c10685",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291979",
+      "cardId": "c10686",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291980",
+      "cardId": "c10687",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291981",
+      "cardId": "c10688",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291982",
+      "cardId": "c10689",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291983",
+      "cardId": "c10690",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291984",
+      "cardId": "c10691",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291985",
+      "cardId": "c10692",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291986",
+      "cardId": "c10693",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291987",
+      "cardId": "c10694",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291988",
+      "cardId": "c4311",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291989",
+      "cardId": "c10140",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291990",
+      "cardId": "c3563",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291991",
+      "cardId": "c1125",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291992",
+      "cardId": "c10695",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291993",
+      "cardId": "c1573",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291994",
+      "cardId": "c10696",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291995",
+      "cardId": "c5761",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291996",
+      "cardId": "c813",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291997",
+      "cardId": "c10697",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291998",
+      "cardId": "c10698",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505291999",
+      "cardId": "c10699",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292000",
+      "cardId": "c10700",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292001",
+      "cardId": "c10701",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292002",
+      "cardId": "c10702",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292003",
+      "cardId": "c10703",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292004",
+      "cardId": "c743",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292005",
+      "cardId": "c418",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292006",
+      "cardId": "c991",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292007",
+      "cardId": "c10704",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292008",
+      "cardId": "c10705",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505292009",
+      "cardId": "c10706",
+      "chapter": 15
+    },
+    {
+      "sourceId": "1570505297065",
+      "cardId": "c10707",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297066",
+      "cardId": "c1102",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297067",
+      "cardId": "c10708",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297068",
+      "cardId": "c10709",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297069",
+      "cardId": "c1279",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297070",
+      "cardId": "c10710",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297071",
+      "cardId": "c10711",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297072",
+      "cardId": "c1357",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297073",
+      "cardId": "c10712",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297074",
+      "cardId": "c10713",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297075",
+      "cardId": "c10714",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297076",
+      "cardId": "c1075",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297077",
+      "cardId": "c3243",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297078",
+      "cardId": "c10715",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297079",
+      "cardId": "c10716",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297080",
+      "cardId": "c10717",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297081",
+      "cardId": "c10718",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297082",
+      "cardId": "c3696",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297083",
+      "cardId": "c10719",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297084",
+      "cardId": "c10720",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297085",
+      "cardId": "c10721",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297086",
+      "cardId": "c372",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505297087",
+      "cardId": "c10722",
+      "chapter": 16
+    },
+    {
+      "sourceId": "1570505306166",
+      "cardId": "c10723",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306167",
+      "cardId": "c6506",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306168",
+      "cardId": "c10724",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306169",
+      "cardId": "c8261",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306170",
+      "cardId": "c6340",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306171",
+      "cardId": "c10725",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306172",
+      "cardId": "c10726",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306173",
+      "cardId": "c10727",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306174",
+      "cardId": "c2774",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306175",
+      "cardId": "c715",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306176",
+      "cardId": "c10728",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306177",
+      "cardId": "c10729",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306178",
+      "cardId": "c1258",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306179",
+      "cardId": "c10730",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306180",
+      "cardId": "c10730",
+      "chapter": 17,
+      "mergedInto": "1570505306179"
+    },
+    {
+      "sourceId": "1570505306181",
+      "cardId": "c10731",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306182",
+      "cardId": "c2684",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306183",
+      "cardId": "c420",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306184",
+      "cardId": "c10732",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306185",
+      "cardId": "c697",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306186",
+      "cardId": "c10733",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306187",
+      "cardId": "c1369",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306188",
+      "cardId": "c10734",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306189",
+      "cardId": "c1359",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306190",
+      "cardId": "c8644",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306191",
+      "cardId": "c10735",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306192",
+      "cardId": "c1158",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306193",
+      "cardId": "c1672",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306194",
+      "cardId": "c10736",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306195",
+      "cardId": "c10737",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306196",
+      "cardId": "c1037",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306197",
+      "cardId": "c10738",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306198",
+      "cardId": "c10739",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306199",
+      "cardId": "c9272",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306200",
+      "cardId": "c677",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306201",
+      "cardId": "c10740",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306202",
+      "cardId": "c1277",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306203",
+      "cardId": "c10741",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306204",
+      "cardId": "c1626",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306205",
+      "cardId": "c1620",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306206",
+      "cardId": "c10742",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306207",
+      "cardId": "c10743",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306208",
+      "cardId": "c10744",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306209",
+      "cardId": "c10745",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306210",
+      "cardId": "c10746",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306211",
+      "cardId": "c10747",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306212",
+      "cardId": "c10748",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306213",
+      "cardId": "c10749",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306214",
+      "cardId": "c232",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306215",
+      "cardId": "c10750",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306216",
+      "cardId": "c10751",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306217",
+      "cardId": "c10752",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306218",
+      "cardId": "c1969",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306219",
+      "cardId": "c1144",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306220",
+      "cardId": "c10753",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306221",
+      "cardId": "c3341",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306222",
+      "cardId": "c10754",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505306223",
+      "cardId": "c10755",
+      "chapter": 17
+    },
+    {
+      "sourceId": "1570505313521",
+      "cardId": "c10756",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313522",
+      "cardId": "c10757",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313523",
+      "cardId": "c10758",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313524",
+      "cardId": "c10759",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313525",
+      "cardId": "c10760",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313526",
+      "cardId": "c2407",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313527",
+      "cardId": "c10761",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313528",
+      "cardId": "c10762",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313529",
+      "cardId": "c1468",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313530",
+      "cardId": "c10763",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313531",
+      "cardId": "c10764",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313532",
+      "cardId": "c10765",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313533",
+      "cardId": "c805",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313534",
+      "cardId": "c10766",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313535",
+      "cardId": "c1253",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313536",
+      "cardId": "c10767",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313537",
+      "cardId": "c10768",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313538",
+      "cardId": "c1145",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313539",
+      "cardId": "c1710",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313540",
+      "cardId": "c1198",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313541",
+      "cardId": "c468",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313542",
+      "cardId": "c10769",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313543",
+      "cardId": "c10770",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313544",
+      "cardId": "c10771",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313545",
+      "cardId": "c10772",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313546",
+      "cardId": "c10139",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313547",
+      "cardId": "c10773",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313548",
+      "cardId": "c1147",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313549",
+      "cardId": "c10774",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313550",
+      "cardId": "c10775",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313551",
+      "cardId": "c10776",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313552",
+      "cardId": "c3388",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313553",
+      "cardId": "c10777",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313554",
+      "cardId": "c1513",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313555",
+      "cardId": "c8690",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313556",
+      "cardId": "c6414",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313557",
+      "cardId": "c3711",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313558",
+      "cardId": "c10778",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313559",
+      "cardId": "c8221",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313560",
+      "cardId": "c10779",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313561",
+      "cardId": "c10780",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313562",
+      "cardId": "c916",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313563",
+      "cardId": "c10781",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313564",
+      "cardId": "c10782",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313565",
+      "cardId": "c10783",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313566",
+      "cardId": "c10784",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313567",
+      "cardId": "c10158",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313568",
+      "cardId": "c10785",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313569",
+      "cardId": "c10786",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313570",
+      "cardId": "c10786",
+      "chapter": 18,
+      "mergedInto": "1570505313569"
+    },
+    {
+      "sourceId": "1570505313571",
+      "cardId": "c1375",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313572",
+      "cardId": "c865",
+      "chapter": 18
+    },
+    {
+      "sourceId": "1570505313573",
+      "cardId": "c1490",
+      "chapter": 18
+    }
+  ]
+}

@@ -16,7 +16,10 @@
     "import:merge": "node scripts/import-merge.mjs",
     "a2:map": "node scripts/build-a2-mapping.mjs",
     "a2:idlists": "node scripts/build-a2-idlists.mjs",
-    "enrich": "node scripts/enrich-cards.mjs"
+    "enrich": "node scripts/enrich-cards.mjs",
+    "import:nig": "node scripts/import-nig.mjs",
+    "enrich:nig": "node scripts/enrich-cards.mjs --ids scripts/sources/nig-new-ids.json && node scripts/finish-nig.mjs",
+    "finish:nig": "node scripts/finish-nig.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

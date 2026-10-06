@@ -63,6 +63,16 @@ describe("buildInburgeringPath", () => {
 });
 
 describe("buildPaths", () => {
+  it("preserves explicit chapter order and shared cards without adding them to TaalCompleet", () => {
+    const cards = [card("a", "L1"), card("b"), card("c")];
+    const paths = buildPaths(cards, [{ id: "nederlands-in-gang", name: "Nederlands in gang", units: [
+      { id: "ch1", label: "Hoofdstuk 1", cardIds: ["b", "a", "b", "missing"] },
+      { id: "ch2", label: "Hoofdstuk 2", cardIds: ["a", "c"] },
+    ] }]);
+    expect(paths[0].units[0].cardIds).toEqual(["a"]);
+    expect(paths[1].units.map(u => u.cardIds)).toEqual([["b", "a"], ["a", "c"]]);
+    expect(paths[1].units.map(u => u.label)).toEqual(["Hoofdstuk 1", "Hoofdstuk 2"]);
+  });
   it("returns TaalCompleet first, then defined paths", () => {
     const cards = [card("a", "L1")];
     const defs: PathDef[] = [

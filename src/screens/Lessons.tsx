@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Card, Direction, Enrichment } from "../types";
 import { directionEnabled } from "../types";
 import type { Session } from "../review/session";
-import { speak, speechSupported } from "../util/speak";
+import { speak, pronounce, canPronounce } from "../util/speak";
 import { Quiz } from "../components/Quiz";
 import { WordDetail } from "../components/WordDetail";
 import { ProgressBar } from "../components/ProgressBar";
@@ -52,11 +52,11 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
             <div className="lesson-eyebrow">{card.type} · {card.group}</div>
             <div className="lesson-word">
               {card.dutch}
-              {speechSupported() && (
+              {canPronounce(e?.audioUrl) && (
                 <button
                   type="button"
                   className="speak-btn"
-                  onClick={() => speak(card.dutch)}
+                  onClick={() => pronounce(card.dutch, e?.audioUrl)}
                   aria-label="Pronounce Dutch word"
                 >
                   🔊

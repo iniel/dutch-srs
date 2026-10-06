@@ -3,7 +3,9 @@
 Cards live in `public/cards.json` (committed) — this file is the **hand-owned source of truth**, not a
 generated artifact. The first 1748 cards (ids `c0`–`c1747`) originally came from two TaalCompleet Anki
 decks (`A1 · U1` … `A2 · U8`); three further levels — `A+`, `B1`, `B2` (~8350 cards, ids `c1748`+) — were
-imported from the NT2Lex frequency list. All of it now lives in `cards.json` and is edited directly.
+imported from the NT2Lex frequency list. 625 cards (ids `c10162`–`c10786`, groups `Nederlands in gang · N`,
+**no `level`**) came from the *Nederlands in gang* textbook deck (see below). All of it now lives in
+`cards.json` and is edited directly.
 
 **Ids are permanent and never renumbered.** Fixes are plain edits to `cards.json`. New bulk vocabulary is
 imported through the append-only staging flow (see "Importing new vocabulary" below) — the importers never
@@ -79,16 +81,66 @@ are **direct edits to `cards.json`** — no anchor-matching, no re-apply, no id 
 still (re)builds `a2-overrides.json` + `a2-mapping.json` from `a2-analysis.txt`, and `npm run a2:idlists`
 still emits the `easy.ids.json` / `medium.ids.json` / `hard.ids.json` tier lists (read-only over `cards.json`).
 
-### `public/paths.json` — the "Inburgering Online" progression path
-`npm run a2:idlists` also emits `public/paths.json`, the runtime definition of the **Inburgering Online**
-path (the app's second progression track; the built-in **TaalCompleet** path is derived from `Card.level`
-at runtime and is *not* in this file). Shape:
-`{ version, paths: [{ id: "inburgering", name, unitSize: 100, difficulties: [{ key, label, cardIds }] }] }`.
-The three tiers are made **disjoint** here: walking easy → medium → hard, each card id is kept only in its
-lowest tier (so no card is drilled twice within the path). The app chunks each tier into units of `unitSize`
-at load time. It references A+ ids, which are now **permanent**, so `paths.json` stays valid across edits —
-only regenerate it (and `dist/`) after an `import:merge` actually appends new cards. See
-`docs/ARCHITECTURE.md` › Paths.
+### `public/paths.json` — the data-defined progression paths
+`public/paths.json` holds every path except the built-in **TaalCompleet** course (derived from
+`Card.level` at runtime). Two shapes are supported, distinguished by the presence of `units`:
+
+- **Difficulty tiers** — `{ id, name, unitSize, difficulties: [{ key, label, cardIds }] }`. Used by
+  **Inburgering Online** (`id: "inburgering"`), emitted by `npm run a2:idlists`. The three tiers are made
+  **disjoint** (walking easy → medium → hard, each id is kept only in its lowest tier), and the app chunks
+  each tier into units of `unitSize` at load time.
+- **Explicit units** — `{ id, name, units: [{ id, label, cardIds }] }`. Used by **Nederlands in gang**
+  (`id: "nederlands-in-gang"`, units `nederlands-in-gang:chapter:1` … `:18`), emitted by `npm run import:nig`.
+  It **also** carries `unitSize` + `difficulties` (one tier per chapter), because installed PWAs keep running
+  their precached JS until the update is accepted but fetch `paths.json` fresh. A tier-only build crashes on
+  a def without `difficulties`, and with it renders the same chapters, labelled "Hoofdstuk N 1". Keep every
+  def readable by the previous shape; `scripts/nig-data.test.mjs` enforces it.
+
+Each generator upserts **only its own path by id** (`scripts/paths-file.mjs`) and keeps the rest, written
+atomically. Display order is TaalCompleet → Inburgering Online → Nederlands in gang. Ids are permanent, so
+the file stays valid across card edits.
+
+Caveat: re-running `a2:idlists` today is **not** a no-op for Inburgering. Hand edits since the last run
+(`je`/`we`/`me` glosses → "… (unstressed)", the hand-added `die` card) no longer match `a2-mapping.json`, so
+it would drop 4 easy-tier cards. Treat the committed Inburgering tiers as curated, and fix the mapping
+before regenerating. See `docs/ARCHITECTURE.md` › Paths.
+
+## Nederlands in gang — chapter path (`scripts/import-nig.mjs`)
+Source: the AnkiWeb shared deck [304232421](https://ankiweb.net/shared/info/304232421) (2019 edition of the
+textbook; fields `Front`, `Back`, `Hoofdstuk`, `Audio`). It has 1092 notes across chapters 1–18. The
+2026 edition is not covered. Keep the archive at `data/nederlands-in-gang/source.apkg` (gitignored).
+
+Committed provenance in `scripts/sources/`:
+- `nig-source.json` — normalized notes (note id, chapter, original new-card position, raw front/back, audio
+  file) + archive URL and SHA-256. The importer re-reads this file, so the `.apkg` is only needed to re-extract.
+- `nig-corrections.json` — reviewed, per-note fixes: re-joined rows split across two Anki notes
+  (`mergeWith`), explicit answer lists where `/` splitting is wrong, and `reuseId` links to an existing card
+  (guarded by `expectedDutch`/`expectedEnglish`, so a later edit to that card fails the import loudly).
+- `nig-mapping.json` — every source note → final card id (pinned on re-import; a changed archive
+  checksum aborts). `nig-report.json` — counts per chapter, corrections, reviewed reuses.
+- `nig-new-ids.json`, `nig-audio.json`, `nig-coverage.json`, `nig-baseline.json` — see below.
+
+Rules: no note is dropped silently — each is mapped, merged into its pair, or the import throws. Only an
+exact match on normalized Dutch text + English answer set (whitespace, case, HTML) reuses an existing card
+automatically. Lemma/gloss/article look-alikes are reuse *candidates* for review, never merged
+automatically. Forms stay separate cards (`wilde (willen)` → `dutch: "wilde"`, `notes: "Book annotation:
+willen"`). Within a chapter a repeat is collapsed. Across chapters it stays as the **same id** in both
+units, so it is learned and counted once. Chapters are numeric; inside a chapter, order is the Anki new-card
+position, then note id (this is not verified against the book's page order).
+
+```bash
+npm run import:nig                                 # from scripts/sources/nig-source.json
+node scripts/import-nig.mjs data/nederlands-in-gang/source.apkg   # re-extract the archive (+ audio)
+node scripts/import-nig.mjs --dry-run              # print counts only; a re-run adds 0 cards
+npm run enrich:nig                                 # enrich nig-new-ids.json, then finish:nig
+```
+`import:nig` appends new cards through `mergeCandidates` (next-free ids, strict signature), upserts the
+path, and records new ids and per-card audio. `finish:nig` installs the Anki recording
+(`public/audio/nederlands-in-gang/<sha256>.mp3`, relative URL) **only where the card has no dictionary
+audio**, then writes the coverage report `nig-coverage.json` (per field: covered count + missing list).
+`scripts/nig-data.test.mjs` pins the shipped data: the pre-import cards and Inburgering path (hashes in
+`nig-baseline.json`), all 1092 notes accounted for, 18 chapters rebuilt identically, and every local
+recording present.
 
 What it does:
 - Keeps content words only (NT2Lex tags `N( WW( ADJ( BW(`), one per lemma, at its lowest band.
@@ -144,20 +196,42 @@ from Kaikki (Wiktextract Dutch) + Tatoeba. **Additive + display-only** — never
 (`src/data/loadEnrichment.ts`), rendered by `src/components/WordDetail.tsx`.
 
 ### Regenerate
-1. Download the gitignored dumps into `data/`:
-   - Kaikki Dutch JSONL → `data/kaikki/kaikki-Dutch.jsonl`
-     (`https://kaikki.org/dictionary/Dutch/kaikki.org-dictionary-Dutch.jsonl`)
+1. Download the gitignored dumps into `data/` (sizes are of the copies last used, fetched 2026-10-05;
+   Kaikki files are rolling snapshots, FreeDict is versioned):
+   - Kaikki Dutch (English Wiktionary) → `data/kaikki/kaikki-Dutch.jsonl` (256 MB)
+     `https://kaikki.org/dictionary/Dutch/kaikki.org-dictionary-Dutch.jsonl`
+   - Russian Wiktionary raw data → gunzip to `data/kaikki/kaikki-ru.jsonl` (308 MB gz)
+     `https://kaikki.org/ruwiktionary/raw-wiktextract-data.jsonl.gz`
+   - Dutch Wiktionary raw data → gunzip to `data/kaikki/kaikki-nl.jsonl` (133 MB gz)
+     `https://kaikki.org/nlwiktionary/raw-wiktextract-data.jsonl.gz`
+   - Kaikki English (English Wiktionary, for EN→RU translation tables) → `data/kaikki/kaikki-en.jsonl` (3.3 GB)
+     `https://kaikki.org/dictionary/English/kaikki.org-dictionary-English.jsonl`
+   - FreeDict/WikDict 2025.11.23 → untar to `data/freedict/{nld-rus,eng-rus}/*.tei`
+     `https://download.freedict.org/dictionaries/nld-rus/2025.11.23/freedict-nld-rus-2025.11.23.src.tar.xz`,
+     `https://download.freedict.org/dictionaries/eng-rus/2025.11.23/freedict-eng-rus-2025.11.23.src.tar.xz`
    - Tatoeba (`https://downloads.tatoeba.org/exports/`):
      `per_language/{nld,eng,rus}/{nld,eng,rus}_sentences.tsv.bz2` → `data/tatoeba/*.tsv`,
      and `links.tar.bz2` → `data/tatoeba/links.csv`
-2. `npm run enrich` → writes `public/enrichment.json` + prints a coverage report.
+2. `npm run enrich` → rewrites `public/enrichment.json` for every card + prints a coverage report.
+   `npm run enrich -- --ids path/to/ids.json` enriches only the listed ids and **merges** the result into
+   the existing file; every other entry is kept byte-for-byte. A card with no dictionary match just has no
+   entry (it is never removed from `cards.json`).
 3. `npm run build`, commit `public/enrichment.json` + `dist/`, deploy.
 
 ### Notes / limitations
 - Matched by `lemma` (fallback article-stripped `dutch`) + POS. ~99% of cards enriched; the ~15 misses
   are pedagogical compounds not in Wiktionary ("de korte klank", "ik-vorm").
-- **English Wiktionary carries no translations on Dutch entries**, so Russian comes only from
-  Tatoeba example sentences (≈1150 cards have ≥1 RU example). There are no RU dictionary glosses.
+- Russian glosses (`glossRu`) come from Russian Wiktionary, FreeDict NL–RU, Dutch Wiktionary translation
+  tables, and (for non-book cards) EN→RU bridges through the card's English. Russian examples come from Tatoeba.
+- **Nederlands in gang cards** (`group` starts with `Nederlands in gang ·`) take a stricter route
+  (`scripts/enrich/book-entry.mjs`). An inflected form (`kom`, `dagen`, `ben`) is resolved to its lemma
+  through Kaikki `form_of`, confirmed by gloss overlap or by the lemma's own paradigm listing the form, and
+  grammar comes from the lemma. Senses are filtered to the card's meaning, so `kom` is never "bowl". Russian
+  glosses skip the POS-blind EN→RU bridges and are looked up by **headword + part of speech**
+  (`scripts/enrich/ru-pos.mjs`), so `ben` gets "быть", not the possessive "его". Tatoeba examples are still
+  matched by surface word, so function words can show another sense (`wat` "a little" → "Wat is dat?").
+- 684 Russian glosses on pre-book cards still contain raw wiki links (`[[школьный|школьная]] [[доска]]`).
+  The extractors now strip them, so the next full `npm run enrich` cleans them up.
 - Auxiliary (hebben/zijn) is rarely present in the Kaikki Dutch conjugation data, so it is usually omitted.
 - Caps to keep the file small: ≤4 senses, ≤3 examples/card, ≤12 items per relation list.
 - Pure extractors live in `scripts/enrich/extract.mjs` (unit-tested in `extract.test.mjs`).

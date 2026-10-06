@@ -6,9 +6,11 @@
 // is pure and unit-tested in freedict.test.mjs.
 import { readFileSync } from "node:fs";
 import { stripStress, isProperNoun } from "./extract-en-ru.mjs";
+import { addByPos } from "./ru-pos.mjs";
+import { stripWikiLinks } from "./extract-ru.mjs";
 
 export function parseFreedictTei(xml, keyFn = (s) => s) {
-  const map = new Map();
+  const map = Object.assign(new Map(), { byPos: new Map() });
   for (const chunk of (xml ?? "").split(/<entry\b/).slice(1)) {
     const orth = chunk.match(/<orth>([^<]*)<\/orth>/);
     if (!orth) continue;
@@ -17,7 +19,7 @@ export function parseFreedictTei(xml, keyFn = (s) => s) {
     const words = [];
     for (const cit of chunk.matchAll(/<cit type="trans"[^>]*>([\s\S]*?)<\/cit>/g)) {
       for (const q of cit[1].matchAll(/<quote>([^<]*)<\/quote>/g)) {
-        const w = stripStress(q[1].trim()).trim();
+        const w = stripWikiLinks(stripStress(q[1].trim())).trim();
         if (w && !isProperNoun(w) && !words.includes(w)) words.push(w);
       }
     }
@@ -25,6 +27,7 @@ export function parseFreedictTei(xml, keyFn = (s) => s) {
     const merged = map.get(key) ?? [];
     for (const w of words) if (!merged.includes(w)) merged.push(w);
     map.set(key, merged);
+    addByPos(map, key, chunk.match(/<pos>([^<]*)<\/pos>/)?.[1], words);
   }
   return map;
 }

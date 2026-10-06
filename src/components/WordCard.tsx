@@ -5,7 +5,7 @@ import { directionEnabled } from "../types";
 import { cefrBadge } from "../srs/levels";
 import { SrsStagePill } from "./SrsStagePill";
 import { WordDetail } from "./WordDetail";
-import { speak, speechSupported } from "../util/speak";
+import { speak, pronounce, canPronounce } from "../util/speak";
 
 interface WordCardProps {
   card: Card;
@@ -48,8 +48,8 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
         </div>
         <div className="lesson-word">
           {card.dutch}
-          {speechSupported() && (
-            <button className="speak-btn" onClick={() => speak(card.dutch)} aria-label="pronounce">
+          {canPronounce(enrichment?.audioUrl) && (
+            <button className="speak-btn" onClick={() => pronounce(card.dutch, enrichment?.audioUrl)} aria-label="pronounce">
               🔊
             </button>
           )}

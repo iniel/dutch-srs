@@ -1,0 +1,6456 @@
+{
+  "cards": 1065,
+  "withTranslation": 1065,
+  "fields": {
+    "dictionary": {
+      "covered": 640,
+      "missing": [
+        {
+          "id": "c10164",
+          "dutch": "ben"
+        },
+        {
+          "id": "c10165",
+          "dutch": "docenten"
+        },
+        {
+          "id": "c10166",
+          "dutch": "andere"
+        },
+        {
+          "id": "c10167",
+          "dutch": "is"
+        },
+        {
+          "id": "c10168",
+          "dutch": "geeft les"
+        },
+        {
+          "id": "c10169",
+          "dutch": "dagen"
+        },
+        {
+          "id": "c10110",
+          "dutch": "we"
+        },
+        {
+          "id": "c10172",
+          "dutch": "kennismaken"
+        },
+        {
+          "id": "c10173",
+          "dutch": "ben"
+        },
+        {
+          "id": "c10174",
+          "dutch": "je"
+        },
+        {
+          "id": "c10177",
+          "dutch": "kom"
+        },
+        {
+          "id": "c10178",
+          "dutch": "van"
+        },
+        {
+          "id": "c10180",
+          "dutch": "hoe heet jij?"
+        },
+        {
+          "id": "c10181",
+          "dutch": "heet"
+        },
+        {
+          "id": "c10182",
+          "dutch": "waar ... vandaan"
+        },
+        {
+          "id": "c10184",
+          "dutch": "woon"
+        },
+        {
+          "id": "c10185",
+          "dutch": "mevrouw"
+        },
+        {
+          "id": "c10186",
+          "dutch": "woont"
+        },
+        {
+          "id": "c10187",
+          "dutch": "zeg"
+        },
+        {
+          "id": "c10188",
+          "dutch": "maar"
+        },
+        {
+          "id": "c10190",
+          "dutch": "gaan verder"
+        },
+        {
+          "id": "c10191",
+          "dutch": "heeft"
+        },
+        {
+          "id": "c10192",
+          "dutch": "het"
+        },
+        {
+          "id": "c10193",
+          "dutch": "naar"
+        },
+        {
+          "id": "c10199",
+          "dutch": "ja hoor"
+        },
+        {
+          "id": "c297",
+          "dutch": "het kopje"
+        },
+        {
+          "id": "c10202",
+          "dutch": "al lang"
+        },
+        {
+          "id": "c10204",
+          "dutch": "welke"
+        },
+        {
+          "id": "c10206",
+          "dutch": "ik ben jarig"
+        },
+        {
+          "id": "c10207",
+          "dutch": "wat leuk"
+        },
+        {
+          "id": "c10209",
+          "dutch": "krijg"
+        },
+        {
+          "id": "c10210",
+          "dutch": "nog"
+        },
+        {
+          "id": "c10212",
+          "dutch": "jonger"
+        },
+        {
+          "id": "c10213",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10214",
+          "dutch": "langer"
+        },
+        {
+          "id": "c10215",
+          "dutch": "nog meer"
+        },
+        {
+          "id": "c10216",
+          "dutch": "broers"
+        },
+        {
+          "id": "c10217",
+          "dutch": "zussen"
+        },
+        {
+          "id": "c10219",
+          "dutch": "kijk"
+        },
+        {
+          "id": "c10220",
+          "dutch": "goh"
+        },
+        {
+          "id": "c10223",
+          "dutch": "de ouders"
+        },
+        {
+          "id": "c10224",
+          "dutch": "komen op bezoek"
+        },
+        {
+          "id": "c1452",
+          "dutch": "op dit moment"
+        },
+        {
+          "id": "c10226",
+          "dutch": "doen"
+        },
+        {
+          "id": "c10228",
+          "dutch": "op vakantie"
+        },
+        {
+          "id": "c10230",
+          "dutch": "weet"
+        },
+        {
+          "id": "c10231",
+          "dutch": "vertel"
+        },
+        {
+          "id": "c10232",
+          "dutch": "eens"
+        },
+        {
+          "id": "c10105",
+          "dutch": "dat"
+        },
+        {
+          "id": "c10233",
+          "dutch": "wil"
+        },
+        {
+          "id": "c10234",
+          "dutch": "11.00 uur"
+        },
+        {
+          "id": "c10236",
+          "dutch": "viert"
+        },
+        {
+          "id": "c10237",
+          "dutch": "gefeliciteerd"
+        },
+        {
+          "id": "c10238",
+          "dutch": "dit is"
+        },
+        {
+          "id": "c10239",
+          "dutch": "prettig met je kennis te maken"
+        },
+        {
+          "id": "c10240",
+          "dutch": "ik trakteer"
+        },
+        {
+          "id": "c10241",
+          "dutch": "wil graag"
+        },
+        {
+          "id": "c10242",
+          "dutch": "biertje"
+        },
+        {
+          "id": "c10243",
+          "dutch": "neem"
+        },
+        {
+          "id": "c10244",
+          "dutch": "rode"
+        },
+        {
+          "id": "c10245",
+          "dutch": "roep"
+        },
+        {
+          "id": "c10246",
+          "dutch": "mag"
+        },
+        {
+          "id": "c10247",
+          "dutch": "Franse"
+        },
+        {
+          "id": "c10248",
+          "dutch": "Spaanse"
+        },
+        {
+          "id": "c10249",
+          "dutch": "Zuid-Afrikaanse"
+        },
+        {
+          "id": "c10252",
+          "dutch": "op je verjaardag"
+        },
+        {
+          "id": "c10253",
+          "dutch": "het poosje"
+        },
+        {
+          "id": "c881",
+          "dutch": "nog een keer"
+        },
+        {
+          "id": "c10255",
+          "dutch": "dat is"
+        },
+        {
+          "id": "c379",
+          "dutch": "hetzelfde"
+        },
+        {
+          "id": "c10256",
+          "dutch": "ja, graag"
+        },
+        {
+          "id": "c10111",
+          "dutch": "dit"
+        },
+        {
+          "id": "c10257",
+          "dutch": "betaal"
+        },
+        {
+          "id": "c10258",
+          "dutch": "nog maar"
+        },
+        {
+          "id": "c10262",
+          "dutch": "komt tegen"
+        },
+        {
+          "id": "c10264",
+          "dutch": "prima"
+        },
+        {
+          "id": "c10265",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c10266",
+          "dutch": "problemen"
+        },
+        {
+          "id": "c899",
+          "dutch": "de buren"
+        },
+        {
+          "id": "c10267",
+          "dutch": "niet zo"
+        },
+        {
+          "id": "c10268",
+          "dutch": "een paar dagen"
+        },
+        {
+          "id": "c10273",
+          "dutch": "foto's maken"
+        },
+        {
+          "id": "c10274",
+          "dutch": "romantische"
+        },
+        {
+          "id": "c10275",
+          "dutch": "kijken naar"
+        },
+        {
+          "id": "c10276",
+          "dutch": "direct"
+        },
+        {
+          "id": "c10278",
+          "dutch": "goed"
+        },
+        {
+          "id": "c10280",
+          "dutch": "dat lukt niet"
+        },
+        {
+          "id": "c10281",
+          "dutch": "kan"
+        },
+        {
+          "id": "c10282",
+          "dutch": "blijf"
+        },
+        {
+          "id": "c10283",
+          "dutch": "zal"
+        },
+        {
+          "id": "c10284",
+          "dutch": "de spaghetti carbonara"
+        },
+        {
+          "id": "c10285",
+          "dutch": "schrijf"
+        },
+        {
+          "id": "c10288",
+          "dutch": "hartstikke leuk"
+        },
+        {
+          "id": "c10289",
+          "dutch": "vind ik ook"
+        },
+        {
+          "id": "c10290",
+          "dutch": "ik moet ervandoor"
+        },
+        {
+          "id": "c10293",
+          "dutch": "fijne"
+        },
+        {
+          "id": "c10294",
+          "dutch": "doe de groeten aan"
+        },
+        {
+          "id": "c10295",
+          "dutch": "volgende"
+        },
+        {
+          "id": "c10296",
+          "dutch": "tot dan"
+        },
+        {
+          "id": "c10299",
+          "dutch": "wie is er aan de beurt?"
+        },
+        {
+          "id": "c10301",
+          "dutch": "kleine"
+        },
+        {
+          "id": "c10303",
+          "dutch": "gele"
+        },
+        {
+          "id": "c10304",
+          "dutch": "paprika's"
+        },
+        {
+          "id": "c10305",
+          "dutch": "mooie"
+        },
+        {
+          "id": "c10306",
+          "dutch": "tomaten"
+        },
+        {
+          "id": "c440",
+          "dutch": "Anders nog iets?"
+        },
+        {
+          "id": "c10308",
+          "dutch": "buitenlanders"
+        },
+        {
+          "id": "c10311",
+          "dutch": "spekjes"
+        },
+        {
+          "id": "c10313",
+          "dutch": "goedkope"
+        },
+        {
+          "id": "c10314",
+          "dutch": "heb nodig"
+        },
+        {
+          "id": "c10315",
+          "dutch": "personen"
+        },
+        {
+          "id": "c10316",
+          "dutch": "halve"
+        },
+        {
+          "id": "c10317",
+          "dutch": "aardappels"
+        },
+        {
+          "id": "c10319",
+          "dutch": "was"
+        },
+        {
+          "id": "c10320",
+          "dutch": "het bakje"
+        },
+        {
+          "id": "c10321",
+          "dutch": "champignons"
+        },
+        {
+          "id": "c10323",
+          "dutch": "het bosje"
+        },
+        {
+          "id": "c10324",
+          "dutch": "verder nog iets?"
+        },
+        {
+          "id": "c10325",
+          "dutch": "boontjes"
+        },
+        {
+          "id": "c10326",
+          "dutch": "verse"
+        },
+        {
+          "id": "c10327",
+          "dutch": "komkommers"
+        },
+        {
+          "id": "c10328",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10329",
+          "dutch": "waarnaartoe"
+        },
+        {
+          "id": "c10330",
+          "dutch": "erbij"
+        },
+        {
+          "id": "c10331",
+          "dutch": "geeft niet"
+        },
+        {
+          "id": "c10332",
+          "dutch": "prettig"
+        },
+        {
+          "id": "c10335",
+          "dutch": "gaan zitten"
+        },
+        {
+          "id": "c10336",
+          "dutch": "alvast"
+        },
+        {
+          "id": "c10337",
+          "dutch": "te"
+        },
+        {
+          "id": "c10338",
+          "dutch": "ik heb dorst"
+        },
+        {
+          "id": "c10344",
+          "dutch": "de mosterdsoep"
+        },
+        {
+          "id": "c10347",
+          "dutch": "frietjes"
+        },
+        {
+          "id": "c10348",
+          "dutch": "eh"
+        },
+        {
+          "id": "c10349",
+          "dutch": "o nee"
+        },
+        {
+          "id": "c10351",
+          "dutch": "vegetarische"
+        },
+        {
+          "id": "c10353",
+          "dutch": "momentje"
+        },
+        {
+          "id": "c10356",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c10359",
+          "dutch": "houd (houden) van"
+        },
+        {
+          "id": "c10360",
+          "dutch": "de mosselen"
+        },
+        {
+          "id": "c10361",
+          "dutch": "proef"
+        },
+        {
+          "id": "c10367",
+          "dutch": "vruchten"
+        },
+        {
+          "id": "c10368",
+          "dutch": "laat de rest maar zitten"
+        },
+        {
+          "id": "c10374",
+          "dutch": "zoek"
+        },
+        {
+          "id": "c10375",
+          "dutch": "groter"
+        },
+        {
+          "id": "c10376",
+          "dutch": "het model"
+        },
+        {
+          "id": "c10377",
+          "dutch": "lichte"
+        },
+        {
+          "id": "c10378",
+          "dutch": "verschillende"
+        },
+        {
+          "id": "c10379",
+          "dutch": "merken"
+        },
+        {
+          "id": "c10380",
+          "dutch": "probeert"
+        },
+        {
+          "id": "c10381",
+          "dutch": "ze"
+        },
+        {
+          "id": "c10382",
+          "dutch": "maar even"
+        },
+        {
+          "id": "c10384",
+          "dutch": "paskamers"
+        },
+        {
+          "id": "c10385",
+          "dutch": "zitten"
+        },
+        {
+          "id": "c10161",
+          "dutch": "die"
+        },
+        {
+          "id": "c10389",
+          "dutch": "kleinere"
+        },
+        {
+          "id": "c10390",
+          "dutch": "het spijt me"
+        },
+        {
+          "id": "c10391",
+          "dutch": "kleinste"
+        },
+        {
+          "id": "c10392",
+          "dutch": "eventueel"
+        },
+        {
+          "id": "c10394",
+          "dutch": "T-shirts"
+        },
+        {
+          "id": "c10397",
+          "dutch": "staat me het best"
+        },
+        {
+          "id": "c10398",
+          "dutch": "het best"
+        },
+        {
+          "id": "c10400",
+          "dutch": "de woonruimte"
+        },
+        {
+          "id": "c10404",
+          "dutch": "de bovenwoning"
+        },
+        {
+          "id": "c10405",
+          "dutch": "mogelijkheden"
+        },
+        {
+          "id": "c10406",
+          "dutch": "zie"
+        },
+        {
+          "id": "c10407",
+          "dutch": "maximale"
+        },
+        {
+          "id": "c10408",
+          "dutch": "de huurprijs"
+        },
+        {
+          "id": "c10409",
+          "dutch": "laten zien"
+        },
+        {
+          "id": "c10411",
+          "dutch": "oude"
+        },
+        {
+          "id": "c10413",
+          "dutch": "dicht bij"
+        },
+        {
+          "id": "c10415",
+          "dutch": "vierkante"
+        },
+        {
+          "id": "c10416",
+          "dutch": "ruime"
+        },
+        {
+          "id": "c10417",
+          "dutch": "slaapkamers"
+        },
+        {
+          "id": "c10419",
+          "dutch": "eenvoudige"
+        },
+        {
+          "id": "c10422",
+          "dutch": "geschikte"
+        },
+        {
+          "id": "c10423",
+          "dutch": "huizen"
+        },
+        {
+          "id": "c10424",
+          "dutch": "het huisje"
+        },
+        {
+          "id": "c10426",
+          "dutch": "gemeubileerd"
+        },
+        {
+          "id": "c10427",
+          "dutch": "kasten"
+        },
+        {
+          "id": "c10428",
+          "dutch": "bedden"
+        },
+        {
+          "id": "c10429",
+          "dutch": "stoelen"
+        },
+        {
+          "id": "c10431",
+          "dutch": "zonnige"
+        },
+        {
+          "id": "c10433",
+          "dutch": "benedenwoning"
+        },
+        {
+          "id": "c10434",
+          "dutch": "dat lijkt me fantastisch"
+        },
+        {
+          "id": "c10435",
+          "dutch": "bel"
+        },
+        {
+          "id": "c10436",
+          "dutch": "zo snel mogelijk"
+        },
+        {
+          "id": "c10437",
+          "dutch": "nieuwe"
+        },
+        {
+          "id": "c10438",
+          "dutch": "wat is er aan de hand?"
+        },
+        {
+          "id": "c10440",
+          "dutch": "zit ik onder de bultjes"
+        },
+        {
+          "id": "c10441",
+          "dutch": "bultjes"
+        },
+        {
+          "id": "c10442",
+          "dutch": "armen"
+        },
+        {
+          "id": "c10443",
+          "dutch": "benen"
+        },
+        {
+          "id": "c10444",
+          "dutch": "de buik"
+        },
+        {
+          "id": "c10445",
+          "dutch": "van alles"
+        },
+        {
+          "id": "c10446",
+          "dutch": "geprobeerd"
+        },
+        {
+          "id": "c10447",
+          "dutch": "geholpen"
+        },
+        {
+          "id": "c10448",
+          "dutch": "begonnen"
+        },
+        {
+          "id": "c10449",
+          "dutch": "gisteravond"
+        },
+        {
+          "id": "c10450",
+          "dutch": "gedaan"
+        },
+        {
+          "id": "c10452",
+          "dutch": "gewerkt"
+        },
+        {
+          "id": "c10453",
+          "dutch": "klanten"
+        },
+        {
+          "id": "c10454",
+          "dutch": "bekeken"
+        },
+        {
+          "id": "c10456",
+          "dutch": "geweest"
+        },
+        {
+          "id": "c10457",
+          "dutch": "het wedstrijdje"
+        },
+        {
+          "id": "c10458",
+          "dutch": "gespeeld"
+        },
+        {
+          "id": "c10459",
+          "dutch": "daarna"
+        },
+        {
+          "id": "c10460",
+          "dutch": "gedronken"
+        },
+        {
+          "id": "c10461",
+          "dutch": "bijzonders"
+        },
+        {
+          "id": "c10462",
+          "dutch": "gegeten"
+        },
+        {
+          "id": "c10464",
+          "dutch": "vergeten"
+        },
+        {
+          "id": "c10466",
+          "dutch": "o ja"
+        },
+        {
+          "id": "c10467",
+          "dutch": "emmers"
+        },
+        {
+          "id": "c10468",
+          "dutch": "vorig"
+        },
+        {
+          "id": "c10469",
+          "dutch": "klachten"
+        },
+        {
+          "id": "c10470",
+          "dutch": "lijkt op"
+        },
+        {
+          "id": "c10471",
+          "dutch": "allergische"
+        },
+        {
+          "id": "c10472",
+          "dutch": "geef mee"
+        },
+        {
+          "id": "c10475",
+          "dutch": "krabt"
+        },
+        {
+          "id": "c10476",
+          "dutch": "kapot"
+        },
+        {
+          "id": "c10479",
+          "dutch": "lijkt"
+        },
+        {
+          "id": "c10480",
+          "dutch": "total loss"
+        },
+        {
+          "id": "c10481",
+          "dutch": "gebeurd"
+        },
+        {
+          "id": "c10482",
+          "dutch": "gevallen"
+        },
+        {
+          "id": "c10483",
+          "dutch": "regende"
+        },
+        {
+          "id": "c10484",
+          "dutch": "fietste weg"
+        },
+        {
+          "id": "c10485",
+          "dutch": "fietsen"
+        },
+        {
+          "id": "c10486",
+          "dutch": "wilde"
+        },
+        {
+          "id": "c10487",
+          "dutch": "rechts afslaan"
+        },
+        {
+          "id": "c10488",
+          "dutch": "gleed weg"
+        },
+        {
+          "id": "c10489",
+          "dutch": "mankeerde"
+        },
+        {
+          "id": "c10491",
+          "dutch": "een slag in het wiel"
+        },
+        {
+          "id": "c10498",
+          "dutch": "afgebroken"
+        },
+        {
+          "id": "c10499",
+          "dutch": "bedoelt"
+        },
+        {
+          "id": "c10501",
+          "dutch": "banden"
+        },
+        {
+          "id": "c10502",
+          "dutch": "verstaan"
+        },
+        {
+          "id": "c10504",
+          "dutch": "rijdt"
+        },
+        {
+          "id": "c10505",
+          "dutch": "remmen"
+        },
+        {
+          "id": "c10506",
+          "dutch": "deden"
+        },
+        {
+          "id": "c10507",
+          "dutch": "in orde maken"
+        },
+        {
+          "id": "c10508",
+          "dutch": "tiptop in orde"
+        },
+        {
+          "id": "c10509",
+          "dutch": "leer"
+        },
+        {
+          "id": "c10510",
+          "dutch": "uitdrukkingen"
+        },
+        {
+          "id": "c10514",
+          "dutch": "betekent"
+        },
+        {
+          "id": "c10516",
+          "dutch": "hoera"
+        },
+        {
+          "id": "c10517",
+          "dutch": "van harte gefeliciteerd"
+        },
+        {
+          "id": "c10518",
+          "dutch": "feliciteren met"
+        },
+        {
+          "id": "c10519",
+          "dutch": "het cadeautje"
+        },
+        {
+          "id": "c10521",
+          "dutch": "hoop"
+        },
+        {
+          "id": "c10522",
+          "dutch": "nog geen"
+        },
+        {
+          "id": "c10523",
+          "dutch": "Cubaanse"
+        },
+        {
+          "id": "c10524",
+          "dutch": "ben gek op"
+        },
+        {
+          "id": "c10525",
+          "dutch": "me herinneren"
+        },
+        {
+          "id": "c10526",
+          "dutch": "verteld"
+        },
+        {
+          "id": "c10528",
+          "dutch": "je weet de weg"
+        },
+        {
+          "id": "c10529",
+          "dutch": "doe open"
+        },
+        {
+          "id": "c10530",
+          "dutch": "gezien"
+        },
+        {
+          "id": "c10531",
+          "dutch": "vergis ik me"
+        },
+        {
+          "id": "c10532",
+          "dutch": "verveel me"
+        },
+        {
+          "id": "c10533",
+          "dutch": "hoor"
+        },
+        {
+          "id": "c10534",
+          "dutch": "dat klopt"
+        },
+        {
+          "id": "c10535",
+          "dutch": "sinds kort"
+        },
+        {
+          "id": "c10536",
+          "dutch": "het bevalt me"
+        },
+        {
+          "id": "c10537",
+          "dutch": "studeer"
+        },
+        {
+          "id": "c10540",
+          "dutch": "het bijbaantje"
+        },
+        {
+          "id": "c10541",
+          "dutch": "iedere"
+        },
+        {
+          "id": "c10542",
+          "dutch": "interesseer je"
+        },
+        {
+          "id": "c10543",
+          "dutch": "begrijp"
+        },
+        {
+          "id": "c10545",
+          "dutch": "niet echt"
+        },
+        {
+          "id": "c10548",
+          "dutch": "wat toevallig"
+        },
+        {
+          "id": "c10549",
+          "dutch": "de Wandelbeurs"
+        },
+        {
+          "id": "c10550",
+          "dutch": "bereid me voor op"
+        },
+        {
+          "id": "c10551",
+          "dutch": "de wandelreis"
+        },
+        {
+          "id": "c10554",
+          "dutch": "langzamer"
+        },
+        {
+          "id": "c10555",
+          "dutch": "praten"
+        },
+        {
+          "id": "c10557",
+          "dutch": "Bent u hier bekend?"
+        },
+        {
+          "id": "c10558",
+          "dutch": "bekend"
+        },
+        {
+          "id": "c10563",
+          "dutch": "hebt geluk"
+        },
+        {
+          "id": "c10564",
+          "dutch": "komt aan"
+        },
+        {
+          "id": "c10565",
+          "dutch": "direct"
+        },
+        {
+          "id": "c10566",
+          "dutch": "het stuk"
+        },
+        {
+          "id": "c10567",
+          "dutch": "over ... steken"
+        },
+        {
+          "id": "c10569",
+          "dutch": "ga op"
+        },
+        {
+          "id": "c10571",
+          "dutch": "tot"
+        },
+        {
+          "id": "c10572",
+          "dutch": "herkent"
+        },
+        {
+          "id": "c10575",
+          "dutch": "neemt mee"
+        },
+        {
+          "id": "c10576",
+          "dutch": "toiletten"
+        },
+        {
+          "id": "c10578",
+          "dutch": "ga ... om"
+        },
+        {
+          "id": "c10579",
+          "dutch": "ga ... af"
+        },
+        {
+          "id": "c10581",
+          "dutch": "vanzelf"
+        },
+        {
+          "id": "c10582",
+          "dutch": "bordjes"
+        },
+        {
+          "id": "c10584",
+          "dutch": "makkelijker"
+        },
+        {
+          "id": "c10585",
+          "dutch": "bezoekt"
+        },
+        {
+          "id": "c10586",
+          "dutch": "kom binnen"
+        },
+        {
+          "id": "c10587",
+          "dutch": "zei"
+        },
+        {
+          "id": "c10588",
+          "dutch": "kon"
+        },
+        {
+          "id": "c10590",
+          "dutch": "gelukkig"
+        },
+        {
+          "id": "c10591",
+          "dutch": "meegenomen"
+        },
+        {
+          "id": "c10592",
+          "dutch": "moest"
+        },
+        {
+          "id": "c10593",
+          "dutch": "brengen"
+        },
+        {
+          "id": "c10595",
+          "dutch": "groeten"
+        },
+        {
+          "id": "c10596",
+          "dutch": "Doe haar de groeten terug"
+        },
+        {
+          "id": "c10598",
+          "dutch": "doe uit"
+        },
+        {
+          "id": "c10600",
+          "dutch": "Zeg dat wel!"
+        },
+        {
+          "id": "c10601",
+          "dutch": "ben verkouden"
+        },
+        {
+          "id": "c10602",
+          "dutch": "ik ben toe aan"
+        },
+        {
+          "id": "c10603",
+          "dutch": "hebben aan"
+        },
+        {
+          "id": "c10605",
+          "dutch": "geloof"
+        },
+        {
+          "id": "c10606",
+          "dutch": "schijnt"
+        },
+        {
+          "id": "c10607",
+          "dutch": "kom ... verder"
+        },
+        {
+          "id": "c10608",
+          "dutch": "lekker warm"
+        },
+        {
+          "id": "c10610",
+          "dutch": "bonbons"
+        },
+        {
+          "id": "c10612",
+          "dutch": "bloemen"
+        },
+        {
+          "id": "c10613",
+          "dutch": "snijd"
+        },
+        {
+          "id": "c10614",
+          "dutch": "schuin"
+        },
+        {
+          "id": "c10615",
+          "dutch": "houden van"
+        },
+        {
+          "id": "c10616",
+          "dutch": "dieren"
+        },
+        {
+          "id": "c10617",
+          "dutch": "katten"
+        },
+        {
+          "id": "c10618",
+          "dutch": "vissen"
+        },
+        {
+          "id": "c10622",
+          "dutch": "hadden"
+        },
+        {
+          "id": "c10623",
+          "dutch": "hebben gehad"
+        },
+        {
+          "id": "c10624",
+          "dutch": "onder de auto gekomen"
+        },
+        {
+          "id": "c10625",
+          "dutch": "hebben verdriet gehad om"
+        },
+        {
+          "id": "c10628",
+          "dutch": "volgens mij"
+        },
+        {
+          "id": "c10629",
+          "dutch": "kom mee"
+        },
+        {
+          "id": "c10631",
+          "dutch": "twee weken geleden"
+        },
+        {
+          "id": "c10632",
+          "dutch": "jongen"
+        },
+        {
+          "id": "c10633",
+          "dutch": "gekregen"
+        },
+        {
+          "id": "c121",
+          "dutch": "laatste"
+        },
+        {
+          "id": "c10634",
+          "dutch": "de sportschool"
+        },
+        {
+          "id": "c10635",
+          "dutch": "zich inschrijven"
+        },
+        {
+          "id": "c10636",
+          "dutch": "mensen"
+        },
+        {
+          "id": "c1570",
+          "dutch": "in de rij staan"
+        },
+        {
+          "id": "c10637",
+          "dutch": "elke"
+        },
+        {
+          "id": "c10638",
+          "dutch": "opzeggen"
+        },
+        {
+          "id": "c10640",
+          "dutch": "sporten"
+        },
+        {
+          "id": "c10641",
+          "dutch": "speciale"
+        },
+        {
+          "id": "c10645",
+          "dutch": "spieren"
+        },
+        {
+          "id": "c10646",
+          "dutch": "doelen"
+        },
+        {
+          "id": "c10647",
+          "dutch": "bent van plan"
+        },
+        {
+          "id": "c10648",
+          "dutch": "fitte"
+        },
+        {
+          "id": "c10649",
+          "dutch": "aantrekkelijke"
+        },
+        {
+          "id": "c10650",
+          "dutch": "de krachttraining"
+        },
+        {
+          "id": "c10652",
+          "dutch": "de cardio"
+        },
+        {
+          "id": "c10653",
+          "dutch": "de groepsles"
+        },
+        {
+          "id": "c10654",
+          "dutch": "kijk mee"
+        },
+        {
+          "id": "c10655",
+          "dutch": "bieden aan"
+        },
+        {
+          "id": "c10656",
+          "dutch": "virtuele"
+        },
+        {
+          "id": "c10657",
+          "dutch": "op die manier"
+        },
+        {
+          "id": "c10658",
+          "dutch": "klinkt"
+        },
+        {
+          "id": "c10659",
+          "dutch": "de sportkleren"
+        },
+        {
+          "id": "c10660",
+          "dutch": "gaat in"
+        },
+        {
+          "id": "c10661",
+          "dutch": "het buikspierkwartier"
+        },
+        {
+          "id": "c10662",
+          "dutch": "meedoen"
+        },
+        {
+          "id": "c10664",
+          "dutch": "maak klaar"
+        },
+        {
+          "id": "c10665",
+          "dutch": "het pasje"
+        },
+        {
+          "id": "c10666",
+          "dutch": "energiedrankjes"
+        },
+        {
+          "id": "c10667",
+          "dutch": "het drankje"
+        },
+        {
+          "id": "c10676",
+          "dutch": "ging"
+        },
+        {
+          "id": "c10677",
+          "dutch": "duurde"
+        },
+        {
+          "id": "c10678",
+          "dutch": "pakken"
+        },
+        {
+          "id": "c10679",
+          "dutch": "geweldig"
+        },
+        {
+          "id": "c10680",
+          "dutch": "vertrekt"
+        },
+        {
+          "id": "c10682",
+          "dutch": "het grapje"
+        },
+        {
+          "id": "c10683",
+          "dutch": "het raampje"
+        },
+        {
+          "id": "c10685",
+          "dutch": "vroeger"
+        },
+        {
+          "id": "c10688",
+          "dutch": "reis"
+        },
+        {
+          "id": "c10689",
+          "dutch": "het spoor"
+        },
+        {
+          "id": "c10690",
+          "dutch": "achter de rug"
+        },
+        {
+          "id": "c10691",
+          "dutch": "pony's"
+        },
+        {
+          "id": "c10692",
+          "dutch": "de wei"
+        },
+        {
+          "id": "c10693",
+          "dutch": "net"
+        },
+        {
+          "id": "c10694",
+          "dutch": "de shetlandpony"
+        },
+        {
+          "id": "c10695",
+          "dutch": "gewend"
+        },
+        {
+          "id": "c10700",
+          "dutch": "schilderijen"
+        },
+        {
+          "id": "c10701",
+          "dutch": "het stukje"
+        },
+        {
+          "id": "c10703",
+          "dutch": "broodjes"
+        },
+        {
+          "id": "c10705",
+          "dutch": "goede reis"
+        },
+        {
+          "id": "c10706",
+          "dutch": "maak wakker"
+        },
+        {
+          "id": "c10707",
+          "dutch": "de caissière"
+        },
+        {
+          "id": "c10709",
+          "dutch": "wat stom"
+        },
+        {
+          "id": "c10710",
+          "dutch": "gekeken"
+        },
+        {
+          "id": "c10711",
+          "dutch": "is al bezig"
+        },
+        {
+          "id": "c10712",
+          "dutch": "gemist"
+        },
+        {
+          "id": "c10713",
+          "dutch": "draaien"
+        },
+        {
+          "id": "c10716",
+          "dutch": "opgenomen"
+        },
+        {
+          "id": "c10717",
+          "dutch": "naar een verhaal van"
+        },
+        {
+          "id": "c10718",
+          "dutch": "de natuurdocumentaire"
+        },
+        {
+          "id": "c10719",
+          "dutch": "gesproken"
+        },
+        {
+          "id": "c10721",
+          "dutch": "ondertiteld"
+        },
+        {
+          "id": "c10722",
+          "dutch": "de rang"
+        },
+        {
+          "id": "c10727",
+          "dutch": "gedroomd"
+        },
+        {
+          "id": "c10728",
+          "dutch": "vogels"
+        },
+        {
+          "id": "c10730",
+          "dutch": "ben uitgerust"
+        },
+        {
+          "id": "c10731",
+          "dutch": "sta op"
+        },
+        {
+          "id": "c10732",
+          "dutch": "het ontbijtje"
+        },
+        {
+          "id": "c10735",
+          "dutch": "de filosofiegeschiedenis"
+        },
+        {
+          "id": "c10738",
+          "dutch": "gehaktballetjes"
+        },
+        {
+          "id": "c10740",
+          "dutch": "de storing"
+        },
+        {
+          "id": "c10741",
+          "dutch": "ben kwijt"
+        },
+        {
+          "id": "c10742",
+          "dutch": "gekookt"
+        },
+        {
+          "id": "c10744",
+          "dutch": "ontzettend"
+        },
+        {
+          "id": "c10746",
+          "dutch": "geluncht"
+        },
+        {
+          "id": "c10747",
+          "dutch": "komt terug"
+        },
+        {
+          "id": "c10748",
+          "dutch": "mooi"
+        },
+        {
+          "id": "c10749",
+          "dutch": "lust"
+        },
+        {
+          "id": "c10751",
+          "dutch": "behalve"
+        },
+        {
+          "id": "c10752",
+          "dutch": "vaste"
+        },
+        {
+          "id": "c10754",
+          "dutch": "uitgenodigd"
+        },
+        {
+          "id": "c10759",
+          "dutch": "gestolen"
+        },
+        {
+          "id": "c10760",
+          "dutch": "aangifte doen"
+        },
+        {
+          "id": "c10762",
+          "dutch": "zat"
+        },
+        {
+          "id": "c10765",
+          "dutch": "lag"
+        },
+        {
+          "id": "c10766",
+          "dutch": "gezocht"
+        },
+        {
+          "id": "c10767",
+          "dutch": "gelegd"
+        },
+        {
+          "id": "c10768",
+          "dutch": "had"
+        },
+        {
+          "id": "c10770",
+          "dutch": "viel"
+        },
+        {
+          "id": "c10771",
+          "dutch": "gehaald"
+        },
+        {
+          "id": "c10772",
+          "dutch": "de dader"
+        },
+        {
+          "id": "c10773",
+          "dutch": "namelijk"
+        },
+        {
+          "id": "c10774",
+          "dutch": "ziet eruit"
+        },
+        {
+          "id": "c10782",
+          "dutch": "ophalen"
+        },
+        {
+          "id": "c10783",
+          "dutch": "vervelend"
+        },
+        {
+          "id": "c10784",
+          "dutch": "opgeschreven"
+        },
+        {
+          "id": "c10785",
+          "dutch": "gevonden"
+        },
+        {
+          "id": "c10786",
+          "dutch": "nemen contact op"
+        }
+      ]
+    },
+    "russian": {
+      "covered": 742,
+      "missing": [
+        {
+          "id": "c10162",
+          "dutch": "allemaal"
+        },
+        {
+          "id": "c10165",
+          "dutch": "docenten"
+        },
+        {
+          "id": "c10168",
+          "dutch": "geeft les"
+        },
+        {
+          "id": "c10172",
+          "dutch": "kennismaken"
+        },
+        {
+          "id": "c10175",
+          "dutch": "uit"
+        },
+        {
+          "id": "c10176",
+          "dutch": "Engeland"
+        },
+        {
+          "id": "c10178",
+          "dutch": "van"
+        },
+        {
+          "id": "c10180",
+          "dutch": "hoe heet jij?"
+        },
+        {
+          "id": "c10182",
+          "dutch": "waar ... vandaan"
+        },
+        {
+          "id": "c10185",
+          "dutch": "mevrouw"
+        },
+        {
+          "id": "c10188",
+          "dutch": "maar"
+        },
+        {
+          "id": "c10189",
+          "dutch": "hoor"
+        },
+        {
+          "id": "c10190",
+          "dutch": "gaan verder"
+        },
+        {
+          "id": "c10192",
+          "dutch": "het"
+        },
+        {
+          "id": "c10193",
+          "dutch": "naar"
+        },
+        {
+          "id": "c10194",
+          "dutch": "even"
+        },
+        {
+          "id": "c748",
+          "dutch": "tot straks"
+        },
+        {
+          "id": "c10196",
+          "dutch": "straks"
+        },
+        {
+          "id": "c10199",
+          "dutch": "ja hoor"
+        },
+        {
+          "id": "c10202",
+          "dutch": "al lang"
+        },
+        {
+          "id": "c10203",
+          "dutch": "pas"
+        },
+        {
+          "id": "c10205",
+          "dutch": "eigenlijk"
+        },
+        {
+          "id": "c10206",
+          "dutch": "ik ben jarig"
+        },
+        {
+          "id": "c10207",
+          "dutch": "wat leuk"
+        },
+        {
+          "id": "c10208",
+          "dutch": "dus"
+        },
+        {
+          "id": "c10210",
+          "dutch": "nog"
+        },
+        {
+          "id": "c10213",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10215",
+          "dutch": "nog meer"
+        },
+        {
+          "id": "c10218",
+          "dutch": "nog"
+        },
+        {
+          "id": "c10220",
+          "dutch": "goh"
+        },
+        {
+          "id": "c10224",
+          "dutch": "komen op bezoek"
+        },
+        {
+          "id": "c1452",
+          "dutch": "op dit moment"
+        },
+        {
+          "id": "c10226",
+          "dutch": "doen"
+        },
+        {
+          "id": "c10228",
+          "dutch": "op vakantie"
+        },
+        {
+          "id": "c10232",
+          "dutch": "eens"
+        },
+        {
+          "id": "c10234",
+          "dutch": "11.00 uur"
+        },
+        {
+          "id": "c10237",
+          "dutch": "gefeliciteerd"
+        },
+        {
+          "id": "c224",
+          "dutch": "dank je wel"
+        },
+        {
+          "id": "c10238",
+          "dutch": "dit is"
+        },
+        {
+          "id": "c10239",
+          "dutch": "prettig met je kennis te maken"
+        },
+        {
+          "id": "c10240",
+          "dutch": "ik trakteer"
+        },
+        {
+          "id": "c10241",
+          "dutch": "wil graag"
+        },
+        {
+          "id": "c10249",
+          "dutch": "Zuid-Afrikaanse"
+        },
+        {
+          "id": "c10250",
+          "dutch": "nou"
+        },
+        {
+          "id": "c10252",
+          "dutch": "op je verjaardag"
+        },
+        {
+          "id": "c10253",
+          "dutch": "het poosje"
+        },
+        {
+          "id": "c10254",
+          "dutch": "zullen"
+        },
+        {
+          "id": "c881",
+          "dutch": "nog een keer"
+        },
+        {
+          "id": "c10255",
+          "dutch": "dat is"
+        },
+        {
+          "id": "c10256",
+          "dutch": "ja, graag"
+        },
+        {
+          "id": "c10258",
+          "dutch": "nog maar"
+        },
+        {
+          "id": "c10261",
+          "dutch": "daarom"
+        },
+        {
+          "id": "c10262",
+          "dutch": "komt tegen"
+        },
+        {
+          "id": "c10263",
+          "dutch": "leuk"
+        },
+        {
+          "id": "c10264",
+          "dutch": "prima"
+        },
+        {
+          "id": "c10265",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c899",
+          "dutch": "de buren"
+        },
+        {
+          "id": "c10267",
+          "dutch": "niet zo"
+        },
+        {
+          "id": "c10268",
+          "dutch": "een paar dagen"
+        },
+        {
+          "id": "c10270",
+          "dutch": "wauw"
+        },
+        {
+          "id": "c10273",
+          "dutch": "foto's maken"
+        },
+        {
+          "id": "c10275",
+          "dutch": "kijken naar"
+        },
+        {
+          "id": "c10276",
+          "dutch": "direct"
+        },
+        {
+          "id": "c10278",
+          "dutch": "goed"
+        },
+        {
+          "id": "c10280",
+          "dutch": "dat lukt niet"
+        },
+        {
+          "id": "c10283",
+          "dutch": "zal"
+        },
+        {
+          "id": "c10284",
+          "dutch": "de spaghetti carbonara"
+        },
+        {
+          "id": "c10287",
+          "dutch": "hartstikke"
+        },
+        {
+          "id": "c10288",
+          "dutch": "hartstikke leuk"
+        },
+        {
+          "id": "c10289",
+          "dutch": "vind ik ook"
+        },
+        {
+          "id": "c10290",
+          "dutch": "ik moet ervandoor"
+        },
+        {
+          "id": "c10291",
+          "dutch": "ervandoor"
+        },
+        {
+          "id": "c10292",
+          "dutch": "gauw"
+        },
+        {
+          "id": "c10294",
+          "dutch": "doe de groeten aan"
+        },
+        {
+          "id": "c10296",
+          "dutch": "tot dan"
+        },
+        {
+          "id": "c10297",
+          "dutch": "boodschappen doen"
+        },
+        {
+          "id": "c10299",
+          "dutch": "wie is er aan de beurt?"
+        },
+        {
+          "id": "c440",
+          "dutch": "Anders nog iets?"
+        },
+        {
+          "id": "c10310",
+          "dutch": "de stamppot"
+        },
+        {
+          "id": "c10311",
+          "dutch": "spekjes"
+        },
+        {
+          "id": "c10314",
+          "dutch": "heb nodig"
+        },
+        {
+          "id": "c10320",
+          "dutch": "het bakje"
+        },
+        {
+          "id": "c10324",
+          "dutch": "verder nog iets?"
+        },
+        {
+          "id": "c10325",
+          "dutch": "boontjes"
+        },
+        {
+          "id": "c10328",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10329",
+          "dutch": "waarnaartoe"
+        },
+        {
+          "id": "c10330",
+          "dutch": "erbij"
+        },
+        {
+          "id": "c10331",
+          "dutch": "geeft niet"
+        },
+        {
+          "id": "c10332",
+          "dutch": "prettig"
+        },
+        {
+          "id": "c10334",
+          "dutch": "de serveerster"
+        },
+        {
+          "id": "c10335",
+          "dutch": "gaan zitten"
+        },
+        {
+          "id": "c10336",
+          "dutch": "alvast"
+        },
+        {
+          "id": "c10337",
+          "dutch": "te"
+        },
+        {
+          "id": "c10338",
+          "dutch": "ik heb dorst"
+        },
+        {
+          "id": "c10340",
+          "dutch": "alleen"
+        },
+        {
+          "id": "c10342",
+          "dutch": "ik heb honger"
+        },
+        {
+          "id": "c10344",
+          "dutch": "de mosterdsoep"
+        },
+        {
+          "id": "c10347",
+          "dutch": "frietjes"
+        },
+        {
+          "id": "c10348",
+          "dutch": "eh"
+        },
+        {
+          "id": "c10349",
+          "dutch": "o nee"
+        },
+        {
+          "id": "c10352",
+          "dutch": "de dagschotel"
+        },
+        {
+          "id": "c405",
+          "dutch": "eet smakelijk"
+        },
+        {
+          "id": "c10355",
+          "dutch": "beetje"
+        },
+        {
+          "id": "c10356",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c10359",
+          "dutch": "houd (houden) van"
+        },
+        {
+          "id": "c10362",
+          "dutch": "wat"
+        },
+        {
+          "id": "c10363",
+          "dutch": "een beetje"
+        },
+        {
+          "id": "c10368",
+          "dutch": "laat de rest maar zitten"
+        },
+        {
+          "id": "c10370",
+          "dutch": "dank u"
+        },
+        {
+          "id": "c10371",
+          "dutch": "de kledingzaak"
+        },
+        {
+          "id": "c10372",
+          "dutch": "de zaak"
+        },
+        {
+          "id": "c10373",
+          "dutch": "om"
+        },
+        {
+          "id": "c10376",
+          "dutch": "het model"
+        },
+        {
+          "id": "c10381",
+          "dutch": "ze"
+        },
+        {
+          "id": "c10382",
+          "dutch": "maar even"
+        },
+        {
+          "id": "c10384",
+          "dutch": "paskamers"
+        },
+        {
+          "id": "c10385",
+          "dutch": "zitten"
+        },
+        {
+          "id": "c10161",
+          "dutch": "die"
+        },
+        {
+          "id": "c10389",
+          "dutch": "kleinere"
+        },
+        {
+          "id": "c10390",
+          "dutch": "het spijt me"
+        },
+        {
+          "id": "c10391",
+          "dutch": "kleinste"
+        },
+        {
+          "id": "c10392",
+          "dutch": "eventueel"
+        },
+        {
+          "id": "c10393",
+          "dutch": "de bon"
+        },
+        {
+          "id": "c1234",
+          "dutch": "allerlei"
+        },
+        {
+          "id": "c10397",
+          "dutch": "staat me het best"
+        },
+        {
+          "id": "c10398",
+          "dutch": "het best"
+        },
+        {
+          "id": "c10399",
+          "dutch": "de makelaar"
+        },
+        {
+          "id": "c10400",
+          "dutch": "de woonruimte"
+        },
+        {
+          "id": "c10403",
+          "dutch": "bepaald"
+        },
+        {
+          "id": "c10404",
+          "dutch": "de bovenwoning"
+        },
+        {
+          "id": "c10407",
+          "dutch": "maximale"
+        },
+        {
+          "id": "c10408",
+          "dutch": "de huurprijs"
+        },
+        {
+          "id": "c10409",
+          "dutch": "laten zien"
+        },
+        {
+          "id": "c10413",
+          "dutch": "dicht bij"
+        },
+        {
+          "id": "c10414",
+          "dutch": "de vierkante meter"
+        },
+        {
+          "id": "c10415",
+          "dutch": "vierkante"
+        },
+        {
+          "id": "c10416",
+          "dutch": "ruime"
+        },
+        {
+          "id": "c10420",
+          "dutch": "hoeven"
+        },
+        {
+          "id": "c274",
+          "dutch": "te huur"
+        },
+        {
+          "id": "c10425",
+          "dutch": "verhuren"
+        },
+        {
+          "id": "c10433",
+          "dutch": "benedenwoning"
+        },
+        {
+          "id": "c10434",
+          "dutch": "dat lijkt me fantastisch"
+        },
+        {
+          "id": "c10435",
+          "dutch": "bel"
+        },
+        {
+          "id": "c10436",
+          "dutch": "zo snel mogelijk"
+        },
+        {
+          "id": "c10438",
+          "dutch": "wat is er aan de hand?"
+        },
+        {
+          "id": "c10440",
+          "dutch": "zit ik onder de bultjes"
+        },
+        {
+          "id": "c10441",
+          "dutch": "bultjes"
+        },
+        {
+          "id": "c10444",
+          "dutch": "de buik"
+        },
+        {
+          "id": "c10445",
+          "dutch": "van alles"
+        },
+        {
+          "id": "c10449",
+          "dutch": "gisteravond"
+        },
+        {
+          "id": "c10454",
+          "dutch": "bekeken"
+        },
+        {
+          "id": "c10455",
+          "dutch": "de voetbalvereniging"
+        },
+        {
+          "id": "c10459",
+          "dutch": "daarna"
+        },
+        {
+          "id": "c10461",
+          "dutch": "bijzonders"
+        },
+        {
+          "id": "c10463",
+          "dutch": "afgelopen"
+        },
+        {
+          "id": "c10466",
+          "dutch": "o ja"
+        },
+        {
+          "id": "c10468",
+          "dutch": "vorig"
+        },
+        {
+          "id": "c10470",
+          "dutch": "lijkt op"
+        },
+        {
+          "id": "c10471",
+          "dutch": "allergische"
+        },
+        {
+          "id": "c10472",
+          "dutch": "geef mee"
+        },
+        {
+          "id": "c10475",
+          "dutch": "krabt"
+        },
+        {
+          "id": "c10476",
+          "dutch": "kapot"
+        },
+        {
+          "id": "c10478",
+          "dutch": "de fietsenmaker"
+        },
+        {
+          "id": "c10480",
+          "dutch": "total loss"
+        },
+        {
+          "id": "c10484",
+          "dutch": "fietste weg"
+        },
+        {
+          "id": "c10487",
+          "dutch": "rechts afslaan"
+        },
+        {
+          "id": "c10488",
+          "dutch": "gleed weg"
+        },
+        {
+          "id": "c10489",
+          "dutch": "mankeerde"
+        },
+        {
+          "id": "c10490",
+          "dutch": "zelf"
+        },
+        {
+          "id": "c10491",
+          "dutch": "een slag in het wiel"
+        },
+        {
+          "id": "c10495",
+          "dutch": "scheef"
+        },
+        {
+          "id": "c10496",
+          "dutch": "zo'n"
+        },
+        {
+          "id": "c10498",
+          "dutch": "afgebroken"
+        },
+        {
+          "id": "c10500",
+          "dutch": "de trapper"
+        },
+        {
+          "id": "c10503",
+          "dutch": "helemaal"
+        },
+        {
+          "id": "c10507",
+          "dutch": "in orde maken"
+        },
+        {
+          "id": "c10508",
+          "dutch": "tiptop in orde"
+        },
+        {
+          "id": "c10511",
+          "dutch": "Koningsdag"
+        },
+        {
+          "id": "c10516",
+          "dutch": "hoera"
+        },
+        {
+          "id": "c10517",
+          "dutch": "van harte gefeliciteerd"
+        },
+        {
+          "id": "c10518",
+          "dutch": "feliciteren met"
+        },
+        {
+          "id": "c10522",
+          "dutch": "nog geen"
+        },
+        {
+          "id": "c10523",
+          "dutch": "Cubaanse"
+        },
+        {
+          "id": "c10524",
+          "dutch": "ben gek op"
+        },
+        {
+          "id": "c10525",
+          "dutch": "me herinneren"
+        },
+        {
+          "id": "c10528",
+          "dutch": "je weet de weg"
+        },
+        {
+          "id": "c10529",
+          "dutch": "doe open"
+        },
+        {
+          "id": "c10531",
+          "dutch": "vergis ik me"
+        },
+        {
+          "id": "c10532",
+          "dutch": "verveel me"
+        },
+        {
+          "id": "c10534",
+          "dutch": "dat klopt"
+        },
+        {
+          "id": "c10535",
+          "dutch": "sinds kort"
+        },
+        {
+          "id": "c10536",
+          "dutch": "het bevalt me"
+        },
+        {
+          "id": "c10538",
+          "dutch": "de logopedie"
+        },
+        {
+          "id": "c10540",
+          "dutch": "het bijbaantje"
+        },
+        {
+          "id": "c10541",
+          "dutch": "iedere"
+        },
+        {
+          "id": "c10542",
+          "dutch": "interesseer je"
+        },
+        {
+          "id": "c10545",
+          "dutch": "niet echt"
+        },
+        {
+          "id": "c10548",
+          "dutch": "wat toevallig"
+        },
+        {
+          "id": "c10549",
+          "dutch": "de Wandelbeurs"
+        },
+        {
+          "id": "c10550",
+          "dutch": "bereid me voor op"
+        },
+        {
+          "id": "c10551",
+          "dutch": "de wandelreis"
+        },
+        {
+          "id": "c10555",
+          "dutch": "praten"
+        },
+        {
+          "id": "c10557",
+          "dutch": "Bent u hier bekend?"
+        },
+        {
+          "id": "c10561",
+          "dutch": "vanaf"
+        },
+        {
+          "id": "c10563",
+          "dutch": "hebt geluk"
+        },
+        {
+          "id": "c10564",
+          "dutch": "komt aan"
+        },
+        {
+          "id": "c10565",
+          "dutch": "direct"
+        },
+        {
+          "id": "c10566",
+          "dutch": "het stuk"
+        },
+        {
+          "id": "c10567",
+          "dutch": "over ... steken"
+        },
+        {
+          "id": "c10568",
+          "dutch": "de balie"
+        },
+        {
+          "id": "c10569",
+          "dutch": "ga op"
+        },
+        {
+          "id": "c10571",
+          "dutch": "tot"
+        },
+        {
+          "id": "c10573",
+          "dutch": "linksaf"
+        },
+        {
+          "id": "c10574",
+          "dutch": "het eind"
+        },
+        {
+          "id": "c10575",
+          "dutch": "neemt mee"
+        },
+        {
+          "id": "c10577",
+          "dutch": "beneden"
+        },
+        {
+          "id": "c10578",
+          "dutch": "ga ... om"
+        },
+        {
+          "id": "c10579",
+          "dutch": "ga ... af"
+        },
+        {
+          "id": "c10580",
+          "dutch": "uitlopen"
+        },
+        {
+          "id": "c10581",
+          "dutch": "vanzelf"
+        },
+        {
+          "id": "c10582",
+          "dutch": "bordjes"
+        },
+        {
+          "id": "c10584",
+          "dutch": "makkelijker"
+        },
+        {
+          "id": "c10586",
+          "dutch": "kom binnen"
+        },
+        {
+          "id": "c10590",
+          "dutch": "gelukkig"
+        },
+        {
+          "id": "c10593",
+          "dutch": "brengen"
+        },
+        {
+          "id": "c10596",
+          "dutch": "Doe haar de groeten terug"
+        },
+        {
+          "id": "c10597",
+          "dutch": "verontschuldigen"
+        },
+        {
+          "id": "c10598",
+          "dutch": "doe uit"
+        },
+        {
+          "id": "c10599",
+          "dutch": "hè"
+        },
+        {
+          "id": "c10600",
+          "dutch": "Zeg dat wel!"
+        },
+        {
+          "id": "c10601",
+          "dutch": "ben verkouden"
+        },
+        {
+          "id": "c10602",
+          "dutch": "ik ben toe aan"
+        },
+        {
+          "id": "c10603",
+          "dutch": "hebben aan"
+        },
+        {
+          "id": "c10607",
+          "dutch": "kom ... verder"
+        },
+        {
+          "id": "c10608",
+          "dutch": "lekker warm"
+        },
+        {
+          "id": "c10614",
+          "dutch": "schuin"
+        },
+        {
+          "id": "c10615",
+          "dutch": "houden van"
+        },
+        {
+          "id": "c10620",
+          "dutch": "meestal"
+        },
+        {
+          "id": "c10623",
+          "dutch": "hebben gehad"
+        },
+        {
+          "id": "c10624",
+          "dutch": "onder de auto gekomen"
+        },
+        {
+          "id": "c10625",
+          "dutch": "hebben verdriet gehad om"
+        },
+        {
+          "id": "c10628",
+          "dutch": "volgens mij"
+        },
+        {
+          "id": "c10629",
+          "dutch": "kom mee"
+        },
+        {
+          "id": "c10631",
+          "dutch": "twee weken geleden"
+        },
+        {
+          "id": "c10632",
+          "dutch": "jongen"
+        },
+        {
+          "id": "c10634",
+          "dutch": "de sportschool"
+        },
+        {
+          "id": "c10635",
+          "dutch": "zich inschrijven"
+        },
+        {
+          "id": "c1570",
+          "dutch": "in de rij staan"
+        },
+        {
+          "id": "c10637",
+          "dutch": "elke"
+        },
+        {
+          "id": "c10638",
+          "dutch": "opzeggen"
+        },
+        {
+          "id": "c10639",
+          "dutch": "onbeperkt"
+        },
+        {
+          "id": "c10647",
+          "dutch": "bent van plan"
+        },
+        {
+          "id": "c10650",
+          "dutch": "de krachttraining"
+        },
+        {
+          "id": "c10652",
+          "dutch": "de cardio"
+        },
+        {
+          "id": "c10653",
+          "dutch": "de groepsles"
+        },
+        {
+          "id": "c10654",
+          "dutch": "kijk mee"
+        },
+        {
+          "id": "c10655",
+          "dutch": "bieden aan"
+        },
+        {
+          "id": "c10656",
+          "dutch": "virtuele"
+        },
+        {
+          "id": "c10657",
+          "dutch": "op die manier"
+        },
+        {
+          "id": "c10659",
+          "dutch": "de sportkleren"
+        },
+        {
+          "id": "c10660",
+          "dutch": "gaat in"
+        },
+        {
+          "id": "c10661",
+          "dutch": "het buikspierkwartier"
+        },
+        {
+          "id": "c10662",
+          "dutch": "meedoen"
+        },
+        {
+          "id": "c10664",
+          "dutch": "maak klaar"
+        },
+        {
+          "id": "c10665",
+          "dutch": "het pasje"
+        },
+        {
+          "id": "c10666",
+          "dutch": "energiedrankjes"
+        },
+        {
+          "id": "c10668",
+          "dutch": "de automaat"
+        },
+        {
+          "id": "c10669",
+          "dutch": "het muntgeld"
+        },
+        {
+          "id": "c10672",
+          "dutch": "veel plezier"
+        },
+        {
+          "id": "c10673",
+          "dutch": "het plezier"
+        },
+        {
+          "id": "c5167",
+          "dutch": "spierpijn"
+        },
+        {
+          "id": "c10674",
+          "dutch": "het openbaar vervoer"
+        },
+        {
+          "id": "c10679",
+          "dutch": "geweldig"
+        },
+        {
+          "id": "c10684",
+          "dutch": "net als"
+        },
+        {
+          "id": "c10685",
+          "dutch": "vroeger"
+        },
+        {
+          "id": "c10689",
+          "dutch": "het spoor"
+        },
+        {
+          "id": "c10690",
+          "dutch": "achter de rug"
+        },
+        {
+          "id": "c10692",
+          "dutch": "de wei"
+        },
+        {
+          "id": "c10693",
+          "dutch": "net"
+        },
+        {
+          "id": "c10694",
+          "dutch": "de shetlandpony"
+        },
+        {
+          "id": "c10696",
+          "dutch": "zo meteen"
+        },
+        {
+          "id": "c10705",
+          "dutch": "goede reis"
+        },
+        {
+          "id": "c10706",
+          "dutch": "maak wakker"
+        },
+        {
+          "id": "c10707",
+          "dutch": "de caissière"
+        },
+        {
+          "id": "c10709",
+          "dutch": "wat stom"
+        },
+        {
+          "id": "c10711",
+          "dutch": "is al bezig"
+        },
+        {
+          "id": "c10713",
+          "dutch": "draaien"
+        },
+        {
+          "id": "c10714",
+          "dutch": "de zomerhitte"
+        },
+        {
+          "id": "c10715",
+          "dutch": "eerder"
+        },
+        {
+          "id": "c10717",
+          "dutch": "naar een verhaal van"
+        },
+        {
+          "id": "c10718",
+          "dutch": "de natuurdocumentaire"
+        },
+        {
+          "id": "c10721",
+          "dutch": "ondertiteld"
+        },
+        {
+          "id": "c10722",
+          "dutch": "de rang"
+        },
+        {
+          "id": "c10723",
+          "dutch": "het studentenhuis"
+        },
+        {
+          "id": "c10724",
+          "dutch": "de informatietechnologie"
+        },
+        {
+          "id": "c10729",
+          "dutch": "helemaal"
+        },
+        {
+          "id": "c10730",
+          "dutch": "ben uitgerust"
+        },
+        {
+          "id": "c10731",
+          "dutch": "sta op"
+        },
+        {
+          "id": "c10735",
+          "dutch": "de filosofiegeschiedenis"
+        },
+        {
+          "id": "c10738",
+          "dutch": "gehaktballetjes"
+        },
+        {
+          "id": "c10739",
+          "dutch": "de tomatensaus"
+        },
+        {
+          "id": "c10740",
+          "dutch": "de storing"
+        },
+        {
+          "id": "c10741",
+          "dutch": "ben kwijt"
+        },
+        {
+          "id": "c10744",
+          "dutch": "ontzettend"
+        },
+        {
+          "id": "c10747",
+          "dutch": "komt terug"
+        },
+        {
+          "id": "c10748",
+          "dutch": "mooi"
+        },
+        {
+          "id": "c10749",
+          "dutch": "lust"
+        },
+        {
+          "id": "c10751",
+          "dutch": "behalve"
+        },
+        {
+          "id": "c10752",
+          "dutch": "vaste"
+        },
+        {
+          "id": "c10755",
+          "dutch": "de lieverd"
+        },
+        {
+          "id": "c10760",
+          "dutch": "aangifte doen"
+        },
+        {
+          "id": "c10761",
+          "dutch": "via"
+        },
+        {
+          "id": "c10764",
+          "dutch": "toen"
+        },
+        {
+          "id": "c10767",
+          "dutch": "gelegd"
+        },
+        {
+          "id": "c10772",
+          "dutch": "de dader"
+        },
+        {
+          "id": "c10773",
+          "dutch": "namelijk"
+        },
+        {
+          "id": "c10774",
+          "dutch": "ziet eruit"
+        },
+        {
+          "id": "c10775",
+          "dutch": "oei"
+        },
+        {
+          "id": "c10776",
+          "dutch": "in ieder geval"
+        },
+        {
+          "id": "c10781",
+          "dutch": "hoezo"
+        },
+        {
+          "id": "c10782",
+          "dutch": "ophalen"
+        },
+        {
+          "id": "c10783",
+          "dutch": "vervelend"
+        },
+        {
+          "id": "c10786",
+          "dutch": "nemen contact op"
+        }
+      ]
+    },
+    "examples": {
+      "covered": 985,
+      "missing": [
+        {
+          "id": "c10182",
+          "dutch": "waar ... vandaan"
+        },
+        {
+          "id": "c10224",
+          "dutch": "komen op bezoek"
+        },
+        {
+          "id": "c10234",
+          "dutch": "11.00 uur"
+        },
+        {
+          "id": "c10239",
+          "dutch": "prettig met je kennis te maken"
+        },
+        {
+          "id": "c10249",
+          "dutch": "Zuid-Afrikaanse"
+        },
+        {
+          "id": "c10262",
+          "dutch": "komt tegen"
+        },
+        {
+          "id": "c10284",
+          "dutch": "de spaghetti carbonara"
+        },
+        {
+          "id": "c10299",
+          "dutch": "wie is er aan de beurt?"
+        },
+        {
+          "id": "c10304",
+          "dutch": "paprika's"
+        },
+        {
+          "id": "c10309",
+          "dutch": "de andijvie"
+        },
+        {
+          "id": "c10310",
+          "dutch": "de stamppot"
+        },
+        {
+          "id": "c10311",
+          "dutch": "spekjes"
+        },
+        {
+          "id": "c10324",
+          "dutch": "verder nog iets?"
+        },
+        {
+          "id": "c1035",
+          "dutch": "de menukaart"
+        },
+        {
+          "id": "c10344",
+          "dutch": "de mosterdsoep"
+        },
+        {
+          "id": "c10352",
+          "dutch": "de dagschotel"
+        },
+        {
+          "id": "c10359",
+          "dutch": "houd (houden) van"
+        },
+        {
+          "id": "c10368",
+          "dutch": "laat de rest maar zitten"
+        },
+        {
+          "id": "c10161",
+          "dutch": "die"
+        },
+        {
+          "id": "c10394",
+          "dutch": "T-shirts"
+        },
+        {
+          "id": "c10397",
+          "dutch": "staat me het best"
+        },
+        {
+          "id": "c10404",
+          "dutch": "de bovenwoning"
+        },
+        {
+          "id": "c10433",
+          "dutch": "benedenwoning"
+        },
+        {
+          "id": "c10434",
+          "dutch": "dat lijkt me fantastisch"
+        },
+        {
+          "id": "c10440",
+          "dutch": "zit ik onder de bultjes"
+        },
+        {
+          "id": "c10455",
+          "dutch": "de voetbalvereniging"
+        },
+        {
+          "id": "c10457",
+          "dutch": "het wedstrijdje"
+        },
+        {
+          "id": "c10478",
+          "dutch": "de fietsenmaker"
+        },
+        {
+          "id": "c10484",
+          "dutch": "fietste weg"
+        },
+        {
+          "id": "c10487",
+          "dutch": "rechts afslaan"
+        },
+        {
+          "id": "c10488",
+          "dutch": "gleed weg"
+        },
+        {
+          "id": "c10491",
+          "dutch": "een slag in het wiel"
+        },
+        {
+          "id": "c10497",
+          "dutch": "de bagagedrager"
+        },
+        {
+          "id": "c10500",
+          "dutch": "de trapper"
+        },
+        {
+          "id": "c10508",
+          "dutch": "tiptop in orde"
+        },
+        {
+          "id": "c10511",
+          "dutch": "Koningsdag"
+        },
+        {
+          "id": "c10517",
+          "dutch": "van harte gefeliciteerd"
+        },
+        {
+          "id": "c10528",
+          "dutch": "je weet de weg"
+        },
+        {
+          "id": "c10531",
+          "dutch": "vergis ik me"
+        },
+        {
+          "id": "c10538",
+          "dutch": "de logopedie"
+        },
+        {
+          "id": "c10548",
+          "dutch": "wat toevallig"
+        },
+        {
+          "id": "c10549",
+          "dutch": "de Wandelbeurs"
+        },
+        {
+          "id": "c10551",
+          "dutch": "de wandelreis"
+        },
+        {
+          "id": "c10557",
+          "dutch": "Bent u hier bekend?"
+        },
+        {
+          "id": "c10567",
+          "dutch": "over ... steken"
+        },
+        {
+          "id": "c10575",
+          "dutch": "neemt mee"
+        },
+        {
+          "id": "c10578",
+          "dutch": "ga ... om"
+        },
+        {
+          "id": "c10579",
+          "dutch": "ga ... af"
+        },
+        {
+          "id": "c10580",
+          "dutch": "uitlopen"
+        },
+        {
+          "id": "c10596",
+          "dutch": "Doe haar de groeten terug"
+        },
+        {
+          "id": "c10598",
+          "dutch": "doe uit"
+        },
+        {
+          "id": "c10600",
+          "dutch": "Zeg dat wel!"
+        },
+        {
+          "id": "c10602",
+          "dutch": "ik ben toe aan"
+        },
+        {
+          "id": "c10607",
+          "dutch": "kom ... verder"
+        },
+        {
+          "id": "c10624",
+          "dutch": "onder de auto gekomen"
+        },
+        {
+          "id": "c10625",
+          "dutch": "hebben verdriet gehad om"
+        },
+        {
+          "id": "c10635",
+          "dutch": "zich inschrijven"
+        },
+        {
+          "id": "c10648",
+          "dutch": "fitte"
+        },
+        {
+          "id": "c10650",
+          "dutch": "de krachttraining"
+        },
+        {
+          "id": "c10652",
+          "dutch": "de cardio"
+        },
+        {
+          "id": "c10653",
+          "dutch": "de groepsles"
+        },
+        {
+          "id": "c10659",
+          "dutch": "de sportkleren"
+        },
+        {
+          "id": "c10661",
+          "dutch": "het buikspierkwartier"
+        },
+        {
+          "id": "c10664",
+          "dutch": "maak klaar"
+        },
+        {
+          "id": "c10666",
+          "dutch": "energiedrankjes"
+        },
+        {
+          "id": "c10669",
+          "dutch": "het muntgeld"
+        },
+        {
+          "id": "c10691",
+          "dutch": "pony's"
+        },
+        {
+          "id": "c10694",
+          "dutch": "de shetlandpony"
+        },
+        {
+          "id": "c5761",
+          "dutch": "het natuurgebied"
+        },
+        {
+          "id": "c10706",
+          "dutch": "maak wakker"
+        },
+        {
+          "id": "c10711",
+          "dutch": "is al bezig"
+        },
+        {
+          "id": "c10714",
+          "dutch": "de zomerhitte"
+        },
+        {
+          "id": "c10717",
+          "dutch": "naar een verhaal van"
+        },
+        {
+          "id": "c10721",
+          "dutch": "ondertiteld"
+        },
+        {
+          "id": "c10724",
+          "dutch": "de informatietechnologie"
+        },
+        {
+          "id": "c10732",
+          "dutch": "het ontbijtje"
+        },
+        {
+          "id": "c10735",
+          "dutch": "de filosofiegeschiedenis"
+        },
+        {
+          "id": "c10738",
+          "dutch": "gehaktballetjes"
+        },
+        {
+          "id": "c6414",
+          "dutch": "bankpas"
+        },
+        {
+          "id": "c10786",
+          "dutch": "nemen contact op"
+        }
+      ]
+    },
+    "grammar": {
+      "covered": 656,
+      "missing": [
+        {
+          "id": "c117",
+          "dutch": "welkom"
+        },
+        {
+          "id": "c21",
+          "dutch": "goedemorgen"
+        },
+        {
+          "id": "c10162",
+          "dutch": "allemaal"
+        },
+        {
+          "id": "c10102",
+          "dutch": "de"
+        },
+        {
+          "id": "c45",
+          "dutch": "ik"
+        },
+        {
+          "id": "c33",
+          "dutch": "en"
+        },
+        {
+          "id": "c783",
+          "dutch": "jullie"
+        },
+        {
+          "id": "c51",
+          "dutch": "jullie"
+        },
+        {
+          "id": "c139",
+          "dutch": "twee"
+        },
+        {
+          "id": "c10166",
+          "dutch": "andere"
+        },
+        {
+          "id": "c48",
+          "dutch": "hij"
+        },
+        {
+          "id": "c140",
+          "dutch": "drie"
+        },
+        {
+          "id": "c10110",
+          "dutch": "we"
+        },
+        {
+          "id": "c10171",
+          "dutch": "met"
+        },
+        {
+          "id": "c10172",
+          "dutch": "kennismaken"
+        },
+        {
+          "id": "c96",
+          "dutch": "wie"
+        },
+        {
+          "id": "c46",
+          "dutch": "jij"
+        },
+        {
+          "id": "c95",
+          "dutch": "wat"
+        },
+        {
+          "id": "c777",
+          "dutch": "jouw"
+        },
+        {
+          "id": "c11",
+          "dutch": "mijn"
+        },
+        {
+          "id": "c10174",
+          "dutch": "je"
+        },
+        {
+          "id": "c10175",
+          "dutch": "uit"
+        },
+        {
+          "id": "c247",
+          "dutch": "welk"
+        },
+        {
+          "id": "c10176",
+          "dutch": "Engeland"
+        },
+        {
+          "id": "c10178",
+          "dutch": "van"
+        },
+        {
+          "id": "c10179",
+          "dutch": "hoe"
+        },
+        {
+          "id": "c10180",
+          "dutch": "hoe heet jij?"
+        },
+        {
+          "id": "c10182",
+          "dutch": "waar ... vandaan"
+        },
+        {
+          "id": "c94",
+          "dutch": "waar"
+        },
+        {
+          "id": "c10183",
+          "dutch": "China"
+        },
+        {
+          "id": "c269",
+          "dutch": "nu"
+        },
+        {
+          "id": "c87",
+          "dutch": "nee"
+        },
+        {
+          "id": "c47",
+          "dutch": "u"
+        },
+        {
+          "id": "c10185",
+          "dutch": "mevrouw"
+        },
+        {
+          "id": "c60",
+          "dutch": "ook"
+        },
+        {
+          "id": "c691",
+          "dutch": "in"
+        },
+        {
+          "id": "c10189",
+          "dutch": "hoor"
+        },
+        {
+          "id": "c82",
+          "dutch": "ja"
+        },
+        {
+          "id": "c80",
+          "dutch": "hier"
+        },
+        {
+          "id": "c897",
+          "dutch": "al"
+        },
+        {
+          "id": "c157",
+          "dutch": "twintig"
+        },
+        {
+          "id": "c10190",
+          "dutch": "gaan verder"
+        },
+        {
+          "id": "c830",
+          "dutch": "iedereen"
+        },
+        {
+          "id": "c10192",
+          "dutch": "het"
+        },
+        {
+          "id": "c138",
+          "dutch": "één"
+        },
+        {
+          "id": "c694",
+          "dutch": "op"
+        },
+        {
+          "id": "c145",
+          "dutch": "acht"
+        },
+        {
+          "id": "c10193",
+          "dutch": "naar"
+        },
+        {
+          "id": "c10194",
+          "dutch": "even"
+        },
+        {
+          "id": "c748",
+          "dutch": "tot straks"
+        },
+        {
+          "id": "c10196",
+          "dutch": "straks"
+        },
+        {
+          "id": "c10109",
+          "dutch": "deze"
+        },
+        {
+          "id": "c10199",
+          "dutch": "ja hoor"
+        },
+        {
+          "id": "c10200",
+          "dutch": "zo"
+        },
+        {
+          "id": "c10103",
+          "dutch": "een"
+        },
+        {
+          "id": "c10202",
+          "dutch": "al lang"
+        },
+        {
+          "id": "c10203",
+          "dutch": "pas"
+        },
+        {
+          "id": "c10108",
+          "dutch": "of"
+        },
+        {
+          "id": "c10204",
+          "dutch": "welke"
+        },
+        {
+          "id": "c10205",
+          "dutch": "eigenlijk"
+        },
+        {
+          "id": "c173",
+          "dutch": "vandaag"
+        },
+        {
+          "id": "c172",
+          "dutch": "morgen"
+        },
+        {
+          "id": "c10206",
+          "dutch": "ik ben jarig"
+        },
+        {
+          "id": "c10207",
+          "dutch": "wat leuk"
+        },
+        {
+          "id": "c10208",
+          "dutch": "dus"
+        },
+        {
+          "id": "c10210",
+          "dutch": "nog"
+        },
+        {
+          "id": "c520",
+          "dutch": "maar"
+        },
+        {
+          "id": "c10213",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10215",
+          "dutch": "nog meer"
+        },
+        {
+          "id": "c10218",
+          "dutch": "nog"
+        },
+        {
+          "id": "c10220",
+          "dutch": "goh"
+        },
+        {
+          "id": "c642",
+          "dutch": "heel"
+        },
+        {
+          "id": "c10221",
+          "dutch": "ander"
+        },
+        {
+          "id": "c10224",
+          "dutch": "komen op bezoek"
+        },
+        {
+          "id": "c1452",
+          "dutch": "op dit moment"
+        },
+        {
+          "id": "c10225",
+          "dutch": "Indonesië"
+        },
+        {
+          "id": "c10226",
+          "dutch": "doen"
+        },
+        {
+          "id": "c10227",
+          "dutch": "daar"
+        },
+        {
+          "id": "c10228",
+          "dutch": "op vakantie"
+        },
+        {
+          "id": "c10229",
+          "dutch": "voor"
+        },
+        {
+          "id": "c779",
+          "dutch": "zijn"
+        },
+        {
+          "id": "c185",
+          "dutch": "wanneer"
+        },
+        {
+          "id": "c61",
+          "dutch": "niet"
+        },
+        {
+          "id": "c10232",
+          "dutch": "eens"
+        },
+        {
+          "id": "c732",
+          "dutch": "over"
+        },
+        {
+          "id": "c10105",
+          "dutch": "dat"
+        },
+        {
+          "id": "c10234",
+          "dutch": "11.00 uur"
+        },
+        {
+          "id": "c850",
+          "dutch": "weer"
+        },
+        {
+          "id": "c115",
+          "dutch": "samen"
+        },
+        {
+          "id": "c10237",
+          "dutch": "gefeliciteerd"
+        },
+        {
+          "id": "c224",
+          "dutch": "dank je wel"
+        },
+        {
+          "id": "c10238",
+          "dutch": "dit is"
+        },
+        {
+          "id": "c10239",
+          "dutch": "prettig met je kennis te maken"
+        },
+        {
+          "id": "c887",
+          "dutch": "elkaar"
+        },
+        {
+          "id": "c10240",
+          "dutch": "ik trakteer"
+        },
+        {
+          "id": "c10241",
+          "dutch": "wil graag"
+        },
+        {
+          "id": "c439",
+          "dutch": "alstublieft"
+        },
+        {
+          "id": "c10247",
+          "dutch": "Franse"
+        },
+        {
+          "id": "c10249",
+          "dutch": "Zuid-Afrikaanse"
+        },
+        {
+          "id": "c10250",
+          "dutch": "nou"
+        },
+        {
+          "id": "c10251",
+          "dutch": "proost"
+        },
+        {
+          "id": "c10252",
+          "dutch": "op je verjaardag"
+        },
+        {
+          "id": "c10253",
+          "dutch": "het poosje"
+        },
+        {
+          "id": "c519",
+          "dutch": "later"
+        },
+        {
+          "id": "c881",
+          "dutch": "nog een keer"
+        },
+        {
+          "id": "c10255",
+          "dutch": "dat is"
+        },
+        {
+          "id": "c379",
+          "dutch": "hetzelfde"
+        },
+        {
+          "id": "c10256",
+          "dutch": "ja, graag"
+        },
+        {
+          "id": "c10111",
+          "dutch": "dit"
+        },
+        {
+          "id": "c10258",
+          "dutch": "nog maar"
+        },
+        {
+          "id": "c10260",
+          "dutch": "alles"
+        },
+        {
+          "id": "c10261",
+          "dutch": "daarom"
+        },
+        {
+          "id": "c120",
+          "dutch": "eerste"
+        },
+        {
+          "id": "c337",
+          "dutch": "tweede"
+        },
+        {
+          "id": "c1878",
+          "dutch": "hé"
+        },
+        {
+          "id": "c1307",
+          "dutch": "geleden"
+        },
+        {
+          "id": "c10264",
+          "dutch": "prima"
+        },
+        {
+          "id": "c1261",
+          "dutch": "jou"
+        },
+        {
+          "id": "c10265",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c899",
+          "dutch": "de buren"
+        },
+        {
+          "id": "c10267",
+          "dutch": "niet zo"
+        },
+        {
+          "id": "c10268",
+          "dutch": "een paar dagen"
+        },
+        {
+          "id": "c10269",
+          "dutch": "Venetië"
+        },
+        {
+          "id": "c10270",
+          "dutch": "wauw"
+        },
+        {
+          "id": "c10272",
+          "dutch": "veel"
+        },
+        {
+          "id": "c10273",
+          "dutch": "foto's maken"
+        },
+        {
+          "id": "c549",
+          "dutch": "sinds"
+        },
+        {
+          "id": "c692",
+          "dutch": "na"
+        },
+        {
+          "id": "c10275",
+          "dutch": "kijken naar"
+        },
+        {
+          "id": "c10276",
+          "dutch": "direct"
+        },
+        {
+          "id": "c470",
+          "dutch": "iets"
+        },
+        {
+          "id": "c10278",
+          "dutch": "goed"
+        },
+        {
+          "id": "c300",
+          "dutch": "thuis"
+        },
+        {
+          "id": "c10280",
+          "dutch": "dat lukt niet"
+        },
+        {
+          "id": "c383",
+          "dutch": "dan"
+        },
+        {
+          "id": "c10284",
+          "dutch": "de spaghetti carbonara"
+        },
+        {
+          "id": "c10287",
+          "dutch": "hartstikke"
+        },
+        {
+          "id": "c10288",
+          "dutch": "hartstikke leuk"
+        },
+        {
+          "id": "c10289",
+          "dutch": "vind ik ook"
+        },
+        {
+          "id": "c10290",
+          "dutch": "ik moet ervandoor"
+        },
+        {
+          "id": "c10291",
+          "dutch": "ervandoor"
+        },
+        {
+          "id": "c10292",
+          "dutch": "gauw"
+        },
+        {
+          "id": "c10294",
+          "dutch": "doe de groeten aan"
+        },
+        {
+          "id": "c10295",
+          "dutch": "volgende"
+        },
+        {
+          "id": "c10296",
+          "dutch": "tot dan"
+        },
+        {
+          "id": "c10297",
+          "dutch": "boodschappen doen"
+        },
+        {
+          "id": "c10106",
+          "dutch": "er"
+        },
+        {
+          "id": "c10299",
+          "dutch": "wie is er aan de beurt?"
+        },
+        {
+          "id": "c248",
+          "dutch": "alsjeblieft"
+        },
+        {
+          "id": "c415",
+          "dutch": "altijd"
+        },
+        {
+          "id": "c199",
+          "dutch": "sorry"
+        },
+        {
+          "id": "c546",
+          "dutch": "natuurlijk"
+        },
+        {
+          "id": "c440",
+          "dutch": "Anders nog iets?"
+        },
+        {
+          "id": "c354",
+          "dutch": "vaak"
+        },
+        {
+          "id": "c136",
+          "dutch": "hoeveel"
+        },
+        {
+          "id": "c10314",
+          "dutch": "heb nodig"
+        },
+        {
+          "id": "c665",
+          "dutch": "ongeveer"
+        },
+        {
+          "id": "c10316",
+          "dutch": "halve"
+        },
+        {
+          "id": "c10324",
+          "dutch": "verder nog iets?"
+        },
+        {
+          "id": "c10328",
+          "dutch": "wel"
+        },
+        {
+          "id": "c430",
+          "dutch": "genoeg"
+        },
+        {
+          "id": "c10329",
+          "dutch": "waarnaartoe"
+        },
+        {
+          "id": "c10330",
+          "dutch": "erbij"
+        },
+        {
+          "id": "c10331",
+          "dutch": "geeft niet"
+        },
+        {
+          "id": "c10332",
+          "dutch": "prettig"
+        },
+        {
+          "id": "c1265",
+          "dutch": "ons"
+        },
+        {
+          "id": "c749",
+          "dutch": "bij"
+        },
+        {
+          "id": "c10335",
+          "dutch": "gaan zitten"
+        },
+        {
+          "id": "c10336",
+          "dutch": "alvast"
+        },
+        {
+          "id": "c10337",
+          "dutch": "te"
+        },
+        {
+          "id": "c10338",
+          "dutch": "ik heb dorst"
+        },
+        {
+          "id": "c1260",
+          "dutch": "mij"
+        },
+        {
+          "id": "c10340",
+          "dutch": "alleen"
+        },
+        {
+          "id": "c10342",
+          "dutch": "ik heb honger"
+        },
+        {
+          "id": "c572",
+          "dutch": "misschien"
+        },
+        {
+          "id": "c10344",
+          "dutch": "de mosterdsoep"
+        },
+        {
+          "id": "c541",
+          "dutch": "erg"
+        },
+        {
+          "id": "c10346",
+          "dutch": "als"
+        },
+        {
+          "id": "c10348",
+          "dutch": "eh"
+        },
+        {
+          "id": "c10349",
+          "dutch": "o nee"
+        },
+        {
+          "id": "c77",
+          "dutch": "geen"
+        },
+        {
+          "id": "c10350",
+          "dutch": "toch"
+        },
+        {
+          "id": "c10351",
+          "dutch": "vegetarische"
+        },
+        {
+          "id": "c405",
+          "dutch": "eet smakelijk"
+        },
+        {
+          "id": "c10355",
+          "dutch": "beetje"
+        },
+        {
+          "id": "c10356",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c10359",
+          "dutch": "houd (houden) van"
+        },
+        {
+          "id": "c10362",
+          "dutch": "wat"
+        },
+        {
+          "id": "c10363",
+          "dutch": "een beetje"
+        },
+        {
+          "id": "c276",
+          "dutch": "zonder"
+        },
+        {
+          "id": "c10114",
+          "dutch": "alleen"
+        },
+        {
+          "id": "c10368",
+          "dutch": "laat de rest maar zitten"
+        },
+        {
+          "id": "c10370",
+          "dutch": "dank u"
+        },
+        {
+          "id": "c10373",
+          "dutch": "om"
+        },
+        {
+          "id": "c531",
+          "dutch": "soms"
+        },
+        {
+          "id": "c1499",
+          "dutch": "wat voor"
+        },
+        {
+          "id": "c10376",
+          "dutch": "het model"
+        },
+        {
+          "id": "c10378",
+          "dutch": "verschillende"
+        },
+        {
+          "id": "c10381",
+          "dutch": "ze"
+        },
+        {
+          "id": "c615",
+          "dutch": "allebei"
+        },
+        {
+          "id": "c10382",
+          "dutch": "maar even"
+        },
+        {
+          "id": "c914",
+          "dutch": "ergens"
+        },
+        {
+          "id": "c10385",
+          "dutch": "zitten"
+        },
+        {
+          "id": "c10115",
+          "dutch": "beter"
+        },
+        {
+          "id": "c10386",
+          "dutch": "dan"
+        },
+        {
+          "id": "c10161",
+          "dutch": "die"
+        },
+        {
+          "id": "c10387",
+          "dutch": "hem"
+        },
+        {
+          "id": "c10389",
+          "dutch": "kleinere"
+        },
+        {
+          "id": "c10390",
+          "dutch": "het spijt me"
+        },
+        {
+          "id": "c10391",
+          "dutch": "kleinste"
+        },
+        {
+          "id": "c10392",
+          "dutch": "eventueel"
+        },
+        {
+          "id": "c1657",
+          "dutch": "binnen"
+        },
+        {
+          "id": "c1234",
+          "dutch": "allerlei"
+        },
+        {
+          "id": "c10396",
+          "dutch": "zo"
+        },
+        {
+          "id": "c10397",
+          "dutch": "staat me het best"
+        },
+        {
+          "id": "c10398",
+          "dutch": "het best"
+        },
+        {
+          "id": "c10400",
+          "dutch": "de woonruimte"
+        },
+        {
+          "id": "c10118",
+          "dutch": "mezelf"
+        },
+        {
+          "id": "c10404",
+          "dutch": "de bovenwoning"
+        },
+        {
+          "id": "c10407",
+          "dutch": "maximale"
+        },
+        {
+          "id": "c10408",
+          "dutch": "de huurprijs"
+        },
+        {
+          "id": "c10409",
+          "dutch": "laten zien"
+        },
+        {
+          "id": "c338",
+          "dutch": "derde"
+        },
+        {
+          "id": "c10413",
+          "dutch": "dicht bij"
+        },
+        {
+          "id": "c274",
+          "dutch": "te huur"
+        },
+        {
+          "id": "c476",
+          "dutch": "want"
+        },
+        {
+          "id": "c1162",
+          "dutch": "niets"
+        },
+        {
+          "id": "c10433",
+          "dutch": "benedenwoning"
+        },
+        {
+          "id": "c10434",
+          "dutch": "dat lijkt me fantastisch"
+        },
+        {
+          "id": "c10128",
+          "dutch": "waar"
+        },
+        {
+          "id": "c10436",
+          "dutch": "zo snel mogelijk"
+        },
+        {
+          "id": "c10438",
+          "dutch": "wat is er aan de hand?"
+        },
+        {
+          "id": "c10439",
+          "dutch": "zoals"
+        },
+        {
+          "id": "c10440",
+          "dutch": "zit ik onder de bultjes"
+        },
+        {
+          "id": "c10441",
+          "dutch": "bultjes"
+        },
+        {
+          "id": "c10444",
+          "dutch": "de buik"
+        },
+        {
+          "id": "c10445",
+          "dutch": "van alles"
+        },
+        {
+          "id": "c10449",
+          "dutch": "gisteravond"
+        },
+        {
+          "id": "c10451",
+          "dutch": "overdag"
+        },
+        {
+          "id": "c10459",
+          "dutch": "daarna"
+        },
+        {
+          "id": "c10463",
+          "dutch": "afgelopen"
+        },
+        {
+          "id": "c10466",
+          "dutch": "o ja"
+        },
+        {
+          "id": "c10468",
+          "dutch": "vorig"
+        },
+        {
+          "id": "c10470",
+          "dutch": "lijkt op"
+        },
+        {
+          "id": "c10471",
+          "dutch": "allergische"
+        },
+        {
+          "id": "c10472",
+          "dutch": "geef mee"
+        },
+        {
+          "id": "c1565",
+          "dutch": "tegen"
+        },
+        {
+          "id": "c1301",
+          "dutch": "anders"
+        },
+        {
+          "id": "c10476",
+          "dutch": "kapot"
+        },
+        {
+          "id": "c1119",
+          "dutch": "sterkte"
+        },
+        {
+          "id": "c889",
+          "dutch": "inderdaad"
+        },
+        {
+          "id": "c10480",
+          "dutch": "total loss"
+        },
+        {
+          "id": "c10484",
+          "dutch": "fietste weg"
+        },
+        {
+          "id": "c10487",
+          "dutch": "rechts afslaan"
+        },
+        {
+          "id": "c10488",
+          "dutch": "gleed weg"
+        },
+        {
+          "id": "c10490",
+          "dutch": "zelf"
+        },
+        {
+          "id": "c10491",
+          "dutch": "een slag in het wiel"
+        },
+        {
+          "id": "c10496",
+          "dutch": "zo'n"
+        },
+        {
+          "id": "c10503",
+          "dutch": "helemaal"
+        },
+        {
+          "id": "c10506",
+          "dutch": "deden"
+        },
+        {
+          "id": "c10507",
+          "dutch": "in orde maken"
+        },
+        {
+          "id": "c10508",
+          "dutch": "tiptop in orde"
+        },
+        {
+          "id": "c10516",
+          "dutch": "hoera"
+        },
+        {
+          "id": "c10517",
+          "dutch": "van harte gefeliciteerd"
+        },
+        {
+          "id": "c10518",
+          "dutch": "feliciteren met"
+        },
+        {
+          "id": "c10522",
+          "dutch": "nog geen"
+        },
+        {
+          "id": "c10523",
+          "dutch": "Cubaanse"
+        },
+        {
+          "id": "c10524",
+          "dutch": "ben gek op"
+        },
+        {
+          "id": "c10525",
+          "dutch": "me herinneren"
+        },
+        {
+          "id": "c10528",
+          "dutch": "je weet de weg"
+        },
+        {
+          "id": "c751",
+          "dutch": "eerst"
+        },
+        {
+          "id": "c10531",
+          "dutch": "vergis ik me"
+        },
+        {
+          "id": "c10532",
+          "dutch": "verveel me"
+        },
+        {
+          "id": "c347",
+          "dutch": "nooit"
+        },
+        {
+          "id": "c10534",
+          "dutch": "dat klopt"
+        },
+        {
+          "id": "c10535",
+          "dutch": "sinds kort"
+        },
+        {
+          "id": "c10536",
+          "dutch": "het bevalt me"
+        },
+        {
+          "id": "c10539",
+          "dutch": "naast"
+        },
+        {
+          "id": "c10541",
+          "dutch": "iedere"
+        },
+        {
+          "id": "c10542",
+          "dutch": "interesseer je"
+        },
+        {
+          "id": "c10144",
+          "dutch": "gewoon"
+        },
+        {
+          "id": "c10545",
+          "dutch": "niet echt"
+        },
+        {
+          "id": "c10548",
+          "dutch": "wat toevallig"
+        },
+        {
+          "id": "c10549",
+          "dutch": "de Wandelbeurs"
+        },
+        {
+          "id": "c10550",
+          "dutch": "bereid me voor op"
+        },
+        {
+          "id": "c10551",
+          "dutch": "de wandelreis"
+        },
+        {
+          "id": "c10553",
+          "dutch": "Chili"
+        },
+        {
+          "id": "c10555",
+          "dutch": "praten"
+        },
+        {
+          "id": "c10557",
+          "dutch": "Bent u hier bekend?"
+        },
+        {
+          "id": "c613",
+          "dutch": "te"
+        },
+        {
+          "id": "c10561",
+          "dutch": "vanaf"
+        },
+        {
+          "id": "c10563",
+          "dutch": "hebt geluk"
+        },
+        {
+          "id": "c791",
+          "dutch": "net"
+        },
+        {
+          "id": "c10565",
+          "dutch": "direct"
+        },
+        {
+          "id": "c10566",
+          "dutch": "het stuk"
+        },
+        {
+          "id": "c10567",
+          "dutch": "over ... steken"
+        },
+        {
+          "id": "c282",
+          "dutch": "boven"
+        },
+        {
+          "id": "c10570",
+          "dutch": "rechtdoor"
+        },
+        {
+          "id": "c10571",
+          "dutch": "tot"
+        },
+        {
+          "id": "c10573",
+          "dutch": "linksaf"
+        },
+        {
+          "id": "c758",
+          "dutch": "rechts"
+        },
+        {
+          "id": "c10577",
+          "dutch": "beneden"
+        },
+        {
+          "id": "c10578",
+          "dutch": "ga ... om"
+        },
+        {
+          "id": "c10579",
+          "dutch": "ga ... af"
+        },
+        {
+          "id": "c10581",
+          "dutch": "vanzelf"
+        },
+        {
+          "id": "c10584",
+          "dutch": "makkelijker"
+        },
+        {
+          "id": "c10590",
+          "dutch": "gelukkig"
+        },
+        {
+          "id": "c10593",
+          "dutch": "brengen"
+        },
+        {
+          "id": "c10596",
+          "dutch": "Doe haar de groeten terug"
+        },
+        {
+          "id": "c10599",
+          "dutch": "hè"
+        },
+        {
+          "id": "c10600",
+          "dutch": "Zeg dat wel!"
+        },
+        {
+          "id": "c10601",
+          "dutch": "ben verkouden"
+        },
+        {
+          "id": "c10602",
+          "dutch": "ik ben toe aan"
+        },
+        {
+          "id": "c10607",
+          "dutch": "kom ... verder"
+        },
+        {
+          "id": "c3710",
+          "dutch": "ah"
+        },
+        {
+          "id": "c10608",
+          "dutch": "lekker warm"
+        },
+        {
+          "id": "c10614",
+          "dutch": "schuin"
+        },
+        {
+          "id": "c10615",
+          "dutch": "houden van"
+        },
+        {
+          "id": "c10619",
+          "dutch": "jawel"
+        },
+        {
+          "id": "c10620",
+          "dutch": "meestal"
+        },
+        {
+          "id": "c10623",
+          "dutch": "hebben gehad"
+        },
+        {
+          "id": "c10624",
+          "dutch": "onder de auto gekomen"
+        },
+        {
+          "id": "c10625",
+          "dutch": "hebben verdriet gehad om"
+        },
+        {
+          "id": "c10628",
+          "dutch": "volgens mij"
+        },
+        {
+          "id": "c1168",
+          "dutch": "volgens"
+        },
+        {
+          "id": "c10631",
+          "dutch": "twee weken geleden"
+        },
+        {
+          "id": "c253",
+          "dutch": "iemand"
+        },
+        {
+          "id": "c121",
+          "dutch": "laatste"
+        },
+        {
+          "id": "c10634",
+          "dutch": "de sportschool"
+        },
+        {
+          "id": "c10635",
+          "dutch": "zich inschrijven"
+        },
+        {
+          "id": "c1570",
+          "dutch": "in de rij staan"
+        },
+        {
+          "id": "c10637",
+          "dutch": "elke"
+        },
+        {
+          "id": "c10638",
+          "dutch": "opzeggen"
+        },
+        {
+          "id": "c1078",
+          "dutch": "beide"
+        },
+        {
+          "id": "c456",
+          "dutch": "gratis"
+        },
+        {
+          "id": "c1957",
+          "dutch": "nogal"
+        },
+        {
+          "id": "c10647",
+          "dutch": "bent van plan"
+        },
+        {
+          "id": "c10650",
+          "dutch": "de krachttraining"
+        },
+        {
+          "id": "c551",
+          "dutch": "waarschijnlijk"
+        },
+        {
+          "id": "c10652",
+          "dutch": "de cardio"
+        },
+        {
+          "id": "c10653",
+          "dutch": "de groepsles"
+        },
+        {
+          "id": "c10656",
+          "dutch": "virtuele"
+        },
+        {
+          "id": "c10657",
+          "dutch": "op die manier"
+        },
+        {
+          "id": "c10661",
+          "dutch": "het buikspierkwartier"
+        },
+        {
+          "id": "c672",
+          "dutch": "meteen"
+        },
+        {
+          "id": "c10662",
+          "dutch": "meedoen"
+        },
+        {
+          "id": "c10665",
+          "dutch": "het pasje"
+        },
+        {
+          "id": "c10672",
+          "dutch": "veel plezier"
+        },
+        {
+          "id": "c10675",
+          "dutch": "Colombia"
+        },
+        {
+          "id": "c568",
+          "dutch": "helaas"
+        },
+        {
+          "id": "c10679",
+          "dutch": "geweldig"
+        },
+        {
+          "id": "c10684",
+          "dutch": "net als"
+        },
+        {
+          "id": "c10685",
+          "dutch": "vroeger"
+        },
+        {
+          "id": "c10687",
+          "dutch": "buiten"
+        },
+        {
+          "id": "c10689",
+          "dutch": "het spoor"
+        },
+        {
+          "id": "c10690",
+          "dutch": "achter de rug"
+        },
+        {
+          "id": "c10692",
+          "dutch": "de wei"
+        },
+        {
+          "id": "c10693",
+          "dutch": "net"
+        },
+        {
+          "id": "c10694",
+          "dutch": "de shetlandpony"
+        },
+        {
+          "id": "c10140",
+          "dutch": "anders"
+        },
+        {
+          "id": "c10696",
+          "dutch": "zo meteen"
+        },
+        {
+          "id": "c743",
+          "dutch": "onderweg"
+        },
+        {
+          "id": "c10704",
+          "dutch": "welterusten"
+        },
+        {
+          "id": "c10705",
+          "dutch": "goede reis"
+        },
+        {
+          "id": "c10706",
+          "dutch": "maak wakker"
+        },
+        {
+          "id": "c10707",
+          "dutch": "de caissière"
+        },
+        {
+          "id": "c10709",
+          "dutch": "wat stom"
+        },
+        {
+          "id": "c10711",
+          "dutch": "is al bezig"
+        },
+        {
+          "id": "c10713",
+          "dutch": "draaien"
+        },
+        {
+          "id": "c10715",
+          "dutch": "eerder"
+        },
+        {
+          "id": "c10717",
+          "dutch": "naar een verhaal van"
+        },
+        {
+          "id": "c10718",
+          "dutch": "de natuurdocumentaire"
+        },
+        {
+          "id": "c10721",
+          "dutch": "ondertiteld"
+        },
+        {
+          "id": "c372",
+          "dutch": "bijna"
+        },
+        {
+          "id": "c10722",
+          "dutch": "de rang"
+        },
+        {
+          "id": "c10729",
+          "dutch": "helemaal"
+        },
+        {
+          "id": "c10730",
+          "dutch": "ben uitgerust"
+        },
+        {
+          "id": "c697",
+          "dutch": "tijdens"
+        },
+        {
+          "id": "c10735",
+          "dutch": "de filosofiegeschiedenis"
+        },
+        {
+          "id": "c10740",
+          "dutch": "de storing"
+        },
+        {
+          "id": "c10741",
+          "dutch": "ben kwijt"
+        },
+        {
+          "id": "c1626",
+          "dutch": "de gegevens"
+        },
+        {
+          "id": "c10744",
+          "dutch": "ontzettend"
+        },
+        {
+          "id": "c10748",
+          "dutch": "mooi"
+        },
+        {
+          "id": "c10751",
+          "dutch": "behalve"
+        },
+        {
+          "id": "c1144",
+          "dutch": "niemand"
+        },
+        {
+          "id": "c10757",
+          "dutch": "nadat"
+        },
+        {
+          "id": "c10760",
+          "dutch": "aangifte doen"
+        },
+        {
+          "id": "c10761",
+          "dutch": "via"
+        },
+        {
+          "id": "c10763",
+          "dutch": "zulk"
+        },
+        {
+          "id": "c10764",
+          "dutch": "toen"
+        },
+        {
+          "id": "c805",
+          "dutch": "overal"
+        },
+        {
+          "id": "c1253",
+          "dutch": "nergens"
+        },
+        {
+          "id": "c1145",
+          "dutch": "omdat"
+        },
+        {
+          "id": "c1198",
+          "dutch": "zodat"
+        },
+        {
+          "id": "c10769",
+          "dutch": "steeds"
+        },
+        {
+          "id": "c10772",
+          "dutch": "de dader"
+        },
+        {
+          "id": "c10139",
+          "dutch": "terwijl"
+        },
+        {
+          "id": "c10773",
+          "dutch": "namelijk"
+        },
+        {
+          "id": "c10775",
+          "dutch": "oei"
+        },
+        {
+          "id": "c10776",
+          "dutch": "in ieder geval"
+        },
+        {
+          "id": "c10777",
+          "dutch": "verder"
+        },
+        {
+          "id": "c10779",
+          "dutch": "onmiddellijk"
+        },
+        {
+          "id": "c10780",
+          "dutch": "hoewel"
+        },
+        {
+          "id": "c10781",
+          "dutch": "hoezo"
+        },
+        {
+          "id": "c10782",
+          "dutch": "ophalen"
+        },
+        {
+          "id": "c10158",
+          "dutch": "zodra"
+        },
+        {
+          "id": "c10786",
+          "dutch": "nemen contact op"
+        },
+        {
+          "id": "c865",
+          "dutch": "als"
+        }
+      ]
+    },
+    "ipa": {
+      "covered": 707,
+      "missing": [
+        {
+          "id": "c10165",
+          "dutch": "docenten"
+        },
+        {
+          "id": "c10166",
+          "dutch": "andere"
+        },
+        {
+          "id": "c10168",
+          "dutch": "geeft les"
+        },
+        {
+          "id": "c10172",
+          "dutch": "kennismaken"
+        },
+        {
+          "id": "c10178",
+          "dutch": "van"
+        },
+        {
+          "id": "c10180",
+          "dutch": "hoe heet jij?"
+        },
+        {
+          "id": "c10182",
+          "dutch": "waar ... vandaan"
+        },
+        {
+          "id": "c10185",
+          "dutch": "mevrouw"
+        },
+        {
+          "id": "c10190",
+          "dutch": "gaan verder"
+        },
+        {
+          "id": "c830",
+          "dutch": "iedereen"
+        },
+        {
+          "id": "c10193",
+          "dutch": "naar"
+        },
+        {
+          "id": "c748",
+          "dutch": "tot straks"
+        },
+        {
+          "id": "c10199",
+          "dutch": "ja hoor"
+        },
+        {
+          "id": "c10202",
+          "dutch": "al lang"
+        },
+        {
+          "id": "c10206",
+          "dutch": "ik ben jarig"
+        },
+        {
+          "id": "c10207",
+          "dutch": "wat leuk"
+        },
+        {
+          "id": "c10210",
+          "dutch": "nog"
+        },
+        {
+          "id": "c10212",
+          "dutch": "jonger"
+        },
+        {
+          "id": "c10213",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10214",
+          "dutch": "langer"
+        },
+        {
+          "id": "c10215",
+          "dutch": "nog meer"
+        },
+        {
+          "id": "c10216",
+          "dutch": "broers"
+        },
+        {
+          "id": "c10217",
+          "dutch": "zussen"
+        },
+        {
+          "id": "c10220",
+          "dutch": "goh"
+        },
+        {
+          "id": "c10224",
+          "dutch": "komen op bezoek"
+        },
+        {
+          "id": "c1452",
+          "dutch": "op dit moment"
+        },
+        {
+          "id": "c10226",
+          "dutch": "doen"
+        },
+        {
+          "id": "c10228",
+          "dutch": "op vakantie"
+        },
+        {
+          "id": "c10231",
+          "dutch": "vertel"
+        },
+        {
+          "id": "c10234",
+          "dutch": "11.00 uur"
+        },
+        {
+          "id": "c10236",
+          "dutch": "viert"
+        },
+        {
+          "id": "c10237",
+          "dutch": "gefeliciteerd"
+        },
+        {
+          "id": "c10238",
+          "dutch": "dit is"
+        },
+        {
+          "id": "c10239",
+          "dutch": "prettig met je kennis te maken"
+        },
+        {
+          "id": "c10240",
+          "dutch": "ik trakteer"
+        },
+        {
+          "id": "c10241",
+          "dutch": "wil graag"
+        },
+        {
+          "id": "c10242",
+          "dutch": "biertje"
+        },
+        {
+          "id": "c10248",
+          "dutch": "Spaanse"
+        },
+        {
+          "id": "c10249",
+          "dutch": "Zuid-Afrikaanse"
+        },
+        {
+          "id": "c10252",
+          "dutch": "op je verjaardag"
+        },
+        {
+          "id": "c10253",
+          "dutch": "het poosje"
+        },
+        {
+          "id": "c881",
+          "dutch": "nog een keer"
+        },
+        {
+          "id": "c10255",
+          "dutch": "dat is"
+        },
+        {
+          "id": "c10256",
+          "dutch": "ja, graag"
+        },
+        {
+          "id": "c10257",
+          "dutch": "betaal"
+        },
+        {
+          "id": "c10258",
+          "dutch": "nog maar"
+        },
+        {
+          "id": "c10262",
+          "dutch": "komt tegen"
+        },
+        {
+          "id": "c10264",
+          "dutch": "prima"
+        },
+        {
+          "id": "c10265",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c10266",
+          "dutch": "problemen"
+        },
+        {
+          "id": "c10267",
+          "dutch": "niet zo"
+        },
+        {
+          "id": "c10268",
+          "dutch": "een paar dagen"
+        },
+        {
+          "id": "c10273",
+          "dutch": "foto's maken"
+        },
+        {
+          "id": "c10274",
+          "dutch": "romantische"
+        },
+        {
+          "id": "c10275",
+          "dutch": "kijken naar"
+        },
+        {
+          "id": "c10276",
+          "dutch": "direct"
+        },
+        {
+          "id": "c10278",
+          "dutch": "goed"
+        },
+        {
+          "id": "c10280",
+          "dutch": "dat lukt niet"
+        },
+        {
+          "id": "c10282",
+          "dutch": "blijf"
+        },
+        {
+          "id": "c10284",
+          "dutch": "de spaghetti carbonara"
+        },
+        {
+          "id": "c10288",
+          "dutch": "hartstikke leuk"
+        },
+        {
+          "id": "c10289",
+          "dutch": "vind ik ook"
+        },
+        {
+          "id": "c10290",
+          "dutch": "ik moet ervandoor"
+        },
+        {
+          "id": "c2073",
+          "dutch": "wens"
+        },
+        {
+          "id": "c10293",
+          "dutch": "fijne"
+        },
+        {
+          "id": "c10294",
+          "dutch": "doe de groeten aan"
+        },
+        {
+          "id": "c10296",
+          "dutch": "tot dan"
+        },
+        {
+          "id": "c10297",
+          "dutch": "boodschappen doen"
+        },
+        {
+          "id": "c9845",
+          "dutch": "groenteboer"
+        },
+        {
+          "id": "c10299",
+          "dutch": "wie is er aan de beurt?"
+        },
+        {
+          "id": "c10304",
+          "dutch": "paprika's"
+        },
+        {
+          "id": "c10305",
+          "dutch": "mooie"
+        },
+        {
+          "id": "c10306",
+          "dutch": "tomaten"
+        },
+        {
+          "id": "c440",
+          "dutch": "Anders nog iets?"
+        },
+        {
+          "id": "c10308",
+          "dutch": "buitenlanders"
+        },
+        {
+          "id": "c10311",
+          "dutch": "spekjes"
+        },
+        {
+          "id": "c10313",
+          "dutch": "goedkope"
+        },
+        {
+          "id": "c10314",
+          "dutch": "heb nodig"
+        },
+        {
+          "id": "c10315",
+          "dutch": "personen"
+        },
+        {
+          "id": "c10317",
+          "dutch": "aardappels"
+        },
+        {
+          "id": "c10321",
+          "dutch": "champignons"
+        },
+        {
+          "id": "c10324",
+          "dutch": "verder nog iets?"
+        },
+        {
+          "id": "c10325",
+          "dutch": "boontjes"
+        },
+        {
+          "id": "c10326",
+          "dutch": "verse"
+        },
+        {
+          "id": "c10327",
+          "dutch": "komkommers"
+        },
+        {
+          "id": "c10328",
+          "dutch": "wel"
+        },
+        {
+          "id": "c10331",
+          "dutch": "geeft niet"
+        },
+        {
+          "id": "c10332",
+          "dutch": "prettig"
+        },
+        {
+          "id": "c10335",
+          "dutch": "gaan zitten"
+        },
+        {
+          "id": "c1035",
+          "dutch": "de menukaart"
+        },
+        {
+          "id": "c10336",
+          "dutch": "alvast"
+        },
+        {
+          "id": "c10337",
+          "dutch": "te"
+        },
+        {
+          "id": "c10338",
+          "dutch": "ik heb dorst"
+        },
+        {
+          "id": "c10344",
+          "dutch": "de mosterdsoep"
+        },
+        {
+          "id": "c10348",
+          "dutch": "eh"
+        },
+        {
+          "id": "c10349",
+          "dutch": "o nee"
+        },
+        {
+          "id": "c10351",
+          "dutch": "vegetarische"
+        },
+        {
+          "id": "c10353",
+          "dutch": "momentje"
+        },
+        {
+          "id": "c10356",
+          "dutch": "het gaat wel"
+        },
+        {
+          "id": "c10359",
+          "dutch": "houd (houden) van"
+        },
+        {
+          "id": "c10360",
+          "dutch": "de mosselen"
+        },
+        {
+          "id": "c10367",
+          "dutch": "vruchten"
+        },
+        {
+          "id": "c10368",
+          "dutch": "laat de rest maar zitten"
+        },
+        {
+          "id": "c10371",
+          "dutch": "de kledingzaak"
+        },
+        {
+          "id": "c10375",
+          "dutch": "groter"
+        },
+        {
+          "id": "c1499",
+          "dutch": "wat voor"
+        },
+        {
+          "id": "c10376",
+          "dutch": "het model"
+        },
+        {
+          "id": "c10377",
+          "dutch": "lichte"
+        },
+        {
+          "id": "c10378",
+          "dutch": "verschillende"
+        },
+        {
+          "id": "c10379",
+          "dutch": "merken"
+        },
+        {
+          "id": "c10380",
+          "dutch": "probeert"
+        },
+        {
+          "id": "c10382",
+          "dutch": "maar even"
+        },
+        {
+          "id": "c10384",
+          "dutch": "paskamers"
+        },
+        {
+          "id": "c10385",
+          "dutch": "zitten"
+        },
+        {
+          "id": "c10161",
+          "dutch": "die"
+        },
+        {
+          "id": "c10389",
+          "dutch": "kleinere"
+        },
+        {
+          "id": "c10390",
+          "dutch": "het spijt me"
+        },
+        {
+          "id": "c10391",
+          "dutch": "kleinste"
+        },
+        {
+          "id": "c10392",
+          "dutch": "eventueel"
+        },
+        {
+          "id": "c10394",
+          "dutch": "T-shirts"
+        },
+        {
+          "id": "c10397",
+          "dutch": "staat me het best"
+        },
+        {
+          "id": "c10398",
+          "dutch": "het best"
+        },
+        {
+          "id": "c475",
+          "dutch": "pinnen"
+        },
+        {
+          "id": "c10400",
+          "dutch": "de woonruimte"
+        },
+        {
+          "id": "c10404",
+          "dutch": "de bovenwoning"
+        },
+        {
+          "id": "c10405",
+          "dutch": "mogelijkheden"
+        },
+        {
+          "id": "c10407",
+          "dutch": "maximale"
+        },
+        {
+          "id": "c10408",
+          "dutch": "de huurprijs"
+        },
+        {
+          "id": "c10409",
+          "dutch": "laten zien"
+        },
+        {
+          "id": "c10413",
+          "dutch": "dicht bij"
+        },
+        {
+          "id": "c10414",
+          "dutch": "de vierkante meter"
+        },
+        {
+          "id": "c10415",
+          "dutch": "vierkante"
+        },
+        {
+          "id": "c10416",
+          "dutch": "ruime"
+        },
+        {
+          "id": "c10417",
+          "dutch": "slaapkamers"
+        },
+        {
+          "id": "c724",
+          "dutch": "het westen"
+        },
+        {
+          "id": "c10419",
+          "dutch": "eenvoudige"
+        },
+        {
+          "id": "c10422",
+          "dutch": "geschikte"
+        },
+        {
+          "id": "c10423",
+          "dutch": "huizen"
+        },
+        {
+          "id": "c10424",
+          "dutch": "het huisje"
+        },
+        {
+          "id": "c10425",
+          "dutch": "verhuren"
+        },
+        {
+          "id": "c10426",
+          "dutch": "gemeubileerd"
+        },
+        {
+          "id": "c10428",
+          "dutch": "bedden"
+        },
+        {
+          "id": "c10431",
+          "dutch": "zonnige"
+        },
+        {
+          "id": "c10433",
+          "dutch": "benedenwoning"
+        },
+        {
+          "id": "c10434",
+          "dutch": "dat lijkt me fantastisch"
+        },
+        {
+          "id": "c10436",
+          "dutch": "zo snel mogelijk"
+        },
+        {
+          "id": "c517",
+          "dutch": "de huisarts"
+        },
+        {
+          "id": "c10438",
+          "dutch": "wat is er aan de hand?"
+        },
+        {
+          "id": "c10440",
+          "dutch": "zit ik onder de bultjes"
+        },
+        {
+          "id": "c10441",
+          "dutch": "bultjes"
+        },
+        {
+          "id": "c10442",
+          "dutch": "armen"
+        },
+        {
+          "id": "c10444",
+          "dutch": "de buik"
+        },
+        {
+          "id": "c4707",
+          "dutch": "jeuken"
+        },
+        {
+          "id": "c10445",
+          "dutch": "van alles"
+        },
+        {
+          "id": "c10446",
+          "dutch": "geprobeerd"
+        },
+        {
+          "id": "c10447",
+          "dutch": "geholpen"
+        },
+        {
+          "id": "c10449",
+          "dutch": "gisteravond"
+        },
+        {
+          "id": "c10452",
+          "dutch": "gewerkt"
+        },
+        {
+          "id": "c10453",
+          "dutch": "klanten"
+        },
+        {
+          "id": "c10454",
+          "dutch": "bekeken"
+        },
+        {
+          "id": "c10457",
+          "dutch": "het wedstrijdje"
+        },
+        {
+          "id": "c10458",
+          "dutch": "gespeeld"
+        },
+        {
+          "id": "c10460",
+          "dutch": "gedronken"
+        },
+        {
+          "id": "c10466",
+          "dutch": "o ja"
+        },
+        {
+          "id": "c10467",
+          "dutch": "emmers"
+        },
+        {
+          "id": "c10468",
+          "dutch": "vorig"
+        },
+        {
+          "id": "c10469",
+          "dutch": "klachten"
+        },
+        {
+          "id": "c10470",
+          "dutch": "lijkt op"
+        },
+        {
+          "id": "c10471",
+          "dutch": "allergische"
+        },
+        {
+          "id": "c10472",
+          "dutch": "geef mee"
+        },
+        {
+          "id": "c10475",
+          "dutch": "krabt"
+        },
+        {
+          "id": "c10476",
+          "dutch": "kapot"
+        },
+        {
+          "id": "c10479",
+          "dutch": "lijkt"
+        },
+        {
+          "id": "c10480",
+          "dutch": "total loss"
+        },
+        {
+          "id": "c10483",
+          "dutch": "regende"
+        },
+        {
+          "id": "c10484",
+          "dutch": "fietste weg"
+        },
+        {
+          "id": "c10486",
+          "dutch": "wilde"
+        },
+        {
+          "id": "c10487",
+          "dutch": "rechts afslaan"
+        },
+        {
+          "id": "c10488",
+          "dutch": "gleed weg"
+        },
+        {
+          "id": "c10489",
+          "dutch": "mankeerde"
+        },
+        {
+          "id": "c10491",
+          "dutch": "een slag in het wiel"
+        },
+        {
+          "id": "c10499",
+          "dutch": "bedoelt"
+        },
+        {
+          "id": "c10500",
+          "dutch": "de trapper"
+        },
+        {
+          "id": "c10501",
+          "dutch": "banden"
+        },
+        {
+          "id": "c10507",
+          "dutch": "in orde maken"
+        },
+        {
+          "id": "c10508",
+          "dutch": "tiptop in orde"
+        },
+        {
+          "id": "c10510",
+          "dutch": "uitdrukkingen"
+        },
+        {
+          "id": "c10516",
+          "dutch": "hoera"
+        },
+        {
+          "id": "c10517",
+          "dutch": "van harte gefeliciteerd"
+        },
+        {
+          "id": "c10518",
+          "dutch": "feliciteren met"
+        },
+        {
+          "id": "c10519",
+          "dutch": "het cadeautje"
+        },
+        {
+          "id": "c10520",
+          "dutch": "het kaartje"
+        },
+        {
+          "id": "c10522",
+          "dutch": "nog geen"
+        },
+        {
+          "id": "c10523",
+          "dutch": "Cubaanse"
+        },
+        {
+          "id": "c10524",
+          "dutch": "ben gek op"
+        },
+        {
+          "id": "c10525",
+          "dutch": "me herinneren"
+        },
+        {
+          "id": "c10528",
+          "dutch": "je weet de weg"
+        },
+        {
+          "id": "c10529",
+          "dutch": "doe open"
+        },
+        {
+          "id": "c10530",
+          "dutch": "gezien"
+        },
+        {
+          "id": "c10531",
+          "dutch": "vergis ik me"
+        },
+        {
+          "id": "c10532",
+          "dutch": "verveel me"
+        },
+        {
+          "id": "c10534",
+          "dutch": "dat klopt"
+        },
+        {
+          "id": "c10535",
+          "dutch": "sinds kort"
+        },
+        {
+          "id": "c10536",
+          "dutch": "het bevalt me"
+        },
+        {
+          "id": "c10537",
+          "dutch": "studeer"
+        },
+        {
+          "id": "c10538",
+          "dutch": "de logopedie"
+        },
+        {
+          "id": "c10540",
+          "dutch": "het bijbaantje"
+        },
+        {
+          "id": "c10542",
+          "dutch": "interesseer je"
+        },
+        {
+          "id": "c10545",
+          "dutch": "niet echt"
+        },
+        {
+          "id": "c10548",
+          "dutch": "wat toevallig"
+        },
+        {
+          "id": "c10549",
+          "dutch": "de Wandelbeurs"
+        },
+        {
+          "id": "c10550",
+          "dutch": "bereid me voor op"
+        },
+        {
+          "id": "c10551",
+          "dutch": "de wandelreis"
+        },
+        {
+          "id": "c2040",
+          "dutch": "opschrijven"
+        },
+        {
+          "id": "c10554",
+          "dutch": "langzamer"
+        },
+        {
+          "id": "c10555",
+          "dutch": "praten"
+        },
+        {
+          "id": "c10557",
+          "dutch": "Bent u hier bekend?"
+        },
+        {
+          "id": "c4212",
+          "dutch": "voorbijganger"
+        },
+        {
+          "id": "c10561",
+          "dutch": "vanaf"
+        },
+        {
+          "id": "c10563",
+          "dutch": "hebt geluk"
+        },
+        {
+          "id": "c10564",
+          "dutch": "komt aan"
+        },
+        {
+          "id": "c10565",
+          "dutch": "direct"
+        },
+        {
+          "id": "c790",
+          "dutch": "instappen"
+        },
+        {
+          "id": "c10566",
+          "dutch": "het stuk"
+        },
+        {
+          "id": "c10567",
+          "dutch": "over ... steken"
+        },
+        {
+          "id": "c10569",
+          "dutch": "ga op"
+        },
+        {
+          "id": "c10570",
+          "dutch": "rechtdoor"
+        },
+        {
+          "id": "c10571",
+          "dutch": "tot"
+        },
+        {
+          "id": "c10572",
+          "dutch": "herkent"
+        },
+        {
+          "id": "c10573",
+          "dutch": "linksaf"
+        },
+        {
+          "id": "c10575",
+          "dutch": "neemt mee"
+        },
+        {
+          "id": "c3737",
+          "dutch": "de plattegrond"
+        },
+        {
+          "id": "c10576",
+          "dutch": "toiletten"
+        },
+        {
+          "id": "c10578",
+          "dutch": "ga ... om"
+        },
+        {
+          "id": "c10579",
+          "dutch": "ga ... af"
+        },
+        {
+          "id": "c10580",
+          "dutch": "uitlopen"
+        },
+        {
+          "id": "c10581",
+          "dutch": "vanzelf"
+        },
+        {
+          "id": "c10582",
+          "dutch": "bordjes"
+        },
+        {
+          "id": "c10584",
+          "dutch": "makkelijker"
+        },
+        {
+          "id": "c10586",
+          "dutch": "kom binnen"
+        },
+        {
+          "id": "c10590",
+          "dutch": "gelukkig"
+        },
+        {
+          "id": "c10592",
+          "dutch": "moest"
+        },
+        {
+          "id": "c10593",
+          "dutch": "brengen"
+        },
+        {
+          "id": "c10596",
+          "dutch": "Doe haar de groeten terug"
+        },
+        {
+          "id": "c10598",
+          "dutch": "doe uit"
+        },
+        {
+          "id": "c10600",
+          "dutch": "Zeg dat wel!"
+        },
+        {
+          "id": "c10601",
+          "dutch": "ben verkouden"
+        },
+        {
+          "id": "c10602",
+          "dutch": "ik ben toe aan"
+        },
+        {
+          "id": "c10603",
+          "dutch": "hebben aan"
+        },
+        {
+          "id": "c10606",
+          "dutch": "schijnt"
+        },
+        {
+          "id": "c10607",
+          "dutch": "kom ... verder"
+        },
+        {
+          "id": "c10608",
+          "dutch": "lekker warm"
+        },
+        {
+          "id": "c10610",
+          "dutch": "bonbons"
+        },
+        {
+          "id": "c10613",
+          "dutch": "snijd"
+        },
+        {
+          "id": "c10614",
+          "dutch": "schuin"
+        },
+        {
+          "id": "c10615",
+          "dutch": "houden van"
+        },
+        {
+          "id": "c10623",
+          "dutch": "hebben gehad"
+        },
+        {
+          "id": "c10624",
+          "dutch": "onder de auto gekomen"
+        },
+        {
+          "id": "c10625",
+          "dutch": "hebben verdriet gehad om"
+        },
+        {
+          "id": "c10628",
+          "dutch": "volgens mij"
+        },
+        {
+          "id": "c10629",
+          "dutch": "kom mee"
+        },
+        {
+          "id": "c10631",
+          "dutch": "twee weken geleden"
+        },
+        {
+          "id": "c10633",
+          "dutch": "gekregen"
+        },
+        {
+          "id": "c10634",
+          "dutch": "de sportschool"
+        },
+        {
+          "id": "c10635",
+          "dutch": "zich inschrijven"
+        },
+        {
+          "id": "c1570",
+          "dutch": "in de rij staan"
+        },
+        {
+          "id": "c10637",
+          "dutch": "elke"
+        },
+        {
+          "id": "c10638",
+          "dutch": "opzeggen"
+        },
+        {
+          "id": "c10639",
+          "dutch": "onbeperkt"
+        },
+        {
+          "id": "c10641",
+          "dutch": "speciale"
+        },
+        {
+          "id": "c5398",
+          "dutch": "verbeteren"
+        },
+        {
+          "id": "c10645",
+          "dutch": "spieren"
+        },
+        {
+          "id": "c10647",
+          "dutch": "bent van plan"
+        },
+        {
+          "id": "c10648",
+          "dutch": "fitte"
+        },
+        {
+          "id": "c10649",
+          "dutch": "aantrekkelijke"
+        },
+        {
+          "id": "c10650",
+          "dutch": "de krachttraining"
+        },
+        {
+          "id": "c10652",
+          "dutch": "de cardio"
+        },
+        {
+          "id": "c10653",
+          "dutch": "de groepsles"
+        },
+        {
+          "id": "c10654",
+          "dutch": "kijk mee"
+        },
+        {
+          "id": "c10655",
+          "dutch": "bieden aan"
+        },
+        {
+          "id": "c10656",
+          "dutch": "virtuele"
+        },
+        {
+          "id": "c10657",
+          "dutch": "op die manier"
+        },
+        {
+          "id": "c8155",
+          "dutch": "nieuwsbrief"
+        },
+        {
+          "id": "c10660",
+          "dutch": "gaat in"
+        },
+        {
+          "id": "c10661",
+          "dutch": "het buikspierkwartier"
+        },
+        {
+          "id": "c10662",
+          "dutch": "meedoen"
+        },
+        {
+          "id": "c10665",
+          "dutch": "het pasje"
+        },
+        {
+          "id": "c10666",
+          "dutch": "energiedrankjes"
+        },
+        {
+          "id": "c10667",
+          "dutch": "het drankje"
+        },
+        {
+          "id": "c10672",
+          "dutch": "veel plezier"
+        },
+        {
+          "id": "c10674",
+          "dutch": "het openbaar vervoer"
+        },
+        {
+          "id": "c10676",
+          "dutch": "ging"
+        },
+        {
+          "id": "c10677",
+          "dutch": "duurde"
+        },
+        {
+          "id": "c983",
+          "dutch": "veilig"
+        },
+        {
+          "id": "c10679",
+          "dutch": "geweldig"
+        },
+        {
+          "id": "c10682",
+          "dutch": "het grapje"
+        },
+        {
+          "id": "c10683",
+          "dutch": "het raampje"
+        },
+        {
+          "id": "c10684",
+          "dutch": "net als"
+        },
+        {
+          "id": "c10685",
+          "dutch": "vroeger"
+        },
+        {
+          "id": "c10689",
+          "dutch": "het spoor"
+        },
+        {
+          "id": "c10690",
+          "dutch": "achter de rug"
+        },
+        {
+          "id": "c10691",
+          "dutch": "pony's"
+        },
+        {
+          "id": "c10692",
+          "dutch": "de wei"
+        },
+        {
+          "id": "c10693",
+          "dutch": "net"
+        },
+        {
+          "id": "c10694",
+          "dutch": "de shetlandpony"
+        },
+        {
+          "id": "c10695",
+          "dutch": "gewend"
+        },
+        {
+          "id": "c1573",
+          "dutch": "opletten"
+        },
+        {
+          "id": "c10696",
+          "dutch": "zo meteen"
+        },
+        {
+          "id": "c10700",
+          "dutch": "schilderijen"
+        },
+        {
+          "id": "c10701",
+          "dutch": "het stukje"
+        },
+        {
+          "id": "c10703",
+          "dutch": "broodjes"
+        },
+        {
+          "id": "c743",
+          "dutch": "onderweg"
+        },
+        {
+          "id": "c10705",
+          "dutch": "goede reis"
+        },
+        {
+          "id": "c10706",
+          "dutch": "maak wakker"
+        },
+        {
+          "id": "c10707",
+          "dutch": "de caissière"
+        },
+        {
+          "id": "c10709",
+          "dutch": "wat stom"
+        },
+        {
+          "id": "c10710",
+          "dutch": "gekeken"
+        },
+        {
+          "id": "c10711",
+          "dutch": "is al bezig"
+        },
+        {
+          "id": "c10712",
+          "dutch": "gemist"
+        },
+        {
+          "id": "c10713",
+          "dutch": "draaien"
+        },
+        {
+          "id": "c10716",
+          "dutch": "opgenomen"
+        },
+        {
+          "id": "c10717",
+          "dutch": "naar een verhaal van"
+        },
+        {
+          "id": "c10718",
+          "dutch": "de natuurdocumentaire"
+        },
+        {
+          "id": "c10721",
+          "dutch": "ondertiteld"
+        },
+        {
+          "id": "c10722",
+          "dutch": "de rang"
+        },
+        {
+          "id": "c10724",
+          "dutch": "de informatietechnologie"
+        },
+        {
+          "id": "c10727",
+          "dutch": "gedroomd"
+        },
+        {
+          "id": "c10730",
+          "dutch": "ben uitgerust"
+        },
+        {
+          "id": "c10731",
+          "dutch": "sta op"
+        },
+        {
+          "id": "c10732",
+          "dutch": "het ontbijtje"
+        },
+        {
+          "id": "c8644",
+          "dutch": "het tentamen"
+        },
+        {
+          "id": "c10735",
+          "dutch": "de filosofiegeschiedenis"
+        },
+        {
+          "id": "c10736",
+          "dutch": "de hypotheek"
+        },
+        {
+          "id": "c10738",
+          "dutch": "gehaktballetjes"
+        },
+        {
+          "id": "c10740",
+          "dutch": "de storing"
+        },
+        {
+          "id": "c10741",
+          "dutch": "ben kwijt"
+        },
+        {
+          "id": "c1626",
+          "dutch": "de gegevens"
+        },
+        {
+          "id": "c10742",
+          "dutch": "gekookt"
+        },
+        {
+          "id": "c10744",
+          "dutch": "ontzettend"
+        },
+        {
+          "id": "c10746",
+          "dutch": "geluncht"
+        },
+        {
+          "id": "c10747",
+          "dutch": "komt terug"
+        },
+        {
+          "id": "c10748",
+          "dutch": "mooi"
+        },
+        {
+          "id": "c10751",
+          "dutch": "behalve"
+        },
+        {
+          "id": "c10754",
+          "dutch": "uitgenodigd"
+        },
+        {
+          "id": "c10757",
+          "dutch": "nadat"
+        },
+        {
+          "id": "c10759",
+          "dutch": "gestolen"
+        },
+        {
+          "id": "c10760",
+          "dutch": "aangifte doen"
+        },
+        {
+          "id": "c10766",
+          "dutch": "gezocht"
+        },
+        {
+          "id": "c10771",
+          "dutch": "gehaald"
+        },
+        {
+          "id": "c10772",
+          "dutch": "de dader"
+        },
+        {
+          "id": "c10773",
+          "dutch": "namelijk"
+        },
+        {
+          "id": "c10774",
+          "dutch": "ziet eruit"
+        },
+        {
+          "id": "c10776",
+          "dutch": "in ieder geval"
+        },
+        {
+          "id": "c6414",
+          "dutch": "bankpas"
+        },
+        {
+          "id": "c10780",
+          "dutch": "hoewel"
+        },
+        {
+          "id": "c10782",
+          "dutch": "ophalen"
+        },
+        {
+          "id": "c10784",
+          "dutch": "opgeschreven"
+        },
+        {
+          "id": "c10786",
+          "dutch": "nemen contact op"
+        }
+      ]
+    },
+    "audio": {
+      "covered": 1055,
+      "missing": [
+        {
+          "id": "c10224",
+          "dutch": "komen op bezoek"
+        },
+        {
+          "id": "c10249",
+          "dutch": "Zuid-Afrikaanse"
+        },
+        {
+          "id": "c10368",
+          "dutch": "laat de rest maar zitten"
+        },
+        {
+          "id": "c10440",
+          "dutch": "zit ik onder de bultjes"
+        },
+        {
+          "id": "c10528",
+          "dutch": "je weet de weg"
+        },
+        {
+          "id": "c10602",
+          "dutch": "ik ben toe aan"
+        },
+        {
+          "id": "c10647",
+          "dutch": "bent van plan"
+        },
+        {
+          "id": "c10707",
+          "dutch": "de caissière"
+        },
+        {
+          "id": "c10730",
+          "dutch": "ben uitgerust"
+        },
+        {
+          "id": "c10786",
+          "dutch": "nemen contact op"
+        }
+      ]
+    }
+  }
+}

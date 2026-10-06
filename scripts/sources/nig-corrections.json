@@ -1,0 +1,1231 @@
+{
+  "1570505175613": {
+    "mergeWith": "1570505175614",
+    "front": "komen op bezoek (op bezoek komen)",
+    "back": "pay a visit",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505190112": {
+    "mergeWith": "1570505190113",
+    "front": "Zuid-Afrikaanse (Zuid-Afrikaans)",
+    "back": "South African",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505221321": {
+    "mergeWith": "1570505221322",
+    "front": "problemen (het probleem)",
+    "back": "problems",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505221343": {
+    "mergeWith": "1570505221344",
+    "front": "afspreken",
+    "back": "set a date / make an appointment",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505226578": {
+    "mergeWith": "1570505226579",
+    "front": "paprika's (de paprika)",
+    "back": "bell peppers / sweet peppers",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505226588": {
+    "mergeWith": "1570505226589",
+    "front": "buitenlanders (de buitenlander)",
+    "back": "foreigners",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505226614": {
+    "mergeWith": "1570505226615",
+    "front": "komkommers (de komkommer)",
+    "back": "cucumbers",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505234011": {
+    "mergeWith": "1570505234012",
+    "front": "laat de rest maar zitten",
+    "back": "that's fine / keep the change",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505246529": {
+    "mergeWith": "1570505246530",
+    "front": "mogelijkheden (de mogelijkheid)",
+    "back": "possibilities / options",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505246553": {
+    "mergeWith": "1570505246554",
+    "front": "slaapkamers (de slaapkamer)",
+    "back": "bedrooms",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505252065": {
+    "mergeWith": "1570505252066",
+    "front": "zit ik onder de bultjes",
+    "back": "I'm covered in lumps / I have a rash",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505252087": {
+    "mergeWith": "1570505252088",
+    "front": "het wedstrijdje (de wedstrijd)",
+    "back": "match",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505258097": {
+    "mergeWith": "1570505258098",
+    "front": "uitdrukkingen (de uitdrukking)",
+    "back": "expressions",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505264083": {
+    "mergeWith": "1570505264084",
+    "front": "het cadeautje (het cadeau)",
+    "back": "present",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505264097": {
+    "mergeWith": "1570505264098",
+    "front": "je weet de weg (de weg weten)",
+    "back": "you know the way",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505279289": {
+    "mergeWith": "1570505279290",
+    "front": "ik ben toe aan (toe zijn aan)",
+    "back": "I need",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505285036": {
+    "mergeWith": "1570505285037",
+    "front": "bent van plan (van plan zijn)",
+    "back": "intend",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505285074": {
+    "mergeWith": "1570505285075",
+    "front": "energiedrankjes (het energiedrankje)",
+    "back": "energy drinks",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505306179": {
+    "mergeWith": "1570505306180",
+    "front": "ben uitgerust (uitgerust zijn)",
+    "back": "feel well-rested",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505313569": {
+    "mergeWith": "1570505313570",
+    "front": "nemen contact op (contact opnemen)",
+    "back": "contact / get in touch",
+    "reason": "Repair a source row split across two Anki notes"
+  },
+  "1570505226584": {
+    "front": "natuurlijk",
+    "reason": "Expand optional prefix (na)tuurlijk for answer checking; colloquial form: tuurlijk"
+  },
+  "1570505297065": {
+    "front": "de caissière",
+    "reason": "Correct Dutch spelling"
+  },
+  "1570505291961": {
+    "back": "Colombia",
+    "reason": "Correct English country name"
+  },
+  "1570505241305": {
+    "back": "brands",
+    "reason": "Preserve plural in translation"
+  },
+  "1570505234004": {
+    "back": "ice cream",
+    "reason": "Correct English spelling"
+  },
+  "1570504901729": {
+    "back": "(particle expressing friendliness)",
+    "reason": "Replace unanswerable usage note with a descriptive answer"
+  },
+  "1570505175631": {
+    "back": "(particle softening a request)",
+    "reason": "Replace unanswerable usage note with a descriptive answer"
+  },
+  "1570505234000": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "a little",
+      "a bit"
+    ]
+  },
+  "1570505285010": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "enrol",
+      "to register"
+    ]
+  },
+  "1570505285027": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "sure",
+      "certain"
+    ]
+  },
+  "1570505285028": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "physical condition",
+      "fitness"
+    ]
+  },
+  "1570505285034": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "goals",
+      "targets"
+    ]
+  },
+  "1570505285035": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "quite",
+      "rather"
+    ]
+  },
+  "1570505285045": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "strength",
+      "power"
+    ]
+  },
+  "1570505285056": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "way",
+      "manner"
+    ]
+  },
+  "1570505285071": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "prepare",
+      "get ready"
+    ]
+  },
+  "1570505306195": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "dinner",
+      "evening meal"
+    ]
+  },
+  "1570505306208": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "really",
+      "very"
+    ]
+  },
+  "1570505306209": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "room",
+      "hall"
+    ]
+  },
+  "1570505306220": {
+    "reason": "Explicitly separate English synonyms",
+    "english": [
+      "part",
+      "episode"
+    ]
+  },
+  "1570504901666": {
+    "reuseId": "c117",
+    "expectedDutch": "welkom",
+    "expectedEnglish": [
+      "welcome"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901669": {
+    "reuseId": "c853",
+    "expectedDutch": "de cursus",
+    "expectedEnglish": [
+      "course",
+      "class"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901679": {
+    "reuseId": "c97",
+    "expectedDutch": "hebben",
+    "expectedEnglish": [
+      "to have"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901680": {
+    "reuseId": "c139",
+    "expectedDutch": "twee",
+    "expectedEnglish": [
+      "2"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901686": {
+    "reuseId": "c140",
+    "expectedDutch": "drie",
+    "expectedEnglish": [
+      "3"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901687": {
+    "reuseId": "c10110",
+    "expectedDutch": "we",
+    "expectedEnglish": [
+      "we (unstressed)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901693": {
+    "reuseId": "c46",
+    "expectedDutch": "jij",
+    "expectedEnglish": [
+      "you (singular)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901698": {
+    "reuseId": "c171",
+    "expectedDutch": "de dag",
+    "expectedEnglish": [
+      "day"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901707": {
+    "reuseId": "c291",
+    "expectedDutch": "de buurman",
+    "expectedEnglish": [
+      "neighbour (male)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901721": {
+    "reuseId": "c861",
+    "expectedDutch": "de postcode",
+    "expectedEnglish": [
+      "zip code"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901722": {
+    "reuseId": "c47",
+    "expectedDutch": "u",
+    "expectedEnglish": [
+      "you (polite)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901733": {
+    "reuseId": "c157",
+    "expectedDutch": "twintig",
+    "expectedEnglish": [
+      "20"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901738": {
+    "reuseId": "c830",
+    "expectedDutch": "iedereen",
+    "expectedEnglish": [
+      "everybody"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901742": {
+    "reuseId": "c138",
+    "expectedDutch": "één",
+    "expectedEnglish": [
+      "1"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901745": {
+    "reuseId": "c145",
+    "expectedDutch": "acht",
+    "expectedEnglish": [
+      "8"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901746": {
+    "reuseId": "c163",
+    "expectedDutch": "luisteren",
+    "expectedEnglish": [
+      "to listen"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901748": {
+    "reuseId": "c162",
+    "expectedDutch": "lezen",
+    "expectedEnglish": [
+      "to read"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570504901749": {
+    "reuseId": "c710",
+    "expectedDutch": "stoppen",
+    "expectedEnglish": [
+      "to stop"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505175565": {
+    "reuseId": "c3725",
+    "expectedDutch": "kantine",
+    "expectedEnglish": [
+      "mess hall"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505175571": {
+    "reuseId": "c10103",
+    "expectedDutch": "een",
+    "expectedEnglish": [
+      "a"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505175603": {
+    "reuseId": "c565",
+    "expectedDutch": "foto",
+    "expectedEnglish": [
+      "photo"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505175609": {
+    "reuseId": "c1623",
+    "expectedDutch": "blond",
+    "expectedEnglish": [
+      "blond"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505175615": {
+    "reuseId": "c1452",
+    "expectedDutch": "op dit moment",
+    "expectedEnglish": [
+      "at this moment"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190089": {
+    "reuseId": "c886",
+    "expectedDutch": "het café",
+    "expectedEnglish": [
+      "cafe",
+      "pub"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190095": {
+    "reuseId": "c536",
+    "expectedDutch": "kennen",
+    "expectedEnglish": [
+      "to know"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190096": {
+    "reuseId": "c887",
+    "expectedDutch": "elkaar",
+    "expectedEnglish": [
+      "each other"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190097": {
+    "reuseId": "c225",
+    "expectedDutch": "drinken",
+    "expectedEnglish": [
+      "to drink"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190100": {
+    "reuseId": "c3898",
+    "expectedDutch": "cola",
+    "expectedEnglish": [
+      "cola"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190108": {
+    "reuseId": "c651",
+    "expectedDutch": "bestellen",
+    "expectedEnglish": [
+      "to order"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505190122": {
+    "reuseId": "c881",
+    "expectedDutch": "nog een keer",
+    "expectedEnglish": [
+      "again"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221313": {
+    "reuseId": "c849",
+    "expectedDutch": "de vriend",
+    "expectedEnglish": [
+      "friend"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221319": {
+    "reuseId": "c1261",
+    "expectedDutch": "jou",
+    "expectedEnglish": [
+      "you (object)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221323": {
+    "reuseId": "c899",
+    "expectedDutch": "de buren",
+    "expectedEnglish": [
+      "neighbours"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221326": {
+    "reuseId": "c111",
+    "expectedDutch": "gaan",
+    "expectedEnglish": [
+      "to go"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221336": {
+    "reuseId": "c5320",
+    "expectedDutch": "camera",
+    "expectedEnglish": [
+      "camera"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221354": {
+    "reuseId": "c384",
+    "expectedDutch": "eten",
+    "expectedEnglish": [
+      "to eat"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505221368": {
+    "reuseId": "c51",
+    "expectedDutch": "jullie",
+    "expectedEnglish": [
+      "you (plural)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505226570": {
+    "reuseId": "c9845",
+    "expectedDutch": "groenteboer",
+    "expectedEnglish": [
+      "greengrocer"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505226613": {
+    "reuseId": "c2664",
+    "expectedDutch": "knoflook",
+    "expectedEnglish": [
+      "garlic"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505233960": {
+    "reuseId": "c1260",
+    "expectedDutch": "mij",
+    "expectedEnglish": [
+      "me (stressed)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505233965": {
+    "reuseId": "c5050",
+    "expectedDutch": "het voorgerecht",
+    "expectedEnglish": [
+      "starter",
+      "entrée"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505233966": {
+    "reuseId": "c572",
+    "expectedDutch": "misschien",
+    "expectedEnglish": [
+      "maybe"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505233973": {
+    "reuseId": "c5045",
+    "expectedDutch": "biefstuk",
+    "expectedEnglish": [
+      "beefsteak",
+      "steak"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505233985": {
+    "reuseId": "c215",
+    "expectedDutch": "kiezen",
+    "expectedEnglish": [
+      "to choose"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505233986": {
+    "reuseId": "c405",
+    "expectedDutch": "eet smakelijk",
+    "expectedEnglish": [
+      "enjoy your meal"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505234010": {
+    "reuseId": "c9863",
+    "expectedDutch": "cappuccino",
+    "expectedEnglish": [
+      "cappuccino"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241283": {
+    "reuseId": "c606",
+    "expectedDutch": "de kleding",
+    "expectedEnglish": [
+      "clothing"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241286": {
+    "reuseId": "c576",
+    "expectedDutch": "de broek",
+    "expectedEnglish": [
+      "pants"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241287": {
+    "reuseId": "c365",
+    "expectedDutch": "kopen",
+    "expectedEnglish": [
+      "to buy"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241288": {
+    "reuseId": "c6670",
+    "expectedDutch": "verkoopster",
+    "expectedEnglish": [
+      "saleswoman",
+      "female seller"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241289": {
+    "reuseId": "c51",
+    "expectedDutch": "jullie",
+    "expectedEnglish": [
+      "you (plural)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241290": {
+    "reuseId": "c252",
+    "expectedDutch": "helpen",
+    "expectedEnglish": [
+      "to help"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241299": {
+    "reuseId": "c318",
+    "expectedDutch": "de kleur",
+    "expectedEnglish": [
+      "color"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241324": {
+    "reuseId": "c646",
+    "expectedDutch": "ruilen",
+    "expectedEnglish": [
+      "to exchange",
+      "to swap"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241336": {
+    "reuseId": "c1911",
+    "expectedDutch": "beslissen",
+    "expectedEnglish": [
+      "to decide",
+      "to determine"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505241339": {
+    "reuseId": "c475",
+    "expectedDutch": "pinnen",
+    "expectedEnglish": [
+      "to pay with a debit card"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246523": {
+    "reuseId": "c5412",
+    "expectedDutch": "samenwonen",
+    "expectedEnglish": [
+      "to cohabit",
+      "to live together"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246535": {
+    "reuseId": "c267",
+    "expectedDutch": "huren",
+    "expectedEnglish": [
+      "to rent"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246549": {
+    "reuseId": "c940",
+    "expectedDutch": "de meter",
+    "expectedEnglish": [
+      "meter"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246564": {
+    "reuseId": "c376",
+    "expectedDutch": "gebruiken",
+    "expectedEnglish": [
+      "to use"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246567": {
+    "reuseId": "c274",
+    "expectedDutch": "te huur",
+    "expectedEnglish": [
+      "for rent"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246568": {
+    "reuseId": "c938",
+    "expectedDutch": "de huur",
+    "expectedEnglish": [
+      "rent"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505246585": {
+    "reuseId": "c1603",
+    "expectedDutch": "overleggen",
+    "expectedEnglish": [
+      "to discuss"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505252060": {
+    "reuseId": "c25",
+    "expectedDutch": "de meneer",
+    "expectedEnglish": [
+      "Mr."
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505252061": {
+    "reuseId": "c517",
+    "expectedDutch": "de huisarts",
+    "expectedEnglish": [
+      "general practitioner",
+      "doctor"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505252073": {
+    "reuseId": "c4707",
+    "expectedDutch": "jeuken",
+    "expectedEnglish": [
+      "to itch"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505252074": {
+    "reuseId": "c1872",
+    "expectedDutch": "verschrikkelijk",
+    "expectedEnglish": [
+      "awful",
+      "terrible"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505258093": {
+    "reuseId": "c1229",
+    "expectedDutch": "controleren",
+    "expectedEnglish": [
+      "to check"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505264078": {
+    "reuseId": "c292",
+    "expectedDutch": "de buurvrouw",
+    "expectedEnglish": [
+      "neighbour (female)"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505264079": {
+    "reuseId": "c804",
+    "expectedDutch": "leven",
+    "expectedEnglish": [
+      "to live"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505264104": {
+    "reuseId": "c7034",
+    "expectedDutch": "de accountant",
+    "expectedEnglish": [
+      "accountant",
+      "account-keeper",
+      "auditor"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505264134": {
+    "reuseId": "c1776",
+    "expectedDutch": "sport",
+    "expectedEnglish": [
+      "sport",
+      "sports"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505264145": {
+    "reuseId": "c2040",
+    "expectedDutch": "opschrijven",
+    "expectedEnglish": [
+      "to write down"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505264146": {
+    "reuseId": "c822",
+    "expectedDutch": "onthouden",
+    "expectedEnglish": [
+      "to remember"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272159": {
+    "reuseId": "c4212",
+    "expectedDutch": "voorbijganger",
+    "expectedEnglish": [
+      "passer-by"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272160": {
+    "reuseId": "c2218",
+    "expectedDutch": "buschauffeur",
+    "expectedEnglish": [
+      "bus driver"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272163": {
+    "reuseId": "c112",
+    "expectedDutch": "lopen",
+    "expectedEnglish": [
+      "to walk"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272173": {
+    "reuseId": "c790",
+    "expectedDutch": "instappen",
+    "expectedEnglish": [
+      "to get in"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272179": {
+    "reuseId": "c4349",
+    "expectedDutch": "de portier",
+    "expectedEnglish": [
+      "doorman",
+      "gatekeeper",
+      "porter"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272182": {
+    "reuseId": "c333",
+    "expectedDutch": "de trap",
+    "expectedEnglish": [
+      "stairway"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272188": {
+    "reuseId": "c758",
+    "expectedDutch": "rechts",
+    "expectedEnglish": [
+      "right"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505272190": {
+    "reuseId": "c3737",
+    "expectedDutch": "de plattegrond",
+    "expectedEnglish": [
+      "map",
+      "floor plan"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505279300": {
+    "reuseId": "c1943",
+    "expectedDutch": "doos",
+    "expectedEnglish": [
+      "box"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505279304": {
+    "reuseId": "c2980",
+    "expectedDutch": "vaas",
+    "expectedEnglish": [
+      "vase",
+      "decorative pot",
+      "stems with flowers"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505279305": {
+    "reuseId": "c414",
+    "expectedDutch": "zetten",
+    "expectedEnglish": [
+      "to put",
+      "to place"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505279308": {
+    "reuseId": "c4216",
+    "expectedDutch": "afsnijden",
+    "expectedEnglish": [
+      "to cut off"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505279327": {
+    "reuseId": "c349",
+    "expectedDutch": "lachen",
+    "expectedEnglish": [
+      "to laugh"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285012": {
+    "reuseId": "c1570",
+    "expectedDutch": "in de rij staan",
+    "expectedEnglish": [
+      "to stand in line"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285029": {
+    "reuseId": "c5398",
+    "expectedDutch": "verbeteren",
+    "expectedEnglish": [
+      "to improve"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285031": {
+    "reuseId": "c5603",
+    "expectedDutch": "versterken",
+    "expectedEnglish": [
+      "to strengthen"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285033": {
+    "reuseId": "c1195",
+    "expectedDutch": "verliezen",
+    "expectedEnglish": [
+      "to lose"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285038": {
+    "reuseId": "c614",
+    "expectedDutch": "trouwen",
+    "expectedEnglish": [
+      "to marry"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285046": {
+    "reuseId": "c3719",
+    "expectedDutch": "training",
+    "expectedEnglish": [
+      "training"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285052": {
+    "reuseId": "c1370",
+    "expectedDutch": "het rooster",
+    "expectedEnglish": [
+      "time-table"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285055": {
+    "reuseId": "c1223",
+    "expectedDutch": "veranderen",
+    "expectedEnglish": [
+      "to change"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285059": {
+    "reuseId": "c647",
+    "expectedDutch": "sturen",
+    "expectedEnglish": [
+      "to send"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285060": {
+    "reuseId": "c8155",
+    "expectedDutch": "nieuwsbrief",
+    "expectedEnglish": [
+      "newsletter"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285062": {
+    "reuseId": "c1754",
+    "expectedDutch": "brief",
+    "expectedEnglish": [
+      "letter"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285068": {
+    "reuseId": "c672",
+    "expectedDutch": "meteen",
+    "expectedEnglish": [
+      "right away"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285073": {
+    "reuseId": "c959",
+    "expectedDutch": "verkopen",
+    "expectedEnglish": [
+      "to sell"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505285084": {
+    "reuseId": "c5167",
+    "expectedDutch": "spierpijn",
+    "expectedEnglish": [
+      "muscle pain",
+      "muscle ache"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505291963": {
+    "reuseId": "c690",
+    "expectedDutch": "het vliegtuig",
+    "expectedEnglish": [
+      "plane"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505291966": {
+    "reuseId": "c1922",
+    "expectedDutch": "logeren",
+    "expectedEnglish": [
+      "to stay"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505291993": {
+    "reuseId": "c1573",
+    "expectedDutch": "opletten",
+    "expectedEnglish": [
+      "to pay attention"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505297066": {
+    "reuseId": "c1102",
+    "expectedDutch": "reserveren",
+    "expectedEnglish": [
+      "to reserve"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505297082": {
+    "reuseId": "c3696",
+    "expectedDutch": "documentaire",
+    "expectedEnglish": [
+      "documentary"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306167": {
+    "reuseId": "c6506",
+    "expectedDutch": "filosofie",
+    "expectedEnglish": [
+      "philosophy"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306169": {
+    "reuseId": "c8261",
+    "expectedDutch": "technologie",
+    "expectedEnglish": [
+      "technology"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306170": {
+    "reuseId": "c6340",
+    "expectedDutch": "wekker",
+    "expectedEnglish": [
+      "alarm clock"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306182": {
+    "reuseId": "c2684",
+    "expectedDutch": "douchen",
+    "expectedEnglish": [
+      "to shower",
+      "to take a shower"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306187": {
+    "reuseId": "c1369",
+    "expectedDutch": "het programma",
+    "expectedEnglish": [
+      "programme"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306199": {
+    "reuseId": "c9272",
+    "expectedDutch": "saus",
+    "expectedEnglish": [
+      "sauce"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306200": {
+    "reuseId": "c677",
+    "expectedDutch": "wassen",
+    "expectedEnglish": [
+      "to wash"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306204": {
+    "reuseId": "c1626",
+    "expectedDutch": "de gegevens",
+    "expectedEnglish": [
+      "data"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505306221": {
+    "reuseId": "c3341",
+    "expectedDutch": "serie",
+    "expectedEnglish": [
+      "series"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505313526": {
+    "reuseId": "c2407",
+    "expectedDutch": "politieagent",
+    "expectedEnglish": [
+      "police officer"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505313539": {
+    "reuseId": "c1710",
+    "expectedDutch": "de rits",
+    "expectedEnglish": [
+      "zipper"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505313554": {
+    "reuseId": "c1513",
+    "expectedDutch": "het rijbewijs",
+    "expectedEnglish": [
+      "driving licence"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505313555": {
+    "reuseId": "c8690",
+    "expectedDutch": "identiteitskaart",
+    "expectedEnglish": [
+      "ID card",
+      "identity card"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505313556": {
+    "reuseId": "c6414",
+    "expectedDutch": "bankpas",
+    "expectedEnglish": [
+      "bank card"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  },
+  "1570505313559": {
+    "reuseId": "c8221",
+    "expectedDutch": "blokkeren",
+    "expectedEnglish": [
+      "to block"
+    ],
+    "reuseReason": "Reviewed equivalent meaning and grammatical form; retain the existing card and its progress"
+  }
+}

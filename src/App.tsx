@@ -299,7 +299,7 @@ export function App() {
           sections={pathSections(listPath)}
           selectedId={listSectionId ?? listPath.units[0]?.id ?? ""}
           onSelectSection={setListSectionId}
-          showCefr={listPath.id !== "inburgering"}
+          showCefr={!["inburgering", "nederlands-in-gang"].includes(listPath.id)}
           onOpen={(id) => openWordCard(id, "wordlist")}
           onTogglePin={toggleLessonPin}
           onBack={() => setScreen("dashboard")}

@@ -18,6 +18,14 @@ describe("public/cards.json id invariants (owned data)", () => {
 });
 
 describe("mergeCandidates — append-only", () => {
+  it("returns an id for every candidate, including duplicates, and supports strict matching", () => {
+    const candidate = { dutch: "de man", english: ["man"], type: "word" };
+    const result = mergeCandidates([{ ...candidate, id: "c7" }], [candidate, { ...candidate, dutch: "man" }, candidate], {
+      signature: c => JSON.stringify([c.dutch, c.english]),
+    });
+    expect(result.candidateIds).toEqual(["c7", "c8", "c7"]);
+    expect(result.added).toBe(1);
+  });
   const live = [
     { id: "c0", level: "A1", dutch: "het jaar", english: ["year"], type: "word" },
     { id: "c1", level: "A1", dutch: "de man", english: ["man"], type: "word" },

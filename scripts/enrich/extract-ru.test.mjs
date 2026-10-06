@@ -49,4 +49,9 @@ describe("extractRuGlosses", () => {
     expect(extractRuGlosses({ senses: [{ glosses: ["форма прошедшего времени глагола bidden"] }] })).toEqual([]);
     expect(extractRuGlosses({ senses: [{ glosses: ["   "] }] })).toEqual([]);
   });
+
+  it("renders wiki links as their displayed text", () => {
+    const fit = { senses: [{ glosses: ["в [[хороший|хорошей]] [[форма|форме]]"] }, { glosses: ["[[святой]] [[отец]]"] }] };
+    expect(extractRuGlosses(fit)).toEqual(["в хорошей форме", "святой отец"]);
+  });
 });

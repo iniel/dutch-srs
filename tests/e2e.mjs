@@ -211,6 +211,23 @@ try {
   await page.click('.wordlist [aria-label="back"]');
   await page.waitForSelector(".action-card");
 
+  console.log("FEATURE 6 — learning paths:");
+  const pathNames = await page.$$eval(".path-section .level-meta strong", (els) => els.map((e) => e.textContent));
+  check(
+    JSON.stringify(pathNames) === JSON.stringify(["TaalCompleet", "Inburgering Online", "Nederlands in gang"]),
+    `dashboard lists the three paths in order (${pathNames.join(" / ")})`,
+  );
+  await page.click('[aria-label="Nederlands in gang words"]');
+  await page.waitForSelector(".wordlist-select");
+  const chapters = await page.$$eval(".wordlist-select option", (os) => os.map((o) => o.textContent));
+  check(chapters.length === 18 && chapters[0] === "Hoofdstuk 1" && chapters[17] === "Hoofdstuk 18",
+    `Nederlands in gang has Hoofdstuk 1-18 (${chapters.length})`);
+  const chapterRows = await page.$$eval(".word-row", (rs) => rs.length);
+  const cefrTags = await page.$$eval(".word-row-tag", (ts) => ts.length);
+  check(chapterRows > 0 && cefrTags === 0, `chapter 1 lists words without CEFR badges (${chapterRows} rows, ${cefrTags} badges)`);
+  await page.click('.wordlist [aria-label="back"]');
+  await page.waitForSelector(".action-card");
+
   console.log("Clock +5h -> reviews due:");
   await setClockOffset(page, 5 * HOUR);
   await page.reload();
