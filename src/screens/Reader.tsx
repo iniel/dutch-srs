@@ -4,6 +4,7 @@ import type { CardIndex } from "../data/cards";
 import type { BookChapter, BookChapterRef, BookDef, ReaderBlock } from "../reader/types";
 import { isWordToken, tokenSpace } from "../reader/tokens";
 import { WordSheet } from "../components/WordSheet";
+import type { PathMembership } from "../paths/engine";
 
 interface ReaderProps {
   book: BookDef;
@@ -13,6 +14,7 @@ interface ReaderProps {
   index: CardIndex;
   progress: ProgressData;
   getEnrichment: (cardId: string) => Enrichment | undefined;
+  getPaths: (cardId: string) => PathMembership[];
   initialBlockId: string | null;
   onPosition: (blockId: string) => void;
   onChapter: (n: number) => void;
@@ -59,6 +61,7 @@ export function Reader({
   index,
   progress,
   getEnrichment,
+  getPaths,
   initialBlockId,
   onPosition,
   onChapter,
@@ -205,6 +208,7 @@ export function Reader({
           index={index}
           progress={progress}
           getEnrichment={getEnrichment}
+          getPaths={getPaths}
           onLearnNow={onLearnNow}
           onPin={onPin}
           onUnpin={onUnpin}

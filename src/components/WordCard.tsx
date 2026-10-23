@@ -5,12 +5,15 @@ import { directionEnabled } from "../types";
 import { cefrBadge } from "../srs/levels";
 import { LessonStatusActions } from "./LessonStatusActions";
 import { WordDetail } from "./WordDetail";
+import { PathChips } from "./PathChips";
+import type { PathMembership } from "../paths/engine";
 import { speak, pronounce, canPronounce } from "../util/speak";
 
 interface WordCardProps {
   card: Card;
   enrichment?: Enrichment;
   progress: ProgressData;
+  paths: PathMembership[];
   onBack: () => void;
   onLearnNow: (cardId: string) => void;
   onPin: (cardId: string) => void;
@@ -21,7 +24,7 @@ interface WordCardProps {
   onToggleDirection?: (cardId: string, enabled: boolean) => void;
 }
 
-export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin, onUnpin, onSetCustomProgress, onSearchWord, onToggleDirection }: WordCardProps) {
+export function WordCard({ card, enrichment, progress, paths, onBack, onLearnNow, onPin, onUnpin, onSetCustomProgress, onSearchWord, onToggleDirection }: WordCardProps) {
   const stage = progress.states[card.id]?.stage ?? 0;
   const pinned = progress.lessonQueue.includes(card.id);
   const [showCustomProgressSheet, setShowCustomProgressSheet] = useState(false);
@@ -43,7 +46,7 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
 
       <div className="lesson-hero">
         <div className="lesson-eyebrow">
-          {card.type} · {card.group}
+          {card.type}
           {cefr && <span className="cefr-badge">{cefr}</span>}
         </div>
         <div className="lesson-word">
@@ -57,6 +60,7 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
         <div className="lesson-meaning">{card.english.join(", ")}</div>
         {phon && <div className="lesson-phon">{phon}</div>}
         {card.notes && <div className="feedback-notes">{card.notes}</div>}
+        <PathChips paths={paths} />
       </div>
 
       <hr className="hairline" />

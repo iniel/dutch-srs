@@ -85,3 +85,24 @@ export function wordsToUnlockNext(path: LearningPath, states: States): number {
   const p = unitProgress(unit.cardIds, states);
   return Math.max(0, Math.ceil(p.total * LEVEL_PASS_THRESHOLD) - p.gurued);
 }
+
+export interface PathMembership {
+  pathId: string;
+  pathName: string;
+  unitLabel: string;
+}
+
+export function pathMemberships(paths: LearningPath[]): Map<string, PathMembership[]> {
+  const byCard = new Map<string, PathMembership[]>();
+  for (const path of paths) {
+    for (const unit of path.units) {
+      for (const id of unit.cardIds) {
+        const list = byCard.get(id) ?? [];
+        if (list.some((m) => m.pathId === path.id)) continue;
+        list.push({ pathId: path.id, pathName: path.name, unitLabel: unit.label });
+        byCard.set(id, list);
+      }
+    }
+  }
+  return byCard;
+}

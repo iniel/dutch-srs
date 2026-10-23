@@ -5,6 +5,7 @@ import {
   availableLessonIds,
   pathRingPct,
   wordsToUnlockNext,
+  pathMemberships,
 } from "./engine";
 import type { LearningPath } from "./types";
 import type { ReviewState } from "../types";
@@ -118,5 +119,32 @@ describe("wordsToUnlockNext", () => {
   it("is 0 when the whole path is passed", () => {
     const s = statesOf({ a: 5, b: 5, c: 5, d: 5, e: 5, f: 5 });
     expect(wordsToUnlockNext(path, s)).toBe(0);
+  });
+});
+
+describe("pathMemberships", () => {
+  const other: LearningPath = {
+    id: "q",
+    name: "Q",
+    units: [
+      { id: "q1", label: "Q1", cardIds: ["c", "x"] },
+      { id: "q2", label: "Q2", cardIds: ["c"] },
+    ],
+  };
+  const byCard = pathMemberships([path, other]);
+
+  it("lists every path a card is in, in path order", () => {
+    expect(byCard.get("c")).toEqual([
+      { pathId: "p", pathName: "P", unitLabel: "U2" },
+      { pathId: "q", pathName: "Q", unitLabel: "Q1" },
+    ]);
+  });
+
+  it("keeps only the first unit when a card repeats within a path", () => {
+    expect(byCard.get("c")!.filter((m) => m.pathId === "q")).toHaveLength(1);
+  });
+
+  it("omits cards in no path", () => {
+    expect(byCard.has("zz")).toBe(false);
   });
 });

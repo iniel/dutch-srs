@@ -567,3 +567,7 @@ button.relation-chip:active {
   padding: 6px 0;
   font-size: 0.82rem;
 }
+.path-chips {
+  align-items: baseline;
+  margin-top: 10px;
+}

@@ -8,6 +8,8 @@ import { cefrBadge } from "../srs/levels";
 import { canPronounce, pronounce } from "../util/speak";
 import { LessonStatusActions } from "./LessonStatusActions";
 import { WordDetail } from "./WordDetail";
+import { PathChips } from "./PathChips";
+import type { PathMembership } from "../paths/engine";
 
 const SHEET_RESULTS = 8;
 
@@ -34,6 +36,7 @@ interface WordSheetProps {
   index: CardIndex;
   progress: ProgressData;
   getEnrichment: (cardId: string) => Enrichment | undefined;
+  getPaths: (cardId: string) => PathMembership[];
   onLearnNow: (cardId: string) => void;
   onPin: (cardId: string) => void;
   onUnpin: (cardId: string) => void;
@@ -48,6 +51,7 @@ export function WordSheet({
   index,
   progress,
   getEnrichment,
+  getPaths,
   onLearnNow,
   onPin,
   onUnpin,
@@ -154,6 +158,7 @@ export function WordSheet({
               {cefr && <span className="cefr-badge">{cefr}</span>}
             </div>
             <div className="ws-en">{card.english.join(", ")}</div>
+            <PathChips paths={getPaths(card.id)} />
             <div className="word-srs-actions ws-actions">
               <LessonStatusActions
                 cardId={card.id}

@@ -32,6 +32,7 @@ import {
   availableLessonIds,
   currentUnitIndex,
   pathCardIds,
+  pathMemberships,
   pathRingPct,
   wordsToUnlockNext,
 } from "./paths/engine";
@@ -99,6 +100,7 @@ export function App() {
     () => (index ? buildPaths(index.cards, pathDefs) : []),
     [index, pathDefs],
   );
+  const memberships = useMemo(() => pathMemberships(paths), [paths]);
 
   useEffect(() => {
     applyUpdate.current = registerPwa(() => setUpdateReady(true));
@@ -373,6 +375,7 @@ export function App() {
           card={index.byId.get(selectedCardId)!}
           enrichment={getEnrichment(selectedCardId)}
           progress={progress}
+          paths={memberships.get(selectedCardId) ?? []}
           onBack={() => setScreen(detailFrom)}
           onLearnNow={learnNow}
           onPin={pinLesson}
@@ -434,6 +437,7 @@ export function App() {
           index={index}
           progress={progress}
           getEnrichment={getEnrichment}
+          getPaths={(id) => memberships.get(id) ?? []}
           initialBlockId={readerPos.current?.chapter === readerChapterRef.n ? readerPos.current.blockId : null}
           onPosition={onReaderPosition}
           onChapter={openReaderChapter}
