@@ -228,6 +228,27 @@ try {
   await page.click('.wordlist [aria-label="back"]');
   await page.waitForSelector(".action-card");
 
+  console.log("FEATURE 7 — reading section:");
+  await page.click('[aria-label="Read"]');
+  await page.waitForSelector(".library .level-summary");
+  const bookTitles = await page.$$eval(".library .level-meta strong", (els) => els.map((e) => e.textContent));
+  check(bookTitles.length === 1 && bookTitles[0].startsWith("Harry Potter"), `library lists HPMOR (${bookTitles.join(" / ")})`);
+  await page.click(".library .level-summary");
+  await page.waitForSelector(".book-chapters .chapter-row");
+  const chapterCount = await page.$$eval(".book-chapters .chapter-row", (rs) => rs.length);
+  check(chapterCount >= 2, `HPMOR lists its chapters (${chapterCount})`);
+  await page.click('.book-chapters [aria-label="Hoofdstuk 2"]');
+  await page.waitForSelector(".reader .rd-block");
+  const readerTitle = await page.textContent(".reader-topbar h1");
+  check(readerTitle === "Hoofdstuk 2", `chapter 2 opens in the reader (${readerTitle})`);
+  await page.click('.reader [aria-label="back"]');
+  await page.waitForSelector(".book-chapters");
+  const current = await page.$$eval(".chapter-current", (els) => els.map((e) => e.closest("button")?.getAttribute("aria-label")));
+  check(current.length === 1 && current[0] === "Hoofdstuk 2", `back lands on the chapter list, ch2 marked (${current.join(",")})`);
+  await page.click('.book-chapters [aria-label="back"]');
+  await page.click('.library [aria-label="back"]');
+  await page.waitForSelector(".action-card");
+
   console.log("Clock +5h -> reviews due:");
   await setClockOffset(page, 5 * HOUR);
   await page.reload();

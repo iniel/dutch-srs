@@ -110,6 +110,16 @@
   color: var(--text-muted);
 }
 
+.chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.level-meta .chapter-current {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* General progress: mastery tabs */
 .progress-tabs {
   display: flex;

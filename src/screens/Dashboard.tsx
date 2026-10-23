@@ -23,9 +23,9 @@ interface DashboardProps {
   onSettings: () => void;
   onSearch: () => void;
   onWords: () => void;
-  /** Where reading stopped; absent when no books are shipped. */
-  reading?: { title: string; detail: string };
-  onOpenReader: () => void;
+  /** Absent when no books are shipped. */
+  reading?: { detail: string };
+  onOpenLibrary: () => void;
 }
 
 const CATEGORIES: { key: StageCategory; label: string }[] = [
@@ -56,7 +56,7 @@ export function Dashboard({
   onSearch,
   onWords,
   reading,
-  onOpenReader,
+  onOpenLibrary,
 }: DashboardProps) {
   const [helpOpen, setHelpOpen] = useState(false);
   const { byCategory, nextAt } = useMemo(() => {
@@ -112,9 +112,9 @@ export function Dashboard({
       </button>
 
       {reading && (
-        <button className="level-summary" onClick={onOpenReader} aria-label="Read">
+        <button className="level-summary" onClick={onOpenLibrary} aria-label="Read">
           <div className="level-meta">
-            <strong>Lezen · {reading.title}</strong>
+            <strong>Lezen</strong>
             <span>{reading.detail}</span>
           </div>
           <span className="level-summary-chevron">›</span>

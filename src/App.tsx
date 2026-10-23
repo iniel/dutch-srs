@@ -44,6 +44,8 @@ import { Search } from "./screens/Search";
 import { WordList, pathSections } from "./screens/WordList";
 import { GeneralProgress } from "./screens/GeneralProgress";
 import { Reader } from "./screens/Reader";
+import { Library } from "./screens/Library";
+import { BookChapters } from "./screens/BookChapters";
 import { WordCard } from "./components/WordCard";
 import { registerPwa } from "./pwa/registerPwa";
 
@@ -57,6 +59,8 @@ export type Screen =
   | "wordlist"
   | "progress"
   | "worddetail"
+  | "library"
+  | "book"
   | "reader";
 
 export function App() {
@@ -80,6 +84,8 @@ export function App() {
   const applyUpdate = useRef<((reload?: boolean) => Promise<void>) | null>(null);
   const books = useBooksIndex();
   const readerPos = useRef<ReaderPosition | null>(loadReaderPosition());
+  const [libraryBookId, setLibraryBookId] = useState<string | null>(null);
+  const libraryBook = books?.books.find((b) => b.id === libraryBookId);
   const [readerAt, setReaderAt] = useState<{ book: string; chapter: number } | null>(null);
   const readerBook = readerAt ? books?.books.find((b) => b.id === readerAt.book) : undefined;
   const readerChapterRef = readerBook?.chapters.find((c) => c.n === readerAt!.chapter);
@@ -91,7 +97,9 @@ export function App() {
       ? `wordlist:${listPathId}:${listSectionId}`
       : screen === "reader"
         ? `reader:${readerAt?.book}:${readerAt?.chapter}`
-        : screen,
+        : screen === "book"
+          ? `book:${libraryBookId}`
+          : screen,
   );
 
   const unlockAll = !!progress.settings.unlockAllLevels;
@@ -116,13 +124,19 @@ export function App() {
     setScreen("search");
   }
 
-  /** Resume where reading stopped, else the first chapter of the first book. */
-  function openReader() {
-    const book = books?.books.find((b) => b.id === readerPos.current?.book) ?? books?.books[0];
-    if (!book) return;
-    const saved = readerPos.current?.book === book.id ? readerPos.current.chapter : undefined;
-    const chapter = book.chapters.find((c) => c.n === saved) ?? book.chapters[0];
-    setReaderAt({ book: book.id, chapter: chapter.n });
+  function openBook(bookId: string) {
+    setLibraryBookId(bookId);
+    setScreen("book");
+  }
+
+  function openChapter(n: number) {
+    if (!libraryBookId) return;
+    const saved = readerPos.current;
+    if (saved?.book !== libraryBookId || saved.chapter !== n) {
+      readerPos.current = { book: libraryBookId, chapter: n, blockId: null };
+      saveReaderPosition(readerPos.current);
+    }
+    setReaderAt({ book: libraryBookId, chapter: n });
     setScreen("reader");
   }
 
@@ -302,10 +316,11 @@ export function App() {
   }, [paths, progress, unlockAll]);
 
   const readingSummary = useMemo(() => {
-    const book = books?.books.find((b) => b.id === readerPos.current?.book) ?? books?.books[0];
-    if (!book) return undefined;
-    const ch = book.chapters.find((c) => c.n === readerPos.current?.chapter) ?? book.chapters[0];
-    return { title: book.title, detail: `Hoofdstuk ${ch.n} · ${ch.title}` };
+    if (!books?.books.length) return undefined;
+    const book = books.books.find((b) => b.id === readerPos.current?.book);
+    const ch = book?.chapters.find((c) => c.n === readerPos.current?.chapter);
+    if (book && ch) return { detail: `${book.title} · Hoofdstuk ${ch.n}` };
+    return { detail: `${books.books.length} ${books.books.length === 1 ? "boek" : "boeken"}` };
     // `screen` refreshes the label after a reading session moved the saved position.
   }, [books, screen]);
 
@@ -342,7 +357,7 @@ export function App() {
           onSearch={() => openSearch()}
           onWords={() => setScreen("progress")}
           reading={readingSummary}
-          onOpenReader={openReader}
+          onOpenLibrary={() => setScreen("library")}
         />
       )}
       {screen === "search" && (
@@ -434,6 +449,17 @@ export function App() {
           onDone={() => setScreen(sessionFrom)}
         />
       )}
+      {screen === "library" && books && (
+        <Library books={books.books} onOpenBook={openBook} onBack={() => setScreen("dashboard")} />
+      )}
+      {screen === "book" && libraryBook && (
+        <BookChapters
+          book={libraryBook}
+          currentChapter={readerPos.current?.book === libraryBook.id ? readerPos.current.chapter : null}
+          onOpenChapter={openChapter}
+          onBack={() => setScreen("library")}
+        />
+      )}
       {screen === "reader" && readerBook && readerChapterRef && (
         <Reader
           book={readerBook}
@@ -447,7 +473,7 @@ export function App() {
           initialBlockId={readerPos.current?.chapter === readerChapterRef.n ? readerPos.current.blockId : null}
           onPosition={onReaderPosition}
           onChapter={openReaderChapter}
-          onBack={() => setScreen("dashboard")}
+          onBack={() => setScreen("book")}
           onLearnNow={learnNow}
           onPin={pinLesson}
           onUnpin={unpinLesson}
