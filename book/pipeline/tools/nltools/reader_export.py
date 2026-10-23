@@ -257,43 +257,20 @@ def _rank_cards(ids: list[str], tok, card_pos: dict[str, dict]) -> list[str]:
     return sorted(ids, key=key)
 
 
-def export_chapter(chapter: int, srs: Path = DEFAULT_SRS_DIR) -> dict:
-    cj = load_json(chapter_work_dir(chapter) / "chapter.json")
-    nl, _used = collect_translations(chapter, draft=False)
-    lex = Lexicon()
-    exc = exceptions()
-    terms = glossary()
-    res = Resolver(lex, exc, terms, set(), source_names(cj))
-    keep_en = {e["lemma"].lower(): e.get("en", "") for e in exc.get("keep", [])}
-    term_en = _glossary_en(terms)
-    card_pos = _card_pos(srs)
-    model = _model()
-
-    pending: list[tuple[dict, _Text]] = []
-    blocks: list[dict] = []
-    missing: list[str] = []
-    for b in cj["blocks"]:
-        kind = _block_kind(b)
-        if kind == "break":
-            blocks.append({"id": b["id"], "kind": "break"})
-            continue
-        if not b["translate"]:
-            continue
-        tex = nl.get(b["id"], "").strip()
-        if not tex:
-            missing.append(b["id"])
-            continue
-        marked = tex_to_marked(tex)
-        if not marked.chars:
-            continue
-        out = {"id": b["id"], "kind": kind, "en": b["text"], "tokens": []}
-        blocks.append(out)
-        pending.append((out, marked))
-
+def tokenize_blocks(
+    pending: list[tuple[dict, _Text]],
+    res: Resolver,
+    card_pos: dict[str, dict],
+    keep_en: dict[str, str],
+    term_en: dict[str, str],
+) -> tuple[int, list[str]]:
+    """Fill each block's `tokens` from its marked text -> (word count, card ids in reading order)."""
     texts = ["".join(m.chars).replace(NBSP, " ") for _o, m in pending]
     for t in texts:
         res.names |= capitalised_after_lowercase(t)
 
+    model = _model()
+    lex = res.lex
     words = 0
     card_order: list[str] = []
     for (out, marked), doc in zip(pending, model.pipe(texts)):
@@ -351,6 +328,41 @@ def export_chapter(chapter: int, srs: Path = DEFAULT_SRS_DIR) -> dict:
                 if gloss and gloss.lower() != tok.lower_:
                     t["gloss"] = gloss
             out["tokens"].append(t)
+    return words, card_order
+
+
+def export_chapter(chapter: int, srs: Path = DEFAULT_SRS_DIR) -> dict:
+    cj = load_json(chapter_work_dir(chapter) / "chapter.json")
+    nl, _used = collect_translations(chapter, draft=False)
+    exc = exceptions()
+    terms = glossary()
+    res = Resolver(Lexicon(), exc, terms, set(), source_names(cj))
+    keep_en = {e["lemma"].lower(): e.get("en", "") for e in exc.get("keep", [])}
+    term_en = _glossary_en(terms)
+    card_pos = _card_pos(srs)
+
+    pending: list[tuple[dict, _Text]] = []
+    blocks: list[dict] = []
+    missing: list[str] = []
+    for b in cj["blocks"]:
+        kind = _block_kind(b)
+        if kind == "break":
+            blocks.append({"id": b["id"], "kind": "break"})
+            continue
+        if not b["translate"]:
+            continue
+        tex = nl.get(b["id"], "").strip()
+        if not tex:
+            missing.append(b["id"])
+            continue
+        marked = tex_to_marked(tex)
+        if not marked.chars:
+            continue
+        out = {"id": b["id"], "kind": kind, "en": b["text"], "tokens": []}
+        blocks.append(out)
+        pending.append((out, marked))
+
+    words, card_order = tokenize_blocks(pending, res, card_pos, keep_en, term_en)
 
     heading = next((b for b in blocks if b["kind"] == "heading"), None)
     title = "".join(t["w"] + t.get("sp", " ") for t in heading["tokens"]).strip() if heading else f"Hoofdstuk {chapter}"
@@ -373,36 +385,38 @@ def _write_compact(path: Path, data: dict) -> None:
     tmp.replace(path)
 
 
-def upsert_index(index_path: Path, ch: dict, file: str) -> None:
+def upsert_index(index_path: Path, ch: dict, file: str, book_id: str = BOOK_ID, title: str = BOOK_TITLE) -> None:
     data = load_json(index_path) if index_path.exists() else {"version": 1, "books": []}
-    book = next((b for b in data["books"] if b["id"] == BOOK_ID), None)
+    book = next((b for b in data["books"] if b["id"] == book_id), None)
     if book is None:
-        book = {"id": BOOK_ID, "title": BOOK_TITLE, "chapters": []}
+        book = {"id": book_id, "title": title, "chapters": []}
         data["books"].append(book)
-    entry = {"n": ch["chapter"], "title": ch["title"], "titleEn": ch["titleEn"], "words": ch["words"], "file": file}
+    book["title"] = title
+    entry = {"n": ch["chapter"], "title": ch["title"], **({"titleEn": ch["titleEn"]} if ch.get("titleEn") else {}), "words": ch["words"], "file": file}
     book["chapters"] = sorted([c for c in book["chapters"] if c["n"] != ch["chapter"]] + [entry], key=lambda c: c["n"])
     _write_compact(index_path, data)
 
 
-def upsert_path(paths_path: Path, ch: dict) -> None:
+def upsert_path(paths_path: Path, ch: dict, book_id: str = BOOK_ID, name: str = "HPMOR", label: str | None = None) -> None:
     """Same ordering rules as dutch-srs scripts/paths-file.mjs (upsertPath).
 
     Like the Nederlands in gang path it also carries `unitSize` + one difficulty tier per
     chapter: installed PWAs on an older cached build crash on a path without `difficulties`.
     """
     data = load_json(paths_path) if paths_path.exists() else {"version": 1, "paths": []}
-    old = next((p for p in data["paths"] if p["id"] == BOOK_ID), None)
-    units = [u for u in (old or {}).get("units", []) if u["id"] != f"{BOOK_ID}:ch{ch['chapter']:03d}"]
-    units.append({"id": f"{BOOK_ID}:ch{ch['chapter']:03d}", "label": f"Hoofdstuk {ch['chapter']}", "cardIds": ch["cardIds"]})
+    old = next((p for p in data["paths"] if p["id"] == book_id), None)
+    unit_id = f"{book_id}:ch{ch['chapter']:03d}"
+    units = [u for u in (old or {}).get("units", []) if u["id"] != unit_id]
+    units.append({"id": unit_id, "label": label or f"Hoofdstuk {ch['chapter']}", "cardIds": ch["cardIds"]})
     units.sort(key=lambda u: u["id"])
     path = {
-        "id": BOOK_ID,
-        "name": "HPMOR",
+        "id": book_id,
+        "name": name,
         "units": units,
         "unitSize": max(1, *(len(u["cardIds"]) for u in units)),
         "difficulties": [{"key": u["id"].split(":")[-1], "label": u["label"], "cardIds": u["cardIds"]} for u in units],
     }
-    paths = [p for p in data["paths"] if p["id"] != BOOK_ID] + [path]
+    paths = [p for p in data["paths"] if p["id"] != book_id] + [path]
     priority = {"inburgering": 0, "nederlands-in-gang": 1}
     paths.sort(key=lambda p: priority.get(p["id"], 2))
     _write_compact(paths_path, {**data, "paths": paths})

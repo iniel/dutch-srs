@@ -80,6 +80,7 @@ export function Reader({
   const chapterIdx = book.chapters.findIndex((c) => c.n === chapterRef.n);
   const prev = book.chapters[chapterIdx - 1];
   const next = book.chapters[chapterIdx + 1];
+  const singleChapter = book.chapters.length === 1;
 
   useEffect(() => {
     setSel(null);
@@ -176,10 +177,14 @@ export function Reader({
     <div className={`screen reader ${selToken ? "sheet-open" : ""}`}>
       <header className="topbar reader-topbar">
         <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>Hoofdstuk {chapterRef.n}</h1>
+        <h1>{singleChapter ? book.title : `Hoofdstuk ${chapterRef.n}`}</h1>
         <div className="topbar-actions">
-          <button className="icon-btn" onClick={() => prev && onChapter(prev.n)} disabled={!prev} aria-label="previous chapter">‹‹</button>
-          <button className="icon-btn" onClick={() => next && onChapter(next.n)} disabled={!next} aria-label="next chapter">››</button>
+          {!singleChapter && (
+            <>
+              <button className="icon-btn" onClick={() => prev && onChapter(prev.n)} disabled={!prev} aria-label="previous chapter">‹‹</button>
+              <button className="icon-btn" onClick={() => next && onChapter(next.n)} disabled={!next} aria-label="next chapter">››</button>
+            </>
+          )}
         </div>
       </header>
 
@@ -192,7 +197,10 @@ export function Reader({
 
       {chapter && (
         <footer className="rd-foot">
-          <span>{chapter.words} words · tap a word to look it up, tap elsewhere for the English</span>
+          <span>
+            {chapter.words} words · tap a word to look it up
+            {chapter.blocks.some((b) => b.en) && ", tap elsewhere for the English"}
+          </span>
           {next && (
             <button className="btn primary block" onClick={() => onChapter(next.n)}>
               Hoofdstuk {next.n} ›

@@ -20,7 +20,7 @@ export function Library({ books, onOpenBook, onBack }: LibraryProps) {
           <button key={b.id} className="level-summary" onClick={() => onOpenBook(b.id)} aria-label={b.title}>
             <div className="level-meta">
               <strong>{b.title}</strong>
-              <span>{b.chapters.length} {b.chapters.length === 1 ? "hoofdstuk" : "hoofdstukken"}</span>
+              <span>{b.chapters.length === 1 ? `${b.chapters[0].words} woorden` : `${b.chapters.length} hoofdstukken`}</span>
             </div>
             <span className="level-summary-chevron">›</span>
           </button>

@@ -104,6 +104,16 @@ uv run --project book/pipeline nl-experiment init|report    # Phase 1 harness (s
 uv run --project book/pipeline pytest book/pipeline/tools/tests -q  # regression probes for the checker
 ```
 
+Ready-made Dutch texts skip the whole loop: `nl-text` (skill `.claude/skills/add-book/`) copies
+`.md`/`.txt` sources into `book/texts/<id>/` and runs the same token/card export as `nl-reader`.
+
+```bash
+uv run --project book/pipeline nl-text init <id> --title "…" FILE...   # one file = one chapter
+uv run --project book/pipeline nl-text add <id> FILE...
+uv run --project book/pipeline nl-text export <id> [--chapter N]       # public/books/<id>/ + index + path
+uv run --project book/pipeline nl-text remove <id>
+```
+
 After `nl-reader`, run `npm test` (the shipped-data checks cover the book files); the
 chapter goes live with the next deploy (ship-dutch-srs skill).
 

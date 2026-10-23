@@ -126,17 +126,19 @@ export function App() {
 
   function openBook(bookId: string) {
     setLibraryBookId(bookId);
-    setScreen("book");
+    const book = books?.books.find((b) => b.id === bookId);
+    if (book?.chapters.length === 1) openChapter(book.chapters[0].n, bookId);
+    else setScreen("book");
   }
 
-  function openChapter(n: number) {
-    if (!libraryBookId) return;
+  function openChapter(n: number, bookId = libraryBookId) {
+    if (!bookId) return;
     const saved = readerPos.current;
-    if (saved?.book !== libraryBookId || saved.chapter !== n) {
-      readerPos.current = { book: libraryBookId, chapter: n, blockId: null };
+    if (saved?.book !== bookId || saved.chapter !== n) {
+      readerPos.current = { book: bookId, chapter: n, blockId: null };
       saveReaderPosition(readerPos.current);
     }
-    setReaderAt({ book: libraryBookId, chapter: n });
+    setReaderAt({ book: bookId, chapter: n });
     setScreen("reader");
   }
 
@@ -456,7 +458,7 @@ export function App() {
         <BookChapters
           book={libraryBook}
           currentChapter={readerPos.current?.book === libraryBook.id ? readerPos.current.chapter : null}
-          onOpenChapter={openChapter}
+          onOpenChapter={(n) => openChapter(n)}
           onBack={() => setScreen("library")}
         />
       )}
@@ -473,7 +475,7 @@ export function App() {
           initialBlockId={readerPos.current?.chapter === readerChapterRef.n ? readerPos.current.blockId : null}
           onPosition={onReaderPosition}
           onChapter={openReaderChapter}
-          onBack={() => setScreen("book")}
+          onBack={() => setScreen(readerBook.chapters.length === 1 ? "library" : "book")}
           onLearnNow={learnNow}
           onPin={pinLesson}
           onUnpin={unpinLesson}

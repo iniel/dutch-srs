@@ -1,4 +1,4 @@
-/** One token of a book text, as exported by the hpmor `nl-reader` tool. */
+/** One token of a book text, as exported by `nl-reader` / `nl-text` (book/pipeline). */
 export interface ReaderToken {
   w: string;
   /** Whitespace after the token; absent means one space. */
