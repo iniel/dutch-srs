@@ -1,0 +1,116 @@
+{
+  "scene": "ch905/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Meaning, order of information, speakers, emphases and the deadpan one-liner b023 are all preserved; the physics rant stays opaque as required. No must_fix. Five should_fix items: modality of the apology, the 'twitching' gesture, an ambiguous pronoun in the physics list, a softer punchline, and two small intensifiers.",
+  "comprehension": [
+    {
+      "q": "Why does Harry first say 'You don't have to' and then ask what else she can do?",
+      "answer_from_nl": "The experiment is already definitive, but he cannot stop himself; actually he is not allowed to hold back either, because being curious is right and proper.",
+      "answerable": true
+    },
+    {
+      "q": "What does McGonagall do, and what happens to Harry?",
+      "answer_from_nl": "She turns into a cat; Harry shoots backwards, trips over a stack of books, lands on his bottom and feels his shoulder warn him as he lands without proper support.",
+      "answerable": true
+    },
+    {
+      "q": "Why is McGonagall sorry, and what is her mood?",
+      "answer_from_nl": "She admits she should have warned him first; she sounds sincere but is clearly suppressing amusement (corners of her mouth, later her lips, move more and more).",
+      "answerable": true
+    },
+    {
+      "q": "What are Harry's objections, and what is her whole reply?",
+      "answer_from_nl": "A small cat violates conservation of energy (implied by quantum theory, otherwise unitarity breaks and FTL signalling follows), a human mind cannot visualise a cat's anatomy/biochemistry/neurology, and a cat brain is too small to keep thinking. She answers 'Magie.'; when he says magic is not enough and she would have to be a god, she remarks nobody has called her that before.",
+      "answerable": true
+    },
+    {
+      "q": "What is the joke in the last paragraph?",
+      "answer_from_nl": "Harry's brain realises that physics, a universe with regular laws, mind = brain, three thousand years of science, all collapse; and the cause is merely a woman turning into a cat, dismissed in one flat sentence.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b024",
+      "fragment": "een korte, scherpe pijn … het gewicht kwam hard neer",
+      "problem": "Two intensifiers added: a 'twinge' becomes 'sharp pain' and the weight comes down 'hard'; this overstates the injury hint ('warning twinge').",
+      "evidence": "EN: 'a warning twinge in his shoulder as the weight came down unbraced' vs NL: 'een korte, scherpe pijn, als waarschuwing: het gewicht kwam hard neer, zonder steun.'",
+      "required_fix": "Drop 'scherpe' and 'hard': e.g. 'een korte pijn, als waarschuwing: het gewicht kwam neer, zonder steun.'",
+      "severity": "should_fix",
+      "category": "addition"
+    },
+    {
+      "id": "M2",
+      "block": "b025",
+      "fragment": "Eigenlijk moest ik je eerst waarschuwen.",
+      "problem": "'I should have warned you' (regret about a past omission) becomes 'I had to warn you first', which reads as obligation and could be taken as an excuse or as something still to do.",
+      "evidence": "EN: 'I should have warned you.' vs NL: 'Eigenlijk moest ik je eerst waarschuwen.'",
+      "required_fix": "State that the warning did not happen, e.g. 'Ik had je eerst moeten waarschuwen.' if the checker accepts it; otherwise 'Ik moest je eerst waarschuwen. Dat deed ik niet.'",
+      "severity": "should_fix",
+      "category": "certainty"
+    },
+    {
+      "id": "M3",
+      "block": "b025",
+      "fragment": "haar mondhoeken omhoog trokken",
+      "problem": "'Twitching upwards' (involuntary flicker of suppressed laughter) became 'pulled up' (a smile), and b029 then escalates with a different verb ('trilden … harder'), so the 'twitching harder now' callback loses its reference.",
+      "evidence": "EN: 'the corners of her lips were twitching upwards' / 'lips were twitching harder now' vs NL: 'haar mondhoeken omhoog trokken' / 'De lippen … trilden nu harder.'",
+      "required_fix": "Use the same involuntary-movement verb in b025 and b029, e.g. b025 'haar mondhoeken trilden omhoog' and b029 'trilden nu harder'.",
+      "severity": "should_fix",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b028",
+      "fragment": "met een kattenbrein",
+      "problem": "'Cat-sized brain' stresses the small size (the argument is that the brain is too small); 'kattenbrein' only says it belongs to a cat.",
+      "evidence": "EN: 'How can you go on thinking using a cat-sized brain?' vs NL: 'Hoe kunt u nog denken met een kattenbrein?'",
+      "required_fix": "Optional: 'met zo’n klein kattenbrein?' keeps the size point.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M5",
+      "block": "b030",
+      "fragment": "Dan moet je een god zijn!",
+      "problem": "Harry says 'u' to McGonagall everywhere else; generic 'je' here is unmarked as non-address, while her reply in b031 depends on it being aimed at her.",
+      "evidence": "EN: 'You’d have to be a god!' vs NL: 'Dan moet je een god zijn!' (b031: 'Zo heeft nog nooit iemand me genoemd.')",
+      "required_fix": "Optional: 'Dan moet u een god zijn!' so the accusation lands on her; same consideration for 'Als je die regel loslaat' in b028.",
+      "severity": "note",
+      "category": "speaker"
+    },
+    {
+      "id": "M6",
+      "block": "b032",
+      "fragment": "Zijn brein begreep het nu langzaam",
+      "problem": "'Langzaam' is added; the source says the brain 'started to comprehend', simultaneously with the blur.",
+      "evidence": "EN: 'A blur was coming over Harry’s vision, as his brain started to comprehend what had just broken.' vs NL: 'Alles werd wazig … Zijn brein begreep het nu langzaam: er ging net iets kapot.'",
+      "required_fix": "Optional: 'Zijn brein begon het te snappen' or similar without 'langzaam'.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M7",
+      "block": "b032",
+      "fragment": "Ze hadden de vorm van simpele wiskunde, en de kleinste deeltjes volgden die wiskunde.",
+      "problem": "In the list 'Ze ontdekten … Ze leerden …', the next 'Ze' silently switches from people to the laws, and the third discovery is no longer introduced as one; the reader may read 'people had the form of maths'.",
+      "evidence": "EN: 'finding that the true laws … took the form of simple maths governing the smallest parts' vs NL: 'Ze leerden: de echte wetten … Ze hadden de vorm van simpele wiskunde, en de kleinste deeltjes volgden die wiskunde.'",
+      "required_fix": "Name the subject: 'De wetten hadden de vorm van simpele wiskunde, en de kleinste deeltjes volgden die wiskunde.' (or 'Ze zagen: de wetten …').",
+      "severity": "should_fix",
+      "category": "detail"
+    },
+    {
+      "id": "M8",
+      "block": "b033",
+      "fragment": "tot zover dat alles",
+      "problem": "'So much for all that' is a sarcastic dismissal (it is all ruined); 'tot zover dat alles' is a non-idiomatic calque that reads as 'that is the end of the list', so the final deadpan punchline is flattened.",
+      "evidence": "EN: 'And then a woman turned into a cat, so much for all that.' vs NL: 'En toen veranderde een vrouw in een kat, tot zover dat alles.'",
+      "required_fix": "Keep the bare flat ending in the same order, with an idiomatic dismissal, e.g. 'En toen veranderde een vrouw in een kat. Daar ging dat alles.'",
+      "severity": "should_fix",
+      "category": "irony"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 """nl-grammar: flag restricted constructions (profile/restricted.md) and heavy sentences.
 
 Every flag is a *suspicion with a confidence*; spaCy's Dutch parser is not perfect
-and several restricted constructions have allowed look-alikes. The language
-reviewer confirms or dismisses each flag. Confidence bands (thresholds.yaml):
-  >= grammar.likely_confidence  -> "likely"
-  >= grammar.ignore_confidence  -> "review"
-  <  grammar.ignore_confidence  -> kept in JSON only
+and several restricted constructions have allowed look-alikes. The reviewer
+confirms or dismisses each `likely` flag. Confidence bands (thresholds.yaml):
+  >= grammar.likely_confidence  -> "likely"   (report + JSON)
+  >= grammar.ignore_confidence  -> "review"   (JSON only)
+  <  grammar.ignore_confidence  -> "ignored"  (JSON only)
+Sentence load: L-FRAME and L-NEST in the report, the other L-* in JSON only.
 """
 
 from __future__ import annotations
@@ -13,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 from .common import exceptions, thresholds
@@ -141,6 +143,16 @@ def _verb_cluster(head) -> list:
     return cluster
 
 
+def _extended_attribute(part, sent) -> bool:
+    """Determiner, then a preposition, then (≤ 4 words later) this participle: 'de door haar geschreven brief'.
+    POS DET only: 'zei het met verstikte stem' has the pronoun 'het'."""
+    for j in range(max(sent.start, part.i - 5), part.i - 1):
+        tok, nxt = sent.doc[j], sent.doc[j + 1]
+        if tok.pos_ == "DET" and nxt.pos_ == "ADP" and not any(x.pos_ in ("PUNCT", "VERB", "AUX") for x in sent.doc[j : part.i]):
+            return True
+    return False
+
+
 def flags_for_sentence(sent, cfg: dict, wl: dict) -> list[dict]:
     flags: list[dict] = []
 
@@ -267,7 +279,13 @@ def flags_for_sentence(sent, cfg: dict, wl: dict) -> list[dict]:
                 conf = 0.6 if t.dep_ != "amod" else 0.35
                 if t.dep_ == "amod" and _is_known_adjective(t):
                     conf = 0.2  # plain adjective in the lexicon (verbaasd, gesloten, bekend)
-                add("R-PARTICIPLE", t, conf)
+                note = ""
+                if t.dep_ == "advcl" and t.i == sent.start and low.endswith(("end", "ende")):
+                    conf, note = 0.8, "present participle in first position"
+                elif t.dep_ in ("amod", "acl") and _extended_attribute(t, sent):
+                    # spaCy attaches the article elsewhere in "de door haar geschreven brief", so match the surface
+                    conf, note = 0.8, "article + preposition before the participle: reduced relative"
+                add("R-PARTICIPLE", t, conf, note)
         if t.pos_ == "ADJ" and t.dep_ == "advcl" and low.endswith(("end", "ende")):
             add("R-PARTICIPLE", t, 0.5, "present participle as adverbial")
 
@@ -363,32 +381,45 @@ def analyze(sf: SceneFile) -> dict:
             uniq.append(f)
     likely = [f for f in uniq if f["level"] == "likely"]
     review = [f for f in uniq if f["level"] == "review"]
+    ignored = [f for f in uniq if f["level"] == "ignored"]
+    shown_load = [l for l in loads if l["id"] in SHOWN_LOAD]
     return {
         "scene": f"ch{sf.chapter:03d}/{sf.scene}",
         "version": sf.version,
         "sentences": n_sent,
-        "summary": {"likely": len(likely), "review": len(review), "load": len(loads)},
-        "verdict": {"ok": not likely and not loads},
+        "summary": {"likely": len(likely), "review": len(review), "ignored": len(ignored), "load": len(loads), "load_shown": len(shown_load)},
+        "verdict": {"ok": not likely and not shown_load},
         "flags": uniq,
         "load": loads,
     }
 
 
+# review/ignored flags: 0 confirmed in 94 adjudications; of the load ids only L-FRAME ever was
+# (experiments/analysis-findings.md §3). They stay in the JSON; the report shows what reviewers act on.
+SHOWN_LOAD = {"L-FRAME", "L-NEST"}
+
+
 def format_report(r: dict) -> str:
     s = r["summary"]
-    lines = [f"## Grammar — {r['scene']} v{r['version']}", f"{r['sentences']} sentences; likely {s['likely']}, review {s['review']}, load {s['load']}", ""]
-    shown = [f for f in r["flags"] if f["level"] != "ignored"]
+    shown = [f for f in r["flags"] if f["level"] == "likely"]
+    shown_load = [l for l in r["load"] if l["id"] in SHOWN_LOAD]
+    lines = [f"## Grammar — {r['scene']} v{r['version']}", f"{r['sentences']} sentences; likely {s['likely']}, load {len(shown_load)}", ""]
     if shown:
-        lines.append("| level | id | block | span | note | sentence |")
-        lines.append("|---|---|---|---|---|---|")
+        lines.append("| id | block | span | note | sentence |")
+        lines.append("|---|---|---|---|---|")
         for f in shown:
-            lines.append(f"| {f['level']} {f['confidence']:.2f} | {f['id']} | {f['block']} | {f['span'][:60]} | {f.get('note', '')} | {f['sentence'][:140]} |")
+            lines.append(f"| {f['id']} | {f['block']} | {f['span'][:60]} | {f.get('note', '')} | {f['sentence'][:140]} |")
         lines.append("")
-    if r["load"]:
+    if shown_load:
         lines.append("Sentence load:")
-        for l in r["load"]:
+        for l in shown_load:
             extra = f" [{l['span'][:60]}]" if l.get("span") else ""
             lines.append(f"- {l['id']} {l['value']}>{l['limit']} {l['block']}{extra}: {l['sentence'][:160]}")
+        lines.append("")
+    hidden = Counter(f"{f['level']} {f['id']}" for f in r["flags"] if f["level"] != "likely")
+    hidden.update(l["id"] for l in r["load"] if l["id"] not in SHOWN_LOAD)
+    if hidden:
+        lines.append("JSON only (not for adjudication): " + ", ".join(f"{k} ×{n}" for k, n in sorted(hidden.items())))
         lines.append("")
     return "\n".join(lines)
 

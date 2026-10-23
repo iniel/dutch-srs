@@ -1,0 +1,122 @@
+{
+  "scene": "ch001/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "No confirmed restricted constructions and no must-fix vocabulary; the three grammar flags are all look-alikes. Four naturalness/clarity points (vertrok, eerder, studeer het maar, weten het resultaat) are should_fix and can ride along if a round happens anyway.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b039",
+      "fragment": "Harry's mond vertrok bitter.",
+      "problem": "Idiomatic 'zijn mond vertrok' uses vertrekken in a sense the A2 reader does not know; the known sense is 'to depart', so the sentence reads as nonsense.",
+      "evidence": "lexicon: vertrekken is A2 only as 'to leave'; NL: 'Harry's mond vertrok bitter'",
+      "required_fix": "Use known words, e.g. 'Harry trok een bitter gezicht.' or 'Harry keek bitter.' ('trok een gezicht' is already used in s03 b051).",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b039",
+      "fragment": "Harry ging eerder naar de beste basisscholen. Dat werkte niet.",
+      "problem": "'eerder' is ambiguous (earlier / rather / previously) and 'Harry ging' hides that his parents sent him; a Dutch reader expects 'Eerst'.",
+      "evidence": "NL 'Harry ging eerder naar de beste basisscholen' vs the following 'Toen kreeg hij eigen leraren' (sequence marker 'Toen' needs 'Eerst' before it)",
+      "required_fix": "'Eerst stuurden ze Harry naar de beste basisscholen. Dat werkte niet. Toen kreeg hij eigen leraren …'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b039",
+      "fragment": "Dan stimuleerden ze hem altijd: studeer het maar.",
+      "problem": "'studeer het maar' is a calque of 'study it': Dutch 'studeren' means university study or exam preparation, not 'dig into a topic'.",
+      "evidence": "EN: 'encouraged to study whatever caught his attention' vs NL: 'studeer het maar'",
+      "required_fix": "Use a known verb for exploring: 'Dan zeiden ze altijd: zoek het maar uit.' or 'Dan zeiden ze altijd: leer er maar over.'",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L4",
+      "block": "b045",
+      "fragment": "We weten het resultaat snel genoeg, toch?",
+      "problem": "Present 'weten' + 'snel genoeg' is a literal copy of 'we'll know soon enough'; a Dutch speaker would use a future or 'straks'.",
+      "evidence": "EN: 'we'll know soon enough how it comes out' vs NL: 'We weten het resultaat snel genoeg'",
+      "required_fix": "'Straks weten we de uitkomst toch?' or 'We horen de uitkomst vanzelf wel, toch?'",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L5",
+      "block": "b039",
+      "fragment": "\\gl{genetische}{genetic}",
+      "problem": "genetisch is on the cognates list ('treated as known, never glossed'); the gloss costs a gloss slot and is repeated in s03 b064.",
+      "evidence": "exceptions.json cognates: genetisch, genetische; checks: status hard, glossed",
+      "required_fix": "Drop the gloss here (or keep exactly one gloss per chapter; cohesion editor decides between s02 and s03).",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L6",
+      "block": "b039",
+      "fragment": "Een Doctor, docent biochemie in Oxford,",
+      "problem": "Lexicon says 'doctor' unknown/review; it is on the cognates list so no action is needed. Capital D is a deliberate sarcastic title.",
+      "evidence": "exceptions.json cognates: doctor, biochemie",
+      "required_fix": "None. Lexicon owner: add 'doctor' (and 'filosoof') to the lexicon/cognate handling so the checker stops listing it.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b041",
+      "fragment": "je beslist dingen met een experiment",
+      "problem": "Checker lists 'beslist' (B1 adverb 'definitely') but here it is the verb 'beslissen' (je beslist); lexicon mis-lemma, not a stretch word. Also 'filosoof' is a transparent cognate.",
+      "evidence": "checks vocab: beslist stretch ok-stretch, filosoof stretch ok-stretch (stretch budget 4, 2 used incl. these)",
+      "required_fix": "None. The stretch count is effectively lower than reported; both can stay.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L8",
+      "block": "b041",
+      "fragment": "de hoogste rechter is de waarneming",
+      "problem": "'hoogste rechter' is a literal image for 'final arbiter'; understandable and glossed word 'waarneming' carries the point, so acceptable.",
+      "evidence": "EN: 'the final arbiter is observation'",
+      "required_fix": "Optional: 'de laatste beslissing is aan de waarneming' is not simpler; keep as is.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b044",
+      "fragment": "Zijn moeder deed haar best: zijn vader moest zich schuldig voelen.",
+      "problem": "Colon + 'moest' can read as the narrator saying the father was obliged to feel guilty; the 'trying' reading is only implied.",
+      "evidence": "EN: 'his mother tried to make his father feel guilty'",
+      "required_fix": "Acceptable as is (proberen te / laten voelen avoided on purpose). If a round happens: 'Zijn moeder wilde: haar man moet zich schuldig voelen.'",
+      "severity": "note",
+      "category": "naturalness"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-CONJ-OTHER",
+      "block": "b039",
+      "span": "Behalve misschien een heel klein beetje respect.",
+      "decision": "dismissed",
+      "reason": "'behalve' is a preposition ('except') followed by a noun phrase, not a subordinator; not in the R-CONJ-OTHER list."
+    },
+    {
+      "id": "R-TE-INF",
+      "block": "b047",
+      "span": "probeerde na te denken",
+      "decision": "dismissed",
+      "reason": "'proberen te' is a frequent chunk with treat_as 'review' in exceptions.json; the alternatives ('dacht na', 'wilde nadenken') drop the sense of effort, so accepting is justified. Single occurrence in the scene."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "'een nogal verdacht soort excuus' is the plain adjective 'verdacht' (A2) before a noun, not a participle phrase."
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "scene": "ch001/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "All three grammar flags are look-alikes or whitelisted; vocabulary is within budget (7 unglossed stretch of 8). One calque ('verbond zichzelf met') must be replaced; five should_fix items concern a vocab cluster, two heavy sentences, a stilted formula in the letter and a repeated cognate gloss.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b075",
+      "fragment": "Dan \\emph{verbond} hij zichzelf met zoiets",
+      "problem": "'zich verbinden met' means to commit/connect oneself (even 'to ally'), not 'to associate oneself with'; it is the emphasised key word and a Dutch reader would stumble on it.",
+      "evidence": "EN: 'that would feel like \\emph{associating} himself with that…' vs NL: 'verbond hij zichzelf met zoiets'",
+      "required_fix": "Use a known phrase for being counted among such people, keeping the emphasis, e.g. 'Dan \\emph{hoorde} hij zelf bij zulke mensen, zo voelde dat voor hem…' or 'Dan deed hij \\emph{mee} met zoiets, zo voelde dat voor hem…'.",
+      "severity": "must_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L2",
+      "block": "b060",
+      "fragment": "Hij klikte nog een millimeter grafiet uit zijn \\gl{vulpotlood}{mechanical pencil}.",
+      "problem": "Two new words (grafiet, vulpotlood) in one sentence plus a third (kalligrafie) in the next: cluster, and the 'grafiet' detail adds nothing a reader needs.",
+      "evidence": "thresholds new_per_sentence_max 1; checks: grafiet unknown/review, vulpotlood unknown glossed, kalligrafie unknown glossed (3 new in 2 sentences)",
+      "required_fix": "Drop 'grafiet': 'Hij klikte een nieuwe punt uit zijn \\gl{vulpotlood}{mechanical pencil}.' Keep the gloss on kalligrafie (or drop it, it is a transparent cognate).",
+      "severity": "should_fix",
+      "category": "vocab:cluster"
+    },
+    {
+      "id": "L3",
+      "block": "b049",
+      "fragment": "Het moest eigenlijk een duidelijk geval zijn: mam maakte een grapje, of ze loog, of ze was gek—op een schaal van erg naar erger.",
+      "problem": "25 words with a chain of three clauses (maakte / of ze loog / of ze was gek) plus a dash tail; over the soft limit and L-COORD.",
+      "evidence": "L-LEN > 20 soft; L-COORD three clauses joined by 'of … of'",
+      "required_fix": "Split: 'Het moest eigenlijk een duidelijk geval zijn. Mam maakte een grapje, of ze loog, of ze was gek: van erg naar erger.'",
+      "severity": "should_fix",
+      "category": "load:L-COORD"
+    },
+    {
+      "id": "L4",
+      "block": "b073",
+      "fragment": "Dat moest eigenlijk heel verdacht klinken, \\emph{o, dus je theorie kun je niet testen}, maar de eigenaardige zekerheid in Harry wilde haar nek blijkbaar nog verder uitsteken.",
+      "problem": "About 25 words: embedded italic quote, contrast clause and an idiom with 'wilde … uitsteken' in one sentence; heavy although legal.",
+      "evidence": "L-LEN > 20 soft; two idea shifts (thought, then contrast with idiom)",
+      "required_fix": "Split: 'Dat moest eigenlijk heel verdacht klinken: \\emph{o, dus je theorie kun je niet testen.} Maar de eigenaardige zekerheid in Harry stak haar nek blijkbaar nog verder uit.'",
+      "severity": "should_fix",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L5",
+      "block": "b066",
+      "fragment": "Dat helpt ons zeer.",
+      "problem": "Present tense + 'zeer' with 'helpen' is a stiff copy of 'would be extremely helpful'; as a closing line of a letter a Dutch reader expects 'Dat zou ons zeer helpen' or a noun phrase.",
+      "evidence": "EN: 'it would be extremely helpful'; hypothetical 'zou' is outside A-ZOU-POLITE except in the preceding question",
+      "required_fix": "'Dat is een grote hulp voor ons.' (no zou, known words)",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L6",
+      "block": "b064",
+      "fragment": "\\gl{genetische}{genetic}",
+      "problem": "genetisch is on the cognates list (never glossed) and is already glossed in s02 b039; second gloss in the same chapter is bloat and uses one of the two gloss slots of this paragraph.",
+      "evidence": "exceptions.json cognates: genetisch, genetische; b064 already has \\gl{toelating}",
+      "required_fix": "Remove the gloss (or keep one gloss per chapter in the first scene; cohesion editor).",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L7",
+      "block": "b055",
+      "fragment": "\\gl{hypothese}{hypothesis}",
+      "problem": "hypothese is on the cognates list, so the gloss is not needed (recurs in b071 unglossed).",
+      "evidence": "exceptions.json cognates: hypothese",
+      "required_fix": "Drop the gloss; no change to the sentence.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L8",
+      "block": "b060",
+      "fragment": "grafiet",
+      "problem": "Lexicon: unknown. Transparent cognate of 'graphite'; if kept (see L2) it needs no gloss.",
+      "evidence": "checks: grafiet unknown, action review",
+      "required_fix": "Lexicon owner: add 'grafiet' to cognates. Not needed if L2 is applied.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b069",
+      "fragment": "zakmes",
+      "problem": "Lexicon: unknown, but a compound of known parts (zak + mes); the checker does not split it.",
+      "evidence": "checks: zakmes unknown, action review",
+      "required_fix": "None. Lexicon owner: add to compounds/known. Same for H.J.P.E.V (initials, treat as name).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L10",
+      "block": "b069",
+      "fragment": "Harry schreef hun huidige adres onder de brief.",
+      "problem": "'huidige' (B1) is stretch within budget; 'hun adres' means the same here. Paragraph already has initialen, waanzin, zakmes as new words (4 = paragraph maximum).",
+      "evidence": "thresholds new_per_paragraph_max 4; checks: huidig stretch ok-stretch",
+      "required_fix": "Optional: 'hun adres' to leave room in the paragraph.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L11",
+      "block": "b052",
+      "fragment": "\\gl{weerlegging}{falsification}",
+      "problem": "Unknown to lexicon but carries the scene's argument (the certainty does not guard against being proven wrong); gloss is the right action. Gloss + toverstok gloss = 2 in the paragraph, at the limit.",
+      "evidence": "checks: weerlegging unknown, glossed; thresholds gloss_per_paragraph_max 2",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L12",
+      "block": "b049",
+      "fragment": "Het moest eigenlijk een duidelijk geval zijn",
+      "problem": "'moest eigenlijk' for 'should have been' is slightly colloquial but intelligible; it is the deliberate substitute for a three-verb cluster ('had moeten zijn', R-VERB-CHAIN). Same pattern in b073 and s02 b048.",
+      "evidence": "translator note b049; R-VERB-CHAIN template",
+      "required_fix": "Accept; keep consistent across the chapter.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L13",
+      "block": "b065",
+      "fragment": "Waar kan ik die verkrijgen? Dat weet ik ook niet.",
+      "problem": "Indirect question turned into question + answer works, but 'Dat weet ik ook niet' in a formal letter is slightly colloquial and could be read as answering the question; verkrijgen (B1) is in budget.",
+      "evidence": "EN: 'I also don't know where to obtain any of the books'",
+      "required_fix": "Optional: 'Ik weet ook niet waar ik die kan verkrijgen' is R-INDIRECT, so keep the current form.",
+      "severity": "note",
+      "category": "register"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-DAT",
+      "block": "b065",
+      "span": "dat die school echt bestaat",
+      "decision": "dismissed",
+      "reason": "'op voorwaarde dat' is in exceptions.json grammar_whitelist (treat_as vocabulary, fixed chunk in Harry's letter, bible ch 1); the checker still flags it, lexicon owner may suppress it."
+    },
+    {
+      "id": "R-ZOU",
+      "block": "b066",
+      "span": "Zou u dit ook voor mijn eigen familie doen?",
+      "decision": "dismissed",
+      "reason": "Polite formula 'Zou u … doen?' = A-ZOU-POLITE (look-alike table: 'Zou u even wachten?'), two verbs, not a hypothetical."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b074",
+      "span": "de brief is hier op een of andere manier gekomen",
+      "decision": "dismissed",
+      "reason": "Perfectum of 'komen' with 'zijn' (A-PERF), not a passive; look-alike 'Hij is gevallen'."
+    }
+  ]
+}

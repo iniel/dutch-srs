@@ -1,7 +1,7 @@
 # Allowed grammar (A2+ reader profile)
 
 Source: `book/pipeline/grammar.md` (Russian original). This is the machine-facing version
-used by `nl-translator` and `nl-language-reviewer`. Every construction below is
+used by `nl-translator` and `nl-reviewer`. Every construction below is
 **allowed and encouraged**. Do not simplify it only because some course lists it
 as B1. Diminutives, particles (`wel`, `toch`, `even`, `maar`, `eens`, `hoor`, `nou`)
 and compound nouns are **lexical**, not grammatical, questions: keep them when

@@ -20,6 +20,8 @@ nl-assemble = "nltools.assemble:main"
 nl-experiment = "nltools.experiment:main"
 nl-finalize = "nltools.finalize:main"
 nl-reader = "nltools.reader_export:main"
+nl-memory = "nltools.memory:main"
+nl-diff = "nltools.diff:main"
 
 [build-system]
 requires = ["hatchling"]

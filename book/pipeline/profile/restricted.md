@@ -2,8 +2,8 @@
 
 Source: `book/pipeline/grammar.md`, section 4. Constructions below are **outside the
 reader profile**. The translator avoids them; `grammar_check.py` flags suspected
-occurrences with an id (`R-...`) and a confidence; `nl-language-reviewer`
-confirms or dismisses each flag and asks for a rewrite using one of the
+occurrences with an id (`R-...`) and a confidence; `nl-reviewer`
+confirms or dismisses each `likely` flag and asks for a rewrite using one of the
 templates. Templates are starting points — pick the one that keeps the meaning,
 the tone and the information order of the original.
 

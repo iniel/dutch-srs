@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "notes": [
+    "Watch-list of words the lexicon rates known in one sense while the text may use another the A2 reader does not know.",
+    "nl-check lists every hit under 'Senses to check'; the reviewer reads the sentence and decides. A wrong-sense hit is a must_fix when the reader gets the wrong image, otherwise a should_fix of kind wrong-sense.",
+    "Matched on the resolved lemma, or on a surface form in 'forms' (for words the lemmatiser maps elsewhere: gepast -> passen, lagen -> liggen).",
+    "Evidence: experiments/analysis-findings.md §1.2 (aankomen, gepast, gebonden), §2.1 (vertrok, geest, lagen, wisten het niet meer, hele)."
+  ],
+  "words": [
+    {"lemma": "aankomen", "known": "arrive", "watch": "gain weight; matter (het komt aan op); hit hard (dat kwam hard aan)"},
+    {"lemma": "laag", "forms": ["lagen"], "known": "low", "watch": "layer (noun); 'lagen' is also the past of liggen"},
+    {"lemma": "gepast", "forms": ["gepast", "gepaste"], "known": "(reader knows passen: fit, try on)", "watch": "appropriate, fitting — unknown adjective, read as 'tried on'"},
+    {"lemma": "excuus", "known": "apology", "watch": "excuse, pretext (use smoes)"},
+    {"lemma": "verbinden", "known": "connect", "watch": "commit oneself (zich verbinden met/aan); bandage"},
+    {"lemma": "vertrekken", "known": "leave", "watch": "twist, contort (zijn mond vertrok)"},
+    {"lemma": "behoorlijk", "known": "decent, proper", "watch": "quite, rather (behoorlijk moe)"},
+    {"lemma": "beslist", "known": "decided (beslissen)", "watch": "definitely, certainly"},
+    {"lemma": "zeker", "known": "sure, certain", "watch": "a certain (een zekere meneer); surely (je bent zeker moe)"},
+    {"lemma": "net", "known": "just (in time)", "watch": "neat, decent; just now vs exactly (net zo); net (noun)"},
+    {"lemma": "wel", "known": "indeed, certainly", "watch": "contrast particle (ik wel); softener (dat is wel goed); 'well' in questions"},
+    {"lemma": "even", "known": "a moment", "watch": "equally (even groot); softener in requests"},
+    {"lemma": "eens", "known": "once", "watch": "softener (kijk eens); agree (het eens zijn); niet eens = not even"},
+    {"lemma": "nog", "known": "still, yet", "watch": "even (nog groter); another (nog een); nog niet vs niet meer"},
+    {"lemma": "hoor", "known": "(friendly particle)", "watch": "imperative of horen in the same text; check which one"},
+    {"lemma": "toe", "known": "to, closed (deur toe)", "watch": "come on! (toe nou); naar … toe; wat doet dat ertoe"},
+    {"lemma": "geest", "known": "ghost, spirit", "watch": "mind (een menselijke geest = a human mind)"},
+    {"lemma": "binden", "forms": ["gebonden"], "known": "tie", "watch": "bound book / hardback; obliged"},
+    {"lemma": "heel", "forms": ["hele"], "known": "very", "watch": "whole (een hele wereld = a whole world, read as 'a very world')"},
+    {"lemma": "best", "known": "best", "watch": "quite, fairly (best goed); fine by me (dat is best)"},
+    {"lemma": "gewoon", "known": "normal, ordinary", "watch": "simply, just (hij deed het gewoon) — also an intensifier the bible forbids"},
+    {"lemma": "toch", "known": "still, yet", "watch": "surely, after all (dat weet je toch); contradiction (wel toch)"},
+    {"lemma": "studeren", "known": "study (at university)", "watch": "takes no object: 'studeer het' is not Dutch (bestuderen)"}
+  ]
+}

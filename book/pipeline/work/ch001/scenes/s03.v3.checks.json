@@ -20,6 +20,7 @@
       "density_ok": true,
       "clusters_ok": true,
       "avoid_ok": true,
+      "gloss_equivalent_ok": true,
       "ok": true
     },
     "lemmas": [
@@ -73,6 +74,26 @@
         ],
         "action": "review",
         "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "zich verbinden met",
+        "status": "idiom",
+        "cefr": null,
+        "en": [
+          "commit oneself to"
+        ],
+        "plain": "meedoen met, bij … horen",
+        "count": 1,
+        "blocks": [
+          "b075"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dan verbond hij zichzelf met zoiets, zo voelde dat voor hem…"
+        ],
+        "idiom": true,
+        "action": "replace-or-gloss",
+        "hint": "idiom of known words the reader does not know as a phrase — use the plain wording or gloss the phrase; plain: meedoen met, bij … horen"
       },
       {
         "lemma": "bizar",
@@ -264,20 +285,6 @@
         "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
       },
       {
-        "lemma": "brein",
-        "status": "known",
-        "cefr": null,
-        "en": [],
-        "count": 1,
-        "blocks": [
-          "b053"
-        ],
-        "glossed": true,
-        "examples": [],
-        "action": "gloss-on-known",
-        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
-      },
-      {
         "lemma": "vulpotlood",
         "status": "known",
         "cefr": null,
@@ -299,20 +306,6 @@
         "count": 1,
         "blocks": [
           "b060"
-        ],
-        "glossed": true,
-        "examples": [],
-        "action": "gloss-on-known",
-        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
-      },
-      {
-        "lemma": "toelating",
-        "status": "known",
-        "cefr": null,
-        "en": [],
-        "count": 1,
-        "blocks": [
-          "b064"
         ],
         "glossed": true,
         "examples": [],
@@ -382,6 +375,133 @@
     ],
     "clusters": [],
     "avoid": [],
+    "senses": [
+      {
+        "lemma": "even",
+        "known": "a moment",
+        "watch": "equally (even groot); softener in requests",
+        "count": 1,
+        "blocks": [
+          "b060"
+        ],
+        "examples": [
+          "Harry stopte even en dacht na."
+        ]
+      },
+      {
+        "lemma": "verbinden",
+        "known": "connect",
+        "watch": "commit oneself (zich verbinden met/aan); bandage",
+        "count": 1,
+        "blocks": [
+          "b075"
+        ],
+        "examples": [
+          "Dan verbond hij zichzelf met zoiets, zo voelde dat voor hem…"
+        ]
+      },
+      {
+        "lemma": "zeker",
+        "known": "sure, certain",
+        "watch": "a certain (een zekere meneer); surely (je bent zeker moe)",
+        "count": 1,
+        "blocks": [
+          "b050"
+        ],
+        "examples": [
+          "Alleen wist een deel van Harry het helemaal zeker:"
+        ]
+      },
+      {
+        "lemma": "best",
+        "known": "best",
+        "watch": "quite, fairly (best goed); fine by me (dat is best)",
+        "count": 2,
+        "blocks": [
+          "b054",
+          "b080"
+        ],
+        "examples": [
+          "Meestal kon Harry die vraag best goed beantwoorden, maar in dit specifieke geval had hij geen idee:",
+          "Dat was…eigenlijk best gênant, als hij het zo bekeek."
+        ]
+      },
+      {
+        "lemma": "toch",
+        "known": "still, yet",
+        "watch": "surely, after all (dat weet je toch); contradiction (wel toch)",
+        "count": 2,
+        "blocks": [
+          "b069",
+          "b077"
+        ],
+        "examples": [
+          "H.J.P.E.V. Als hij dan toch aan deze waanzin begon, dan deed hij het met stijl.",
+          "Maar — nou ja — dat kan niet echt gebeuren, toch?"
+        ]
+      },
+      {
+        "lemma": "gewoon",
+        "known": "normal, ordinary",
+        "watch": "simply, just (hij deed het gewoon) — also an intensifier the bible forbids",
+        "count": 3,
+        "blocks": [
+          "b052",
+          "b072",
+          "b074"
+        ],
+        "examples": [
+          "hij verwachtte het gewoon.",
+          "Je moet gewoon een magische uil hebben, denk ik.”"
+        ]
+      },
+      {
+        "lemma": "heel",
+        "known": "very",
+        "watch": "whole (een hele wereld = a whole world, read as 'a very world')",
+        "count": 3,
+        "blocks": [
+          "b073",
+          "b075",
+          "b085"
+        ],
+        "examples": [
+          "Dat moest eigenlijk heel verdacht klinken:",
+          "Zijn vader schudde heel licht zijn hoofd en las verder."
+        ]
+      },
+      {
+        "lemma": "wel",
+        "known": "indeed, certainly",
+        "watch": "contrast particle (ik wel); softener (dat is wel goed); 'well' in questions",
+        "count": 3,
+        "blocks": [
+          "b074",
+          "b076",
+          "b077"
+        ],
+        "examples": [
+          "Dan zien we wel: pakt een uil hem?",
+          "Als er wél een uil naar beneden kwam en de brief greep, dan kon hij dat niet zo makkelijk aan pap vertellen."
+        ]
+      },
+      {
+        "lemma": "nog",
+        "known": "still, yet",
+        "watch": "even (nog groter); another (nog een); nog niet vs niet meer",
+        "count": 4,
+        "blocks": [
+          "b060",
+          "b066",
+          "b069",
+          "b073"
+        ],
+        "examples": [
+          "Hij klikte nog een millimeter grafiet uit zijn vulpotlood.",
+          "Volgens mijn moeder stuurde u eerder een vertegenwoordiger van Zweinstein naar Lily Potter (toen nog Lily Evans)."
+        ]
+      }
+    ],
     "per_block": {
       "b049": {
         "tokens": 61,
@@ -614,7 +734,9 @@
     "summary": {
       "likely": 0,
       "review": 3,
-      "load": 0
+      "ignored": 4,
+      "load": 0,
+      "load_shown": 0
     },
     "verdict": {
       "ok": true

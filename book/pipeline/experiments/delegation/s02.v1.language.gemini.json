@@ -1,0 +1,112 @@
+{
+  "scene": "ch001/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "All three programmatic grammar flags are false positives or whitelisted chunks, and vocabulary density is well within profile thresholds. However, three naturalness/calque issues in b042, b046, and b048 require fixes so a Dutch reader does not stumble.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b042",
+      "fragment": "Ik wil, ik wil dit van mijn man: hij luistert naar zijn vrouw. Zij houdt van hem. En hij vertrouwt haar, deze ene keer—",
+      "problem": "Bare present indicative ('hij luistert ... En hij vertrouwt haar') after 'Ik wil dit van mijn man:' reads as a statement of fact rather than an unfulfilled wish, making a Dutch reader stumble.",
+      "evidence": "EN: 'I want my husband to, to listen to his wife who loves him, and trust her just this once—' vs NL: 'Ik wil, ik wil dit van mijn man: hij luistert naar zijn vrouw. Zij houdt van hem. En hij vertrouwt haar, deze ene keer—'",
+      "required_fix": "Use modal 'moeten' (A-MODAL) to express the desired action, e.g. 'Ik wil, ik wil dit van mijn man: hij moet naar zijn vrouw luisteren. Zij houdt van hem. En hij moet haar vertrouwen, deze ene keer—'",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b046",
+      "fragment": "terwijl Harry de trap nam naar zijn slaapkamer.",
+      "problem": "In Dutch, 'de trap nemen' means choosing the stairs over a lift; in a house, 'climbed the stairs' is 'de trap op lopen' or 'naar boven lopen'.",
+      "evidence": "EN: 'while Harry climbed the stairs to his bedroom.' vs NL: 'terwijl Harry de trap nam naar zijn slaapkamer.'",
+      "required_fix": "Split the 'terwijl'-clause into a main clause with 'liep ... de trap op' (A-SEP) so it reads naturally and lemmatises cleanly: 'Daarna gingen ze door met ruziemaken. Harry liep de trap op naar zijn slaapkamer.'",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b048",
+      "fragment": "Dat leek een nogal verdacht soort excuus.",
+      "problem": "'Excuus' in Dutch primarily reads as an apology; for a fishy pretext, 'excuus' is an English calque where Dutch uses 'smoes' (per glossary.json).",
+      "evidence": "EN: 'That seemed like a rather suspicious sort of excuse.' vs NL: 'Dat leek een nogal verdacht soort excuus.' (glossary: 'een nogal verdacht soort smoes', never 'excuus')",
+      "required_fix": "Replace 'excuus' with 'smoes': 'Dat leek een nogal verdacht soort smoes.'",
+      "severity": "must_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L4",
+      "block": "b039",
+      "fragment": "\\gl{genetische}{genetic}",
+      "problem": "'Genetisch(e)' is a transparent international cognate listed in exceptions.json under 'cognates' and must not be glossed.",
+      "evidence": "exceptions.json cognates includes 'genetisch' / 'genetische'; bible.md: 'Never gloss words on the cognates list in exceptions.json'",
+      "required_fix": "Remove the \\gl macro so it reads 'genetische vaders', and remove 'genetische: genetic' from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L5",
+      "block": "b039",
+      "fragment": "Vond Harry iets interessant? Dan stimuleerden ze hem altijd: studeer het maar. Vond hij een boek leuk? Dan kochten ze het. Deed hij mee aan een wedstrijd voor wiskunde of wetenschap? Dan betaalden ze alles.",
+      "problem": "Three rhetorical question-and-answer pairs in a row sound didactic in narrative prose and mimic the restricted verb-first conditional pattern (R-CONJ-OTHER).",
+      "evidence": "EN: 'Always Harry had been encouraged to study whatever caught his attention, bought all the books that caught his fancy, sponsored in whatever maths or science competitions he entered.'",
+      "required_fix": "Replace the rhetorical questions with allowed 'als'-clauses (A-SUB-FIRST), e.g. 'Als Harry iets interessant vond, stimuleerden ze hem altijd: studeer het maar. Als hij een boek leuk vond, kochten ze het. En als hij meedeed aan een wedstrijd voor wiskunde of wetenschap, betaalden ze alles.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L6",
+      "block": "b038",
+      "fragment": "afwijzend als altijd",
+      "problem": "The present participle 'afwijzend' used as an appositive modifier ('dismissive') is a participle reduction (R-PARTICIPLE) whose adjectival meaning is not transparent from A2 'afwijzen' ('to reject').",
+      "evidence": "EN: 'dismissive as usual' vs NL: 'afwijzend als altijd'",
+      "required_fix": "Either gloss '\\gl{afwijzend}{dismissive}' or rewrite as a finite clause.",
+      "severity": "should_fix",
+      "category": "grammar:R-PARTICIPLE"
+    },
+    {
+      "id": "L7",
+      "block": "b039",
+      "fragment": "Een Doctor, docent biochemie in Oxford",
+      "problem": "'Doctor' is flagged as unknown by the checker but is a transparent cognate listed in exceptions.json.",
+      "evidence": "lexicon status unknown; exceptions.json cognates includes 'doctor'",
+      "required_fix": "No text change needed; keep unglossed with capital D as Harry's ironic title.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b041",
+      "fragment": "filosofen ... je beslist dingen met een experiment",
+      "problem": "'Filosoof' is a transparent B1 cognate within the stretch budget, and 'beslist' is the finite form of A2 known verb 'beslissen' mis-tagged by spaCy as the B1 adjective.",
+      "evidence": "checks.md: filosoof (stretch B1, ok-stretch), beslist (stretch B1, POS mis-tagged as ADJ)",
+      "required_fix": "No change needed.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-CONJ-OTHER",
+      "block": "b039",
+      "span": "Behalve misschien een heel klein beetje",
+      "decision": "dismissed",
+      "reason": "'Behalve' is a preposition introducing the noun phrase 'een heel klein beetje respect', not a subordinating conjunction, and this is the fixed punchline in bible.md."
+    },
+    {
+      "id": "R-TE-INF",
+      "block": "b047",
+      "span": "na te denken",
+      "decision": "dismissed",
+      "reason": "'Proberen te' is listed in exceptions.json grammar_whitelist as 'review', and replacing 'probeerde na te denken' in this one-sentence beat would either change the meaning or be clumsy."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "'Verdacht' is a lexicalised A2 adjective ('suspicious') before a noun, not a clause-replacing participle phrase."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "scene": "ch001/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "fix",
+  "summary": "Faithful, well-controlled scene: every event, speaker and thought survives and all comprehension questions are answerable. One real problem: the 'hand on fire' simile in b085 became a literal-sounding statement. One should_fix on the parents' performative intent (b070); the rest are notes.",
+  "comprehension": [
+    {
+      "q": "What would be the sensible explanation for the Hogwarts letter, and why can Harry not simply accept it?",
+      "answer_from_nl": "Mum is joking, lying or mad (or sent the letter herself, which explains the missing stamp); a little madness is far less unlikely than a universe that works like this. But a part of Harry is completely sure magic is real, and has been since the first look at the letter.",
+      "answerable": true
+    },
+    {
+      "q": "What strikes Harry as odd about his 'strange certainty', and what does he decide to do about it?",
+      "answer_from_nl": "It does not protect itself against refutation: it makes no excuses in advance (no 'maybe no professor comes'). He cannot explain where it comes from, so he treats it as a testable hypothesis and tests it, starting with a letter to the Deputy Headmistress.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry tell the school in his letter about his family, and what does he ask for?",
+      "answer_from_nl": "His genetic parents are dead; he was taken in by Lily's sister Petunia and her husband Michael. He would like to attend if Hogwarts exists; Mum says she knows about magic but cannot use it, Dad is very sceptical, Harry is unsure. He does not know where to get the books/equipment and asks for a representative like the one sent to Lily's family.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry see downstairs, and how does he read his parents' behaviour?",
+      "answer_from_nl": "Dad reads a higher-maths book, Mum cooks one of Dad's favourite meals; each does it to show something (his smartness / her love). They are not talking, and the silence frightens Harry more than quarrelling.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Dad refuse to watch, and what embarrassing thing happens in the garden?",
+      "answer_from_nl": "Dad thinks magic is a disgrace that only stupid people believe in; testing or watching a test would tie him to it. Harry, waving the envelope and shouting for an owl, is heard by a neighbour (Mrs Figg), hides the envelope behind his back and burns with shame.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b064",
+      "fragment": "uw brief aan meneer~H.~Potter",
+      "problem": "The written address form on the envelope differs from the glossary/bible form.",
+      "evidence": "EN: 'addressed to Mr H. Potter' vs NL: 'uw brief aan meneer~H.~Potter'; glossary: 'de heer~H.~Potter' (written address, 'meneer' only for spoken address).",
+      "required_fix": "Use 'de heer~H.~Potter' as in glossary.json and the bible decisions for ch 1.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b066",
+      "fragment": "Zo kon haar familie zien: magie is echt.",
+      "problem": "'In order to demonstrate' (purpose of sending the representative) is weakened to a possibility/result.",
+      "evidence": "EN: 'sent a Hogwarts representative … in order to demonstrate to her family that magic was real' vs NL: 'stuurde u eerder een vertegenwoordiger … Zo kon haar familie zien: magie is echt.'",
+      "required_fix": "Optional: make the aim explicit, e.g. 'Zo moest haar familie zien: magie is echt.' / 'Zo liet u haar familie zien: …'. The link survives via 'Zo'; no round needed.",
+      "severity": "note",
+      "category": "intent"
+    },
+    {
+      "id": "M3",
+      "block": "b069",
+      "fragment": "Harry schreef hun huidige adres onder de brief.",
+      "problem": "Placement 'onder de brief' is invented; the source only says he added the address.",
+      "evidence": "EN: 'Harry added their current address' vs NL: '… schreef hun huidige adres onder de brief.'",
+      "required_fix": "Optional: drop 'onder de brief' ('Harry schreef hun huidige adres erbij').",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M4",
+      "block": "b070",
+      "fragment": "Zo liet hij zijn slimheid zien. … Zo liet zij haar liefde zien.",
+      "problem": "Harry's cynical reading that both parents act 'to show' (a performance in the quarrel) is flattened into a neutral statement that reads as if the father simply is smart and the mother simply is loving.",
+      "evidence": "EN: 'reading a book of higher maths to show how smart he was; … preparing one of his father’s favourite meals to show how loving she was' vs NL: 'Zo liet hij zijn slimheid zien. … Zo liet zij haar liefde zien.'",
+      "required_fix": "Make the intent (a show, for the other's benefit) explicit while keeping the parallel, e.g. 'Zo wilde hij laten zien hoe slim hij was.' / 'Zo wilde zij laten zien hoe lief ze was.' or 'Hij deed dit om zijn slimheid te laten zien' — any wording with 'wilde … laten zien' / 'om … te' that keeps the performance reading.",
+      "severity": "should_fix",
+      "category": "irony"
+    },
+    {
+      "id": "M5",
+      "block": "b074",
+      "fragment": "Dan zien we wel: pakt een uil de brief?",
+      "problem": "'Dan zien we wel' is an idiom of shrugging acceptance and uses 'we'; Harry's plan is a deliberate test he runs himself.",
+      "evidence": "EN: 'and see if an owl picks it up' vs NL: 'Dan zien we wel: pakt een uil de brief?'",
+      "required_fix": "Optional: keep the experimenter's stance, e.g. 'Dan kijk ik of een uil de brief pakt.'",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M6",
+      "block": "b085",
+      "fragment": "Die hand stond in brand, zo leek het.",
+      "problem": "The simile describing how Harry pulled his hand down (as if it were burning) became a statement that the hand appeared to be on fire; it reads as a hallucination and the fast, flinching gesture is lost.",
+      "evidence": "EN: 'Harry pulled down his hand like it was on fire' vs NL: 'Harry trok zijn hand omlaag. Die hand stond in brand, zo leek het.'",
+      "required_fix": "Restore the comparison attached to the pulling gesture: the hand is pulled down as one pulls away from fire, not said to be on fire. E.g. 'Harry trok zijn hand omlaag, snel, als iemand die zich brandt.' Keep 'als drugsgeld' for the envelope.",
+      "severity": "must_fix",
+      "category": "detail"
+    },
+    {
+      "id": "M7",
+      "block": "b086",
+      "fragment": "Het gezicht van een oude vrouw keek over de schutting van de buren.",
+      "problem": "'peered out' (furtive, curious) is flattened to 'keek', 'grizzled' is dropped, and the fence word differs from the bible ('het hek').",
+      "evidence": "EN: 'peered out from above the neighbouring fence, grizzled grey hair escaping from her hairnet' vs NL: 'keek over de schutting van de buren. Grijze plukken haar ontsnapten uit haar haarnetje.'",
+      "required_fix": "Optional: 'gluurde over het hek'/'stak haar hoofd boven het hek uit' is closer; use 'het hek' per bible.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

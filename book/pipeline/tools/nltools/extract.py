@@ -3,15 +3,21 @@
 Reads book/upstream/chapters/hpmor-chapter-NNN.tex (the submodule) and writes
 book/pipeline/work/chNNN/chapter.json (all blocks, scene index) and
 book/pipeline/work/chNNN/scenes/sNN.src.json (one file per scene: translatable blocks
-with raw TeX + plain text, plus neighbouring context).
+with raw TeX + plain text, plus neighbouring context, dialogue_share and
+dialogue_heavy — the orchestrator's switch for the extra meaning pass).
+
+    nl-extract N               # refuses when translations exist (scene ids could shift)
+    nl-extract N --force       # re-extract anyway
+    nl-extract N --flags-only  # add the dialogue fields to existing src.json files, nothing else
 """
 
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 
-from .common import chapter_file, chapter_work_dir, dump_json, scene_dir, thresholds, word_count
+from .common import chapter_file, chapter_work_dir, dump_json, load_json, scene_dir, thresholds, word_count
 from .texparse import Block, parse_chapter
 
 SCENE_BOUNDARY_KINDS = {"later"}
@@ -94,6 +100,49 @@ def _context(blocks: list[Block], k: int) -> list[str]:
     return [b.text for b in blocks if b.translate and b.kind == "para"][-k:] if k > 0 else []
 
 
+_SPEECH_VERBS = r"(?:said|asked|replied|answered|whispered|shouted|called|cried|snapped|muttered|added|continued|went on|demanded|began|told)"
+_NAME = r"((?:Professor |Mr |Mrs |Ms |Madam |Miss |Headmaster )?[A-Z][A-Za-z’'-]*[a-z](?: [A-Z][A-Za-z’'-]*[a-z])?)"
+_TAG_RES = (re.compile(rf"\b{_SPEECH_VERBS} {_NAME}"), re.compile(rf"{_NAME} {_SPEECH_VERBS}\b"))
+
+
+def dialogue_profile(blocks: list[dict], share_min: float) -> dict:
+    """Share of translatable paragraphs that open with a quote, speakers named in speech tags,
+    and whether the scene gets the extra meaning pass (share >= share_min and >= 2 speakers)."""
+    paras = [b for b in blocks if b.get("translate") and b.get("kind") == "para"]
+    share = sum(1 for b in paras if b.get("dialogue")) / len(paras) if paras else 0.0
+    speakers: set[str] = set()
+    for b in paras:
+        if "“" not in b["text"] and not b.get("dialogue"):
+            continue
+        for rx in _TAG_RES:
+            for m in rx.finditer(b["text"]):
+                name = m.group(1)
+                if name.split()[-1] not in ("He", "She", "They", "It", "The", "Then", "And", "But"):
+                    speakers.add(name.split()[-1])
+    return {"dialogue_share": round(share, 2), "speakers": sorted(speakers), "dialogue_heavy": share >= share_min and len(speakers) >= 2}
+
+
+def update_flags(chapter: int) -> list[dict]:
+    """Add the dialogue fields to existing sNN.src.json / chapter.json without re-segmenting (scene ids stay)."""
+    share_min = thresholds()["scene"]["dialogue_heavy_share"]
+    sdir = scene_dir(chapter)
+    rows = []
+    for p in sorted(sdir.glob("s*.src.json")):
+        scene = load_json(p)
+        scene.update(dialogue_profile(scene["blocks"], share_min))
+        dump_json(p, scene)
+        rows.append({"scene": scene["scene"], **{k: scene[k] for k in ("dialogue_share", "speakers", "dialogue_heavy")}})
+    cj_path = chapter_work_dir(chapter) / "chapter.json"
+    if cj_path.exists():
+        cj = load_json(cj_path)
+        by_id = {r["scene"]: r for r in rows}
+        for s in cj.get("scenes", []):
+            if s["scene"] in by_id:
+                s.update({k: by_id[s["scene"]][k] for k in ("dialogue_share", "dialogue_heavy")})
+        dump_json(cj_path, cj)
+    return rows
+
+
 def run(chapter: int, force: bool = False) -> dict:
     th = thresholds()
     path = chapter_file(chapter)
@@ -125,6 +174,7 @@ def run(chapter: int, force: bool = False) -> dict:
             "context_before": before,
             "context_after": after,
         }
+        scene.update(dialogue_profile(scene["blocks"], th["scene"]["dialogue_heavy_share"]))
         dump_json(sdir / f"{sid}.src.json", scene)
         scene_index.append(
             {
@@ -133,6 +183,8 @@ def run(chapter: int, force: bool = False) -> dict:
                 "first_block": sblocks[0].id,
                 "last_block": sblocks[-1].id,
                 "translatable_blocks": sum(1 for b in sblocks if b.translate),
+                "dialogue_share": scene["dialogue_share"],
+                "dialogue_heavy": scene["dialogue_heavy"],
             }
         )
     chapter_json = {
@@ -151,14 +203,19 @@ def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(prog="nl-extract", description=__doc__)
     ap.add_argument("chapter", type=int)
     ap.add_argument("--force", action="store_true", help="re-extract even if translations exist")
+    ap.add_argument("--flags-only", action="store_true", help="only add dialogue_share / dialogue_heavy to the existing src.json files (no re-segmenting)")
     ap.add_argument("--quiet", action="store_true")
     a = ap.parse_args(argv)
+    if a.flags_only:
+        for r in update_flags(a.chapter):
+            print(f"  {r['scene']}  dialogue {r['dialogue_share']:.2f}  speakers {', '.join(r['speakers']) or '-'}  {'DIALOGUE-HEAVY' if r['dialogue_heavy'] else ''}")
+        return
     cj = run(a.chapter, force=a.force)
     if a.quiet:
         return
     print(f"chapter {cj['chapter']}: {cj['title']!r} — {cj['words']} words, {len(cj['scenes'])} scenes")
     for s in cj["scenes"]:
-        print(f"  {s['scene']}  {s['words']:5d} words  {s['translatable_blocks']:3d} blocks  [{s['first_block']}..{s['last_block']}]")
+        print(f"  {s['scene']}  {s['words']:5d} words  {s['translatable_blocks']:3d} blocks  [{s['first_block']}..{s['last_block']}]  dialogue {s['dialogue_share']:.2f}{'  DIALOGUE-HEAVY' if s['dialogue_heavy'] else ''}")
     print(f"-> {chapter_work_dir(cj['chapter'])}", file=sys.stderr)
 
 

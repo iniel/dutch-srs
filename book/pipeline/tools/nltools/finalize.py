@@ -3,9 +3,12 @@
     nl-finalize 1/s02 [--version K] [--unresolved M3,L2]
 
   * copies sNN.vK.nl.md -> sNN.final.nl.md
-  * writes sNN.report.md from the checks / meaning / language files of every version
+  * writes sNN.report.md from the files of every version: checks, review (pipeline v2),
+    meaning (v2 extra pass, or Phase 1), language (Phase 1), diff and verify (v2 patch round);
+    for v2 scenes: must_fix status and the should_fix deferred to the chapter pass
   * updates memory/known-so-far/chNNN.json with all \\gl words of the chapter's finals
-  * appends the translator's @notes and CONFLICT lines to memory/inbox.md
+  * appends the translator's @notes and CONFLICT lines to memory/inbox.md (once per scene
+    version; never after the chapter pass marked the chapter consumed)
 Pseudo-chapters >= 900 (experiments) skip the memory updates.
 """
 
@@ -33,6 +36,42 @@ def _load(p: Path) -> dict | None:
     return load_json(p) if p.exists() else None
 
 
+REVIEWS = ("review", "meaning", "language")  # review = pipeline v2; meaning = v2 extra pass or legacy; language = legacy
+
+
+def _item(f: dict, status: str = "") -> str:
+    return f"- {f.get('id')} ({f.get('severity')}, {f.get('category', '')}) {f.get('block', '')}: {f.get('problem', '')}" + (f" [{status}]" if status else "")
+
+
+def _open_items_v2(sdir: Path, scene: str, reviewed: int, final: int, unresolved: list[str]) -> list[str]:
+    """must_fix of the reviewed version with their patch status; should_fix deferred to the chapter pass."""
+    findings = [f for name in ("review", "meaning") for f in (_load(sdir / f"{scene}.v{reviewed}.{name}.json") or {}).get("findings", [])]
+    status: dict[str, str] = {}
+    for v in range(reviewed + 1, final + 1):
+        diff = _load(sdir / f"{scene}.v{v}.diff.json")
+        if diff and diff.get("ok"):
+            status.update({i: "fixed (diff ok)" for i in diff.get("must_fix", [])})
+        for it in (_load(sdir / f"{scene}.v{v}.verify.json") or {}).get("items", []):
+            status[it.get("id")] = "fixed (verified)" if it.get("status") == "fixed" else f"{it.get('status')}: {it.get('note', '')}"
+    must = [f for f in findings if f.get("severity") == "must_fix"]
+    open_must = [f for f in must if f.get("id") in unresolved or not status.get(f.get("id"), "").startswith("fixed")]
+    fixed = [f for f in must if f not in open_must]
+    out = [f"must_fix: {len(fixed)}/{len(must)} fixed" + ("".join(f"; {f.get('id')} {status[f.get('id')]}" for f in fixed)) if must else "must_fix: none"]
+    if open_must:
+        out.append("unresolved after the final version:")
+        out += [_item(f, status.get(f.get("id"), "not patched" if final == reviewed else "patched, not verified")) for f in open_must]
+    else:
+        out.append("unresolved: none")
+    deferred = [f for f in findings if f.get("severity") == "should_fix"]
+    notes = sum(1 for f in findings if f.get("severity") == "note")
+    out.append("")
+    out.append("deferred to the chapter pass (should_fix):" if deferred else "deferred to the chapter pass: none")
+    out += [_item(f) + (f" → {f.get('required_fix', '')}" if f.get("required_fix") else "") for f in deferred]
+    if notes:
+        out.append(f"notes: {notes} in {scene}.v{reviewed}.review.json (the chapter pass reads them only for blocks it touches)")
+    return out
+
+
 def finalize(chapter: int, scene: str, version: int | None, unresolved: list[str]) -> Path:
     sdir = scene_dir(chapter)
     if version is None:
@@ -47,35 +86,49 @@ def finalize(chapter: int, scene: str, version: int | None, unresolved: list[str
     shutil.copy(src, final)
     sf = read_scene_file(final)
 
-    lines = [f"# ch{chapter:03d} {scene} — report", f"final: v{version} ({'no fix round' if version == 1 else f'{version - 1} fix round(s)'})", ""]
+    reviewed = [v for v in range(1, version + 1) if (sdir / f"{scene}.v{v}.review.json").exists()]
+    rounds = version - reviewed[-1] if reviewed else version - 1
+    lines = [f"# ch{chapter:03d} {scene} — report", f"final: v{version} ({'no fix round' if rounds == 0 else f'{rounds} fix round(s)'})", ""]
     for v in range(1, version + 1):
-        checks = _load(sdir / f"{scene}.v{v}.checks.json")
-        meaning = _load(sdir / f"{scene}.v{v}.meaning.json")
-        language = _load(sdir / f"{scene}.v{v}.language.json")
+        if not (sdir / f"{scene}.v{v}.nl.md").exists():
+            continue
         parts = [f"v{v}:"]
+        checks = _load(sdir / f"{scene}.v{v}.checks.json")
         if checks:
             vc, gc = checks["vocab"], checks["grammar"]["summary"]
             parts.append(f"checks known {vc['known_share']:.1%} · new/1000 {vc['new_per_1000']} · grammar likely {gc['likely']} review {gc['review']} · load {gc['load']} · structure {'ok' if checks['structure']['ok'] else 'ISSUES'}")
-        if meaning:
-            m = _sev_counts(meaning)
-            comp = meaning.get("comprehension", [])
-            ans = sum(1 for q in comp if q.get("answerable"))
-            parts.append(f"meaning {meaning.get('verdict')} must {m['must_fix']} should {m['should_fix']} note {m['note']}" + (f" · comprehension {ans}/{len(comp)}" if comp else ""))
-        if language:
-            l = _sev_counts(language)
-            fd = language.get("flag_decisions", [])
-            conf = sum(1 for d in fd if d.get("decision") == "confirmed")
-            parts.append(f"language {language.get('verdict')} must {l['must_fix']} should {l['should_fix']} note {l['note']} · flags confirmed {conf}/{len(fd)}")
+        for name in REVIEWS:
+            rev = _load(sdir / f"{scene}.v{v}.{name}.json")
+            if rev:
+                c = _sev_counts(rev)
+                part = f"{name} {rev.get('verdict')} must {c['must_fix']} should {c['should_fix']} note {c['note']}"
+                comp = rev.get("comprehension", [])
+                if comp:
+                    part += f" · comprehension {sum(1 for q in comp if q.get('answerable'))}/{len(comp)}"
+                if "flag_decisions" in rev:
+                    fd = rev["flag_decisions"]
+                    part += f" · flags confirmed {sum(1 for d in fd if d.get('decision') == 'confirmed')}/{len(fd)}"
+                parts.append(part)
+        diff = _load(sdir / f"{scene}.v{v}.diff.json")
+        if diff:
+            parts.append(f"diff v{diff['from']}→v{v} {'ok' if diff['ok'] else 'VERIFY'} · changed {' '.join(diff['changed']) or 'none'}")
+        verify = _load(sdir / f"{scene}.v{v}.verify.json")
+        if verify:
+            items = verify.get("items", [])
+            parts.append(f"verify {verify.get('verdict')} · fixed {sum(1 for i in items if i.get('status') == 'fixed')}/{len(items)}")
         lines.append("- " + " | ".join(parts))
     lines.append("")
-    open_items = []
-    for rev_name in ("meaning", "language"):
-        rev = _load(sdir / f"{scene}.v{version}.{rev_name}.json")
-        for f in (rev or {}).get("findings", []):
-            if f.get("severity") in ("must_fix", "should_fix") and (not unresolved or f.get("id") in unresolved or f.get("severity") == "must_fix"):
-                open_items.append(f"- {f.get('id')} ({f.get('severity')}, {f.get('category', '')}) {f.get('block', '')}: {f.get('problem', '')}")
-    lines.append("unresolved after the final version:" if open_items else "unresolved: none")
-    lines += open_items
+    if reviewed:
+        lines += _open_items_v2(sdir, scene, reviewed[-1], version, unresolved)
+    else:
+        open_items = []
+        for rev_name in ("meaning", "language"):
+            rev = _load(sdir / f"{scene}.v{version}.{rev_name}.json")
+            for f in (rev or {}).get("findings", []):
+                if f.get("severity") in ("must_fix", "should_fix") and (not unresolved or f.get("id") in unresolved or f.get("severity") == "must_fix"):
+                    open_items.append(_item(f))
+        lines.append("unresolved after the final version:" if open_items else "unresolved: none")
+        lines += open_items
     lines.append("")
     glosses = [(w, g) for tex in sf.blocks.values() for w, g in _GL_RE.findall(tex)]
     lines.append("glosses: " + (", ".join(f"{w} ({g})" for w, g in glosses) if glosses else "none"))
@@ -93,10 +146,13 @@ def finalize(chapter: int, scene: str, version: int | None, unresolved: list[str
                 for w, _g in _GL_RE.findall(tex):
                     glossed.add(w.lower())
         dump_json(known_path, {"chapter": chapter, "glossed": sorted(glossed)})
-        if sf.notes:
-            inbox = MEMORY_DIR / "inbox.md"
+        inbox = MEMORY_DIR / "inbox.md"
+        header = f"## ch{chapter:03d} {scene} (v{version})"
+        seen = inbox.read_text(encoding="utf-8") if inbox.exists() else ""
+        # re-finalizing must not re-append notes the chapter pass already consumed
+        if sf.notes and header not in seen and f"<!-- ch{chapter:03d}: consumed" not in seen:
             with inbox.open("a", encoding="utf-8") as fh:
-                fh.write(f"\n## ch{chapter:03d} {scene} (v{version})\n")
+                fh.write(f"\n{header}\n")
                 fh.writelines(f"- {n}\n" for n in sf.notes)
     return final
 

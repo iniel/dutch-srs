@@ -8,7 +8,9 @@
     "avoid: words that are formally known/stretch but that we prefer not to use in this edition.",
     "Names and glossary terms live in memory/glossary.json, not here.",
     "cognates: Dutch words that are transparent to an English reader (international vocabulary, loanwords); treated as known, never glossed.",
-    "Precedence: a word the lexicon rates known needs no gloss even if listed under keep; keep entries matter for words the lexicon rates stretch/hard/unknown."
+    "Precedence: a word the lexicon rates known needs no gloss even if listed under keep; keep entries matter for words the lexicon rates stretch/hard/unknown.",
+    "Related lists: profile/polysemy.json (known words with a second sense the reader does not know) and profile/phrases.json (idioms of known words); nl-check reports both. keep words are exempt from the glossed-known-equivalent rule.",
+    "Changing this file between a review and a patch makes the checks delta of nl-diff noisy (Phase 1: all 4 re-review should_fix came from a mid-run cognates change); edit it between chapters."
   ],
   "keep": [
     {

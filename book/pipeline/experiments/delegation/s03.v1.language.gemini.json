@@ -1,0 +1,112 @@
+{
+  "scene": "ch001/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "All three programmatic grammar flags are dismissed (whitelisted chunk, polite 'zou u' formula, and active perfectum with 'zijn'). Two issues require a fix round: unnatural/calqued phrasing in b075 ('Stel: ... testte zelfs ... verbond hij zichzelf met zoiets') and unknown 'schutting' in b086 where plain A2 'hek' is available.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b075",
+      "fragment": "Stel: zijn vader \\emph{testte} zelfs de hypothese, of hij \\emph{keek} alleen maar naar de test. Dan \\emph{verbond} hij zichzelf met zoiets, zo voelde dat voor hem…",
+      "problem": "'Stel:' followed by narrative imperfectum is unidiomatic, 'testte zelfs ... of keek alleen maar' reverses the scalar 'zelfs maar' ('went so far as to ... or even'), and 'verbond hij zichzelf met zoiets' is a calque of 'associating himself with that'.",
+      "evidence": "EN: 'if his father went so far as to \\emph{test} the hypothesis, or even \\emph{watch} it being tested, that would feel like \\emph{associating} himself with that…' vs NL: 'Stel: zijn vader \\emph{testte} zelfs de hypothese, of hij \\emph{keek} alleen maar naar de test. Dan \\emph{verbond} hij zichzelf met zoiets, zo voelde dat voor hem…'",
+      "required_fix": "Use an allowed 'als'-clause (A-SUB) with 'zelfs maar' and replace the calque 'verbond hij zichzelf met zoiets' with natural Dutch (or keep 'associëren' if glossed, or use a plain construction), e.g. 'Als zijn vader de hypothese \\emph{testte}, of zelfs maar naar de test \\emph{keek}… Dan \\emph{deed} hij al mee aan die onzin, zo voelde dat voor hem…' (or keep the three italics with a natural verb).",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b086",
+      "fragment": "Het gezicht van een oude vrouw keek over de \\gl{schutting}{fence} van de buren.",
+      "problem": "'Schutting' is outside the known lexicon ('unknown') and has a plain A2 equivalent 'hek' (which bible.md also specifies for the garden fence).",
+      "evidence": "lexicon status unknown for 'schutting'; A2 known equivalent 'hek' (bible.md: 'The fence between the gardens is het hek.')",
+      "required_fix": "Replace 'de \\gl{schutting}{fence} van de buren' with 'het hek van de buren' (or 'het hek tussen de tuinen') and remove 'schutting: fence' from @glosses.",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L3",
+      "block": "b055",
+      "fragment": "een testbare \\gl{hypothese}{hypothesis}",
+      "problem": "'Hypothese' is on the cognates list in exceptions.json and must not be glossed.",
+      "evidence": "exceptions.json cognates includes 'hypothese'; glossary.json: 'NOT glossed: hypothese is on the cognates list in exceptions.json'",
+      "required_fix": "Remove the \\gl macro so it reads 'een testbare hypothese', and remove 'hypothese: hypothesis' from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L4",
+      "block": "b064",
+      "fragment": "mijn \\gl{genetische}{genetic} ouders",
+      "problem": "'Genetische' is on the cognates list in exceptions.json and must not be glossed.",
+      "evidence": "exceptions.json cognates includes 'genetisch' / 'genetische'; bible.md: 'Listed cognates unglossed: genetische, hypothese...'",
+      "required_fix": "Remove the \\gl macro so it reads 'mijn genetische ouders', and remove 'genetische: genetic' from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L5",
+      "block": "b064",
+      "fragment": "uw brief aan meneer~H.~Potter",
+      "problem": "In Dutch, 'meneer' is spoken address while a written envelope address quoted in a formal letter is 'de heer~H.~Potter' (per bible.md and glossary.json).",
+      "evidence": "EN: 'addressed to Mr~H.~Potter' vs NL: 'aan meneer~H.~Potter' (glossary.json: 'uw brief aan de heer~H.~Potter')",
+      "required_fix": "Change 'aan meneer~H.~Potter' to 'aan de heer~H.~Potter'.",
+      "severity": "should_fix",
+      "category": "register"
+    },
+    {
+      "id": "L6",
+      "block": "b052",
+      "fragment": "De vreemde zekerheid beschermde zichzelf niet eens tegen \\gl{weerlegging}{falsification}. Ze maakte vooraf geen smoesjes",
+      "problem": "Opening a new sentence with 'Ze' to refer back to the abstract noun 'de vreemde zekerheid' reads awkwardly as a personification in Dutch; demonstrative 'Die' is more natural at sentence start.",
+      "evidence": "NL: 'De vreemde zekerheid ... Ze maakte vooraf geen smoesjes' (bible.md: 'pronoun die at sentence start, haar inside a clause')",
+      "required_fix": "Replace sentence-initial 'Ze' with 'Die': 'Die maakte vooraf geen smoesjes, zoals: …'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L7",
+      "block": "b073",
+      "fragment": "maar de eigenaardige zekerheid in Harry wilde haar nek blijkbaar nog verder uitsteken.",
+      "problem": "Unglossed B1 'eigenaardige' ('peculiar') is opaque to A2 readers (looks like 'eigen' + 'aardig') and sits in the same clause as the figurative idiom 'haar nek ... uitsteken'.",
+      "evidence": "checks.md: eigenaardig (stretch B1, unglossed) in b073 (0 glosses in block)",
+      "required_fix": "Either gloss '\\gl{eigenaardige}{peculiar}' or replace with known 'vreemde' / 'rare'.",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L8",
+      "block": "b060",
+      "fragment": "millimeter grafiet ... een zakmes ... H.J.P.E.V\\@.",
+      "problem": "The three unglossed 'unknown' tokens in the checker ('grafiet' in b060, 'zakmes' and 'h.j.p.e.v.' in b069) are a transparent cognate ('graphite'), a compound of A1 words ('zak' + 'mes'), and proper-noun initials.",
+      "evidence": "checks.md: grafiet (unknown, b060), zakmes (unknown, b069), h.j.p.e.v. (unknown, b069)",
+      "required_fix": "No text change needed; 'grafiet' is a candidate for exceptions.json cognates.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-DAT",
+      "block": "b065",
+      "span": "dat die school echt bestaat.",
+      "decision": "dismissed",
+      "reason": "'Op voorwaarde dat' is whitelisted in exceptions.json (grammar_whitelist) as a fixed formal chunk for Harry's letter."
+    },
+    {
+      "id": "R-ZOU",
+      "block": "b066",
+      "span": "Zou u dit ook voor mijn eigen familie doen?",
+      "decision": "dismissed",
+      "reason": "Fixed polite request formula 'Zou u ... doen?' is explicitly allowed under A-ZOU-POLITE."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b074",
+      "span": "de brief is hier op een of andere manier gekomen",
+      "decision": "dismissed",
+      "reason": "'Is ... gekomen' is the active perfectum of an unaccusative motion verb with 'zijn' (A-PERF), not a passive construction."
+    }
+  ]
+}

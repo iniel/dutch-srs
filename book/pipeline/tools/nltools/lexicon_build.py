@@ -5,7 +5,7 @@ Sources (most lenient status wins):
   * public/cards.json  (cefr / level prefix)                           -> known | stretch | hard
   * public/paths.json  (inburgering, nederlands-in-gang)               -> known
   * NT2Lex TSV (lowest CEFR band; includes function words)             -> known | stretch | hard
-  * public/enrichment.json                                             -> inflected forms
+  * public/enrichment.json                                             -> inflected forms, synonyms
 
 Absence from the lexicon means "unknown status", never "above B1".
 """
@@ -169,7 +169,7 @@ def build(srs: Path, progress: Path | None) -> dict:
 
     def ensure(table: dict, key: str) -> dict:
         if key not in table:
-            table[key] = {"status": None, "cefr": None, "pos": [], "en": [], "cards": [], "sources": [], "forms": []}
+            table[key] = {"status": None, "cefr": None, "pos": [], "en": [], "cards": [], "sources": [], "forms": [], "synonyms": []}
         return table[key]
 
     def add_source(e: dict, status: str | None, src: str, cefr: str | None = None) -> None:
@@ -219,6 +219,10 @@ def build(srs: Path, progress: Path | None) -> dict:
         for f in parse_notes_forms(c.get("notes")):
             if f != target:
                 forms[f].add(target)
+        for s in (enrichment.get(c["id"]) or {}).get("synonyms") or []:
+            s = s.strip().lower()
+            if s and " " not in s and s != lemma and s not in e["synonyms"] and len(e["synonyms"]) < 8:
+                e["synonyms"].append(s)
         g = (enrichment.get(c["id"]) or {}).get("grammar") or {}
         for sub in ("noun", "verb", "adjective"):
             for k, v in (g.get(sub) or {}).items():

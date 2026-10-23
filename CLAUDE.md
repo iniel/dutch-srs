@@ -115,8 +115,14 @@ The HPMOR → A2–B1 Dutch translation that feeds the reader. **Not part of the
   fonts. Never edit it; run `git submodule update --init` after a clone. The app works without it.
 - `book/pipeline/` is a uv project (`cd book/pipeline && uv sync`; the venv is git-ignored, ~700 MB).
   Run tools from the repo root: `uv run --project book/pipeline nl-…`. Its README has the commands.
+- Read `book/pipeline/README.md` first (pipeline v2, model tiers, tools). Tests:
+  `uv run --project book/pipeline pytest book/pipeline/tools/tests -q`.
 - Translation is chat-driven: `.claude/skills/nl-translate/SKILL.md`, `/nl-scene`, `/nl-chapter`,
-  agents `.claude/agents/nl-*.md`. `book/pipeline/work/` is the audit trail — never delete versions.
+  agents `.claude/agents/nl-*.md`, their prompts `book/pipeline/prompts/*.md`.
+- `book/pipeline/work/` is the audit trail: never delete or overwrite a version; every change is a
+  new `sNN.vK.nl.md`.
+- Roles read `book/pipeline/work/chNNN/memory.md` (from `nl-memory`), not `memory/bible.md`
+  directly — the bible holds later chapters and spoilers.
 - `profile/lexicon.json` is generated from `public/cards.json` (`nl-lexicon`, git-ignored): rebuild it
   after card edits, then re-run `nl-reader` for exported chapters so their card ids stay current.
 

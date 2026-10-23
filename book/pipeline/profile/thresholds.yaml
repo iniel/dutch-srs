@@ -39,12 +39,21 @@ grammar:
   ignore_confidence: 0.3
 
 loop:
-  max_fix_rounds: 2
-  blocking_severities: [must_fix]        # findings that force another round
+  # 9/9 rounds in Phase 1 converged in one (experiments/analysis-findings.md §1.1); a second
+  # patch round happens only when the verifier reopens a must_fix
+  max_fix_rounds: 1
+  blocking_severities: [must_fix]        # findings that force a patch round
   advisory_severities: [should_fix, note]
+
+review:
+  # should_fix is capped and limited to the kinds that were worth a fix in the audit (§2.1);
+  # everything else is a note for the chapter pass
+  max_should_fix: 5
+  should_fix_kinds: [wrong-sense, referent, collocation]
 
 scene:
   target_words_min: 500
   target_words_max: 1000
   hard_max_words: 1300          # a single \later segment larger than this is split at paragraph boundaries
   context_paragraphs: 3         # paragraphs of neighbouring context given to the translator
+  dialogue_heavy_share: 0.5     # share of translatable paragraphs opening with a quote => extra meaning pass

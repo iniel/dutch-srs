@@ -46,6 +46,7 @@ def init() -> None:
                 "context_before": before,
                 "context_after": after,
             }
+            scene.update(extract.dialogue_profile(blocks, extract.thresholds()["scene"]["dialogue_heavy_share"]))
             dump_json(scene_dir(pid) / f"{sid}.src.json", scene)
             scenes.append({"scene": sid, "words": words, "first_block": blocks[0]["id"], "last_block": blocks[-1]["id"], "translatable_blocks": sum(1 for b in blocks if b["translate"]), "variant": desc})
         dump_json(
