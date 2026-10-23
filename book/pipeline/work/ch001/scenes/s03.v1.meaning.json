@@ -1,0 +1,106 @@
+{
+  "scene": "ch001/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, same order, same narrator: Harry's reasoning, the letter, the wax seal, the silent kitchen and the garden all arrive intact, every \\emph lands on the stressed idea and all seven comprehension questions are answerable from the Dutch alone. Two should_fix items: the 'like it was on fire' simile in b085 has been cut loose from the gesture and now reads as a statement about the hand, and Harry's clipped 'No matter what my brain seems to believe' in b077 is unpacked into an explicit two-clause judgement. Four notes on small shifts of degree, purpose and verb choice.",
+  "comprehension": [
+    {
+      "q": "Why should the letter have been an easy case of Mum joking, lying or being mad — and what would explain the missing stamp?",
+      "answer_from_nl": "A bit of madness is 'veel, veel minder onwaarschijnlijk' than the universe really working like that; and if Mum sent the letter herself, that explains how it reached the letterbox 'zonder postzegel'.",
+      "answerable": true
+    },
+    {
+      "q": "What is strange about the certainty Harry notices in himself?",
+      "answer_from_nl": "It does not protect itself against refutation: it makes no excuses in advance ('misschien komt er geen professor', 'misschien kan de professor alleen maar lepels buigen'); Harry simply expects a professor to come, wave a wand and produce magic — and he has no idea where this prediction comes from.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry decide to do about it, and by what principle?",
+      "answer_from_nl": "He tests it: a plate invites pushing, a handle invites pulling, and with a testable hypothesis 'doe je één ding: die ga je testen' — so he takes lined paper and writes to the onderdirectrice, starting over for careful calligraphy.",
+      "answerable": true
+    },
+    {
+      "q": "What does the letter ask for, on what precedent, and how does Harry describe his family's positions?",
+      "answer_from_nl": "He asks Hogwarts to send a representative to his family, as it once did for Lily (so her family could see magic is real and, he presumes, to help with school supplies). Only his mother claims to know about magic and cannot use it herself; his father is very sceptical; he himself doubts; and he does not know where to get the listed books and materials.",
+      "answerable": true
+    },
+    {
+      "q": "How does Mum say an owl is sent, and why should that answer have made Harry suspicious?",
+      "answer_from_nl": "'Je moet gewoon een magische uil hebben, denk ik.' That means the theory cannot be tested ('o, dus je theorie kun je niet testen') — yet the odd certainty in Harry sticks its neck out even further.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Dad refuse to come and watch, in Harry's reading?",
+      "answer_from_nl": "Magic is a disgrace that only stupid people believe in; if his father tested the hypothesis, or even just watched the test, that would feel to him like connecting himself with such a thing.",
+      "answerable": true
+    },
+    {
+      "q": "What occurs to Harry only once he is in the garden, how does he brush it aside, why does he shout anyway, and who interrupts him?",
+      "answer_from_nl": "That if an owl really took the letter he could not easily tell Dad; but that cannot really happen, and if it does he will have bigger worries than Dad's opinion. He shouts because 'Ik ben beter dan pap' and will use the scientific method even if it makes him feel stupid. A neighbour's voice — Mevrouw Figg, the occasional babysitter, looking over the fence — asks what he is doing; he yanks the envelope behind his back 'als drugsgeld', face hot with shame.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b085",
+      "fragment": "Harry trok zijn hand omlaag. Die hand stond in brand, zo leek het.",
+      "problem": "The English simile describes how he pulled the hand down (snatched away as from a flame); the Dutch detaches it into a separate statement that the hand seemed to be burning, which a reader can take as a sensation (heat of shame, cf. the next sentence) or, in a scene that just shouted for magic, as something actually happening to the hand.",
+      "evidence": "EN: 'Harry pulled down his hand like it was on fire and hid the envelope behind his back like it was drug money.' vs NL: 'Harry trok zijn hand omlaag. Die hand stond in brand, zo leek het. De envelop verstopte hij achter zijn rug als drugsgeld.' The second simile ('als drugsgeld') stays attached to its verb; the first does not.",
+      "required_fix": "Keep the fire comparison inside the same sentence as the pulling, as a description of the movement, parallel to 'als drugsgeld' — e.g. 'Harry trok zijn hand omlaag, zo snel als uit een vlam, en verstopte de envelop achter zijn rug als drugsgeld.' or 'Harry trok zijn hand razendsnel omlaag, als van een hete kachel.' Do not leave 'Die hand stond in brand' as a free-standing sentence about the hand.",
+      "severity": "should_fix",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b077",
+      "fragment": "Mijn brein gelooft blijkbaar van wel, maar dat maakt niet uit.",
+      "problem": "Harry's clipped concessive fragment is unpacked into two explicit clauses: what the brain believes is spelled out ('van wel') and an evaluation is added ('dat maakt niet uit'); the thought loses its throwaway rhythm between 'toch?' and the 'Als…' sentence.",
+      "evidence": "EN: 'No matter what my brain seems to believe.' (one fragment, no main verb) vs NL: 'Mijn brein gelooft blijkbaar van wel, maar dat maakt niet uit.' (two clauses, added judgement).",
+      "required_fix": "Render it as one short concessive fragment without the added evaluation, e.g. 'Wat mijn brein ook lijkt te geloven.' If that construction is not available, keep one clause only: 'Mijn brein lijkt van wel te geloven—nou en.' The sense 'regardless of my brain' must stay implicit, not stated as 'dat maakt niet uit'.",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M3",
+      "block": "b052",
+      "fragment": "beschermde zichzelf niet eens tegen weerlegging",
+      "problem": "'niet eens' (not even) adds a shade of the narrator's surprise that the English 'making no effort to' does not carry; the source is flat and clinical.",
+      "evidence": "EN: 'The strange certainty was making no effort to guard itself against falsification' vs NL: 'De vreemde zekerheid beschermde zichzelf niet eens tegen weerlegging.'",
+      "required_fix": "Optional: drop 'eens' — 'De vreemde zekerheid beschermde zichzelf niet tegen weerlegging.' — or render the 'no effort' idea flatly: 'deed geen moeite om zichzelf te beschermen' if that form is allowed.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M4",
+      "block": "b066",
+      "fragment": "Zo kon haar familie zien: magie is echt.",
+      "problem": "Hogwarts's purpose in sending the representative ('in order to demonstrate') is rendered as an achieved result ('so her family could see'); the reader still understands why the representative came, so the link survives, but the letter now asserts the demonstration happened rather than naming its aim.",
+      "evidence": "EN: 'you sent a Hogwarts representative to Lily Potter … in order to demonstrate to her family that magic was real, and, I presume, help Lily obtain her school materials.' vs NL: 'stuurde u eerder een vertegenwoordiger … naar Lily Potter … Zo kon haar familie zien: magie is echt. En die persoon hielp Lily, neem ik aan, met haar spullen voor school.'",
+      "required_fix": "Optional: mark the purpose, e.g. 'Die moest haar familie laten zien: magie is echt.' The hedge 'neem ik aan' on the second half is correct and must stay.",
+      "severity": "note",
+      "category": "intent"
+    },
+    {
+      "id": "M5",
+      "block": "b080",
+      "fragment": "als hij het zo bekeek",
+      "problem": "'now that he thought about it' marks a realisation arriving at this moment; 'als hij het zo bekeek' (seen that way) is a conditional viewpoint and loses the 'now'.",
+      "evidence": "EN: 'was…actually pretty embarrassing, now that he thought about it.' vs NL: 'Dat was…eigenlijk best gênant, als hij het zo bekeek.'",
+      "required_fix": "Optional: 'nu hij erover nadacht' keeps the timing of the realisation.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b086",
+      "fragment": "Het gezicht van een oude vrouw keek over de schutting van de buren.",
+      "problem": "'peered out from above' (a face appearing and looking closely over the top of the fence) is reduced to the neutral 'keek over'; the small comic image of a face popping up is softened.",
+      "evidence": "EN: 'An old woman's face peered out from above the neighbouring fence' vs NL: 'Het gezicht van een oude vrouw keek over de schutting van de buren.'",
+      "required_fix": "Optional: a verb of peering/appearing, e.g. 'gluurde over de schutting' or 'verscheen boven de schutting van de buren', if available at this level.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

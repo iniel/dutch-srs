@@ -1,0 +1,76 @@
+{
+  "scene": "ch907/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "The scene is intact: Harry's prediction and reversal, the fake tears and their source ('de anderen'), the assistant's stifled laugh, the flirting afterthought, the king simile and the handshake request all survive, and all five comprehension questions are answerable. Draco's maxim in b061 ('Aangenaam. Het is fijn als iemand zijn plaats kent.') is the closest of the three versions. One voice loss: in b065 Draco's impersonal, forward-looking 'I shall be treated with the respect due to the family of Malfoy' becomes a direct present-tense remark to Harry ('jij behandelt mij met respect').",
+  "comprehension": [
+    {
+      "q": "Why does Harry suddenly start gushing over the pale boy he has only just met?",
+      "answer_from_nl": "Hij kan de rest van het gesprek al voorspellen en besluit in een halve seconde van frustratie: genoeg is genoeg — hij draait de rollen om en begint zelf te dwepen (b057–b058).",
+      "answerable": true
+    },
+    {
+      "q": "Is Harry's admiration real? Where does he get his lines — the tears, the handshake — from?",
+      "answer_from_nl": "Nee, het is een act: hij wil graag tranen in zijn ogen krijgen, het lukt niet, en 'de anderen begonnen meestal ongeveer op dit punt met huilen' (b060); de handdruk vraagt hij omdat 'iedereen Harry Potter toch de hand wilde schudden' (b066). Hij speelt zijn eigen bewonderaars na.",
+      "answerable": true
+    },
+    {
+      "q": "How does Draco read Harry's behaviour, and what does he believe it tells him about how he will be treated?",
+      "answer_from_nl": "Eerst is hij in de war, dan komt er een brede, zelfvoldane glimlach: 'Aangenaam. Het is fijn als iemand zijn plaats kent.' (b061). Hij is blij met dit nieuws: Harry behandelt hem met respect, 'zo hoort het voor de familie Malfidus', en hij glimlacht als de hoogste koning naar een arme, eerlijke onderdaan (b065). Answerable; the generalisation to his future treatment in general is weaker than in the English (see M1).",
+      "answerable": true
+    },
+    {
+      "q": "Who else notices what Harry is doing, and how does she react?",
+      "answer_from_nl": "Een van de assistentes — die Harry blijkbaar al eerder herkende — maakt een zacht, verstikt geluid (b062).",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry think 'Oops' after the line about his heart?",
+      "answer_from_nl": "Omdat 'Mijn hart smelt' misschien klonk als flirten met Draco (b063–b064).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b065",
+      "fragment": "jij behandelt mij met respect. Zo hoort het voor de familie Malfidus",
+      "problem": "Draco's impersonal, forward-looking pronouncement about how he will be treated in general (inferred from Harry's gush) becomes a direct present-tense remark to Harry; the royal generalisation is narrowed to one person, and Draco now addresses Harry ('jij') where the English has him address no one. 'Zo hoort het' does carry 'due to' well.",
+      "evidence": "EN: 'And I am pleased to learn that I shall be treated with the respect due to the family of Malfoy' vs NL: 'En \\emph{ik} ben blij met dit nieuws: jij behandelt mij met respect. Zo hoort het voor de familie Malfidus'",
+      "required_fix": "Keep the claim impersonal and about Draco's treatment in general, as in the English passive: no 'jij', no present remark about Harry. Say that he is pleased to learn he will receive the respect owed to the Malfoy family, e.g. 'En \\emph{ik} ben blij met dit nieuws: ik krijg het respect dat de familie Malfidus toekomt' or, keeping the split, 'En \\emph{ik} ben blij met dit nieuws: ik krijg respect. Zo hoort het voor de familie Malfidus.'",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b061",
+      "fragment": "Aangenaam.",
+      "problem": "A stock greeting the English does not have is added to carry 'good to meet'; it fits Draco's trained politeness and the maxim that follows is exact, so this works, but it is an addition.",
+      "evidence": "EN: 'It’s good to meet someone who knows his place.' vs NL: 'Aangenaam. Het is fijn als iemand zijn plaats kent.'",
+      "required_fix": "None required; keep. If a single sentence is possible ('Het is fijn om iemand te ontmoeten die zijn plaats kent.'), prefer it.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M3",
+      "block": "b062",
+      "fragment": "Een van de assistentes herkende Harry blijkbaar al eerder. Zij maakte nu een zacht, \\gl{verstikt}{choked} geluid.",
+      "problem": "The identifying aside ('the one who’d seemed to recognise Harry') is promoted to a full statement before the event; nothing is lost and the choking sound still comes last, but the aside now carries more weight than in the source.",
+      "evidence": "EN: 'One of the assistants, the one who’d seemed to recognise Harry, made a muffled choking sound.' vs NL: two sentences, identification first.",
+      "required_fix": "Optional: keep the aside subordinate, e.g. with a dash insertion as in s03 ('Een van de assistentes—zij herkende Harry eerder al, zo leek het—maakte…').",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b066",
+      "fragment": "een volgende zin bedenken",
+      "problem": "'his next line' frames Harry's fawning as a scripted routine; 'zin' (sentence) drops the theatre metaphor.",
+      "evidence": "EN: 'thinking up his next line' vs NL: 'kon niet meteen een volgende zin bedenken'",
+      "required_fix": "Optional: 'zijn volgende tekst' (as in s03) or 'zijn volgende regel'.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

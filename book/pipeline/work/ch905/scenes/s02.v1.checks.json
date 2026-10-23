@@ -1,0 +1,615 @@
+{
+  "scene": "ch905/s02",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch905/scenes/s02.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch905/s02",
+    "version": 1,
+    "tokens": 410,
+    "known_tokens": 397,
+    "known_share": 0.9683,
+    "new_lemmas_unglossed": 10,
+    "new_per_1000": 24.4,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "brein",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 4,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zijn brein begreep het nu langzaam:",
+          "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een mens —"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "streepen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": false,
+        "examples": [
+          "Meteen veranderde de kleine gestreepte kat weer terug in een vrouw in een gewaad."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "stoo",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b026"
+        ],
+        "glossed": true,
+        "examples": [
+          "Harry ademde in korte, snelle stootjes."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "kwantum-hamiltoniaan",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dat is niet zomaar een willekeurige regel, het volgt uit de vorm van de kwantum-Hamiltoniaan!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "unitariteit",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die regel loslaat, vernietig je de unitariteit en dan krijg je FTL-signalen!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenbiochemie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen, en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenbrein",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hoe kunt u nog denken met een kattenbrein?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "knipperen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Professor Anderling knipperde met haar ogen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wazig",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [
+          "Alles werd wazig voor Harry’s ogen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "neuron",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een mens —"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "oprecht",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "sincere",
+          "honest",
+          "upright"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": true,
+        "examples": [
+          "Het klonk oprecht, hoewel haar mondhoeken omhoog trokken."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "struikelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to stumble",
+          "fall over",
+          "trip over an object"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": true,
+        "examples": [
+          "Hij struikelde over een verdwaalde stapel boeken en viel met een harde klap op zijn billen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "steun",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "support"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "het gewicht kwam hard neer, zonder steun."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verstikken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to choke",
+          "to suffocate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b026"
+        ],
+        "glossed": true,
+        "examples": [
+          "Zijn stem klonk verstikt."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "melodie",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "melody"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "de muziek van de planeten was dezelfde melodie als de val van een appel."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "aarzelen",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to hesitate"
+        ],
+        "count": 1,
+        "blocks": [
+          "b022"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "stapel",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "pile"
+        ],
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "gewaad",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "willekeurig",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "arbitrary"
+        ],
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "geest",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "ghost",
+          "spirit",
+          "immaterial being"
+        ],
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "uitzondering",
+        "status": "known",
+        "cefr": "B1",
+        "en": [
+          "exception"
+        ],
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b032",
+        "scope": "sentence",
+        "new": [
+          "brein",
+          "neuron"
+        ],
+        "text": "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een mens —"
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b022": {
+        "tokens": 40,
+        "new": [],
+        "glosses": [
+          "aarzelde"
+        ]
+      },
+      "b023": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b024": {
+        "tokens": 53,
+        "new": [
+          "steun"
+        ],
+        "glosses": [
+          "struikelde",
+          "stapel"
+        ]
+      },
+      "b025": {
+        "tokens": 36,
+        "new": [
+          "streepen"
+        ],
+        "glosses": [
+          "gewaad",
+          "oprecht"
+        ]
+      },
+      "b026": {
+        "tokens": 15,
+        "new": [],
+        "glosses": [
+          "stootjes",
+          "verstikt"
+        ]
+      },
+      "b027": {
+        "tokens": 11,
+        "new": [],
+        "glosses": [
+          "Gedaanteverwisseling",
+          "Faunaat-transformatie"
+        ]
+      },
+      "b028": {
+        "tokens": 85,
+        "new": [
+          "kattenbiochemie",
+          "kattenbrein",
+          "kwantum-hamiltoniaan",
+          "unitariteit"
+        ],
+        "glosses": [
+          "willekeurige",
+          "geest"
+        ]
+      },
+      "b029": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 13,
+        "new": [
+          "knipperen"
+        ],
+        "glosses": []
+      },
+      "b032": {
+        "tokens": 118,
+        "new": [
+          "brein",
+          "melodie",
+          "neuron"
+        ],
+        "glosses": [
+          "wazig",
+          "uitzondering"
+        ]
+      },
+      "b033": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch905/s02",
+    "version": 1,
+    "sentences": 51,
+    "summary": {
+      "likely": 2,
+      "review": 4,
+      "load": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gestreepte",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b025",
+        "sent": 0,
+        "sentence": "Meteen veranderde de kleine gestreepte kat weer terug in een vrouw in een gewaad.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "Zijn stem klonk verstikt.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b026",
+        "sent": 1,
+        "sentence": "Zijn stem klonk verstikt.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "“U bent in een kat veranderd",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b028",
+        "sent": 0,
+        "sentence": "“U bent in een kat veranderd!",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", dát spoelde net weg door de wc",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b032",
+        "sent": 3,
+        "sentence": "Het hele idee van één universum met wiskundig regelmatige wetten, dát spoelde net weg door de wc; het hele idee van de natuurkunde.",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", dat was een mens",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b032",
+        "sent": 11,
+        "sentence": "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een mens —",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat alles.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b033",
+        "sent": 0,
+        "sentence": "En toen veranderde een vrouw in een kat, tot zover dat alles.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "kan zich niet zomaar de hele anatomie van een kat voorstellen",
+        "block": "b028",
+        "sent": 6,
+        "sentence": "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen, en, en al die kattenbiochemie, en hoe zit het met de neurologie?",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

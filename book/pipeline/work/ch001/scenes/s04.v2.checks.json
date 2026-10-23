@@ -1,0 +1,224 @@
+{
+  "scene": "ch001/s04",
+  "version": 2,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch001/scenes/s04.v2.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch001/s04",
+    "version": 2,
+    "tokens": 143,
+    "known_tokens": 142,
+    "known_share": 0.993,
+    "new_lemmas_unglossed": 1,
+    "new_per_1000": 7.0,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "wip",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b093"
+        ],
+        "glossed": true,
+        "examples": [
+          "“Laat het maar aan mij over, lieverd,” zei mevrouw Figg, “en in een wip heb ik hier iemand.”"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "verstikken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to choke",
+          "to suffocate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b087"
+        ],
+        "glossed": true,
+        "examples": [
+          "“Niets,” zei Harry met verstikte stem."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "afgeven",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to hand off",
+          "hand over",
+          "deliver"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b092"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij gaf zijn envelop af."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "in een wip",
+        "status": "phrase",
+        "cefr": null,
+        "en": [
+          "in a jiffy"
+        ],
+        "count": 1,
+        "blocks": [
+          "b093"
+        ],
+        "glossed": true,
+        "examples": [],
+        "phrase": true,
+        "action": "phrase-glossed",
+        "hint": "multi-word gloss; fine if the phrase is needed, otherwise prefer a plain verb"
+      },
+      {
+        "lemma": "toelatingsbrief",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b088"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b087": {
+        "tokens": 14,
+        "new": [],
+        "glosses": [
+          "verstikte"
+        ]
+      },
+      "b088": {
+        "tokens": 7,
+        "new": [],
+        "glosses": [
+          "toelatingsbrief"
+        ]
+      },
+      "b089": {
+        "tokens": 4,
+        "new": [],
+        "glosses": []
+      },
+      "b090": {
+        "tokens": 25,
+        "new": [],
+        "glosses": []
+      },
+      "b091": {
+        "tokens": 26,
+        "new": [],
+        "glosses": []
+      },
+      "b092": {
+        "tokens": 26,
+        "new": [
+          "afgeven"
+        ],
+        "glosses": []
+      },
+      "b093": {
+        "tokens": 18,
+        "new": [],
+        "glosses": [
+          "in een wip"
+        ]
+      },
+      "b094": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      },
+      "b095": {
+        "tokens": 8,
+        "new": [],
+        "glosses": []
+      },
+      "b096": {
+        "tokens": 8,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.975,
+      "new_lemmas_per_1000_max": 15,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch001/s04",
+    "version": 2,
+    "sentences": 21,
+    "summary": {
+      "likely": 0,
+      "review": 1,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verstikte",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b087",
+        "sent": 0,
+        "sentence": "“Niets,” zei Harry met verstikte stem.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": true,
+    "ok": true
+  }
+}

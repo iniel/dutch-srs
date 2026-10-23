@@ -1,0 +1,1789 @@
+{
+  "version": 1,
+  "policy": "Canon Harry Potter names and terms use the official Dutch translation by Wiebe Buddingh' (Zweinstein, Perkamentus, Anderling, Sneep, Dreuzel, Zwerkbal, Griffoendor/Zwadderich/Ravenklauw/Huffelpuf, de Wegisweg, Goudgrijp, Malfidus, Hermelien Griffel, Ron Wemel, Marcel Lubbermans, ...). HPMOR-original names stay as in English (Harry James Potter-Evans-Verres, Michael Verres-Evans, Petunia Evans-Verres, Yermy Wibble, Della, Mr Spoo). Real-world Muggle names, book titles and scientific names stay in English (Feynman Lectures, Gödel, Escher, Bach, Homo erectus); scientific concepts get the standard Dutch term where one exists, otherwise a transparent Dutch coinage. HPMOR-invented magical items and phrases get one fixed Dutch rendering decided here. Dutch typography: titles lowercase before a name (professor Anderling, meneer Potter, madame Mallekin), except 'de Professor' as the narrator's label for Michael. 'Mr~Potter' keeps its tie: 'meneer~Potter'. first_chapter = chapter (1-10) where the term first appears in the source; null = certain to recur later but not yet in chapters 1-10. nl_forms lists plurals, genitives and short forms the translator may use. Use exactly these renderings; if a term is missing, choose, use consistently, and record it in @notes.",
+  "terms": [
+    {
+      "en": "Harry James Potter-Evans-Verres",
+      "nl": "Harry James Potter-Evans-Verres",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "HPMOR-original, unchanged. Narration: 'Harry'; McGonagall: 'meneer Potter'; reverent strangers: 'Harry Potter'; Draco: 'Potter' until friendship, then 'Harry'.",
+      "nl_forms": [
+        "Harry",
+        "Harry Potter",
+        "meneer Potter",
+        "Potter",
+        "Harry Verres"
+      ]
+    },
+    {
+      "en": "Michael Verres-Evans",
+      "nl": "Michael Verres-Evans",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "HPMOR-original. Narrator's label 'the Professor' = 'de Professor' (capital P, Michael only). Harry: 'pap'.",
+      "nl_forms": [
+        "de Professor",
+        "professor Verres-Evans",
+        "pap",
+        "Michael"
+      ]
+    },
+    {
+      "en": "Petunia Evans-Verres",
+      "nl": "Petunia Evans-Verres",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "HPMOR-original. Harry: 'mam'.",
+      "nl_forms": [
+        "Petunia",
+        "mam"
+      ]
+    },
+    {
+      "en": "Lily Potter (Lily Evans)",
+      "nl": "Lily Potter (Lily Evans)",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "Unchanged; Harry's dead genetic mother, Petunia's sister."
+    },
+    {
+      "en": "James Potter",
+      "nl": "James Potter",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "Unchanged; Harry's dead genetic father."
+    },
+    {
+      "en": "Vernon Dursley",
+      "nl": "Vernon Duffeling",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "Official surname Duffeling; first name kept as in source (official Dutch 'Herman' would hide the source). Mentioned once by Petunia."
+    },
+    {
+      "en": "Dudley Dursley",
+      "nl": "Dudley Duffeling",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "Keeps the D-D alliteration Petunia mocks. Official Dutch 'Dirk Duffeling' is the alternative if the editor wants full canon."
+    },
+    {
+      "en": "Mrs Figg",
+      "nl": "mevrouw Figg",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "The neighbour / occasional babysitter. Keep the tie: 'mevrouw~Figg'.",
+      "nl_forms": [
+        "mevrouw~Figg"
+      ]
+    },
+    {
+      "en": "Minerva McGonagall",
+      "nl": "Minerva Anderling",
+      "kind": "person",
+      "first_chapter": 1,
+      "note": "Named in Harry's letter in ch 1, in person from ch 2. Harry addresses her as 'professor' / 'professor Anderling' with 'u'; she addresses him as 'meneer Potter' with 'je'. 'Minnie' (ch 6) stays 'Minnie'.",
+      "nl_forms": [
+        "professor Anderling",
+        "Anderling",
+        "Minerva",
+        "Minnie",
+        "mevrouw Anderling"
+      ]
+    },
+    {
+      "en": "Deputy Headmistress",
+      "nl": "onderdirectrice",
+      "kind": "title",
+      "first_chapter": 1,
+      "note": "McGonagall's title. Letter salutation: 'Geachte onderdirectrice'. 'Deputy Headmistress Professor Minerva McGonagall' (ch 6) = 'Onderdirectrice professor Minerva Anderling'.",
+      "nl_forms": [
+        "de onderdirectrice"
+      ]
+    },
+    {
+      "en": "Madam Pomfrey",
+      "nl": "madame Plijster",
+      "kind": "person",
+      "first_chapter": 2,
+      "note": "School healer; mentioned in ch 2 and ch 6."
+    },
+    {
+      "en": "Tom (barman of the Leaky Cauldron)",
+      "nl": "Tom",
+      "kind": "person",
+      "first_chapter": 3,
+      "note": "Old barman; addresses Harry reverently with 'u'."
+    },
+    {
+      "en": "Doris",
+      "nl": "Doris",
+      "kind": "person",
+      "first_chapter": 3,
+      "note": "Old woman in the Leaky Cauldron whose grandson was an Auror."
+    },
+    {
+      "en": "Quirinus Quirrell",
+      "nl": "Quirinus Krinkel",
+      "kind": "person",
+      "first_chapter": 3,
+      "note": "'The pale man with the twitching eye' in ch 3; at the Head Table in ch 9. Render neutrally; no added menace.",
+      "nl_forms": [
+        "professor Krinkel",
+        "Krinkel"
+      ]
+    },
+    {
+      "en": "Voldemort",
+      "nl": "Voldemort",
+      "kind": "person",
+      "first_chapter": 3,
+      "note": "Unchanged. Said aloud only by McGonagall and once whispered by Harry in ch 3."
+    },
+    {
+      "en": "Yermy Wibble",
+      "nl": "Yermy Wibble",
+      "kind": "person",
+      "first_chapter": 3,
+      "note": "HPMOR-original journalist, murdered with his family; unchanged."
+    },
+    {
+      "en": "Griphook",
+      "nl": "Grijphaak",
+      "kind": "person",
+      "first_chapter": 4,
+      "note": "Official Dutch. The goblin at the vault; addresses Harry as 'meneer Potter-Evans-Verres' with 'u'; Harry calls him 'meneer'.",
+      "nl_forms": [
+        "meneer Grijphaak"
+      ]
+    },
+    {
+      "en": "Draco Malfoy",
+      "nl": "Draco Malfidus",
+      "kind": "person",
+      "first_chapter": 5,
+      "note": "Official Dutch. Ron calls him 'Malfidus'.",
+      "nl_forms": [
+        "Draco",
+        "Malfidus"
+      ]
+    },
+    {
+      "en": "Lucius Malfoy",
+      "nl": "Lucius Malfidus",
+      "kind": "person",
+      "first_chapter": 5,
+      "note": "Draco calls him 'Vader' (capital, no article). Harry calls him 'Lucius' when talking to Draco.",
+      "nl_forms": [
+        "Lucius",
+        "Vader"
+      ]
+    },
+    {
+      "en": "Madam Malkin",
+      "nl": "madame Mallekin",
+      "kind": "person",
+      "first_chapter": 5,
+      "note": "Official Dutch. Her two assistants stay unnamed: 'de assistente(s)'."
+    },
+    {
+      "en": "Rowena Ravenclaw",
+      "nl": "Rowena Ravenklauw",
+      "kind": "person",
+      "first_chapter": 5,
+      "note": "Founder; 'Rowena herself' (ch 5), named in Draco's speech (ch 7)."
+    },
+    {
+      "en": "Della",
+      "nl": "Della",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "HPMOR-original: the teenage salesgirl at the healer's-kit shop who lost someone in the war."
+    },
+    {
+      "en": "Ollivander",
+      "nl": "Olivander",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "Official Dutch spelling (one l). The shop: 'bij Olivander'. His wand line is quoted in ch 6."
+    },
+    {
+      "en": "Sirius Black",
+      "nl": "Sirius Zwarts",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "Official Dutch. Mentioned by McGonagall as the betrayer in Azkaban; in ch 7 'Mr Black' / 'House of Black' play on this name."
+    },
+    {
+      "en": "Albus Dumbledore",
+      "nl": "Albus Perkamentus",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "Mentioned ch 6, appears in the ch 6 Aftermath. Full name (ch 8): 'Albus Percival Wulfric Brian Perkamentus'. Narration in McGonagall's POV: 'Albus'.",
+      "nl_forms": [
+        "Perkamentus",
+        "Albus",
+        "schoolhoofd Perkamentus",
+        "Albus Percival Wulfric Brian Perkamentus"
+      ]
+    },
+    {
+      "en": "Severus Snape",
+      "nl": "Severus Sneep",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "Mentioned ch 6; the 'dour face' at the Head Table ch 9; named in Lucius's letter ch 7.",
+      "nl_forms": [
+        "Sneep",
+        "Severus",
+        "professor Sneep"
+      ]
+    },
+    {
+      "en": "Hermione Granger",
+      "nl": "Hermelien Griffel",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "Whispered by McGonagall at the end of ch 6; POV character in ch 8. Harry's mock-formal address: 'juffrouw Griffel' (with 'u' in those lines only).",
+      "nl_forms": [
+        "Hermelien",
+        "juffrouw Griffel",
+        "Griffel"
+      ]
+    },
+    {
+      "en": "Ron Weasley",
+      "nl": "Ron Wemel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Official Dutch. Draco calls him 'Wemel'.",
+      "nl_forms": [
+        "Ron",
+        "Wemel"
+      ]
+    },
+    {
+      "en": "Weasley family",
+      "nl": "de familie Wemel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "'the Weasleys' = 'de Wemels'; 'the Weasley family rat' = 'de rat van de familie Wemel'.",
+      "nl_forms": [
+        "de Wemels",
+        "Wemel"
+      ]
+    },
+    {
+      "en": "Fred and George Weasley",
+      "nl": "Fred en George Wemel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "The twins; 'Weasley twins' = 'de Wemel-tweeling'. Together with Harry: the Order of Chaos.",
+      "nl_forms": [
+        "de Wemel-tweeling",
+        "Fred",
+        "George"
+      ]
+    },
+    {
+      "en": "Molly Weasley",
+      "nl": "Molly Wemel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Unnamed in ch 7 ('the plump woman'); use 'de mollige vrouw' / 'mevrouw Wemel' only if the source names her.",
+      "nl_forms": [
+        "mevrouw Wemel"
+      ]
+    },
+    {
+      "en": "Ginny Weasley",
+      "nl": "Ginny Wemel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Unnamed in ch 7 ('a red-headed girl'). Do not name her before the source does."
+    },
+    {
+      "en": "Percy Weasley",
+      "nl": "Percy Wemel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "One of the 'four boys' in ch 7; unnamed there."
+    },
+    {
+      "en": "Luna Lovegood",
+      "nl": "Loena Leeflang",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Official Dutch. Mentioned by Draco as the ten-year-old 'seer' behind the Quibbler headline."
+    },
+    {
+      "en": "Xenophilius Lovegood",
+      "nl": "Xenophilius Leeflang",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Unnamed in ch 7 ('her father, who owns this newspaper'); 'de familie Leeflang' is used.",
+      "nl_forms": [
+        "de familie Leeflang"
+      ]
+    },
+    {
+      "en": "Cornelius Fudge",
+      "nl": "Cornelis Droebel",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Official Dutch. In ch 7 only as 'Minister Fudge' = 'minister Droebel'.",
+      "nl_forms": [
+        "minister Droebel"
+      ]
+    },
+    {
+      "en": "Lestrange (family)",
+      "nl": "Van Detta",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Official Dutch family name. 'weirder taste than a Lestrange' = 'een vreemdere smaak dan een Van Detta'."
+    },
+    {
+      "en": "Bellatrix Black",
+      "nl": "Bellatrix van Detta",
+      "kind": "person",
+      "first_chapter": null,
+      "note": "Per brief. CONFLICT to settle before she appears: HPMOR uses her maiden name 'Black' (= 'Zwarts'); the official 'van Detta' is her married name in canon. Recommend 'Bellatrix Zwarts' for HPMOR; the brief says 'van Detta'."
+    },
+    {
+      "en": "Salazar Slytherin",
+      "nl": "Zalazar Zwadderich",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Founder; Draco's speech names the four founders by first name: Zalazar, Goderic, Rowena, Helga."
+    },
+    {
+      "en": "Godric Gryffindor",
+      "nl": "Goderic Griffoendor",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Founder; also in 'Godric's Hollow' = 'Goderics Eind'."
+    },
+    {
+      "en": "Helga Hufflepuff",
+      "nl": "Helga Huffelpuf",
+      "kind": "person",
+      "first_chapter": 7,
+      "note": "Founder."
+    },
+    {
+      "en": "Merlin",
+      "nl": "Merlijn",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "'What in Merlin's name' = 'Wat in Merlijns naam'; 'Merlin knows' = 'Merlijn weet'; 'the line of Merlin' = 'de lijn van Merlijn'."
+    },
+    {
+      "en": "Neville Longbottom",
+      "nl": "Marcel Lubbermans",
+      "kind": "person",
+      "first_chapter": 8,
+      "note": "Official Dutch. Timid boy with the toad; Sorted into Hufflepuff.",
+      "nl_forms": [
+        "Marcel",
+        "Lubbermans"
+      ]
+    },
+    {
+      "en": "Arsenius Jigger",
+      "nl": "Arsenius Jigger",
+      "kind": "person",
+      "first_chapter": 8,
+      "note": "Author of the Potions textbook; unchanged."
+    },
+    {
+      "en": "Hannah Abbott",
+      "nl": "Hannah Albedil",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "First name called at the Sorting: 'Albedil, Hannah!' Keep the source order of the roll-call even though it is no longer alphabetical in Dutch."
+    },
+    {
+      "en": "Susan Bones",
+      "nl": "Susan Bonkel",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Sorting roll-call."
+    },
+    {
+      "en": "Terry Boot",
+      "nl": "Terry Bot",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Sorting roll-call; Harry's new Ravenclaw House-mate."
+    },
+    {
+      "en": "Michael Corner",
+      "nl": "Michael Corner",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Unchanged in Dutch. Sorting roll-call."
+    },
+    {
+      "en": "Anthony Goldstein",
+      "nl": "Anthony Goldstein",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Unchanged. Sorting roll-call."
+    },
+    {
+      "en": "Gregory Goyle",
+      "nl": "Gregory Kwast",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Official Dutch. Sorting roll-call: 'Kwast, Gregory!'"
+    },
+    {
+      "en": "Sally-Anne Perks",
+      "nl": "Sally-Anne Perks",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Unchanged. The 'pale waifish girl' at the Sorting."
+    },
+    {
+      "en": "Hagrid",
+      "nl": "Hagrid",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "'Keeper of Keys and Grounds' = 'Sleutelbewaarder en Terreinknecht' (official)."
+    },
+    {
+      "en": "Penelope Clearwater",
+      "nl": "Patricia Halewijn",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Official Dutch. Appears only as 'Miss Clearwater' = 'juffrouw Halewijn', the Ravenclaw prefect.",
+      "nl_forms": [
+        "juffrouw Halewijn"
+      ]
+    },
+    {
+      "en": "Filius Flitwick",
+      "nl": "Filius Banning",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Official Dutch. Charms professor ('professor Bezweringen'), Head of Ravenklauw, 'the tiny man standing on his chair'; 'Charms Master' = 'Bezweringsmeester', 'Duelling Champion' = 'Duelleerkampioen'. Professors Vector and Sinistra (ch 9) are unchanged.",
+      "nl_forms": [
+        "professor Banning",
+        "Filius"
+      ]
+    },
+    {
+      "en": "Sprout",
+      "nl": "Stronk",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Official Dutch (Pomona Stronk). 'The round-faced witch with a yellow hat'.",
+      "nl_forms": [
+        "professor Stronk"
+      ]
+    },
+    {
+      "en": "Trelawney",
+      "nl": "Zwamdrift",
+      "kind": "person",
+      "first_chapter": 9,
+      "note": "Official Dutch. Named only in McGonagall's POV (ch 9)."
+    },
+    {
+      "en": "the Sorting Hat",
+      "nl": "de Sorteerhoed",
+      "kind": "object",
+      "first_chapter": 5,
+      "note": "Official Dutch. Hinted in ch 5 ('if the hat isn't screaming'), seen ch 9, speaks ch 9-10. Short form 'de Hoed' (capital H) once it speaks. Its speech is in \\emph{} inside quotes; Harry's replies are \\emph{} without quotes.",
+      "nl_forms": [
+        "de Hoed"
+      ]
+    },
+    {
+      "en": "Frodo Baggins",
+      "nl": "Frodo Balings",
+      "kind": "person",
+      "first_chapter": 6,
+      "note": "Dutch LotR translation (Schuchart). 'Mount Doom' = 'de Doemberg', 'the Ring' = 'de Ring'."
+    },
+    {
+      "en": "Hogwarts",
+      "nl": "Zweinstein",
+      "kind": "place",
+      "first_chapter": 1,
+      "note": "Official Dutch. Full name 'Hogwarts School of Witchcraft and Wizardry' = 'Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus'.",
+      "nl_forms": [
+        "Zweinsteins",
+        "Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus"
+      ]
+    },
+    {
+      "en": "Leaky Cauldron",
+      "nl": "de Lekke Ketel",
+      "kind": "place",
+      "first_chapter": 3,
+      "note": "Official Dutch. 'the courtyard of the Leaky Cauldron' = 'de binnenplaats van de Lekke Ketel'."
+    },
+    {
+      "en": "Diagon Alley",
+      "nl": "de Wegisweg",
+      "kind": "place",
+      "first_chapter": 5,
+      "note": "Official Dutch. The street is entered in ch 3 but first named in ch 5. 'the twisting main street of Diagon Alley' = 'de kronkelende hoofdstraat van de Wegisweg'."
+    },
+    {
+      "en": "Gringotts",
+      "nl": "Goudgrijp",
+      "kind": "place",
+      "first_chapter": 3,
+      "note": "Official Dutch. 'Gringotts Bank' on the doors = 'Bank Goudgrijp'; 'the bank of the wizarding world'."
+    },
+    {
+      "en": "Godric's Hollow",
+      "nl": "Goderics Eind",
+      "kind": "place",
+      "first_chapter": 3,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Bigbam's Brilliant Books",
+      "nl": "Bigbams Briljante Boeken",
+      "kind": "place",
+      "first_chapter": 3,
+      "note": "HPMOR-original shop; alliteration kept."
+    },
+    {
+      "en": "Moke Shop",
+      "nl": "de Mokewinkel",
+      "kind": "place",
+      "first_chapter": 5,
+      "note": "HPMOR-original."
+    },
+    {
+      "en": "Madam Malkin's Robes",
+      "nl": "Madame Mallekins Gewaden",
+      "kind": "place",
+      "first_chapter": 5,
+      "note": "Official shop: 'Madame Mallekin — Gewaden voor Alle Gelegenheden'. Short: 'bij madame Mallekin'."
+    },
+    {
+      "en": "Flourish and Blotts",
+      "nl": "Klieder & Vlek",
+      "kind": "place",
+      "first_chapter": 6,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Azkaban",
+      "nl": "Azkaban",
+      "kind": "place",
+      "first_chapter": 6,
+      "note": "'Wizarding prison.' = 'De tovenaarsgevangenis.'"
+    },
+    {
+      "en": "Mount Doom",
+      "nl": "de Doemberg",
+      "kind": "place",
+      "first_chapter": 6,
+      "note": "Dutch LotR. Family of 'Doom' renderings: Crack of Doom = de Doemspleet (ch 3), Look of Doom = de Blik des Doems (ch 6), House of Doom = Afdeling des Doems (ch 10)."
+    },
+    {
+      "en": "Platform Nine and Three-Quarters",
+      "nl": "Perron 9¾",
+      "kind": "place",
+      "first_chapter": 7,
+      "note": "In dialogue spelled out: 'Perron Negen Driekwart'. Narration may use 'Perron 9¾'. 'King's Cross Station' = 'station King's Cross', 'Platform Nine' = 'perron negen'.",
+      "nl_forms": [
+        "Perron Negen Driekwart",
+        "Perron Negen-en-Driekwart"
+      ]
+    },
+    {
+      "en": "Hogwarts Express",
+      "nl": "de Zweinsteinexpres",
+      "kind": "object",
+      "first_chapter": 7,
+      "note": "Not named in ch 7-8 (only 'the train', 'the scarlet steam engine'); do not name it before the source does."
+    },
+    {
+      "en": "St Mungo's",
+      "nl": "St. Holisto's",
+      "kind": "place",
+      "first_chapter": 7,
+      "note": "Official Dutch (St. Holisto's Hospitaal voor Magische Ziektes en Zwaktes)."
+    },
+    {
+      "en": "Wizengamot",
+      "nl": "de Wikenweegschaar",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Official Dutch. 'a Wizengamot vote' = 'een stemming in de Wikenweegschaar'; 'Father has the votes' = 'Vader heeft de stemmen'."
+    },
+    {
+      "en": "Ministry of Magic",
+      "nl": "het Ministerie van Toverkunst",
+      "kind": "place",
+      "first_chapter": 6,
+      "note": "Official Dutch. In ch 6 only 'the Ministry' = 'het Ministerie'.",
+      "nl_forms": [
+        "het Ministerie"
+      ]
+    },
+    {
+      "en": "Great Hall",
+      "nl": "de Grote Zaal",
+      "kind": "place",
+      "first_chapter": 9,
+      "note": "Official Dutch. Ch 9 says only 'the hall' = 'de zaal'."
+    },
+    {
+      "en": "Head Table",
+      "nl": "de Oppertafel",
+      "kind": "place",
+      "first_chapter": 9,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Privet Drive",
+      "nl": "Ligusterlaan",
+      "kind": "place",
+      "first_chapter": null,
+      "note": "Official Dutch; not in ch 1-10 (Harry grows up in Oxford)."
+    },
+    {
+      "en": "Hogsmeade",
+      "nl": "Zweinsveld",
+      "kind": "place",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Knockturn Alley",
+      "nl": "de Verdonkeremaansteeg",
+      "kind": "place",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Gryffindor",
+      "nl": "Griffoendor",
+      "kind": "house",
+      "first_chapter": 5,
+      "note": "Official Dutch. Students: 'Griffoendors'. House colours red and gold = 'rood en goud'.",
+      "nl_forms": [
+        "Griffoendors",
+        "de afdeling Griffoendor"
+      ]
+    },
+    {
+      "en": "Slytherin",
+      "nl": "Zwadderich",
+      "kind": "house",
+      "first_chapter": 5,
+      "note": "Official Dutch. Students: 'Zwadderaars'. Colours green and silver = 'groen en zilver'.",
+      "nl_forms": [
+        "Zwadderaars",
+        "de afdeling Zwadderich"
+      ]
+    },
+    {
+      "en": "Ravenclaw",
+      "nl": "Ravenklauw",
+      "kind": "house",
+      "first_chapter": 3,
+      "note": "Official Dutch. Students: 'Ravenklauwen'. Adjective use ('the most Ravenclaw thing') = 'Zoiets Ravenklauws heb ik nog nooit gehoord.'",
+      "nl_forms": [
+        "Ravenklauwen",
+        "Ravenklauws",
+        "de afdeling Ravenklauw"
+      ]
+    },
+    {
+      "en": "Hufflepuff",
+      "nl": "Huffelpuf",
+      "kind": "house",
+      "first_chapter": 5,
+      "note": "Official Dutch. Students: 'Huffelpufs'.",
+      "nl_forms": [
+        "Huffelpufs",
+        "de afdeling Huffelpuf"
+      ]
+    },
+    {
+      "en": "House (of Hogwarts)",
+      "nl": "afdeling",
+      "kind": "house",
+      "first_chapter": 5,
+      "note": "Official Dutch uses 'afdeling'. 'Slytherin House' = 'Zwadderich' (bare) or 'de afdeling Zwadderich'; 'House-mate' = 'afdelingsgenoot'; 'Head of House' = 'afdelingshoofd'; 'four houses' = 'vier afdelingen'. The ch 5 pun 'House Hufflepuff, or possibly House Elf' is lost; render as 'Huffelpuf. Of misschien… huis-elf.'",
+      "nl_forms": [
+        "afdelingen",
+        "afdelingsgenoot",
+        "afdelingshoofd"
+      ]
+    },
+    {
+      "en": "House Cup",
+      "nl": "de Afdelingsbeker",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "house points",
+      "nl": "huispunten",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "Per brief. 'deduct points' = 'punten aftrekken'; 'Gryffindor had no points to take away' (ch 9)."
+    },
+    {
+      "en": "Head of Gryffindor House",
+      "nl": "Hoofd van Griffoendor",
+      "kind": "title",
+      "first_chapter": 6,
+      "note": "'Head of Ravenclaw' (ch 9) = 'Hoofd van Ravenklauw'."
+    },
+    {
+      "en": "Headmaster",
+      "nl": "schoolhoofd",
+      "kind": "title",
+      "first_chapter": 6,
+      "note": "Official Dutch. 'Headmistress' (ch 10, McGonagall some day) = also 'schoolhoofd'. Before a name: 'schoolhoofd Perkamentus'.",
+      "nl_forms": [
+        "het schoolhoofd"
+      ]
+    },
+    {
+      "en": "Professor",
+      "nl": "professor",
+      "kind": "title",
+      "first_chapter": 1,
+      "note": "Lowercase before a name and as vocative ('Ja, professor.'). 'Just Professor will do' = 'Zeg maar professor.'"
+    },
+    {
+      "en": "Chief Warlock",
+      "nl": "Hoofd van de Wikenweegschaar",
+      "kind": "title",
+      "first_chapter": 8,
+      "note": "Dumbledore's title in Hermione's book summary. Proposed (official wording uncertain); keep consistent."
+    },
+    {
+      "en": "prefect",
+      "nl": "klassenoudste",
+      "kind": "title",
+      "first_chapter": 8,
+      "note": "Official Dutch. 'the prefects' carriage' = 'de wagon van de klassenoudsten'. Neville's stammer: 'k-klassenoudste'.",
+      "nl_forms": [
+        "klassenoudsten"
+      ]
+    },
+    {
+      "en": "Head Boy",
+      "nl": "Hoofdmonitor",
+      "kind": "title",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "first-year",
+      "nl": "eerstejaars",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "Singular and plural 'eerstejaars'; 'a first-year girl' = 'een eerstejaars meisje'; 'third-year' = 'derdejaars', 'seventh-year textbooks' = 'boeken voor zevendejaars'."
+    },
+    {
+      "en": "Auror",
+      "nl": "Schouwer",
+      "kind": "title",
+      "first_chapter": 3,
+      "note": "Official Dutch. Doris's grandson (ch 3); 'the Aurors' (ch 7).",
+      "nl_forms": [
+        "Schouwers"
+      ]
+    },
+    {
+      "en": "Healer",
+      "nl": "Heler",
+      "kind": "title",
+      "first_chapter": 6,
+      "note": "Official Dutch for wizard doctors. But 'healer's kit' / 'first-aid kit' / 'medical kit' (ch 6) all = 'EHBO-set' (plain, A2)."
+    },
+    {
+      "en": "Seeker",
+      "nl": "Zoeker",
+      "kind": "title",
+      "first_chapter": 7,
+      "note": "Official Dutch Quidditch position.",
+      "nl_forms": [
+        "Zoekers"
+      ]
+    },
+    {
+      "en": "Keeper of Keys and Grounds",
+      "nl": "Sleutelbewaarder en Terreinknecht",
+      "kind": "title",
+      "first_chapter": 9,
+      "note": "Official Dutch, Hagrid."
+    },
+    {
+      "en": "Dark Lord",
+      "nl": "de Heer van het Duister",
+      "kind": "title",
+      "first_chapter": 3,
+      "note": "Official Dutch. Plural (ch 9 'some more Dark Lords') = 'Duistere Heren'; 'a potential Dark Lord' (ch 10) = 'een potentiële Heer van het Duister'; 'Dark Wizard' = 'Duistere Tovenaar'.",
+      "nl_forms": [
+        "Duistere Heren",
+        "Duistere Tovenaar"
+      ]
+    },
+    {
+      "en": "You-Know-Who",
+      "nl": "Jeweetwel",
+      "kind": "title",
+      "first_chapter": 3,
+      "note": "Official Dutch, one word, capital J."
+    },
+    {
+      "en": "He-Who-Must-Not-Be-Named",
+      "nl": "Hij-Die-Niet-Genoemd-Mag-Worden",
+      "kind": "title",
+      "first_chapter": 3,
+      "note": "Official Dutch. Hermione's aside (ch 8) 'though I don't know why not' = 'al weet ik niet waarom niet'."
+    },
+    {
+      "en": "Boy-Who-Lived",
+      "nl": "de Jongen Die Bleef Leven",
+      "kind": "title",
+      "first_chapter": 6,
+      "note": "Official Dutch. 'the whole Boy-Who-Lived thing' = 'dat hele Jongen-Die-Bleef-Leven-gedoe'. Headline (ch 7) drops the article: 'Jongen Die Bleef Leven Maakt Draco Malfidus Zwanger'."
+    },
+    {
+      "en": "Death Eaters",
+      "nl": "Dooddoeners",
+      "kind": "term",
+      "first_chapter": 3,
+      "note": "Official Dutch. Singular 'Dooddoener'. Harry's joke 'the Death Eater Eaters' (ch 6) = 'de Dooddoeners-Dooddoeners'.",
+      "nl_forms": [
+        "Dooddoener"
+      ]
+    },
+    {
+      "en": "Dark Mark",
+      "nl": "het Duistere Teken",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "the Light",
+      "nl": "het Licht",
+      "kind": "term",
+      "first_chapter": 5,
+      "note": "'great warrior of the Light' = 'grote strijder van het Licht'; 'symbol of the Light' (ch 9) = 'symbool van het Licht'; 'wizard of Light' (ch 10) = 'tovenaar van het Licht'."
+    },
+    {
+      "en": "Noble and Most Ancient House of Black",
+      "nl": "het Edele en Oeroude Huis Zwarts",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "'a Noble House' = 'een Edel Huis'. Here 'House' = family, so 'Huis' (not 'afdeling')."
+    },
+    {
+      "en": "witch",
+      "nl": "heks",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "Core term, never glossed. Narration labels for McGonagall: 'de heks', 'de oudere heks', 'de heksendame' (Harry's childish 'witch-lady').",
+      "nl_forms": [
+        "heksen",
+        "de heksendame"
+      ]
+    },
+    {
+      "en": "wizard",
+      "nl": "tovenaar",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "Core term, never glossed.",
+      "nl_forms": [
+        "tovenaars"
+      ]
+    },
+    {
+      "en": "magic",
+      "nl": "magie",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "Noun. Verb 'to do magic' = 'toveren'. The one-word answer 'Magic.' (McGonagall ch 2, ch 6; Harry ch 6) is always 'Magie.'"
+    },
+    {
+      "en": "wizarding world",
+      "nl": "de tovenaarswereld",
+      "kind": "term",
+      "first_chapter": 3,
+      "note": "Adjective 'wizarding' = 'tovenaars-' compounds: tovenaarseconomie, tovenaarsgevangenis, tovenaarsgoud, tovenaarsschool."
+    },
+    {
+      "en": "wizarding Britain / magical Britain",
+      "nl": "magisch Brittannië",
+      "kind": "term",
+      "first_chapter": 3,
+      "note": "Both English variants map to this one form; 'de Britse tovenaarswereld' allowed when a longer phrase reads better."
+    },
+    {
+      "en": "Muggle",
+      "nl": "Dreuzel",
+      "kind": "term",
+      "first_chapter": 4,
+      "note": "Official Dutch, capitalised. Compounds: Dreuzelwereld, Dreuzelwetenschap, Dreuzelkleren, Dreuzeleconomie, Dreuzelgeld. Gloss at first occurrence per chapter.",
+      "nl_forms": [
+        "Dreuzels",
+        "Dreuzel-"
+      ]
+    },
+    {
+      "en": "Muggle-born",
+      "nl": "Dreuzelgeboren",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "Transparent coinage chosen over official 'Dreuzeltelg' (opaque for an A2 reader). 'Muggle-raised' (Harry) = 'door Dreuzels opgevoed'."
+    },
+    {
+      "en": "Squib",
+      "nl": "Snul",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Official Dutch.",
+      "nl_forms": [
+        "Snullen"
+      ]
+    },
+    {
+      "en": "Mudblood",
+      "nl": "Modderbloedje",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Official Dutch. Draco: 'You son of a mudblood!' = 'Jij zoon van een Modderbloedje!'; 'the mudblood taint' = 'de Modderbloedsmet'."
+    },
+    {
+      "en": "blood purist / blood purity",
+      "nl": "bloedpurist / bloedzuiverheid",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "HPMOR-frequent; coined compounds, gloss once."
+    },
+    {
+      "en": "pure-blood",
+      "nl": "volbloed",
+      "kind": "term",
+      "first_chapter": null,
+      "note": "Official Dutch; not yet used in ch 1-10."
+    },
+    {
+      "en": "half-blood",
+      "nl": "halfbloed",
+      "kind": "term",
+      "first_chapter": 9,
+      "note": "In ch 9 the slur 'halfbreed' (about Flitwick) = 'halfbloed'."
+    },
+    {
+      "en": "goblin",
+      "nl": "kobold",
+      "kind": "term",
+      "first_chapter": 4,
+      "note": "Official Dutch. 'goblin coin' = 'koboldmunten'; 'goblin ancestry' = 'koboldbloed'.",
+      "nl_forms": [
+        "kobolden"
+      ]
+    },
+    {
+      "en": "Animagus",
+      "nl": "Faunaat",
+      "kind": "term",
+      "first_chapter": 2,
+      "note": "Official Dutch. 'An Animagus transformation' = 'een Faunaat-transformatie'."
+    },
+    {
+      "en": "Transfiguration",
+      "nl": "Gedaanteverwisseling",
+      "kind": "term",
+      "first_chapter": 2,
+      "note": "Official subject name 'Gedaanteverwisselingen'. 'It's only a Transfiguration' = 'Het is maar een Gedaanteverwisseling.' Gloss once."
+    },
+    {
+      "en": "Potions",
+      "nl": "Toverdranken",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "Subject/shop: 'de Toverdrankenwinkel'. Single 'potion' = 'toverdrank' (ch 1, Petunia's potion)."
+    },
+    {
+      "en": "Charms (subject)",
+      "nl": "Bezweringen",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "'people invent new Charms and Potions' = 'nieuwe Bezweringen en Toverdranken'. A single named Charm ends in '-spreuk'."
+    },
+    {
+      "en": "Charm / spell",
+      "nl": "spreuk",
+      "kind": "spell",
+      "first_chapter": 2,
+      "note": "Generic. 'toverspreuk' for the first, full mention; 'spreuk' afterwards and in compounds (Terughaalspreuk, Geheugenspreuk). 'cast a spell' = 'een spreuk uitspreken' / 'toveren'."
+    },
+    {
+      "en": "Defence Against the Dark Arts",
+      "nl": "Verweer tegen de Zwarte Kunsten",
+      "kind": "term",
+      "first_chapter": 3,
+      "note": "Official Dutch. 'the Dark Arts' = 'de Zwarte Kunsten'."
+    },
+    {
+      "en": "Arithmancy",
+      "nl": "Voorspellend Rekenen",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "Official Dutch. The joke (seventh-year books use nothing beyond trigonometry) survives."
+    },
+    {
+      "en": "Herbology",
+      "nl": "Kruidenkunde",
+      "kind": "term",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Killing Curse",
+      "nl": "de Vloek des Doods",
+      "kind": "spell",
+      "first_chapter": 3,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Avada Kedavra",
+      "nl": "Avada Kedavra",
+      "kind": "spell",
+      "first_chapter": null,
+      "note": "Unchanged."
+    },
+    {
+      "en": "Imperius Curse / Imperio",
+      "nl": "de Imperiusvloek / Imperio",
+      "kind": "spell",
+      "first_chapter": 7,
+      "note": "Incantations stay Latin. 'casting Imperio on someone' = 'Imperio op iemand uitspreken'."
+    },
+    {
+      "en": "Cruciatus",
+      "nl": "Cruciatus",
+      "kind": "spell",
+      "first_chapter": null,
+      "note": "Not named in ch 1-10; Harry's slip 'c-crucify' (ch 7) = 'k-kruisigen' (stammer kept, the Cruciatus hint is faint in both languages)."
+    },
+    {
+      "en": "Unforgivable Curses",
+      "nl": "Onvergeeflijke Vloeken",
+      "kind": "spell",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Confundus Charm",
+      "nl": "Confundusspreuk",
+      "kind": "spell",
+      "first_chapter": 5,
+      "note": "McGonagall: 'cast a Confundus Charm on the entire universe' = 'een Confundusspreuk over het hele universum'."
+    },
+    {
+      "en": "Obliviation / Memory Charm",
+      "nl": "de Geheugenspreuk",
+      "kind": "spell",
+      "first_chapter": 6,
+      "note": "Noun. Verb forms: 'to be Obliviated' = 'je geheugen laten wissen' / 'zijn geheugen is gewist' (no passive 'worden'). 'False Memory Charm' (ch 7) = 'Valse-Herinneringsspreuk'. 'Obliviator' = 'Vergetelaar' (later)."
+    },
+    {
+      "en": "Veritaserum",
+      "nl": "Veritaserum",
+      "kind": "spell",
+      "first_chapter": 7,
+      "note": "Unchanged."
+    },
+    {
+      "en": "Wingardium Leviosa",
+      "nl": "Wingardium Leviosa",
+      "kind": "spell",
+      "first_chapter": 2,
+      "note": "Unchanged; italic as in source."
+    },
+    {
+      "en": "Apparate",
+      "nl": "Verschijnselen",
+      "kind": "spell",
+      "first_chapter": 7,
+      "note": "Official Dutch verb (capital V as in canon). 'You can't Apparate to somewhere you've never been' = 'Je kunt niet Verschijnselen naar een plek waar je nooit bent geweest' — relative clause allowed as a fixed world rule, or split."
+    },
+    {
+      "en": "Floo system",
+      "nl": "het Brandstofnetwerk",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Derived from official 'Brandstof' (Floo powder). Official network name uncertain; keep this form."
+    },
+    {
+      "en": "Floo powder",
+      "nl": "brandstof",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Dementor",
+      "nl": "Dementor",
+      "kind": "term",
+      "first_chapter": 6,
+      "note": "In ch 6 only inside 'Dementor Exposure Treatment' = 'Behandeling na Dementor-contact' (looks and smells like chocolate).",
+      "nl_forms": [
+        "Dementors"
+      ]
+    },
+    {
+      "en": "Patronus",
+      "nl": "Patronus",
+      "kind": "spell",
+      "first_chapter": null,
+      "note": "Unchanged."
+    },
+    {
+      "en": "Time-Turner",
+      "nl": "Tijdverdrijver",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Occlumency / Legilimency",
+      "nl": "Occlumentie / Legilimentie",
+      "kind": "term",
+      "first_chapter": null,
+      "note": "Official Dutch. Ch 10 only hints: 'Some wizards can read your thoughts if you meet their eyes'."
+    },
+    {
+      "en": "Polyjuice",
+      "nl": "Wisseldrank",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Horcrux",
+      "nl": "Gruzielement",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Pensieve",
+      "nl": "Hersenpan",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Invisibility Cloak",
+      "nl": "Onzichtbaarheidsmantel",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Marauder's Map",
+      "nl": "Sluipwegwijzer",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Daily Prophet",
+      "nl": "de Ochtendprofeet",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "The Quibbler",
+      "nl": "De Kibbelaar",
+      "kind": "object",
+      "first_chapter": 7,
+      "note": "Official Dutch. Italic as a title."
+    },
+    {
+      "en": "wand",
+      "nl": "toverstok",
+      "kind": "object",
+      "first_chapter": 1,
+      "note": "Gloss once per chapter. 'brother wand' = 'broederstok' / 'de broer van deze toverstok'; 'wandless' = 'zonder toverstok'.",
+      "nl_forms": [
+        "toverstokken"
+      ]
+    },
+    {
+      "en": "robes",
+      "nl": "gewaad",
+      "kind": "object",
+      "first_chapter": 1,
+      "note": "Singular 'gewaad' for one person's robes; 'black robes' = 'zwarte gewaden' only for several people. 'school robes' = 'schoolgewaad'. Gloss once per chapter. Ch 1 epigraph: '(black robes, falling)' = '(zwarte gewaden, vallend)' — plural, decided by the cohesion editor (bible: Spoilers); the in-text repetition of the epigraph must reuse these exact words.",
+      "nl_forms": [
+        "gewaden",
+        "schoolgewaad"
+      ]
+    },
+    {
+      "en": "cauldron",
+      "nl": "ketel",
+      "kind": "object",
+      "first_chapter": 2,
+      "note": "'put babies into cauldrons' = 'baby's in ketels stoppen'."
+    },
+    {
+      "en": "broomstick",
+      "nl": "bezemsteel",
+      "kind": "object",
+      "first_chapter": 7,
+      "note": "'on a broom' (Draco) = 'op een bezem'."
+    },
+    {
+      "en": "owl",
+      "nl": "uil",
+      "kind": "object",
+      "first_chapter": 1,
+      "note": "'Can I get an owl?' = 'Mag ik een uil?'; 'they want my owl' (reply) = 'ze willen mijn uil'."
+    },
+    {
+      "en": "parchment",
+      "nl": "perkament",
+      "kind": "object",
+      "first_chapter": 1,
+      "note": "Gloss once per chapter."
+    },
+    {
+      "en": "trunk",
+      "nl": "hutkoffer",
+      "kind": "object",
+      "first_chapter": 4,
+      "note": "Official Dutch for the school trunk. Harry's trunk has a 'cavern level' = 'kelderverdieping' and 'small clawed tentacles' = 'kleine tentakels met klauwtjes'. Gloss once."
+    },
+    {
+      "en": "mokeskin pouch",
+      "nl": "buidel van mokehuid",
+      "kind": "object",
+      "first_chapter": 4,
+      "note": "Full form at first mention per chapter (gloss 'buidel'); afterwards 'de buidel'. 'his pouch' = 'zijn buidel'.",
+      "nl_forms": [
+        "de buidel",
+        "mokehuid"
+      ]
+    },
+    {
+      "en": "Moke Super Pouch QX31",
+      "nl": "Moke Superbuidel QX31",
+      "kind": "object",
+      "first_chapter": 5,
+      "note": "Keep the \\abbrev{QX31} macro."
+    },
+    {
+      "en": "Widening Lip",
+      "nl": "Rekbare Rand",
+      "kind": "object",
+      "first_chapter": 5,
+      "note": "HPMOR-original feature of the pouch; capitalised like a product feature."
+    },
+    {
+      "en": "Undetectable Extension Charm",
+      "nl": "Onopspoorbare Uitbreidingsspreuk",
+      "kind": "spell",
+      "first_chapter": 4,
+      "note": "Official Dutch (DH). Long; gloss once, then 'de Uitbreidingsspreuk'."
+    },
+    {
+      "en": "Retrieval Charm",
+      "nl": "Terughaalspreuk",
+      "kind": "spell",
+      "first_chapter": 4,
+      "note": "HPMOR-original coinage."
+    },
+    {
+      "en": "Bag of Holding",
+      "nl": "Bag of Holding",
+      "kind": "object",
+      "first_chapter": 6,
+      "note": "D&D term; Dutch players use the English. Keep English, italic, gloss once ('toverzak met oneindige ruimte')."
+    },
+    {
+      "en": "Emergency Healing Pack Plus",
+      "nl": "Nood-Heelpakket Plus",
+      "kind": "object",
+      "first_chapter": 6,
+      "note": "Brand name of the kit; generic references = 'EHBO-set'."
+    },
+    {
+      "en": "Gillyweed",
+      "nl": "Kieuwwier",
+      "kind": "object",
+      "first_chapter": 6,
+      "note": "Official Dutch (GoF). The other one-off purchases in ch 6: 'Feather-Falling Potion' = 'Veerval-Drank', 'Food and Water Pills' = 'Eten-en-Drinken-Pillen', 'Bafflesnaffle Counter' = 'Baffelsnaffel-Teller'; ch 3 'Bounce Boots' = 'Stuiterlaarzen'."
+    },
+    {
+      "en": "Comed-Tea",
+      "nl": "Komedie-Thee",
+      "kind": "object",
+      "first_chapter": 7,
+      "note": "DECISION: translate the pun. 'Komedie-Thee' sounds like 'komedie' and keeps 'thee', so the author's 'lungs and tea' joke and the oddity of fizzy tea in a can both survive; gloss once '(Comed-Tea)'. Alternative rejected: keeping 'Comed-Tea' hides the pun from a Dutch reader.",
+      "nl_forms": [
+        "een blikje Komedie-Thee"
+      ]
+    },
+    {
+      "en": "Quidditch",
+      "nl": "Zwerkbal",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Snitch",
+      "nl": "de Snaai",
+      "kind": "object",
+      "first_chapter": 7,
+      "note": "Official Dutch 'Gouden Snaai'. Harry's 'Snitchless Reformation' = 'de Snaailoze Reformatie'."
+    },
+    {
+      "en": "Chudley Cannons",
+      "nl": "de Chudley Cannons",
+      "kind": "term",
+      "first_chapter": 7,
+      "note": "Team name unchanged; 'Mr Cannon' = 'meneer Cannon'."
+    },
+    {
+      "en": "Chocolate Frog",
+      "nl": "Chocokikker",
+      "kind": "object",
+      "first_chapter": 8,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Galleon",
+      "nl": "Galjoen",
+      "kind": "currency",
+      "first_chapter": 4,
+      "note": "Official Dutch. Gold. 'twenty Galleons' = 'twintig Galjoenen'.",
+      "nl_forms": [
+        "Galjoenen"
+      ]
+    },
+    {
+      "en": "Sickle",
+      "nl": "Sikkel",
+      "kind": "currency",
+      "first_chapter": 4,
+      "note": "Official Dutch. Silver; seventeen to a Galleon.",
+      "nl_forms": [
+        "Sikkels"
+      ]
+    },
+    {
+      "en": "Knut",
+      "nl": "Knoet",
+      "kind": "currency",
+      "first_chapter": 4,
+      "note": "Official Dutch. Bronze. 'Five Knuts the can' = 'Vijf Knoeten per blikje'.",
+      "nl_forms": [
+        "Knoeten"
+      ]
+    },
+    {
+      "en": "Hogwarts: A History",
+      "nl": "Zweinstein: Een Geschiedenis",
+      "kind": "object",
+      "first_chapter": 8,
+      "note": "Official Dutch. The intentional misspelling 'History: A Hogwarts' at the end of ch 8 = 'Geschiedenis: Een Zweinstein'."
+    },
+    {
+      "en": "Modern Magical History",
+      "nl": "Moderne Magische Geschiedenis",
+      "kind": "object",
+      "first_chapter": 8,
+      "note": "Book title, italic."
+    },
+    {
+      "en": "The Rise and Fall of the Dark Arts",
+      "nl": "De Opkomst en Ondergang van de Zwarte Kunsten",
+      "kind": "object",
+      "first_chapter": 8,
+      "note": "Official Dutch."
+    },
+    {
+      "en": "Great Wizarding Events of the Twentieth Century",
+      "nl": "Grote Magische Gebeurtenissen van de Twintigste Eeuw",
+      "kind": "object",
+      "first_chapter": 8,
+      "note": "Book title."
+    },
+    {
+      "en": "Magical Drafts and Potions",
+      "nl": "Toverdranken en Magische Brouwsels",
+      "kind": "object",
+      "first_chapter": 8,
+      "note": "By Arsenius Jigger. Proposed rendering; keep consistent."
+    },
+    {
+      "en": "A History of Magic",
+      "nl": "Geschiedenis van de Toverkunst",
+      "kind": "object",
+      "first_chapter": null,
+      "note": "Official Dutch (Bathilda Bagshot)."
+    },
+    {
+      "en": "Sorting / to be Sorted",
+      "nl": "de Sorteerceremonie / sorteren",
+      "kind": "term",
+      "first_chapter": 5,
+      "note": "No passive: 'be Sorted into Gryffindor' = 'in Griffoendor komen' or 'de Hoed stuurt je naar Griffoendor'; 'the Hat Sorts the children' = 'de Hoed sorteert de kinderen'. House shouts in caps: ZWADDERICH! RAVENKLAUW! HUFFELPUF! GRIFFOENDOR!"
+    },
+    {
+      "en": "Order of Chaos",
+      "nl": "de Orde van de Chaos",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "Harry + the twins. Neville's 'Lords of Chaos' (ch 8) = 'de Heren van de Chaos'."
+    },
+    {
+      "en": "Weasley Horrors",
+      "nl": "de Wemel-Gruwelen",
+      "kind": "phrase",
+      "first_chapter": 9,
+      "note": "McGonagall's private name for the twins."
+    },
+    {
+      "en": "the scientific method",
+      "nl": "de wetenschappelijke methode",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Refrain; always this form. 'the experimental method' = 'de experimentele methode'."
+    },
+    {
+      "en": "hypothesis",
+      "nl": "hypothese",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "NOT glossed: 'hypothese' is on the cognates list in exceptions.json (treated as known), which overrides the older 'gloss once' rule — ch 1 uses it bare. 'test the hypothesis' = 'de hypothese testen'; 'testable hypothesis' = 'testbare hypothese'; 'experimental test' = 'experimentele test'; 'falsify / falsification' = 'weerleggen' / 'weerlegging' (gloss once per chapter); 'null hypothesis' (ch 8) = 'nulhypothese'; 'alternative explanation' = 'andere verklaring'; 'evidence' = 'bewijs' (see exceptions.json).",
+      "nl_forms": [
+        "hypotheses"
+      ]
+    },
+    {
+      "en": "Conservation of Energy",
+      "nl": "de Wet van Behoud van Energie",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "Standard Dutch physics term; Harry shouts it at the cat."
+    },
+    {
+      "en": "Bayesian / Bayes's Theorem",
+      "nl": "Bayesiaans / de stelling van Bayes",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "'Bayesian probability theory' (ch 8) = 'Bayesiaanse kansrekening'."
+    },
+    {
+      "en": "probability",
+      "nl": "waarschijnlijkheid",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "In titles and Harry's register. Everyday 'chance' = 'kans'; 'improbable' = 'onwaarschijnlijk'. Ch 1 decision: the chapter heading is set in letterspaced capitals, so 'waarschijnlijkheid' is NOT glossed in the title; the gloss sits on the first body occurrence of the family ('onwaarschijnlijk' → improbable, b049). Gloss once per chapter in body text."
+    },
+    {
+      "en": "the planning fallacy",
+      "nl": "de planningsfout",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "Chapter 6 title. 'outside view / inside view' = 'de blik van buiten / de blik van binnen'."
+    },
+    {
+      "en": "the fundamental attribution error",
+      "nl": "de fundamentele attributiefout",
+      "kind": "phrase",
+      "first_chapter": 5,
+      "note": "Chapter 5 title; standard Dutch psychology term."
+    },
+    {
+      "en": "the efficient market hypothesis",
+      "nl": "de efficiënte-markthypothese",
+      "kind": "phrase",
+      "first_chapter": 4,
+      "note": "Chapter 4 title; standard Dutch economics term. 'arbitrage' and 'seigniorage' stay as Harry's jargon."
+    },
+    {
+      "en": "positive bias",
+      "nl": "positieve bias",
+      "kind": "phrase",
+      "first_chapter": 8,
+      "note": "Chapter 8 title; 'the 2-4-6 task' = 'de 2-4-6-taak'."
+    },
+    {
+      "en": "reciprocation",
+      "nl": "wederkerigheid",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "Chapter 7 title; standard Dutch Cialdini term."
+    },
+    {
+      "en": "self-awareness",
+      "nl": "zelfbewustzijn",
+      "kind": "phrase",
+      "first_chapter": 9,
+      "note": "Chapter 9-10 title 'Self Awareness' = 'Zelfbewustzijn'; 'self-aware' = 'zelfbewust'; 'aware of its own awareness' = 'zich bewust van zijn eigen bewustzijn'."
+    },
+    {
+      "en": "bystander effect",
+      "nl": "het omstandereffect",
+      "kind": "phrase",
+      "first_chapter": 3,
+      "note": "Standard Dutch. 'bystander apathy' (ch 8) = 'de apathie van omstanders'; 'diffusion of responsibility' = 'verdeling van verantwoordelijkheid'."
+    },
+    {
+      "en": "consequentialism",
+      "nl": "consequentialisme",
+      "kind": "phrase",
+      "first_chapter": 8,
+      "note": "Harry's lecture to Hermione."
+    },
+    {
+      "en": "rationalist / rationality",
+      "nl": "rationalist / rationaliteit",
+      "kind": "phrase",
+      "first_chapter": 3,
+      "note": "'your art as a rationalist' = 'je kunst als rationalist'. 'the fundamental question of rationality' (ch 7) = 'de fundamentele vraag van de rationaliteit'."
+    },
+    {
+      "en": "Why do you believe what you believe?",
+      "nl": "Waarom geloof je wat je gelooft?",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Fixed refrain (ch 1 to his brain, ch 7 to Draco). The 'wat'-clause is a fixed quote, allowed. First-person form (ch 1 b053, italic): 'Waarom geloof ik wat ik geloof?'; second-person form (ch 7): 'Waarom geloof je wat je gelooft?'. Same verb, same order both times.",
+      "nl_forms": [
+        "Waarom geloof ik wat ik geloof?"
+      ]
+    },
+    {
+      "en": "genetic parents",
+      "nl": "genetische ouders",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Harry's tic; always literal, italic where the source italicises 'genetic'."
+    },
+    {
+      "en": "world domination / world optimisation",
+      "nl": "wereldheerschappij / wereldoptimalisatie",
+      "kind": "phrase",
+      "first_chapter": 4,
+      "note": "Epigraph ch 4, spoken ch 6. 'take over the world' = 'de wereld veroveren'; 'world conquest' = 'wereldverovering'; 'take over the universe' (ch 8) = 'het heelal veroveren'."
+    },
+    {
+      "en": "sane / sanity",
+      "nl": "gezond verstand / bij zijn verstand",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "'crazy adults' = 'gekke volwassenen'; 'the sanest adult' = 'de volwassene met het meeste gezonde verstand'; 'so sane it burns like ice' (ch 7) = 'zo goed bij mijn verstand dat het brandt als ijs'."
+    },
+    {
+      "en": "the coldness (Harry's cold anger)",
+      "nl": "de kou",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "Motif: 'his blood went cold' = 'zijn bloed werd koud'; 'icy' = 'ijzig'; 'dark clarity' = 'donkere helderheid'; ch 10 'strengthen your coldness / warmth' = 'je kou / je warmte versterken'. Never soften."
+    },
+    {
+      "en": "mysterious wise old wizard",
+      "nl": "mysterieuze wijze oude tovenaar",
+      "kind": "phrase",
+      "first_chapter": 9,
+      "note": "Ch 9 'Wise Old Man' = 'Wijze Oude Man' (capitals kept)."
+    },
+    {
+      "en": "Mr Potter",
+      "nl": "meneer Potter",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "McGonagall's spoken address, with 'je'. When she avoids it in public (ch 6) she says 'young man' = 'jongeman'. The written address on the envelope is a different form: see 'Mr H. Potter (envelope)'."
+    },
+    {
+      "en": "Mr H. Potter (envelope / written address)",
+      "nl": "de heer~H.~Potter",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "The address written on the Hogwarts envelope (ch 1 b013, italic as in source) and quoted in Harry's letter (b064: 'uw brief aan de heer~H.~Potter'). Written Dutch address form; 'meneer' is only for spoken address. Keep the ties.",
+      "nl_forms": [
+        "de heer Potter"
+      ]
+    },
+    {
+      "en": "that look",
+      "nl": "die blik",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "Italic as in source. Relatives: 'the Evil Eye' = 'het Boze Oog', 'the Look of Doom' = 'de Blik des Doems', 'Wrongdoing Face' = 'het Je-Hebt-Iets-Fout-Gedaan-Gezicht' (ch 6)."
+    },
+    {
+      "en": "Be prepared!",
+      "nl": "Wees voorbereid!",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "Tom Lehrer song lines sung by Harry's parents. Same root as the dying classmate's 'Why weren't you prepared?' = 'Waarom was je niet voorbereid?' — keep the echo."
+    },
+    {
+      "en": "the Incident with the Science Project / at the Potions Shop",
+      "nl": "het Incident met het Wetenschapsproject / het Incident in de Toverdrankenwinkel",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "Capital I as in source; the Potions-shop incident is never described."
+    },
+    {
+      "en": "You can never have enough books",
+      "nl": "Je kunt nooit genoeg boeken hebben.",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "The Verres family motto; fixed. 'the family rule' (ch 3, bookshops) = 'de familieregel'."
+    },
+    {
+      "en": "Mr Spoo / Mr Cannon / Mr Black / Mr Silver / Mr Gold / Mr Bronze",
+      "nl": "meneer Spoo / meneer Cannon / meneer Zwarts / meneer Zilver / meneer Goud / meneer Brons",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "Harry's aliases on the platform. 'Zwarts' works because Harry looks at his black robes and because it is Sirius Zwarts's name."
+    },
+    {
+      "en": "flawless instrument of death / one weak point",
+      "nl": "een perfect instrument van de dood / zijn enige zwakke plek",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "Said by Harry, quoted verbatim in Draco's letter; both occurrences identical."
+    },
+    {
+      "en": "I don't bite anyone who doesn't bite me first",
+      "nl": "Ik bijt niemand die mij niet eerst bijt.",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "Ch 2 to McGonagall, ch 8 to Hermione; identical both times (fixed callback, relative clause allowed)."
+    },
+    {
+      "en": "Clever kids in Ravenclaw, evil kids in Slytherin, wannabe heroes in Gryffindor, and everyone who does the actual work in Hufflepuff.",
+      "nl": "Slimme kinderen in Ravenklauw, slechte kinderen in Zwadderich, wannabe-helden in Griffoendor, en iedereen die het echte werk doet in Huffelpuf.",
+      "kind": "phrase",
+      "first_chapter": 9,
+      "note": "Harry's thought in ch 9, quoted back by the Hat in ch 10; identical."
+    },
+    {
+      "en": "You sly little bastard",
+      "nl": "Jij sluwe kleine schoft",
+      "kind": "phrase",
+      "first_chapter": 10,
+      "note": "Hat to Harry, then Harry to Hat; identical."
+    },
+    {
+      "en": "What.",
+      "nl": "Wat.",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Last line of ch 1: flat full stop, no question mark. Also 'Huh.' = 'Huh.' (ch 2, ch 7), 'Oops.' = 'Oeps.' (ch 10), 'Aw crap.' = 'Verdorie.' (ch 6, twice, identical)."
+    },
+    {
+      "en": "brain (Harry's)",
+      "nl": "brein",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "Always 'brein' (singular), never 'hersenen': Harry addresses his brain as an agent ('Waar kom jij vandaan…', 'Mijn brein gelooft blijkbaar van wel'). exceptions.json → keep, gloss once per chapter. 'mind' = 'geest' (ch 2), kept distinct from 'brein'.",
+      "nl_forms": [
+        "zijn brein",
+        "mijn brein"
+      ]
+    },
+    {
+      "en": "cold reading",
+      "nl": "cold reading",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Kept in English (Michael's sceptic jargon; the Dutch sceptic literature uses the English term), roman, glossed once: \\gl{cold reading}{guessing from small cues}."
+    },
+    {
+      "en": "magician (stage magician, conjurer)",
+      "nl": "goochelaar",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "Michael's 'trained magician' (ch 1 b019) is a stage performer, so 'goochelaar' (glossed 'stage magician'), never 'tovenaar' — the whole argument is stage magic vs real magic. 'to fake' = 'nadoen'."
+    },
+    {
+      "en": "Show Interest / a Good Parent",
+      "nl": "Belangstelling Tonen / een Goede Ouder",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Harry's sarcastic capitals in the 'how Harry was raised' paragraph (b039); capitals kept exactly as in the source. 'a Doctor teaching biochemistry at Oxford' = 'Een Doctor, docent biochemie in Oxford' (capital D kept, cognate)."
+    },
+    {
+      "en": "acceptance letter / letter of acceptance",
+      "nl": "toelatingsbrief / brief over mijn toelating",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Harry's letter (b064): 'uw brief … over mijn toelating tot Zweinstein' (gloss 'toelating' → acceptance); Mrs Figg (b088): 'je toelatingsbrief van Zweinstein' (glossed 'acceptance letter' — different lemma, so both glosses stay). 'the standard letter' = 'de gewone brief'.",
+      "nl_forms": [
+        "toelating",
+        "toelatingsbrief"
+      ]
+    },
+    {
+      "en": "argument / to argue (the parents)",
+      "nl": "discussie / ruzie",
+      "kind": "phrase",
+      "first_chapter": 1,
+      "note": "Two registers, fixed in ch 1: when Petunia or Harry speak of 'winning an argument' it is 'een discussie winnen' (b030, b041, b042); the narrator's 'those arguments', 'went on fighting' and Harry's 'fight' are 'ruzie' / 'ruziemaken' / 'ruzie maken' (b037, b044–b046, b070). Keep the split."
+    },
+    {
+      "en": "excuse (pretext)",
+      "nl": "smoes",
+      "kind": "term",
+      "first_chapter": 1,
+      "note": "'the most ridiculous excuses' = 'de belachelijkste smoesjes' (glossed 'excuses' at first occurrence, b024); 'a rather suspicious sort of excuse' = 'een nogal verdacht soort smoes'; 'making excuses in advance' = 'maakte vooraf geen smoesjes'. Never 'excuus' (reads as apology).",
+      "nl_forms": [
+        "smoesjes"
+      ]
+    },
+    {
+      "en": "the one with the power to vanquish the Dark Lord",
+      "nl": "degene met de macht om de Heer van het Duister te verslaan",
+      "kind": "phrase",
+      "first_chapter": 5,
+      "note": "McGonagall's ironic murmur (ch 5). Prophecy wording; fixed for reuse in later chapters ('om te' allowed as a fixed quote)."
+    },
+    {
+      "en": "Enlightenment",
+      "nl": "de Verlichting",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "'the Age of Reason' = 'het Tijdperk van de Rede'; 'the March of Reason' (ch 2) = 'de Opmars van de Rede'; 'the Fall from Grace' (ch 7) = 'de Zondeval'; 'the Dark Ages' = 'de Donkere Middeleeuwen'; 'the line of Francis Bacon' = 'de lijn van Francis Bacon'; 'the Baconian project' (ch 8) = 'het Baconiaanse project'."
+    },
+    {
+      "en": "Conscientiousness",
+      "nl": "Zorgvuldigheid",
+      "kind": "phrase",
+      "first_chapter": 7,
+      "note": "Big Five trait, capitalised as in source (ch 7, ch 10)."
+    },
+    {
+      "en": "calculus",
+      "nl": "calculus",
+      "kind": "phrase",
+      "first_chapter": 6,
+      "note": "Kept, gloss once ('hogere wiskunde'); ch 6 and ch 8."
+    }
+  ]
+}

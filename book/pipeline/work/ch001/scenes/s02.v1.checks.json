@@ -1,0 +1,286 @@
+{
+  "scene": "ch001/s02",
+  "version": 1,
+  "file": "work/ch001/scenes/s02.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch001/s02",
+    "version": 1,
+    "tokens": 508,
+    "known_tokens": 505,
+    "known_share": 0.9941,
+    "new_lemmas_unglossed": 3,
+    "new_per_1000": 5.9,
+    "stretch_budget": 4,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "doctor",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b039"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een Doctor, docent biochemie in Oxford, luisterde niet naar het advies van een kleine jongen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "citaat",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b041"
+        ],
+        "glossed": true,
+        "examples": [
+          "Daar staat een citaat: filosofen zeggen heel veel over de absolute voorwaarden voor wetenschap, en het is allemaal fout."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "genetisch",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "genetic"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b039"
+        ],
+        "glossed": true,
+        "examples": [
+          "Ze behandelden hem goed, waarschijnlijk beter dan de meeste genetische vaders hun eigen kinderen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "filosoof",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "philosopher"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b041"
+        ],
+        "glossed": false,
+        "examples": [
+          "Daar staat een citaat: filosofen zeggen heel veel over de absolute voorwaarden voor wetenschap, en het is allemaal fout."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "waarneming",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "observation"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b041"
+        ],
+        "glossed": true,
+        "examples": [
+          "de hoogste rechter is de waarneming."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "beslist",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "definitely",
+          "absolutely"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b041"
+        ],
+        "glossed": false,
+        "examples": [
+          "je beslist dingen met een experiment, niet met een discussie."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b038": {
+        "tokens": 45,
+        "new": [],
+        "glosses": []
+      },
+      "b039": {
+        "tokens": 147,
+        "new": [
+          "doctor"
+        ],
+        "glosses": [
+          "genetische"
+        ]
+      },
+      "b040": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      },
+      "b041": {
+        "tokens": 100,
+        "new": [
+          "beslist",
+          "filosoof"
+        ],
+        "glosses": [
+          "citaat",
+          "waarneming"
+        ]
+      },
+      "b042": {
+        "tokens": 55,
+        "new": [],
+        "glosses": []
+      },
+      "b043": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      },
+      "b044": {
+        "tokens": 29,
+        "new": [],
+        "glosses": []
+      },
+      "b045": {
+        "tokens": 31,
+        "new": [],
+        "glosses": []
+      },
+      "b046": {
+        "tokens": 27,
+        "new": [],
+        "glosses": []
+      },
+      "b047": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b048": {
+        "tokens": 42,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.975,
+      "new_lemmas_per_1000_max": 15,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch001/s02",
+    "version": 1,
+    "sentences": 70,
+    "summary": {
+      "likely": 1,
+      "review": 2,
+      "load": 0
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "Behalve misschien een heel klein beetje",
+        "confidence": 0.85,
+        "note": "conjunction 'Behalve'",
+        "block": "b039",
+        "sent": 12,
+        "sentence": "Behalve misschien een heel klein beetje respect.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "geruststellende",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b046",
+        "sent": 0,
+        "sentence": "“Natuurlijk, Harry,” zei zijn vader, en zijn moeder gaf hem een geruststellende kus.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "na te denken",
+        "confidence": 0.5,
+        "note": "frequent chunk 'proberen te' — reviewer decides",
+        "block": "b047",
+        "sent": 0,
+        "sentence": "Hij deed de deur achter zich dicht en probeerde na te denken.",
+        "level": "review",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verdacht",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b048",
+        "sent": 5,
+        "sentence": "Dat leek een nogal verdacht soort excuus.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

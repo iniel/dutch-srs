@@ -1,0 +1,421 @@
+{
+  "scene": "ch906/s02",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch906/scenes/s02.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch906/s02",
+    "version": 1,
+    "tokens": 278,
+    "known_tokens": 272,
+    "known_share": 0.9784,
+    "new_lemmas_unglossed": 6,
+    "new_per_1000": 21.6,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "5%",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Soms verschilde die verhouding meer dan 5% van het gewicht van zeventien Sikkels tegenover één Galjoen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "gemene",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "competent",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": false,
+        "examples": [
+          "Aan de andere kant: één competente hedgefondsmanager kon waarschijnlijk binnen een week de hele tovenaarswereld bezitten."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "hedgefondsmanager",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": true,
+        "examples": [
+          "Aan de andere kant: één competente hedgefondsmanager kon waarschijnlijk binnen een week de hele tovenaarswereld bezitten."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "primitief",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "primitive"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "volhouden",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to continue",
+          "persevere"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Uiteindelijk kon niemand de vaste prijs van een Galjoen nog volhouden."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "draak",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "dragon"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Draken bewaakten die kluizen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "termijn",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "term",
+          "period"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [
+          "Intussen waren de enorme bergen gouden munten in de kluis van de Potters vast wel genoeg voor zijn behoeften op korte termijn."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "behoeften op korte termijn",
+        "status": "phrase",
+        "cefr": null,
+        "en": [
+          "near-term requirements"
+        ],
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [],
+        "phrase": true,
+        "action": "phrase-glossed",
+        "hint": "multi-word gloss; fine if the phrase is needed, otherwise prefer a plain verb"
+      },
+      {
+        "lemma": "verhouding",
+        "status": "known",
+        "cefr": "B1",
+        "en": [
+          "proportion"
+        ],
+        "count": 2,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "kluis",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "safe",
+          "locker"
+        ],
+        "count": 2,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "bewaken",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to watch over",
+          "to guard"
+        ],
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "behoefte",
+        "status": "known",
+        "cefr": "B1",
+        "en": [
+          "need"
+        ],
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "op",
+        "status": "known",
+        "cefr": "A1",
+        "en": [
+          "used up",
+          "on",
+          "on top"
+        ],
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "kort",
+        "status": "known",
+        "cefr": "A1",
+        "en": [
+          "short"
+        ],
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b031",
+        "scope": "sentence",
+        "new": [
+          "gemene",
+          "primitief"
+        ],
+        "text": "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…"
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b029": {
+        "tokens": 109,
+        "new": [
+          "5%",
+          "volhouden"
+        ],
+        "glosses": [
+          "Dreuzels",
+          "verhouding"
+        ]
+      },
+      "b030": {
+        "tokens": 37,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 68,
+        "new": [
+          "draak",
+          "gemene",
+          "primitief"
+        ],
+        "glosses": [
+          "kluizen",
+          "bewaakten"
+        ]
+      },
+      "b032": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b033": {
+        "tokens": 33,
+        "new": [
+          "competent"
+        ],
+        "glosses": [
+          "hedgefondsmanager"
+        ]
+      },
+      "b034": {
+        "tokens": 22,
+        "new": [],
+        "glosses": [
+          "behoeften op korte termijn"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch906/s02",
+    "version": 1,
+    "sentences": 26,
+    "summary": {
+      "likely": 0,
+      "review": 1,
+      "load": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gemene",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b031",
+        "sent": 4,
+        "sentence": "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-OF",
+        "span": "Of een week vrij.",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b033",
+        "sent": 2,
+        "sentence": "Of een week vrij.",
+        "level": "ignored",
+        "hint": "ask the question directly: Was het waar? Hij wist het niet."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "ging de verhouding tussen goud en zilver steeds op en neer",
+        "block": "b029",
+        "sent": 2,
+        "sentence": "In de grotere Dreuzeleconomie ging de verhouding tussen goud en zilver steeds op en neer.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

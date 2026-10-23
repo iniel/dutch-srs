@@ -1,0 +1,1075 @@
+{
+  "scene": "ch906/s03",
+  "version": 0,
+  "file": "work/ch906/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch906/s03",
+    "version": 0,
+    "tokens": 304,
+    "known_tokens": 274,
+    "known_share": 0.9013,
+    "new_lemmas_unglossed": 28,
+    "new_per_1000": 92.1,
+    "stretch_budget": 2,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "goud-zilververhouding",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b029",
+          "b030"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b",
+          "Lag de goud-zilververhouding bij de Dreuzels niet ergens rond de vijftig tegen één?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "óf",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "SCONJ",
+        "count": 2,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b",
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "losgekoppeld",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dus de tovenaarseconomie is niet alleen vrijwel volledig losgekoppeld van de Dreuzeleconomie, er heeft hier ook nog nooit iemand van arbitrage gehoord."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "arbitrage",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dus de tovenaarseconomie is niet alleen vrijwel volledig losgekoppeld van de Dreuzeleconomie, er heeft hier ook nog nooit iemand van arbitrage gehoord."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "bandbreedte",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "5%",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "afweek",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wegvloeien",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wisselkoers",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "finesse",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wegarbitreren",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "marktinefficiënties",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "hoogstwaarschijnlijk",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "schamper",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "primitiviteit",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "competent",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": false,
+        "examples": [
+          "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "hedgefondsjong",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": false,
+        "examples": [
+          "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verleiding",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "temptation"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "opbergen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to store",
+          "to stash away",
+          "to pack away"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry borg dat idee op in zijn achterhoofd, voor het geval hij ooit zonder geld kwam te zitten, of een weekje vrij had."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "schommelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to swing"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "koers",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "course of action",
+          "approach"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "opzicht",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "supervision"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "handhaven",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to enforce",
+          "to maintain",
+          "to uphold"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding b"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "draak",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "dragon"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar ja, Harry stond hier wel in een bank die je geld letterlijk bewaarde in kluizen vol gouden munten, bewaakt door draken, en waar je zelf naar binnen moest o"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "stelsel",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "system"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "gigantisch",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "gigantic"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "volstaan",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to suffice"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "termijn",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "term",
+          "period"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b029",
+        "scope": "sentence",
+        "new": [
+          "arbitrage",
+          "losgekoppeld"
+        ],
+        "text": "Dus de tovenaarseconomie is niet alleen vrijwel volledig losgekoppeld van de Dreuzeleconomie, er heeft hier ook nog nooit iemand van arbitrage gehoord."
+      },
+      {
+        "block": "b029",
+        "scope": "sentence",
+        "new": [
+          "5%",
+          "afweek",
+          "bandbreedte",
+          "goud-zilververhouding",
+          "handhaven",
+          "koers",
+          "opzicht",
+          "schommelen",
+          "wegvloeien",
+          "wisselkoers",
+          "óf"
+        ],
+        "text": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van he"
+      },
+      {
+        "block": "b029",
+        "scope": "paragraph",
+        "new": [
+          "5%",
+          "afweek",
+          "arbitrage",
+          "bandbreedte",
+          "goud-zilververhouding",
+          "handhaven",
+          "koers",
+          "losgekoppeld",
+          "opzicht",
+          "schommelen",
+          "wegvloeien",
+          "wisselkoers",
+          "óf"
+        ]
+      },
+      {
+        "block": "b031",
+        "scope": "sentence",
+        "new": [
+          "finesse",
+          "hoogstwaarschijnlijk",
+          "marktinefficiënties",
+          "wegarbitreren"
+        ],
+        "text": "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed."
+      },
+      {
+        "block": "b031",
+        "scope": "sentence",
+        "new": [
+          "primitiviteit",
+          "schamper",
+          "stelsel",
+          "verleiding"
+        ],
+        "text": "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…"
+      },
+      {
+        "block": "b031",
+        "scope": "paragraph",
+        "new": [
+          "draak",
+          "finesse",
+          "hoogstwaarschijnlijk",
+          "marktinefficiënties",
+          "primitiviteit",
+          "schamper",
+          "stelsel",
+          "verleiding",
+          "wegarbitreren"
+        ]
+      },
+      {
+        "block": "b033",
+        "scope": "sentence",
+        "new": [
+          "competent",
+          "hedgefondsjong"
+        ],
+        "text": "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben."
+      },
+      {
+        "block": "b034",
+        "scope": "sentence",
+        "new": [
+          "gigantisch",
+          "termijn",
+          "volstaan"
+        ],
+        "text": "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn."
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b029": {
+        "tokens": 119,
+        "new": [
+          "5%",
+          "afweek",
+          "arbitrage",
+          "bandbreedte",
+          "goud-zilververhouding",
+          "handhaven",
+          "koers",
+          "losgekoppeld",
+          "opzicht",
+          "schommelen",
+          "wegvloeien",
+          "wisselkoers",
+          "óf"
+        ],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 39,
+        "new": [
+          "goud-zilververhouding"
+        ],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 72,
+        "new": [
+          "draak",
+          "finesse",
+          "hoogstwaarschijnlijk",
+          "marktinefficiënties",
+          "primitiviteit",
+          "schamper",
+          "stelsel",
+          "verleiding",
+          "wegarbitreren"
+        ],
+        "glosses": []
+      },
+      "b032": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b033": {
+        "tokens": 42,
+        "new": [
+          "competent",
+          "hedgefondsjong",
+          "opbergen"
+        ],
+        "glosses": []
+      },
+      "b034": {
+        "tokens": 23,
+        "new": [
+          "gigantisch",
+          "termijn",
+          "volstaan"
+        ],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch906/s03",
+    "version": 0,
+    "sentences": 14,
+    "summary": {
+      "likely": 18,
+      "review": 4,
+      "load": 10
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PASSIVE",
+        "span": "niet alleen vrijwel volledig losgekoppeld van",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b029",
+        "sent": 0,
+        "sentence": "Dus de tovenaarseconomie is niet alleen vrijwel volledig losgekoppeld van de Dreuzeleconomie, er heeft hier ook nog nooit iemand van arbitrage gehoord.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "Dus de tovenaarseconomie is niet alleen vrijwel volledig losgekoppeld van de Dreuzeleconomie, er heeft hier ook nog nooit iemand van arbitrage gehoord.",
+        "confidence": 0.5,
+        "note": "niet alleen … maar ook?",
+        "block": "b029",
+        "sent": 0,
+        "sentence": "Dus de tovenaarseconomie is niet alleen vrijwel volledig losgekoppeld van de Dreuzeleconomie, er heeft hier ook nog nooit iemand van arbitrage gehoord.",
+        "level": "review",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "wanneer de goud-zilververhouding bij de Dreuzels",
+        "confidence": 0.5,
+        "note": "prefer 'als' / 'toen'",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "level": "review",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "totdat het onmogelijk werd de wisselkoers",
+        "confidence": 0.85,
+        "note": "conjunction 'totdat'",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": ", totdat het onmogelijk werd de wisselkoers nog langer te handhaven",
+        "confidence": 0.9,
+        "note": "after 'wegvloeien'",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "waarmee",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b029",
+        "sent": 2,
+        "sentence": "Breng een ton zilver binnen, wissel die om in Sikkels (en betaal 5%), wissel de Sikkels om voor Galjoenen, neem het goud mee naar de Dreuzelwereld, ruil het daar voor meer zilver dan waarmee je begonnen was, en herhaal.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "begonnen was",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b029",
+        "sent": 2,
+        "sentence": "Breng een ton zilver binnen, wissel die om in Sikkels (en betaal 5%), wissel de Sikkels om voor Galjoenen, neem het goud mee naar de Dreuzelwereld, ruil het daar voor meer zilver dan waarmee je begonnen was, en herhaal.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "ernaar",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b030",
+        "sent": 2,
+        "sentence": "En het zag ernaar uit dat de zilveren munten ook nog eens kleiner waren dan de gouden.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat de zilveren munten ook nog eens",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b030",
+        "sent": 2,
+        "sentence": "En het zag ernaar uit dat de zilveren munten ook nog eens kleiner waren dan de gouden.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "die je geld letterlijk bewaarde in kluizen vol gouden munten",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b031",
+        "sent": 0,
+        "sentence": "Maar ja, Harry stond hier wel in een bank die je geld letterlijk bewaarde in kluizen vol gouden munten, bewaakt door draken, en waar je zelf naar binnen moest om munten uit je kluis te halen zodra je iets wilde uitgeven.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om munten uit je kluis te halen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b031",
+        "sent": 0,
+        "sentence": "Maar ja, Harry stond hier wel in een bank die je geld letterlijk bewaarde in kluizen vol gouden munten, bewaakt door draken, en waar je zelf naar binnen moest om munten uit je kluis te halen zodra je iets wilde uitgeven.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "hoogstwaarschijnlijk niet aan hen besteed.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b031",
+        "sent": 1,
+        "sentence": "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "waren hoogstwaarschijnlijk niet aan hen besteed",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b031",
+        "sent": 1,
+        "sentence": "De finesses van het wegarbitreren van marktinefficiënties waren hoogstwaarschijnlijk niet aan hen besteed.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "Hij was in de verleiding geweest",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b031",
+        "sent": 2,
+        "sentence": "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was in de verleiding geweest",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b031",
+        "sent": 2,
+        "sentence": "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om schampere opmerkingen te maken",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b031",
+        "sent": 2,
+        "sentence": "Hij was in de verleiding geweest om schampere opmerkingen te maken over de primitiviteit van hun financiële stelsel…",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b033",
+        "sent": 0,
+        "sentence": "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b033",
+        "sent": 0,
+        "sentence": "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "geval hij ooit zonder geld kwam te zitten",
+        "confidence": 0.9,
+        "note": "after 'komen'",
+        "block": "b033",
+        "sent": 1,
+        "sentence": "Harry borg dat idee op in zijn achterhoofd, voor het geval hij ooit zonder geld kwam te zitten, of een weekje vrij had.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b034",
+        "sent": 0,
+        "sentence": "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b034",
+        "sent": 0,
+        "sentence": "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-LEN",
+        "value": 59,
+        "limit": 28,
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "In de grotere Dreuzeleconomie schommelde de koers van goud ten opzichte van zilver binnen een zekere bandbreedte, dus telkens wanneer de goud-zilververhouding bij de Dreuzels meer dan 5% afweek van het gewicht van zeventien Sikkels tegenover één Galjoen, had er óf goud óf zilver uit de tovenaarseconomie moeten wegvloeien, totdat het onmogelijk werd de wisselkoers nog langer te handhaven.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 38,
+        "limit": 28,
+        "block": "b029",
+        "sent": 2,
+        "sentence": "Breng een ton zilver binnen, wissel die om in Sikkels (en betaal 5%), wissel de Sikkels om voor Galjoenen, neem het goud mee naar de Dreuzelwereld, ruil het daar voor meer zilver dan waarmee je begonnen was, en herhaal.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 5,
+        "limit": 3,
+        "block": "b029",
+        "sent": 2,
+        "sentence": "Breng een ton zilver binnen, wissel die om in Sikkels (en betaal 5%), wissel de Sikkels om voor Galjoenen, neem het goud mee naar de Dreuzelwereld, ruil het daar voor meer zilver dan waarmee je begonnen was, en herhaal.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 41,
+        "limit": 28,
+        "block": "b031",
+        "sent": 0,
+        "sentence": "Maar ja, Harry stond hier wel in een bank die je geld letterlijk bewaarde in kluizen vol gouden munten, bewaakt door draken, en waar je zelf naar binnen moest om munten uit je kluis te halen zodra je iets wilde uitgeven.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b031",
+        "sent": 0,
+        "sentence": "Maar ja, Harry stond hier wel in een bank die je geld letterlijk bewaarde in kluizen vol gouden munten, bewaakt door draken, en waar je zelf naar binnen moest om munten uit je kluis te halen zodra je iets wilde uitgeven.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b031",
+        "sent": 0,
+        "sentence": "Maar ja, Harry stond hier wel in een bank die je geld letterlijk bewaarde in kluizen vol gouden munten, bewaakt door draken, en waar je zelf naar binnen moest om munten uit je kluis te halen zodra je iets wilde uitgeven.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-FRAME",
+        "value": 13,
+        "limit": 8,
+        "span": "zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben",
+        "block": "b033",
+        "sent": 0,
+        "sentence": "Aan de andere kant zou één competente hedgefondsjongen waarschijnlijk binnen een week de hele tovenaarswereld in handen kunnen hebben.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      },
+      {
+        "id": "L-FRAME",
+        "value": 13,
+        "limit": 8,
+        "span": "zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan",
+        "block": "b034",
+        "sent": 0,
+        "sentence": "Ondertussen zouden de gigantische hopen gouden munten in de kluis van de familie Potter moeten volstaan voor zijn behoeften op de korte termijn.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

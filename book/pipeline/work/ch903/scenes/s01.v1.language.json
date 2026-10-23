@@ -1,0 +1,244 @@
+{
+  "scene": "ch903/s01",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "Grammar is clean except one split pronominal adverb the parser missed (er … uit); the only real vocabulary problem is 'grimas'. Half of the eleven glosses sit on A2 words while the glossary term 'hypothese' is left unglossed; the fixed refrain was simplified although its wat-clause is whitelisted.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b051",
+      "fragment": "trok een grimas",
+      "problem": "'grimas' is outside the lexicon and rare (B2+), while a plain idiom with the same meaning exists.",
+      "evidence": "lexicon status unknown for grimas; 'gezicht' A1, 'trekken' A1",
+      "required_fix": "Replace with 'trok een gezicht' (as V2/V3 do).",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L2",
+      "block": "b052",
+      "fragment": "hij zwaait met een toverstok, en er komt magie uit",
+      "problem": "Split pronominal adverb 'er … uit' (= eruit, out of the wand): R-ER-PREP, not flagged by the parser; the sentence is also a three-clause chain.",
+      "evidence": "restricted.md R-ER-PREP ('Ik denk er niet aan' → repeat the noun); grammar table missed it",
+      "required_fix": "Repeat the noun and split: 'Ja, straks komt er een professor van Zweinstein langs. Hij zwaait met een \\gl{toverstok}{wand}, en uit de toverstok komt magie.'",
+      "severity": "must_fix",
+      "category": "grammar:R-ER-PREP"
+    },
+    {
+      "id": "L3",
+      "block": "b055",
+      "fragment": "Een platte metalen plaat",
+      "problem": "'metalen' is listed hard (B2); a plain rephrase with the known noun exists.",
+      "evidence": "lexicon: metalen hard B2, metaal known A2 — regular material adjective, so should_fix rather than must_fix",
+      "required_fix": "Write 'Een platte plaat van metaal op een deur …'.",
+      "severity": "should_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L4",
+      "block": "b052",
+      "fragment": "niet eens tegen falsificatie",
+      "problem": "'falsificatie' is unknown and unglossed, and the glossary fixes a different rendering for falsify/falsification.",
+      "evidence": "lexicon status unknown; glossary.json hypothese: 'falsify' = 'weerleggen' (gloss 'falsify')",
+      "required_fix": "Use the glossary term with its gloss: 'tegen \\gl{weerlegging}{falsification}'.",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L5",
+      "block": "b055",
+      "fragment": "met een testbare hypothese",
+      "problem": "First occurrence of 'hypothese' in the chapter is not glossed; the glossary requires a gloss once per chapter.",
+      "evidence": "glossary.json hypothese: 'Gloss once per chapter'; lexicon status stretch B1; the vocab tool counted it as known because it is a glossary term",
+      "required_fix": "Write 'een testbare \\gl{hypothese}{hypothesis}'.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L6",
+      "block": "b048",
+      "fragment": "\\gl{verdacht}{suspicious} … \\gl{volgorde}{order} … \\gl{zogenaamd}{supposedly} … \\gl{wreef}{rubbed} … \\gl{buigen}{bend} … \\gl{handvat}{handle}",
+      "problem": "Six of the eleven glosses sit on lemmas the lexicon marks known A2 (b048, b049, b050, b051, b052, b055); gloss bloat teaches the reader to skip glosses.",
+      "evidence": "lexicon: verdacht A2, volgorde A2, zogenaamd A2, wrijven A2, buigen A2, handvat A2",
+      "required_fix": "Remove the \\gl wrappers on verdacht, volgorde, zogenaamd, wreef, buigen, handvat (keep bewijs, onwaarschijnlijk, overtuigd, toverstok, voorspelling) and the matching @glosses lines.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L7",
+      "block": "b049",
+      "fragment": "Dan was ook dat duidelijk: zo kwam de brief zonder postzegel in de brievenbus.",
+      "problem": "'ook dat' presupposes something else already explained (there is nothing), and cataphoric 'dat' before the colon is heavy.",
+      "evidence": "NL reads 'then that too was clear'; nothing earlier was declared clear",
+      "required_fix": "Write 'Dan was het duidelijk: zo kwam de brief zonder postzegel in de brievenbus.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L8",
+      "block": "b053",
+      "fragment": "\\emph{Waarom geloof ik dit?}",
+      "problem": "The fixed refrain was simplified to avoid a wat-clause that the glossary explicitly allows for this quote; the self-referential ring is lost.",
+      "evidence": "glossary.json 'Why do you believe what you believe?': 'The wat-clause is a fixed quote, allowed'",
+      "required_fix": "Restore '\\emph{Waarom geloof ik wat ik geloof?}' (first-person form of the fixed refrain).",
+      "severity": "should_fix",
+      "category": "grammar:R-RELCL"
+    },
+    {
+      "id": "L9",
+      "block": "b055",
+      "fragment": "vraagt om duwen … een handvat op een deur vraagt om trekken",
+      "problem": "Natural Dutch, but the bible fixes the affordance rendering as 'nodigt uit tot duwen / trekken'; a handle hangs 'aan' a door, not 'op'.",
+      "evidence": "bible.md ch 1 traps: 'affords pushing' → 'nodigt uit tot duwen'",
+      "required_fix": "If cohesion aligns: 'nodigt uit tot duwen', 'een handvat aan een deur nodigt uit tot trekken'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L10",
+      "block": "b049",
+      "fragment": "het universum werkte echt zo",
+      "problem": "Tool status unknown, but 'universum' is a transparent cognate (universe) already used in the glossary (ch 5 Confundus line).",
+      "evidence": "lexicon: universum absent; glossary.json Confundus Charm note uses 'het hele universum'",
+      "required_fix": "Keep; lexicon owner: add 'universum' as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L11",
+      "block": "b055",
+      "fragment": "een testbare hypothese … je gaat hem testen",
+      "problem": "Tool rows 'testbaar' (unknown) and 'testen' (gloss-or-replace) are dismissed: testbaar = known 'test' + productive -baar, and 'de hypothese testen' is the fixed glossary phrase.",
+      "evidence": "lexicon: test A2 known; glossary.json hypothese: 'test the hypothesis' = 'de hypothese testen'",
+      "required_fix": "Keep both; lexicon owner: add 'testbaar' and count lowercase glossary phrase words as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L12",
+      "block": "b048",
+      "fragment": "een nogal verdacht soort excuus",
+      "problem": "'excuus' primarily means apology; the precise everyday word for a pretext, 'smoes', is known A2 (the translator's note assumed it was harder).",
+      "evidence": "lexicon: smoes known A2, excuus known A2",
+      "required_fix": "Optional: 'een nogal verdacht soort smoes'.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L13",
+      "block": "b048",
+      "fragment": "een complete magische wereld",
+      "problem": "Acceptable, but 'compleet' is a slightly technical choice here.",
+      "evidence": "V3's 'een hele wereld vol magie' reads more naturally and also avoids the 'hele = very' reading",
+      "required_fix": "Optional: 'een hele wereld vol magie'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L14",
+      "block": "b052",
+      "fragment": "Ze bedacht van tevoren geen excuses",
+      "problem": "'Ze' refers back to 'de vreemde zekerheid' (personified as in the source); an A2 reader may briefly read it as 'they'.",
+      "evidence": "antecedent is one sentence back; same device in V3",
+      "required_fix": "Optional: 'Die zekerheid bedacht van tevoren geen excuses'.",
+      "severity": "note",
+      "category": "naturalness"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "'verdacht' is a plain adjective in the lexicon (known A2), attributive use; look-alike 'Hij was verbaasd'."
+    },
+    {
+      "id": "R-DAT",
+      "block": "b049",
+      "span": "dat duidelijk: zo kwam de brief",
+      "decision": "dismissed",
+      "reason": "Demonstrative subject 'dat' after inversion ('Dan was ook dat duidelijk'); the colon introduces a V2 main clause, no complement clause. (Wording itself is L7.)"
+    },
+    {
+      "id": "R-PLUPERF",
+      "block": "b050",
+      "span": "was een deel van Harry helemaal overtuigd",
+      "decision": "dismissed",
+      "reason": "'zijn' + adjectival participle expressing a state (lexicon lists 'overtuigd' as ADJ); look-alike 'Hij was verbaasd', not a pluperfect."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-ER-PREP",
+      "block": "b052",
+      "span": "er komt magie uit",
+      "issue": "false negative",
+      "reason": "Split pronominal adverb 'er … uit' (eruit) was not detected; only contiguous forms seem to be matched."
+    },
+    {
+      "ref": "R-PLUPERF",
+      "block": "b050",
+      "span": "was … overtuigd",
+      "issue": "false positive",
+      "reason": "Participle that the lexicon itself lists as ADJ after 'zijn' should not be scored as pluperfect."
+    },
+    {
+      "ref": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "issue": "false positive",
+      "reason": "Attributive adjective with a lexicon ADJ entry; suppress when the token has an ADJ entry and no participle phrase around it."
+    },
+    {
+      "ref": "vocab:opmerken",
+      "block": "b052",
+      "span": "merkte",
+      "issue": "false positive",
+      "reason": "Token is 'merkte' (merken, known A2); the lemmatiser/particle reattachment produced 'opmerken'."
+    },
+    {
+      "ref": "vocab:metalen",
+      "block": "b055",
+      "span": "metalen",
+      "issue": "false positive (level)",
+      "reason": "Regular material adjective of known 'metaal' (A2); the B2 label inflates it — treat -en material adjectives of known nouns as the noun's level."
+    },
+    {
+      "ref": "vocab:universum",
+      "block": "b049",
+      "span": "universum",
+      "issue": "false positive",
+      "reason": "Transparent cognate, used in the glossary; add to lexicon."
+    },
+    {
+      "ref": "vocab:testbaar",
+      "block": "b055",
+      "span": "testbare",
+      "issue": "false positive",
+      "reason": "Known stem 'test' + productive suffix -baar; de-inflection could try -baar/-loos on known stems."
+    },
+    {
+      "ref": "vocab:testen",
+      "block": "b055",
+      "span": "testen",
+      "issue": "false positive",
+      "reason": "Part of the fixed glossary phrase 'de hypothese testen'; only capitalised pieces of glossary phrases are counted as known."
+    },
+    {
+      "ref": "vocab:hypothese",
+      "block": "b055",
+      "span": "hypothese",
+      "issue": "false negative",
+      "reason": "Glossary term with policy 'gloss once per chapter' was counted as known and not reported as needing a gloss; the keep-gloss-needed logic only reads exceptions.json."
+    },
+    {
+      "ref": "vocab:glosses",
+      "block": "b048",
+      "span": "\\gl on known A2 lemmas",
+      "issue": "false negative",
+      "reason": "Glosses on lemmas with status known (verdacht, volgorde, zogenaamd, wrijven, buigen, handvat) are not reported as gloss bloat."
+    }
+  ]
+}

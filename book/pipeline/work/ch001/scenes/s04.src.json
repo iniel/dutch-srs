@@ -1,0 +1,136 @@
+{
+  "chapter": 1,
+  "scene": "s04",
+  "index": 3,
+  "of": 4,
+  "chapter_title": "A Day of Very Low Probability",
+  "words": 142,
+  "blocks": [
+    {
+      "id": "b087",
+      "kind": "para",
+      "tex": "“Nothing,” Harry said in a strangled voice. “Just—testing a really silly theory—”",
+      "text": "“Nothing,” Harry said in a strangled voice. “Just—testing a really silly theory—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 163,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b088",
+      "kind": "para",
+      "tex": "“Did you get your acceptance letter from Hogwarts?”",
+      "text": "“Did you get your acceptance letter from Hogwarts?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 165,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b089",
+      "kind": "para",
+      "tex": "Harry froze in place.",
+      "text": "Harry froze in place.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 167,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b090",
+      "kind": "para",
+      "tex": "“Yes,” Harry’s lips said a little while later. “I got a letter from Hogwarts. They say they want my owl by the 31st of July, but—”",
+      "text": "“Yes,” Harry’s lips said a little while later. “I got a letter from Hogwarts. They say they want my owl by the 31st of July, but—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 169,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b091",
+      "kind": "para",
+      "tex": "“But you don’t \\emph{have} an owl. Poor dear! I can’t imagine \\emph{what} someone must have been thinking, sending you just the standard letter.”",
+      "text": "“But you don’t have an owl. Poor dear! I can’t imagine what someone must have been thinking, sending you just the standard letter.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 171,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b092",
+      "kind": "para",
+      "tex": "A wrinkled arm stretched out over the fence, and opened an expectant hand. Hardly even thinking at this point, Harry gave over his envelope.",
+      "text": "A wrinkled arm stretched out over the fence, and opened an expectant hand. Hardly even thinking at this point, Harry gave over his envelope.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 173,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b093",
+      "kind": "para",
+      "tex": "“Just leave it to me, dear,” said Mrs~Figg, “and in a jiffy or two I’ll have someone over.”",
+      "text": "“Just leave it to me, dear,” said Mrs Figg, “and in a jiffy or two I’ll have someone over.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 175,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b094",
+      "kind": "para",
+      "tex": "And her face disappeared from over the fence.",
+      "text": "And her face disappeared from over the fence.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 177,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b095",
+      "kind": "para",
+      "tex": "There was a long silence in the garden.",
+      "text": "There was a long silence in the garden.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 179,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b096",
+      "kind": "para",
+      "tex": "Then a boy’s voice said, calmly and quietly, “What.”",
+      "text": "Then a boy’s voice said, calmly and quietly, “What.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 181,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "“Harry?” asked a bemused woman’s voice, one of the neighbours.",
+    "Harry pulled down his hand like it was on fire and hid the envelope behind his back like it was drug money. His whole face was hot with shame.",
+    "An old woman’s face peered out from above the neighbouring fence, grizzled grey hair escaping from her hairnet. Mrs Figg, the occasional babysitter. “What are you doing, Harry?”"
+  ],
+  "context_after": []
+}

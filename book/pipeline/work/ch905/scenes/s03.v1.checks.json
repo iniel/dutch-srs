@@ -1,0 +1,473 @@
+{
+  "scene": "ch905/s03",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch905/scenes/s03.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch905/s03",
+    "version": 1,
+    "tokens": 420,
+    "known_tokens": 410,
+    "known_share": 0.9762,
+    "new_lemmas_unglossed": 6,
+    "new_per_1000": 14.3,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "brein",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 5,
+        "blocks": [
+          "b028",
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [
+          "Hoe kunt u nog denken met een brein zo klein als dat van een kat?",
+          "Langzaam begreep zijn brein het:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "kwantum-hamiltoniaan",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dat is niet zomaar een willekeurige regel, die volgt uit de vorm van de kwantum-Hamiltoniaan!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "unitariteit",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die regel niet accepteert, vernietig je de unitariteit, en dan krijg je berichten sneller dan het licht!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenbiochemie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "de hele anatomie van een kat en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "knipperen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [
+          "Professor Anderling knipperde met haar ogen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "neuron",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een persoon —"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "oprecht",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "sincere",
+          "honest",
+          "upright"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": true,
+        "examples": [
+          "Ze klonk oprecht, maar haar mondhoeken trilden omhoog."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "struikelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to stumble",
+          "fall over",
+          "trip over an object"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij struikelde over een verdwaalde stapel boeken en viel met een bons hard op zijn billen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "steun",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "support"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Er trok een waarschuwende steek door zijn schouder, want het gewicht kwam zonder steun naar beneden."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verstikken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to choke",
+          "to suffocate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b026"
+        ],
+        "glossed": true,
+        "examples": [
+          "Zijn stem klonk verstikt."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "gewaad",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "geest",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "ghost",
+          "spirit",
+          "immaterial being"
+        ],
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "universum",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "planeten",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b022": {
+        "tokens": 40,
+        "new": [],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b024": {
+        "tokens": 55,
+        "new": [
+          "steun",
+          "struikelen"
+        ],
+        "glosses": []
+      },
+      "b025": {
+        "tokens": 35,
+        "new": [],
+        "glosses": [
+          "gewaad",
+          "oprecht"
+        ]
+      },
+      "b026": {
+        "tokens": 14,
+        "new": [],
+        "glosses": [
+          "verstikt"
+        ]
+      },
+      "b027": {
+        "tokens": 12,
+        "new": [],
+        "glosses": [
+          "Gedaanteverwisseling",
+          "Faunaat-transformatie"
+        ]
+      },
+      "b028": {
+        "tokens": 98,
+        "new": [
+          "kattenbiochemie",
+          "kwantum-hamiltoniaan",
+          "unitariteit"
+        ],
+        "glosses": [
+          "geest",
+          "brein"
+        ]
+      },
+      "b029": {
+        "tokens": 8,
+        "new": [],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 13,
+        "new": [],
+        "glosses": [
+          "knipperde"
+        ]
+      },
+      "b032": {
+        "tokens": 114,
+        "new": [
+          "neuron"
+        ],
+        "glosses": [
+          "universum",
+          "planeten"
+        ]
+      },
+      "b033": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch905/s03",
+    "version": 1,
+    "sentences": 53,
+    "summary": {
+      "likely": 0,
+      "review": 7,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "beslissend",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b022",
+        "sent": 1,
+        "sentence": "“We hebben een beslissend experiment gedaan.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was juist en gepast",
+        "confidence": 0.45,
+        "note": "",
+        "block": "b022",
+        "sent": 5,
+        "sentence": "Nieuwsgierig zijn was juist en gepast.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "waarschuwende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b024",
+        "sent": 4,
+        "sentence": "Er trok een waarschuwende steek door zijn schouder, want het gewicht kwam zonder steun naar beneden.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "“U bent in een kat veranderd",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b028",
+        "sent": 0,
+        "sentence": "“U bent in een kat veranderd!",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", die volgt uit de vorm van de kwantum-Hamiltoniaan",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b028",
+        "sent": 3,
+        "sentence": "Dat is niet zomaar een willekeurige regel, die volgt uit de vorm van de kwantum-Hamiltoniaan!",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", dat spoelde nu door de wc weg",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b032",
+        "sent": 3,
+        "sentence": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat spoelde nu door de wc weg;",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "vallende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b032",
+        "sent": 8,
+        "sentence": "de muziek van de planeten was hetzelfde liedje als een vallende appel.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": true,
+    "ok": false
+  }
+}

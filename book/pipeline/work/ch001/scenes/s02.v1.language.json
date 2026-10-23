@@ -1,0 +1,233 @@
+{
+  "scene": "ch001/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "No restricted grammar: the one 'likely' flag ('Behalve') is a preposition in the bible's fixed punchline and both 'review' flags are tool errors. Two sentences would make a Dutch reader stumble: Petunia's wish rendered as plain indicative ('Ik wil dit van mijn man: hij luistert naar zijn vrouw') and the transitive 'studeer het maar'. The rest is small: an agentless 'Ze' opening b039, 'vertrok' in a sense the reader does not know, 'wedstrijd voor wiskunde', 'vertellen: dit zie ik', and 'excuus' where 'smoes' is the A2 word for the meaning.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b042",
+      "fragment": "Ik wil, ik wil dit van mijn man: hij luistert naar zijn vrouw. Zij houdt van hem. En hij vertrouwt haar, deze ene keer—",
+      "problem": "After 'Ik wil dit van mijn man:' the indicative 'hij luistert' / 'hij vertrouwt haar' reads as a statement of fact, not a wish; 'En hij vertrouwt haar, deze ene keer' even asserts the opposite of what is happening, so the reader re-parses.",
+      "evidence": "EN: 'I want my husband to, to listen to his wife who loves him, and trust her just this once' (wish) vs NL present indicative after the colon; no modal, no imperative",
+      "required_fix": "Put the wish in a modal: 'Ik wil, ik wil dit van mijn man: hij moet naar zijn vrouw luisteren. Zij houdt van hem. En hij moet haar vertrouwen, deze ene keer—'. (Alternative without finite verbs: 'Ik wil, ik wil maar één ding van mijn man: luisteren naar zijn vrouw. Zij houdt van hem. En haar vertrouwen, deze ene keer—'.) Keep the stammer and the three short sentences.",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b039",
+      "fragment": "Dan stimuleerden ze hem altijd: studeer het maar.",
+      "problem": "'studeren' does not take an object pronoun; 'studeer het maar' is not Dutch (one studies a subject, 'bestudeert' a thing).",
+      "evidence": "EN: 'encouraged to study whatever caught his attention'; lexicon: bestuderen known A2 ('to study, investigate')",
+      "required_fix": "'Dan stimuleerden ze hem altijd: bestudeer het maar.' (or 'zoek het maar uit', uitzoeken A2).",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b039",
+      "fragment": "Ze behandelden hem goed, waarschijnlijk beter dan de meeste \\gl{genetische}{genetic} vaders hun eigen kinderen.",
+      "problem": "The paragraph opens with 'Ze' right after a block in which only the Professor speaks; the reader has to supply 'his parents' before the gapped comparison ('… hun eigen kinderen [behandelden]') adds a second inference.",
+      "evidence": "EN agentless passive 'He was treated well'; NL active voice needs an agent and the antecedent is two blocks back",
+      "required_fix": "'Zijn ouders behandelden hem goed, waarschijnlijk beter dan de meeste \\gl{genetische}{genetic} vaders hun eigen kinderen.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L4",
+      "block": "b039",
+      "fragment": "Harry's mond vertrok bitter.",
+      "problem": "Good literary Dutch, but 'vertrekken' is in the reader's lexicon only as 'to leave' (A1); the sense 'twist (of a face)' is unknown and the sentence reads as nonsense to an A2 reader.",
+      "evidence": "lexicon vertrekken: known A1, en ['to leave']; the tool counts the token as known (polysemy false negative)",
+      "required_fix": "Either rephrase with known words: 'Harry trok een bitter gezicht.' — or keep and gloss the sense: 'Harry's mond \\gl{vertrok}{twisted} bitter.' (b039 then has two glosses, the maximum).",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L5",
+      "block": "b039",
+      "fragment": "een wedstrijd voor wiskunde of wetenschap",
+      "problem": "'een wedstrijd voor X' means a competition held for X's benefit; the preposition is copied from the English noun stack.",
+      "evidence": "EN: 'whatever maths or science competitions'; Dutch idiom is 'een wedstrijd in …' or a compound",
+      "required_fix": "'Deed hij mee aan een wedstrijd in wiskunde of wetenschap?' (or 'een wiskunde- of wetenschapswedstrijd', compound of known parts).",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L6",
+      "block": "b041",
+      "fragment": "Je moet gewoon naar de wereld kijken en dan vertellen: dit zie ik.",
+      "problem": "'vertellen' wants an addressee or a story; before a colon with direct content the natural verb is 'zeggen'.",
+      "evidence": "EN: 'report what you see'; indirect question avoided correctly, verb choice slightly off",
+      "required_fix": "'Je moet gewoon naar de wereld kijken en dan zeggen: dit zie ik.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L7",
+      "block": "b048",
+      "fragment": "Dat leek een nogal verdacht soort excuus.",
+      "problem": "The reader knows 'excuus' as 'apology' (its only lexicon sense); the sense needed here is 'pretext', for which the A2 lexicon has 'smoes'.",
+      "evidence": "lexicon excuus: known A2, en ['apology']; smoes: known A2, en ['excuse', 'pretext']",
+      "required_fix": "'Dat leek een nogal verdacht soort smoes.' (keep 'verdacht', A2 adjective).",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b039",
+      "fragment": "Toen kreeg hij eigen leraren uit de eindeloze voorraad arme studenten.",
+      "problem": "'eigen leraren' is understandable but vague ('his own teachers' as opposed to whose?); Dutch says where the lesson happens.",
+      "evidence": "EN: 'he was provided with tutors'; privéleraar is B2, bijles (A2) implies remedial help",
+      "required_fix": "Optional: 'Toen kreeg hij leraren aan huis, uit de eindeloze voorraad arme studenten.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b042",
+      "fragment": "haar hoofd kwam weer omhoog en ze staarde naar haar man",
+      "problem": "Literal rendering of 'her head rose back up'; readable, but 'opkijken' says it in one known verb.",
+      "evidence": "lexicon opkijken: known A2 ('to look up, to lift one's eyes')",
+      "required_fix": "Optional: '“Dank je, Harry. Maar—” ze keek weer op en staarde naar haar man.'",
+      "severity": "note",
+      "category": "calque"
+    },
+    {
+      "id": "L10",
+      "block": "b038",
+      "fragment": "keek op hem neer, afwijzend als altijd",
+      "problem": "'op iemand neerkijken' is read first as figurative contempt; here that doubles 'afwijzend'. Natural Dutch, no stumble — recorded for the meaning reviewer, who decides whether the double reading is wanted.",
+      "evidence": "EN: 'looked down at him, dismissive as usual' (physical + attitude); b042 uses the physical 'keek omlaag naar hem' for the mother",
+      "required_fix": "No change required. If the physical reading is preferred: 'De Professor draaide zich om en keek omlaag naar hem, afwijzend als altijd.' 'afwijzend' needs no gloss (afwijzen A2).",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L11",
+      "block": "b041",
+      "fragment": "de Feynman Lectures on Physics",
+      "problem": "English book title set in roman; the bible says English titles stay italic, the source block has no \\emph.",
+      "evidence": "bible.md Naming policy: 'English book titles stay English and italic (Feynman Lectures …)' vs src b041 tex without \\emph",
+      "required_fix": "Cohesion editor decides; if the bible wins: 'de \\emph{Feynman Lectures on Physics}'.",
+      "severity": "note",
+      "category": "macro"
+    },
+    {
+      "id": "L12",
+      "block": "b039",
+      "fragment": "Een Doctor, docent biochemie in Oxford",
+      "problem": "Tool-unknown but transparent: 'Doctor' is the academic title, capitalised as Harry's sarcastic label in the source; 'biochemie' is in the cognate list.",
+      "evidence": "vocab row doctor: unknown, action review; src 'A Doctor teaching biochemistry at Oxford'",
+      "required_fix": "No change; do not gloss. Lexicon owner: add 'doctor' to exceptions.json → cognates.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L13",
+      "block": "b041",
+      "fragment": "Daar staat een \\gl{citaat}{quote}:",
+      "problem": "Unknown lemma, glossed, half-transparent (cite / citation); fits Harry's register. b041 is at the gloss maximum (citaat, waarneming).",
+      "evidence": "vocab row citaat: unknown, glossed; gloss_per_paragraph_max 2",
+      "required_fix": "Keep. If a gloss slot is ever needed in b041, 'Daar staat ongeveer dit:' drops the word without loss.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L14",
+      "block": "b039",
+      "fragment": "de meeste \\gl{genetische}{genetic} vaders",
+      "problem": "Hard (B2) but it is Harry's fixed tic ('genetische ouders', bible) and a cognate; glossed once, recurs in s03.",
+      "evidence": "lexicon genetisch hard B2, glossed; bible.md Characters ch 1: verbal tic 'genetische ouders'",
+      "required_fix": "Keep as is. Cohesion editor: the gloss belongs to the first occurrence in the chapter (check s01).",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L15",
+      "block": "b041",
+      "fragment": "filosofen … je beslist dingen … Belangstelling Tonen (b039)",
+      "problem": "Stretch budget 4: 'filosoof' (B1) is a transparent cognate and fine unglossed; 'beslist' is the verb beslissen (A2), not the B1 adverb, so it does not count; 'Tonen' in the bible's capitalised phrase is the B1 verb the tool did not see. Budget used: 2 of 4.",
+      "evidence": "vocab rows filosoof ok-stretch, beslist ok-stretch (mis-tagged ADJ); lexicon tonen stretch B1; 'Belangstelling Tonen' counted as proper noun",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-CONJ-OTHER",
+      "block": "b039",
+      "span": "Behalve misschien een heel klein beetje",
+      "decision": "dismissed",
+      "reason": "'Behalve' is a preposition heading a verbless fragment ('Behalve misschien een heel klein beetje respect.'); there is no finite verb and no clause, so nothing is subordinated. The sentence is the bible's fixed punchline (Narrator voice §4)."
+    },
+    {
+      "id": "R-TE-INF",
+      "block": "b047",
+      "span": "na te denken",
+      "decision": "dismissed",
+      "reason": "'proberen te' is on exceptions.json grammar_whitelist (treat_as review). The alternatives ('wilde nadenken', 'ging nadenken') drop 'tried', which the next paragraph depends on; a single te-infinitive of a known verb in a 12-word sentence is accepted."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "Plain attributive adjective ('een nogal verdacht soort excuus'); the lexicon lists 'verdacht' as ADJ A2 (suspicious). No participle phrase, no complements."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b046",
+      "span": "geruststellende",
+      "decision": "dismissed",
+      "reason": "Reported at 0.2 (below ignore_confidence). Attributive adjective before 'kus', listed in the lexicon as ADJ A2 ('geruststellend'); restricted.md: simple adjectival participles in the lexicon are fine."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-CONJ-OTHER likely 0.85 'Behalve misschien een heel klein beetje'",
+      "block": "b039",
+      "issue": "false positive",
+      "reason": "'behalve' is a preposition unless followed by 'dat'/'als' or a finite verb; the rule should require a clause (finite verb after the word) before firing. Verbless fragments should never produce a conjunction flag."
+    },
+    {
+      "ref": "R-PARTICIPLE review 0.60 'verdacht' / ignored 0.20 'geruststellende'",
+      "block": "b048",
+      "issue": "false positive",
+      "reason": "Both words have an ADJ entry in the lexicon and stand alone before a noun; a participle used attributively, without complements, and listed as ADJ should not be flagged."
+    },
+    {
+      "ref": "vocab: beslist (stretch B1, ADJ)",
+      "block": "b041",
+      "issue": "false positive (POS)",
+      "reason": "'je beslist dingen met een experiment' is 2sg present of beslissen (A2); forms table already maps beslist → beslissen. When a token has a subject pronoun before it, prefer the verb reading over the adverb/adjective entry."
+    },
+    {
+      "ref": "vocab: Belangstelling Tonen / Goede Ouder",
+      "block": "b039",
+      "issue": "false negative",
+      "reason": "Capitalised bible phrases are counted as proper nouns, so the B1 verb 'tonen' never appears in the table; lowercase 'tonen' would also be lemmatised to the noun 'toon'. Capitalised mid-sentence words that exist in the lexicon should be looked up before being treated as names."
+    },
+    {
+      "ref": "vocab: vertrok (b039), excuus (b048)",
+      "block": "b039",
+      "issue": "false negative (polysemy)",
+      "reason": "Both lemmas are known A1/A2, but in senses the reader has not learned ('vertrekken' = twist of a face; 'excuus' = pretext). Not fixable by lemma status; worth a 'sense' field on the few frequent polysemous verbs, or a reviewer checklist entry."
+    },
+    {
+      "ref": "vocab: doctor",
+      "block": "b039",
+      "issue": "lexicon gap",
+      "reason": "Transparent title cognate; add 'doctor' to exceptions.json → cognates."
+    },
+    {
+      "ref": "vocab: citaat",
+      "block": "b041",
+      "issue": "lexicon gap",
+      "reason": "Absent from every list; likely B1. Add with en 'quote, quotation' so it stops surfacing as unknown."
+    }
+  ]
+}

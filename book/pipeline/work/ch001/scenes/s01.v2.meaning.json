@@ -1,0 +1,66 @@
+{
+  "scene": "ch001/s01",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the eight changed blocks (b006, b015, b024, b026, b027, b029, b030, b032): both v1 should_fix items are fixed as asked (singular 'gewaad'; b015 now reports the fear without the added contrast), the two applied notes (M3 hedge in b032, M6 'gaaf' echo in b026/b027) are in place, and none of the changes moved facts, speakers, causal links or emphasis. All seven comprehension questions are still answerable from the Dutch alone. Two notes remain: the epigraph's grammatical number is a bible-owner decision the Dutch cannot leave open, and b030 drops the narrator's 'seemed' because no in-profile hedge is available.",
+  "comprehension": [
+    {
+      "q": "What fills the house, and who lives in it?",
+      "answer_from_nl": "Bookcases against every wall, six shelves each, books in two rows and overflowing onto tables, sofas and in heaps under the windows; it is the living room of 'de eminente professor Michael Verres-Evans', his wife 'mevrouw Petunia Evans-Verres' and their 'adoptiezoon, Harry James Potter-Evans-Verres'.",
+      "answerable": true
+    },
+    {
+      "q": "What is lying on the living-room table, and what is odd about the envelope?",
+      "answer_from_nl": "A letter and an envelope of yellowish parchment 'zonder postzegel', addressed in emerald-green ink to 'de heer H. Potter'.",
+      "answerable": true
+    },
+    {
+      "q": "Why do Michael and Petunia argue without shouting?",
+      "answer_from_nl": "'De Professor vindt schreeuwen onbeschaafd.'",
+      "answerable": true
+    },
+    {
+      "q": "What does Petunia claim about her sister, and what personal proof does she offer?",
+      "answer_from_nl": "'Mijn zus was een heks… Haar man was een tovenaar'; she has seen things; and her own slim body: 'Ik was niet—altijd zo… Lily heeft dit gedaan' with a potion ('een toverdrank'), after Petunia begged her for years because Lily had always been prettier and then also got magic.",
+      "answerable": true
+    },
+    {
+      "q": "Why did Lily refuse for years, and what finally made her give in?",
+      "answer_from_nl": "Ridiculous excuses ('de wereld verging als ze aardig was voor haar zus. Of het mocht niet van een centaur'); she gave in after Petunia, just out of university and dating fat Vernon Duffeling who wanted a son called Dudley Duffeling, saw her whole future and 'hield het niet uit', and wrote: 'als ze me niet hielp, dan wilde ik liever gewoon—' (the unsaid threat survives in the dash).",
+      "answerable": true
+    },
+    {
+      "q": "How does Michael explain away Petunia's transformation and the 'things' she saw?",
+      "answer_from_nl": "She got sick, lay in bed and 'werd wat zwaarder', her skin 'werd vanzelf gaaf', or illness changed her diet; the things she saw were stage tricks: a trained 'goochelaar' fakes the impossible, spoon-bending, 'cold reading'.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry's question about Petunia's parents establish, and what does he propose?",
+      "answer_from_nl": "Her parents had no magic, so nobody in her family knew; they were convinced because Hogwarts 'stuurden een professor' who 'liet ons wat magie zien'. So: get a Zweinstein professor here and see the magic 'met eigen ogen'; if true pap admits it, if not mam admits it — 'Daar is de experimentele methode voor, zodat we dingen niet alleen met ruzie hoeven op te lossen.'",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b006",
+      "fragment": "(zwart \\gl{gewaad}{robes}, vallend)",
+      "problem": "v1 M1 is applied as asked, but Dutch has no number-neutral form here: the singular now commits the image to one garment exactly as the plural committed it to several, so the choice must be checked against the scene the epigraph is a flash-forward to, which this reviewer may not read.",
+      "evidence": "EN: '(black robes, falling)' vs NL v1: 'zwarte gewaden' / v2: 'zwart gewaad'. Glossary 'robes': singular for one person, plural only for several people; glossary lists first_chapter 2 although the first gloss is now here.",
+      "required_fix": "No change by the translator. Bible owner: confirm singular vs plural against the payoff scene and record the decision under the epigraph note; glossary owner: set first_chapter for 'robes' to 1.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b030",
+      "fragment": "Ze was bijna in tranen.",
+      "problem": "The narrator's external hedge 'seemed' is gone; the Dutch states the near-tears as fact. The information is unchanged and b023 already reported the tears gathering, so the shift is small.",
+      "evidence": "EN: 'She seemed to be on the verge of tears.' vs NL: 'Ze was bijna in tranen.' Translator's note: 'leek bijna in tranen' is unidiomatic (v1 L5), 'leek te huilen' is R-TE-INF, and a third 'zo leek het' in one scene would be too many.",
+      "required_fix": "Accept as is. If the profile owner later whitelists 'lijken te', the closest form is 'Ze leek bijna te huilen.'",
+      "severity": "note",
+      "category": "certainty"
+    }
+  ]
+}

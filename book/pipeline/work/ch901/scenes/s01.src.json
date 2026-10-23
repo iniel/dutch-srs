@@ -1,0 +1,139 @@
+{
+  "chapter": 901,
+  "scene": "s01",
+  "index": 0,
+  "of": 3,
+  "chapter_title": "A Day of Very Low Probability",
+  "experiment": {
+    "fragment": "f1-dialogue-tension",
+    "type": "dialogue, marital argument, irony",
+    "variant": "V1 single prompt with the rules, no loop",
+    "source_chapter": 1,
+    "source_blocks": [
+      "b015",
+      "b023"
+    ]
+  },
+  "source_chapter": 1,
+  "words": 244,
+  "blocks": [
+    {
+      "id": "b015",
+      "kind": "para",
+      "tex": "“You’re joking,” Michael said to Petunia. His tone indicated that he was very much afraid that she was serious.",
+      "text": "“You’re joking,” Michael said to Petunia. His tone indicated that he was very much afraid that she was serious.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 23,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b016",
+      "kind": "para",
+      "tex": "“My sister was a witch,” Petunia repeated. She looked frightened, but stood her ground. “Her husband was a wizard.”",
+      "text": "“My sister was a witch,” Petunia repeated. She looked frightened, but stood her ground. “Her husband was a wizard.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 25,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b017",
+      "kind": "para",
+      "tex": "“This is absurd!” Michael said sharply. “They were at our wedding—they visited for Christmas—”",
+      "text": "“This is absurd!” Michael said sharply. “They were at our wedding—they visited for Christmas—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 27,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b018",
+      "kind": "para",
+      "tex": "“I told them you weren’t to know,” Petunia whispered. “But it’s true. I’ve seen things—”",
+      "text": "“I told them you weren’t to know,” Petunia whispered. “But it’s true. I’ve seen things—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 29,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b019",
+      "kind": "para",
+      "tex": "The Professor rolled his eyes. “Dear, I understand that you’re not familiar with the sceptical literature. You may not realise how easy it is for a trained magician to fake the seemingly impossible. Remember how I taught Harry to bend spoons? If it seemed like they could always guess what you were thinking, that’s called cold reading—”",
+      "text": "The Professor rolled his eyes. “Dear, I understand that you’re not familiar with the sceptical literature. You may not realise how easy it is for a trained magician to fake the seemingly impossible. Remember how I taught Harry to bend spoons? If it seemed like they could always guess what you were thinking, that’s called cold reading—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 31,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b020",
+      "kind": "para",
+      "tex": "“It wasn’t bending spoons—”",
+      "text": "“It wasn’t bending spoons—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 33,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b021",
+      "kind": "para",
+      "tex": "“What was it, then?”",
+      "text": "“What was it, then?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 35,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b022",
+      "kind": "para",
+      "tex": "Petunia bit her lip. “I can’t just tell you. You’ll think I’m—” She swallowed. “Listen. Michael. I wasn’t—always like this—” She gestured at herself, as though to indicate her lithe form. “Lily did this. Because I—because I \\emph{begged} her. For years, I begged her. Lily had \\emph{always} been prettier than me, and I’d…been mean to her, because of that, and then she got \\emph{magic}, can you imagine how I felt? And I \\emph{begged} her to use some of that magic on me so that I could be pretty too, even if I couldn’t have her magic, at least I could be pretty.”",
+      "text": "Petunia bit her lip. “I can’t just tell you. You’ll think I’m—” She swallowed. “Listen. Michael. I wasn’t—always like this—” She gestured at herself, as though to indicate her lithe form. “Lily did this. Because I—because I begged her. For years, I begged her. Lily had always been prettier than me, and I’d…been mean to her, because of that, and then she got magic, can you imagine how I felt? And I begged her to use some of that magic on me so that I could be pretty too, even if I couldn’t have her magic, at least I could be pretty.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 37,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b023",
+      "kind": "para",
+      "tex": "Tears were gathering in Petunia’s eyes.",
+      "text": "Tears were gathering in Petunia’s eyes.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 39,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "This is the living-room of the house occupied by the eminent Professor Michael Verres-Evans, and his wife, Mrs Petunia Evans-Verres, and their adopted son, Harry James Potter-Evans-Verres.",
+    "There is a letter lying on the living-room table, and an unstamped envelope of yellowish parchment, addressed to Mr H. Potter in emerald-green ink.",
+    "The Professor and his wife are speaking sharply at each other, but they are not shouting. The Professor considers shouting to be uncivilised."
+  ],
+  "context_after": [
+    "“And Lily would tell me no, and make up the most ridiculous excuses, like the world would end if she were nice to her sister, or a centaur told her not to—the most ridiculous things, and I hated her for it. And when I had just graduated from university, I was going out with this boy, Vernon Dursley, he was fat and he was the only boy who would talk to me. And he said he wanted children, and that his first son would be named Dudley. And I thought to myself, what kind of parent names their child Dudley Dursley? It was like I saw my whole future life stretching out in front of me, and I couldn’t stand it. And I wrote to my sister and told her that if she didn’t help me I’d rather just—”",
+    "Petunia stopped.",
+    "“Anyway,” Petunia said, her voice small, “she gave in. She told me it was dangerous, and I said I didn’t care any more, and I drank this potion and I was sick for weeks, but when I got better my skin cleared up and I finally filled out and…I was beautiful, people were nice to me,” her voice broke, “and after that I couldn’t hate my sister any more, especially when I learned what her magic brought her in the end—”"
+  ]
+}

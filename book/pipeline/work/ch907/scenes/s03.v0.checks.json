@@ -1,0 +1,1446 @@
+{
+  "scene": "ch907/s03",
+  "version": 0,
+  "file": "work/ch907/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch907/s03",
+    "version": 0,
+    "tokens": 376,
+    "known_tokens": 341,
+    "known_share": 0.9069,
+    "new_lemmas_unglossed": 33,
+    "new_per_1000": 87.8,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "verrukken",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 2,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Ik ben verrukt kennis met u te maken, meneer Malfidus.",
+          "Gewoonweg onuitsprekelijk verrukt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "megacool",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "witblond",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "eenzelfde",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "DET",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "witharig",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een van Mallekins twee assistentes nam de witharige jongen en het gewaad met schaakbordraster dat hij droeg keurend op;"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "schaakbordraster",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een van Mallekins twee assistentes nam de witharige jongen en het gewaad met schaakbordraster dat hij droeg keurend op;"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verwonderen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b059"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Draco Malfidus,” zei Draco Malfidus, met een licht verwonderde blik."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "zelfvoldane",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b061"
+        ],
+        "glossed": false,
+        "examples": [
+          "Toen plooiden zijn lippen zich tot een zelfvoldane glimlach."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "smoorden",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b062"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verslikte",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b062"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "gewoonweg",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": false,
+        "examples": [
+          "Gewoonweg onuitsprekelijk verrukt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "onuitsprekelijk",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": false,
+        "examples": [
+          "Gewoonweg onuitsprekelijk verrukt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "bezwijmt",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": false,
+        "examples": [
+          "Mijn hart bezwijmt ervan."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "flirten",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b064"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dat laatste had misschien een beetje vreemd geklonken, alsof hij met Draco aan het flirten was of zo."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "aangemeten",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": false,
+        "examples": [
+          "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardig"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verwaardigen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": false,
+        "examples": [
+          "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardig"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "bekroning",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": false,
+        "examples": [
+          "Niets zou ik liever wensen als bekroning van deze dag, neen, van deze maand, ja, van mijn gehele leven."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "stadium",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "stage",
+          "phase"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "doormaken",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to go through",
+          "to experience"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "opdragen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to charge with"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een van Mallekins twee assistentes nam de witharige jongen en het gewaad met schaakbordraster dat hij droeg keurend op;"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "bejegenen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to treat"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "toekomen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "kaatsen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to hit",
+          "bounce"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onder"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "vergezellen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to accompany"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onder"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "onderdaan",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "subject"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onder",
+          "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onder"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "keuren",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to inspect",
+          "assess"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een van Mallekins twee assistentes nam de witharige jongen en het gewaad met schaakbordraster dat hij droeg keurend op;"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "flitsen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to flash",
+          "to suddenly brightly illuminate"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry kon voorspellen welke kant dit gesprek op zou gaan, en in een flits van ergernis besloot hij dat de maat vol was."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "plooi",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "crease",
+          "fold"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b061"
+        ],
+        "glossed": false,
+        "examples": [
+          "Toen plooiden zijn lippen zich tot een zelfvoldane glimlach."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "babbelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to chatter",
+          "to chit-chat",
+          "to talk casually"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry babbelde door."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "vernemen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to learn",
+          "to find out",
+          "to hear"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "gering",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "little"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onder"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "degelijk",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "sound",
+          "solid"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": false,
+        "examples": [
+          "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardig"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "neen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "stressed",
+          "formal form of nee"
+        ],
+        "pos": "INTJ",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": false,
+        "examples": [
+          "Niets zou ik liever wensen als bekroning van deze dag, neen, van deze maand, ja, van mijn gehele leven."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b055",
+        "scope": "sentence",
+        "new": [
+          "doormaken",
+          "eenzelfde",
+          "megacool",
+          "stadium",
+          "witblond"
+        ],
+        "text": "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken."
+      },
+      {
+        "block": "b055",
+        "scope": "sentence",
+        "new": [
+          "keuren",
+          "opdragen",
+          "schaakbordraster",
+          "witharig"
+        ],
+        "text": "Een van Mallekins twee assistentes nam de witharige jongen en het gewaad met schaakbordraster dat hij droeg keurend op;"
+      },
+      {
+        "block": "b055",
+        "scope": "paragraph",
+        "new": [
+          "doormaken",
+          "eenzelfde",
+          "keuren",
+          "megacool",
+          "opdragen",
+          "schaakbordraster",
+          "stadium",
+          "witblond",
+          "witharig"
+        ]
+      },
+      {
+        "block": "b061",
+        "scope": "sentence",
+        "new": [
+          "plooi",
+          "zelfvoldane"
+        ],
+        "text": "Toen plooiden zijn lippen zich tot een zelfvoldane glimlach."
+      },
+      {
+        "block": "b062",
+        "scope": "sentence",
+        "new": [
+          "smoorden",
+          "verslikte"
+        ],
+        "text": "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte."
+      },
+      {
+        "block": "b063",
+        "scope": "sentence",
+        "new": [
+          "gewoonweg",
+          "onuitsprekelijk",
+          "verrukken"
+        ],
+        "text": "Gewoonweg onuitsprekelijk verrukt."
+      },
+      {
+        "block": "b063",
+        "scope": "paragraph",
+        "new": [
+          "babbelen",
+          "bezwijmt",
+          "gewoonweg",
+          "onuitsprekelijk",
+          "verrukken"
+        ]
+      },
+      {
+        "block": "b065",
+        "scope": "sentence",
+        "new": [
+          "bejegenen",
+          "toekomen",
+          "vernemen"
+        ],
+        "text": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”"
+      },
+      {
+        "block": "b065",
+        "scope": "sentence",
+        "new": [
+          "gering",
+          "kaatsen",
+          "onderdaan",
+          "vergezellen"
+        ],
+        "text": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm."
+      },
+      {
+        "block": "b065",
+        "scope": "paragraph",
+        "new": [
+          "bejegenen",
+          "gering",
+          "kaatsen",
+          "onderdaan",
+          "toekomen",
+          "vergezellen",
+          "vernemen"
+        ]
+      },
+      {
+        "block": "b066",
+        "scope": "sentence",
+        "new": [
+          "aangemeten",
+          "degelijk",
+          "verwaardigen"
+        ],
+        "text": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?"
+      },
+      {
+        "block": "b066",
+        "scope": "sentence",
+        "new": [
+          "bekroning",
+          "neen"
+        ],
+        "text": "Niets zou ik liever wensen als bekroning van deze dag, neen, van deze maand, ja, van mijn gehele leven."
+      },
+      {
+        "block": "b066",
+        "scope": "paragraph",
+        "new": [
+          "aangemeten",
+          "bekroning",
+          "degelijk",
+          "neen",
+          "verwaardigen"
+        ]
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b055": {
+        "tokens": 66,
+        "new": [
+          "doormaken",
+          "eenzelfde",
+          "keuren",
+          "megacool",
+          "opdragen",
+          "schaakbordraster",
+          "stadium",
+          "witblond",
+          "witharig"
+        ],
+        "glosses": []
+      },
+      "b056": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      },
+      "b057": {
+        "tokens": 23,
+        "new": [
+          "flitsen"
+        ],
+        "glosses": []
+      },
+      "b058": {
+        "tokens": 18,
+        "new": [],
+        "glosses": []
+      },
+      "b059": {
+        "tokens": 10,
+        "new": [
+          "verwonderen"
+        ],
+        "glosses": []
+      },
+      "b060": {
+        "tokens": 41,
+        "new": [],
+        "glosses": []
+      },
+      "b061": {
+        "tokens": 30,
+        "new": [
+          "plooi",
+          "zelfvoldane"
+        ],
+        "glosses": []
+      },
+      "b062": {
+        "tokens": 19,
+        "new": [
+          "smoorden",
+          "verslikte"
+        ],
+        "glosses": []
+      },
+      "b063": {
+        "tokens": 33,
+        "new": [
+          "babbelen",
+          "bezwijmt",
+          "gewoonweg",
+          "onuitsprekelijk",
+          "verrukken"
+        ],
+        "glosses": []
+      },
+      "b064": {
+        "tokens": 19,
+        "new": [
+          "flirten"
+        ],
+        "glosses": []
+      },
+      "b065": {
+        "tokens": 50,
+        "new": [
+          "bejegenen",
+          "gering",
+          "kaatsen",
+          "onderdaan",
+          "toekomen",
+          "vergezellen",
+          "vernemen"
+        ],
+        "glosses": []
+      },
+      "b066": {
+        "tokens": 60,
+        "new": [
+          "aangemeten",
+          "bekroning",
+          "degelijk",
+          "neen",
+          "verwaardigen"
+        ],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch907/s03",
+    "version": 0,
+    "sentences": 36,
+    "summary": {
+      "likely": 33,
+      "review": 7,
+      "load": 10
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-TE-INF",
+        "span": "stadia van eenzelfde proces door te maken",
+        "confidence": 0.9,
+        "note": "after 'lijken'",
+        "block": "b055",
+        "sent": 0,
+        "sentence": "Naast Harry leek een bleke jongen met een spits gezicht en megacool witblond haar de laatste stadia van eenzelfde proces door te maken.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat hij droeg keurend op;",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b055",
+        "sent": 1,
+        "sentence": "Een van Mallekins twee assistentes nam de witharige jongen en het gewaad met schaakbordraster dat hij droeg keurend op;",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Harry kon voorspellen welke kant dit gesprek op zou gaan, en in een flits van ergernis besloot hij dat de maat vol was.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b057",
+        "sent": 0,
+        "sentence": "Harry kon voorspellen welke kant dit gesprek op zou gaan, en in een flits van ergernis besloot hij dat de maat vol was.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat de maat vol was.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b057",
+        "sent": 0,
+        "sentence": "Harry kon voorspellen welke kant dit gesprek op zou gaan, en in een flits van ergernis besloot hij dat de maat vol was.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verwonderde",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b059",
+        "sent": 0,
+        "sentence": "“Draco Malfidus,” zei Draco Malfidus, met een licht verwonderde blik.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "had nooit gedacht",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b060",
+        "sent": 2,
+        "sentence": "Ik — ik had nooit gedacht dat mij zo’n eer te beurt zou vallen, meneer.”",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat mij zo’n eer te beurt",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b060",
+        "sent": 2,
+        "sentence": "Ik — ik had nooit gedacht dat mij zo’n eer te beurt zou vallen, meneer.”",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "dat mij zo’n eer te beurt zou vallen",
+        "confidence": 0.9,
+        "note": "dat … te",
+        "block": "b060",
+        "sent": 2,
+        "sentence": "Ik — ik had nooit gedacht dat mij zo’n eer te beurt zou vallen, meneer.”",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Ik — ik had nooit gedacht dat mij zo’n eer te beurt zou vallen, meneer.”",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b060",
+        "sent": 2,
+        "sentence": "Ik — ik had nooit gedacht dat mij zo’n eer te beurt zou vallen, meneer.”",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat hij tranen in zijn ogen kon",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b060",
+        "sent": 3,
+        "sentence": "Harry wenste dat hij tranen in zijn ogen kon laten springen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-LATEN",
+        "span": "laten springen",
+        "confidence": 0.8,
+        "note": "laten springen",
+        "block": "b060",
+        "sent": 3,
+        "sentence": "Harry wenste dat hij tranen in zijn ogen kon laten springen.",
+        "level": "likely",
+        "hint": "give / show with a plain verb, or let the object act: Het boek viel."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "kon laten springen",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b060",
+        "sent": 3,
+        "sentence": "Harry wenste dat hij tranen in zijn ogen kon laten springen.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "gewoonlijk te huilen",
+        "confidence": 0.9,
+        "note": "after 'beginnen'",
+        "block": "b060",
+        "sent": 4,
+        "sentence": "De anderen begonnen rond dit punt gewoonlijk te huilen.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om eens iemand te ontmoeten",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b061",
+        "sent": 3,
+        "sentence": "“Het is goed om eens iemand te ontmoeten die zijn plaats kent.”",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-RELCL",
+        "span": "die zijn plaats kent",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b061",
+        "sent": 3,
+        "sentence": "“Het is goed om eens iemand te ontmoeten die zijn plaats kent.”",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "die Harry leek te hebben herkend",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b062",
+        "sent": 0,
+        "sentence": "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gesmoord",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b062",
+        "sent": 0,
+        "sentence": "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "alsof ze zich verslikte.",
+        "confidence": 0.85,
+        "note": "conjunction 'alsof'",
+        "block": "b062",
+        "sent": 0,
+        "sentence": "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "kennis met u te maken",
+        "confidence": 0.9,
+        "note": "after 'verrukken'",
+        "block": "b063",
+        "sent": 1,
+        "sentence": "“Ik ben verrukt kennis met u te maken, meneer Malfidus.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "ben verrukt kennis met u te maken",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b063",
+        "sent": 1,
+        "sentence": "“Ik ben verrukt kennis met u te maken, meneer Malfidus.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "En dan nog wel in hetzelfde jaar als u naar Zweinstein te mogen",
+        "confidence": 0.9,
+        "note": "en … te",
+        "block": "b063",
+        "sent": 3,
+        "sentence": "En dan nog wel in hetzelfde jaar als u naar Zweinstein te mogen!",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "ervan",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b063",
+        "sent": 4,
+        "sentence": "Mijn hart bezwijmt ervan.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "alsof hij met Draco aan het",
+        "confidence": 0.85,
+        "note": "conjunction 'alsof'",
+        "block": "b064",
+        "sent": 1,
+        "sentence": "Dat laatste had misschien een beetje vreemd geklonken, alsof hij met Draco aan het flirten was of zo.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "te vernemen",
+        "confidence": 0.9,
+        "note": "after 'verheugen'",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat ik zal worden bejegend met het",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "dat ik zal worden bejegend met",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat het geslacht Malfidus toekomt,”",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "dat het geslacht Malfidus toekomt",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "zal worden bejegend",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "vergezeld",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b065",
+        "sent": 1,
+        "sentence": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "zoals de hoogste der koningen zou",
+        "confidence": 0.5,
+        "note": "'zoals' + clause; 'zoals' + noun phrase is fine",
+        "block": "b065",
+        "sent": 1,
+        "sentence": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "level": "review",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b065",
+        "sent": 1,
+        "sentence": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "volgende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b066",
+        "sent": 0,
+        "sentence": "Eh…Verdomme, Harry had moeite om op zijn volgende tekst te komen.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om op zijn volgende tekst te komen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b066",
+        "sent": 0,
+        "sentence": "Eh…Verdomme, Harry had moeite om op zijn volgende tekst te komen.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "Wanneer mijn kleren zijn aangemeten,",
+        "confidence": 0.5,
+        "note": "prefer 'als' / 'toen'",
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "level": "review",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "Wanneer mijn kleren zijn aangemeten,",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "confidence": 0.3,
+        "note": "polite formula?",
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "level": "review",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "mij de hand te schudden",
+        "confidence": 0.9,
+        "note": "after 'willen'",
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "zou u zich dan wellicht willen verwaardigen mij de hand te schudden",
+        "confidence": 0.8,
+        "note": "4 verbs",
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Niets zou ik liever wensen als bekroning van deze dag, neen, van deze maand, ja, van mijn gehele leven.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b066",
+        "sent": 2,
+        "sentence": "Niets zou ik liever wensen als bekroning van deze dag, neen, van deze maand, ja, van mijn gehele leven.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      }
+    ],
+    "load": [
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b057",
+        "sent": 0,
+        "sentence": "Harry kon voorspellen welke kant dit gesprek op zou gaan, en in een flits van ergernis besloot hij dat de maat vol was.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b057",
+        "sent": 0,
+        "sentence": "Harry kon voorspellen welke kant dit gesprek op zou gaan, en in een flits van ergernis besloot hij dat de maat vol was.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b062",
+        "sent": 0,
+        "sentence": "Een van de assistentes, degene die Harry leek te hebben herkend, maakte een gesmoord geluid alsof ze zich verslikte.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "toekomt",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "“En ik ben verheugd te vernemen dat ik zal worden bejegend met het respect dat het geslacht Malfidus toekomt,”",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 31,
+        "limit": 28,
+        "block": "b065",
+        "sent": 1,
+        "sentence": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b065",
+        "sent": 1,
+        "sentence": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b065",
+        "sent": 1,
+        "sentence": "kaatste de andere jongen terug, vergezeld van een glimlach zoals de hoogste der koningen zou kunnen schenken aan de geringste van zijn onderdanen, als die onderdaan eerlijk was, zij het arm.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-LEN",
+        "value": 30,
+        "limit": 28,
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde wel degelijk Harry Potter de hand schudden, dus — “Wanneer mijn kleren zijn aangemeten, meneer, zou u zich dan wellicht willen verwaardigen mij de hand te schudden?",
+        "hint": "too many finite verbs; split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

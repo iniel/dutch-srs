@@ -1,0 +1,742 @@
+{
+  "scene": "ch001/s03",
+  "version": 2,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch001/scenes/s03.v2.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch001/s03",
+    "version": 2,
+    "tokens": 1016,
+    "known_tokens": 1005,
+    "known_share": 0.9892,
+    "new_lemmas_unglossed": 10,
+    "new_per_1000": 9.8,
+    "stretch_budget": 8,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "weerlegging",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": true,
+        "examples": [
+          "De vreemde zekerheid beschermde zichzelf niet tegen weerlegging."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "grafiet",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b060"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij klikte nog een millimeter grafiet uit zijn vulpotlood."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "vulpotlood",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b060"
+        ],
+        "glossed": true,
+        "examples": [
+          "Hij klikte nog een millimeter grafiet uit zijn vulpotlood."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "kalligrafie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b060"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dit vroeg om zorgvuldige kalligrafie."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "toelating",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b064"
+        ],
+        "glossed": true,
+        "examples": [
+          "Onlangs ontving ik uw brief aan meneer H. Potter over mijn toelating tot Zweinstein."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "zakmes",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b069"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij pakte een zakmes."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "h.j.p.e.v.",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b069"
+        ],
+        "glossed": false,
+        "examples": [
+          "H.J.P.E.V. Als hij dan toch aan deze waanzin begon, dan deed hij het met stijl."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "gootsteen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b072"
+        ],
+        "glossed": true,
+        "examples": [
+          "Zijn moeder draaide zich om bij de gootsteen en staarde hem geschokt aan."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "gênant",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b080"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dat was…eigenlijk best gênant, als hij het zo bekeek."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "onwaarschijnlijk",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "improbable",
+          "unlikely",
+          "implausible"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": true,
+        "examples": [
+          "Een beetje gek zijn was veel, veel minder onwaarschijnlijk dan dit:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "bizar",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bizarre"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar deze bizarre zekerheid…"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "weggooien",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to throw away",
+          "discard"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b060"
+        ],
+        "glossed": false,
+        "examples": [
+          "Toen gooide hij het vel weg en pakte een nieuw vel."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "onlangs",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "recently"
+        ],
+        "pos": "ADV",
+        "count": 1,
+        "blocks": [
+          "b064"
+        ],
+        "glossed": false,
+        "examples": [
+          "Onlangs ontving ik uw brief aan meneer H. Potter over mijn toelating tot Zweinstein."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verkrijgen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to obtain",
+          "gain",
+          "get"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "waar kan ik die verkrijgen?"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "vertegenwoordiger",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "representative"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": true,
+        "examples": [
+          "Volgens mijn moeder stuurde u eerder een vertegenwoordiger van Zweinstein naar Lily Potter (toen nog Lily Evans)."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "huidig",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "current",
+          "present"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b069"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry schreef hun huidige adres onder de brief."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "initiaal",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "initial"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b069"
+        ],
+        "glossed": false,
+        "examples": [
+          "Met de punt drukte hij zijn initialen in het kaarsvet:"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "waanzin",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "delusion"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b069"
+        ],
+        "glossed": true,
+        "examples": [
+          "H.J.P.E.V. Als hij dan toch aan deze waanzin begon, dan deed hij het met stijl."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "eigenaardig",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "idiosyncratic",
+          "peculiar"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b073"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar de eigenaardige zekerheid in Harry wilde haar nek blijkbaar nog verder uitsteken."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "achterdeur",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "back door"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b076"
+        ],
+        "glossed": false,
+        "examples": [
+          "Pas toen Harry door de achterdeur naar buiten stampte, de achtertuin in, bedacht hij iets."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "brein",
+        "status": "keep",
+        "cefr": null,
+        "en": [
+          "brain"
+        ],
+        "count": 3,
+        "blocks": [
+          "b053",
+          "b054",
+          "b077"
+        ],
+        "glossed": true,
+        "policy": "first",
+        "action": "keep",
+        "hint": "keep (world term); gloss per policy"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b049": {
+        "tokens": 61,
+        "new": [],
+        "glosses": [
+          "onwaarschijnlijk"
+        ]
+      },
+      "b050": {
+        "tokens": 33,
+        "new": [],
+        "glosses": []
+      },
+      "b051": {
+        "tokens": 22,
+        "new": [],
+        "glosses": []
+      },
+      "b052": {
+        "tokens": 56,
+        "new": [
+          "bizar"
+        ],
+        "glosses": [
+          "toverstok",
+          "weerlegging"
+        ]
+      },
+      "b053": {
+        "tokens": 20,
+        "new": [],
+        "glosses": [
+          "brein"
+        ]
+      },
+      "b054": {
+        "tokens": 21,
+        "new": [],
+        "glosses": []
+      },
+      "b055": {
+        "tokens": 41,
+        "new": [],
+        "glosses": [
+          "hypothese"
+        ]
+      },
+      "b056": {
+        "tokens": 14,
+        "new": [],
+        "glosses": []
+      },
+      "b058": {
+        "tokens": 2,
+        "new": [],
+        "glosses": []
+      },
+      "b060": {
+        "tokens": 31,
+        "new": [
+          "grafiet",
+          "weggooien"
+        ],
+        "glosses": [
+          "vulpotlood",
+          "kalligrafie"
+        ]
+      },
+      "b062": {
+        "tokens": 4,
+        "new": [],
+        "glosses": []
+      },
+      "b063": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b064": {
+        "tokens": 45,
+        "new": [
+          "onlangs"
+        ],
+        "glosses": [
+          "toelating"
+        ]
+      },
+      "b065": {
+        "tokens": 60,
+        "new": [
+          "verkrijgen"
+        ],
+        "glosses": []
+      },
+      "b066": {
+        "tokens": 51,
+        "new": [],
+        "glosses": [
+          "vertegenwoordiger"
+        ]
+      },
+      "b067": {
+        "tokens": 4,
+        "new": [],
+        "glosses": []
+      },
+      "b069": {
+        "tokens": 74,
+        "new": [
+          "h.j.p.e.v.",
+          "huidig",
+          "initiaal",
+          "zakmes"
+        ],
+        "glosses": [
+          "waanzin"
+        ]
+      },
+      "b070": {
+        "tokens": 73,
+        "new": [],
+        "glosses": []
+      },
+      "b071": {
+        "tokens": 22,
+        "new": [],
+        "glosses": []
+      },
+      "b072": {
+        "tokens": 27,
+        "new": [],
+        "glosses": [
+          "gootsteen"
+        ]
+      },
+      "b073": {
+        "tokens": 27,
+        "new": [
+          "eigenaardig"
+        ],
+        "glosses": []
+      },
+      "b074": {
+        "tokens": 39,
+        "new": [],
+        "glosses": []
+      },
+      "b075": {
+        "tokens": 51,
+        "new": [],
+        "glosses": []
+      },
+      "b076": {
+        "tokens": 37,
+        "new": [
+          "achterdeur"
+        ],
+        "glosses": []
+      },
+      "b077": {
+        "tokens": 40,
+        "new": [],
+        "glosses": []
+      },
+      "b078": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b079": {
+        "tokens": 2,
+        "new": [],
+        "glosses": []
+      },
+      "b080": {
+        "tokens": 26,
+        "new": [],
+        "glosses": [
+          "gênant"
+        ]
+      },
+      "b081": {
+        "tokens": 19,
+        "new": [],
+        "glosses": []
+      },
+      "b082": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b083": {
+        "tokens": 18,
+        "new": [],
+        "glosses": []
+      },
+      "b084": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b085": {
+        "tokens": 27,
+        "new": [],
+        "glosses": []
+      },
+      "b086": {
+        "tokens": 32,
+        "new": [],
+        "glosses": [
+          "haarnetje"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.975,
+      "new_lemmas_per_1000_max": 15,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch001/s03",
+    "version": 2,
+    "sentences": 117,
+    "summary": {
+      "likely": 0,
+      "review": 3,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-DAT",
+        "span": "dat die school echt bestaat.",
+        "confidence": 0.1,
+        "note": "whitelisted chunk 'op voorwaarde dat'",
+        "block": "b065",
+        "sent": 0,
+        "sentence": "Ik heb zeer veel belangstelling voor een plaats op Zweinstein, op voorwaarde dat die school echt bestaat.",
+        "level": "ignored",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Zou u dit ook voor mijn eigen familie doen?",
+        "confidence": 0.3,
+        "note": "polite formula?",
+        "block": "b066",
+        "sent": 4,
+        "sentence": "Zou u dit ook voor mijn eigen familie doen?",
+        "level": "review",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-LATEN",
+        "span": "liet kaarsvet op de flap van de envelop vallen",
+        "confidence": 0.1,
+        "note": "laten vallen",
+        "block": "b069",
+        "sent": 3,
+        "sentence": "Na nog wat nadenken haalde hij een kaars en liet kaarsvet op de flap van de envelop vallen.",
+        "level": "ignored",
+        "hint": "give / show with a plain verb, or let the object act: Het boek viel."
+      },
+      {
+        "id": "R-LATEN",
+        "span": "liet hij zijn slimheid zien",
+        "confidence": 0.1,
+        "note": "laten zien",
+        "block": "b070",
+        "sent": 2,
+        "sentence": "Zo liet hij zijn slimheid zien.",
+        "level": "ignored",
+        "hint": "give / show with a plain verb, or let the object act: Het boek viel."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "Dat moest eigenlijk heel verdacht klinken",
+        "confidence": 0.3,
+        "note": "no worden/zijn: copular?",
+        "block": "b073",
+        "sent": 0,
+        "sentence": "Dat moest eigenlijk heel verdacht klinken:",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "de brief is hier op een of andere manier gekomen",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b074",
+        "sent": 0,
+        "sentence": "“Nou, de brief is hier op een of andere manier gekomen,” zei Harry, “dus ik ga gewoon buiten met de brief zwaaien en ‘brief voor Zweinstein!",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verbaasde",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b084",
+        "sent": 1,
+        "sentence": "vroeg een verbaasde vrouwenstem, een van de buren.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": true,
+    "ok": true
+  }
+}

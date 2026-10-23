@@ -1,0 +1,50 @@
+# Reader-profile thresholds (idea.md §4, §6, Nation 2006), calibrated on the Phase 1
+# experiment (book/pipeline/experiments/report.md, 2026-10-22). Revisit after reading chapter 1.
+# Programmatic tools read this file; agents receive the relevant numbers in their brief.
+
+lexicon:
+  # Which sources count as "known" by default. Personal progress always wins.
+  known_levels: [A1, A2]        # cards.json cefr / level prefix
+  stretch_levels: [B1]          # allowed in a limited budget, candidates for a gloss
+  hard_levels: [B2, C1]         # replace unless listed in exceptions.json
+  known_paths: [inburgering, nederlands-in-gang]   # paths.json ids whose cards count as known
+  personal_min_stage: 5         # dutch-srs SRS stage >= 5 (Guru) or burned => known
+  nt2lex_known_bands: [A1, A2]  # NT2Lex lowest band -> known (covers function words)
+  nt2lex_stretch_bands: [B1]
+
+vocab:
+  known_token_share_min: 0.975  # share of tokens with status known (names, numbers, glossary count as known); Phase 1: V2 finals 97.8–99.6 %
+  new_lemmas_per_1000_max: 15   # distinct unglossed stretch/hard/unknown lemmas per 1000 tokens; Phase 1: V2 finals 3.9–21.6
+  new_per_sentence_max: 1       # more than this in one sentence => cluster finding
+  new_per_paragraph_max: 4      # more than this in one paragraph => cluster finding
+  gloss_per_paragraph_max: 2
+  stretch_budget_per_1000: 8    # B1 lemmas allowed without gloss per 1000 tokens
+  stretch_budget_min: 3         # per-scene floor (short scenes would otherwise get a budget of 1)
+  count_proper_nouns_as_known: true
+  count_numbers_as_known: true
+  count_glossary_as_known: true
+
+sentence:
+  max_words_soft: 20
+  max_words_hard: 28
+  max_finite_verbs: 3
+  max_subordinate_clauses: 1
+  max_nesting_depth: 1          # subordinate inside subordinate => finding
+  max_frame_span_words: 8       # words between the finite verb and the clause-final verb part
+
+grammar:
+  # confidence below which a flag is reported as "review" rather than "likely"
+  likely_confidence: 0.7
+  # flags the reviewer may dismiss without comment when confidence < this
+  ignore_confidence: 0.3
+
+loop:
+  max_fix_rounds: 2
+  blocking_severities: [must_fix]        # findings that force another round
+  advisory_severities: [should_fix, note]
+
+scene:
+  target_words_min: 500
+  target_words_max: 1000
+  hard_max_words: 1300          # a single \later segment larger than this is split at paragraph boundaries
+  context_paragraphs: 3         # paragraphs of neighbouring context given to the translator

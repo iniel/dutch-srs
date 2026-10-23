@@ -1,0 +1,192 @@
+{
+  "scene": "ch001/s01",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Both v1 must_fix items are fixed with known A2/A1 words ('hield het niet uit', 'werd wat zwaarder') and all five should_fix items are applied ('Er kroop irritatie', 'Ze was bijna in tranen', 'gaaf' in both b026 and b027, gloss on 'toverdrank' dropped, b032 rephrased without 'het niet meer weten'). The two remaining grammar flags are the same false positives as in v1 and are dismissed; a manual pass of the changed blocks found no restricted construction, calque or new lemma — every word introduced in v2 is known (uithouden A2, zwaar A1, gaaf A2, kruipen/irritatie A2, vergeten A1) and the stretch budget stays at 4 of 7. Thirteen notes: one on the b032 imperfectum, one on the double sense of 'gaaf', the rest carried forward from v1 for the lexicon, profile and bible owners.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b032",
+      "fragment": "Ze vergaten het even, zo leek het: er was nog een derde persoon in de kamer.",
+      "problem": "v1 L4 is fixed (the misleading 'het niet meer weten' is gone), but the idiomatic Dutch for a state of having forgotten is 'ze waren het even vergeten'; the imperfectum 'vergaten' reads as a momentary event and, placed after 'keken naar Harry', can be read as following the look rather than preceding it. 'even' and 'zo leek het' carry the reader through, so no stumble.",
+      "evidence": "naturalness; translator's note: 'waren + participle' in past narration is R-PLUPERF; restricted.md trap for R-PASSIVE: 'zijn' + participle expressing a state is fine ('Hij was verbaasd.'); 'ik ben het vergeten' is an A1 chunk",
+      "required_fix": "No change required. Profile owner: decide whether resultative 'zijn + vergeten' ('waren het vergeten') counts as a state like 'was verbaasd' (allowed) or as R-PLUPERF; if allowed, the translator may use 'Ze waren het even vergeten, zo leek het: …'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b026",
+      "fragment": "werd mijn huid gaaf (b026) / je huid werd vanzelf gaaf (b027)",
+      "problem": "v1 L6 is applied and the echo between Petunia and Michael is kept. 'gaaf' is the standard word for clear skin ('een gave huid'), but the sense learners meet most in spoken Dutch is 'cool'; 'huid' disambiguates, and the lexicon card teaches 'whole, not injured'.",
+      "evidence": "lexicon: gaaf known A2 ['whole', 'complete', 'not injured']; naturalness",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b006",
+      "fragment": "(zwart \\gl{gewaad}{robes}, vallend)",
+      "problem": "Bare present participle of known A1 'vallen' as a tag in the fragmentary epigraph (v1 L8). The checker no longer flags it in v2 although the token is unchanged; the decision stands either way. The bare singular without article mirrors the bare English fragment and is correct ('het gewaad' → uninflected 'zwart').",
+      "evidence": "v1 flag R-PARTICIPLE (0.60) dismissed; no flag in v2; bible: epigraph literal, no interpretation; lexicon: gewaad stretch B1, glossed",
+      "required_fix": "No change. Bible: epigraph fragments may keep a bare participle when the English is a bare participle.",
+      "severity": "note",
+      "category": "grammar:R-PARTICIPLE"
+    },
+    {
+      "id": "L4",
+      "block": "b004",
+      "fragment": "glimt een heel klein stukje zilver",
+      "problem": "The vocab table lists lemma 'glimen' as unknown (action review); the real lemma 'glimmen' is stretch B1 (v1 L9).",
+      "evidence": "lexicon: glimmen stretch B1 ['to shine', 'glow']; lemmatiser error on 3sg 'glimt'; unglossed stretch lemmas in the scene: boekenkast, overstromen, glimmen, overtuigd = 4 of budget 7",
+      "required_fix": "No change; dismissed as a lemmatiser error, inside the stretch budget.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L5",
+      "block": "b012",
+      "fragment": "de \\gl{eminente}{eminent} professor",
+      "problem": "Hard B2 adjective kept and glossed (v1 L10); near-cognate of the gloss, carries the narrator's mock-formal label.",
+      "evidence": "vocab table: eminent hard B2, glossed",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L6",
+      "block": "b019",
+      "fragment": "doet heel makkelijk iets onmogelijks na",
+      "problem": "Separable 'nadoen' is not in the lexicon and the checker resolved the token to 'doen' (v1 L11).",
+      "evidence": "lexicon: no entry nadoen; na and doen known A1",
+      "required_fix": "No change: compound of two known parts, meaning clear in context. Lexicon owner: add 'nadoen'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b019",
+      "fragment": "Ik leerde Harry lepels buigen.",
+      "problem": "'leren' + object + bare infinitive is not listed in restricted.md; the alternative ('hoe je lepels buigt') would be R-INDIRECT (v1 L12).",
+      "evidence": "restricted.md R-PERCEPTION covers zien/horen/voelen only",
+      "required_fix": "No change. Profile owner: decide whether 'leren + obj + inf' is allowed or restricted.",
+      "severity": "note",
+      "category": "grammar:R-PERCEPTION"
+    },
+    {
+      "id": "L8",
+      "block": "b030",
+      "fragment": "Petunia \\gl{wrong}{wrung} haar handen.",
+      "problem": "'wringen' is unknown to the lexicon and 'wrong' is a false friend of the English word; the gloss resolves it and no known verb gives the gesture (v1 L13).",
+      "evidence": "vocab table: wrong unknown, glossed; lexicon: knijpen A2 'pinch', wrijven A2 'rub' change the gesture",
+      "required_fix": "No change; keep word + gloss.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b010",
+      "fragment": "De boeken stromen over op de tafels en de banken",
+      "problem": "'overstromen' with directional 'op' is a slightly forced image but keeps the English metaphor and is inside the stretch budget (v1 L15).",
+      "evidence": "vocab table: overstromen stretch B1, ok-stretch",
+      "required_fix": "No change required.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L10",
+      "block": "b037",
+      "fragment": "Daar is de experimentele methode voor,",
+      "problem": "Split pronominal adverb 'daar … voor' looks like R-ER-PREP; it is the bible-fixed refrain and the checker did not flag it (v1 L16).",
+      "evidence": "bible refrain; restricted.md R-ER-PREP",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "grammar:R-ER-PREP"
+    },
+    {
+      "id": "L11",
+      "block": "b026",
+      "fragment": "“Hoe dan ook,” zei Petunia",
+      "problem": "Non-compositional discourse chunk; every token known, phrase not in the phrase list (v1 L17).",
+      "evidence": "lexicon phrases: no 'hoe dan ook'",
+      "required_fix": "No change. Lexicon owner: add phrase 'hoe dan ook' (anyway) as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L12",
+      "block": "b001",
+      "fragment": "Een dag van zeer lage waarschijnlijkheid",
+      "problem": "'waarschijnlijkheid' has no lexicon entry; the heading is counted as fully known and left unglossed because a gloss in a letterspaced heading is ugly (v1 L18; translator's OPEN item).",
+      "evidence": "lexicon: waarschijnlijk known A1, waarschijnlijkheid absent; per_block b001 new = []",
+      "required_fix": "No change here. Resolve the OPEN item by glossing 'onwaarschijnlijk' at its first body occurrence in s02.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L13",
+      "block": "b013",
+      "fragment": "in \\gl{smaragdgroene}{emerald-green} inkt",
+      "problem": "Checker lists the inflected form 'smaragdgroene' as an unknown lemma; compound smaragd + groen, glossed (v1 L19).",
+      "evidence": "vocab table: smaragdgroene unknown, glossed; groen known",
+      "required_fix": "No change; keep the gloss ('smaragd' itself is not known).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b019",
+      "span": "getrainde",
+      "decision": "dismissed",
+      "reason": "Attributive adjectival participle used as a plain adjective with no complements; restricted.md: simple adjectival participles that behave as adjectives are fine; base verb 'trainen' known A1. Block unchanged since v1, same decision."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b024",
+      "span": "belachelijkste",
+      "decision": "dismissed",
+      "reason": "Not a participle: superlative of the adjective 'belachelijk' (known A2) with the regular -ste ending; the detector fired on the ending. Same decision as v1."
+    },
+    {
+      "id": "R-OF",
+      "block": "b024",
+      "span": "Of het mocht niet van een centaur",
+      "decision": "dismissed",
+      "reason": "Sentence-initial coordinating 'of' (or) continuing the list of excuses, not a complement clause. Level 'ignored' (0.20)."
+    },
+    {
+      "id": "R-TE-INF",
+      "block": "b037",
+      "span": "Dan hoeven jullie geen ruzie te maken",
+      "decision": "dismissed",
+      "reason": "Whitelisted negative-necessity chunk 'hoeven (niet/geen) te' (exceptions.json grammar_whitelist). Level 'ignored' (0.10)."
+    },
+    {
+      "id": "R-TE-INF",
+      "block": "b037",
+      "span": "dingen niet alleen met ruzie hoeven op te lossen",
+      "decision": "dismissed",
+      "reason": "Same whitelisted chunk inside the allowed zodat-clause; 'op te lossen' is one separable verb, so the cluster is two verbs (A-SUB-2V). Level 'ignored' (0.10)."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "type": "inconsistency",
+      "check": "grammar",
+      "item": "R-PARTICIPLE 'vallend' (0.60) fired in v1 but not in v2",
+      "block": "b006",
+      "reason": "The token 'vallend' is unchanged; only the preceding NP changed from plural 'zwarte gewaden' to singular 'zwart gewaad'. The detector's result should not depend on the number of the neighbouring noun."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "lemma 'glimen' unknown; 'cold' + 'reading' as separate rows; inflected 'smaragdgroene'",
+      "block": "b004",
+      "reason": "Same three false positives as reported for v1 (lemmatiser double-consonant stem, tokens inside a multi-word \\gl, adjectival -e not stripped); still present in the v2 table."
+    }
+  ]
+}

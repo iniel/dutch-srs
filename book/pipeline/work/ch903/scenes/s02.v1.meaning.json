@@ -1,0 +1,96 @@
+{
+  "scene": "ch903/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "All comprehension questions are answerable; the refrain 'Waarom geloof ik wat ik geloof?', the bible's affordance phrase and the negation scope in b052 (quoted excuses) are handled correctly, and no fact, link or point of view changed. Two quality losses: 'een hele magische wereld' will mostly be read as 'a very magical world', and the mock-technical 'in ascending order of awfulness' became a flat explanatory sentence.",
+  "comprehension": [
+    {
+      "q": "Why does Harry think he ought to have agreed with his father — what is his argument against magic being real?",
+      "answer_from_nl": "Niemand zag ooit bewijs van magie; volgens mam is er ergens een hele magische wereld, maar hoe houd je zoiets geheim? 'Meer magie' als uitleg lijkt een verdacht soort excuus.",
+      "answerable": true
+    },
+    {
+      "q": "Which three explanations for Mum's behaviour does Harry list, how are they ordered, and which odd detail about the letter would 'Mum sent it herself' explain?",
+      "answer_from_nl": "Mam maakte een grapje, of ze loog, of ze was gek; elke optie was erger dan de vorige. Als mam de brief zelf stuurde, is er een uitleg voor de brief zonder postzegel in de brievenbus.",
+      "answerable": true
+    },
+    {
+      "q": "What does part of Harry believe anyway, and since when?",
+      "answer_from_nl": "Een deel van Harry weet het helemaal zeker: magie is echt — al vanaf de eerste blik op de zogenaamde brief van Zweinstein.",
+      "answerable": true
+    },
+    {
+      "q": "What is odd about Harry's certainty — what is it not doing that a belief normally does to protect itself?",
+      "answer_from_nl": "Ze beschermt zichzelf niet eens tegen weerlegging: geen excuus vooraf zoals ‘misschien komt er geen professor’ of ‘misschien kan de professor alleen maar lepels buigen’. Harry verwacht gewoon dat er een professor komt, zwaait en tovert.",
+      "answerable": true
+    },
+    {
+      "q": "Can Harry explain where his belief comes from, and what does he decide to do about it?",
+      "answer_from_nl": "Nee: meestal kan hij die vraag beantwoorden, maar nu heeft hij geen idee wat zijn brein denkt. Hij haalt in gedachten zijn schouders op: met een testbare hypothese doe je één ding, die ga je testen.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b048",
+      "fragment": "een hele magische wereld",
+      "problem": "'hele' before an adjective is read by most readers as the intensifier 'very' ('a very magical world'), not as 'whole'; the scale of the claim — an entire hidden world — which is what makes the secrecy implausible, can be lost.",
+      "evidence": "EN: 'there was a whole magical world out there' vs NL: 'was er ergens een hele magische wereld'",
+      "required_fix": "Make 'whole' unambiguous: 'een hele wereld vol magie' (s03), 'een complete magische wereld' (s01) or 'een hele wereld van magie'.",
+      "severity": "should_fix",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b049",
+      "fragment": "Elke optie was erger dan de vorige.",
+      "problem": "The mock-technical afterthought 'in ascending order of awfulness' (awfulness as a measurable scale, tacked onto the list) becomes a separate plain sentence; Harry's pseudo-scientific register is flattened into narrator explanation.",
+      "evidence": "EN: '…joking, lying or being insane, in ascending order of awfulness.' vs NL: '…of ze loog, of ze was gek. Elke optie was erger dan de vorige.'",
+      "required_fix": "Keep the ranking as a measured afterthought to the list in Harry's register (e.g. ', in oplopende volgorde van ergheid'), not as a separate flat sentence; the ranking joke < lie < insane must stay.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b050",
+      "fragment": "wist een deel van Harry het helemaal zeker",
+      "problem": "'utterly convinced' (a belief state) has become 'knew it for certain' (knowledge); the narrator's small distance from the belief is reduced.",
+      "evidence": "EN: 'some part of Harry was utterly convinced that magic was real' vs NL: 'wist een deel van Harry het helemaal zeker: magie was echt'",
+      "required_fix": "Optional: 'was … helemaal overtuigd: magie was echt' (as s01/s03).",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M4",
+      "block": "b050",
+      "fragment": "de zogenaamde brief",
+      "problem": "'putative' is Harry's neutral, pedantic hedge; 'zogenaamde' ('so-called') sneers, implying he already judges the letter fake.",
+      "evidence": "EN: 'the putative letter from the Hogwarts School…' vs NL: 'de zogenaamde brief van Zweinsteins Hogeschool…'",
+      "required_fix": "Optional: 'de vermeende brief' (as s03).",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M5",
+      "block": "b052",
+      "fragment": "‘misschien komt er geen professor’",
+      "problem": "The English excuses are reasons 'for why there wouldn't be a professor'; the Dutch gives the hedged prediction itself as the excuse. The quotes make the negation scope clear, so only the content shifts slightly.",
+      "evidence": "EN: 'excuses in advance for why there wouldn't be a professor' vs NL: 'geen excuus vooraf: ‘misschien komt er geen professor’'",
+      "required_fix": "Optional: 'excuses voor als er geen professor kwam' (as s03) keeps the excuses as explanations of a possible failure.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b054",
+      "fragment": "in dit geval",
+      "problem": "'particular' is dropped; the small pedantic precision of 'in this particular case' is lost.",
+      "evidence": "EN: 'in this particular case' vs NL: 'in dit geval'",
+      "required_fix": "Optional: 'in dit bijzondere geval' (as s01/s03).",
+      "severity": "note",
+      "category": "omission"
+    }
+  ]
+}

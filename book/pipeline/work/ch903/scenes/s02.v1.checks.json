@@ -1,0 +1,315 @@
+{
+  "scene": "ch903/s02",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch903/scenes/s02.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch903/s02",
+    "version": 1,
+    "tokens": 297,
+    "known_tokens": 294,
+    "known_share": 0.9899,
+    "new_lemmas_unglossed": 3,
+    "new_per_1000": 10.1,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": false,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "weerlegging",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": true,
+        "examples": [
+          "De vreemde zekerheid beschermde zichzelf niet eens tegen weerlegging — geen excuus vooraf:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "metalen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "metallic",
+          "metal -",
+          "made of metal"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een platte metalen plaat op een deur nodigt uit tot duwen."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "optie",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "option"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Elke optie was erger dan de vorige."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "onwaarschijnlijk",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "improbable",
+          "unlikely",
+          "implausible"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": true,
+        "examples": [
+          "Een beetje gekte was veel, veel minder onwaarschijnlijk dan dit:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "bizar",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bizarre"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar deze bizarre zekerheid…"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "brein",
+        "status": "keep",
+        "cefr": null,
+        "en": [
+          "brain"
+        ],
+        "count": 2,
+        "blocks": [
+          "b053",
+          "b054"
+        ],
+        "glossed": true,
+        "policy": "first",
+        "action": "keep",
+        "hint": "keep (world term); gloss per policy"
+      },
+      {
+        "lemma": "bewijs",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "proof"
+        ],
+        "count": 1,
+        "blocks": [
+          "b048"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "zogenaamd",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "so-called"
+        ],
+        "count": 1,
+        "blocks": [
+          "b050"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "voorspelling",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "forecast"
+        ],
+        "count": 1,
+        "blocks": [
+          "b053"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b047": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b048": {
+        "tokens": 42,
+        "new": [],
+        "glosses": [
+          "bewijs"
+        ]
+      },
+      "b049": {
+        "tokens": 58,
+        "new": [
+          "optie"
+        ],
+        "glosses": [
+          "onwaarschijnlijk"
+        ]
+      },
+      "b050": {
+        "tokens": 32,
+        "new": [],
+        "glosses": [
+          "zogenaamde"
+        ]
+      },
+      "b051": {
+        "tokens": 19,
+        "new": [],
+        "glosses": []
+      },
+      "b052": {
+        "tokens": 54,
+        "new": [
+          "bizar"
+        ],
+        "glosses": [
+          "toverstok",
+          "weerlegging"
+        ]
+      },
+      "b053": {
+        "tokens": 20,
+        "new": [],
+        "glosses": [
+          "voorspelling",
+          "brein"
+        ]
+      },
+      "b054": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b055": {
+        "tokens": 40,
+        "new": [
+          "metalen"
+        ],
+        "glosses": [
+          "hypothese"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch903/s02",
+    "version": 1,
+    "sentences": 37,
+    "summary": {
+      "likely": 0,
+      "review": 2,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-TE-INF",
+        "span": "na te denken",
+        "confidence": 0.5,
+        "note": "frequent chunk 'proberen te' — reviewer decides",
+        "block": "b047",
+        "sent": 0,
+        "sentence": "Hij deed de deur achter zich dicht en probeerde na te denken.",
+        "level": "review",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verdacht",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b048",
+        "sent": 5,
+        "sentence": "Dat leek een nogal verdacht soort excuus.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": true,
+    "ok": false
+  }
+}

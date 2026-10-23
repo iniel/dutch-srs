@@ -1,0 +1,76 @@
+{
+  "scene": "ch907/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "The scene is intact and all five comprehension questions are answerable. This version keeps the aside structure of b062 and keeps Draco's b065 claim impersonal ('ik krijg het juiste respect voor de familie Malfidus'), the closest of the three. One voice loss: Draco's 'It's good to meet someone who knows his place' is clipped into an elliptical fragment. 'Mijn hart valt flauw' is a literal swoon whose flirtatious ring — which b064's 'Oeps' depends on — is weaker than in the source.",
+  "comprehension": [
+    {
+      "q": "Why does Harry suddenly start gushing over the pale boy he has only just met?",
+      "answer_from_nl": "Hij kan de rest van het gesprek al voorspellen en besluit in een halve seconde van frustratie: de maat is vol — hij draait de rollen om en begint zelf te dwepen (b057–b058).",
+      "answerable": true
+    },
+    {
+      "q": "Is Harry's admiration real? Where does he get his lines — the tears, the handshake — from?",
+      "answer_from_nl": "Nee, het is een act: hij wil graag tranen in zijn ogen krijgen maar dat lukt niet, want 'bij de anderen kwamen de tranen meestal rond dit punt' (b060); de handdruk vraagt hij omdat 'iedereen toch de hand van Harry Potter wilde schudden' (b066). Hij speelt zijn eigen bewonderaars na.",
+      "answerable": true
+    },
+    {
+      "q": "How does Draco read Harry's behaviour, and what does he believe it tells him about how he will be treated?",
+      "answer_from_nl": "Eerst is hij in de war, dan glimlacht hij zelfvoldaan: 'iemand kent zijn plaats' (b061). Hij is tevreden met dit nieuws: hij krijgt het juiste respect voor de familie Malfidus, en hij glimlacht als de hoogste koning naar een arme, eerlijke onderdaan (b065).",
+      "answerable": true
+    },
+    {
+      "q": "Who else notices what Harry is doing, and how does she react?",
+      "answer_from_nl": "Een van de assistentes — zij herkende Harry eerder al, zo leek het — maakt een zacht, verstikt geluid (b062).",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry think 'Oops' after the line about his heart?",
+      "answer_from_nl": "Omdat 'Mijn hart valt flauw' misschien klonk als flirten met Draco (b063–b064).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b061",
+      "fragment": "Het is goed, zo’n ontmoeting: iemand kent zijn plaats.",
+      "problem": "Draco's smooth, condescending maxim is clipped into an elliptical fragment; the sneer at Harry as 'someone who knows his place' is diluted and the trained-politeness register the bible gives Draco (fluent, slightly affected sentences) slips.",
+      "evidence": "EN: 'It’s good to meet someone who knows his place.' vs NL: 'Het is goed, zo’n ontmoeting: iemand kent zijn plaats.'",
+      "required_fix": "One fluent sentence in Draco's affected register saying that it is pleasant to meet a person who knows his place — third person ('iemand'), Harry meant but not addressed. E.g. 'Aangenaam. Het is fijn als iemand zijn plaats kent.' (as in s02) or 'Het is fijn om iemand te ontmoeten die zijn plaats kent.'",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b063",
+      "fragment": "Mijn hart valt flauw.",
+      "problem": "A literal 'swoon' (faint); it reads as overwhelmed fan-gush, but the romantic overtone that makes Harry think 'Oeps … als flirten' in b064 is weaker than in the source, so the b064 payoff lands a little less cleanly.",
+      "evidence": "EN: 'It makes my heart swoon.' vs NL: 'Mijn hart valt flauw.'",
+      "required_fix": "Optional: 'Mijn hart smelt.' (as in s01/s02) keeps the flirtatious ring b064 comments on.",
+      "severity": "note",
+      "category": "irony"
+    },
+    {
+      "id": "M3",
+      "block": "b055",
+      "fragment": "hetzelfde proces",
+      "problem": "'a similar process' is tightened to 'the same process'; a small loss of the narrator's hedge.",
+      "evidence": "EN: 'the final stages of a similar process' vs NL: 'de laatste fase van hetzelfde proces'",
+      "required_fix": "Optional: 'ongeveer hetzelfde proces' (as in s02) or 'een soortgelijk proces'.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b060",
+      "fragment": "U bent het \\emph{echt}!",
+      "problem": "The emphasis is carried by an added 'echt' instead of the verb; the stressed idea (confirmation of identity) is the same, so acceptable, but 'U \\emph{bent} het!' keeps the source's stress without adding a word.",
+      "evidence": "EN: 'It \\emph{is} you!' vs NL: 'U bent het \\emph{echt}!'",
+      "required_fix": "Optional: 'U \\emph{bent} het!'",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "scene": "ch903/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Closest of the three versions to the English: all comprehension questions are answerable, the refrain and the affordance phrase follow glossary and bible, 'putative' is rendered neutrally ('vermeende'), 'some part' keeps its vagueness ('een of ander deel'), the excuses stay explanations of a possible failure with clear negation scope, and the emphasis on 'flauw' lands where 'clue' did. Only the mock-technical 'in ascending order of awfulness' is flattened; two small stylistic additions noted.",
+  "comprehension": [
+    {
+      "q": "Why does Harry think he ought to have agreed with his father — what is his argument against magic being real?",
+      "answer_from_nl": "Niemand zag ooit bewijs voor magie; volgens mam bestaat er ergens een hele wereld vol magie, maar hoe houd je zoiets geheim? 'Nog meer magie' als uitleg lijkt een verdacht soort excuus.",
+      "answerable": true
+    },
+    {
+      "q": "Which three explanations for Mum's behaviour does Harry list, how are they ordered, and which odd detail about the letter would 'Mum sent it herself' explain?",
+      "answer_from_nl": "Mam maakte een grapje, mam loog, of mam was gek, 'in volgorde van erg naar erger'. Als mam de brief zelf stuurde, is dat de verklaring: zo kwam hij zonder postzegel in de brievenbus.",
+      "answerable": true
+    },
+    {
+      "q": "What does part of Harry believe anyway, and since when?",
+      "answer_from_nl": "Een of ander deel van Harry is helemaal overtuigd dat magie echt bestaat, al vanaf het eerste moment dat hij de vermeende brief van Zweinstein zag.",
+      "answerable": true
+    },
+    {
+      "q": "What is odd about Harry's certainty — what is it not doing that a belief normally does to protect itself?",
+      "answer_from_nl": "Ze doet geen moeite: ze beschermt zichzelf niet tegen weerlegging en bedenkt niet alvast excuses voor als er geen professor komt, of voor als de professor alleen lepels kan buigen. Harry verwacht gewoon dat er een professor komt, zwaait en tovert.",
+      "answerable": true
+    },
+    {
+      "q": "Can Harry explain where his belief comes from, and what does he decide to do about it?",
+      "answer_from_nl": "Nee: meestal kan hij die vraag vrij goed beantwoorden, maar nu heeft hij geen flauw idee wat zijn brein denkt. Hij haalt in gedachten zijn schouders op: een testbare hypothese, die ga je testen.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b049",
+      "fragment": "in volgorde van erg naar erger",
+      "problem": "Harry's mock-technical ranking 'in ascending order of awfulness' (awfulness treated as a measurable scale) is replaced by a homely idiom; the deadpan pseudo-scientific register that is his voice is flattened, though the afterthought position is kept.",
+      "evidence": "EN: 'joking, lying or being insane, in ascending order of awfulness' vs NL: 'of mam was gek, in volgorde van erg naar erger'",
+      "required_fix": "Keep a measured, formal-sounding ranking phrase in Harry's register as the afterthought to the list (e.g. 'in oplopende volgorde van ergheid' / '…van akeligheid'); the ranking joke < lie < insane must stay.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b049",
+      "fragment": "Mam maakte een grapje, mam loog, of mam was gek",
+      "problem": "The English has a flat three-item list ('Mum joking, lying or being insane'); repeating 'mam' three times adds an anaphoric rhythm and rhetorical weight the deadpan list does not have.",
+      "evidence": "EN: 'a clean case for Mum joking, lying or being insane' vs NL: 'Mam maakte een grapje, mam loog, of mam was gek'",
+      "required_fix": "Optional: name 'mam' once ('Mam maakte een grapje, of ze loog, of ze was gek').",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b052",
+      "fragment": "deed geen enkele moeite.",
+      "problem": "'was making no effort to guard itself' is split so that 'made no effort at all' stands alone as a sentence, with 'geen enkele' slightly intensifying 'no'; read on its own it suggests general laziness until the next sentence supplies what the effort was for.",
+      "evidence": "EN: 'was making no effort to guard itself against falsification' vs NL: 'deed geen enkele moeite. Ze beschermde zichzelf niet tegen weerlegging'",
+      "required_fix": "Optional: keep the split but drop 'enkele' ('deed geen moeite'), or fold the object back in ('deed geen moeite om zichzelf tegen weerlegging te beschermen').",
+      "severity": "note",
+      "category": "addition"
+    }
+  ]
+}

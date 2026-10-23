@@ -1,0 +1,46 @@
+{
+  "scene": "ch901/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, same order, all facts, negations, causal links, the 'menen' irony in b015 and the four emphases intact; the narrator's hedge in b022 ('zo leek het') and the 'so that / even if / at least' chain are the closest of the three. All five comprehension questions answerable. One note.",
+  "comprehension": [
+    {
+      "q": "What does Michael say in reply to Petunia, and what does his tone give away?",
+      "answer_from_nl": "He says 'Dat meen je niet'; his tone gives him away: he is only too afraid — maybe she means it after all.",
+      "answerable": true
+    },
+    {
+      "q": "According to Michael, how could what Petunia saw have been faked, and what name does he give to the trick of seeming to guess someone's thoughts?",
+      "answer_from_nl": "A trained stage magician (goochelaar) easily imitates such a thing; it only seems impossible — he taught Harry to bend spoons; if it seemed they could always guess your thoughts, that is called cold reading.",
+      "answerable": true
+    },
+    {
+      "q": "What did Lily do to Petunia, and why did Lily do it?",
+      "answer_from_nl": "Lily made Petunia the way she is now (her slim figure); because Petunia begged her, for years.",
+      "answerable": true
+    },
+    {
+      "q": "Why did Petunia beg Lily for years — what had she felt about Lily, and what did she want even though she could not have magic?",
+      "answer_from_nl": "Lily had always been prettier; Petunia had been mean to her because of that; then Lily got magic too. She begged Lily to use some of that magic on her so that she could also be pretty — if she couldn't have the magic, she could at least be pretty.",
+      "answerable": true
+    },
+    {
+      "q": "What had Petunia told Lily and her husband about Michael, and why can't she just tell Michael what she saw?",
+      "answer_from_nl": "She had told them Michael was not allowed to know. She can't just tell him because then he will think she is— (unfinished).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b015",
+      "fragment": "Zijn toon verried hem:",
+      "problem": "'verried hem' (gave him away) adds the idea that he was trying to hide the fear, where the English 'indicated' merely reports; the implication is already present in the contrast with 'Dat meen je niet', so the effect is unchanged.",
+      "evidence": "EN: 'His tone indicated that he was very much afraid that she was serious.' vs NL: 'Zijn toon verried hem: hij was maar al te bang. Misschien meende ze het toch.'",
+      "required_fix": "None required; keep. The 'meen je niet / meende ze het toch' echo carries the irony exactly.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "chapter": 9,
+  "scene": "s02",
+  "index": 1,
+  "of": 4,
+  "chapter_title": "Self Awareness, I",
+  "words": 534,
+  "blocks": [
+    {
+      "id": "b051",
+      "kind": "para",
+      "tex": "And talk about your foregone conclusions. Harry didn’t see why Hermione had been so tense about it. In what weird alternative universe would that girl \\emph{not} be Sorted into Ravenclaw? If Hermione Granger didn’t go to Ravenclaw then there was no good reason for Ravenclaw House to exist.",
+      "text": "And talk about your foregone conclusions. Harry didn’t see why Hermione had been so tense about it. In what weird alternative universe would that girl not be Sorted into Ravenclaw? If Hermione Granger didn’t go to Ravenclaw then there was no good reason for Ravenclaw House to exist.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 95,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b052",
+      "kind": "para",
+      "tex": "Hermione arrived at the Ravenclaw table and got a dutiful cheer; Harry wondered whether the cheer would have been louder, or quieter, if they’d had any idea just what level of competition they’d welcomed to their table. Harry knew pi to 3.141592 because accuracy to one part in a million was enough for most practical purposes. Hermione knew one hundred digits of pi because that was how many digits had been printed in the back of her maths textbook.",
+      "text": "Hermione arrived at the Ravenclaw table and got a dutiful cheer; Harry wondered whether the cheer would have been louder, or quieter, if they’d had any idea just what level of competition they’d welcomed to their table. Harry knew pi to 3.141592 because accuracy to one part in a million was enough for most practical purposes. Hermione knew one hundred digits of pi because that was how many digits had been printed in the back of her maths textbook.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 97,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b053",
+      "kind": "para",
+      "tex": "Neville Longbottom went to Hufflepuff, Harry was glad to see. If that House really did contain the loyalty and camaraderie it was supposed to exemplify, then a Houseful of reliable friends would do Neville a whole world of good. Clever kids in Ravenclaw, evil kids in Slytherin, wannabe heroes in Gryffindor, and everyone who does the actual work in Hufflepuff.",
+      "text": "Neville Longbottom went to Hufflepuff, Harry was glad to see. If that House really did contain the loyalty and camaraderie it was supposed to exemplify, then a Houseful of reliable friends would do Neville a whole world of good. Clever kids in Ravenclaw, evil kids in Slytherin, wannabe heroes in Gryffindor, and everyone who does the actual work in Hufflepuff.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 99,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b054",
+      "kind": "para",
+      "tex": "(Though Harry \\emph{had} been right to consult a Ravenclaw prefect first. The young woman hadn’t even looked up from her reading or identified Harry, just jabbed a wand in Neville’s direction and muttered something. After which Neville had acquired a dazed expression and wandered off to the fifth carriage from the front and the fourth compartment on the left, which indeed had contained his toad.)",
+      "text": "(Though Harry had been right to consult a Ravenclaw prefect first. The young woman hadn’t even looked up from her reading or identified Harry, just jabbed a wand in Neville’s direction and muttered something. After which Neville had acquired a dazed expression and wandered off to the fifth carriage from the front and the fourth compartment on the left, which indeed had contained his toad.)",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 101,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b055",
+      "kind": "para",
+      "tex": "“Malfoy, Draco!” went to Slytherin, and Harry breathed a small sigh of relief. It had \\emph{seemed} like a sure thing, but you never did know what tiny event might upset the course of your master plan.",
+      "text": "“Malfoy, Draco!” went to Slytherin, and Harry breathed a small sigh of relief. It had seemed like a sure thing, but you never did know what tiny event might upset the course of your master plan.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 103,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b056",
+      "kind": "para",
+      "tex": "Professor McGonagall called “Perks, Sally-Anne!” and from the gathered children detached a pale waifish girl who looked oddly ethereal—like she might mysteriously disappear the moment you stopped looking at her, and never be seen again or even remembered.",
+      "text": "Professor McGonagall called “Perks, Sally-Anne!” and from the gathered children detached a pale waifish girl who looked oddly ethereal—like she might mysteriously disappear the moment you stopped looking at her, and never be seen again or even remembered.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 105,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b057",
+      "kind": "para",
+      "tex": "And then (with a note of trepidation so firmly kept from her voice and face that you’d have needed to know her very well indeed to notice) Minerva McGonagall inhaled deeply, and called out, “Potter, Harry!”",
+      "text": "And then (with a note of trepidation so firmly kept from her voice and face that you’d have needed to know her very well indeed to notice) Minerva McGonagall inhaled deeply, and called out, “Potter, Harry!”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 107,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b058",
+      "kind": "para",
+      "tex": "There was a sudden silence in the hall.",
+      "text": "There was a sudden silence in the hall.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 109,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b059",
+      "kind": "para",
+      "tex": "All conversation stopped.",
+      "text": "All conversation stopped.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 111,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b060",
+      "kind": "para",
+      "tex": "All eyes turned to stare.",
+      "text": "All eyes turned to stare.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 113,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b061",
+      "kind": "para",
+      "tex": "For the first time in his entire life, Harry felt like he might be having an opportunity to experience stage fright.",
+      "text": "For the first time in his entire life, Harry felt like he might be having an opportunity to experience stage fright.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 115,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b062",
+      "kind": "para",
+      "tex": "Harry immediately stomped down this feeling. Whole roomfuls of people staring at him was something he’d have to accustom himself to, if he wanted to live in magical Britain, or for that matter do anything else interesting with his life. Affixing a confident and false smile to his face, he raised a foot to step forwards—",
+      "text": "Harry immediately stomped down this feeling. Whole roomfuls of people staring at him was something he’d have to accustom himself to, if he wanted to live in magical Britain, or for that matter do anything else interesting with his life. Affixing a confident and false smile to his face, he raised a foot to step forwards—",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 117,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b063",
+      "kind": "para",
+      "tex": "“Harry Potter!” cried the voice of either Fred or George Weasley, and then “Harry Potter!” cried the other Weasley twin, and a moment later the entire Gryffindor table, and soon after a good portion of Ravenclaw and Hufflepuff, had taken up the cry.",
+      "text": "“Harry Potter!” cried the voice of either Fred or George Weasley, and then “Harry Potter!” cried the other Weasley twin, and a moment later the entire Gryffindor table, and soon after a good portion of Ravenclaw and Hufflepuff, had taken up the cry.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 119,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b064",
+      "kind": "para",
+      "tex": "“\\emph{Harry Potter! Harry Potter! Harry Potter!}”",
+      "text": "“Harry Potter! Harry Potter! Harry Potter!”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 121,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b065",
+      "kind": "para",
+      "tex": "And Harry Potter walked forwards. Much too slowly, he realized once he’d begun, but by then it was too late to alter his pace without it looking awkward.",
+      "text": "And Harry Potter walked forwards. Much too slowly, he realized once he’d begun, but by then it was too late to alter his pace without it looking awkward.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 123,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "“Granger, Hermione!”",
+    "Hermione broke loose and ran full tilt towards the Sorting Hat, picked it up and jammed the patchy old cloth-work down hard over her head, making Harry wince. Hermione had been the one to explain to him about the Sorting Hat, but she certainly didn’t treat it like an irreplaceable, vitally important, 800-year-old artefact of forgotten magic that was about to perform intricate telepathy on her mind and didn’t seem to be in very good physical condition.",
+    "“RAVENCLAW!”"
+  ],
+  "context_after": [
+    "“Harry Potter! Harry Potter! Harry Potter!”",
+    "With all too good a notion of what she would see, Minerva McGonagall turned to look behind herself at the rest of the Head Table.",
+    "Trelawney frantically fanning herself, Filius looking on with curiosity, Hagrid clapping along, Sprout looking severe, Vector and Sinistra bemused, and Quirrell gazing vacuously at nothing. Albus smiling benevolently. And Severus Snape gripping his empty wine goblet, white-knuckled, so hard that the silver was slowly deforming."
+  ]
+}

@@ -1,5 +1,5 @@
 /// <reference types="vitest/config" />
-import { defineConfig } from "vitest/config";
+import { configDefaults, defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
@@ -29,8 +29,13 @@ export default defineConfig({
       },
     }),
   ],
+  // book/ is the Python/TeX translation pipeline (incl. a large venv and the upstream submodule).
+  server: {
+    watch: { ignored: ["**/book/**"] },
+  },
   test: {
     globals: true,
     environment: "jsdom",
+    exclude: [...configDefaults.exclude, "book/**"],
   },
 });

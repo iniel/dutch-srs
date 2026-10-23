@@ -6,3 +6,9 @@ node_modules
 tsconfig.tsbuildinfo
 scripts/import/*.staging.json
 scripts/import/nig-review/
+__pycache__/
+book/pipeline/.venv/
+book/pipeline/profile/lexicon.json
+book/pipeline/profile/personal.json
+book/pdf/
+book/tmp/

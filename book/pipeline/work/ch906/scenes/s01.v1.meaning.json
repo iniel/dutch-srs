@@ -1,0 +1,76 @@
+{
+  "scene": "ch906/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "All six blocks keep the events, numbers (5 %, 17:1, ~50:1, a ton, a week), negations, the counterfactual 'should have drained' and the full arbitrage loop in source order; Harry's present-tense thoughts and the dry narrator survive. Two register losses: the jargon phrase 'arbitraging away market inefficiencies' is unpacked into an explanatory apposition, and 'competent' became 'goede', softening the understatement.",
+  "comprehension": [
+    {
+      "q": "What exactly is the arbitrage loop Harry imagines: what do you bring in, what do you exchange it for and in which order, what do you pay, and what do you end up with?",
+      "answer_from_nl": "Neem een ton zilver mee; wissel het in voor Sikkels (en betaal 5 %); wissel de Sikkels in voor Galjoenen; breng het goud naar de Dreuzelwereld; wissel het daar in voor meer zilver dan je eerst had; en dan opnieuw.",
+      "answerable": true
+    },
+    {
+      "q": "What is the wizarding exchange rate between Sickles and Galleons, what does Harry think the Muggle gold-to-silver ratio is, and what does he notice about the size of the silver coins?",
+      "answer_from_nl": "Zeventien Sikkels tegenover één Galjoen; bij de Dreuzels ergens rond de vijftig op één, in elk geval niet zeventien; de zilveren munten leken zelfs kleiner dan de gouden.",
+      "answerable": true
+    },
+    {
+      "q": "According to Harry, what should have happened each time the Muggle ratio moved more than 5 % away from the wizarding rate, and has it actually happened?",
+      "answer_from_nl": "Elke keer moest er eigenlijk goud of zilver wegstromen uit de tovenaarswereld, tot niemand de wisselkoers nog kon volhouden; 'eigenlijk' plus 'niemand hier heeft ooit van arbitrage gehoord' make clear it has not happened.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry not make the snide remarks he was tempted to make, and what does he conclude about the wizards' way of doing things?",
+      "answer_from_nl": "Hij wilde even gemene opmerkingen maken over hun primitieve geldsysteem, maar het trieste is: hun manier is waarschijnlijk beter.",
+      "answerable": true
+    },
+    {
+      "q": "What idea does Harry file away, and under which two conditions would he use it?",
+      "answer_from_nl": "Dat één goede hedgefondsmanager waarschijnlijk binnen een week de hele tovenaarswereld kon bezitten; voor als hij ooit geen geld meer had, of een week vrij.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b031",
+      "fragment": "De fijne details van arbitrage — prijsverschillen op de markt weghalen — begrepen ze hier waarschijnlijk niet.",
+      "problem": "The dense jargon phrase is unpacked into an explanatory apposition that reads as an in-text definition of arbitrage; the author offers no explanation, and the joke is the clash between the jargon and the dragon-guarded vaults.",
+      "evidence": "EN: 'The finer points of arbitraging away market inefficiencies might well be lost on them.' vs NL: 'De fijne details van arbitrage — prijsverschillen op de markt weghalen — begrepen ze hier waarschijnlijk niet.'",
+      "required_fix": "Render the jargon as one noun phrase in Harry's register without a defining apposition (e.g. 'de fijne details van het wegarbitreren van marktinefficiënties' or 'van arbitrage op marktinefficiënties'); if a plain phrase must stay, it should not be set off as a definition between dashes.",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M2",
+      "block": "b033",
+      "fragment": "één goede hedgefondsmanager",
+      "problem": "'competent' is a deliberate understatement (merely competent, not brilliant) in Harry's clinical register; 'goede' is everyday praise and softens the joke that it would take no genius at all.",
+      "evidence": "EN: 'one competent hedge fundie' vs NL: 'één goede hedgefondsmanager'",
+      "required_fix": "Use 'één competente hedgefondsmanager' (as in s02); the understatement is the point.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b029",
+      "fragment": "wegstromen uit de tovenaarswereld",
+      "problem": "The English says the metal drains from the wizarding economy; 'tovenaarswereld' loosens the economic frame the paragraph opened with (economie … economie), though the fact is unchanged.",
+      "evidence": "EN: 'should have drained from the wizarding economy' vs NL: 'moest er eigenlijk goud of zilver wegstromen uit de tovenaarswereld'",
+      "required_fix": "Optional: 'uit de tovenaarseconomie' keeps the term consistent with the first sentence; 'tovenaarswereld' is acceptable.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b031",
+      "fragment": "gemene opmerkingen … hun primitieve geldsysteem",
+      "problem": "'snide' is mocking/derisive rather than mean, and 'financial system' is Harry's formal term; 'gemene … geldsysteem' is a notch plainer and nastier than the source, though the intention (he nearly sneered) is intact.",
+      "evidence": "EN: 'snide remarks about the crudity of their financial system' vs NL: 'gemene opmerkingen maken over hun primitieve geldsysteem'",
+      "required_fix": "Optional: 'spottende' or 'hatelijke opmerkingen' and 'financiële systeem' would sit closer to Harry's register; acceptable as is.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

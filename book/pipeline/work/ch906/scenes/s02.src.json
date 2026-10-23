@@ -1,0 +1,103 @@
+{
+  "chapter": 906,
+  "scene": "s02",
+  "index": 1,
+  "of": 3,
+  "chapter_title": "The Efficient Market Hypothesis",
+  "experiment": {
+    "fragment": "f6-economics-exposition",
+    "type": "exposition, complex syntax, numbers, Harry's register",
+    "variant": "V2 constrained translation (translator.md) + checks + reviewers + <=2 fix rounds",
+    "source_chapter": 4,
+    "source_blocks": [
+      "b029",
+      "b034"
+    ]
+  },
+  "source_chapter": 4,
+  "words": 273,
+  "blocks": [
+    {
+      "id": "b029",
+      "kind": "para",
+      "tex": "\\emph{So not only is the wizarding economy almost completely decoupled from the Muggle economy, no-one here has ever heard of arbitrage.} The larger Muggle economy had a fluctuating trading range of gold to silver, so every time the Muggle gold-to-silver ratio got more than 5\\% away from the weight of seventeen Sickles to one Galleon, either gold or silver should have drained from the wizarding economy until it became impossible to maintain the exchange rate. Bring in a ton of silver, change to Sickles (and pay 5\\%), change the Sickles for Galleons, take the gold to the Muggle world, exchange it for more silver than you started with, and repeat.",
+      "text": "So not only is the wizarding economy almost completely decoupled from the Muggle economy, no-one here has ever heard of arbitrage. The larger Muggle economy had a fluctuating trading range of gold to silver, so every time the Muggle gold-to-silver ratio got more than 5% away from the weight of seventeen Sickles to one Galleon, either gold or silver should have drained from the wizarding economy until it became impossible to maintain the exchange rate. Bring in a ton of silver, change to Sickles (and pay 5%), change the Sickles for Galleons, take the gold to the Muggle world, exchange it for more silver than you started with, and repeat.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 51,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b030",
+      "kind": "para",
+      "tex": "Wasn’t the Muggle gold-to-silver ratio somewhere around fifty to one? Harry didn’t think it was seventeen, anyway. And it looked like the silver coins were actually \\emph{smaller} than the gold coins.",
+      "text": "Wasn’t the Muggle gold-to-silver ratio somewhere around fifty to one? Harry didn’t think it was seventeen, anyway. And it looked like the silver coins were actually smaller than the gold coins.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 53,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b031",
+      "kind": "para",
+      "tex": "Then again, Harry was standing in a bank that \\emph{literally} stored your money in vaults full of gold coins guarded by dragons, where you had to go in and take coins out of your vault whenever you wanted to spend money. The finer points of arbitraging away market inefficiencies might well be lost on them. He’d been tempted to make snide remarks about the crudity of their financial system…",
+      "text": "Then again, Harry was standing in a bank that literally stored your money in vaults full of gold coins guarded by dragons, where you had to go in and take coins out of your vault whenever you wanted to spend money. The finer points of arbitraging away market inefficiencies might well be lost on them. He’d been tempted to make snide remarks about the crudity of their financial system…",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 55,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b032",
+      "kind": "para",
+      "tex": "\\emph{But the sad thing is, their way is probably better.}",
+      "text": "But the sad thing is, their way is probably better.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 57,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b033",
+      "kind": "para",
+      "tex": "On the other hand, one competent hedge fundie could probably own the whole wizarding world within a week. Harry filed away this notion in case he ever ran out of money, or had a week free.",
+      "text": "On the other hand, one competent hedge fundie could probably own the whole wizarding world within a week. Harry filed away this notion in case he ever ran out of money, or had a week free.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 59,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b034",
+      "kind": "para",
+      "tex": "Meanwhile, the giant heaps of gold coins within the Potter vault ought to suit his near-term requirements.",
+      "text": "Meanwhile, the giant heaps of gold coins within the Potter vault ought to suit his near-term requirements.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 61,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "“Give me a wild guess. I won’t hold Gringotts to it.”",
+    "“A twentieth part of the metal would well pay for the coining.”",
+    "Harry nodded. “Thank you very much, Mr Griphook.”"
+  ],
+  "context_after": [
+    "Harry stumped forward, and began picking up gold coins with one hand and dumping them into the other.",
+    "When he had reached twenty, Professor McGonagall coughed. “I think that will be more than enough to pay for your school supplies, Mr Potter.”",
+    "“Hm?” Harry said, his mind elsewhere. “Hold on, I’m doing a Fermi calculation.”"
+  ]
+}

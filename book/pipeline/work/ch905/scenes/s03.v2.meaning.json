@@ -1,0 +1,63 @@
+{
+  "scene": "ch905/s03",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the five changed blocks (b022, b024, b025, b028, b032) against the English. Both v1 should_fix findings are fixed: McGonagall's admission now carries the counterfactual ('Eigenlijk moest ik je eerst waarschuwen') and 'FTL signalling' is back to opaque jargon ('FTL-signalen'). The two optional notes (lied, 'En zien:') were applied as well. No new meaning, negation, speaker or point-of-view change; all five comprehension questions remain answerable from v2.",
+  "comprehension": [
+    {
+      "q": "Why does Harry ask what else McGonagall can do, right after calling the experiment definitive?",
+      "answer_from_nl": "Hij kon het niet laten; eigenlijk mocht hij het in deze situatie ook niet laten, want nieuwsgierig zijn was goed en juist.",
+      "answerable": true
+    },
+    {
+      "q": "What does McGonagall do in answer, and what three things happen to Harry's body as a result?",
+      "answer_from_nl": "Ze verandert in een kat. Harry schiet achteruit, struikelt over een verdwaalde stapel boeken en valt met een harde bons op zijn billen; zijn handen komen net niet goed neer en er trekt een waarschuwende steek door zijn schouder.",
+      "answerable": true
+    },
+    {
+      "q": "Does McGonagall's apology sound sincere, what gives away her real mood, and what does she say she ought to have done?",
+      "answer_from_nl": "Ze klinkt oprecht, maar haar mondhoeken trillen omhoog; ze zegt 'Eigenlijk moest ik je eerst waarschuwen' — the regret is now in the verb phrase itself (v1 M1 fixed).",
+      "answerable": true
+    },
+    {
+      "q": "What single word does McGonagall offer to explain the cat, how does Harry reject it, and why does she say nobody has ever called her that before?",
+      "answer_from_nl": "'Magie.' Harry: magie is niet genoeg voor zoiets, 'dan moet u een god zijn' — en zo (een god) heeft nog nooit iemand haar genoemd.",
+      "answerable": true
+    },
+    {
+      "q": "What, according to Harry, has just been flushed down the toilet, and what claim about mind and brain is part of it?",
+      "answer_from_nl": "Het hele idee van één universum met wiskundig regelmatige wetten, het hele begrip natuurkunde: drieduizend jaar dingen in kleinere stukken verdelen, ontdekken dat planeten en vallende appel hetzelfde lied zijn, zien dat de echte wetten overal hetzelfde zijn en de vorm van eenvoudige wiskunde hebben — en dan ook nog: de geest is het brein, het brein bestaat uit neuronen, een brein is een persoon.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b032",
+      "fragment": "Het hele idee van één \\gl{universum}{universe} met wiskundig regelmatige wetten",
+      "problem": "'unified universe' (one coherent whole under the same laws) is now the stressed numeral 'één universum' (one / a single universe); in context the unity reading survives, but the phrase can also be read as 'one universe rather than several', which the English does not say.",
+      "evidence": "EN: 'The whole idea of a unified universe with mathematically regular laws' vs NL: 'Het hele idee van één universum met wiskundig regelmatige wetten' (v1: 'een universum uit één stuk'; s01: 'een universum als één geheel'; s02: 'één universum')",
+      "required_fix": "None required; the shorter topic was asked for by the language review (v1 L3). Recorded so the cohesion editor picks one rendering of 'unified universe' across the variants.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b026",
+      "fragment": "\\emph{Dat \\emph{kunt} u niet!}",
+      "problem": "Unchanged from v1 (v1 M5): the inner emphasis sits on the modal ('kunt') instead of the act ('do'); the stressed idea is still impossibility, within the bible's rule that emph may move to the stressed Dutch word.",
+      "evidence": "EN: '\\emph{You can't \\emph{do} that!}' vs NL: '\\emph{Dat \\emph{kunt} u niet!}' (s01/s02: '\\emph{Dat kunt u niet \\emph{doen}!}')",
+      "required_fix": "None; carried forward so the cohesion editor can choose one form across versions.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ],
+  "previous_findings": [
+    {"id": "M1", "severity": "should_fix", "block": "b025", "status": "fixed", "note": "'Ik moest je eerst waarschuwen' → 'Eigenlijk moest ik je eerst waarschuwen'; counterfactual marked, same form as s02."},
+    {"id": "M2", "severity": "should_fix", "block": "b028", "status": "fixed", "note": "'berichten sneller dan het licht' → 'FTL-signalen'; jargon opaque again per bible ch 2."},
+    {"id": "M3", "severity": "note", "block": "b032", "status": "applied", "note": "'liedje' → 'lied'; flippant diminutive gone."},
+    {"id": "M4", "severity": "note", "block": "b032", "status": "applied", "note": "'De ware wetten waren …' → 'En zien: de echte wetten waren …'; the discovery frame now covers all three items (verdelen → En ontdekken → En zien)."},
+    {"id": "M5", "severity": "note", "block": "b026", "status": "carried", "note": "Block unchanged; carried as v2 M2 for the cohesion editor."}
+  ]
+}

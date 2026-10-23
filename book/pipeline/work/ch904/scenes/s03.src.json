@@ -1,0 +1,163 @@
+{
+  "chapter": 904,
+  "scene": "s03",
+  "index": 2,
+  "of": 3,
+  "chapter_title": "A Day of Very Low Probability",
+  "experiment": {
+    "fragment": "f4-action-humour",
+    "type": "action, embarrassment humour, neighbour dialogue",
+    "variant": "V3 unconstrained literary translation first, then adaptation with translator.md + same loop",
+    "source_chapter": 1,
+    "source_blocks": [
+      "b076",
+      "b086"
+    ]
+  },
+  "source_chapter": 1,
+  "words": 240,
+  "blocks": [
+    {
+      "id": "b076",
+      "kind": "para",
+      "tex": "Only as Harry stumped out the back door, into the back garden, did it occur to him that if an owl \\emph{did} come down and snatch the letter, he was going to have some trouble telling Dad about it.",
+      "text": "Only as Harry stumped out the back door, into the back garden, did it occur to him that if an owl did come down and snatch the letter, he was going to have some trouble telling Dad about it.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 141,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b077",
+      "kind": "para",
+      "tex": "\\emph{But—well—that can’t \\emph{really} happen, can it? No matter what my brain seems to believe. If an owl really comes down and grabs this envelope, I’m going to have worries a lot more important than what Dad thinks.}",
+      "text": "But—well—that can’t really happen, can it? No matter what my brain seems to believe. If an owl really comes down and grabs this envelope, I’m going to have worries a lot more important than what Dad thinks.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 143,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b078",
+      "kind": "para",
+      "tex": "Harry took a deep breath, and raised the envelope into the air.",
+      "text": "Harry took a deep breath, and raised the envelope into the air.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 145,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b079",
+      "kind": "para",
+      "tex": "He swallowed.",
+      "text": "He swallowed.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 147,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b080",
+      "kind": "para",
+      "tex": "Calling out \\emph{Letter for Hogwarts!} while holding an envelope high in the air in the middle of your own back garden was…actually pretty embarrassing, now that he thought about it.",
+      "text": "Calling out Letter for Hogwarts! while holding an envelope high in the air in the middle of your own back garden was…actually pretty embarrassing, now that he thought about it.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 149,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b081",
+      "kind": "para",
+      "tex": "\\emph{No. I’m better than Dad. I will use the scientific method even if it makes me feel stupid.}",
+      "text": "No. I’m better than Dad. I will use the scientific method even if it makes me feel stupid.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 151,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b082",
+      "kind": "para",
+      "tex": "“Letter—” Harry said, but it actually came out as more of a whispered croak.",
+      "text": "“Letter—” Harry said, but it actually came out as more of a whispered croak.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 153,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b083",
+      "kind": "para",
+      "tex": "Harry steeled his will, and shouted into the empty sky, “\\emph{Letter for Hogwarts! Can I get an owl?}”",
+      "text": "Harry steeled his will, and shouted into the empty sky, “Letter for Hogwarts! Can I get an owl?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 155,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b084",
+      "kind": "para",
+      "tex": "“Harry?” asked a bemused woman’s voice, one of the neighbours.",
+      "text": "“Harry?” asked a bemused woman’s voice, one of the neighbours.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 157,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b085",
+      "kind": "para",
+      "tex": "Harry pulled down his hand like it was on fire and hid the envelope behind his back like it was drug money. His whole face was hot with shame.",
+      "text": "Harry pulled down his hand like it was on fire and hid the envelope behind his back like it was drug money. His whole face was hot with shame.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 159,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b086",
+      "kind": "para",
+      "tex": "An old woman’s face peered out from above the neighbouring fence, grizzled grey hair escaping from her hairnet. Mrs~Figg, the occasional babysitter. “What are you doing, Harry?”",
+      "text": "An old woman’s face peered out from above the neighbouring fence, grizzled grey hair escaping from her hairnet. Mrs Figg, the occasional babysitter. “What are you doing, Harry?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 161,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "That should’ve sounded highly suspicious, oh, so there’s no way to test your theory then, but the peculiar certainty in Harry seemed willing to stick its neck out even further.",
+    "“Well, the letter got here somehow,” Harry said, “so I’ll just wave it around outside and call ‘letter for Hogwarts!’ and see if an owl picks it up. Dad, do you want to come and watch?”",
+    "His father shook his head minutely and kept on reading. Of course, Harry thought to himself. Magic was a disgraceful thing that only stupid people believed in; if his father went so far as to test the hypothesis, or even watch it being tested, that would feel like associating himself with that…"
+  ],
+  "context_after": [
+    "“Nothing,” Harry said in a strangled voice. “Just—testing a really silly theory—”",
+    "“Did you get your acceptance letter from Hogwarts?”",
+    "Harry froze in place."
+  ]
+}

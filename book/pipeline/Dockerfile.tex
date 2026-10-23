@@ -1,0 +1,10 @@
+# Minimal TeX image for building the Dutch chapters (mirrors the root Dockerfile's TeX part).
+#   docker build -t hpmor-tex - < book/pipeline/Dockerfile.tex     (no build context needed)
+#   docker run --rm --mount type=bind,src="$(pwd)",dst=/app hpmor-tex sh book/pipeline/tools/build-chapter.sh 1
+FROM ubuntu:24.04
+ENV DEBIAN_FRONTEND=noninteractive TZ=Europe/Amsterdam
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git latexmk texlive-xetex texlive-latex-recommended texlive-latex-extra \
+    texlive-fonts-recommended lmodern texlive-plain-generic texlive-lang-european texlive-lang-german texlive-lang-greek fontconfig && \
+    apt-get clean autoclean && apt-get autoremove --yes && rm -rf /var/lib/apt/lists/*
+WORKDIR /app

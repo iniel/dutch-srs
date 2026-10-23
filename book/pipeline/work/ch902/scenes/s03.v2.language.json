@@ -1,0 +1,85 @@
+{
+  "scene": "ch902/s03",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Re-review of b010 (the only changed block). v1 L1 and L2 (must_fix: gebonden, pockets) are fixed with 'boeken met een harde kaft' / 'sciencefiction met een zachte kaft', both from known words, gloss count in b010 now 0; L3 (should_fix calque 'maken kleine stapels') is fixed with 'vormen kleine hoopjes'; L4 (note) applied with 'die boeken'. The checks are clean: no grammar flag, no load finding, no cluster, known share 98.2%; the v1 vocabulary false positives (volstaan, elk, voorste, achterste, tissuedozen, adoptiezoon, sciencefiction, geelachtig) are gone after the lexicon rebuild. No new restricted construction, calque or unknown word in the rewritten sentences; the one new chunk 'tot de rand toe' is a fixed circumposition of known parts.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b010",
+      "fragment": "staan tot de rand toe vol boeken met een harde kaft",
+      "problem": "New in v2: the circumposition 'tot … toe' is a fixed chunk the reader meets for the first time here; it is not a restricted construction and every part is known (tot A1, rand A2, toe A1, vol A2), so it reads as 'full up to the edge'.",
+      "evidence": "no R-id applies; lexicon: rand A2, vol A2, kaft A2, hard A1; sentence is 20 words, one finite verb, no subordinate clause",
+      "required_fix": "None. Keep (this is the brim image the v1 meaning review asked for).",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b010",
+      "fragment": "twee rijen sciencefiction met een zachte kaft",
+      "problem": "New in v2: 'met een zachte kaft' modifies the genre noun 'sciencefiction' used as a mass noun; a native reads it as 'paperback SF' without stumbling, and the parallel with 'met een harde kaft' is deliberate.",
+      "evidence": "mirrors EN 'paperback science fiction' (also genre as mass noun); zacht A1, kaft A2; 11 words",
+      "required_fix": "None required. If the cohesion editor wants the noun explicit: 'twee rijen sciencefictionboeken met een zachte kaft' (compound of known parts).",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b010",
+      "fragment": "boekenkast",
+      "problem": "Listed as B1 stretch, but a compound of two A1 words and the subject of the paragraph; the tool itself now marks it ok-transparent.",
+      "evidence": "lexicon: boek A1, kast A1; checks action ok-transparent",
+      "required_fix": "None; do not count it against the stretch budget.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L4",
+      "block": "b010",
+      "fragment": "De boeken stromen over naar de tafels",
+      "problem": "overstromen is the one genuine B1 word of the scene (budget 3); stromen (A2) + over keeps it readable and the image is the author's.",
+      "evidence": "lexicon: overstromen B1, stromen A2; checks action ok-stretch",
+      "required_fix": "Keep unglossed.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L5",
+      "block": "b012",
+      "fragment": "de \\gl{eminente}{eminent} professor",
+      "problem": "Hard (B2) but glossed; the plain candidates change the meaning (beroemd = famous) and the mock-formal label is the narrator's point. Unchanged from v1.",
+      "evidence": "lexicon: eminent B2; beroemd A2 'famous'",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L6",
+      "block": "b013",
+      "fragment": "\\gl{smaragdgroene}{emerald-green} inkt",
+      "problem": "Unknown and glossed; no plain equivalent keeps the canon colour (donkergroen is B2). Unchanged from v1.",
+      "evidence": "lexicon: smaragd absent, groen A1, donkergroen B2",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L7",
+      "block": "b013",
+      "fragment": "\\emph{de heer~H.~Potter}",
+      "problem": "None in the text: 'de heer' is the normal Dutch address-line form and heer is A1. Still open for the glossary owner: glossary.json has only the spoken 'meneer Potter', so the cohesion editor could 'correct' the envelope.",
+      "evidence": "glossary.json 'Mr Potter → meneer Potter' (McGonagall's spoken address); no entry for 'de heer' yet",
+      "required_fix": "Keep. Glossary owner: add 'de heer~H.~Potter' as the written/envelope form of 'Mr~H.~Potter'.",
+      "severity": "note",
+      "category": "register"
+    }
+  ],
+  "flag_decisions": [],
+  "tool_feedback": [
+    {"kind": "grammar", "item": "0 flags in 13 sentences", "verdict": "ok", "reason": "nothing missed on re-read: 'staan … vol' (posture + predicate), 'tot … toe' (circumposition), 'zodat … kunt zien' (A-SUB + A-SUB-2V), 'stromen over' (A-SEP) are all inside the profile; the v1 R-PARTICIPLE span 'gebonden' no longer exists."},
+    {"kind": "vocab", "item": "hoopjes", "verdict": "ok", "reason": "resolved to hoop A2 via the forms list, as the translator predicted; not reported as new."},
+    {"kind": "vocab", "item": "v1 false positives", "verdict": "ok", "reason": "volstaan, elk, voorste, achterste, tissuedozen, adoptiezoon, sciencefiction, geelachtig, onbeschaafd no longer appear after the lexicon rebuild (cognates list + forms); known share 97.5% → 98.2% with the same text in b012–b014."}
+  ]
+}

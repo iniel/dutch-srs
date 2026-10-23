@@ -1,0 +1,120 @@
+{
+  "scene": "ch001/s03",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the ten changed blocks (b052, b064, b065, b069, b070, b073, b074, b077, b085, b086) against the English. Both v1 should_fix items are fixed: the 'on fire' simile in b085 is back inside the pulling gesture, parallel to 'als drugsgeld', and b077 is one clause with a clipped dismissal instead of a spelled-out judgement. v1 notes M3 and M6 were applied; M4 and M5 were declined with profile reasons that hold. No new must_fix or should_fix: the split of b073 keeps the order and the 'maar' link, 'Die' in b052 still points at the certainty, 'hem' in b074 still means the letter. One new note on b065, where a flat statement of ignorance became a polite question to the addressee; the information survives and no statement form fits the profile. All seven comprehension questions are answerable from v2.",
+  "previous_findings": [
+    {
+      "id": "M1",
+      "block": "b085",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v2: 'Harry trok zijn hand snel omlaag, als van een hete kachel, en verstopte de envelop achter zijn rug als drugsgeld.' Both similes are attached to their verbs in one sentence, as in EN; 'Die hand stond in brand' is gone."
+    },
+    {
+      "id": "M2",
+      "block": "b077",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v2: 'Mijn brein gelooft blijkbaar van wel—nou en.' One clause plus a throwaway dismissal; the added evaluation 'maar dat maakt niet uit' is gone. 'blijkbaar' carries 'seems to'."
+    },
+    {
+      "id": "M3",
+      "block": "b052",
+      "severity": "note",
+      "status": "applied",
+      "evidence": "v2: 'beschermde zichzelf niet tegen weerlegging' — 'eens' dropped, flat like the source."
+    },
+    {
+      "id": "M4",
+      "block": "b066",
+      "severity": "note",
+      "status": "not_applied_accepted",
+      "evidence": "Translator: 'Die moest haar familie laten zien' adds a modal + laten cluster to the letter; 'Zo kon haar familie zien' keeps the link. Accepted; carried as M2 below for the report."
+    },
+    {
+      "id": "M5",
+      "block": "b080",
+      "severity": "note",
+      "status": "not_applied_accepted",
+      "evidence": "Translator: 'nu hij erover nadacht' is R-ER-PREP and 'nu' is not an allowed subordinator. Accepted; carried as M3 below."
+    },
+    {
+      "id": "M6",
+      "block": "b086",
+      "severity": "note",
+      "status": "applied",
+      "evidence": "v2: 'Het gezicht van een oude vrouw verscheen boven het hek van de buren.' — the face pops up above the fence, pairing with s04 'verdween achter het hek'."
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "Why should the letter have been an easy case of Mum joking, lying or being mad — and what would explain the missing stamp?",
+      "answer_from_nl": "A bit of madness is 'veel, veel minder onwaarschijnlijk' than the universe really working like that; and if Mum sent the letter herself, that explains how it reached the letterbox 'zonder postzegel' (b049).",
+      "answerable": true
+    },
+    {
+      "q": "What is strange about the certainty Harry notices in himself?",
+      "answer_from_nl": "He simply expects a Hogwarts professor to come, wave a wand and produce magic; the certainty does not protect itself against refutation — 'Die maakte vooraf geen smoesjes', such as 'misschien komt er geen professor' or 'misschien kan de professor alleen maar lepels buigen' (b052) — and he has no idea where the prediction comes from (b053–b054).",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry decide to do about it, and by what principle?",
+      "answer_from_nl": "He tests it: a plate invites pushing, a handle invites pulling, and with a testable hypothesis 'doe je één ding: die ga je testen' (b055) — so he takes lined paper and writes to the onderdirectrice, starting over for careful calligraphy (b056–b060).",
+      "answerable": true
+    },
+    {
+      "q": "What does the letter ask for, on what precedent, and how does Harry describe his family's positions?",
+      "answer_from_nl": "He asks Hogwarts to send a representative to his family, as it once did for Lily (so her family could see magic is real and, he presumes, to help with school supplies) (b066). Only his mother Petunia knows about magic, she says, and cannot use it herself; his father is very sceptical; he himself doubts; and he asks where he can obtain the books and materials listed in the letter, which tells the reader he does not know (b065).",
+      "answerable": true
+    },
+    {
+      "q": "How does Mum say an owl is sent, and why should that answer have made Harry suspicious?",
+      "answer_from_nl": "'Je moet gewoon een magische uil hebben, denk ik.' (b072). That should have sounded suspicious: 'o, dus je theorie kun je niet testen.' But the peculiar certainty in Harry apparently wants to stick its neck out even further (b073).",
+      "answerable": true
+    },
+    {
+      "q": "Why does Dad refuse to come and watch, in Harry's reading?",
+      "answer_from_nl": "Magic is a disgrace that only stupid people believe in; if his father tested the hypothesis, or even just watched the test, that would feel to him like connecting himself with such a thing (b075).",
+      "answerable": true
+    },
+    {
+      "q": "What occurs to Harry only once he is in the garden, how does he brush it aside, why does he shout anyway, and who interrupts him?",
+      "answer_from_nl": "That if an owl really took the letter he could not easily tell Dad (b076); but that cannot really happen — 'Mijn brein gelooft blijkbaar van wel—nou en' — and if it does he will have bigger worries than Dad's opinion (b077). He shouts because 'Ik ben beter dan pap' and will use the scientific method even if he feels stupid (b081). A neighbour's voice interrupts (b084); he snatches his hand down 'als van een hete kachel' and hides the envelope 'als drugsgeld', face hot with shame (b085); an old woman's face appears above the neighbours' fence — Mevrouw Figg, 'soms zijn oppas' — and asks what he is doing (b086).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b065",
+      "fragment": "Ook over de lijst met boeken en materiaal in uw brief heb ik een vraag: waar kan ik die verkrijgen?",
+      "problem": "The English closes Harry's deadpan inventory of his family's positions with a fourth flat statement ('I also don't know where to obtain…'); v2 turns it into a polite question to the addressee, which slightly normalises the letter's comic flatness and makes a request the English only implies here.",
+      "evidence": "EN: 'My father is highly sceptical. I myself am uncertain. I also don’t know where to obtain any of the books or equipment listed in your acceptance letter.' vs NL: 'Mijn vader is zeer sceptisch. Zelf twijfel ik. Ook over de lijst met boeken en materiaal in uw brief heb ik een vraag: waar kan ik die verkrijgen?' The fact (he does not know where) is recoverable from the question, and b066 still carries the actual request.",
+      "required_fix": "No change required: every statement form needs a wh-clause ('ik weet niet waar…', R-INDIRECT) and v1's question-plus-self-answer was worse. If a later round touches the letter, prefer a version that keeps the declarative rhythm, e.g. 'De boeken en het materiaal uit uw brief ken ik ook niet. Waar kan ik die verkrijgen?' — only if the language reviewer accepts the extra sentence.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b066",
+      "fragment": "Zo kon haar familie zien: magie is echt.",
+      "problem": "Carried from v1 M4 (text unchanged): Hogwarts's purpose in sending the representative ('in order to demonstrate') is rendered as a result ('so her family could see'); the reader still understands why the representative came.",
+      "evidence": "EN: 'in order to demonstrate to her family that magic was real' vs NL: 'Zo kon haar familie zien: magie is echt.' Translator's reply: 'Die moest haar familie laten zien' adds a modal + laten cluster inside the letter.",
+      "required_fix": "No change; the translator's reason is accepted. The hedge 'neem ik aan' on the second half stays.",
+      "severity": "note",
+      "category": "intent"
+    },
+    {
+      "id": "M3",
+      "block": "b080",
+      "fragment": "als hij het zo bekeek",
+      "problem": "Carried from v1 M5 (text unchanged): 'now that he thought about it' marks a realisation arriving at this moment; 'als hij het zo bekeek' is a conditional viewpoint and loses the 'now'.",
+      "evidence": "EN: 'was…actually pretty embarrassing, now that he thought about it.' vs NL: 'Dat was…eigenlijk best gênant, als hij het zo bekeek.' Translator's reply: 'nu hij erover nadacht' is R-ER-PREP and 'nu' is not an allowed subordinator.",
+      "required_fix": "No change; no alternative inside the profile keeps the timing without a pronominal adverb. Observation for the bible: Harry's 'now that he thought about it' realisations recur; a stock rendering ('bedacht hij nu') may be worth fixing once.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

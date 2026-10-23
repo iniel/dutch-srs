@@ -1,0 +1,286 @@
+{
+  "scene": "ch906/s03",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch906/scenes/s03.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch906/s03",
+    "version": 1,
+    "tokens": 289,
+    "known_tokens": 285,
+    "known_share": 0.9862,
+    "new_lemmas_unglossed": 4,
+    "new_per_1000": 13.8,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": false,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "gemene",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Eigenlijk wilde hij best gemene opmerkingen maken over hun primitieve financiële systeem…"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "hedgefondsmanager",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": true,
+        "examples": [
+          "Aan de andere kant kon één goede hedgefondsmanager de hele tovenaarswereld in handen krijgen, waarschijnlijk binnen een week."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "primitief",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "primitive"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [
+          "Eigenlijk wilde hij best gemene opmerkingen maken over hun primitieve financiële systeem…"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "schommelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to swing"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "In de grotere Dreuzeleconomie schommelde de verhouding tussen goud en zilver."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "koers",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "course of action",
+          "approach"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Uiteindelijk kon niemand die koers nog houden."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "binnenbrengen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to come in",
+          "to move in",
+          "to get closer"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Breng een ton zilver binnen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "draak",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "dragon"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [
+          "Draken bewaakten die kluizen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "termijn",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "term",
+          "period"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [
+          "De enorme hopen gouden munten in de kluis van de familie Potter moesten ondertussen wel genoeg zijn voor zijn behoeften op de korte termijn."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b029": {
+        "tokens": 113,
+        "new": [
+          "binnenbrengen",
+          "koers",
+          "schommelen"
+        ],
+        "glosses": [
+          "Dreuzels",
+          "arbitrage"
+        ]
+      },
+      "b030": {
+        "tokens": 38,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 68,
+        "new": [
+          "gemene"
+        ],
+        "glosses": [
+          "Draken",
+          "primitieve"
+        ]
+      },
+      "b032": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b033": {
+        "tokens": 37,
+        "new": [],
+        "glosses": [
+          "hedgefondsmanager"
+        ]
+      },
+      "b034": {
+        "tokens": 24,
+        "new": [],
+        "glosses": [
+          "termijn"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch906/s03",
+    "version": 1,
+    "sentences": 25,
+    "summary": {
+      "likely": 0,
+      "review": 1,
+      "load": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gemene",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b031",
+        "sent": 4,
+        "sentence": "Eigenlijk wilde hij best gemene opmerkingen maken over hun primitieve financiële systeem…",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "moest je zelf naar binnen en munten uit je kluis halen",
+        "block": "b031",
+        "sent": 2,
+        "sentence": "Telkens als je geld wilde uitgeven, moest je zelf naar binnen en munten uit je kluis halen.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "scene": "ch905/s02",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the ten changed blocks (b022, b024–b028, b030–b033) against the English: no fact, negation, speaker, intention, causal link or point of view changed, and the emphasis count per block is intact. The one v1 must_fix is fixed: 'Dan moet u een god zijn!' is again aimed at McGonagall, so her 'Zo heeft nog nooit iemand me genoemd' answers a line said to her. M2 ('cat-sized brain') and M3 ('unified universe') were applied; M4 was declined with a sound reason and is closed; M5 is carried as a bible note. All five comprehension questions are answerable from v2. One new note on the b033 idiom, no new must_fix or should_fix.",
+  "previous_findings": [
+    {
+      "id": "M1",
+      "block": "b030",
+      "severity": "must_fix",
+      "status": "fixed",
+      "note": "'Dan moet je een god zijn!' → 'Dan moet u een god zijn!' Harry's u to McGonagall is now unbroken through the tirade (U bent…, U hebt…, Hoe kunt u…, Dan moet u…), so the god label lands on her and b031 has its anchor. The remaining je in 'Als je die regel loslaat … dan krijg je FTL-signalen' is generic (rejecting it → you get), as in the English."
+    },
+    {
+      "id": "M2",
+      "block": "b028",
+      "severity": "note",
+      "status": "fixed",
+      "note": "'met een kattenbrein' → 'met een \\gl{brein}{brain} zo klein als dat van een kat'; the argument from size ('cat-sized') is back."
+    },
+    {
+      "id": "M3",
+      "block": "b032",
+      "severity": "note",
+      "status": "fixed",
+      "note": "'één universum' → 'een universum uit één stuk'; 'unified' (one coherent whole) is back instead of 'a single universe'."
+    },
+    {
+      "id": "M4",
+      "block": "b032",
+      "severity": "note",
+      "status": "dropped",
+      "note": "Translator kept the finite sentences with 'mensen' as generic subject and argued that 'mensen' is the implicit agent of the English gerunds and that an infinitive list reads telegraphic. Accepted: the content of the inventory (resolving, discovering, finding) and its order are unchanged, and the referent slip that the added subject caused is gone now that b032 says 'De wetten hadden de vorm…'. Closed, not carried."
+    },
+    {
+      "id": "M5",
+      "block": "b025",
+      "severity": "note",
+      "status": "carried",
+      "note": "Fragment unchanged; carried as v2 M1 so the bible records the house pattern for 'should have + participle'."
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "Why does Harry ask what else McGonagall can do, right after calling the experiment definitive?",
+      "answer_from_nl": "Hij kon het niet laten; in deze situatie mocht hij het eigenlijk ook niet laten, want nieuwsgierig zijn was goed en juist.",
+      "answerable": true
+    },
+    {
+      "q": "What does McGonagall do in answer, and what three things happen to Harry's body as a result?",
+      "answer_from_nl": "Ze verandert in een kat. Harry schiet achteruit, struikelt over een verdwaalde stapel boeken en valt met een klap op zijn billen; zijn handen komen niet goed neer en hij voelt een korte, scherpe pijn in zijn schouder, als waarschuwing.",
+      "answerable": true
+    },
+    {
+      "q": "Does McGonagall's apology sound sincere, what gives away her real mood, and what does she say she ought to have done?",
+      "answer_from_nl": "Het klinkt oprecht, maar haar mondhoeken trekken omhoog; ze zegt dat ze hem eigenlijk eerst moest waarschuwen.",
+      "answerable": true
+    },
+    {
+      "q": "What single word does McGonagall offer to explain the cat, how does Harry reject it, and why does she say nobody has ever called her that before?",
+      "answer_from_nl": "'Magie.' Harry: magie is niet genoeg voor zoiets, 'dan moet u een god zijn'; hij noemt háár dus een god, en zij antwoordt dat nog nooit iemand haar zo genoemd heeft. Answerable directly from the Dutch now that the line uses u.",
+      "answerable": true
+    },
+    {
+      "q": "What, according to Harry, has just been flushed down the toilet, and what claim about mind and brain is part of it?",
+      "answer_from_nl": "Het hele idee van een universum uit één stuk met wiskundig regelmatige wetten, de natuurkunde zelf: drieduizend jaar dingen opdelen in kleinere stukken, planeten en vallende appel als hetzelfde liedje, wetten zonder uitzondering in de vorm van simpele wiskunde — en dan nog dat de geest het brein is, het brein uit neuronen bestaat en een brein een mens is.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b025",
+      "fragment": "Eigenlijk moest ik je eerst waarschuwen.",
+      "problem": "'I should have warned you' (counterfactual regret) is rendered with the imperfect 'moest … eigenlijk'; the regret survives through 'eigenlijk' and 'Het spijt me', but the form is weaker than 'had moeten'.",
+      "evidence": "EN: 'I should have warned you.' vs NL: 'Eigenlijk moest ik je eerst waarschuwen.' (carried from v1 M5; fragment unchanged)",
+      "required_fix": "Accept; record in the bible that 'should have + participle' → 'moest eigenlijk + infinitive' is the house pattern, so it stays identical across chapters.",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M2",
+      "block": "b033",
+      "fragment": "en weg was dat allemaal.",
+      "problem": "'so much for all that' is a dismissive shrug; 'weg was dat allemaal' states the result (all of it was gone). The fact, the flat tone and the one-sentence undercut are unchanged; only the idiom's shrug is a shade more literal.",
+      "evidence": "EN: 'And then a woman turned into a cat, so much for all that.' vs NL (v2): 'En toen veranderde een vrouw in een kat, en weg was dat allemaal.' (v1: 'tot zover dat alles')",
+      "required_fix": "None required; keep. The fronted 'weg' + inversion keeps the deadpan and is plainer than v1. Record as the rendering of 'so much for …' for the bible.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "scene": "ch001/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, same order of information, same speakers and tense switches; every comprehension question is answerable from the Dutch alone and all nine source emphases land on the same ideas. Two should_fix items: the epigraph's plural 'gewaden' commits to several figures where the English 'robes' is open, and b015 adds an explicit 'his tone said otherwise' the English leaves implicit. Four notes on hedges and word shades.",
+  "comprehension": [
+    {
+      "q": "What fills the house, and who lives in it?",
+      "answer_from_nl": "Bookcases on every wall, six shelves each, books in two rows and overflowing onto tables, sofas and under the windows; it is the living room of 'de eminente professor Michael Verres-Evans', his wife 'mevrouw Petunia Evans-Verres' and their 'adoptiezoon, Harry James Potter-Evans-Verres'.",
+      "answerable": true
+    },
+    {
+      "q": "What is lying on the living-room table, and what is odd about the envelope?",
+      "answer_from_nl": "A letter and an envelope of yellowish parchment 'zonder postzegel', addressed in emerald-green ink to 'de heer H. Potter'.",
+      "answerable": true
+    },
+    {
+      "q": "Why do Michael and Petunia argue without shouting?",
+      "answer_from_nl": "'De Professor vindt schreeuwen onbeschaafd.'",
+      "answerable": true
+    },
+    {
+      "q": "What does Petunia claim about her sister, and what personal proof does she offer?",
+      "answer_from_nl": "'Mijn zus was een heks… Haar man was een tovenaar'; she has seen things; and her own slim body: 'Ik was niet—altijd zo… Lily heeft dit gedaan' with a potion, after Petunia begged her for years because Lily had always been prettier and then also got magic.",
+      "answerable": true
+    },
+    {
+      "q": "Why did Lily refuse for years, and what finally made her give in?",
+      "answer_from_nl": "Ridiculous excuses ('de wereld verging als ze aardig was voor haar zus. Of het mocht niet van een centaur'); she gave in after Petunia, just out of university and dating fat Vernon Duffeling who wanted a son called Dudley Duffeling, could not bear her future and wrote: 'als ze me niet hielp, dan wilde ik liever gewoon—' (the unsaid threat survives in the dash).",
+      "answerable": true
+    },
+    {
+      "q": "How does Michael explain away Petunia's transformation and the 'things' she saw?",
+      "answer_from_nl": "She got sick, lay in bed and gained weight, her skin cleared 'vanzelf', or illness changed her diet; the things she saw were stage tricks: a trained 'goochelaar' fakes the impossible, spoon-bending, 'cold reading'.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry's question about Petunia's parents establish, and what does he propose?",
+      "answer_from_nl": "Her parents had no magic, so nobody in her family knew; they were convinced because Hogwarts 'stuurden een professor' who 'liet ons wat magie zien'. So: get a Zweinstein professor here and see it 'met eigen ogen'; if true pap admits it, if not mam admits it — 'Daar is de experimentele methode voor, zodat we dingen niet alleen met ruzie hoeven op te lossen.'",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b006",
+      "fragment": "zwarte \\gl{gewaden}{robes}, vallend",
+      "problem": "The plural 'gewaden' commits the image to several robed figures; the English 'robes' is the ordinary word for one person's garment and leaves the number open, which the flash-forward must keep.",
+      "evidence": "EN: '(black robes, falling)' vs NL: '(zwarte gewaden, vallend)'. Glossary 'robes': singular 'gewaad' for one person's robes; 'zwarte gewaden' only for several people.",
+      "required_fix": "Use the singular so the number of figures stays open: '(een zwart \\gl{gewaad}{robes}, vallend)' or, closer to the bare English, '(zwart \\gl{gewaad}{robes}, vallend)'. Keep present participle and brackets.",
+      "severity": "should_fix",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b015",
+      "fragment": "Zijn toon zei iets anders.",
+      "problem": "The Dutch states the contrast between his words and his tone outright; the English only reports what the tone indicated and lets the reader notice the gap — mild over-explanation of a deadpan narrator sentence.",
+      "evidence": "EN: 'His tone indicated that he was very much afraid that she was serious.' vs NL: 'Zijn toon zei iets anders. Hij was heel bang: misschien was ze wel serieus.'",
+      "required_fix": "Drop the added 'iets anders' and let the tone report the fear directly, e.g. 'Zijn toon zei: hij was heel bang. Misschien was ze wel serieus.' (two short sentences, no dat-clause, no explicit contrast).",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M3",
+      "block": "b032",
+      "fragment": "Blijkbaar wisten ze het even niet meer",
+      "problem": "'as though' is the narrator's simile about how they looked; 'blijkbaar' presents the forgetting as an inferred fact. The information is the same, the hedge is a shade firmer.",
+      "evidence": "EN: 'looked at Harry as though they'd forgotten there was a third person in the room' vs NL: 'keken naar Harry. Blijkbaar wisten ze het even niet meer: er was nog een derde persoon in de kamer.'",
+      "required_fix": "Optional: reuse the hedge already used in b022: 'Ze wisten het even niet meer, zo leek het: er was nog een derde persoon in de kamer.'",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M4",
+      "block": "b034",
+      "fragment": "Ze keek verbaasd.",
+      "problem": "'puzzled' means she does not see the point of the question; 'verbaasd' is plain surprise. Close, but the not-understanding shade is lost.",
+      "evidence": "EN: '“No,” Petunia said, looking puzzled.' vs NL: '“Nee,” zei Petunia. Ze keek verbaasd.'",
+      "required_fix": "Optional: 'Ze keek niet-begrijpend.' or 'Ze begreep de vraag niet, zo leek het.' if the vocabulary allows; 'verbaasd' may stay.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M5",
+      "block": "b024",
+      "fragment": "Ik zag mijn hele verdere leven al voor me",
+      "problem": "Petunia's hedge 'It was like' is dropped; the Dutch states the vision directly. Minor, the idiom 'voor me zien' already reads as imagining.",
+      "evidence": "EN: 'It was like I saw my whole future life stretching out in front of me' vs NL: 'Ik zag mijn hele verdere leven al voor me'.",
+      "required_fix": "Optional: 'Het was alsof ik mijn hele verdere leven al voor me zag' if 'alsof' is allowed; otherwise keep as is.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b026",
+      "fragment": "werd mijn huid schoon",
+      "problem": "'cleared up' means the blemishes went away; 'schoon' is first of all 'clean', so a reader may picture washing rather than skin healing. The echo in Michael's reply (b027 'vanzelf schoon') is correctly kept identical.",
+      "evidence": "EN: 'my skin cleared up' / 'your skin cleared up on its own' vs NL: 'werd mijn huid schoon' / 'je huid werd vanzelf schoon'.",
+      "required_fix": "Optional: 'werd mijn huid glad' / 'je huid werd vanzelf glad' (or 'gaaf'), changed in both b026 and b027 so Michael still echoes her words exactly.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

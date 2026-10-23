@@ -1,0 +1,350 @@
+{
+  "scene": "ch903/s03",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "All six v1 findings that asked for a change are fixed (L1 free relative, L2 'metalen', L3 heavy toen-clause, L4 'een of ander', L5 'niet alvast', L6 glosses on known words). Both 'likely' flags in the v2 checks are parser errors: 'dat' in 'was dat de verklaring' is the demonstrative subject after a fronted als-clause (the sentence splitter even cut the sentence there), and 'bedacht' across the em dash is the imperfectum of 'bedenken', not a passive participle; all six 'review' flags and the L-FRAME load finding are dismissed too. The vocab FAIL is an artifact: 'merkte' is mis-lemmatised as 'opmerken' and 'brein' is a transparent cognate, so the real new-word density is within the limit. The changed blocks read as natural Dutch; no new must_fix or should_fix.",
+  "previous_findings": [
+    {
+      "id": "L1",
+      "block": "b051",
+      "severity": "must_fix",
+      "status": "fixed",
+      "evidence": "v1 '\\emph{Geloof niet alles wat je denkt,}' → v2 '\\emph{Geloof niet al je gedachten,}'; no relative clause, R-RELCL flag gone."
+    },
+    {
+      "id": "L2",
+      "block": "b055",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v1 'Een platte metalen \\gl{plaat}{plate}' → v2 'Een platte plaat van metaal'; 'metalen' (hard B2) gone, 'metaal' known A2."
+    },
+    {
+      "id": "L3",
+      "block": "b050",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v1 'vanaf het eerste moment, toen hij de vermeende brief van … zag' → v2 'vanaf de eerste blik op de \\gl{vermeende}{putative} brief van …'; the ten-word subordinate frame is gone."
+    },
+    {
+      "id": "L4",
+      "block": "b050",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v1 'een of ander deel van Harry' → v2 'een deel van Harry'."
+    },
+    {
+      "id": "L5",
+      "block": "b052",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v1 'ze bedacht niet alvast excuses' → v2 'ze bedacht van tevoren geen excuses'; 'geen' on the indefinite object."
+    },
+    {
+      "id": "L6",
+      "block": "b048",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "Glosses on 'verdacht' (b048), 'voorhoofd' (b051) and 'plaat' (b055) dropped, with their @glosses lines."
+    },
+    {
+      "id": "L7",
+      "block": "b050",
+      "severity": "note",
+      "status": "carried",
+      "evidence": "'vermeende' kept and glossed; see L3 below."
+    },
+    {
+      "id": "L8",
+      "block": "b053",
+      "severity": "note",
+      "status": "carried",
+      "evidence": "'brein' still unknown to the lexicon; see L2 below."
+    },
+    {
+      "id": "L9",
+      "block": "b049",
+      "severity": "note",
+      "status": "resolved",
+      "evidence": "'universum' is now in exceptions.json cognates; the tool no longer lists it."
+    },
+    {
+      "id": "L10",
+      "block": "b055",
+      "severity": "note",
+      "status": "resolved",
+      "evidence": "'test'/'testen' are in the cognates list; the v2 checks report no cluster."
+    },
+    {
+      "id": "L11",
+      "block": "b052",
+      "severity": "note",
+      "status": "resolved",
+      "evidence": "'geen enkele' removed (M3), the 'enkel' row is gone."
+    },
+    {
+      "id": "L12",
+      "block": "b047",
+      "severity": "note",
+      "status": "carried",
+      "evidence": "'probeerde na te denken' unchanged, flag still 'review'; see L6 below."
+    },
+    {
+      "id": "L13",
+      "block": "b052",
+      "severity": "note",
+      "status": "closed",
+      "evidence": "Translator kept 'Ze' for 'de vreemde zekerheid'; the singular 'beschermde' and the subject one sentence back make it unambiguous. Accepted, not carried."
+    },
+    {
+      "id": "L14",
+      "block": "b052",
+      "severity": "note",
+      "status": "carried",
+      "evidence": "'Of voor als …' unchanged; the tool now rates R-OF at 0.20 (ignored). See L7 below."
+    },
+    {
+      "id": "L15",
+      "block": "b048",
+      "severity": "note",
+      "status": "closed",
+      "evidence": "Translator kept 'excuus' (Harry's register, keeps the b048↔b052 excuse/excuses echo). Accepted, not carried."
+    }
+  ],
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b049",
+      "fragment": "in stijgende volgorde van \\gl{ergheid}{awfulness}",
+      "problem": "'ergheid' is not a dictionary word; the tool lists it unknown. It is a deliberate comic nominalisation of known 'erg' (A1) with the familiar '-heid' suffix (zekerheid, waarschijnlijkheid), glossed, and it carries the joke the meaning reviewer asked for.",
+      "evidence": "lexicon: ergheid absent, erg known A1, -heid nouns known (zekerheid A2); 'in stijgende volgorde' = bible ch 8 phrase",
+      "required_fix": "Keep. Lexicon owner: do not add (nonce word); glossary may record it as Harry's coinage.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L2",
+      "block": "b053",
+      "fragment": "naar zijn brein",
+      "problem": "Tool status unknown (2 occurrences, b053 and b054); 'brein' is a transparent cognate of 'brain', unglossed but understandable.",
+      "evidence": "lexicon: brein absent, hersenen stretch B1",
+      "required_fix": "Keep. Lexicon owner: add 'brein' (known or stretch) or put it in exceptions.json cognates.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L3",
+      "block": "b050",
+      "fragment": "\\gl{vermeende}{putative}",
+      "problem": "Unknown and formal, but glossed and carrying Harry's pedantic register ('putative'); 'zogenaamde' (A2) sneers more than the source.",
+      "evidence": "lexicon: vermeend absent; bible narrator voice §6: keep Harry's Latinate register",
+      "required_fix": "Keep as is. Lexicon owner: add 'vermeend' as hard.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b052",
+      "fragment": "Harry merkte het bij zichzelf",
+      "problem": "Tool row 'opmerken' (stretch B1) dismissed: the token is 'merkte', imperfectum of 'merken' (known A2); the lemmatiser reattached a particle that is not there. With this row and the cognate 'brein' dismissed, the scene has at most 3 new unglossed lemmas in 301 tokens (≤ 10/1000), so the tool's density HIGH does not stand.",
+      "evidence": "lexicon: merken known A2, forms 'merkte'; checks: new unglossed 4 = 13.3/1000",
+      "required_fix": "Keep. Vocab verdict overridden to OK.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L5",
+      "block": "b049",
+      "fragment": "veel, veel minder onwaarschijnlijk dan dit",
+      "problem": "'onwaarschijnlijk' lost its v1 gloss so that b049 stays at two glosses (ergheid, waanzin). It is stretch B1 but transparent: 'on-' + 'waarschijnlijk' (known A1), and 'waarschijnlijkheid' is glossed in the chapter title. Inside the stretch budget (3).",
+      "evidence": "lexicon: onwaarschijnlijk stretch B1, waarschijnlijk known A1; checks: ok-stretch; gloss_per_paragraph_max 2",
+      "required_fix": "Keep unglossed.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L6",
+      "block": "b047",
+      "fragment": "probeerde na te denken",
+      "problem": "R-TE-INF review flag accepted: 'proberen te' is the whitelisted review chunk and the alternatives change attempt into intention or success.",
+      "evidence": "exceptions.json grammar_whitelist: proberen te → review",
+      "required_fix": "Keep. For exceptions.json: consider promoting 'proberen te' to treat_as vocabulary.",
+      "severity": "note",
+      "category": "grammar:R-TE-INF"
+    },
+    {
+      "id": "L7",
+      "block": "b052",
+      "fragment": "Of voor als de professor alleen maar lepels kon buigen.",
+      "problem": "Verbless fragment sentence (coordinating 'Of' + preposition + als-clause); acceptable as rhythm after the previous sentence. The tool now rates R-OF at 0.20 (ignored), so the v1 feedback was applied.",
+      "evidence": "R-OF dismissed: sentence-initial 'Of' is 'or'; no governing verb, no complement clause",
+      "required_fix": "Keep.",
+      "severity": "note",
+      "category": "grammar:R-OF"
+    },
+    {
+      "id": "L8",
+      "block": "b048",
+      "fragment": "\\gl{bewijs}{evidence}",
+      "problem": "Tool action 'gloss-on-known' dismissed: exceptions.json lists 'bewijs' under keep with gloss 'first' (central theme of the book), and this is its first occurrence in the chapter.",
+      "evidence": "lexicon: bewijs known A2; exceptions.json keep: bewijs, gloss first",
+      "required_fix": "Keep the gloss.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L9",
+      "block": "b051",
+      "fragment": "\\emph{Geloof niet al je gedachten,}",
+      "problem": "Grammatical and clear, but 'Geloof niet alles wat je denkt' is the idiomatic form of the maxim; the v2 wording is the price of avoiding the free relative (L1 v1).",
+      "evidence": "A-NEG 'niet al je …' constituent negation; restricted.md R-RELCL row 'alles wat hij zei' → 'al zijn woorden'",
+      "required_fix": "Keep. Cohesion editor: if the maxim should read verbatim, add 'Geloof niet alles wat je denkt' to glossary.json as a fixed quote (like 'Waarom geloof je wat je gelooft?') and restore it then.",
+      "severity": "note",
+      "category": "naturalness"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-TE-INF",
+      "block": "b047",
+      "span": "na te denken",
+      "decision": "dismissed",
+      "reason": "Whitelisted review chunk 'proberen te'; alternatives shift the meaning; accepted as vocabulary (L6)."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "'verdacht' is a plain adjective in the lexicon (known A2 ADJ), attributive use before 'soort excuus'; look-alike 'Hij was verbaasd'."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b049",
+      "span": "stijgende",
+      "decision": "dismissed",
+      "reason": "Adjectival present participle inside the fixed phrase 'in stijgende volgorde' (bible ch 8: 'in stijgende volgorde, van laag naar hoog'); behaves as a plain adjective, no clause is reduced; 'stijgen' known A2."
+    },
+    {
+      "id": "R-DAT",
+      "block": "b049",
+      "span": "dat de verklaring: zo kwam hij",
+      "decision": "dismissed",
+      "reason": "'dat' is the demonstrative subject of the inverted main clause after the fronted als-clause ('Als mam de brief zelf stuurde, was dat de verklaring'); the colon introduces a V2 main clause. The tool's 'sentence' column shows it split the sentence at the comma, which is why the flag scores 0.85."
+    },
+    {
+      "id": "R-PLUPERF",
+      "block": "b050",
+      "span": "was een deel van Harry helemaal overtuigd",
+      "decision": "dismissed",
+      "reason": "'zijn' + adjectival participle expressing a state ('overtuigd' ADJ in the lexicon), not a pluperfect; look-alike 'Hij was verbaasd'."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b052",
+      "span": "tegen weerlegging — ze bedacht van",
+      "decision": "dismissed",
+      "reason": "The em dash joins two independent main clauses ('Ze beschermde zichzelf niet …' / 'ze bedacht van tevoren geen excuses …'); 'bedacht' is the imperfectum of 'bedenken' with its own subject 'ze', not a participle, and there is no 'worden/zijn' auxiliary."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b052",
+      "span": "bedacht",
+      "decision": "dismissed",
+      "reason": "Finite imperfectum 'bedacht' (bedenken: bedacht/bedachten) with subject 'ze'; homograph of the participle, same mis-parse as the R-PASSIVE flag."
+    },
+    {
+      "id": "R-OF",
+      "block": "b052",
+      "span": "Of voor als de professor alleen maar",
+      "decision": "dismissed",
+      "reason": "Sentence-initial coordinating 'Of' (= or) followed by a preposition; no verb of asking/knowing and no complement clause. Rated 0.20 (ignored) by the tool; recorded for completeness (L7)."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b055",
+      "span": ", die ga je testen",
+      "decision": "dismissed",
+      "reason": "Resumptive demonstrative 'die' with V2 order (left-dislocation: 'die ga je testen', not 'die je gaat testen'); no relative clause."
+    },
+    {
+      "id": "L-FRAME",
+      "block": "b052",
+      "span": "beschermde zichzelf niet tegen weerlegging — ze bedacht van tevoren geen excuses voor",
+      "decision": "dismissed",
+      "reason": "Measured across the em dash: 'beschermde' and 'bedacht' are the finite verbs of two different main clauses, not a verbal frame. The sentence itself is 17 words, three finite verbs, one als-clause — within the limits."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-DAT",
+      "block": "b049",
+      "span": "was dat de verklaring",
+      "issue": "false positive (likely 0.85), repeat of v1",
+      "reason": "The sentence splitter cuts 'Als mam de brief zelf stuurde, was dat de verklaring: …' at the comma (the reported sentence starts with 'dat'). Do not split after a fronted als/toen/omdat clause; a 'dat' directly after a finite verb in inversion is demonstrative."
+    },
+    {
+      "ref": "R-PASSIVE",
+      "block": "b052",
+      "span": "beschermde … bedacht",
+      "issue": "false positive (likely 0.85)",
+      "reason": "'bedacht' is both the imperfectum and the participle of 'bedenken'; with the em dash joining two main clauses the parser read 'beschermde … bedacht' as auxiliary + participle. Split at '—' / ' — ' before parsing, and require a 'worden/zijn' auxiliary for R-PASSIVE."
+    },
+    {
+      "ref": "R-PARTICIPLE",
+      "block": "b052",
+      "span": "bedacht",
+      "issue": "false positive (review 0.60)",
+      "reason": "Same homograph: a token with its own subject pronoun directly before it ('ze bedacht') is a finite verb."
+    },
+    {
+      "ref": "L-FRAME",
+      "block": "b052",
+      "span": "beschermde … bedacht",
+      "issue": "false positive, repeat of v1",
+      "reason": "Frame measured across an em dash joining two main clauses; split sentences at the em dash before measuring frames."
+    },
+    {
+      "ref": "R-PARTICIPLE",
+      "block": "b049",
+      "span": "stijgende",
+      "issue": "false positive (review 0.35)",
+      "reason": "Attributive present participle inside a fixed phrase ('in stijgende volgorde'); whitelist the phrase or treat attributive participles of known verbs as adjectives."
+    },
+    {
+      "ref": "vocab:opmerken",
+      "block": "b052",
+      "span": "merkte",
+      "issue": "false positive, repeat of v1",
+      "reason": "Token 'merkte' (merken, known A2); the lemmatiser/particle reattachment produced 'opmerken'. This row alone pushes the density over the limit."
+    },
+    {
+      "ref": "vocab:brein",
+      "block": "b053",
+      "span": "brein",
+      "issue": "false positive",
+      "reason": "Transparent cognate of 'brain'; add to the lexicon or to exceptions.json cognates."
+    },
+    {
+      "ref": "vocab:density",
+      "block": "-",
+      "span": "new unglossed lemmas 4 = 13.3/1000",
+      "issue": "false FAIL",
+      "reason": "Counts the mis-lemmatised 'opmerken' and the cognate 'brein'; the real figure is 2–3 per 301 tokens, within 10/1000."
+    },
+    {
+      "ref": "vocab:glosses",
+      "block": "b048",
+      "span": "\\gl{bewijs}{evidence}",
+      "issue": "false positive (gloss-on-known)",
+      "reason": "exceptions.json keep → gloss 'first' should suppress the gloss-on-known action for the first occurrence in a chapter."
+    },
+    {
+      "ref": "R-OF",
+      "block": "b052",
+      "span": "Of voor als",
+      "issue": "resolved",
+      "reason": "v1 feedback applied: confidence dropped from 0.80 to 0.20 (ignored)."
+    }
+  ]
+}

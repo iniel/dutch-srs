@@ -1,0 +1,66 @@
+{
+  "scene": "ch902/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Faithful: all objects, numbers, the negation, the 'zodat' purpose link, 'eminente', the capitalised 'Professor' and the emphasised addressee are present; present tense throughout. Notes only: the opening verb 'verdwijnt achter' is a shade more animated than 'is covered by', and two images ('to the brim', 'heaps') are slightly tidied.",
+  "comprehension": [
+    {
+      "q": "What covers the walls of the room, and where have the books ended up beyond the bookcases?",
+      "answer_from_nl": "Elke centimeter muur verdwijnt achter een boekenkast met zes planken tot bijna aan het plafond; de boeken stromen over naar de tafels en de banken en maken kleine stapels onder de ramen.",
+      "answerable": true
+    },
+    {
+      "q": "Why is the back row of paperbacks standing on old tissue boxes or pieces of wood?",
+      "answer_from_nl": "Zodat je de achterste rij boeken boven de voorste kunt zien.",
+      "answerable": true
+    },
+    {
+      "q": "Whose living room is this, and how is Harry related to the couple?",
+      "answer_from_nl": "Het huis van de eminente professor Michael Verres-Evans en zijn vrouw Petunia Evans-Verres; Harry James Potter-Evans-Verres is hun adoptiezoon.",
+      "answerable": true
+    },
+    {
+      "q": "What lies on the living-room table, and what is unusual about the envelope?",
+      "answer_from_nl": "Een brief en een envelop van geelachtig perkament, zonder postzegel; op de envelop staat in smaragdgroene inkt 'de heer H. Potter'.",
+      "answerable": true
+    },
+    {
+      "q": "How are the Professor and his wife arguing, and why are they not shouting?",
+      "answer_from_nl": "Ze praten op scherpe toon tegen elkaar maar schreeuwen niet; de Professor vindt schreeuwen onbeschaafd.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b010",
+      "fragment": "Elke centimeter muur verdwijnt achter een boekenkast.",
+      "problem": "'is covered by' is a flat, static statement; 'verdwijnt achter' (disappears behind) gives the wall a small action and a touch of drama the dry narrator does not have.",
+      "evidence": "EN: 'Every inch of wall space is covered by a bookcase.' vs NL: 'Elke centimeter muur verdwijnt achter een boekenkast.'",
+      "required_fix": "Optional: a static rendering such as 'Tegen elke centimeter muur staat een boekenkast' (s01/s02) matches the narrator's flatness; the current idiom is acceptable.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b010",
+      "fragment": "staan helemaal vol met gebonden boeken",
+      "problem": "'stacked to the brim' is reduced to plain fullness; the overflowing-container image that prepares 'And it still isn't enough' is gone.",
+      "evidence": "EN: 'stacked to the brim with hardback books' vs NL: 'staan helemaal vol met gebonden boeken'",
+      "required_fix": "Optional: restore the brim image if a plain form is available ('tot de rand toe vol'); otherwise accept.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M3",
+      "block": "b010",
+      "fragment": "maken kleine stapels onder de ramen",
+      "problem": "'little heaps' are untidy piles; 'stapels' suggests orderly stacks, slightly tidying the chaos the paragraph describes.",
+      "evidence": "EN: 'making little heaps under the windows' vs NL: 'maken kleine stapels onder de ramen'",
+      "required_fix": "Optional: 'kleine hoopjes' or 'kleine hopen' would keep the disorder; 'stapels' is acceptable.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "scene": "ch903/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "fix",
+  "summary": "The scene survives: the argument against magic, the three explanations with their ranking, the stamp detail, the conviction since the letter and the decision to test are all answerable from the Dutch. One fixed phrase is broken (the 'Why do I believe what I believe?' refrain became 'Waarom geloof ik dit?'); 'tried to think' became 'wanted to think'; the excuses the certainty is NOT making follow a colon without marking, so the negation scope is unclear; and the bible's affordance rendering ('nodigt uit tot') is not used.",
+  "comprehension": [
+    {
+      "q": "Why does Harry think he ought to have agreed with his father — what is his argument against magic being real?",
+      "answer_from_nl": "Nog nooit zag iemand bewijs van magie; volgens mam is er een complete magische wereld, maar hoe houd je zoiets geheim? 'Nog meer magie' als uitleg lijkt een verdacht soort excuus.",
+      "answerable": true
+    },
+    {
+      "q": "Which three explanations for Mum's behaviour does Harry list, how are they ordered, and which odd detail about the letter would 'Mum sent it herself' explain?",
+      "answer_from_nl": "Mam maakte een grapje, of ze loog, of ze was gek — 'in die volgorde, van erg naar erger'. Als mam de brief zelf stuurde, is duidelijk hoe hij zonder postzegel in de brievenbus kwam.",
+      "answerable": true
+    },
+    {
+      "q": "What does part of Harry believe anyway, and since when?",
+      "answer_from_nl": "Een deel van Harry is helemaal overtuigd dat magie echt is, al vanaf de eerste blik op de brief die zogenaamd van Zweinstein komt.",
+      "answerable": true
+    },
+    {
+      "q": "What is odd about Harry's certainty — what is it not doing that a belief normally does to protect itself?",
+      "answer_from_nl": "Ze beschermt zichzelf niet eens tegen falsificatie en bedenkt van tevoren geen excuses (geen professor; alleen lepels buigen); Harry verwacht gewoon dat een professor komt, zwaait en tovert. Answerable, though the colon in 'geen excuses: misschien komt er geen professor' can be misread (see M5).",
+      "answerable": true
+    },
+    {
+      "q": "Can Harry explain where his belief comes from, and what does he decide to do about it?",
+      "answer_from_nl": "Nee: meestal kan hij die vraag beantwoorden, maar nu heeft hij geen idee wat zijn hersenen denken. Hij haalt in gedachten zijn schouders op: met een testbare hypothese doe je één ding, je gaat hem testen.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b047",
+      "fragment": "wilde nadenken",
+      "problem": "'tried to think' (an attempt, implying that thinking was hard) has become 'wanted to think' (an intention); the struggle is gone.",
+      "evidence": "EN: 'and tried to think' vs NL: 'en wilde nadenken'",
+      "required_fix": "Render the attempt, not the wish: 'probeerde na te denken' (as s02/s03) or another form that says he tried.",
+      "severity": "should_fix",
+      "category": "event"
+    },
+    {
+      "id": "M2",
+      "block": "b049",
+      "fragment": "in die volgorde, van erg naar erger",
+      "problem": "Harry's mock-technical ranking 'in ascending order of awfulness' (awfulness treated as a measurable scale) is replaced by a homely idiom; the deadpan pseudo-scientific register that is his voice is flattened.",
+      "evidence": "EN: 'joking, lying or being insane, in ascending order of awfulness' vs NL: 'of ze was gek—in die volgorde, van erg naar erger'",
+      "required_fix": "Keep a measured, formal-sounding ranking phrase in Harry's register as the afterthought to the list (e.g. 'in oplopende volgorde van ergheid' / '…van akeligheid'); the ranking joke < lie < insane must stay.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b049",
+      "fragment": "Dan was ook dat duidelijk: zo kwam de brief",
+      "problem": "'ook' adds a second thing being explained that the English does not have, and the pronoun 'it' has become the noun 'de brief'.",
+      "evidence": "EN: 'that would explain how it arrived at the letterbox without a stamp' vs NL: 'Dan was ook dat duidelijk: zo kwam de brief zonder postzegel in de brievenbus'",
+      "required_fix": "Optional: drop 'ook' ('Dan was dat duidelijk' or 'Dan was er een verklaring') and use 'hij' for the letter.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M4",
+      "block": "b050",
+      "fragment": "zogenaamd van Zweinsteins Hogeschool",
+      "problem": "'putative' is Harry's neutral, pedantic hedge; 'zogenaamd' carries a sneer ('so-called'), implying he already judges the letter fake.",
+      "evidence": "EN: 'the putative letter from the Hogwarts School of Witchcraft and Wizardry' vs NL: 'de brief, zogenaamd van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus'",
+      "required_fix": "Optional: a neutral 'alleged' word ('de vermeende brief', as s03) keeps the pedantry without the sneer.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M5",
+      "block": "b052",
+      "fragment": "Ze bedacht van tevoren geen excuses: misschien komt er geen professor",
+      "problem": "After a negated clause a colon normally introduces the reason; the reader can take 'misschien komt er geen professor…' as Harry's own hedging rather than as the excuses the certainty is NOT making — the scope of the negation is unclear.",
+      "evidence": "EN: 'wasn't making excuses in advance for why there wouldn't be a professor, or the professor would only be able to bend spoons' vs NL: 'Ze bedacht van tevoren geen excuses: misschien komt er geen professor, of misschien kan de professor alleen maar lepels buigen.'",
+      "required_fix": "Mark the two excuses unmistakably as the content of the absent excuses: quote them (‘misschien komt er geen professor’, as s02), introduce them with 'zoals', or use 'excuses voor als er geen professor kwam' (as s03).",
+      "severity": "should_fix",
+      "category": "negation"
+    },
+    {
+      "id": "M6",
+      "block": "b052",
+      "fragment": "misschien komt er geen professor",
+      "problem": "The English excuses are reasons 'for why there wouldn't be a professor'; the Dutch gives the hedged prediction itself ('maybe no professor comes') as the excuse. The guarding-against-falsification function survives, the content shifts slightly.",
+      "evidence": "EN: 'excuses in advance for why there wouldn't be a professor' vs NL: 'geen excuses: misschien komt er geen professor'",
+      "required_fix": "Optional: 'excuses voor als er geen professor kwam' (s03) keeps the excuses as explanations of a possible failure.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M7",
+      "block": "b053",
+      "fragment": "Waarom geloof ik dit?",
+      "problem": "The fixed refrain 'Why do I believe what I believe?' (glossary: 'Waarom geloof je wat je gelooft?', asked to his brain here and to Draco in ch 7) has become a specific 'Why do I believe this?'; the self-referential general question that is Harry's method is gone and the later callback is broken.",
+      "evidence": "EN: '\\emph{Why do I believe what I believe?}' vs NL: '\\emph{Waarom geloof ik dit?}'; glossary.json: 'Why do you believe what you believe?' → 'Waarom geloof je wat je gelooft?' — 'Fixed refrain (ch 1 to his brain, ch 7 to Draco). The wat-clause is a fixed quote, allowed.'",
+      "required_fix": "Use the fixed refrain in the first person: '\\emph{Waarom geloof ik wat ik geloof?}' (as s02/s03).",
+      "severity": "must_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M8",
+      "block": "b055",
+      "fragment": "vraagt om duwen",
+      "problem": "The bible fixes the affordance phrase as 'nodigt uit tot duwen'; 'vraagt om' (asks for / demands) is a different image and breaks the fixed rendering used in s02/s03.",
+      "evidence": "EN: 'A flat metal plate on a door affords pushing, and a handle on a door affords pulling' vs NL: 'vraagt om duwen … vraagt om trekken'; bible ch 1 Traps: '“A flat metal plate on a door affords pushing” → nodigt uit tot duwen (affordance)'",
+      "required_fix": "Write 'nodigt uit tot duwen' and 'nodigt uit tot trekken'.",
+      "severity": "should_fix",
+      "category": "detail"
+    }
+  ]
+}

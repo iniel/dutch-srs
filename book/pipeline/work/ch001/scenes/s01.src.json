@@ -1,0 +1,472 @@
+{
+  "chapter": 1,
+  "scene": "s01",
+  "index": 0,
+  "of": 4,
+  "chapter_title": "A Day of Very Low Probability",
+  "words": 929,
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "heading",
+      "tex": "\\chapter{A Day of Very Low Probability}",
+      "text": "A Day of Very Low Probability",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 1,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b002",
+      "kind": "env_begin",
+      "tex": "\\begin{chapterOpeningQuote}",
+      "text": "",
+      "env": null,
+      "envs": [],
+      "translate": false,
+      "line": 3,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b003",
+      "kind": "cmd",
+      "tex": "\\noindent",
+      "text": "",
+      "env": "chapterOpeningQuote",
+      "envs": [
+        "chapterOpeningQuote"
+      ],
+      "translate": false,
+      "line": 4,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b004",
+      "kind": "para",
+      "tex": "Beneath the moonlight glints a tiny fragment of silver, a fraction of a line…",
+      "text": "Beneath the moonlight glints a tiny fragment of silver, a fraction of a line…",
+      "env": "chapterOpeningQuote",
+      "envs": [
+        "chapterOpeningQuote"
+      ],
+      "translate": true,
+      "line": 5,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b005",
+      "kind": "cmd",
+      "tex": "\\vspace*{2ex}",
+      "text": "",
+      "env": "chapterOpeningQuote",
+      "envs": [
+        "chapterOpeningQuote"
+      ],
+      "translate": false,
+      "line": 7,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b006",
+      "kind": "para",
+      "tex": "(black robes, falling)",
+      "text": "(black robes, falling)",
+      "env": "chapterOpeningQuote",
+      "envs": [
+        "chapterOpeningQuote"
+      ],
+      "translate": true,
+      "line": 8,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b007",
+      "kind": "cmd",
+      "tex": "\\vspace*{2ex}",
+      "text": "",
+      "env": "chapterOpeningQuote",
+      "envs": [
+        "chapterOpeningQuote"
+      ],
+      "translate": false,
+      "line": 10,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b008",
+      "kind": "para",
+      "tex": "…blood spills out in litres, and someone screams a word.",
+      "text": "…blood spills out in litres, and someone screams a word.",
+      "env": "chapterOpeningQuote",
+      "envs": [
+        "chapterOpeningQuote"
+      ],
+      "translate": true,
+      "line": 11,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b009",
+      "kind": "env_end",
+      "tex": "\\end{chapterOpeningQuote}",
+      "text": "",
+      "env": null,
+      "envs": [],
+      "translate": false,
+      "line": 12,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b010",
+      "kind": "para",
+      "tex": "\\lettrine{E}{very} inch of wall space is covered by a bookcase. Each bookcase has six shelves, going almost to the ceiling. Some bookshelves are stacked to the brim with hardback books: science, maths, history, and everything else. Other shelves have two layers of paperback science fiction, with the back layer of books propped up on old tissue boxes\\authorsnotefootnotemark{} or lengths of wood, so that you can see the back layer of books above the books in front. And it still isn’t enough. Books are overflowing onto the tables and the sofas and making little heaps under the windows.",
+      "text": "Every inch of wall space is covered by a bookcase. Each bookcase has six shelves, going almost to the ceiling. Some bookshelves are stacked to the brim with hardback books: science, maths, history, and everything else. Other shelves have two layers of paperback science fiction, with the back layer of books propped up on old tissue boxes or lengths of wood, so that you can see the back layer of books above the books in front. And it still isn’t enough. Books are overflowing onto the tables and the sofas and making little heaps under the windows.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 14,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b011",
+      "kind": "cmd",
+      "tex": "\\authorsnotetext{I do this in my own home.}",
+      "text": "",
+      "env": null,
+      "envs": [],
+      "translate": false,
+      "line": 15,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b012",
+      "kind": "para",
+      "tex": "This is the living-room of the house occupied by the eminent Professor Michael Verres-Evans, and his wife, Mrs~Petunia Evans-Verres, and their adopted son, Harry James Potter-Evans-Verres.",
+      "text": "This is the living-room of the house occupied by the eminent Professor Michael Verres-Evans, and his wife, Mrs Petunia Evans-Verres, and their adopted son, Harry James Potter-Evans-Verres.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 17,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b013",
+      "kind": "para",
+      "tex": "There is a letter lying on the living-room table, and an unstamped envelope of yellowish parchment, addressed to \\emph{Mr~H.~Potter} in emerald-green ink.",
+      "text": "There is a letter lying on the living-room table, and an unstamped envelope of yellowish parchment, addressed to Mr H. Potter in emerald-green ink.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 19,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b014",
+      "kind": "para",
+      "tex": "The Professor and his wife are speaking sharply at each other, but they are not shouting. The Professor considers shouting to be uncivilised.",
+      "text": "The Professor and his wife are speaking sharply at each other, but they are not shouting. The Professor considers shouting to be uncivilised.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 21,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b015",
+      "kind": "para",
+      "tex": "“You’re joking,” Michael said to Petunia. His tone indicated that he was very much afraid that she was serious.",
+      "text": "“You’re joking,” Michael said to Petunia. His tone indicated that he was very much afraid that she was serious.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 23,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b016",
+      "kind": "para",
+      "tex": "“My sister was a witch,” Petunia repeated. She looked frightened, but stood her ground. “Her husband was a wizard.”",
+      "text": "“My sister was a witch,” Petunia repeated. She looked frightened, but stood her ground. “Her husband was a wizard.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 25,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b017",
+      "kind": "para",
+      "tex": "“This is absurd!” Michael said sharply. “They were at our wedding—they visited for Christmas—”",
+      "text": "“This is absurd!” Michael said sharply. “They were at our wedding—they visited for Christmas—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 27,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b018",
+      "kind": "para",
+      "tex": "“I told them you weren’t to know,” Petunia whispered. “But it’s true. I’ve seen things—”",
+      "text": "“I told them you weren’t to know,” Petunia whispered. “But it’s true. I’ve seen things—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 29,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b019",
+      "kind": "para",
+      "tex": "The Professor rolled his eyes. “Dear, I understand that you’re not familiar with the sceptical literature. You may not realise how easy it is for a trained magician to fake the seemingly impossible. Remember how I taught Harry to bend spoons? If it seemed like they could always guess what you were thinking, that’s called cold reading—”",
+      "text": "The Professor rolled his eyes. “Dear, I understand that you’re not familiar with the sceptical literature. You may not realise how easy it is for a trained magician to fake the seemingly impossible. Remember how I taught Harry to bend spoons? If it seemed like they could always guess what you were thinking, that’s called cold reading—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 31,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b020",
+      "kind": "para",
+      "tex": "“It wasn’t bending spoons—”",
+      "text": "“It wasn’t bending spoons—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 33,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b021",
+      "kind": "para",
+      "tex": "“What was it, then?”",
+      "text": "“What was it, then?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 35,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b022",
+      "kind": "para",
+      "tex": "Petunia bit her lip. “I can’t just tell you. You’ll think I’m—” She swallowed. “Listen. Michael. I wasn’t—always like this—” She gestured at herself, as though to indicate her lithe form. “Lily did this. Because I—because I \\emph{begged} her. For years, I begged her. Lily had \\emph{always} been prettier than me, and I’d…been mean to her, because of that, and then she got \\emph{magic}, can you imagine how I felt? And I \\emph{begged} her to use some of that magic on me so that I could be pretty too, even if I couldn’t have her magic, at least I could be pretty.”",
+      "text": "Petunia bit her lip. “I can’t just tell you. You’ll think I’m—” She swallowed. “Listen. Michael. I wasn’t—always like this—” She gestured at herself, as though to indicate her lithe form. “Lily did this. Because I—because I begged her. For years, I begged her. Lily had always been prettier than me, and I’d…been mean to her, because of that, and then she got magic, can you imagine how I felt? And I begged her to use some of that magic on me so that I could be pretty too, even if I couldn’t have her magic, at least I could be pretty.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 37,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b023",
+      "kind": "para",
+      "tex": "Tears were gathering in Petunia’s eyes.",
+      "text": "Tears were gathering in Petunia’s eyes.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 39,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b024",
+      "kind": "para",
+      "tex": "“And Lily would tell me no, and make up the most ridiculous excuses, like the world would end if she were nice to her sister, or a centaur told her not to—the most ridiculous things, and I hated her for it. And when I had just graduated from university, I was going out with this boy, Vernon Dursley, he was fat and he was the only boy who would talk to me. And he said he wanted children, and that his first son would be named Dudley. And I thought to myself, \\emph{what kind of parent names their child Dudley Dursley?} It was like I saw my whole future life stretching out in front of me, and I couldn’t stand it. And I wrote to my sister and told her that if she didn’t help me I’d rather just—”",
+      "text": "“And Lily would tell me no, and make up the most ridiculous excuses, like the world would end if she were nice to her sister, or a centaur told her not to—the most ridiculous things, and I hated her for it. And when I had just graduated from university, I was going out with this boy, Vernon Dursley, he was fat and he was the only boy who would talk to me. And he said he wanted children, and that his first son would be named Dudley. And I thought to myself, what kind of parent names their child Dudley Dursley? It was like I saw my whole future life stretching out in front of me, and I couldn’t stand it. And I wrote to my sister and told her that if she didn’t help me I’d rather just—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 41,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b025",
+      "kind": "para",
+      "tex": "Petunia stopped.",
+      "text": "Petunia stopped.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 43,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b026",
+      "kind": "para",
+      "tex": "“Anyway,” Petunia said, her voice small, “she gave in. She told me it was dangerous, and I said I didn’t care any more, and I drank this potion and I was sick for weeks, but when I got better my skin cleared up and I finally filled out and…I was beautiful, people were \\emph{nice} to me,” her voice broke, “and after that I couldn’t hate my sister any more, especially when I learned what her magic brought her in the end—”",
+      "text": "“Anyway,” Petunia said, her voice small, “she gave in. She told me it was dangerous, and I said I didn’t care any more, and I drank this potion and I was sick for weeks, but when I got better my skin cleared up and I finally filled out and…I was beautiful, people were nice to me,” her voice broke, “and after that I couldn’t hate my sister any more, especially when I learned what her magic brought her in the end—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 45,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b027",
+      "kind": "para",
+      "tex": "“Darling,” Michael said gently, “you got sick, you gained some weight while resting in bed, and your skin cleared up on its own. Or being sick made you change your diet—”",
+      "text": "“Darling,” Michael said gently, “you got sick, you gained some weight while resting in bed, and your skin cleared up on its own. Or being sick made you change your diet—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 47,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b028",
+      "kind": "para",
+      "tex": "“She was a witch,” Petunia repeated. “I saw it.”",
+      "text": "“She was a witch,” Petunia repeated. “I saw it.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 49,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b029",
+      "kind": "para",
+      "tex": "“Petunia,” Michael said. The annoyance was creeping into his voice. “You \\emph{know} that can’t be true. Do I really have to explain why?”",
+      "text": "“Petunia,” Michael said. The annoyance was creeping into his voice. “You know that can’t be true. Do I really have to explain why?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 51,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b030",
+      "kind": "para",
+      "tex": "Petunia wrung her hands. She seemed to be on the verge of tears. “My love, I know I can’t win arguments with you, but please, you have to trust me on this—”",
+      "text": "Petunia wrung her hands. She seemed to be on the verge of tears. “My love, I know I can’t win arguments with you, but please, you have to trust me on this—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 53,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b031",
+      "kind": "para",
+      "tex": "“\\emph{Dad! Mum!}”",
+      "text": "“Dad! Mum!”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 55,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b032",
+      "kind": "para",
+      "tex": "The two of them stopped and looked at Harry as though they’d forgotten there was a third person in the room.",
+      "text": "The two of them stopped and looked at Harry as though they’d forgotten there was a third person in the room.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 57,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b033",
+      "kind": "para",
+      "tex": "Harry took a deep breath. “Mum, \\emph{your} parents didn’t have magic, did they?”",
+      "text": "Harry took a deep breath. “Mum, your parents didn’t have magic, did they?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 59,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b034",
+      "kind": "para",
+      "tex": "“No,” Petunia said, looking puzzled.",
+      "text": "“No,” Petunia said, looking puzzled.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 61,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b035",
+      "kind": "para",
+      "tex": "“Then no-one in your family knew about magic when Lily got her letter. How did \\emph{they} get convinced?”",
+      "text": "“Then no-one in your family knew about magic when Lily got her letter. How did they get convinced?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 63,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b036",
+      "kind": "para",
+      "tex": "“Ah…” Petunia said. “They didn’t just send a letter. They sent a professor from Hogwarts. He—” Petunia’s eyes flicked to Michael. “He showed us some magic.”",
+      "text": "“Ah…” Petunia said. “They didn’t just send a letter. They sent a professor from Hogwarts. He—” Petunia’s eyes flicked to Michael. “He showed us some magic.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 65,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b037",
+      "kind": "para",
+      "tex": "“Then you don’t have to fight over this,” Harry said firmly. Hoping against hope that this time, just this once, they would listen to him. “If it’s true, we can just get a Hogwarts professor here and see the magic for ourselves, and Dad will admit that it’s true. And if not, then Mum will admit that it’s false. That’s what the experimental method is for, so that we don’t have to resolve things just by arguing.”",
+      "text": "“Then you don’t have to fight over this,” Harry said firmly. Hoping against hope that this time, just this once, they would listen to him. “If it’s true, we can just get a Hogwarts professor here and see the magic for ourselves, and Dad will admit that it’s true. And if not, then Mum will admit that it’s false. That’s what the experimental method is for, so that we don’t have to resolve things just by arguing.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 67,
+      "dialogue": true,
+      "gap_before": true
+    }
+  ],
+  "context_before": [],
+  "context_after": [
+    "The Professor turned and looked down at him, dismissive as usual. “Oh, come now, Harry. Really, magic? I thought you’d know better than to take this seriously, son, even if you’re only ten. Magic is just about the most unscientific thing there is!”",
+    "Harry’s mouth twisted bitterly. He was treated well, probably better than most genetic fathers treated their own children. Harry had been sent to the best primary schools—and when that didn’t work out, he was provided with tutors from the endless pool of starving students. Always Harry had been encouraged to study whatever caught his attention, bought all the books that caught his fancy, sponsored in whatever maths or science competitions he entered. He was given anything reasonable that he wanted, except, maybe, the slightest shred of respect. A Doctor teaching biochemistry at Oxford could hardly be expected to listen to the advice of a little boy. You would listen to Show Interest, of course; that’s what a Good Parent would do, and so, if you conceived of yourself as a Good Parent, you would do it. But take a ten-year-old seriously? Hardly.",
+    "Sometimes Harry wanted to scream at his father."
+  ]
+}

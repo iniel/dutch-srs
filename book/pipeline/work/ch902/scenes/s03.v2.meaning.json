@@ -1,0 +1,46 @@
+{
+  "scene": "ch902/s03",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the one changed block (b010); b012–b014 are byte-identical to v1. v1 had no must_fix/should_fix. Notes M2 (brim image) and M3 (untidy heaps) are now matched by 'tot de rand toe vol' and 'vormen kleine hoopjes'; M1 ('verdwijnt achter') was rejected by the translator for a sound reason and is closed. The four rewrites in b010 keep every object, number, the 'zodat' purpose link, the footnote mark and the books as agent of the heaping; nothing added, nothing summarised.",
+  "comprehension": [
+    {
+      "q": "What covers the walls of the room, and where have the books ended up beyond the bookcases?",
+      "answer_from_nl": "Elke centimeter muur verdwijnt achter een boekenkast met zes planken tot bijna aan het plafond; de boeken stromen over naar de tafels en de banken en vormen kleine hoopjes onder de ramen.",
+      "answerable": true
+    },
+    {
+      "q": "Why is the back row of paperbacks standing on old tissue boxes or pieces of wood?",
+      "answer_from_nl": "Zodat je die boeken (de achterste rij) boven de voorste kunt zien.",
+      "answerable": true
+    },
+    {
+      "q": "Whose living room is this, and how is Harry related to the couple?",
+      "answer_from_nl": "Het huis van de eminente professor Michael Verres-Evans en zijn vrouw Petunia Evans-Verres; Harry James Potter-Evans-Verres is hun adoptiezoon.",
+      "answerable": true
+    },
+    {
+      "q": "What lies on the living-room table, and what is unusual about the envelope?",
+      "answer_from_nl": "Een brief en een envelop van geelachtig perkament, zonder postzegel; op de envelop staat in smaragdgroene inkt 'de heer H. Potter'.",
+      "answerable": true
+    },
+    {
+      "q": "How are the Professor and his wife arguing, and why are they not shouting?",
+      "answer_from_nl": "Ze praten op scherpe toon tegen elkaar maar schreeuwen niet; de Professor vindt schreeuwen onbeschaafd.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b010",
+      "fragment": "Elke centimeter muur verdwijnt achter een boekenkast.",
+      "problem": "Carried from v1 as a record only: 'verdwijnt achter' is a shade more animated than the flat 'is covered by'. The translator rejected the static alternative because it would move the \\lettrine off 'Elke'; that reasoning is accepted and the finding is closed.",
+      "evidence": "EN: 'Every inch of wall space is covered by a bookcase.' vs NL: 'Elke centimeter muur verdwijnt achter een boekenkast.' — unchanged v1 → v2 by decision.",
+      "required_fix": "None. Keep.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

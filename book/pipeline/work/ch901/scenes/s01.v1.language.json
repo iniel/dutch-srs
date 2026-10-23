@@ -1,0 +1,169 @@
+{
+  "scene": "ch901/s01",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Clean, plain Dutch inside the profile: no restricted construction found, the single parser flag is a false positive, and the vocabulary FAIL is a tool artefact (the English term 'cold reading' counted as two unknown lemmas, 'sceptisch' is a cognate). Two advisory fixes: gloss 'cold reading' as the bible requires, and capitalise the narrator's label 'de Professor'.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b019",
+      "fragment": "Dat heet cold reading—",
+      "problem": "The English technical term is kept without a gloss; the reader can read it but not decode it, and the sentence breaks off before any explanation.",
+      "evidence": "bible.md ch 1 Traps: “cold reading” → cold reading kept, glossed; vocab table: cold / reading unknown, action review",
+      "required_fix": "Dat heet \\gl{cold reading}{guessing from small cues}— (keep the goochelaar gloss; b019 then has 2 glosses = max)",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L2",
+      "block": "b019",
+      "fragment": "De professor rolde met zijn ogen.",
+      "problem": "Narrator's label for Michael is written lowercase; the bible fixes it as a capitalised label.",
+      "evidence": "bible.md: Exception: *de Professor* (capital P) when the narrator uses it as Michael's label",
+      "required_fix": "De Professor rolde met zijn ogen.",
+      "severity": "should_fix",
+      "category": "name"
+    },
+    {
+      "id": "L3",
+      "block": "b019",
+      "fragment": "de sceptische literatuur",
+      "problem": "Lemma 'sceptisch' is not in the lexicon (status unknown).",
+      "evidence": "vocab table: sceptisch unknown, action review; transparent cognate of EN 'sceptical', the gloss language",
+      "required_fix": "No change. Lexicon owner: add 'sceptisch' (ADJ, sceptical) as known-cognate.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b019",
+      "fragment": "een getrainde \\gl{goochelaar}{stage magician}",
+      "problem": "Lemma 'goochelaar' is unknown to the lexicon.",
+      "evidence": "vocab table: goochelaar unknown, glossed; the only plain alternative 'tovenaar' would erase Michael's stage-magic vs real-magic contrast with b016",
+      "required_fix": "No change; keep the word and its gloss.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L5",
+      "block": "b016",
+      "fragment": "maar ze hield vol",
+      "problem": "Separable verb 'volhouden' is B1 (stretch) and was not detected by the checker, so the stretch count is really 2 (absurd, volhouden).",
+      "evidence": "lexicon: volhouden stretch B1; checks.md stretch budget 2, only absurd listed",
+      "required_fix": "No change: at the budget, meaning clear from 'maar'. Plain fallback if the budget is needed elsewhere: 'maar ze bleef bij haar woorden'.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L6",
+      "block": "b019",
+      "fragment": "doet heel makkelijk iets onmogelijks na",
+      "problem": "Separable verb 'nadoen' is not in the lexicon and was not detected by the checker (resolved as 'doen').",
+      "evidence": "lexicon: no entry 'nadoen'; na and doen both known A1",
+      "required_fix": "No change: compound of two known parts, meaning (imitate) clear in context. Lexicon owner: add 'nadoen'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b022",
+      "fragment": "\\emph{\\gl{smeekte}{begged}} … \\gl{fluisterde}{whispered} (b018)",
+      "problem": "Both glossed words are known A2 in the lexicon; the glosses add length without helping the reader.",
+      "evidence": "lexicon: smeken known A2, fluisteren known A2; the fluisteren gloss is forced only by the exceptions.json keep entry (gloss: first), which predates the lexicon status",
+      "required_fix": "Optional: drop the \\gl on 'smeekte' (keep \\emph). Keep 'fluisterde' glossed until exceptions.json is updated.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L8",
+      "block": "b022",
+      "fragment": "Ze wees naar zichzelf, blijkbaar naar haar slanke lichaam.",
+      "problem": "Grammatical, but 'blijkbaar' inside an apposition reads stiff; a Dutch reader pauses on it.",
+      "evidence": "naturalness; no flag",
+      "required_fix": "Optional: 'Ze wees naar zichzelf, naar haar slanke lichaam, zo leek het.' (keeps the narrator's hedge)",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b019",
+      "fragment": "Misschien weet je dit niet: … Misschien leek het zo: …",
+      "problem": "Two 'Misschien … :' openers within four sentences; the colon template starts to show.",
+      "evidence": "naturalness / rhythm; both sentences are legal",
+      "required_fix": "Optional: vary one of them, e.g. 'Dit weet je misschien niet:' or 'Het leek misschien zo:'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L10",
+      "block": "b019",
+      "fragment": "Ik leerde Harry lepels buigen.",
+      "problem": "'leren' + object + bare infinitive is an accusative-with-infinitive like zien/horen (R-PERCEPTION) but is not listed in restricted.md.",
+      "evidence": "restricted.md R-PERCEPTION covers zien/horen/voelen only; the alternative ('hoe je lepels buigt') is an indirect question (R-INDIRECT)",
+      "required_fix": "No change; accepted as the plainest option. Profile owner: decide whether 'leren + obj + inf' is allowed or restricted.",
+      "severity": "note",
+      "category": "grammar:R-PERCEPTION"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b019",
+      "span": "getrainde",
+      "decision": "dismissed",
+      "reason": "Attributive adjectival participle used as a plain adjective (dep amod, no complements); restricted.md: simple adjectival participles that behave as adjectives are fine; base verb 'trainen' is known A1."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-PARTICIPLE 'getrainde' (0.35)",
+      "block": "b019",
+      "reason": "Bare attributive participle with dep amod and no children is an adjective, not a participle phrase; suppress amod participles without complements (or when the base verb is in the lexicon)."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "cold (PROPN) + reading (NOUN) as two unknown lemmas; sentence cluster 'cold, reading'",
+      "block": "b019",
+      "reason": "'cold reading' is one English term (bible: kept as a term); should be matched as a single phrase, not two lemmas, and should not produce a cluster."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "density 15.6/1000 HIGH",
+      "block": "-",
+      "reason": "Driven by the two tokens of 'cold reading' plus the cognate 'sceptisch'; the real count of new lemmas is 1–2, inside the limit."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "sceptisch unknown",
+      "block": "b019",
+      "reason": "Transparent cognate of the gloss language (sceptical); add to lexicon or to a cognate list."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "volhouden (ze hield vol) not listed as stretch B1",
+      "block": "b016",
+      "reason": "Separable particle 'vol' was not attached as compound:prt, so the token resolved to known 'houden'; try particle+base for clause-final particles (vol, na, toe, op, uit…)."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "nadoen (doet … na) not listed as unknown",
+      "block": "b019",
+      "reason": "Same particle problem: resolved to 'doen'; 'nadoen' has no lexicon entry."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "glosses on known words (smeekte, fluisterde) not reported",
+      "block": "b022",
+      "reason": "Both lemmas are known A2; the report could list 'gloss on known word' so gloss bloat is visible. exceptions.json keep 'fluisteren' (gloss first) conflicts with the lexicon status."
+    }
+  ]
+}

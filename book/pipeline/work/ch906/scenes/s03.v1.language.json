@@ -1,0 +1,157 @@
+{
+  "scene": "ch906/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "The only grammar flag is a parser error (adjective read as participle); re-reading finds no restricted construction and the most idiomatic Dutch of the three versions ('Lag … rond de', 'in handen krijgen', 'in zijn achterhoofd', 'een weekje vrij'). Open points are lexical: the stretch budget is spent on the wrong words (binnenbrengen, koers in a new sense), the arbitrage gloss repeats the word, 'hopen' is a homograph the tool passes for the wrong sense, and b034 fronts a 12-word subject.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b029",
+      "fragment": "Breng een ton zilver binnen.",
+      "problem": "binnenbrengen is the third unglossed stretch (B1) lemma against a budget of 2, and in Dutch it means bringing something into a building, which is not the point here; a known-word rendering exists.",
+      "evidence": "checks: binnenbrengen stretch B1, action gloss-or-replace; stretch budget 2 already spent on schommelen and koers",
+      "required_fix": "`Neem een ton zilver mee.` (meenemen A1, as in V1/V2).",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L2",
+      "block": "b029",
+      "fragment": "Uiteindelijk kon niemand die koers nog houden.",
+      "problem": "koers is stretch (B1) and the reader, if they know it, know it as 'course'; the exchange-rate sense is new and unglossed, so 'die koers houden' is read as 'stay on course'.",
+      "evidence": "lexicon: koers stretch B1, en 'course of action, approach'; no gloss in b029",
+      "required_fix": "Either gloss: `kon niemand die \\gl{koers}{exchange rate} nog houden`, or use known words as V2 does: `kon niemand de vaste prijs van een Galjoen nog vasthouden`.",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L3",
+      "block": "b029",
+      "fragment": "\\gl{arbitrage}{arbitrage}",
+      "problem": "The gloss repeats the word and tells the reader nothing; arbitrage is unknown and not transparent even in English.",
+      "evidence": "@glosses: 'arbitrage: arbitrage'",
+      "required_fix": "`\\gl{arbitrage}{arbitrage: profit from price differences}`. Once the gloss explains the term, the b031 parenthetical '— prijsverschillen op de markt weghalen —' can be dropped (see L11).",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L4",
+      "block": "b034",
+      "fragment": "De enorme hopen gouden munten",
+      "problem": "hopen 'heaps' is a homograph of hopen 'to hope' / hoop 'hope'; the tool counts it as known only for that sense. An A2 reader hesitates; a known synonym costs nothing.",
+      "evidence": "lexicon: hoop known A2 en 'hope'; hopen known A2 en 'to hope'; no 'heap' sense",
+      "required_fix": "`De enorme bergen gouden munten` (berg A2, as V1/V2) or `stapels` (A2).",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L5",
+      "block": "b034",
+      "fragment": "De enorme hopen gouden munten in de kluis van de familie Potter moesten ondertussen wel genoeg zijn",
+      "problem": "Legal but heavy: a 12-word subject phrase precedes the finite verb in a 23-word sentence; the reader holds the whole noun phrase before learning what is said about it.",
+      "evidence": "23 words, > soft limit 20; subject NP of 12 words before 'moesten'",
+      "required_fix": "Split as V1: `Intussen lagen er in de kluis van de familie Potter enorme bergen gouden munten. Die moesten wel genoeg zijn voor zijn behoeften op de korte \\gl{termijn}{term}.`",
+      "severity": "should_fix",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L6",
+      "block": "b031",
+      "fragment": "hun \\gl{primitieve}{primitive} financiële systeem",
+      "problem": "primitief is hard (B2) but glossed and a transparent cognate carrying Harry's contempt; acceptable as is.",
+      "evidence": "lexicon status hard B2; glossed",
+      "required_fix": "None. (ouderwetse is the A2 fallback if the gloss count ever matters.)",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L7",
+      "block": "b029",
+      "fragment": "Elke keer … gemene",
+      "problem": "Vocabulary rows dismissed: elk is known A1 (tool POS mismatch), gemene is the known A2 adjective gemeen.",
+      "evidence": "lexicon: elk known A1 [ADJ, PRON]; gemeen known A2",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b031",
+      "fragment": "Telkens als je geld wilde uitgeven, moest je zelf naar binnen en munten uit je kluis halen.",
+      "problem": "L-FRAME 9>8 dismissed: the span is inflated by the coordination 'naar binnen en … halen' under one modal; 17 words, one subordinate clause, reads naturally.",
+      "evidence": "flag L-FRAME dismissed; V1/V2 have the same sentence without 'zelf' at 8",
+      "required_fix": "None. If a shorter frame is wanted: `moest je zelf naar binnen. Daar haalde je munten uit je kluis.`",
+      "severity": "note",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "L9",
+      "block": "b034",
+      "fragment": "op de korte \\gl{termijn}{term}",
+      "problem": "'term' alone is ambiguous in English (semester, word); the phrase is what the reader needs.",
+      "evidence": "@glosses: 'termijn: term'",
+      "required_fix": "Optional: `\\gl{op de korte termijn}{in the short term}`.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L10",
+      "block": "b029",
+      "fragment": "voor meer zilver dan je in het begin had",
+      "problem": "Comparative clause after dan (verb-final) is not in restricted.md; light, A2-textbook pattern. Accepted.",
+      "evidence": "allowed.md A-CMP-DAN lists phrase comparisons only",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "grammar:A-CMP-DAN"
+    },
+    {
+      "id": "L11",
+      "block": "b031",
+      "fragment": "De fijne details van arbitrage — prijsverschillen op de markt weghalen — begreep hier waarschijnlijk niemand.",
+      "problem": "Bare-infinitive parenthetical between subject and verb is the heaviest sentence of the scene; it is currently the only real explanation of arbitrage because the b029 gloss is empty.",
+      "evidence": "6 words inserted between subject and finite verb",
+      "required_fix": "After L3: `De fijne details van arbitrage begreep hier waarschijnlijk niemand.`",
+      "severity": "note",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "L12",
+      "block": "b029",
+      "fragment": "schommelde de verhouding",
+      "problem": "schommelen (B1) is a precise verb for 'fluctuating' and the context ('op en neer' is not needed) makes it readable; a good use of the stretch budget. Note for the bible.",
+      "evidence": "lexicon: schommelen stretch B1",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b031",
+      "span": "gemene",
+      "decision": "dismissed",
+      "reason": "Inflected adjective gemeen (A2), not a participle."
+    },
+    {
+      "id": "L-FRAME",
+      "block": "b031",
+      "span": "moest je zelf naar binnen en munten uit je kluis halen",
+      "decision": "dismissed",
+      "reason": "Span is two coordinated predicates under one modal; 17 words, one als-clause, natural. One word over the soft limit only because of 'zelf'."
+    }
+  ],
+  "tool_feedback": [
+    {"kind": "grammar", "id": "R-PARTICIPLE", "block": "b031", "verdict": "false positive", "reason": "Lemmatiser returned 'gemene' as VERB; it is the adjective gemeen with -e."},
+    {"kind": "vocab", "lemma": "elk", "verdict": "false positive", "reason": "Lexicon has elk known A1 with pos [ADJ, PRON]; spaCy tags 'Elke' as DET, so _pos_match fails."},
+    {"kind": "vocab", "lemma": "gemene", "verdict": "false positive", "reason": "Should resolve to gemeen (known A2)."},
+    {"kind": "vocab", "lemma": "hopen", "verdict": "false negative", "reason": "'hopen' (heaps) passes as known via the verb hopen / noun hoop 'hope'; sense-blind homograph. Hard to fix in general; at least the lexicon entry for hoop could list 'heap, a lot' so the translator sees the ambiguity."},
+    {"kind": "vocab", "lemma": "koers", "verdict": "misleading hint", "reason": "Status stretch is right, but the en hint 'course of action, approach' is not the sense used; the hint should carry all common senses or the tool should mark sense-ambiguous lemmas."},
+    {"kind": "vocab", "lemma": "binnenbrengen", "verdict": "misleading hint", "reason": "en hint 'to come in, to move in, to get closer' is wrong for the transitive 'bring in'; the action gloss-or-replace was nevertheless correct."},
+    {"kind": "vocab", "lemma": "omwisselen", "verdict": "false negative (harmless here)", "reason": "Separable 'Wissel … om' resolves to wisselen (A1); the particle verb omwisselen is not in the lexicon. Transparent in this scene, but the mechanism hides new particle verbs in general."},
+    {"kind": "vocab", "lemma": "achterhoofd", "verdict": "correct by compound rule", "reason": "Accepted as achter+hoofd; the idiom 'in zijn achterhoofd' is transparent enough, recorded only so the rule's behaviour on idioms is visible."},
+    {"kind": "vocab", "metric": "known_share", "verdict": "inflated failure", "reason": "2 of the 6 unknown tokens are the elk/gemene false positives; corrected share is 285/289 = 98.6%, which passes. New-lemma density falls to 3 real lemmas (schommelen, koers, binnenbrengen) = 10.4/1000; after L1 it is under 10."},
+    {"kind": "load", "id": "L-FRAME", "block": "b031", "verdict": "noise", "reason": "Coordinated predicates under one modal inflate the span; V1/V2's identical sentence without 'zelf' scores 8 and is not flagged."}
+  ]
+}

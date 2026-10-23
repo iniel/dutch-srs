@@ -1,0 +1,189 @@
+{
+  "scene": "ch905/s02",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "All eleven v1 should_fix items land: the b028 frame is closed early with a colon, 'het' → '; die', 'Ze' → 'De wetten', je → u in b030, 'kunt u niet doen' → '\\emph{kunt} u niet', brein and knipperde are glossed, wazig → waas, 'gestreepte' and 'melodie' are gone (unglossed B1 now 2 ≤ budget 3), and the five glosses on known words are dropped (13 → 9). The three v1 notes with a concrete wording (L12, L13 and the planeten half of L8) were handled: two applied, planeten correctly left unglossed per exceptions.json cognates. The changed blocks add no restricted grammar, no new hard word and no calque; a second read of all 53 sentences finds nothing the parser missed. The three remaining grammar flags are the same tool errors as in v1. The checks' vocab FAIL (known 97.7 %, 14.1 new/1000) is an artefact: 'brein' ×5 is a lexicon gap and four of the six 'new' lemmas are the deliberate physics jargon. No must_fix, no should_fix; eight notes (four carried, four new dismissals).",
+  "previous_findings": [
+    {"id": "L1", "block": "b028", "severity": "should_fix", "status": "fixed", "note": "'kan zich dat niet zomaar voorstellen: de hele anatomie van een kat, en, en al die kattenbiochemie, en hoe zit het met de \\emph{neurologie}?' — frame now 4 words (kan … voorstellen); the stammered list hangs on the colon. Suggested wording; no L-FRAME flag in v2."},
+    {"id": "L2", "block": "b028", "severity": "should_fix", "status": "fixed", "note": "'regel, het volgt uit' → 'regel; die volgt uit' — demonstrative with the right gender, semicolon instead of comma splice. Not flagged as R-RELCL (V2 order)."},
+    {"id": "L3", "block": "b032", "severity": "should_fix", "status": "fixed", "note": "'Ze hadden de vorm' → 'De wetten hadden de vorm'; the 'Ze' chain now refers to mensen only."},
+    {"id": "L4", "block": "b030", "severity": "should_fix", "status": "fixed", "note": "'Dan moet je een god zijn!' → 'Dan moet u een god zijn!'; the generic je in 'Als je die regel loslaat … krijg je' stays, as allowed."},
+    {"id": "L5", "block": "b026", "severity": "should_fix", "status": "fixed", "note": "'\\emph{Dat kunt u niet \\emph{doen}!}' → '\\emph{Dat \\emph{kunt} u niet!}'; the prohibition reading is gone, nesting and emphasis count kept."},
+    {"id": "L6", "block": "b028", "severity": "should_fix", "status": "fixed", "note": "Resolved together with meaning M2: 'kattenbrein' → 'een \\gl{brein}{brain} zo klein als dat van een kat'; brein glossed at first occurrence, bare in b032 (4×). @glosses updated."},
+    {"id": "L7", "block": "b031", "severity": "should_fix", "status": "fixed", "note": "'\\gl{knipperde}{blinked} met haar ogen'; @glosses updated."},
+    {"id": "L8", "block": "b032", "severity": "should_fix", "status": "fixed", "note": "'melodie' → 'liedje' (A1) applied; the cluster is gone. The gloss on 'planeten' was declined: exceptions.json → cognates lists planeet/planeten as never-glossed, which overrides the lexicon's B2 — the v1 request was wrong on that half and is withdrawn. The v2 vocab table no longer lists planeet at all."},
+    {"id": "L9", "block": "b025", "severity": "should_fix", "status": "fixed", "note": "'gestreepte kat' → 'kat met strepen', 'melodie' → 'liedje'; unglossed B1 now loslaat + steun = 2 ≤ 3."},
+    {"id": "L10", "block": "b022", "severity": "should_fix", "status": "fixed", "note": "Glosses on aarzelde, stapel, stootjes, willekeurige, uitzondering removed from the text and from @glosses (13 → 9 glosses; max 2 per paragraph holds: b025 2, b027 2, b028 2)."},
+    {"id": "L11", "block": "b032", "severity": "should_fix", "status": "fixed", "note": "'Alles werd \\gl{wazig}{blurred} voor Harry's ogen.' → 'Er kwam een waas voor Harry's ogen.' — idiomatic, A2, no gloss; presentational er."},
+    {"id": "L12", "block": "b027", "severity": "note", "status": "fixed", "note": "'Preciezer:' → 'Of preciezer:' applied."},
+    {"id": "L13", "block": "b033", "severity": "note", "status": "fixed", "note": "'tot zover dat alles' → 'en weg was dat allemaal' applied; the false R-DAT flag is gone with it."},
+    {"id": "L14", "block": "b028", "severity": "note", "status": "carried", "note": "Jargon unchanged by design; translator rejected the optional FTL spell-out on bible grounds (do not simplify FTL), accepted. Carried as v2 L1."},
+    {"id": "L15", "block": "b032", "severity": "note", "status": "dropped", "note": "v2 checks list neither 'universum' (in exceptions.json cognates) nor 'dát'; the normalisation artefact no longer appears, nothing to dismiss."},
+    {"id": "L16", "block": "b025", "severity": "note", "status": "carried", "note": "Fragment unchanged; carried as v2 L5."},
+    {"id": "L17", "block": "b032", "severity": "note", "status": "carried", "note": "Sentence changed only by 'een universum uit één stuk, met' (now 26 words, still under the 28 hard limit, no L-LEN flag); carried as v2 L6 with the new count."}
+  ],
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b028",
+      "fragment": "kwantum-Hamiltoniaan, unitariteit, FTL-signalen, kattenbiochemie, neurologie, anatomie; b032: neuronen",
+      "problem": "Reported as unknown (four of the six 'new unglossed lemmas') but they are the deliberate opaque jargon that sets up 'Magie.'; anatomie, neurologie and biochemie are in exceptions.json cognates, neuron and unitariteit are transparent to any reader who knows the English, and the bible forbids simplifying them.",
+      "evidence": "checks v2 vocab rows kwantum-hamiltoniaan, unitariteit, kattenbiochemie, neuron: unknown, action review; bible.md ch 2 'keep it opaque, do not simplify quantum Hamiltonian, unitarity, FTL' (v1 L14)",
+      "required_fix": "No change; do not gloss. Tool owner: a per-scene jargon list (or compound splitting kat+biochemie) would keep these out of density, known-share and cluster verdicts.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L2",
+      "block": "b028",
+      "fragment": "Als je die regel loslaat, vernietig je de unitariteit",
+      "problem": "Cluster 'loslaan, unitariteit' and the unknown row 'loslaan' are artefacts: 'loslaat' is a form of 'loslaten' (B1, stretch, inside the budget) that the lemmatiser turns into the non-word 'loslaan', and 'unitariteit' is jargon (L1).",
+      "evidence": "checks v2: cluster b028 (sentence) loslaan, unitariteit; vocab row loslaan unknown; lexicon loslaten B1 (v1 L9 evidence)",
+      "required_fix": "No change. Tool owner: add 'loslaten' to the lemmatiser overrides.",
+      "severity": "note",
+      "category": "vocab:cluster"
+    },
+    {
+      "id": "L3",
+      "block": "b028",
+      "fragment": "met een \\gl{brein}{brain} zo klein als dat van een kat",
+      "problem": "'brein' is glossed once as asked and reused bare four times in b032, but it is still absent from every lexicon list, so its five tokens alone push the known share from 98.8 % to 97.7 % and drive the checks' vocab FAIL.",
+      "evidence": "checks v2: brein unknown, n=5, glossed; known 415/425 = 97.65 % (min 98 %); without brein 420/425 = 98.8 %",
+      "required_fix": "No change to the text. Lexicon owner: add 'brein' (transparent cognate of brain) to exceptions.json cognates or to the lexicon as A2; the known-share and density verdicts then pass.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b028",
+      "fragment": "Een menselijke \\gl{geest}{mind}",
+      "problem": "The checker flags a gloss on a known word, but the lexicon knows 'geest' as ghost/spirit (A2) while the scene needs the sense 'mind'; the gloss marks the sense shift and is spent exactly where the mind = brain point of b032 starts.",
+      "evidence": "checks v2: geest known A2 'ghost, spirit, immaterial being', action gloss-on-known; translator @notes: 'geest kept glossed as mind (lexicon gives ghost/spirit)'",
+      "required_fix": "Keep the gloss. Tool owner: when the \\gl English is not among the lexicon's en senses, report 'gloss-on-known (sense shift)' instead of asking to drop it.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L5",
+      "block": "b025",
+      "fragment": "Het klonk \\gl{oprecht}{sincere}",
+      "problem": "Hard (B2) word, but precise and already glossed; the plain alternatives ('eerlijk', 'echt') lose the sense of sincere.",
+      "evidence": "checks v2: oprecht hard B2, glossed (v1 L16)",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L6",
+      "block": "b032",
+      "fragment": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dát spoelde net weg door de wc; het hele idee van de \\emph{natuurkunde}.",
+      "problem": "Left-dislocated topic with a resumptive demonstrative, 26 words; readable thanks to the comma after 'stuk' and the accent on 'dát', but it is the heaviest sentence of the scene.",
+      "evidence": "no L-* threshold crossed (soft 20, hard 28) (v1 L17)",
+      "required_fix": "Keep. If shortened anyway: 'Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten — dát spoelde net door de wc. Het hele idee van de \\emph{natuurkunde}.'",
+      "severity": "note",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L7",
+      "block": "b032",
+      "fragment": "een universum uit één stuk",
+      "problem": "'uit één stuk' is normally said of a person (integrity) or of a manufactured object; applied to the universe it is a small creative stretch, but every word is A1, the sense 'one whole, not in pieces' is clear, and it sits next to 'deelden … op in kleinere stukken', which it answers.",
+      "evidence": "v2 text b032; lexicon: stuk A1, één A1; meaning reviewer M3 asked for exactly this or 'als één geheel'",
+      "required_fix": "No change. Alternative if the cohesion editor prefers the s01 wording: 'een universum als één geheel' (geheel B1, would need a gloss or the budget).",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L8",
+      "block": "b025",
+      "fragment": "de kleine kat met strepen",
+      "problem": "Plain paraphrase of 'tabby' chosen over the B1 adjective 'gestreept'; natural Dutch, no information lost, and it freed a stretch slot.",
+      "evidence": "checks v2: no row for streep/gestreept; stretch budget 2/3 used (loslaat, steun)",
+      "required_fix": "No change; record 'tabby' → 'kat met strepen' for the glossary so s01/s03 and later chapters match.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PASSIVE",
+      "block": "b026",
+      "span": "Zijn stem klonk verstikt.",
+      "decision": "dismissed",
+      "reason": "Same sentence and same flag as v1 (now 0.30 review). 'klinken' is a copula, not an auxiliary; 'verstikt' is a predicative adjective describing a state (look-alike table: zijn + adjectival participle, state). No worden, no agent."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b028",
+      "span": "“U bent in een kat veranderd",
+      "decision": "dismissed",
+      "reason": "Perfectum with zijn of the intransitive 'veranderen in' (A-PERF) in dialogue, as the tool's own note says; no agent, no worden. Unchanged from v1."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b032",
+      "span": ", dat was een mens",
+      "decision": "dismissed",
+      "reason": "Demonstrative subject with V2 order ('dat was') in the apposition 'een brein, dat was een mens'; a relative clause would be verb-final ('dat een mens was'). Same dismissal as v1."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-PASSIVE 'Zijn stem klonk verstikt.' (0.30)",
+      "block": "b026",
+      "reason": "Recurring since v1: copula (klinken, lijken, blijven, voelen) + participle is never a passive; drop the rule for copular heads or lower confidence below the 0.3 ignore threshold."
+    },
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-PASSIVE '“U bent in een kat veranderd' (0.30)",
+      "block": "b028",
+      "reason": "zijn + participle of an intransitive mutative verb (veranderen, vallen, komen) is always perfectum; the tool's own note says so — suppress instead of reporting at exactly the ignore threshold."
+    },
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-RELCL ', dat was een mens' (0.40)",
+      "block": "b032",
+      "reason": "Pronoun immediately followed by the finite verb is a demonstrative main clause (V2), as the note suspects; auto-dismiss when the finite verb directly follows die/dat."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "loslaan (unknown) + cluster b028 (loslaan, unitariteit)",
+      "block": "b028",
+      "reason": "Recurring since v1: 'loslaat' lemmatised to the non-word 'loslaan'; the word is 'loslaten' (B1, stretch, inside the budget) and the cluster disappears once it is counted as stretch rather than unknown."
+    },
+    {
+      "type": "lexicon_gap",
+      "check": "vocab",
+      "item": "brein (unknown, n=5) → known-share 97.7 % < 98 %, density 14.1/1000 > 10",
+      "block": "b028",
+      "reason": "Transparent cognate of brain; add to exceptions.json cognates or the lexicon. It is the single cause of the known-share FAIL (420/425 = 98.8 % without it) and, with the four jargon lemmas, of the density FAIL."
+    },
+    {
+      "type": "policy_gap",
+      "check": "vocab",
+      "item": "kwantum-hamiltoniaan, unitariteit, kattenbiochemie, neuron reported as unknown/new",
+      "block": "b028",
+      "reason": "Recurring since v1: deliberate opaque jargon per the bible; a per-scene jargon list or compound splitting (kat + biochemie, where biochemie is already a listed cognate) would keep them out of density and cluster verdicts."
+    },
+    {
+      "type": "observation",
+      "check": "vocab",
+      "item": "geest: gloss-on-known",
+      "block": "b028",
+      "reason": "The lexicon's senses (ghost, spirit) differ from the \\gl English (mind). Comparing the gloss text with the lexicon's en list would let the checker report a sense-shift gloss as legitimate instead of asking to drop it."
+    },
+    {
+      "type": "observation",
+      "check": "vocab",
+      "item": "dát, universum, stoo, streepen no longer reported",
+      "block": "b032",
+      "reason": "The v1 normalisation and lemmatiser artefacts for 'dát', 'stootjes' and 'gestreepte' are gone (text change or tool fix); 'universum' is correctly treated as a cognate. Noting so the improvement is not mistaken for a regression later."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "chapter": 6,
+  "scene": "s06",
+  "index": 5,
+  "of": 15,
+  "chapter_title": "The Planning Fallacy",
+  "words": 185,
+  "blocks": [
+    {
+      "id": "b124",
+      "kind": "para",
+      "tex": "The witch paused, and looked back at him steadily. “And if I say no—that it is too expensive and you won’t need it—then what?”",
+      "text": "The witch paused, and looked back at him steadily. “And if I say no—that it is too expensive and you won’t need it—then what?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 242,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b125",
+      "kind": "para",
+      "tex": "Harry’s face twisted in bitterness. “Exactly what you’re thinking, Professor McGonagall. \\emph{Exactly} what you’re thinking. I conclude you’re another crazy adult I can’t talk to, and I start planning how to get my hands on a healer’s kit anyway.”",
+      "text": "Harry’s face twisted in bitterness. “Exactly what you’re thinking, Professor McGonagall. Exactly what you’re thinking. I conclude you’re another crazy adult I can’t talk to, and I start planning how to get my hands on a healer’s kit anyway.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 244,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b126",
+      "kind": "para",
+      "tex": "“I am your guardian on this trip,” Professor McGonagall said with a tinge of danger. “I \\emph{will not} allow you to push me around.”",
+      "text": "“I am your guardian on this trip,” Professor McGonagall said with a tinge of danger. “I will not allow you to push me around.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 246,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b127",
+      "kind": "para",
+      "tex": "“I understand,” Harry said. He kept the resentment out of his voice, and didn’t say any of the other things that came to mind. Professor McGonagall had told him to think before he spoke. He probably wouldn’t remember that tomorrow, but he could at least remember it for five minutes.",
+      "text": "“I understand,” Harry said. He kept the resentment out of his voice, and didn’t say any of the other things that came to mind. Professor McGonagall had told him to think before he spoke. He probably wouldn’t remember that tomorrow, but he could at least remember it for five minutes.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 248,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b128",
+      "kind": "para",
+      "tex": "The witch’s wand made a slight circle in her hand, and the noises of Diagon Alley came back. “All right, young man,” she said. “Let’s go get that healer’s kit.”",
+      "text": "The witch’s wand made a slight circle in her hand, and the noises of Diagon Alley came back. “All right, young man,” she said. “Let’s go get that healer’s kit.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 250,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b129",
+      "kind": "para",
+      "tex": "Harry’s jaw dropped in surprise. Then he hurried after her, almost stumbling in his sudden rush.",
+      "text": "Harry’s jaw dropped in surprise. Then he hurried after her, almost stumbling in his sudden rush.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 252,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "Harry didn’t like himself when he was angry.",
+    "“Thank you for sharing that, Mr Potter,” said Professor McGonagall after a while. There was an abstracted look on her face (almost exactly the same look that had appeared on Harry’s own face while experimenting on the pouch, if Harry had only seen himself in a mirror to realise that). “I shall have to think about this.” She turned towards the alley mouth, and raised her wand—",
+    "“Um,” Harry said, “can we go get the healer’s kit now?”"
+  ],
+  "context_after": [
+    "The shop was the same as they had left it, recognisable and unrecognisable items still laid out on the slanted wooden display, the grey glow still protecting and the salesgirl back in her old position. The salesgirl looked up as they approached, her face showing surprise.",
+    "“I’m sorry,” she said as they got closer, and Harry spoke at almost the same moment, “I apologise for—”",
+    "They broke off and looked at each other, and then the salesgirl laughed a little. “I didn’t mean to get you in trouble with Professor McGonagall,” she said. Her voice lowered conspiratorially. “I hope she wasn’t too awful to you.”"
+  ]
+}

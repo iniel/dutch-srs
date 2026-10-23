@@ -1,0 +1,1399 @@
+{
+  "scene": "ch905/s03",
+  "version": 0,
+  "file": "work/ch905/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch905/s03",
+    "version": 0,
+    "tokens": 442,
+    "known_tokens": 407,
+    "known_share": 0.9208,
+    "new_lemmas_unglossed": 34,
+    "new_per_1000": 76.9,
+    "stretch_budget": 4,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": false,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "terugkrabbelen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "achterste",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste b"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "onopgevang",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zijn handen gingen omlaag om de val te breken zonder echt goed terecht te komen, en er trok een waarschuwende steek door zijn schouder toen het gewicht er onopg"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "vervormen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": false,
+        "examples": [
+          "Meteen vervormde de kleine cyperse kat zich weer omhoog tot een vrouw in gewaad."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "cypers",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": false,
+        "examples": [
+          "Meteen vervormde de kleine cyperse kat zich weer omhoog tot een vrouw in gewaad."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "faunaattransformatie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b027"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Een Faunaattransformatie, om precies te zijn."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kwantummechanisch",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dat is niet zomaar een willekeurige regel, die wordt geïmpliceerd door de vorm van de kwantummechanische Hamiltoniaan!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verwerpen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die verwerpt, vernietig je de unitariteit, en dan krijg je signaaloverdracht sneller dan het licht!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "unitariteit",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die verwerpt, vernietig je de unitariteit, en dan krijg je signaaloverdracht sneller dan het licht!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "signaaloverdracht",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die verwerpt, vernietig je de unitariteit, en dan krijg je signaaloverdracht sneller dan het licht!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "anatomie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenbiochemie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "neurologie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenformaat",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hoe kunt u blijven denken met een brein van kattenformaat?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "knipperen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Professor Anderling knipperde met haar ogen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "universum",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat was wat door de wc was gespoeld; het hele begrip natuurkunde."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "ontleden",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "aannamen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "allerkleinst",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "neuroon",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "oprecht",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "sincere",
+          "honest",
+          "upright"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Het spijt me, meneer Potter,” zei de heks, en ze klonk oprecht, al trilden haar mondhoeken omhoog."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "schenden",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to violate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "U hebt de wet van behoud van energie geschonden!"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "impliceren",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to imply"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dat is niet zomaar een willekeurige regel, die wordt geïmpliceerd door de vorm van de kwantummechanische Hamiltoniaan!"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "planeet",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "planet"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "volmaakt",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "perfect"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "universeel",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "universal"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "men",
+        "status": "avoid",
+        "cefr": "A2",
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "avoid",
+        "hint": "replace with the preferred everyday word"
+      },
+      {
+        "lemma": "volkomen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "complete",
+          "total"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b022"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het was volkomen juist en gepast om nieuwsgierig te zijn."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "struikelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to stumble",
+          "fall over",
+          "trip over an object"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste b"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "belanden",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to end up"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste b"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verstikken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to choke",
+          "to suffocate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b026"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zijn stem kwam er verstikt uit."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "melodie",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "melody"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "vaststellen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to determine",
+          "to ascertain"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "onderdeel",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "component"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "regeren",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to reign",
+          "without political power"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b024",
+        "scope": "sentence",
+        "new": [
+          "achterste",
+          "belanden",
+          "struikelen",
+          "terugkrabbelen"
+        ],
+        "text": "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste belandde."
+      },
+      {
+        "block": "b024",
+        "scope": "paragraph",
+        "new": [
+          "achterste",
+          "belanden",
+          "onopgevang",
+          "struikelen",
+          "terugkrabbelen"
+        ]
+      },
+      {
+        "block": "b025",
+        "scope": "sentence",
+        "new": [
+          "cypers",
+          "vervormen"
+        ],
+        "text": "Meteen vervormde de kleine cyperse kat zich weer omhoog tot een vrouw in gewaad."
+      },
+      {
+        "block": "b028",
+        "scope": "sentence",
+        "new": [
+          "impliceren",
+          "kwantummechanisch"
+        ],
+        "text": "Dat is niet zomaar een willekeurige regel, die wordt geïmpliceerd door de vorm van de kwantummechanische Hamiltoniaan!"
+      },
+      {
+        "block": "b028",
+        "scope": "sentence",
+        "new": [
+          "signaaloverdracht",
+          "unitariteit",
+          "verwerpen"
+        ],
+        "text": "Als je die verwerpt, vernietig je de unitariteit, en dan krijg je signaaloverdracht sneller dan het licht!"
+      },
+      {
+        "block": "b028",
+        "scope": "sentence",
+        "new": [
+          "anatomie",
+          "kattenbiochemie",
+          "neurologie"
+        ],
+        "text": "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+      },
+      {
+        "block": "b028",
+        "scope": "paragraph",
+        "new": [
+          "anatomie",
+          "impliceren",
+          "kattenbiochemie",
+          "kattenformaat",
+          "kwantummechanisch",
+          "neurologie",
+          "schenden",
+          "signaaloverdracht",
+          "unitariteit",
+          "verwerpen"
+        ]
+      },
+      {
+        "block": "b032",
+        "scope": "sentence",
+        "new": [
+          "aannamen",
+          "allerkleinst",
+          "melodie",
+          "men",
+          "neuroon",
+          "onderdeel",
+          "ontleden",
+          "planeet",
+          "regeren",
+          "universeel",
+          "vaststellen",
+          "volmaakt"
+        ],
+        "text": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wette"
+      },
+      {
+        "block": "b032",
+        "scope": "paragraph",
+        "new": [
+          "aannamen",
+          "allerkleinst",
+          "melodie",
+          "men",
+          "neuroon",
+          "onderdeel",
+          "ontleden",
+          "planeet",
+          "regeren",
+          "universeel",
+          "universum",
+          "vaststellen",
+          "volmaakt"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "block": "b032",
+        "word": "mens",
+        "lemma": "men",
+        "prefer": "mensen / iedereen / je"
+      }
+    ],
+    "per_block": {
+      "b022": {
+        "tokens": 45,
+        "new": [
+          "volkomen"
+        ],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b024": {
+        "tokens": 56,
+        "new": [
+          "achterste",
+          "belanden",
+          "onopgevang",
+          "struikelen",
+          "terugkrabbelen"
+        ],
+        "glosses": []
+      },
+      "b025": {
+        "tokens": 36,
+        "new": [
+          "cypers",
+          "oprecht",
+          "vervormen"
+        ],
+        "glosses": []
+      },
+      "b026": {
+        "tokens": 16,
+        "new": [
+          "verstikken"
+        ],
+        "glosses": []
+      },
+      "b027": {
+        "tokens": 14,
+        "new": [
+          "faunaattransformatie"
+        ],
+        "glosses": []
+      },
+      "b028": {
+        "tokens": 92,
+        "new": [
+          "anatomie",
+          "impliceren",
+          "kattenbiochemie",
+          "kattenformaat",
+          "kwantummechanisch",
+          "neurologie",
+          "schenden",
+          "signaaloverdracht",
+          "unitariteit",
+          "verwerpen"
+        ],
+        "glosses": []
+      },
+      "b029": {
+        "tokens": 8,
+        "new": [],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 15,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 16,
+        "new": [
+          "knipperen"
+        ],
+        "glosses": []
+      },
+      "b032": {
+        "tokens": 125,
+        "new": [
+          "aannamen",
+          "allerkleinst",
+          "melodie",
+          "men",
+          "neuroon",
+          "onderdeel",
+          "ontleden",
+          "planeet",
+          "regeren",
+          "universeel",
+          "universum",
+          "vaststellen",
+          "volmaakt"
+        ],
+        "glosses": []
+      },
+      "b033": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch905/s03",
+    "version": 0,
+    "sentences": 39,
+    "summary": {
+      "likely": 26,
+      "review": 8,
+      "load": 11
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "beslissend",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b022",
+        "sent": 1,
+        "sentence": "“We hebben een beslissend experiment uitgevoerd.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "het ook niet te laten",
+        "confidence": 0.9,
+        "note": "after 'horen'",
+        "block": "b022",
+        "sent": 4,
+        "sentence": "Eigenlijk, gezien de omstandigheden, hoorde hij het ook niet te laten.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was volkomen juist en gepast",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b022",
+        "sent": 5,
+        "sentence": "Het was volkomen juist en gepast om nieuwsgierig te zijn.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "terugkrabbelend",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b024",
+        "sent": 0,
+        "sentence": "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste belandde.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat hij over een verdwaalde stapel boeken",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b024",
+        "sent": 0,
+        "sentence": "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste belandde.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om de val te breken",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b024",
+        "sent": 1,
+        "sentence": "Zijn handen gingen omlaag om de val te breken zonder echt goed terecht te komen, en er trok een waarschuwende steek door zijn schouder toen het gewicht er onopgevangen op neerkwam.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "zonder echt goed terecht te komen",
+        "confidence": 0.9,
+        "note": "zonder … te",
+        "block": "b024",
+        "sent": 1,
+        "sentence": "Zijn handen gingen omlaag om de val te breken zonder echt goed terecht te komen, en er trok een waarschuwende steek door zijn schouder toen het gewicht er onopgevangen op neerkwam.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "waarschuwende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b024",
+        "sent": 1,
+        "sentence": "Zijn handen gingen omlaag om de val te breken zonder echt goed terecht te komen, en er trok een waarschuwende steek door zijn schouder toen het gewicht er onopgevangen op neerkwam.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "er onopgevangen op",
+        "confidence": 0.7,
+        "note": "split pronominal adverb",
+        "block": "b024",
+        "sent": 1,
+        "sentence": "Zijn handen gingen omlaag om de val te breken zonder echt goed terecht te komen, en er trok een waarschuwende steek door zijn schouder toen het gewicht er onopgevangen op neerkwam.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "al trilden haar mondhoeken omhoog.",
+        "confidence": 0.85,
+        "note": "conjunction 'al'",
+        "block": "b025",
+        "sent": 1,
+        "sentence": "“Het spijt me, meneer Potter,” zei de heks, en ze klonk oprecht, al trilden haar mondhoeken omhoog.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "had je moeten waarschuwen",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b025",
+        "sent": 2,
+        "sentence": "“Ik had je moeten waarschuwen.”",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "“U bent in een kat veranderd",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b028",
+        "sent": 0,
+        "sentence": "“U bent in een kat veranderd!",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "regel, die wordt geïmpliceerd door",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b028",
+        "sent": 3,
+        "sentence": "Dat is niet zomaar een willekeurige regel, die wordt geïmpliceerd door de vorm van de kwantummechanische Hamiltoniaan!",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", die wordt geïmpliceerd door de vorm van de kwantummechanische Hamiltoniaan",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b028",
+        "sent": 3,
+        "sentence": "Dat is niet zomaar een willekeurige regel, die wordt geïmpliceerd door de vorm van de kwantummechanische Hamiltoniaan!",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "kunt u blijven denken",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b028",
+        "sent": 7,
+        "sentence": "Hoe kunt u blijven denken met een brein van kattenformaat?",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om dat te doen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b030",
+        "sent": 0,
+        "sentence": "“Magie is niet genoeg om dat te doen!",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Dan zou u een god moeten zijn!”",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b030",
+        "sent": 1,
+        "sentence": "Dan zou u een god moeten zijn!”",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat iemand me zo noemt.”",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b031",
+        "sent": 1,
+        "sentence": "“Dat is de eerste keer dat iemand me zo noemt.”",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "te bevatten",
+        "confidence": 0.9,
+        "note": "after 'beginnen'",
+        "block": "b032",
+        "sent": 0,
+        "sentence": "Er trok een waas voor Harry’s ogen, terwijl zijn brein begon te bevatten wat er zojuist was gebroken.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-INDIRECT",
+        "span": "wat er zojuist was gebroken.",
+        "confidence": 0.75,
+        "note": "",
+        "block": "b032",
+        "sent": 0,
+        "sentence": "Er trok een waas voor Harry’s ogen, terwijl zijn brein begon te bevatten wat er zojuist was gebroken.",
+        "level": "likely",
+        "hint": "direct speech or thought with a colon; split the question out"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "wat er zojuist was gebroken.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 0,
+        "sentence": "Er trok een waas voor Harry’s ogen, terwijl zijn brein begon te bevatten wat er zojuist was gebroken.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was gebroken",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b032",
+        "sent": 0,
+        "sentence": "Er trok een waas voor Harry’s ogen, terwijl zijn brein begon te bevatten wat er zojuist was gebroken.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "door de wc was gespoeld;",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 1,
+        "sentence": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat was wat door de wc was gespoeld; het hele begrip natuurkunde.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was wat door de wc was gespoeld",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b032",
+        "sent": 1,
+        "sentence": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat was wat door de wc was gespoeld; het hele begrip natuurkunde.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was gespoeld",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b032",
+        "sent": 1,
+        "sentence": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat was wat door de wc was gespoeld; het hele begrip natuurkunde.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", dat was wat door de wc was gespoeld",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 1,
+        "sentence": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat was wat door de wc was gespoeld; het hele begrip natuurkunde.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "was wat door de wc was gespoeld",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b032",
+        "sent": 1,
+        "sentence": "Het hele idee van een universum uit één stuk, met wiskundig regelmatige wetten, dat was wat door de wc was gespoeld; het hele begrip natuurkunde.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat de muziek van de planeten dezelfde",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "vallende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat de ware wetten volmaakt universeel waren",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": ", om nog maar te zwijgen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat de geest het brein was en",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat een brein was wat een mens",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      }
+    ],
+    "load": [
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b024",
+        "sent": 0,
+        "sentence": "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste belandde.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "belandde",
+        "block": "b024",
+        "sent": 0,
+        "sentence": "Harry schoot zonder nadenken achteruit, zo haastig terugkrabbelend dat hij over een verdwaalde stapel boeken struikelde en met een bons hard op zijn achterste belandde.",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 31,
+        "limit": 28,
+        "block": "b024",
+        "sent": 1,
+        "sentence": "Zijn handen gingen omlaag om de val te breken zonder echt goed terecht te komen, en er trok een waarschuwende steek door zijn schouder toen het gewicht er onopgevangen op neerkwam.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b025",
+        "sent": 1,
+        "sentence": "“Het spijt me, meneer Potter,” zei de heks, en ze klonk oprecht, al trilden haar mondhoeken omhoog.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "kan zich niet zomaar de hele anatomie van een kat voorstellen",
+        "block": "b028",
+        "sent": 6,
+        "sentence": "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen en, en al die kattenbiochemie, en hoe zit het met de neurologie?",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b032",
+        "sent": 0,
+        "sentence": "Er trok een waas voor Harry’s ogen, terwijl zijn brein begon te bevatten wat er zojuist was gebroken.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "gebroken",
+        "block": "b032",
+        "sent": 0,
+        "sentence": "Er trok een waas voor Harry’s ogen, terwijl zijn brein begon te bevatten wat er zojuist was gebroken.",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 81,
+        "limit": 28,
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 10,
+        "limit": 3,
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 5,
+        "limit": 1,
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "universeel",
+        "block": "b032",
+        "sent": 2,
+        "sentence": "Drieduizend jaar van grote, ingewikkelde dingen ontleden in kleinere stukken, van ontdekken dat de muziek van de planeten dezelfde melodie was als een vallende appel, van vaststellen dat de ware wetten volmaakt universeel waren en nergens ook maar één uitzondering kenden en de vorm aannamen van eenvoudige wiskunde die de allerkleinste onderdelen regeerde, om nog maar te zwijgen van het feit dat de geest het brein was en het brein uit neuronen bestond, dat een brein was wat een mens was —",
+        "hint": "no subordinate clause inside another; split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

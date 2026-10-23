@@ -1,0 +1,96 @@
+{
+  "scene": "ch907/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Every event survives: Harry's prediction and reversal of the fan routine, the fake tears, the assistant's stifled laugh, the flirting afterthought, the king simile and the handshake request; all five comprehension questions are answerable from the Dutch. Two voice losses on Draco's side: his royal, impersonal 'I shall be treated…' becomes a direct present-tense remark to Harry ('jij behandelt mij'), and 'It's good to meet someone who knows his place' is clipped into an elliptical fragment.",
+  "comprehension": [
+    {
+      "q": "Why does Harry suddenly start gushing over the pale boy he has only just met?",
+      "answer_from_nl": "Hij kan de rest van het gesprek al voorspellen en besluit in een halve seconde van frustratie: genoeg is genoeg — hij draait de rollen om en begint zelf te dwepen (b057–b058).",
+      "answerable": true
+    },
+    {
+      "q": "Is Harry's admiration real? Where does he get his lines — the tears, the handshake — from?",
+      "answer_from_nl": "Nee, het is een act: hij wil graag tranen in zijn ogen krijgen maar kan het niet, want 'bij de anderen kwamen de tranen meestal ongeveer op dit punt' (b060); de handdruk vraagt hij omdat 'iedereen toch de hand van Harry Potter wilde schudden' (b066). Hij speelt zijn eigen bewonderaars na.",
+      "answerable": true
+    },
+    {
+      "q": "How does Draco read Harry's behaviour, and what does he believe it tells him about how he will be treated?",
+      "answer_from_nl": "Eerst is hij in de war, dan glimlacht hij zelfvoldaan: 'iemand kent zijn plaats' (b061). Hij hoort graag dat Harry hem met het juiste respect voor de familie Malfidus behandelt en glimlacht als de hoogste koning naar een arme, eerlijke onderdaan (b065). Answerable; the generalisation to his future treatment in general is weaker than in the English (see M1).",
+      "answerable": true
+    },
+    {
+      "q": "Who else notices what Harry is doing, and how does she react?",
+      "answer_from_nl": "Een van de assistentes — degene die Harry eerder al leek te herkennen — maakt een zacht, verstikt geluid (b062).",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry think 'Oops' after the line about his heart?",
+      "answer_from_nl": "Omdat 'Mijn hart smelt' misschien klonk als flirten met Draco (b063–b064).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b065",
+      "fragment": "jij behandelt mij met het juiste respect voor de familie Malfidus",
+      "problem": "Draco's impersonal, forward-looking pronouncement about how he will be treated in general (inferred from Harry's gush) becomes a direct present-tense remark to Harry; the royal generalisation that makes the line a Malfoy pronouncement is narrowed to one person, and Draco now addresses Harry ('jij') where the English has him address no one.",
+      "evidence": "EN: 'And I am pleased to learn that I shall be treated with the respect due to the family of Malfoy' vs NL: 'En \\emph{ik} hoor dit graag: jij behandelt mij met het juiste respect voor de familie Malfidus'",
+      "required_fix": "Keep the claim impersonal and about Draco's treatment in general, as in the English passive: no 'jij', no present remark about Harry. Say that he is pleased to learn he will receive the respect owed to the Malfoy family, e.g. 'En \\emph{ik} hoor dit graag: ik krijg het juiste respect voor de familie Malfidus' (as in s03) or 'En \\emph{ik} hoor graag dat men mij het respect geeft dat de familie Malfidus toekomt'.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b061",
+      "fragment": "Het is fijn, zo’n ontmoeting: iemand kent zijn plaats.",
+      "problem": "Draco's smooth, condescending maxim is clipped into an elliptical fragment; the sneer at Harry as 'someone who knows his place' is diluted and the trained-politeness register the bible gives Draco (fluent, slightly affected sentences) slips.",
+      "evidence": "EN: 'It’s good to meet someone who knows his place.' vs NL: 'Het is fijn, zo’n ontmoeting: iemand kent zijn plaats.'",
+      "required_fix": "One fluent sentence in Draco's affected register saying that it is pleasant to meet a person who knows his place — third person ('iemand'), Harry meant but not addressed. E.g. 'Aangenaam. Het is fijn als iemand zijn plaats kent.' (as in s02) or 'Het is fijn om iemand te ontmoeten die zijn plaats kent.'",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b055",
+      "fragment": "hetzelfde proces",
+      "problem": "'a similar process' is tightened to 'the same process'; a small loss of the narrator's hedge.",
+      "evidence": "EN: 'the final stages of a similar process' vs NL: 'de laatste fase van hetzelfde proces'",
+      "required_fix": "Optional: 'ongeveer hetzelfde proces' (as in s02) or 'een soortgelijk proces'.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b060",
+      "fragment": "U bent het \\emph{echt}!",
+      "problem": "The emphasis is carried by an added 'echt' instead of the verb; the stressed idea (confirmation of identity) is the same, so acceptable, but 'U \\emph{bent} het!' keeps the source's stress without adding a word.",
+      "evidence": "EN: 'It \\emph{is} you!' vs NL: 'U bent het \\emph{echt}!'",
+      "required_fix": "Optional: 'U \\emph{bent} het!'",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M5",
+      "block": "b062",
+      "fragment": "Een van de assistentes herkende Harry eerder al, zo leek het. Diezelfde assistente maakte nu een zacht, \\gl{verstikt}{choked} geluid.",
+      "problem": "The identifying aside ('the one who’d seemed to recognise Harry') is promoted to a full statement before the event; nothing is lost and the choking sound still comes last, but the aside now carries more weight than in the source.",
+      "evidence": "EN: 'One of the assistants, the one who’d seemed to recognise Harry, made a muffled choking sound.' vs NL: two sentences, identification first.",
+      "required_fix": "Optional: keep the aside subordinate, e.g. with a dash insertion as in s03 ('Een van de assistentes—zij herkende Harry eerder al, zo leek het—maakte…').",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b066",
+      "fragment": "geen volgende zin bedenken",
+      "problem": "'his next line' frames Harry's fawning as a scripted routine; 'zin' (sentence) drops the theatre metaphor.",
+      "evidence": "EN: 'thinking up his next line' vs NL: 'kon zo snel geen volgende zin bedenken'",
+      "required_fix": "Optional: 'zijn volgende tekst' (as in s03) or 'zijn volgende regel'.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

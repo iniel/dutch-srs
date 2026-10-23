@@ -1,0 +1,618 @@
+{
+  "scene": "ch902/s03",
+  "version": 0,
+  "file": "work/ch902/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch902/s03",
+    "version": 0,
+    "tokens": 165,
+    "known_tokens": 147,
+    "known_share": 0.8909,
+    "new_lemmas_unglossed": 16,
+    "new_per_1000": 97.0,
+    "stretch_budget": 1,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "achterste",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 2,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken ",
+          "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "volgestapelen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Sommige planken staan tot de rand toe volgestapeld met gebonden boeken: wetenschap, wiskunde, geschiedenis en al het andere."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "sciencefictionpocket",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "tissuedozen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "ongefrankeerd",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "gelig",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "DET",
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "adresseren",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "smaragdgroene",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "onbeschaafd",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b014"
+        ],
+        "glossed": false,
+        "examples": [
+          "De professor beschouwt schreeuwen als onbeschaafd."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "eminent",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "eminent",
+          "distinguished"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b012"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dit is de woonkamer van het huis dat wordt bewoond door de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun aangenom"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "boekenkast",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bookcase"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Elke centimeter muur gaat schuil achter een boekenkast.",
+          "Iedere boekenkast telt zes planken en reikt tot bijna aan het plafond."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "schuil",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Elke centimeter muur gaat schuil achter een boekenkast."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "reiken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to reach",
+          "to extend out",
+          "to stretch"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Iedere boekenkast telt zes planken en reikt tot bijna aan het plafond."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "voorst",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "Voorst"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "overstromen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to overflow"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "De boeken stromen over naar de tafels en de banken en vormen stapeltjes onder de ramen."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "beschouwen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to contemplate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b014"
+        ],
+        "glossed": false,
+        "examples": [
+          "De professor beschouwt schreeuwen als onbeschaafd."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b010",
+        "scope": "sentence",
+        "new": [
+          "boekenkast",
+          "schuil"
+        ],
+        "text": "Elke centimeter muur gaat schuil achter een boekenkast."
+      },
+      {
+        "block": "b010",
+        "scope": "sentence",
+        "new": [
+          "boekenkast",
+          "reiken"
+        ],
+        "text": "Iedere boekenkast telt zes planken en reikt tot bijna aan het plafond."
+      },
+      {
+        "block": "b010",
+        "scope": "sentence",
+        "new": [
+          "achterste",
+          "sciencefictionpocket",
+          "tissuedozen",
+          "voorst"
+        ],
+        "text": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken."
+      },
+      {
+        "block": "b010",
+        "scope": "paragraph",
+        "new": [
+          "achterste",
+          "boekenkast",
+          "overstromen",
+          "reiken",
+          "schuil",
+          "sciencefictionpocket",
+          "tissuedozen",
+          "volgestapelen",
+          "voorst"
+        ]
+      },
+      {
+        "block": "b013",
+        "scope": "sentence",
+        "new": [
+          "adresseren",
+          "gelig",
+          "ongefrankeerd",
+          "smaragdgroene"
+        ],
+        "text": "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt."
+      },
+      {
+        "block": "b014",
+        "scope": "sentence",
+        "new": [
+          "beschouwen",
+          "onbeschaafd"
+        ],
+        "text": "De professor beschouwt schreeuwen als onbeschaafd."
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b010": {
+        "tokens": 90,
+        "new": [
+          "achterste",
+          "boekenkast",
+          "overstromen",
+          "reiken",
+          "schuil",
+          "sciencefictionpocket",
+          "tissuedozen",
+          "volgestapelen",
+          "voorst"
+        ],
+        "glosses": []
+      },
+      "b012": {
+        "tokens": 29,
+        "new": [
+          "eminent"
+        ],
+        "glosses": []
+      },
+      "b013": {
+        "tokens": 24,
+        "new": [
+          "adresseren",
+          "gelig",
+          "ongefrankeerd",
+          "smaragdgroene"
+        ],
+        "glosses": []
+      },
+      "b014": {
+        "tokens": 22,
+        "new": [
+          "beschouwen",
+          "onbeschaafd"
+        ],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch902/s03",
+    "version": 0,
+    "sentences": 10,
+    "summary": {
+      "likely": 6,
+      "review": 5,
+      "load": 4
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "volgestapeld",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b010",
+        "sent": 2,
+        "sentence": "Sommige planken staan tot de rand toe volgestapeld met gebonden boeken: wetenschap, wiskunde, geschiedenis en al het andere.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gebonden",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b010",
+        "sent": 2,
+        "sentence": "Sommige planken staan tot de rand toe volgestapeld met gebonden boeken: wetenschap, wiskunde, geschiedenis en al het andere.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "waarbij",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PERCEPTION",
+        "span": "zien uitsteken",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "level": "likely",
+        "hint": "two sentences: Hij kwam. Ik zag het."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "kunt zien uitsteken",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "het huis dat wordt bewoond door",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b012",
+        "sent": 0,
+        "sentence": "Dit is de woonkamer van het huis dat wordt bewoond door de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun aangenomen zoon, Harry James Potter-Evans-Verres.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "dat wordt bewoond door de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun aangenomen zoon, Harry James Potter-Evans-Verres",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b012",
+        "sent": 0,
+        "sentence": "Dit is de woonkamer van het huis dat wordt bewoond door de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun aangenomen zoon, Harry James Potter-Evans-Verres.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "aangenomen",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b012",
+        "sent": 0,
+        "sentence": "Dit is de woonkamer van het huis dat wordt bewoond door de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun aangenomen zoon, Harry James Potter-Evans-Verres.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "ongefrankeerde",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b013",
+        "sent": 0,
+        "sentence": "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "geadresseerd",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b013",
+        "sent": 0,
+        "sentence": "Op de tafel in de woonkamer ligt een brief, en een ongefrankeerde envelop van gelig perkament, geadresseerd aan de heer H. Potter in smaragdgroene inkt.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-LEN",
+        "value": 30,
+        "limit": 28,
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "zien",
+        "block": "b010",
+        "sent": 3,
+        "sentence": "Op andere planken staan twee rijen sciencefictionpockets, waarbij de achterste rij op oude tissuedozen of houten latten staat, zodat je de achterste rij boeken boven de voorste kunt zien uitsteken.",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 29,
+        "limit": 28,
+        "block": "b012",
+        "sent": 0,
+        "sentence": "Dit is de woonkamer van het huis dat wordt bewoond door de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun aangenomen zoon, Harry James Potter-Evans-Verres.",
+        "hint": "split the sentence"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

@@ -1,0 +1,628 @@
+{
+  "scene": "ch901/s03",
+  "version": 0,
+  "file": "work/ch901/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch901/s03",
+    "version": 0,
+    "tokens": 282,
+    "known_tokens": 269,
+    "known_share": 0.9539,
+    "new_lemmas_unglossed": 11,
+    "new_per_1000": 39.0,
+    "stretch_budget": 2,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "toverkracht",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 3,
+        "blocks": [
+          "b022"
+        ],
+        "glossed": false,
+        "examples": [
+          "Lily was altijd al mooier geweest dan ik, en ik was…gemeen tegen haar geweest, daarom, en toen kreeg zij toverkracht, kun je je voorstellen hoe ik me voelde?",
+          "En ik smeekte haar om een beetje van die toverkracht op mij te gebruiken, zodat ik ook mooi kon zijn, als ik dan niet haar toverkracht kon hebben, dan kon ik te"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wél",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADV",
+        "count": 1,
+        "blocks": [
+          "b015"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zijn toon verried dat hij maar al te bang was dat ze het wél meende."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "sceptisch",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Lieverd, ik begrijp dat je niet thuis bent in de sceptische literatuur."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "geoefen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "goochelaar",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "schijnbaar",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "aanbootsen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "cold",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "reading",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "rank",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b022"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ze gebaarde naar zichzelf, alsof ze op haar ranke gestalte wilde wijzen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "absurd",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "absurd"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b017"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Dit is absurd!"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b019",
+        "scope": "sentence",
+        "new": [
+          "aanbootsen",
+          "geoefen",
+          "goochelaar",
+          "schijnbaar"
+        ],
+        "text": "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen."
+      },
+      {
+        "block": "b019",
+        "scope": "sentence",
+        "new": [
+          "cold",
+          "reading"
+        ],
+        "text": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”"
+      },
+      {
+        "block": "b019",
+        "scope": "paragraph",
+        "new": [
+          "aanbootsen",
+          "cold",
+          "geoefen",
+          "goochelaar",
+          "reading",
+          "sceptisch",
+          "schijnbaar"
+        ]
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b015": {
+        "tokens": 23,
+        "new": [
+          "wél"
+        ],
+        "glosses": []
+      },
+      "b016": {
+        "tokens": 22,
+        "new": [],
+        "glosses": []
+      },
+      "b017": {
+        "tokens": 17,
+        "new": [
+          "absurd"
+        ],
+        "glosses": []
+      },
+      "b018": {
+        "tokens": 21,
+        "new": [],
+        "glosses": []
+      },
+      "b019": {
+        "tokens": 64,
+        "new": [
+          "aanbootsen",
+          "cold",
+          "geoefen",
+          "goochelaar",
+          "reading",
+          "sceptisch",
+          "schijnbaar"
+        ],
+        "glosses": []
+      },
+      "b020": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b021": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b022": {
+        "tokens": 118,
+        "new": [
+          "rank",
+          "toverkracht"
+        ],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch901/s03",
+    "version": 0,
+    "sentences": 33,
+    "summary": {
+      "likely": 15,
+      "review": 1,
+      "load": 11
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-DAT",
+        "span": "dat hij maar al te bang was",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b015",
+        "sent": 1,
+        "sentence": "Zijn toon verried dat hij maar al te bang was dat ze het wél meende.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat ze het wél meende.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b015",
+        "sent": 1,
+        "sentence": "Zijn toon verried dat hij maar al te bang was dat ze het wél meende.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "had ze gezegd",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b018",
+        "sent": 0,
+        "sentence": "“Ik had ze gezegd dat jij er niets van mocht weten,” fluisterde Petunia.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat jij er niets van mocht weten",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b018",
+        "sent": 0,
+        "sentence": "“Ik had ze gezegd dat jij er niets van mocht weten,” fluisterde Petunia.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat je niet thuis bent in de",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b019",
+        "sent": 1,
+        "sentence": "“Lieverd, ik begrijp dat je niet thuis bent in de sceptische literatuur.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-INDIRECT",
+        "span": "hoe makkelijk het voor een geoefende goochelaar",
+        "confidence": 0.75,
+        "note": "",
+        "block": "b019",
+        "sent": 2,
+        "sentence": "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen.",
+        "level": "likely",
+        "hint": "direct speech or thought with a colon; split the question out"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "geoefende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b019",
+        "sent": 2,
+        "sentence": "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om het schijnbaar onmogelijke na te bootsen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b019",
+        "sent": 2,
+        "sentence": "Je beseft misschien niet hoe makkelijk het voor een geoefende goochelaar is om het schijnbaar onmogelijke na te bootsen.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "te buigen",
+        "confidence": 0.9,
+        "note": "after 'leren'",
+        "block": "b019",
+        "sent": 3,
+        "sentence": "Weet je nog hoe ik Harry heb geleerd lepels te buigen?",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "heb geleerd lepels te buigen",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b019",
+        "sent": 3,
+        "sentence": "Weet je nog hoe ik Harry heb geleerd lepels te buigen?",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "alsof ze altijd konden raden wat",
+        "confidence": 0.85,
+        "note": "conjunction 'alsof'",
+        "block": "b019",
+        "sent": 4,
+        "sentence": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-INDIRECT",
+        "span": "wat je dacht, dan heet dat",
+        "confidence": 0.75,
+        "note": "",
+        "block": "b019",
+        "sent": 4,
+        "sentence": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”",
+        "level": "likely",
+        "hint": "direct speech or thought with a colon; split the question out"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat cold reading — ”",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b019",
+        "sent": 4,
+        "sentence": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat ik — ” Ze slikte.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b022",
+        "sent": 2,
+        "sentence": "Je zult denken dat ik — ” Ze slikte.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "alsof ze op haar ranke gestalte",
+        "confidence": 0.85,
+        "note": "conjunction 'alsof'",
+        "block": "b022",
+        "sent": 6,
+        "sentence": "Ze gebaarde naar zichzelf, alsof ze op haar ranke gestalte wilde wijzen.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om een beetje van die toverkracht op mij te gebruiken",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b022",
+        "sent": 11,
+        "sentence": "En ik smeekte haar om een beetje van die toverkracht op mij te gebruiken, zodat ik ook mooi kon zijn, als ik dan niet haar toverkracht kon hebben, dan kon ik tenminste mooi zijn.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b015",
+        "sent": 1,
+        "sentence": "Zijn toon verried dat hij maar al te bang was dat ze het wél meende.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "meende",
+        "block": "b015",
+        "sent": 1,
+        "sentence": "Zijn toon verried dat hij maar al te bang was dat ze het wél meende.",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b019",
+        "sent": 4,
+        "sentence": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b019",
+        "sent": 4,
+        "sentence": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "dacht",
+        "block": "b019",
+        "sent": 4,
+        "sentence": "Als het leek alsof ze altijd konden raden wat je dacht, dan heet dat cold reading — ”",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 29,
+        "limit": 28,
+        "block": "b022",
+        "sent": 10,
+        "sentence": "Lily was altijd al mooier geweest dan ik, en ik was…gemeen tegen haar geweest, daarom, en toen kreeg zij toverkracht, kun je je voorstellen hoe ik me voelde?",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 5,
+        "limit": 3,
+        "block": "b022",
+        "sent": 10,
+        "sentence": "Lily was altijd al mooier geweest dan ik, en ik was…gemeen tegen haar geweest, daarom, en toen kreeg zij toverkracht, kun je je voorstellen hoe ik me voelde?",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 34,
+        "limit": 28,
+        "block": "b022",
+        "sent": 11,
+        "sentence": "En ik smeekte haar om een beetje van die toverkracht op mij te gebruiken, zodat ik ook mooi kon zijn, als ik dan niet haar toverkracht kon hebben, dan kon ik tenminste mooi zijn.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b022",
+        "sent": 11,
+        "sentence": "En ik smeekte haar om een beetje van die toverkracht op mij te gebruiken, zodat ik ook mooi kon zijn, als ik dan niet haar toverkracht kon hebben, dan kon ik tenminste mooi zijn.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b022",
+        "sent": 11,
+        "sentence": "En ik smeekte haar om een beetje van die toverkracht op mij te gebruiken, zodat ik ook mooi kon zijn, als ik dan niet haar toverkracht kon hebben, dan kon ik tenminste mooi zijn.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "hebben",
+        "block": "b022",
+        "sent": 11,
+        "sentence": "En ik smeekte haar om een beetje van die toverkracht op mij te gebruiken, zodat ik ook mooi kon zijn, als ik dan niet haar toverkracht kon hebben, dan kon ik tenminste mooi zijn.",
+        "hint": "no subordinate clause inside another; split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

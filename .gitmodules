@@ -1,0 +1,3 @@
+[submodule "book/upstream"]
+	path = book/upstream
+	url = https://github.com/hpmor-book/hpmor.git

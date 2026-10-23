@@ -1,0 +1,185 @@
+{
+  "scene": "ch902/s01",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch902/scenes/s01.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch902/s01",
+    "version": 1,
+    "tokens": 162,
+    "known_tokens": 159,
+    "known_share": 0.9815,
+    "new_lemmas_unglossed": 1,
+    "new_per_1000": 6.2,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "pocket",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": true,
+        "examples": [
+          "Andere planken hebben twee rijen pockets met sciencefiction."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "smaragdgroene",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": true,
+        "examples": [
+          "Op de envelop staat in smaragdgroene inkt:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "boekenkast",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bookcase"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Tegen elke centimeter muur staat een boekenkast.",
+          "Elke boekenkast heeft zes planken, tot bijna aan het plafond."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "overstromen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to overflow"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "De boeken stromen over op de tafels en de banken en maken kleine stapels onder de ramen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "kaft",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "cover of a book"
+        ],
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b010": {
+        "tokens": 89,
+        "new": [
+          "boekenkast",
+          "overstromen"
+        ],
+        "glosses": [
+          "kaft",
+          "pockets"
+        ]
+      },
+      "b012": {
+        "tokens": 25,
+        "new": [],
+        "glosses": []
+      },
+      "b013": {
+        "tokens": 28,
+        "new": [],
+        "glosses": [
+          "perkament",
+          "smaragdgroene"
+        ]
+      },
+      "b014": {
+        "tokens": 20,
+        "new": [],
+        "glosses": [
+          "onbeschaafd"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch902/s01",
+    "version": 1,
+    "sentences": 13,
+    "summary": {
+      "likely": 0,
+      "review": 0,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": true,
+    "ok": true
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "scene": "ch906/s01",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "No restricted construction survives: all three grammar flags are parser errors (perfectum read as passive, verbs counted across a colon, adjective read as participle). The text is light and natural; the open points are gloss hygiene (four glosses on known words, no gloss on Dreuzels, none on termijn), the B2 cognate primitief, one off collocation (wisselkoers volhouden) and a redundant dash parenthetical.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b029",
+      "fragment": "de economie van de Dreuzels",
+      "problem": "First occurrence of Dreuzel in chapter 4 (source line 51 is the first 'Muggle' of the chapter) is not glossed; exceptions.json says gloss=first.",
+      "evidence": "exceptions.json keep: Dreuzel gloss 'first'; glossary.json first_chapter 4; no \\gl in b029",
+      "required_fix": "Write `de economie van de \\gl{Dreuzels}{Muggles}`. b029 then has three glosses (Dreuzels, arbitrage, wisselkoers); if that is too many, drop the wisselkoers gloss by using V2's wording `de vaste prijs van een Galjoen`.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L2",
+      "block": "b031",
+      "fragment": "hun primitieve geldsysteem",
+      "problem": "primitief is hard (B2) and unglossed; it is a transparent cognate (EN primitive) and carries Harry's contempt, so it may stay, but not bare.",
+      "evidence": "lexicon status hard, cefr B2, action replace-or-gloss",
+      "required_fix": "Either gloss: `hun \\gl{primitieve}{primitive} geldsysteem`, or replace with the A2 `ouderwetse` (`hun ouderwetse geldsysteem`) if the meaning reviewer accepts the softer tone.",
+      "severity": "should_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L3",
+      "block": "b034",
+      "fragment": "voor zijn \\gl{behoeften}{needs} op korte termijn",
+      "problem": "termijn is the third stretch (B1) lemma in a scene with a stretch budget of 2 and is unglossed, while the gloss sits on behoefte, which the lexicon counts as known.",
+      "evidence": "checks: termijn stretch B1 action gloss-or-replace; stretch budget 2, used by volhouden, draak, termijn; behoefte status known",
+      "required_fix": "Move the gloss: `voor zijn behoeften \\gl{op korte termijn}{in the short term}`. Alternative with known words only: `voor de komende tijd` (loses the mock-formal register; meaning reviewer decides).",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L4",
+      "block": "b031",
+      "fragment": "\\gl{bewaakten}{guarded} … \\gl{trieste}{sad} … \\gl{bezitten}{own} … \\gl{behoeften}{needs}",
+      "problem": "Four glosses on words the reader profile already knows (bewaken A2, triest A2, bezitten A2, behoefte known); they add length and attention cost without information.",
+      "evidence": "lexicon: bewaken known A2, triest known A2, bezitten known A2, behoefte known; the vocabulary table lists none of them as new",
+      "required_fix": "Remove the \\gl wrappers in b031 (bewaakten), b032 (trieste), b033 (bezitten), b034 (behoeften) and delete the four lines from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L5",
+      "block": "b029",
+      "fragment": "Uiteindelijk kon dan niemand de wisselkoers nog volhouden.",
+      "problem": "volhouden collocates with efforts, claims and tempo, not with an exchange rate; a Dutch reader pauses on 'een wisselkoers volhouden'.",
+      "evidence": "NL: 'de wisselkoers nog volhouden' — natural collocations are 'de koers vasthouden', 'de koers klopt niet meer'",
+      "required_fix": "`Uiteindelijk kon dan niemand de wisselkoers nog vasthouden.` (vasthouden A2) or `Uiteindelijk klopte de wisselkoers dan niet meer.` (kloppen A1).",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L6",
+      "block": "b031",
+      "fragment": "De fijne details van arbitrage — prijsverschillen op de markt weghalen — begrepen ze hier waarschijnlijk niet.",
+      "problem": "A bare-infinitive parenthetical between subject and verb is the heaviest sentence in the scene for an A2 reader, and it repeats the explanation already given in the b029 gloss of arbitrage.",
+      "evidence": "b029 gloss: 'arbitrage, profit from price differences'; the dash insertion holds 6 words between subject and finite verb",
+      "required_fix": "`De fijne details van arbitrage begrepen ze hier waarschijnlijk niet.` If the explanation must stay in Dutch, put it as its own sentence before: `Arbitrage: prijsverschillen op de markt weghalen.`",
+      "severity": "should_fix",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "L7",
+      "block": "b033",
+      "fragment": "Harry bewaarde dit idee in zijn hoofd",
+      "problem": "Slightly literal rendering of 'filed away'; understandable but not what a Dutch narrator would write.",
+      "evidence": "NL: 'bewaarde dit idee in zijn hoofd'",
+      "required_fix": "`Harry onthield dit idee` (onthouden A1) or `Harry hield dit idee in zijn achterhoofd` (idiom, parts known).",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L8",
+      "block": "b033",
+      "fragment": "binnen een week de hele tovenaarswereld bezitten",
+      "problem": "bezitten names a state; with 'binnen een week' the act of acquiring is meant, so 'in handen krijgen' reads more naturally.",
+      "evidence": "NL: 'kon … binnen een week … bezitten'",
+      "required_fix": "Optional: `kon waarschijnlijk binnen een week de hele tovenaarswereld in handen krijgen`.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b029",
+      "fragment": "Elke keer … 5% … gemene … wegstromen",
+      "problem": "Vocabulary rows dismissed: elk is known A1 (tool POS mismatch), 5% is a number, gemene is the known A2 adjective gemeen, wegstromen is a compound of the known weg + stromen. Both clusters (b029: elk+wegstromen; b031: gemene+primitief) fall away with them.",
+      "evidence": "lexicon: elk known A1 [ADJ, PRON]; gemeen known A2; stromen known A2; thresholds count_numbers_as_known",
+      "required_fix": "No text change. Lexicon owner: add wegstromen (or let the compound splitter accept verb compounds).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L10",
+      "block": "b029",
+      "fragment": "In de grotere economie van de Dreuzels ging de verhouding tussen goud en zilver steeds op en neer.",
+      "problem": "L-FRAME 9>8 dismissed: the span is the inverted subject phrase, the sentence has 17 words and reads naturally.",
+      "evidence": "flag L-FRAME dismissed",
+      "required_fix": "Optional lighter order: `De verhouding tussen goud en zilver ging bij de Dreuzels steeds op en neer.`",
+      "severity": "note",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "L11",
+      "block": "b029",
+      "fragment": "voor meer zilver dan je eerst had",
+      "problem": "Comparative clause after dan (verb-final) is not in restricted.md; it is a light, A2-textbook pattern. Accepted; recorded so the profile owner can decide once.",
+      "evidence": "allowed.md A-CMP-DAN lists phrase comparisons only",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "grammar:A-CMP-DAN"
+    },
+    {
+      "id": "L12",
+      "block": "b029",
+      "fragment": "arbitrage … wisselkoers … hedgefondsmanager",
+      "problem": "Three unknown lemmas kept and glossed; arbitrage is Harry's jargon per glossary.json, hedgefondsmanager per the bible. Acceptable.",
+      "evidence": "glossary.json efficient market hypothesis note: 'arbitrage … stay as Harry's jargon'",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PASSIVE",
+      "block": "b029",
+      "span": "heeft ooit van arbitrage gehoord.",
+      "decision": "dismissed",
+      "reason": "Perfectum with hebben (heeft … gehoord), active; no worden/zijn + participle. Allowed A-PERF."
+    },
+    {
+      "id": "R-VERB-CHAIN",
+      "block": "b029",
+      "span": "is niet alles: niemand hier heeft ooit van arbitrage gehoord",
+      "decision": "dismissed",
+      "reason": "Two main clauses joined by a colon; 'is' and 'heeft … gehoord' belong to different clauses. Largest cluster is two verbs."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b031",
+      "span": "gemene",
+      "decision": "dismissed",
+      "reason": "Inflected adjective gemeen (A2), not a participle."
+    },
+    {
+      "id": "L-FRAME",
+      "block": "b029",
+      "span": "ging de verhouding tussen goud en zilver steeds op en neer",
+      "decision": "dismissed",
+      "reason": "One word over the soft limit; the span is the subject phrase after inversion, sentence is 17 words, no stacking. See L10 for an optional lighter order."
+    }
+  ],
+  "tool_feedback": [
+    {"kind": "grammar", "id": "R-PASSIVE", "block": "b029", "verdict": "false positive", "reason": "hebben + participle (perfectum) flagged as passive; the rule should require worden or zijn as auxiliary."},
+    {"kind": "grammar", "id": "R-VERB-CHAIN", "block": "b029", "verdict": "false positive", "reason": "Counts finite verbs across a colon-joined pair of main clauses; a cluster should be adjacent verbs in one clause."},
+    {"kind": "grammar", "id": "R-PARTICIPLE", "block": "b031", "verdict": "false positive", "reason": "Lemmatiser returned 'gemene' as VERB; it is the adjective gemeen with -e."},
+    {"kind": "vocab", "lemma": "elk", "verdict": "false positive", "reason": "Lexicon has elk known A1 with pos [ADJ, PRON]; spaCy tags 'Elke' as DET, so _pos_match fails. Map DET to ADJ/PRON or skip POS matching for determiners."},
+    {"kind": "vocab", "lemma": "5%", "verdict": "false positive", "reason": "Tokenised as a VERB lemma; numerals with % should fall under count_numbers_as_known."},
+    {"kind": "vocab", "lemma": "gemene", "verdict": "false positive", "reason": "Same lemmatiser error as the R-PARTICIPLE flag; should resolve to gemeen (known A2)."},
+    {"kind": "vocab", "lemma": "wegstromen", "verdict": "false positive (weak)", "reason": "Compound of known weg + stromen; the compound splitter apparently only handles noun compounds."},
+    {"kind": "vocab", "lemma": "inwisselen", "verdict": "false negative (harmless here)", "reason": "Separable 'Wissel … in' resolves to wisselen (A1); the particle verb inwisselen is not in the lexicon. Transparent in this scene, but the mechanism hides new particle verbs in general."},
+    {"kind": "vocab", "metric": "known_share", "verdict": "inflated failure", "reason": "4 of the 10 unknown tokens are the elk/5%/gemene false positives; corrected share is 294/298 = 98.0%, which passes the 98% threshold."},
+    {"kind": "load", "id": "L-FRAME", "block": "b029", "verdict": "noise", "reason": "Span includes the inverted subject NP; a 9-vs-8 difference on a 17-word sentence is not a load problem. Consider excluding the subject in inversion from the frame count or raising the limit to 10."}
+  ]
+}

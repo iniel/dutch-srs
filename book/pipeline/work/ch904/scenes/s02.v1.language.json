@@ -1,0 +1,114 @@
+{
+  "scene": "ch904/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Clean A2 Dutch: no restricted construction, every sentence ≤ 22 words with ≤ 3 finite verbs, glossary line respected, glosses within limits. The one real quality issue is the compressed simile 'als uit het vuur' in b085; two of the five glosses (drugsgeld, haarnetje) are on transparent compounds and could be dropped.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b085",
+      "fragment": "trok zijn hand omlaag als uit het vuur",
+      "problem": "'als uit het vuur' is not a Dutch idiom; the compressed simile reads as a translation and makes the reader re-parse (as if the hand came out of a fire).",
+      "evidence": "No Dutch collocation 'als uit het vuur'; the natural form needs 'alsof' (R-CONJ-OTHER), so the comparison must be made explicit instead.",
+      "required_fix": "Make the comparison explicit with an allowed frame: 'Harry trok zijn hand omlaag, zo snel als uit een vuur, en verstopte de envelop achter zijn rug als \\gl{drugsgeld}{drug money}.' Optionally detach the second simile as a fragment: '… achter zijn rug. Als drugsgeld.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b085",
+      "fragment": "\\gl{drugsgeld}{drug money}",
+      "problem": "Glossed because the tool rates it hard (nt2lex C1); for the reader it is a transparent compound of two A1 words.",
+      "evidence": "lexicon: drug = known A1, geld = known A1; bible.md fixes 'drug money' → drugsgeld.",
+      "required_fix": "Gloss may stay or go; prefer dropping it to keep glosses for real unknowns. Lexicon owner: add 'drugsgeld' as known compound.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L3",
+      "block": "b086",
+      "fragment": "\\gl{haarnetje}{hairnet}",
+      "problem": "Glossed because the tool mis-lemmatises the diminutive to 'haarne'; the word is haar + net + -je, all known.",
+      "evidence": "lexicon: haar known, net (NOUN) known A1.",
+      "required_fix": "Gloss optional; dropping it frees one of the two gloss slots in b086. Lexicon owner: add 'haarnetje'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b080",
+      "fragment": "\\gl{gênant}{embarrassing}",
+      "problem": "Unknown lemma, but it carries the scene (embarrassment comedy) and has no plain equivalent with the same meaning for this reader.",
+      "evidence": "lexicon: gênant absent; 'pijnlijk' (B1) was learned as 'painful', 'stom' shifts the meaning; already glossed.",
+      "required_fix": "Keep as is. Lexicon owner: consider adding gênant (very frequent spoken word).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L5",
+      "block": "b086",
+      "fragment": "\\gl{schutting}{fence}",
+      "problem": "Unknown lemma; the plain alternative 'hek' (A2) is an open fence, and the image needs a solid one she must peer over.",
+      "evidence": "lexicon: schutting absent, hek known A2 'fence'; already glossed.",
+      "required_fix": "Keep as is; switch to 'het hek van de buren' only if the gloss budget of b086 is needed elsewhere.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L6",
+      "block": "b086",
+      "fragment": "Mevrouw~Figg, af en toe de oppas.",
+      "problem": "'af en toe de oppas' is a slightly stiff ellipsis; the possessive reads more naturally.",
+      "evidence": "Native pattern: 'af en toe zijn oppas' / 'soms zijn oppas'.",
+      "required_fix": "Prefer 'Mevrouw~Figg, af en toe zijn oppas.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L7",
+      "block": "b082",
+      "fragment": "\\gl{gefluister}{whisper}",
+      "problem": "Gloss on a lemma the lexicon marks known (A2), kept because exceptions.json asks to gloss fluisteren at first occurrence; the two sources disagree.",
+      "evidence": "lexicon: gefluister known A2 (c4473); exceptions.json keep: fluisteren, gloss 'first'.",
+      "required_fix": "No change here; profile owner: decide once whether fluisteren/gefluister is known (drop the keep entry) or kept (gloss first).",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L8",
+      "block": "b081",
+      "fragment": "ook als ik me dan dom voel",
+      "problem": "The particle 'dan' inside the als-clause is a small spoken-Dutch filler; without it the clause is cleaner.",
+      "evidence": "'ook als ik me dom voel' is the plain form.",
+      "required_fix": "Optional: 'ook als ik me dom voel'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b076",
+      "fragment": "achterdeur; hersenen",
+      "problem": "Two B1 stretch lemmas in the scene, inside the budget.",
+      "evidence": "stretch budget 2 vs 8/1000 allowed; both transparent (achter+deur; hersenen recurs for 'brain' per translator note).",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b084",
+      "span": "verbaasde",
+      "decision": "dismissed",
+      "reason": "Attributive 'verbaasd' is a plain adjective: lexicon ADJ A1 and named explicitly in restricted.md ('verbaasd … are fine'); look-alike table 'Hij was verbaasd.'"
+    }
+  ],
+  "tool_feedback": [
+    "R-PARTICIPLE on 'verbaasde' (b084) is a false positive: lemma is a lexicon ADJ entry and restricted.md names 'verbaasd' as allowed; skip amod participles whose lemma is a lexicon ADJ, or push confidence under ignore_confidence (0.3).",
+    "Vocabulary row 'haarne' is a non-word: spaCy lemma of the diminutive 'haarnetje'; strip -tje/-je before lookup and retry compound decomposition (haar + net) on the stripped form.",
+    "'drugsgeld' rated hard C1 (pos VERB) from an nt2lex-only hit; the lexicon hit pre-empts compound decomposition, so a transparent compound of two A1 words is reported as hard and pushed the translator into an unnecessary gloss.",
+    "Glosses on known lemmas (gefluister here; 'wilskracht' passes silently as a compound) never appear as a table row, so the reviewer cannot see gloss bloat on known words from the table; add a 'glossed known lemma' row or warning."
+  ]
+}

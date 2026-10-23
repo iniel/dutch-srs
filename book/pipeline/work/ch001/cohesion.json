@@ -1,0 +1,589 @@
+{
+  "chapter": 1,
+  "scenes_with_text": [
+    "s01",
+    "s02",
+    "s03",
+    "s04"
+  ],
+  "scenes_missing": [],
+  "title_translated": true,
+  "findings": [
+    {
+      "id": "C-TERM",
+      "block": "b072",
+      "scene": "s03",
+      "msg": "source has 'magic', translation lacks 'magie' (check rendering)"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b010",
+      "scene": "s01",
+      "msg": "narrative block mostly present tense (9 pres / 0 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b019",
+      "scene": "s01",
+      "msg": "narrative block mostly present tense (7 pres / 4 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b038",
+      "scene": "s02",
+      "msg": "narrative block mostly present tense (5 pres / 3 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b042",
+      "scene": "s02",
+      "msg": "narrative block mostly present tense (7 pres / 4 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b052",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (5 pres / 3 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b053",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (3 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b055",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (4 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b064",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (2 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b065",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (10 pres / 0 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b072",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (4 pres / 2 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b077",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (6 pres / 0 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b081",
+      "scene": "s03",
+      "msg": "narrative block mostly present tense (3 pres / 0 past) while the chapter is mostly past; confirm against the source"
+    }
+  ],
+  "address": {
+    "s01": {
+      "u": 0,
+      "je": 10
+    },
+    "s02": {
+      "u": 0,
+      "je": 3
+    },
+    "s03": {
+      "u": 0,
+      "je": 2
+    },
+    "s04": {
+      "u": 0,
+      "je": 4
+    }
+  },
+  "tense": {
+    "past": 163,
+    "present": 101
+  },
+  "glosses": [
+    {
+      "block": "b006",
+      "word": "gewaden",
+      "gloss": "robes"
+    },
+    {
+      "block": "b012",
+      "word": "eminente",
+      "gloss": "eminent"
+    },
+    {
+      "block": "b013",
+      "word": "perkament",
+      "gloss": "parchment"
+    },
+    {
+      "block": "b013",
+      "word": "smaragdgroene",
+      "gloss": "emerald-green"
+    },
+    {
+      "block": "b019",
+      "word": "goochelaar",
+      "gloss": "stage magician"
+    },
+    {
+      "block": "b019",
+      "word": "cold reading",
+      "gloss": "guessing from small cues"
+    },
+    {
+      "block": "b024",
+      "word": "smoesjes",
+      "gloss": "excuses"
+    },
+    {
+      "block": "b030",
+      "word": "wrong",
+      "gloss": "wrung"
+    },
+    {
+      "block": "b041",
+      "word": "citaat",
+      "gloss": "quote"
+    },
+    {
+      "block": "b041",
+      "word": "waarneming",
+      "gloss": "observation"
+    },
+    {
+      "block": "b049",
+      "word": "onwaarschijnlijk",
+      "gloss": "improbable"
+    },
+    {
+      "block": "b052",
+      "word": "toverstok",
+      "gloss": "wand"
+    },
+    {
+      "block": "b052",
+      "word": "weerlegging",
+      "gloss": "falsification"
+    },
+    {
+      "block": "b053",
+      "word": "brein",
+      "gloss": "brain"
+    },
+    {
+      "block": "b060",
+      "word": "vulpotlood",
+      "gloss": "mechanical pencil"
+    },
+    {
+      "block": "b060",
+      "word": "kalligrafie",
+      "gloss": "calligraphy"
+    },
+    {
+      "block": "b064",
+      "word": "toelating",
+      "gloss": "acceptance"
+    },
+    {
+      "block": "b066",
+      "word": "vertegenwoordiger",
+      "gloss": "representative"
+    },
+    {
+      "block": "b069",
+      "word": "waanzin",
+      "gloss": "madness"
+    },
+    {
+      "block": "b072",
+      "word": "gootsteen",
+      "gloss": "kitchen sink"
+    },
+    {
+      "block": "b080",
+      "word": "gênant",
+      "gloss": "embarrassing"
+    },
+    {
+      "block": "b086",
+      "word": "haarnetje",
+      "gloss": "hairnet"
+    },
+    {
+      "block": "b087",
+      "word": "verstikte",
+      "gloss": "strangled"
+    },
+    {
+      "block": "b088",
+      "word": "toelatingsbrief",
+      "gloss": "acceptance letter"
+    },
+    {
+      "block": "b093",
+      "word": "in een wip",
+      "gloss": "in a jiffy"
+    }
+  ],
+  "vocab": {
+    "tokens": 2583,
+    "known_share": 0.993,
+    "new_per_1000": 5.8
+  },
+  "word_list": [
+    {
+      "lemma": "glimen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "smaragdgroene",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "cold",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "reading",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "wrong",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "citaat",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "weerlegging",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "grafiet",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "vulpotlood",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "kalligrafie",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "zakmes",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "h.j.p.e.v.",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "gootsteen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "gênant",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "wip",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "eminent",
+      "status": "hard",
+      "cefr": "B2",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "eminent",
+        "distinguished"
+      ]
+    },
+    {
+      "lemma": "boekenkast",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 2,
+      "glossed": false,
+      "en": [
+        "bookcase"
+      ]
+    },
+    {
+      "lemma": "overstromen",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to overflow"
+      ]
+    },
+    {
+      "lemma": "filosoof",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "philosopher"
+      ]
+    },
+    {
+      "lemma": "waarneming",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "observation"
+      ]
+    },
+    {
+      "lemma": "beslist",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "definitely",
+        "absolutely"
+      ]
+    },
+    {
+      "lemma": "onwaarschijnlijk",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "improbable",
+        "unlikely",
+        "implausible"
+      ]
+    },
+    {
+      "lemma": "bizar",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "bizarre"
+      ]
+    },
+    {
+      "lemma": "weggooien",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to throw away",
+        "discard"
+      ]
+    },
+    {
+      "lemma": "onlangs",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "recently"
+      ]
+    },
+    {
+      "lemma": "verkrijgen",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to obtain",
+        "gain",
+        "get"
+      ]
+    },
+    {
+      "lemma": "vertegenwoordiger",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "representative"
+      ]
+    },
+    {
+      "lemma": "huidig",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "current",
+        "present"
+      ]
+    },
+    {
+      "lemma": "initiaal",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "initial"
+      ]
+    },
+    {
+      "lemma": "waanzin",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "delusion"
+      ]
+    },
+    {
+      "lemma": "eigenaardig",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "idiosyncratic",
+        "peculiar"
+      ]
+    },
+    {
+      "lemma": "achterdeur",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "back door"
+      ]
+    },
+    {
+      "lemma": "verstikken",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "to choke",
+        "to suffocate"
+      ]
+    },
+    {
+      "lemma": "afgeven",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to hand off",
+        "hand over",
+        "deliver"
+      ]
+    },
+    {
+      "lemma": "cold reading",
+      "status": "phrase",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "guessing from small cues"
+      ]
+    },
+    {
+      "lemma": "in een wip",
+      "status": "phrase",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "in a jiffy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "scene": "ch904/s01",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "Natural, light Dutch; one confirmed restricted construction (conjunction 'nu' in b080) forces a round. The vocabulary FAIL is tool-driven: 'haarnetje' and 'drugsgeld' are transparent compounds of known parts, so the real new-lemma density is 2 stretch words (~8/1000), inside budget. Secondary: the shouted line deviates from the glossary, one colon sentence carries four finite verbs, and the two similes in b085 read as compressed translations.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b080",
+      "fragment": "nu hij het zo bekeek",
+      "problem": "'nu' used as a subordinating conjunction (now that) is outside the allowed subordinator list.",
+      "evidence": "flag R-CONJ-OTHER (likely 0.85) confirmed; allowed.md A-SUB lists als/omdat/zodra/zodat/terwijl/hoewel/nadat/toen/voordat only.",
+      "required_fix": "Use the allowed subordinator: 'Dat was…eigenlijk best \\gl{gênant}{embarrassing}, als hij het zo bekeek.' (R-CONJ-OTHER move 4; same idiom as 'als je het zo bekijkt').",
+      "severity": "must_fix",
+      "category": "grammar:R-CONJ-OTHER"
+    },
+    {
+      "id": "L2",
+      "block": "b083",
+      "fragment": "Kan ik een uil krijgen?",
+      "problem": "Fixed glossary line not used; the edition renders this shout one way everywhere.",
+      "evidence": "glossary.json 'owl': 'Can I get an owl?' = 'Mag ik een uil?'; bible.md ch 1 traps repeat it.",
+      "required_fix": "Replace with “\\emph{Brief voor Zweinstein! Mag ik een uil?}”.",
+      "severity": "should_fix",
+      "category": "name"
+    },
+    {
+      "id": "L3",
+      "block": "b076",
+      "fragment": "Pas toen bedacht hij iets: als er echt een uil naar beneden kwam en de brief greep, dan moest hij dat aan pap vertellen.",
+      "problem": "One sentence of 24 words with four finite verbs (bedacht, kwam, greep, moest); the colon hides it from the load check.",
+      "evidence": "L-VERBS: at most three finite verbs per sentence; L-LEN soft limit 20.",
+      "required_fix": "Full stop instead of the colon: 'Pas toen bedacht hij iets. Als er \\emph{echt} een uil naar beneden kwam en de brief greep, dan moest hij dat aan pap vertellen.'",
+      "severity": "should_fix",
+      "category": "load:L-VERBS"
+    },
+    {
+      "id": "L4",
+      "block": "b085",
+      "fragment": "trok zijn hand omlaag als uit het vuur",
+      "problem": "'als uit het vuur' is not a Dutch idiom; the compressed simile reads as a translation and makes the reader re-parse (as if the hand came out of a fire).",
+      "evidence": "No Dutch collocation 'als uit het vuur'; the natural form needs 'alsof' (R-CONJ-OTHER), so the comparison must be made explicit instead.",
+      "required_fix": "Make the comparison explicit with an allowed frame: 'Harry trok zijn hand omlaag, zo snel als uit een vuur, en verstopte de envelop achter zijn rug als drugsgeld.' Optionally detach the second simile as a fragment for rhythm: '… achter zijn rug. Als drugsgeld.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L5",
+      "block": "b082",
+      "fragment": "\\gl{schor}{hoarse} \\gl{gefluister}{whisper}",
+      "problem": "Two glosses in a 12-word paragraph on words the lexicon already marks as known.",
+      "evidence": "lexicon: schor = known A2 (c3529), gefluister = known A2 (c4473); gloss_per_paragraph_max 2 reached on known words.",
+      "required_fix": "Drop the gloss on 'schor' (write 'een schor \\gl{gefluister}{whisper}'); the gloss on gefluister may stay only because exceptions.json asks to gloss fluisteren at first occurrence.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L6",
+      "block": "b085",
+      "fragment": "drugsgeld",
+      "problem": "Tool rates it hard (nt2lex C1); for the reader it is a transparent compound of two A1 words and the bible fixes the rendering.",
+      "evidence": "lexicon: drug = known A1, geld = known A1; bible.md ch 1 traps: 'drug money' → drugsgeld; 'replace-or-gloss' action dismissed.",
+      "required_fix": "No change; leave unglossed. Lexicon owner: add 'drugsgeld' as known compound or let compound decomposition override an nt2lex-only hard status.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L7",
+      "block": "b086",
+      "fragment": "haarnetje",
+      "problem": "Tool lemma 'haarne' is a mis-lemmatised diminutive; the word is haar + net + -je, all known.",
+      "evidence": "lexicon: haar known, net (NOUN) known A1; vocabulary row 'haarne' status unknown dismissed.",
+      "required_fix": "No change. Lexicon owner: add 'haarnetje' (or teach the tool -tje stripping).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b080",
+      "fragment": "\\gl{gênant}{embarrassing}",
+      "problem": "Unknown lemma, but it carries the scene (embarrassment comedy) and has no plain equivalent with the same meaning for this reader.",
+      "evidence": "lexicon: gênant absent; 'pijnlijk' (B1) was learned as 'painful', 'stom' shifts the meaning; already glossed.",
+      "required_fix": "Keep as is. Lexicon owner: consider adding gênant (very frequent spoken word).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b086",
+      "fragment": "\\gl{schutting}{fence}",
+      "problem": "Unknown lemma; the plain alternative 'hek' (A2) is an open fence, and the image needs a solid one she must peer over.",
+      "evidence": "lexicon: schutting absent, hek known A2 'fence'; already glossed; block at the 2-gloss limit.",
+      "required_fix": "Keep as is; switch to 'het hek van de buren' only if the gloss budget of b086 is needed elsewhere.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L10",
+      "block": "b086",
+      "fragment": "Mevrouw~Figg, af en toe de oppas.",
+      "problem": "'af en toe de oppas' is a slightly stiff ellipsis; the possessive reads more naturally.",
+      "evidence": "Native pattern: 'af en toe zijn oppas' / 'soms zijn oppas'.",
+      "required_fix": "Prefer 'Mevrouw~Figg, af en toe zijn oppas.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L11",
+      "block": "b086",
+      "fragment": "\\gl{plukken}{tufts}",
+      "problem": "Gloss on a word the lexicon marks known (pluk = handful, tuft, A2); the slot could be freed.",
+      "evidence": "lexicon: pluk known A2 (c5080).",
+      "required_fix": "Optional: remove the gloss if b086 ever needs a second gloss elsewhere; otherwise leave.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L12",
+      "block": "b081",
+      "fragment": "ook als ik me dan dom voel",
+      "problem": "The particle 'dan' inside the als-clause is a small spoken-Dutch filler; without it the clause is cleaner.",
+      "evidence": "'ook als ik me dom voel' is the plain form; 'dan' adds nothing a reader needs.",
+      "required_fix": "Optional: 'ook als ik me dom voel'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L13",
+      "block": "b076",
+      "fragment": "achterdeur; hersenen",
+      "problem": "Two B1 stretch lemmas in the scene, inside the budget.",
+      "evidence": "stretch budget 2 vs 8/1000 allowed; both transparent (achter+deur; hersenen recurs for 'brain' per translator note).",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-CONJ-OTHER",
+      "block": "b080",
+      "span": "nu hij het zo bekeek.",
+      "decision": "confirmed",
+      "reason": "'nu' as a subordinator (now that) is not in the allowed list A-SUB; the translator's own notes in V2/V3 replace it with 'als'. likely → must_fix (L1)."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b084",
+      "span": "verbaasde",
+      "decision": "dismissed",
+      "reason": "Attributive 'verbaasd' is a plain adjective: lexicon ADJ A1 and named explicitly in restricted.md ('verbaasd … are fine'); look-alike table 'Hij was verbaasd.'"
+    }
+  ],
+  "tool_feedback": [
+    "R-PARTICIPLE on 'verbaasde' (b084) is a false positive: lemma is a lexicon ADJ entry and restricted.md names 'verbaasd' as allowed; skip amod participles whose lemma is a lexicon ADJ, or push confidence under ignore_confidence (0.3).",
+    "Vocabulary row 'haarne' is a non-word: spaCy lemma of the diminutive 'haarnetje'; strip -tje/-je before lookup and retry compound decomposition (haar + net) on the stripped form.",
+    "'drugsgeld' rated hard C1 (pos VERB) from an nt2lex-only hit; the lexicon hit pre-empts compound decomposition, so a transparent compound of two A1 words is reported as hard. Try decomposition before accepting an nt2lex-only hard status with no cards, or when the POS is implausible.",
+    "Load check missed the 4-finite-verb sentence in b076 because the colon is treated as a sentence boundary (27 vs 26 sentences in V2); either count the colon-joined sentence or document the colon as an accepted split.",
+    "Glosses on known lemmas (schor, gefluister, plukken, wilskracht-compound) are invisible: they appear only in per_block.glosses, never as a row, so gloss bloat on known words cannot be seen from the table. Add a 'glossed known lemma' row or warning.",
+    "Density verdict HIGH (16.7/1000) counts 'haarne' and 'drugsgeld' as new; after the two fixes above the scene is 2 stretch lemmas ≈ 8.4/1000 and passes."
+  ]
+}

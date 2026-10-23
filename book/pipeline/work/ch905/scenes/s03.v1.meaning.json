@@ -1,0 +1,86 @@
+{
+  "scene": "ch905/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Scene, speakers, negations and the order of Harry's collapse are preserved; the god joke and the mind-is-brain dash land. Two quality losses: McGonagall's 'I should have warned you' reads as a plain past obligation without 'eigenlijk', and 'FTL signalling' becomes everyday 'berichten sneller dan het licht'.",
+  "comprehension": [
+    {
+      "q": "Why does Harry ask what else McGonagall can do, right after calling the experiment definitive?",
+      "answer_from_nl": "Hij kon het niet laten; in deze situatie mocht hij het ook niet laten, want nieuwsgierig zijn was juist en gepast.",
+      "answerable": true
+    },
+    {
+      "q": "What does McGonagall do in answer, and what three things happen to Harry's body as a result?",
+      "answer_from_nl": "Ze verandert in een kat. Harry schiet achteruit, struikelt over een verdwaalde stapel boeken en valt met een bons op zijn billen; zijn handen komen net niet goed neer en er trekt een waarschuwende steek door zijn schouder.",
+      "answerable": true
+    },
+    {
+      "q": "Does McGonagall's apology sound sincere, what gives away her real mood, and what does she say she ought to have done?",
+      "answer_from_nl": "Ze klinkt oprecht, maar haar mondhoeken trillen omhoog; ze zegt 'Ik moest je eerst waarschuwen' — the regret is inferred from 'Het spijt me' rather than from the verb form (see M1).",
+      "answerable": true
+    },
+    {
+      "q": "What single word does McGonagall offer to explain the cat, how does Harry reject it, and why does she say nobody has ever called her that before?",
+      "answer_from_nl": "'Magie.' Harry: magie is niet genoeg voor zoiets, 'dan moet u een god zijn' — en zo (een god) heeft nog nooit iemand haar genoemd.",
+      "answerable": true
+    },
+    {
+      "q": "What, according to Harry, has just been flushed down the toilet, and what claim about mind and brain is part of it?",
+      "answer_from_nl": "Het hele idee van een universum uit één stuk met wiskundig regelmatige wetten, het begrip natuurkunde: drieduizend jaar dingen in kleinere stukken verdelen, planeten en vallende appel als hetzelfde liedje, ware wetten zonder uitzondering als eenvoudige wiskunde — en dan ook nog dat de geest het brein is, het brein uit neuronen bestaat en een brein een persoon is.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b025",
+      "fragment": "Ik moest je eerst waarschuwen.",
+      "problem": "'I should have warned you' is a counterfactual admission; without 'eigenlijk' the imperfect reads as a plain past obligation ('I had to warn you first'), and the regret has to be inferred from 'Het spijt me'.",
+      "evidence": "EN: 'I should have warned you.' vs NL: 'Ik moest je eerst waarschuwen.' (s03 @notes concedes 'slight loss of counterfactual force'; s01/s02 keep 'eigenlijk')",
+      "required_fix": "Mark the irrealis: 'Eigenlijk moest ik je eerst waarschuwen.' (as s02), or 'Ik had je moeten waarschuwen.' if the language reviewer allows the cluster.",
+      "severity": "should_fix",
+      "category": "certainty"
+    },
+    {
+      "id": "M2",
+      "block": "b028",
+      "fragment": "berichten sneller dan het licht",
+      "problem": "'FTL signalling' (a physics term: information travelling faster than light) is turned into everyday 'berichten' (messages); the jargon the bible wants opaque becomes a lay explanation, and 'signalling' is not 'messages'.",
+      "evidence": "EN: 'then you get FTL signalling' vs NL: 'dan krijg je berichten sneller dan het licht'; bible ch 2: 'do not simplify quantum Hamiltonian, unitarity, FTL'",
+      "required_fix": "'dan krijg je FTL-signalen' (as s02) or at least 'signalen sneller dan het licht' (as s01); not 'berichten'.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b032",
+      "fragment": "hetzelfde liedje als een vallende appel",
+      "problem": "'tune' in Harry's reverent catalogue of science becomes the diminutive 'liedje' (ditty), a flippant note the English does not have.",
+      "evidence": "EN: 'the music of the planets was the same tune as a falling apple' vs NL: 'de muziek van de planeten was hetzelfde liedje als een vallende appel'",
+      "required_fix": "Optional: 'dezelfde melodie' (as s01/s02) or 'hetzelfde lied'.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M4",
+      "block": "b032",
+      "fragment": "De ware wetten waren overal precies hetzelfde",
+      "problem": "The third item of the list ('finding that…') loses its discovery frame: after 'verdelen' and 'En ontdekken:' this sentence stands as a bare assertion rather than as one more thing science found.",
+      "evidence": "EN: 'discovering that …, finding that the true laws were perfectly universal' vs NL: 'En ontdekken: … De ware wetten waren overal precies hetzelfde'",
+      "required_fix": "Optional: keep the frame ('En zien: de ware wetten waren …') or let the 'En ontdekken:' colon govern both statements.",
+      "severity": "note",
+      "category": "summary"
+    },
+    {
+      "id": "M5",
+      "block": "b026",
+      "fragment": "\\emph{Dat \\emph{kunt} u niet!}",
+      "problem": "The inner emphasis moved from the act ('do') to the modal ('kunt'); the stressed idea is still impossibility, which is within the bible's rule that emph may move to the stressed Dutch word.",
+      "evidence": "EN: '\\emph{You can't \\emph{do} that!}' vs NL: '\\emph{Dat \\emph{kunt} u niet!}' (s01/s02: '\\emph{Dat kunt u niet \\emph{doen}!}')",
+      "required_fix": "None; recorded so the cohesion editor can choose one form across versions.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

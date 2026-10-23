@@ -1,0 +1,321 @@
+{
+  "scene": "ch001/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "Grammar is clean: the one 'likely' flag is the bible-fixed letter chunk, the two 'review' flags are a polite 'zou u' and a zijn-perfectum. One must_fix: 'schutting' (unknown, glossed) has the known equivalent 'hek', which s04.final already uses for the same fence. The should_fix items are naturalness and gloss hygiene: a repeated cognate gloss ('genetische', already glossed in s02 and on the never-gloss list), a 'Ze' that an A2 reader will take as Mum, a simile that now reads as a statement, a run of four 'Toen' openers, one heavy sentence and two stiff appositions.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b086",
+      "fragment": "over de \\gl{schutting}{fence} van de buren",
+      "problem": "Unknown lemma carrying a gloss while a known A2 word with the same meaning exists; the next scene (s04.final, b092) already calls the same fence 'het hek'.",
+      "evidence": "vocab row schutting: unknown, glossed; lexicon hek: known A2 'fence'; s04.final.nl.md b092 'Een arm vol rimpels kwam over het hek'",
+      "required_fix": "Write 'Het gezicht van een oude vrouw keek over het hek van de buren.' and drop 'schutting' from @glosses. One gloss (haarnetje) remains in the paragraph.",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L2",
+      "block": "b064",
+      "fragment": "mijn \\gl{genetische}{genetic} ouders",
+      "problem": "Second gloss of the same word in the chapter, and 'genetisch' is on the cognates list, which means 'treated as known, never glossed'. The paragraph is at the two-gloss ceiling because of it.",
+      "evidence": "s02.v1.nl.md b039 '\\gl{genetische}{genetic} vaders' + @glosses; exceptions.json cognates: 'genetisch', 'genetische'; per_block b064 glosses = [toelating, genetische]",
+      "required_fix": "Write 'mijn genetische ouders' without \\gl and remove 'genetische' from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L3",
+      "block": "b052",
+      "fragment": "Ze maakte vooraf geen smoesjes, zoals:",
+      "problem": "'Ze' for 'de zekerheid' is correct written Dutch (-heid nouns are feminine), but at sentence start, after a paragraph that opened with 'mam maakte een grapje … ze loog', an A2 reader will first read 'Ze' as Mum making excuses.",
+      "evidence": "b049 'mam maakte een grapje, of ze loog'; b052 previous sentence subject 'De vreemde zekerheid'; @notes: 'Pronoun for zekerheid: ze / haar'",
+      "required_fix": "Use the demonstrative (A-DEM): 'Die maakte vooraf geen smoesjes, zoals: ‘misschien komt er geen professor’, of ‘misschien kan de professor alleen maar lepels buigen’.' ('haar nek' in b073 can stay: the referent is in the same clause.)",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L4",
+      "block": "b085",
+      "fragment": "Harry trok zijn hand omlaag. Die hand stond in brand, zo leek het.",
+      "problem": "The simile about the speed of the movement ('like it was on fire') has become a separate statement that the hand appeared to be burning; a Dutch reader pauses to work out whether this is literal, a metaphor for shame, or the comparison.",
+      "evidence": "EN 'pulled down his hand like it was on fire'; NL makes the fire a reported appearance ('zo leek het') of the hand itself",
+      "required_fix": "Keep both similes as plain 'als' + noun phrases, parallel to 'als drugsgeld': 'Harry trok zijn hand omlaag, snel, als van een hete kachel. De envelop verstopte hij achter zijn rug als drugsgeld.' ('kachel' is known A2; 'als van een hete kachel' is the standard Dutch image for snatching a hand back.)",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L5",
+      "block": "b086",
+      "fragment": "Mevrouw~Figg, af en toe de oppas.",
+      "problem": "A frequency adverb ('af en toe') modifying a definite noun phrase in apposition is not idiomatic; the reader expects a clause ('die af en toe oppaste').",
+      "evidence": "EN 'Mrs Figg, the occasional babysitter.'; Dutch does not use 'af en toe' attributively",
+      "required_fix": "Write 'Mevrouw~Figg, soms zijn oppas.' (all A1/A2, keeps the telegraphic apposition and the tie).",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L6",
+      "block": "b073",
+      "fragment": "Dat moest eigenlijk heel verdacht klinken, \\emph{o, dus je theorie kun je niet testen}, maar de eigenaardige zekerheid in Harry wilde haar nek blijkbaar nog verder uitsteken.",
+      "problem": "Legal but heavy: 24 words, three finite verbs, and an italic thought interpolated between two commas before the 'maar' clause; the reader has to hold the main clause open across the interpolation.",
+      "evidence": "L-LEN soft limit 20; L-VERBS 3 (at the limit); the interpolation is a third clause type inside one sentence",
+      "required_fix": "Split at the thought and start a new sentence with 'Maar': 'Dat moest eigenlijk heel verdacht klinken: \\emph{o, dus je theorie kun je niet testen.} Maar de eigenaardige zekerheid in Harry wilde haar nek blijkbaar nog verder uitsteken.'",
+      "severity": "should_fix",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L7",
+      "block": "b069",
+      "fragment": "Toen vouwde hij de brief … Toen pakte hij een zakmes. … (b070) Toen deed hij zijn deur open",
+      "problem": "Four sentences open with 'Toen' in three consecutive narrative paragraphs (b060, b069 twice, b070); the chain reads like a list, and 'vouwde hij de brief' misses the particle Dutch uses for folding a sheet up.",
+      "evidence": "b060 'Toen gooide hij', b069 'Toen vouwde hij', 'Toen pakte hij', b070 'Toen deed hij'",
+      "required_fix": "b069: 'Hij vouwde de brief op en deed hem in een envelop.' and merge the knife into the next sentence: 'Met de punt van een zakmes drukte hij zijn initialen in het kaarsvet: H.J.P.E.V\\@.' b070: 'Daarna deed hij zijn deur open en ging weer naar beneden.' Keep b060 as it is.",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L8",
+      "block": "b065",
+      "fragment": "Waar kan ik die verkrijgen? Dat weet ik ook niet.",
+      "problem": "A question addressed to the reader of the letter ('u') immediately answered by the writer himself ('I don't know that either') reads as Harry talking to himself inside a formal letter; the R-INDIRECT colon template was applied mechanically.",
+      "evidence": "EN 'I also don’t know where to obtain any of the books or equipment listed in your acceptance letter.' (statement); NL turns it into question + self-answer",
+      "required_fix": "Make it a question the letter can legitimately ask, no self-answer: 'Ook over de lijst met boeken en materiaal in uw brief heb ik een vraag: waar kan ik die verkrijgen?' If the meaning reviewer wants the statement kept, the minimal change is 'Ook dat weet ik niet.' (fronted 'Ook dat' ties it to 'Zelf twijfel ik').",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b074",
+      "fragment": "de brief is hier … met de brief zwaaien … pakt een uil de brief?",
+      "problem": "'de brief' three times in one short utterance; Dutch speech would pronominalise the last one.",
+      "evidence": "EN 'the letter got here … wave it around … see if an owl picks it up' (two pronouns)",
+      "required_fix": "Keep the first two (the pronominal adverb 'ermee' is R-ER-PREP) and write 'Dan zien we wel: pakt een uil hem?'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L10",
+      "block": "b065",
+      "fragment": "op voorwaarde dat die school echt bestaat",
+      "problem": "Genuine complement clause with 'dat' (R-DAT, likely 0.85), kept on purpose: the bible fixes this exact wording as Harry's over-formal register.",
+      "evidence": "bible.md Narrator voice §6: 'conditional on such a place actually existing → op voorwaarde dat die school echt bestaat'; @notes b065; the clause is five words, verb-final, not nested",
+      "required_fix": "No change. Recorded as an accepted exception (restricted.md move 6); see flag_decisions and tool_feedback.",
+      "severity": "note",
+      "category": "grammar:R-DAT"
+    },
+    {
+      "id": "L11",
+      "block": "b055",
+      "fragment": "Een platte plaat van metaal op een deur",
+      "problem": "'plaat van metaal' is a workaround for the lexicon rating the material adjective 'metalen' B2 while 'metaal' is A2; the natural phrase is 'een platte metalen plaat'.",
+      "evidence": "@notes b055; lexicon metaal known A2, metalen hard B2",
+      "required_fix": "Optional: 'Een platte metalen plaat op een deur nodigt uit tot duwen.' once the lexicon treats material adjectives in -en as forms of the known noun (tool_feedback).",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L12",
+      "block": "b080",
+      "fragment": "\\emph{Brief voor Zweinstein!} roepen, met een envelop hoog in de lucht, midden in je eigen achtertuin. Dat was…",
+      "problem": "Verbless infinitive phrase standing as its own sentence, resumed by 'Dat' — a left dislocation. All words are known and the resumption makes it readable, so it stays; noted because s04 L2 flagged a bare exclamative infinitive and the two should be judged alike.",
+      "evidence": "not flagged by the checker; restricted.md R-PARTICIPLE covers clause-replacing reductions, but here the finite clause follows immediately",
+      "required_fix": "No change required. If the translator prefers a finite version: 'Hij riep \\emph{Brief voor Zweinstein!}, met een envelop hoog in de lucht, midden in zijn eigen achtertuin. Dat was…' (loses the generic 'je').",
+      "severity": "note",
+      "category": "grammar:R-PARTICIPLE"
+    },
+    {
+      "id": "L13",
+      "block": "b075",
+      "fragment": "Dan \\emph{verbond} hij zichzelf met zoiets, zo voelde dat voor hem…",
+      "problem": "'zichzelf verbinden met' is understandable but not the idiom for 'associating himself with'; Dutch associates a name with something.",
+      "evidence": "EN 'that would feel like associating himself with that…'",
+      "required_fix": "Optional: 'Dan \\emph{verbond} hij zijn naam aan zoiets, zo voelde dat voor hem…' (keeps the emphasised verb).",
+      "severity": "note",
+      "category": "calque"
+    },
+    {
+      "id": "L14",
+      "block": "b069",
+      "fragment": "liet kaarsvet op de flap van de envelop vallen",
+      "problem": "Whitelisted 'laten vallen' is fine grammatically, but wax drips rather than falls; the B1 verb 'druppen' is inside the stretch budget (7 of 8 used).",
+      "evidence": "lexicon druppen stretch B1; exceptions.json grammar_whitelist 'laten vallen'",
+      "required_fix": "Optional: 'Na nog wat nadenken haalde hij een kaars en drupte kaarsvet op de flap van de envelop.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L15",
+      "block": "b060",
+      "fragment": "grafiet · zakmes · H.J.P.E.V.",
+      "problem": "The three unglossed 'unknown' rows are not vocabulary problems: 'grafiet' is a transparent cognate (graphite), 'zakmes' a compound of two known words (zak A1 + mes A1), 'H.J.P.E.V.' Harry's initials.",
+      "evidence": "vocab rows grafiet / zakmes / h.j.p.e.v.: unknown, action review; lexicon zak, mes known",
+      "required_fix": "No change. Lexicon owner: add 'grafiet' to cognates, let compound splitting resolve 'zakmes', treat dotted initials as names.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L16",
+      "block": "b060",
+      "fragment": "\\gl{kalligrafie}{calligraphy} · (b086) \\gl{haarnetje}{hairnet}",
+      "problem": "Two glosses that the reader does not need: 'kalligrafie' is a transparent cognate, 'haarnetje' a compound of known parts (haar + net + -je). Both paragraphs are at the two-gloss ceiling.",
+      "evidence": "vocab rows kalligrafie, haarnetje: unknown, glossed; lexicon haar A1, net A1",
+      "required_fix": "Optional: drop the two \\gl wrappers (and the @glosses lines); keep 'vulpotlood' glossed. If 'kalligrafie' is unglossed, add it to cognates.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L17",
+      "block": "b072",
+      "fragment": "\\gl{gootsteen}{kitchen sink} · \\gl{gênant}{embarrassing} · \\gl{vulpotlood}{mechanical pencil} · \\gl{toelating}{acceptance} · \\gl{weerlegging}{falsification}",
+      "problem": "Justified glosses: everyday words missing from the lexicon (gootsteen, gênant, vulpotlood), a derivation of a known verb (toelating ← toelaten A2) and the bible's term for 'falsify' (weerleggen, B2). No plain equivalents of the same meaning ('pijnlijk' would read as painful; 'wasbak' is B1 and a different fixture).",
+      "evidence": "vocab table; bible motif row 'hypothesis; test the hypothesis; falsify → weerleggen'",
+      "required_fix": "Keep. Lexicon owner: add gootsteen, gênant, vulpotlood, toelating as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L18",
+      "block": "b055",
+      "fragment": "\\gl{hypothese}{hypothesis} · \\gl{toverstok}{wand} · \\gl{brein}{brain}",
+      "problem": "First occurrences in the chapter (s01, s02 contain none of the three), so the once-per-chapter glosses are correct. Note that exceptions.json lists 'hypothese' under cognates ('never glossed') while the bible asks for one gloss per chapter; the bible was followed.",
+      "evidence": "rg over s01.v1.nl.md, s02.v1.nl.md; exceptions.json cognates; bible.md motif table and ch 1 decisions",
+      "required_fix": "Keep. Policy owner: resolve the hypothese conflict in exceptions.json (move it to keep/first or drop it from the bible list).",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L19",
+      "block": "b053",
+      "fragment": "Waarom geloof ik wat ik geloof? · (b063) Of Wie Dit Verder Aangaat:",
+      "problem": "Two free relatives ('wat ik geloof', 'Wie Dit Verder Aangaat') not reported by the checker; both are fixed wordings (glossary motif, bible letter formula) and stay.",
+      "evidence": "bible.md motif 'Waarom geloof je wat je gelooft?'; bible ch 1 traps: letter formulae",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "grammar:R-RELCL"
+    },
+    {
+      "id": "L20",
+      "block": "b066",
+      "fragment": "met haar spullen voor school",
+      "problem": "Stretch budget stands at 7 of 8 unglossed B1 lemmas (bizar, weggooien, onlangs, verkrijgen, huidig, initiaal, eigenaardig), all in Harry's or the letter's register; fine. 'spullen voor school' is a workaround for the transparent compound 'schoolspullen'.",
+      "evidence": "vocab table stretch rows; lexicon school A1, spul A2; 'schoolspullen' not in lexicon",
+      "required_fix": "Optional: 'met haar schoolspullen' once compound splitting resolves it.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-DAT",
+      "block": "b065",
+      "span": "dat die school echt bestaat.",
+      "decision": "dismissed",
+      "reason": "True complement clause, but the exact wording is fixed by the bible (Narrator voice §6) as Harry's over-formal register and is treated like the fixed polite chunks: vocabulary, not grammar. Five words, verb-final, no nesting. Logged as an accepted exception in L10; not a must_fix."
+    },
+    {
+      "id": "R-ZOU",
+      "block": "b066",
+      "span": "Zou u dit ook voor mijn eigen familie doen?",
+      "decision": "dismissed",
+      "reason": "Polite request to 'u' in a letter: A-ZOU-POLITE ('Zou u me helpen?'), look-alike table 'Zou u even wachten?'. Not a hypothetical."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b074",
+      "span": "de brief is hier op een of andere manier gekomen",
+      "decision": "dismissed",
+      "reason": "Perfectum of the intransitive 'komen' with 'zijn' (look-alike 'Hij is gevallen'); no agent, no passive reading possible."
+    },
+    {
+      "id": "R-LATEN",
+      "block": "b069",
+      "span": "liet kaarsvet op de flap van de envelop vallen",
+      "decision": "dismissed",
+      "reason": "Whitelisted chunk 'laten vallen' (exceptions.json grammar_whitelist, treated as vocabulary). Reported at ignore level; a nicer verb is offered in L14."
+    },
+    {
+      "id": "R-LATEN",
+      "block": "b070",
+      "span": "liet hij zijn slimheid zien",
+      "decision": "dismissed",
+      "reason": "Whitelisted chunk 'laten zien' (exceptions.json grammar_whitelist). Reported at ignore level."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b084",
+      "span": "verbaasde",
+      "decision": "dismissed",
+      "reason": "'verbaasd' is a lexicon adjective (A1), used attributively directly before its noun ('een verbaasde vrouwenstem'); restricted.md: simple adjectival participles in the lexicon are fine. Reported at ignore level."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-DAT likely 0.85 'op voorwaarde dat die school echt bestaat'",
+      "block": "b065",
+      "issue": "true positive, policy exception",
+      "reason": "The flag is correct, but the wording is mandated by the bible, so the scene fails grammar on a sentence that cannot change. Allow grammar_whitelist entries for bible-fixed chunks (pattern 'op voorwaarde dat die school echt bestaat', treat_as 'fixed') so the verdict is not FAIL."
+    },
+    {
+      "ref": "R-ZOU review 0.30 'Zou u dit ook voor mijn eigen familie doen?'",
+      "block": "b066",
+      "issue": "false positive",
+      "reason": "Direct question, subject 'u', 'zou' in first position, infinitive at the end: the polite-request formula. Suppress when 'zou' opens a question whose subject is 'u' / 'je' and there is no 'als' clause or participle."
+    },
+    {
+      "ref": "R-PASSIVE review 0.30 'is … gekomen'",
+      "block": "b074",
+      "issue": "false positive",
+      "reason": "'zijn' + participle of a mutative intransitive (komen, gaan, vallen, blijven, worden, gebeuren) is always perfectum, never passive; exclude these verbs instead of reporting them at review level."
+    },
+    {
+      "ref": "vocab: 'h.j.p.e.v.' reported as unknown NOUN",
+      "block": "b069",
+      "issue": "false positive (tokeniser)",
+      "reason": "Dotted initials are a name; treat tokens matching ([A-Z]\\.){2,} as proper nouns (count_proper_nouns_as_known)."
+    },
+    {
+      "ref": "vocab: compound splitting inconsistent ('zakmes' unknown; 'kaarsvet', 'postzegel', 'wilskracht', 'drugsgeld', 'adoptieouders' silently known)",
+      "block": "b069",
+      "issue": "lemmatiser gap",
+      "reason": "Both halves of 'zakmes' are A1 yet it is reported as unknown while other compounds of known parts are not; make compound resolution uniform and report which compounds were split so the reviewer can verify transparency."
+    },
+    {
+      "ref": "vocab: material adjective 'metalen' rated hard B2",
+      "block": "b055",
+      "issue": "lexicon artefact",
+      "reason": "'metalen', 'houten', 'gouden' etc. are forms of known nouns; derive their status from the noun (metaal A2) instead of a separate B2 entry, which forced 'plaat van metaal'."
+    },
+    {
+      "ref": "vocab: cognates grafiet, kalligrafie",
+      "block": "b060",
+      "issue": "lexicon gap",
+      "reason": "Transparent to an English reader (graphite, calligraphy); add to exceptions.json cognates so they are neither reported nor glossed."
+    },
+    {
+      "ref": "vocab: 'hypothese' in cognates list vs bible 'gloss once per chapter'",
+      "block": "b055",
+      "issue": "policy conflict",
+      "reason": "exceptions.json cognates says never gloss; bible.md ch 1 decisions and the motif table say gloss once per chapter. The checker currently counts it known and does not check the first-gloss rule; pick one source of truth."
+    },
+    {
+      "ref": "gloss: '\\gl{genetische}' repeated across scenes (s02 b039, s03 b064)",
+      "block": "b064",
+      "issue": "false negative (chapter scope)",
+      "reason": "Per-scene checks cannot see that a word was already glossed earlier in the chapter; a chapter-level gloss registry (or a warning from cohesion_check) would catch repeated first-occurrence glosses and cognate-list glosses."
+    },
+    {
+      "ref": "forms table: 'erger' → 'ergeren', 'flap' → 'flappen'",
+      "block": "b049",
+      "issue": "lemmatiser mis-mapping",
+      "reason": "The comparative 'erger' (of 'erg') resolves to the verb 'ergeren', and the noun 'flap' to the verb 'flappen'; both happen to be known so nothing was reported, but the mapping is wrong and will misreport elsewhere (e.g. counting 'ergeren' as used)."
+    },
+    {
+      "ref": "load: b049 first sentence has four finite verbs (moest, maakte, loog, was)",
+      "block": "b049",
+      "issue": "false negative (minor)",
+      "reason": "Not reported under L-VERBS (max 3), presumably because the colon splits the sentence. Acceptable here (three-word clauses after a colon), but the split rule should be stated so reviewers know what the counter sees."
+    }
+  ]
+}

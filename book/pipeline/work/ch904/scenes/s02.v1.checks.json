@@ -1,0 +1,249 @@
+{
+  "scene": "ch904/s02",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch904/scenes/s02.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch904/s02",
+    "version": 1,
+    "tokens": 235,
+    "known_tokens": 233,
+    "known_share": 0.9915,
+    "new_lemmas_unglossed": 1,
+    "new_per_1000": 4.3,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "gênant",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b080"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dat was…eigenlijk best gênant, als hij het zo bekeek."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "schutting",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b086"
+        ],
+        "glossed": true,
+        "examples": [
+          "Het gezicht van een oude vrouw keek over de schutting van de buren."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "achterdeur",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "back door"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b076"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry stampte door de achterdeur naar buiten, de achtertuin in."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "hersenen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "brain"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b077"
+        ],
+        "glossed": false,
+        "examples": [
+          "Mijn hersenen geloven blijkbaar van wel, maar dat maakt niet uit."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "gefluister",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "murmur"
+        ],
+        "count": 1,
+        "blocks": [
+          "b082"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "drug+geld",
+        "status": "compound",
+        "cefr": "A1",
+        "en": [
+          "money"
+        ],
+        "count": 1,
+        "blocks": [
+          "b085"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b076": {
+        "tokens": 37,
+        "new": [
+          "achterdeur"
+        ],
+        "glosses": []
+      },
+      "b077": {
+        "tokens": 43,
+        "new": [
+          "hersenen"
+        ],
+        "glosses": []
+      },
+      "b078": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b079": {
+        "tokens": 2,
+        "new": [],
+        "glosses": []
+      },
+      "b080": {
+        "tokens": 26,
+        "new": [],
+        "glosses": [
+          "gênant"
+        ]
+      },
+      "b081": {
+        "tokens": 19,
+        "new": [],
+        "glosses": []
+      },
+      "b082": {
+        "tokens": 12,
+        "new": [],
+        "glosses": [
+          "gefluister"
+        ]
+      },
+      "b083": {
+        "tokens": 18,
+        "new": [],
+        "glosses": []
+      },
+      "b084": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b085": {
+        "tokens": 25,
+        "new": [],
+        "glosses": [
+          "drugsgeld"
+        ]
+      },
+      "b086": {
+        "tokens": 33,
+        "new": [],
+        "glosses": [
+          "schutting",
+          "haarnetje"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch904/s02",
+    "version": 1,
+    "sentences": 26,
+    "summary": {
+      "likely": 0,
+      "review": 0,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verbaasde",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b084",
+        "sent": 1,
+        "sentence": "vroeg een verbaasde vrouwenstem, een van de buren.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": true,
+    "ok": true
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "scene": "ch905/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "fix",
+  "summary": "Events, negations, causal links and the climax are intact and the physics jargon stays opaque as the bible asks. One must-fix: in b030 Harry's 'You'd have to be a god' is written with generic je, so McGonagall's 'nobody has ever called me that' no longer answers a line aimed at her.",
+  "comprehension": [
+    {
+      "q": "Why does Harry ask what else McGonagall can do, right after calling the experiment definitive?",
+      "answer_from_nl": "Hij kon het niet laten; in deze situatie mocht hij het ook niet laten, want nieuwsgierig zijn was goed en juist.",
+      "answerable": true
+    },
+    {
+      "q": "What does McGonagall do in answer, and what three things happen to Harry's body as a result?",
+      "answer_from_nl": "Ze verandert in een kat. Harry schiet achteruit, struikelt over een verdwaalde stapel boeken en valt met een klap op zijn billen; zijn handen komen niet goed neer en hij voelt een korte, scherpe pijn in zijn schouder, als waarschuwing.",
+      "answerable": true
+    },
+    {
+      "q": "Does McGonagall's apology sound sincere, what gives away her real mood, and what does she say she ought to have done?",
+      "answer_from_nl": "Het klinkt oprecht, maar haar mondhoeken trekken omhoog; ze zegt dat ze hem eigenlijk eerst moest waarschuwen.",
+      "answerable": true
+    },
+    {
+      "q": "What single word does McGonagall offer to explain the cat, how does Harry reject it, and why does she say nobody has ever called her that before?",
+      "answer_from_nl": "'Magie.' Harry: magie is niet genoeg voor zoiets, 'dan moet je een god zijn'; zij antwoordt dat niemand haar ooit zo genoemd heeft. Answerable, but the Dutch 'je' is generic, so the reader must infer that the god label was aimed at her (see M1).",
+      "answerable": true
+    },
+    {
+      "q": "What, according to Harry, has just been flushed down the toilet, and what claim about mind and brain is part of it?",
+      "answer_from_nl": "Het hele idee van één universum met wiskundig regelmatige wetten, de natuurkunde zelf: drieduizend jaar dingen opdelen in kleinere stukken, planeten en vallende appel als dezelfde melodie, wetten zonder uitzondering als simpele wiskunde — en dan nog dat de geest het brein is, het brein uit neuronen bestaat en een brein een mens is.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b030",
+      "fragment": "Dan moet je een god zijn!",
+      "problem": "Harry's 'You'd have to be a god' is aimed at McGonagall (he has said 'U bent…', 'U hebt…' all through the tirade); the generic 'je' makes the line impersonal, so her reply 'Zo heeft nog nooit iemand me genoemd' no longer answers something said to her and the joke of b031 loses its anchor.",
+      "evidence": "EN: 'You'd have to be a god!' / 'That's the first time I've ever been called that.' vs NL: 'Dan moet je een god zijn!' / 'Zo heeft nog nooit iemand me genoemd.' (s02 @notes declares this je generic; s01 and s03 keep u for this reason)",
+      "required_fix": "Write 'Dan moet u een god zijn!' — keep Harry's u to McGonagall so the god label is aimed at her and b031 lands.",
+      "severity": "must_fix",
+      "category": "speaker"
+    },
+    {
+      "id": "M2",
+      "block": "b028",
+      "fragment": "met een kattenbrein",
+      "problem": "'cat-sized brain' argues from size (how can a brain that small still think); 'kattenbrein' says only whose brain it is.",
+      "evidence": "EN: 'How can you go on thinking using a cat-sized brain?' vs NL: 'Hoe kunt u nog denken met een kattenbrein?'",
+      "required_fix": "Optional: 'met een brein zo klein als dat van een kat' (as s01/s03).",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M3",
+      "block": "b032",
+      "fragment": "Het hele idee van één universum",
+      "problem": "'unified universe' (one coherent whole under one set of laws) is reduced to 'één universum' (a single universe).",
+      "evidence": "EN: 'a unified universe with mathematically regular laws' vs NL: 'één universum met wiskundig regelmatige wetten'",
+      "required_fix": "Optional: 'een universum als één geheel' (as s01) or 'een universum uit één stuk' (as s03).",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b032",
+      "fragment": "deelden mensen grote, ingewikkelde dingen op",
+      "problem": "The English list has no agent; the added 'mensen' turns Harry's inventory of what science is into a short history of what people did.",
+      "evidence": "EN: 'Three thousand years of resolving big complicated things into smaller pieces, discovering that…, finding that…' vs NL: 'Drieduizend jaar lang deelden mensen … Ze ontdekten: … Ze leerden: …'",
+      "required_fix": "Optional: agentless infinitives with colons, as s01/s03 do ('Drieduizend jaar lang: … verdelen. Ontdekken: …').",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M5",
+      "block": "b025",
+      "fragment": "Eigenlijk moest ik je eerst waarschuwen.",
+      "problem": "'I should have warned you' (counterfactual regret) is rendered with the imperfect 'moest … eigenlijk'; the regret survives through 'eigenlijk' and 'Het spijt me', but the form is weaker than 'had moeten'.",
+      "evidence": "EN: 'I should have warned you.' vs NL: 'Eigenlijk moest ik je eerst waarschuwen.'",
+      "required_fix": "Accept; record in the bible that 'should have + participle' → 'moest eigenlijk + infinitive' is the house pattern, so it stays identical across chapters.",
+      "severity": "note",
+      "category": "certainty"
+    }
+  ]
+}

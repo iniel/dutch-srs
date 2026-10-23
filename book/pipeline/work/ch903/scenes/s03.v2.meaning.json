@@ -1,0 +1,69 @@
+{
+  "scene": "ch903/s03",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the v1 → v2 diff (b048, b049, b050, b051, b052, b055). All three v1 findings are fixed: the mock-technical ranking is back ('in stijgende volgorde van ergheid', the bible's ch 8 phrase for 'increasing order'), the list has one subject ('Mam maakte een grapje, loog of was gek'), and 'geen enkele' lost its intensifier. The changed blocks introduce no new meaning shift: 'eerste blik op' keeps 'the instant he saw', 'Geloof niet al je gedachten' keeps the maxim, 'een deel van Harry' keeps 'some part', 'plaat van metaal' keeps the affordance sentence. All five comprehension questions remain answerable from v2.",
+  "previous_findings": [
+    {
+      "id": "M1",
+      "block": "b049",
+      "severity": "should_fix",
+      "status": "fixed",
+      "evidence": "v1 'in volgorde van erg naar erger' → v2 'in stijgende volgorde van \\gl{ergheid}{awfulness}'; the ranking joke < lie < insane and the measured, formal afterthought are both back."
+    },
+    {
+      "id": "M2",
+      "block": "b049",
+      "severity": "note",
+      "status": "fixed",
+      "evidence": "v1 'Mam maakte een grapje, mam loog, of mam was gek' → v2 'Mam maakte een grapje, loog of was gek'; flat three-item list as in the English."
+    },
+    {
+      "id": "M3",
+      "block": "b052",
+      "severity": "note",
+      "status": "fixed",
+      "evidence": "v1 'deed geen enkele moeite' → v2 'deed geen moeite'; 'no effort', not 'no effort at all'. The split into two sentences stays, which M3 allowed."
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "Why does Harry think he ought to have agreed with his father — what is his argument against magic being real?",
+      "answer_from_nl": "Niemand zag ooit bewijs voor magie; volgens mam bestaat er ergens een hele wereld vol magie, maar hoe houd je zoiets geheim? 'Nog meer magie' als uitleg lijkt een nogal verdacht soort excuus.",
+      "answerable": true
+    },
+    {
+      "q": "Which three explanations for Mum's behaviour does Harry list, how are they ordered, and which odd detail about the letter would 'Mum sent it herself' explain?",
+      "answer_from_nl": "Mam maakte een grapje, loog of was gek, 'in stijgende volgorde van ergheid' (grapje het minst erg, gek het ergst). Als mam de brief zelf stuurde, is dat de verklaring: zo kwam hij zonder postzegel in de brievenbus.",
+      "answerable": true
+    },
+    {
+      "q": "What does part of Harry believe anyway, and since when?",
+      "answer_from_nl": "Een deel van Harry is helemaal overtuigd dat magie echt bestaat, al vanaf de eerste blik op de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus.",
+      "answerable": true
+    },
+    {
+      "q": "What is odd about Harry's certainty — what is it not doing that a belief normally does to protect itself?",
+      "answer_from_nl": "Ze doet geen moeite: ze beschermt zichzelf niet tegen weerlegging en bedenkt van tevoren geen excuses voor als er geen professor komt, of voor als de professor alleen maar lepels kan buigen. Harry verwacht gewoon dat er een professor komt, met een toverstok zwaait en dat er magie uit komt.",
+      "answerable": true
+    },
+    {
+      "q": "Can Harry explain where his belief comes from, and what does he decide to do about it?",
+      "answer_from_nl": "Nee: meestal kan hij die vraag vrij goed beantwoorden, maar nu heeft hij geen flauw idee wat zijn brein denkt. Hij haalt in gedachten zijn schouders op: een testbare hypothese, die ga je testen.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b049",
+      "fragment": "in stijgende volgorde van \\gl{ergheid}{awfulness}",
+      "problem": "Observation for the bible, not a defect: 'ascending order of awfulness' is now rendered with the fixed ch 8 phrase 'in stijgende volgorde' plus the nonce nominalisation 'ergheid', which does the same comic work as 'awfulness' treated as a measurable scale.",
+      "evidence": "EN: 'joking, lying or being insane, in ascending order of awfulness' vs NL: 'Mam maakte een grapje, loog of was gek, in stijgende volgorde van ergheid'; bible ch 8: 'in stijgende volgorde, van laag naar hoog'",
+      "required_fix": "Keep. Cohesion editor: record 'in stijgende volgorde' as the standing rendering of Harry's 'ascending / increasing order' (ch 1, ch 8) and 'ergheid' as his comic coinage, so the real chapter 1 reuses this wording.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

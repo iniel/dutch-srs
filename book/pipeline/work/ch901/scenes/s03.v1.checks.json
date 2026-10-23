@@ -1,0 +1,316 @@
+{
+  "scene": "ch901/s03",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch901/scenes/s03.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch901/s03",
+    "version": 1,
+    "tokens": 267,
+    "known_tokens": 266,
+    "known_share": 0.9963,
+    "new_lemmas_unglossed": 1,
+    "new_per_1000": 3.7,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "sceptisch",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Lieverd, ik begrijp het: je bent niet thuis in de sceptische literatuur."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "goochelaar",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [
+          "Je beseft het misschien niet, maar een getrainde goochelaar doet zoiets heel makkelijk na."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "cold",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dat heet cold reading — ”"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "reading",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dat heet cold reading — ”"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "hield voet bij stuk",
+        "status": "phrase",
+        "cefr": null,
+        "en": [
+          "stood her ground"
+        ],
+        "count": 1,
+        "blocks": [
+          "b016"
+        ],
+        "glossed": true,
+        "examples": [],
+        "phrase": true,
+        "action": "phrase-glossed",
+        "hint": "multi-word gloss; fine if the phrase is needed, otherwise prefer a plain verb"
+      },
+      {
+        "lemma": "cold reading",
+        "status": "phrase",
+        "cefr": null,
+        "en": [
+          "guessing from small cues"
+        ],
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [],
+        "phrase": true,
+        "action": "phrase-glossed",
+        "hint": "multi-word gloss; fine if the phrase is needed, otherwise prefer a plain verb"
+      },
+      {
+        "lemma": "houden",
+        "status": "known",
+        "cefr": "A1",
+        "en": [
+          "to hold in front of",
+          "to keep"
+        ],
+        "count": 1,
+        "blocks": [
+          "b016"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "voet",
+        "status": "known",
+        "cefr": "A1",
+        "en": [
+          "foot"
+        ],
+        "count": 1,
+        "blocks": [
+          "b016"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "bij",
+        "status": "known",
+        "cefr": "A1",
+        "en": [
+          "at"
+        ],
+        "count": 1,
+        "blocks": [
+          "b016"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "stuk",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "broken",
+          "piece",
+          "part"
+        ],
+        "count": 1,
+        "blocks": [
+          "b016"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "fluisteren",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to whisper"
+        ],
+        "count": 1,
+        "blocks": [
+          "b018"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b015": {
+        "tokens": 23,
+        "new": [],
+        "glosses": []
+      },
+      "b016": {
+        "tokens": 22,
+        "new": [],
+        "glosses": [
+          "hield voet bij stuk"
+        ]
+      },
+      "b017": {
+        "tokens": 17,
+        "new": [],
+        "glosses": []
+      },
+      "b018": {
+        "tokens": 19,
+        "new": [],
+        "glosses": [
+          "fluisterde"
+        ]
+      },
+      "b019": {
+        "tokens": 59,
+        "new": [
+          "sceptisch"
+        ],
+        "glosses": [
+          "goochelaar",
+          "cold reading"
+        ]
+      },
+      "b020": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b021": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b022": {
+        "tokens": 110,
+        "new": [],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch901/s03",
+    "version": 1,
+    "sentences": 44,
+    "summary": {
+      "likely": 0,
+      "review": 1,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "getrainde",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b019",
+        "sent": 2,
+        "sentence": "Je beseft het misschien niet, maar een getrainde goochelaar doet zoiets heel makkelijk na.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": true,
+    "ok": true
+  }
+}

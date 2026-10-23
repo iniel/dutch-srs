@@ -1,0 +1,486 @@
+{
+  "scene": "ch907/s02",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch907/scenes/s02.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch907/s02",
+    "version": 1,
+    "tokens": 361,
+    "known_tokens": 353,
+    "known_share": 0.9778,
+    "new_lemmas_unglossed": 7,
+    "new_per_1000": 19.4,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "supercool",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry stond een bleke jongen met een spits gezicht en supercool witblond haar."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "witblond",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Naast Harry stond een bleke jongen met een spits gezicht en supercool witblond haar."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "zelfvoldaan",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b061"
+        ],
+        "glossed": true,
+        "examples": [
+          "Toen kwam er een brede, zelfvoldane glimlach op zijn lippen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "verrukt",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": true,
+        "examples": [
+          "“Ik ben verrukt van deze ontmoeting, meneer Malfidus."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "onuitsprekelijk",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": true,
+        "examples": [
+          "Werkelijk onuitsprekelijk verrukt."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "verrukken",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": true,
+        "examples": [
+          "Werkelijk onuitsprekelijk verrukt."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "flirten",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b064"
+        ],
+        "glossed": false,
+        "examples": [
+          "Dat laatste klonk misschien wat vreemd, een beetje als flirten met Draco of zo."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verwaardigen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b066"
+        ],
+        "glossed": true,
+        "examples": [
+          "Nou ja, iedereen wilde Harry Potter toch de hand schudden, dus — “Als mijn kleren straks klaar zijn, meneer, wilt u zich dan misschien verwaardigen tot het schu"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "aangenaam",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "nice",
+          "pleasant",
+          "friendly"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b061"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Aangenaam."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "onderdaan",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "subject"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": true,
+        "examples": [
+          "Zo’n glimlach geeft de hoogste van alle koningen aan de minste van zijn onderdanen, als die onderdaan eerlijk is, maar arm.",
+          "Zo’n glimlach geeft de hoogste van alle koningen aan de minste van zijn onderdanen, als die onderdaan eerlijk is, maar arm."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "frustratie",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "frustration"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": false,
+        "examples": [
+          "In een halve seconde van frustratie besloot hij:"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verstikken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to choke",
+          "to suffocate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b062"
+        ],
+        "glossed": true,
+        "examples": [
+          "Zij maakte nu een zacht, verstikt geluid."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "babbelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to chatter",
+          "to chit-chat",
+          "to talk casually"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b063"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry babbelde door."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "teruggooien",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b065"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zo hoort het voor de familie Malfidus,” gooide de andere jongen terug, met een glimlach."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "fluisteren",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to whisper"
+        ],
+        "count": 1,
+        "blocks": [
+          "b058"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "eer",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "honour"
+        ],
+        "count": 1,
+        "blocks": [
+          "b060"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b055",
+        "scope": "sentence",
+        "new": [
+          "supercool",
+          "witblond"
+        ],
+        "text": "Naast Harry stond een bleke jongen met een spits gezicht en supercool witblond haar."
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b055": {
+        "tokens": 74,
+        "new": [
+          "supercool",
+          "witblond"
+        ],
+        "glosses": [
+          "gewaad",
+          "toverstok"
+        ]
+      },
+      "b056": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b057": {
+        "tokens": 20,
+        "new": [
+          "frustratie"
+        ],
+        "glosses": []
+      },
+      "b058": {
+        "tokens": 17,
+        "new": [],
+        "glosses": [
+          "fluisterde"
+        ]
+      },
+      "b059": {
+        "tokens": 10,
+        "new": [],
+        "glosses": []
+      },
+      "b060": {
+        "tokens": 35,
+        "new": [],
+        "glosses": [
+          "eer"
+        ]
+      },
+      "b061": {
+        "tokens": 29,
+        "new": [
+          "aangenaam"
+        ],
+        "glosses": [
+          "zelfvoldane"
+        ]
+      },
+      "b062": {
+        "tokens": 16,
+        "new": [],
+        "glosses": [
+          "verstikt"
+        ]
+      },
+      "b063": {
+        "tokens": 29,
+        "new": [
+          "babbelen"
+        ],
+        "glosses": [
+          "verrukt",
+          "onuitsprekelijk"
+        ]
+      },
+      "b064": {
+        "tokens": 15,
+        "new": [
+          "flirten"
+        ],
+        "glosses": []
+      },
+      "b065": {
+        "tokens": 49,
+        "new": [
+          "onderdaan",
+          "teruggooien"
+        ],
+        "glosses": [
+          "onderdanen"
+        ]
+      },
+      "b066": {
+        "tokens": 61,
+        "new": [],
+        "glosses": [
+          "verwaardigen"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch907/s02",
+    "version": 1,
+    "sentences": 47,
+    "summary": {
+      "likely": 0,
+      "review": 1,
+      "load": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verstikt",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b062",
+        "sent": 1,
+        "sentence": "Zij maakte nu een zacht, verstikt geluid.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "volgende",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b066",
+        "sent": 0,
+        "sentence": "Eh…Verdomme, Harry kon niet meteen een volgende zin bedenken.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-LEN",
+        "value": 30,
+        "limit": 28,
+        "block": "b066",
+        "sent": 1,
+        "sentence": "Nou ja, iedereen wilde Harry Potter toch de hand schudden, dus — “Als mijn kleren straks klaar zijn, meneer, wilt u zich dan misschien verwaardigen tot het schudden van mijn hand?",
+        "hint": "split the sentence"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

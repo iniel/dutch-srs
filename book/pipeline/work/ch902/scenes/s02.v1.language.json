@@ -1,0 +1,196 @@
+{
+  "scene": "ch902/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Grammar is clean (no flags, nothing missed) and this version has the plainest vocabulary of the three: no unknown word without a gloss or a known-word paraphrase. Quality issues only: 'lagen' for rows of books, the envelope form 'meneer H. Potter', an unnecessary gloss on kaft and one afterthought comma in b013.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b010",
+      "fragment": "twee lagen sciencefiction … De achterste laag boeken … de achterste laag",
+      "problem": "Books standing front and back on a shelf stand 'in twee rijen' in Dutch; 'lagen' suggests horizontal strata, and for a learner the form collides with the imperfectum of liggen while laag is known mainly as 'low'.",
+      "evidence": "lexicon: laag A2 glossed 'low'; rij A2; V1 and V3 use rijen; EN 'back layer … above the books in front' describes rows",
+      "required_fix": "'Andere planken hebben twee rijen sciencefiction met een zachte kaft. De achterste rij staat op oude tissuedozen\\authorsnotefootnotemark{} of op stukken hout. Zo kun je de achterste rij boven de voorste boeken zien.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b010",
+      "fragment": "boeken met een harde \\gl{kaft}{cover}",
+      "problem": "kaft is a known A2 word; the gloss is noise.",
+      "evidence": "lexicon: kaft known A2 (cards:A2, nt2lex:A2)",
+      "required_fix": "Write 'boeken met een harde kaft' without \\gl.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L3",
+      "block": "b013",
+      "fragment": "\\emph{meneer~H.~Potter}",
+      "problem": "On an envelope Dutch writes 'De heer' / 'Dhr.', never 'meneer'; the formal green-ink address reads childish here.",
+      "evidence": "glossary 'Mr Potter → meneer Potter' is McGonagall's spoken address; heer is A1; V1 and V3 use 'de heer~H.~Potter'",
+      "required_fix": "'Op de envelop staat in \\gl{smaragdgroene}{emerald-green} inkt: \\emph{de heer~H.~Potter}.' Glossary owner: record 'de heer' as the written/envelope form.",
+      "severity": "should_fix",
+      "category": "register"
+    },
+    {
+      "id": "L4",
+      "block": "b013",
+      "fragment": "een envelop zonder postzegel, van geelachtig \\gl{perkament}{parchment}",
+      "problem": "The material arrives as an afterthought after the comma; the natural order is material first, then the missing stamp.",
+      "evidence": "V3: 'een envelop van geelachtig perkament, zonder postzegel'",
+      "required_fix": "'… en een envelop van geelachtig \\gl{perkament}{parchment} zonder postzegel.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L5",
+      "block": "b012",
+      "fragment": "de \\gl{eminente}{eminent} professor",
+      "problem": "Hard (B2) but glossed; the plain candidates change the meaning (beroemd = famous) and the mock-formal label is the narrator's point.",
+      "evidence": "lexicon: eminent B2; beroemd A2 'famous'; vooraanstaand not simpler",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L6",
+      "block": "b010",
+      "fragment": "achterste … voorste",
+      "problem": "Tool status unknown/B1, but superlatives of the A1 words achter/voor (A-COMP); transparent.",
+      "evidence": "lexicon: achter A1, voor A1; 'voorste' mis-lemmatised to 'voorst' (B1, a place name)",
+      "required_fix": "None. Lexicon owner: add as forms of achter/voor.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b010",
+      "fragment": "oude tissuedozen",
+      "problem": "Tool status unknown, but a compound of two known parts.",
+      "evidence": "lexicon: tissue A2, doos A1",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b010",
+      "fragment": "sciencefiction",
+      "problem": "Tool status unknown; international loanword in Dutch spelling.",
+      "evidence": "identical to the English word",
+      "required_fix": "None. Lexicon owner: add as known loanword.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b010",
+      "fragment": "elke centimeter muur … Elke boekenkast",
+      "problem": "Tool reports elk as unknown; the lexicon has it as known A1.",
+      "evidence": "lexicon: elk A1 (ADJ/PRON); DET tag drops the match",
+      "required_fix": "None (tool error).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L10",
+      "block": "b010",
+      "fragment": "boekenkast",
+      "problem": "Listed as B1 stretch, but a compound of two A1 words and the subject of the paragraph.",
+      "evidence": "lexicon: boek A1, kast A1",
+      "required_fix": "None; do not count it against the stretch budget.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L11",
+      "block": "b010",
+      "fragment": "Boeken stromen over op de tafels",
+      "problem": "overstromen is the one genuine B1 word of the scene; stromen (A2) + over keeps it readable and the image is the author's.",
+      "evidence": "lexicon: overstromen B1, stromen A2",
+      "required_fix": "Keep unglossed.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L12",
+      "block": "b012",
+      "fragment": "hun adoptiezoon",
+      "problem": "Tool status unknown; adoptie is a transparent cognate and zoon is A1.",
+      "evidence": "lexicon: zoon A1; adoptie absent",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L13",
+      "block": "b013",
+      "fragment": "geelachtig",
+      "problem": "Tool status unknown but geel (A1) + productive -achtig.",
+      "evidence": "lexicon: geel A1",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L14",
+      "block": "b013",
+      "fragment": "\\gl{smaragdgroene}{emerald-green} inkt",
+      "problem": "Unknown and glossed; no plain equivalent keeps the canon colour (donkergroen is B2).",
+      "evidence": "lexicon: smaragd absent, groen A1, donkergroen B2",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L15",
+      "block": "b014",
+      "fragment": "vindt schreeuwen \\gl{onbeschaafd}{uncivilised}",
+      "problem": "beschaafd is known A2 and on- is transparent, so the gloss is optional.",
+      "evidence": "lexicon: beschaafd A2; onbeleefd A2",
+      "required_fix": "Gloss may be dropped; harmless if kept.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L16",
+      "block": "b010",
+      "fragment": "clusters: boekenkast, elk / achterste, tissuedozen / achterste, voorst / paragraph",
+      "problem": "All four cluster findings dismissed: every member is known, a form of a known word, or a compound of known parts.",
+      "evidence": "L6–L10; after dismissal b010 holds no unglossed unknown word and one B1 word (overstromen)",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:cluster"
+    },
+    {
+      "id": "L17",
+      "block": "b014",
+      "fragment": "De Professor en zijn vrouw … De Professor vindt",
+      "problem": "None: capital P matches the bible's exception for the narrator's label; recorded because V1 wrote it lowercase.",
+      "evidence": "bible.md Naming policy; glossary Michael Verres-Evans nl_forms 'de Professor'",
+      "required_fix": "Keep.",
+      "severity": "note",
+      "category": "name"
+    }
+  ],
+  "flag_decisions": [],
+  "tool_feedback": [
+    {"kind": "vocab", "item": "elk", "verdict": "false_positive", "reason": "lexicon has elk known A1 (ADJ/PRON); the DET token's candidate 'elk' is also produced by the de-inflection heuristic and then rejected on POS mismatch."},
+    {"kind": "vocab", "item": "voorst", "verdict": "false_positive", "reason": "voorste mapped to the lexicon entry 'voorst' (B1, en 'Voorst' = a place name); -ste superlatives should de-inflect to voor/achter."},
+    {"kind": "vocab", "item": "achterste", "verdict": "false_positive", "reason": "superlative of known A1 achter; no -ste rule in _deinflect."},
+    {"kind": "vocab", "item": "tissuedozen", "verdict": "false_positive", "reason": "compound splitter looks up the raw head 'dozen' (not an entry); it needs to de-inflect the head (doos A1) and report the singular lemma."},
+    {"kind": "vocab", "item": "boekenkast", "verdict": "false_positive", "reason": "direct B1 hit pre-empts the compound-of-known-parts rule (boek A1 + kast A1); it then fills the stretch budget and every cluster."},
+    {"kind": "vocab", "item": "onbeschaafd", "verdict": "false_positive", "reason": "beschaafd is known A2; the on- prefix is not stripped."},
+    {"kind": "vocab", "item": "geelachtig", "verdict": "false_positive", "reason": "productive -achtig on known A1 geel."},
+    {"kind": "vocab", "item": "adoptiezoon", "verdict": "false_positive", "reason": "head zoon A1, modifier adoptie an international cognate absent from the lexicon."},
+    {"kind": "vocab", "item": "sciencefiction", "verdict": "false_positive", "reason": "international loanword; a cognate/loanword list would avoid this."},
+    {"kind": "vocab", "item": "laag / lagen", "verdict": "false_negative", "reason": "passed as known A2, but the known sense is 'low'; the noun sense 'layer' is new for the reader and the form lagen is homographic with liggen-imperfectum (idea.md §4: known word in an unfamiliar sense)."},
+    {"kind": "vocab", "item": "kaft (glossed)", "verdict": "false_negative", "reason": "gloss on a known A2 lemma is not reported; a 'gloss on known word' check would catch gloss bloat."},
+    {"kind": "vocab", "item": "known share 93.2% / density 55.2 per 1000", "verdict": "false_positive", "reason": "after removing the items above the scene has one unglossed B1 token (overstromen) in 163: ~99% known; the FAIL verdict is a tool artefact."},
+    {"kind": "threshold", "item": "stretch budget 1", "verdict": "calibration", "reason": "8 per 1000 floors to 1 on a 163-token scene; use a per-scene minimum."},
+    {"kind": "grammar", "item": "0 flags", "verdict": "ok", "reason": "manual read of all 13 sentences found no restricted construction; 'Zo kun je … zien' (A-INV + modal) and presentational er correctly not flagged."}
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "chapter": 903,
+  "scene": "s01",
+  "index": 0,
+  "of": 3,
+  "chapter_title": "A Day of Very Low Probability",
+  "experiment": {
+    "fragment": "f3-inner-monologue",
+    "type": "inner monologue, reasoning, free indirect thought",
+    "variant": "V1 single prompt with the rules, no loop",
+    "source_chapter": 1,
+    "source_blocks": [
+      "b047",
+      "b055"
+    ]
+  },
+  "source_chapter": 1,
+  "words": 302,
+  "blocks": [
+    {
+      "id": "b047",
+      "kind": "para",
+      "tex": "He shut the door behind him and tried to think.",
+      "text": "He shut the door behind him and tried to think.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 87,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b048",
+      "kind": "para",
+      "tex": "The funny thing was, he \\emph{should} have agreed with Dad. No-one had ever seen any evidence of magic, and according to Mum, there was a whole magical world out there. How could anyone keep something like that a secret? More magic? That seemed like a rather suspicious sort of excuse.",
+      "text": "The funny thing was, he should have agreed with Dad. No-one had ever seen any evidence of magic, and according to Mum, there was a whole magical world out there. How could anyone keep something like that a secret? More magic? That seemed like a rather suspicious sort of excuse.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 89,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b049",
+      "kind": "para",
+      "tex": "It should have been a clean case for Mum joking, lying or being insane, in ascending order of awfulness. If Mum had sent the letter herself, that would explain how it arrived at the letterbox without a stamp. A little insanity was far, far less improbable than the universe really working like that.",
+      "text": "It should have been a clean case for Mum joking, lying or being insane, in ascending order of awfulness. If Mum had sent the letter herself, that would explain how it arrived at the letterbox without a stamp. A little insanity was far, far less improbable than the universe really working like that.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 91,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b050",
+      "kind": "para",
+      "tex": "Except that some part of Harry was utterly convinced that magic was real, and had been since the instant he saw the putative letter from the Hogwarts School of Witchcraft and Wizardry.",
+      "text": "Except that some part of Harry was utterly convinced that magic was real, and had been since the instant he saw the putative letter from the Hogwarts School of Witchcraft and Wizardry.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 93,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b051",
+      "kind": "para",
+      "tex": "Harry rubbed his forehead, grimacing. \\emph{Don’t believe everything you think,} one of his books had said.",
+      "text": "Harry rubbed his forehead, grimacing. Don’t believe everything you think, one of his books had said.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 95,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b052",
+      "kind": "para",
+      "tex": "But this bizarre certainty…Harry was finding himself just \\emph{expecting} that, yes, a Hogwarts professor would show up and wave a wand and magic would come out. The strange certainty was making no effort to guard itself against falsification—wasn’t making excuses in advance for why there wouldn’t be a professor, or the professor would only be able to bend spoons.",
+      "text": "But this bizarre certainty…Harry was finding himself just expecting that, yes, a Hogwarts professor would show up and wave a wand and magic would come out. The strange certainty was making no effort to guard itself against falsification—wasn’t making excuses in advance for why there wouldn’t be a professor, or the professor would only be able to bend spoons.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 97,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b053",
+      "kind": "para",
+      "tex": "\\emph{Where do you come from, strange little prediction?} Harry directed the thought at his brain. \\emph{Why do I believe what I believe?}",
+      "text": "Where do you come from, strange little prediction? Harry directed the thought at his brain. Why do I believe what I believe?",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 99,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b054",
+      "kind": "para",
+      "tex": "Usually Harry was pretty good at answering that question, but in this particular case, he had no \\emph{clue} what his brain was thinking.",
+      "text": "Usually Harry was pretty good at answering that question, but in this particular case, he had no clue what his brain was thinking.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 101,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b055",
+      "kind": "para",
+      "tex": "Harry mentally shrugged. A flat metal plate on a door affords pushing, and a handle on a door affords pulling, and the thing to do with a testable hypothesis is to go and test it.",
+      "text": "Harry mentally shrugged. A flat metal plate on a door affords pushing, and a handle on a door affords pulling, and the thing to do with a testable hypothesis is to go and test it.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 103,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "Now his parents were getting into one of those arguments again, one where his mother tried to make his father feel guilty, and his father tried to make his mother feel stupid.",
+    "“I’m going to go to my room,” Harry announced. His voice trembled a little. “Please try not to fight too much about this, Mum, Dad, we’ll know soon enough how it comes out, right?”",
+    "“Of course, Harry,” said his father, and his mother gave him a reassuring kiss, and then they went on fighting while Harry climbed the stairs to his bedroom."
+  ],
+  "context_after": [
+    "He took a piece of lined paper from his desk, and started writing.",
+    "Dear Deputy Headmistress",
+    "Harry paused, reflecting; then discarded the paper for another, tapping another millimetre of graphite from his mechanical pencil. This called for careful calligraphy."
+  ]
+}

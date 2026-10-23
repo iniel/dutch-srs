@@ -1,0 +1,116 @@
+{
+  "scene": "ch905/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "All twelve blocks keep the events, negations, speakers and the order of Harry's collapse; the one-word 'Magie.', the god joke and the mind-is-brain dash land. Two quality losses: McGonagall's 'to be exact' is explained into 'dat is de precieze naam', and Harry's textbook 'rejecting / destroys' drops to 'weggooit / kapot'.",
+  "comprehension": [
+    {
+      "q": "Why does Harry ask what else McGonagall can do, right after calling the experiment definitive?",
+      "answer_from_nl": "Hij kon het niet laten; in deze situatie mocht hij het zelfs niet laten, want nieuwsgierig zijn was goed en juist.",
+      "answerable": true
+    },
+    {
+      "q": "What does McGonagall do in answer, and what three things happen to Harry's body as a result?",
+      "answer_from_nl": "Ze verandert in een kat. Harry schiet achteruit, struikelt over een losse stapel boeken en landt met een klap op zijn billen; zijn handen raken de grond niet goed en hij voelt een korte steek in zijn schouder, een waarschuwing.",
+      "answerable": true
+    },
+    {
+      "q": "Does McGonagall's apology sound sincere, what gives away her real mood, and what does she say she ought to have done?",
+      "answer_from_nl": "Ze klinkt oprecht, maar haar mondhoeken trillen omhoog (ze is geamuseerd); ze zegt dat ze hem eigenlijk eerst moest waarschuwen.",
+      "answerable": true
+    },
+    {
+      "q": "What single word does McGonagall offer to explain the cat, how does Harry reject it, and why does she say nobody has ever called her that before?",
+      "answer_from_nl": "'Magie.' Harry: magie is niet genoeg voor zoiets, 'dan moet u een god zijn' — en zo (een god) heeft nog nooit iemand haar genoemd.",
+      "answerable": true
+    },
+    {
+      "q": "What, according to Harry, has just been flushed down the toilet, and what claim about mind and brain is part of it?",
+      "answer_from_nl": "Het hele idee van een universum als één geheel met wiskundig regelmatige wetten, de natuurkunde zelf: drieduizend jaar dingen uit elkaar halen, planeten en vallende appel als dezelfde melodie, wetten zonder uitzondering als simpele wiskunde — en bovendien dat de geest het brein is, het brein uit neuronen bestaat en een brein een persoon is.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b027",
+      "fragment": "dat is de precieze naam",
+      "problem": "'to be exact', a qualifier on her own precision, has become a statement that this is the precise name, adding a clarifying noun the English does not have.",
+      "evidence": "EN: 'An Animagus transformation, to be exact.' vs NL: 'Een Faunaat-transformatie, dat is de precieze naam.'",
+      "required_fix": "Render the qualifier without the added noun: 'Preciezer: een Faunaat-transformatie.' (as s02) or 'Of preciezer: een Faunaat-transformatie.' (as s03).",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M2",
+      "block": "b028",
+      "fragment": "Als je die wet weggooit, maak je de unitariteit kapot",
+      "problem": "Harry's textbook verbs 'rejecting' and 'destroys' have become the childish 'weggooien' and 'kapotmaken', lowering the register of a tirade whose joke is its technical pitch.",
+      "evidence": "EN: 'Rejecting it destroys unitarity' vs NL: 'Als je die wet weggooit, maak je de unitariteit kapot'",
+      "required_fix": "Use neutral-technical verbs: 'Als je die wet loslaat (or: niet accepteert), vernietig je de unitariteit' (both forms are used in s02/s03).",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b028",
+      "fragment": "signalen sneller dan het licht",
+      "problem": "'FTL signalling' is spelled out in plain words; the bible asks for this jargon to stay opaque because McGonagall's 'Magie.' is the reader's reaction too.",
+      "evidence": "EN: 'then you get FTL signalling' vs NL: 'dan krijg je signalen sneller dan het licht'; bible ch 2: 'do not simplify quantum Hamiltonian, unitarity, FTL'",
+      "required_fix": "Optional: 'dan krijg je FTL-signalen' (as s02) keeps it opaque; otherwise accept — 'signalen' is still the technical word.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M4",
+      "block": "b022",
+      "fragment": "niet eens laten",
+      "problem": "'niet eens' adds 'not even', a small intensifier the English 'shouldn't' does not carry.",
+      "evidence": "EN: 'he shouldn't be helping himself' vs NL: 'mocht hij het in deze situatie niet eens laten'",
+      "required_fix": "Optional: 'ook niet laten' (as s02/s03) or plain 'niet laten'.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M5",
+      "block": "b024",
+      "fragment": "Zijn hele gewicht kwam hard neer",
+      "problem": "'unbraced' is dropped and replaced by 'hele' and 'hard', which the English clause does not have; the lack of support is only implied by the previous sentence.",
+      "evidence": "EN: 'as the weight came down unbraced' vs NL: 'Zijn hele gewicht kwam hard neer'",
+      "required_fix": "Optional: 'het gewicht kwam zonder steun neer' restores the detail without the added intensifiers.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b032",
+      "fragment": "in steeds kleinere stukken … de allerkleinste deeltjes",
+      "problem": "'steeds' and 'aller-' intensify 'smaller pieces' and 'the smallest parts'.",
+      "evidence": "EN: 'into smaller pieces … governing the smallest parts' vs NL: 'in steeds kleinere stukken … voor de allerkleinste deeltjes'",
+      "required_fix": "Optional: 'in kleinere stukken', 'de kleinste deeltjes'.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M7",
+      "block": "b032",
+      "fragment": "ze waren simpele wiskunde voor de allerkleinste deeltjes",
+      "problem": "'governing' (the laws rule the smallest parts) has become 'voor' (maths for the particles); the idea that the maths governs is weakened.",
+      "evidence": "EN: 'took the form of simple maths governing the smallest parts' vs NL: 'ze waren simpele wiskunde voor de allerkleinste deeltjes'",
+      "required_fix": "Optional: 'en de kleinste deeltjes volgden die wiskunde' (as s02) or 'die wiskunde gold voor de kleinste delen' (as s03).",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M8",
+      "block": "b025",
+      "fragment": "Ik moest je eigenlijk eerst waarschuwen.",
+      "problem": "'I should have warned you' (counterfactual regret) is rendered with the imperfect 'moest … eigenlijk'; the regret survives through 'eigenlijk' and 'Het spijt me', but the form is weaker than 'had moeten'.",
+      "evidence": "EN: 'I should have warned you.' vs NL: 'Ik moest je eigenlijk eerst waarschuwen.'",
+      "required_fix": "Accept; record in the bible that 'should have + participle' → 'moest eigenlijk + infinitive' is the house pattern, so it stays identical across chapters.",
+      "severity": "note",
+      "category": "certainty"
+    }
+  ]
+}

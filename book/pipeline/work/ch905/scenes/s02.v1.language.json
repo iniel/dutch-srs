@@ -1,0 +1,304 @@
+{
+  "scene": "ch905/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "No restricted grammar: both 'likely' flags and all four 'review' flags are tool errors. The text has several small stumbles rather than blocking faults: a dangling 'het' after 'regel', a 'Ze' that switches referent from people to laws, generic 'je' where Harry addresses McGonagall ('Dan moet je een god zijn'), and the 'kunt u niet doen' calque. Five glosses are spent on known words while brein, knipperde and planeten go unglossed.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b028",
+      "fragment": "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen, en, en al die kattenbiochemie, en hoe zit het met de neurologie?",
+      "problem": "The verbal frame holds 9 words between 'kan' and 'voorstellen', and the stammered list continues after the closing verb.",
+      "evidence": "L-FRAME 9>8 confirmed",
+      "required_fix": "Close the frame early and hang the list on a colon: 'Een menselijke \\gl{geest}{mind} kan zich dat niet zomaar voorstellen: de hele anatomie van een kat, en, en al die kattenbiochemie, en hoe zit het met de \\emph{neurologie}?'",
+      "severity": "should_fix",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "L2",
+      "block": "b028",
+      "fragment": "Dat is niet zomaar een willekeurige regel, het volgt uit de vorm van de kwantum-Hamiltoniaan!",
+      "problem": "'het' has no het-word to refer to ('regel' is a de-word), so the pronoun dangles and the comma splice reads as a run-on.",
+      "evidence": "EN: 'it's implied by …' (it = the rule) vs NL: 'het volgt uit' after 'een willekeurige regel'",
+      "required_fix": "Use the demonstrative and a semicolon, as V1: 'Dat is niet zomaar een willekeurige regel; die volgt uit de vorm van de kwantum-Hamiltoniaan!'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b032",
+      "fragment": "Ze hadden de vorm van simpele wiskunde, en de kleinste deeltjes volgden die wiskunde.",
+      "problem": "'Ze' switches referent: in the two previous sentences 'Ze' is 'mensen' ('Ze ontdekten', 'Ze leerden'); here it must be 'de wetten'. The reader re-parses.",
+      "evidence": "sequence 'Ze ontdekten: … Ze leerden: … Ze hadden de vorm …' in b032",
+      "required_fix": "Repeat the noun: 'De wetten hadden de vorm van simpele wiskunde, en de kleinste deeltjes volgden die wiskunde.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L4",
+      "block": "b030",
+      "fragment": "Dan moet je een god zijn!",
+      "problem": "Harry is talking to McGonagall, who answers 'Zo heeft nog nooit iemand me genoemd'; generic 'je' means nobody has called her anything, and it breaks the u-address fixed in the bible.",
+      "evidence": "glossary.json: Harry addresses McGonagall with 'u'; b031 reply presupposes that she was called a god",
+      "required_fix": "'Dan moet u een god zijn!' (as V1 and V3). The generic 'je' in 'Als je die regel loslaat … dan krijg je' may stay.",
+      "severity": "should_fix",
+      "category": "register"
+    },
+    {
+      "id": "L5",
+      "block": "b026",
+      "fragment": "“\\emph{Dat kunt u niet \\emph{doen}!}”",
+      "problem": "Word-for-word 'You can't do that'; in Dutch 'Dat kunt u niet doen' reads first as a moral prohibition (you mustn't), not as 'that is impossible', and the emphasis on 'doen' strengthens that reading.",
+      "evidence": "EN: 'You can't do that!' (impossibility, cf. b028) vs NL: 'Dat kunt u niet doen!' (prohibition)",
+      "required_fix": "Drop 'doen' and move the emphasis to the modal: '“\\emph{Dat \\emph{kunt} u niet!}”' (as V3).",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L6",
+      "block": "b028",
+      "fragment": "met een kattenbrein",
+      "problem": "'brein' is not in any lexicon list and occurs five times unglossed (once inside 'kattenbrein'); it carries the mind = brain point of b032.",
+      "evidence": "vocab rows brein (unknown, n=4, b032) and kattenbrein (unknown, b028), action review",
+      "required_fix": "Gloss at the first occurrence: 'met een \\gl{kattenbrein}{cat brain}'; the bare 'brein' in b032 is then understood. Lexicon owner: add 'brein' as a transparent cognate.",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b031",
+      "fragment": "Professor Anderling knipperde met haar ogen.",
+      "problem": "'knipperen' is unknown and unglossed; 'met haar ogen' narrows it to an eye movement but does not give the meaning.",
+      "evidence": "vocab row knipperen: unknown, action review; V1 and V3 gloss it",
+      "required_fix": "'Professor Anderling \\gl{knipperde}{blinked} met haar ogen.'",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b032",
+      "fragment": "de muziek van de planeten was dezelfde melodie als de val van een appel",
+      "problem": "'planeet' is hard (B2) and unglossed; together with 'melodie' (B1) it makes a two-new-word sentence.",
+      "evidence": "lexicon planeet hard (B2), action replace-or-gloss; cluster b032 (sentence): melodie, planeet",
+      "required_fix": "No plain equivalent for 'planeten' ('sterren' changes the meaning): gloss it and replace 'melodie': 'de muziek van de \\gl{planeten}{planets} was hetzelfde liedje als de val van een appel.'",
+      "severity": "should_fix",
+      "category": "vocab:cluster"
+    },
+    {
+      "id": "L9",
+      "block": "b025",
+      "fragment": "gestreepte … loslaat … melodie … steun",
+      "problem": "Four unglossed B1 words against a stretch budget of 3.",
+      "evidence": "lexicon stretch (B1): gestreept (b025, tool lemmatised as 'streepen'), loslaten (b028, tool lemmatised as 'loslaan'), melodie (b032), steun (b024); budget 3",
+      "required_fix": "'de kleine gestreepte kat' → 'de kleine kat met strepen'; 'melodie' → 'liedje' (L8). 'loslaat' and 'steun' then fit the budget.",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L10",
+      "block": "b022",
+      "fragment": "\\gl{aarzelde}{hesitated}, \\gl{stapel}{stack}, \\gl{stootjes}{gasps}, \\gl{willekeurige}{arbitrary}, \\gl{uitzondering}{exception}",
+      "problem": "Five of the thirteen glosses sit on words the reader knows; the slots are needed for L6, L7, L8.",
+      "evidence": "lexicon: aarzelen A2, stapel A2, stoot A2 (diminutive; 'ademde in korte, snelle stootjes' explains itself), willekeurig A2, uitzondering known (B1 path word)",
+      "required_fix": "Drop these five glosses (b022 aarzelde; b024 stapel; b026 stootjes; b028 willekeurige; b032 uitzondering) and remove them from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L11",
+      "block": "b032",
+      "fragment": "Alles werd \\gl{wazig}{blurred} voor Harry’s ogen.",
+      "problem": "'wazig' is unknown and needs a gloss, while the known noun 'waas' says the same thing without one.",
+      "evidence": "vocab row wazig: unknown, glossed; lexicon waas: known A2 (haze, mist)",
+      "required_fix": "'Er kwam een waas voor Harry’s ogen.' (as V3) and drop the gloss.",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L12",
+      "block": "b027",
+      "fragment": "“Preciezer: een \\gl{Faunaat-transformatie}{Animagus transformation}.”",
+      "problem": "A bare comparative as a one-word opener is terse to the point of oddness in speech.",
+      "evidence": "idiomatic forms are 'Of preciezer:' / 'Preciezer gezegd:'",
+      "required_fix": "Optional: '“Of preciezer: een \\gl{Faunaat-transformatie}{Animagus transformation}.”' (as V3).",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L13",
+      "block": "b033",
+      "fragment": "tot zover dat alles",
+      "problem": "Understandable but stiff; 'tot zover' normally takes a bare noun ('tot zover de theorie').",
+      "evidence": "V1 'en weg was dat allemaal', V3 'en daar ging dat allemaal' are the idiomatic turns",
+      "required_fix": "Optional: 'En toen veranderde een vrouw in een kat, en weg was dat allemaal.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L14",
+      "block": "b028",
+      "fragment": "kwantum-Hamiltoniaan, unitariteit, FTL-signalen, anatomie, kattenbiochemie, neurologie, neuronen",
+      "problem": "Flagged as unknown and as clusters, but they are deliberate opaque jargon (the set-up for 'Magie.'), nearly all transparent cognates. Only 'FTL' is opaque even to an English reader.",
+      "evidence": "vocab rows unknown, action review; clusters b028 (anatomie, kattenbiochemie, neurologie), (loslaan, unitariteit), b032 (brein, neuron); translator @notes and bible",
+      "required_fix": "No change; do not gloss. Optional: 'FTL-signalen' → 'signalen sneller dan het licht' spells the abbreviation out at no cost. Lexicon owner: mark the jargon so it stops counting toward density and clusters.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L15",
+      "block": "b032",
+      "fragment": "één universum … dát spoelde",
+      "problem": "Tool-unknown but fine: 'universum' is a cognate, 'dát' is 'dat' with an emphasis accent.",
+      "evidence": "vocab rows universum, dát: unknown; cluster b032 (dát, universum) is an artefact",
+      "required_fix": "No change. Lexicon owner: add 'universum'; tool: normalise accented 'dát' to 'dat'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L16",
+      "block": "b025",
+      "fragment": "Het klonk \\gl{oprecht}{sincere}",
+      "problem": "Hard (B2) word, but precise and already glossed; the plain alternatives lose the sense of sincere.",
+      "evidence": "lexicon oprecht hard (B2), glossed",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L17",
+      "block": "b032",
+      "fragment": "Het hele idee van één universum met wiskundig regelmatige wetten, dát spoelde net weg door de wc; het hele idee van de \\emph{natuurkunde}.",
+      "problem": "Left-dislocated topic with a resumptive demonstrative; at 21 words with a single modifier and the accent on 'dát' it stays readable (the V1 and V3 versions of this sentence are heavier).",
+      "evidence": "no L-* threshold crossed",
+      "required_fix": "Keep. If shortened anyway: 'Het hele idee van één universum met wiskundig regelmatige wetten — dát spoelde net door de wc. Het hele idee van \\emph{natuurkunde}.'",
+      "severity": "note",
+      "category": "load:L-LEN"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b025",
+      "span": "gestreepte",
+      "decision": "dismissed",
+      "reason": "Plain attributive adjective ('gestreept', B1 in the lexicon) with no complements; a vocabulary question, handled in L9."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b026",
+      "span": "Zijn stem klonk verstikt.",
+      "decision": "dismissed",
+      "reason": "'klinken' is a copula, not an auxiliary; 'verstikt' is a predicative adjective describing a state (look-alike table: 'zijn' + adjectival participle). No 'worden', no agent. The identical sentence was not flagged in V1 or V3."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b028",
+      "span": "“U bent in een kat veranderd",
+      "decision": "dismissed",
+      "reason": "Perfectum with zijn of the intransitive 'veranderen in' (A-PERF); no agent, no 'worden'."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b032",
+      "span": ", dát spoelde net weg door de wc",
+      "decision": "dismissed",
+      "reason": "Resumptive demonstrative (the accent marks it as such) after a left-dislocated topic, finite verb in second position: a main clause, not a relative clause."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b032",
+      "span": ", dat was een mens",
+      "decision": "dismissed",
+      "reason": "Demonstrative subject with V2 order ('dat was') in the apposition 'een brein, dat was een mens'; a relative clause would be verb-final ('dat een mens was')."
+    },
+    {
+      "id": "R-DAT",
+      "block": "b033",
+      "span": "dat alles.",
+      "decision": "dismissed",
+      "reason": "'dat' is a determiner in the noun phrase 'dat alles' (all that); no finite verb follows, so there is no complement clause."
+    },
+    {
+      "id": "L-FRAME",
+      "block": "b028",
+      "span": "kan zich niet zomaar de hele anatomie van een kat voorstellen",
+      "decision": "confirmed",
+      "reason": "Nine words inside the frame and the list continues after 'voorstellen'; see L1."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-PASSIVE likely 0.85 'Zijn stem klonk verstikt.'",
+      "block": "b026",
+      "issue": "false positive",
+      "reason": "'klinken' (and 'lijken', 'blijven', 'voelen') + participle is a copula + predicative adjective, never a passive; also the same sentence passed unflagged in V1 and V3, so the rule fires inconsistently."
+    },
+    {
+      "ref": "R-DAT likely 0.85 'tot zover dat alles.'",
+      "block": "b033",
+      "issue": "false positive",
+      "reason": "'dat' is a determiner before 'alles' and no finite verb follows; R-DAT should require a clause (finite verb after 'dat')."
+    },
+    {
+      "ref": "vocab: stoo",
+      "block": "b026",
+      "issue": "false positive (lemmatiser)",
+      "reason": "'stootjes' is the diminutive plural of 'stoot' (A2, in the lexicon); the lemmatiser produced the non-word 'stoo'."
+    },
+    {
+      "ref": "vocab: loslaan",
+      "block": "b028",
+      "issue": "false positive (lemmatiser)",
+      "reason": "'loslaat' is a form of 'loslaten' (B1, in the lexicon); the lemmatiser produced the non-word 'loslaan'. The word is stretch, not unknown."
+    },
+    {
+      "ref": "vocab: streepen",
+      "block": "b025",
+      "issue": "false positive (lemmatiser)",
+      "reason": "'gestreepte' is the adjective 'gestreept' (B1, in the lexicon), not a verb 'streepen'."
+    },
+    {
+      "ref": "vocab: dát (+ cluster b032 dát, universum)",
+      "block": "b032",
+      "issue": "false positive (normalisation)",
+      "reason": "Emphasis accent on 'dat' (A1); strip acute accents before lookup."
+    },
+    {
+      "ref": "vocab: kwantum-hamiltoniaan, unitariteit, anatomie, kattenbiochemie, neurologie, kattenbrein, neuron (+ clusters b028)",
+      "block": "b028",
+      "issue": "policy gap",
+      "reason": "Deliberate opaque jargon per the bible; a per-scene jargon list would keep these out of density, known-share and cluster verdicts. Compound splitting (kat + biochemie, kat + brein) would also help."
+    },
+    {
+      "ref": "vocab: FTL-signalen",
+      "block": "b028",
+      "issue": "false negative",
+      "reason": "Not listed at all (treated as a proper noun?), yet 'FTL' is an opaque abbreviation; abbreviations should at least surface as unknown."
+    },
+    {
+      "ref": "vocab: brein, universum",
+      "block": "b032",
+      "issue": "lexicon gap",
+      "reason": "Transparent cognates absent from every list; add to the lexicon."
+    },
+    {
+      "ref": "vocab: glosses on known lemmas",
+      "block": "b022",
+      "issue": "false negative",
+      "reason": "Glosses on aarzelde, stapel, stootjes, willekeurige, uitzondering (all known) are not reported; a 'gloss on known word' row would catch gloss bloat."
+    },
+    {
+      "ref": "R-PARTICIPLE (gestreepte)",
+      "block": "b025",
+      "issue": "false positive",
+      "reason": "A single participle used attributively right before a noun, without complements, is an adjective."
+    },
+    {
+      "ref": "R-RELCL ', dát spoelde' / ', dat was'",
+      "block": "b032",
+      "issue": "false positive",
+      "reason": "Pronoun immediately followed by the finite verb is a demonstrative main clause, as the tool's own note suspects; auto-dismiss or lower confidence below 0.3."
+    }
+  ]
+}

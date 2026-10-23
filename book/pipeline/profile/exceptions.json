@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "notes": [
+    "Managed list of exceptions to the lexicon statuses. Keep it small (idea.md §1).",
+    "keep: words outside the known lexicon that stay because they carry the world of the book or recur constantly.",
+    "  gloss: 'first' = gloss at first occurrence in each chapter; 'always' = gloss every time; 'never' = treat as known.",
+    "grammar_whitelist: fixed chunks that look like a restricted construction but are treated as vocabulary.",
+    "avoid: words that are formally known/stretch but that we prefer not to use in this edition.",
+    "Names and glossary terms live in memory/glossary.json, not here.",
+    "cognates: Dutch words that are transparent to an English reader (international vocabulary, loanwords); treated as known, never glossed.",
+    "Precedence: a word the lexicon rates known needs no gloss even if listed under keep; keep entries matter for words the lexicon rates stretch/hard/unknown."
+  ],
+  "keep": [
+    {
+      "lemma": "tovenaar",
+      "pos": "NOUN",
+      "en": "wizard",
+      "gloss": "never",
+      "why": "core world term, very frequent"
+    },
+    {
+      "lemma": "heks",
+      "pos": "NOUN",
+      "en": "witch",
+      "gloss": "never",
+      "why": "core world term"
+    },
+    {
+      "lemma": "toverstok",
+      "pos": "NOUN",
+      "en": "wand",
+      "gloss": "first",
+      "why": "core object; no simpler synonym"
+    },
+    {
+      "lemma": "toverspreuk",
+      "pos": "NOUN",
+      "en": "spell",
+      "gloss": "first",
+      "why": "core concept; 'spreuk' alone is ambiguous"
+    },
+    {
+      "lemma": "spreuk",
+      "pos": "NOUN",
+      "en": "spell, charm",
+      "gloss": "first",
+      "why": "short form of toverspreuk used in dialogue"
+    },
+    {
+      "lemma": "toveren",
+      "pos": "VERB",
+      "en": "to do magic",
+      "gloss": "first",
+      "why": "core verb"
+    },
+    {
+      "lemma": "magie",
+      "pos": "NOUN",
+      "en": "magic",
+      "gloss": "never",
+      "why": "cognate, core concept"
+    },
+    {
+      "lemma": "magisch",
+      "pos": "ADJ",
+      "en": "magical",
+      "gloss": "never",
+      "why": "cognate"
+    },
+    {
+      "lemma": "toverdrank",
+      "pos": "NOUN",
+      "en": "potion",
+      "gloss": "first",
+      "why": "core school subject"
+    },
+    {
+      "lemma": "bezemsteel",
+      "pos": "NOUN",
+      "en": "broomstick",
+      "gloss": "first",
+      "why": "world object; 'bezem' is known"
+    },
+    {
+      "lemma": "perkament",
+      "pos": "NOUN",
+      "en": "parchment",
+      "gloss": "first",
+      "why": "recurring object (letters)"
+    },
+    {
+      "lemma": "uil",
+      "pos": "NOUN",
+      "en": "owl",
+      "gloss": "never",
+      "why": "A2 word, recurring"
+    },
+    {
+      "lemma": "gewaad",
+      "pos": "NOUN",
+      "en": "robe",
+      "gloss": "first",
+      "why": "recurring clothing term; 'mantel' is a different garment"
+    },
+    {
+      "lemma": "Dreuzel",
+      "pos": "PROPN",
+      "en": "Muggle",
+      "gloss": "first",
+      "why": "official Dutch HP term; capitalised like the original"
+    },
+    {
+      "lemma": "leerling",
+      "pos": "NOUN",
+      "en": "pupil, student",
+      "gloss": "never",
+      "why": "A2 word, recurring"
+    },
+    {
+      "lemma": "professor",
+      "pos": "NOUN",
+      "en": "professor",
+      "gloss": "never",
+      "why": "cognate, title"
+    },
+    {
+      "lemma": "wetenschap",
+      "pos": "NOUN",
+      "en": "science",
+      "gloss": "never",
+      "why": "central theme; A2/B1 cognate"
+    },
+    {
+      "lemma": "wetenschapper",
+      "pos": "NOUN",
+      "en": "scientist",
+      "gloss": "first",
+      "why": "central theme"
+    },
+    {
+      "lemma": "experiment",
+      "pos": "NOUN",
+      "en": "experiment",
+      "gloss": "never",
+      "why": "cognate, central theme"
+    },
+    {
+      "lemma": "bewijs",
+      "pos": "NOUN",
+      "en": "proof, evidence",
+      "gloss": "never",
+      "why": "A2 in the lexicon; listed so that it is never paraphrased away (central theme)"
+    },
+    {
+      "lemma": "rationeel",
+      "pos": "ADJ",
+      "en": "rational",
+      "gloss": "first",
+      "why": "title concept"
+    },
+    {
+      "lemma": "fluisteren",
+      "pos": "VERB",
+      "en": "to whisper",
+      "gloss": "never",
+      "why": "A2 in the lexicon; listed so that it is never replaced by 'zacht zeggen' (idea.md §4)"
+    },
+    {
+      "lemma": "brein",
+      "pos": "NOUN",
+      "en": "brain",
+      "gloss": "first",
+      "why": "missing from NT2Lex/cards; central motif (Harry's brain) — gloss once per chapter"
+    }
+  ],
+  "grammar_whitelist": [
+    {
+      "id": "R-LATEN",
+      "pattern": "laten zien",
+      "treat_as": "vocabulary",
+      "why": "lexicalised chunk 'to show'; the reader learns it as one verb"
+    },
+    {
+      "id": "R-LATEN",
+      "pattern": "laten vallen",
+      "treat_as": "vocabulary",
+      "why": "lexicalised chunk 'to drop'"
+    },
+    {
+      "id": "R-TE-INF",
+      "pattern": "hoeven niet te",
+      "treat_as": "vocabulary",
+      "why": "fixed negative-necessity chunk; 'moeten niet' changes the meaning"
+    },
+    {
+      "id": "R-TE-INF",
+      "pattern": "proberen te",
+      "treat_as": "review",
+      "why": "very frequent; keep flagged but reviewer may accept when the alternative is clumsy"
+    },
+    {
+      "id": "R-DAT",
+      "pattern": "op voorwaarde dat",
+      "treat_as": "vocabulary",
+      "why": "fixed formal chunk in Harry's letter (bible ch 1); learned as one unit"
+    }
+  ],
+  "avoid": [
+    {
+      "lemma": "men",
+      "pos": "PRON",
+      "prefer": "mensen / iedereen / je",
+      "why": "formal register, not in the reader profile"
+    },
+    {
+      "lemma": "echter",
+      "pos": "ADV",
+      "prefer": "maar",
+      "why": "written register"
+    },
+    {
+      "lemma": "desondanks",
+      "pos": "ADV",
+      "prefer": "toch",
+      "why": "written register"
+    },
+    {
+      "lemma": "alvorens",
+      "pos": "SCONJ",
+      "prefer": "voordat",
+      "why": "archaic"
+    },
+    {
+      "lemma": "reeds",
+      "pos": "ADV",
+      "prefer": "al",
+      "why": "formal register"
+    },
+    {
+      "lemma": "thans",
+      "pos": "ADV",
+      "prefer": "nu",
+      "why": "archaic"
+    }
+  ],
+  "cognates": [
+    "abnormaal",
+    "absurd",
+    "adoptie",
+    "anatomie",
+    "arbitrage",
+    "atomen",
+    "atoom",
+    "automatisch",
+    "biochemie",
+    "biologie",
+    "biologisch",
+    "centaur",
+    "centaurs",
+    "centimeter",
+    "chemie",
+    "chemisch",
+    "computer",
+    "controle",
+    "doctor",
+    "dramatisch",
+    "economie",
+    "elektrisch",
+    "elektronisch",
+    "energie",
+    "experiment",
+    "experimenteel",
+    "experimentele",
+    "fantastisch",
+    "fictie",
+    "filosofie",
+    "filosofisch",
+    "fractie",
+    "fysica",
+    "fysiek",
+    "genetisch",
+    "genetische",
+    "hypothese",
+    "idee",
+    "informatie",
+    "irrationeel",
+    "kilo",
+    "kilogram",
+    "literatuur",
+    "logica",
+    "logisch",
+    "magie",
+    "magisch",
+    "markt",
+    "mechanisch",
+    "medisch",
+    "mentaal",
+    "meter",
+    "methode",
+    "millimeter",
+    "molecuul",
+    "muziek",
+    "natuurkunde",
+    "neurologie",
+    "normaal",
+    "planeet",
+    "planeten",
+    "praktisch",
+    "probleem",
+    "procent",
+    "professor",
+    "psychologie",
+    "psychologisch",
+    "rationeel",
+    "sceptisch",
+    "sciencefiction",
+    "specifiek",
+    "statistiek",
+    "statistisch",
+    "systeem",
+    "technisch",
+    "telefoon",
+    "test",
+    "testen",
+    "theoretisch",
+    "theorie",
+    "thermodynamica",
+    "tissue",
+    "typisch",
+    "universum",
+    "wetenschappelijk"
+  ]
+}

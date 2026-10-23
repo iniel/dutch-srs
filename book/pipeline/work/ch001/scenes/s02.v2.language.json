@@ -1,0 +1,143 @@
+{
+  "scene": "ch001/s02",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "All seven v1 fixes land: Petunia's wish now carries 'moet' (L1 must_fix), 'bestudeer het maar' (L2 must_fix), 'Zijn ouders' opens b039 (L3), 'Harry trok een bitter gezicht' (L4), 'wedstrijd in' (L5), 'zeggen: dit zie ik' (L6) and 'smoes' (L7) are plain, natural Dutch inside the profile. The changed blocks introduce no new grammar, vocabulary or naturalness problem; both 'review' flags are the same false positives as in v1 and the v1 'likely' flag on 'Behalve' has dropped to ignored. One should_fix: exceptions.json now lists 'genetisch' / 'genetische' under cognates (treated as known, never glossed), so the \\gl on 'genetische' in b039 is gloss bloat and should go — the same situation as ch901 s03 v2 L1. Four v1 notes carried, three dropped with reason, one reopened.",
+  "previous_findings": [
+    {"id": "L1", "block": "b042", "severity": "must_fix", "status": "fixed", "note": "'hij luistert naar zijn vrouw … En hij vertrouwt haar' → 'hij moet naar zijn vrouw luisteren. Zij houdt van hem. En hij moet haar vertrouwen, deze ene keer—'. Suggested wording; A-MODAL ×2, no dat-clause, stammer and three short sentences kept. Reads as a wish, not a statement."},
+    {"id": "L2", "block": "b039", "severity": "must_fix", "status": "fixed", "note": "'studeer het maar' → 'bestudeer het maar'; bestuderen transitive, known A2."},
+    {"id": "L3", "block": "b039", "severity": "should_fix", "status": "fixed", "note": "'Ze behandelden hem goed' → 'Zijn ouders behandelden hem goed'; suggested wording, antecedent explicit before the gapped comparison."},
+    {"id": "L4", "block": "b039", "severity": "should_fix", "status": "fixed", "note": "'Harry's mond vertrok bitter.' → 'Harry trok een bitter gezicht.' First alternative taken; 'een gezicht trekken' is the idiom, all A1/A2 words, no gloss needed. 'een bitter gezicht' is a less frequent collocation than 'een zuur gezicht' but 'zuur' would change the emotion; no stumble."},
+    {"id": "L5", "block": "b039", "severity": "should_fix", "status": "fixed", "note": "'wedstrijd voor wiskunde' → 'wedstrijd in wiskunde of wetenschap'; suggested wording."},
+    {"id": "L6", "block": "b041", "severity": "should_fix", "status": "fixed", "note": "'vertellen: dit zie ik' → 'zeggen: dit zie ik'; suggested wording."},
+    {"id": "L7", "block": "b048", "severity": "should_fix", "status": "fixed", "note": "'excuus' → 'smoes'; suggested wording, 'verdacht' kept."},
+    {"id": "L8", "block": "b039", "severity": "note", "status": "dropped", "note": "Translator declines 'leraren aan huis' because it adds a place the English does not give; reason accepted (meaning side agrees). 'eigen leraren' is understandable with 'kreeg' and the next sentence's 'stimuleerden ze hem'."},
+    {"id": "L9", "block": "b042", "severity": "note", "status": "dropped", "note": "Translator keeps 'haar hoofd kwam weer omhoog' because the source gives the physical image; reason accepted (meaning side prefers the image). Readable Dutch, all known words."},
+    {"id": "L10", "block": "b038", "severity": "note", "status": "carried", "note": "'keek op hem neer' kept by the translator as a wanted double reading; meaning side accepts it ('dismissive as usual' is in the English, so the contempt is not an addition). Carried as v2 L2, closed."},
+    {"id": "L11", "block": "b041", "severity": "note", "status": "carried", "note": "Feynman Lectures on Physics still roman; cohesion editor decides. Carried as v2 L4."},
+    {"id": "L12", "block": "b039", "severity": "note", "status": "dropped", "note": "Resolved outside the text: exceptions.json cognates now contains 'doctor' and the v2 vocabulary table no longer lists it. Nothing left to dismiss."},
+    {"id": "L13", "block": "b041", "severity": "note", "status": "carried", "note": "'citaat' still unknown to the lexicon, glossed; carried as v2 L3."},
+    {"id": "L14", "block": "b039", "severity": "note", "status": "reopened", "note": "Was 'Keep as is' while 'genetisch' was rated hard B2. exceptions.json cognates now lists 'genetisch' and 'genetische' (treated as known, never glossed), and the v2 vocabulary table no longer reports the lemma. The gloss is therefore no longer allowed: upgraded to v2 L1 should_fix."},
+    {"id": "L15", "block": "b041", "severity": "note", "status": "carried", "note": "Same stretch rows in v2 (filosoof, beslist mis-tagged, Tonen hidden); budget still 2 of 4. Carried as v2 L5."}
+  ],
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b039",
+      "fragment": "de meeste \\gl{genetische}{genetic} vaders",
+      "problem": "Gloss on a word that exceptions.json now classes as a cognate ('treated as known, never glossed'); the \\gl wrapper lengthens the sentence without helping an English-reading learner, and the @glosses list carries a dead entry.",
+      "evidence": "exceptions.json cognates: 'genetisch', 'genetische' (added since v1; v1 L14 and the translator's own @notes proposed exactly this); checks v2 vocab table no longer lists the lemma, per_block b039 still records the gloss; bible 'Glosses … of a kept word the reader may not know' — a cognate is not such a word",
+      "required_fix": "Write 'de meeste genetische vaders' without the \\gl macro and remove 'genetische: genetic' from @glosses. b039 then has no gloss, which also frees a slot if the editor takes the glossed 'vertrok' alternative from meaning M1. Cohesion editor: apply the same rule to 'genetische' in s01/s03 (the letter).",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L2",
+      "block": "b038",
+      "fragment": "keek op hem neer, afwijzend als altijd",
+      "problem": "'op iemand neerkijken' is read first as figurative contempt, doubling 'afwijzend'; natural Dutch, no stumble.",
+      "evidence": "EN: 'looked down at him, dismissive as usual' (physical + attitude); translator keeps the double reading deliberately (v2 @notes); meaning reviewer accepts it since the contempt is in the source (v1 L10)",
+      "required_fix": "No change. Closed: the physical alternative 'keek omlaag naar hem' remains available if the cohesion editor wants b038 and b042 parallel.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b041",
+      "fragment": "Daar staat een \\gl{citaat}{quote}:",
+      "problem": "Unknown lemma, glossed, half-transparent (cite / citation); fits Harry's register. b041 is at the gloss maximum (citaat, waarneming).",
+      "evidence": "checks v2 vocab row citaat: unknown, glossed; gloss_per_paragraph_max 2 (v1 L13)",
+      "required_fix": "Keep. If a gloss slot is ever needed in b041, 'Daar staat ongeveer dit:' drops the word without loss. Lexicon owner: add 'citaat' (B1, 'quote, quotation').",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b041",
+      "fragment": "de Feynman Lectures on Physics",
+      "problem": "English book title set in roman; the bible says English titles stay italic, the source block has no \\emph.",
+      "evidence": "bible.md Naming policy: 'English book titles stay English and italic (Feynman Lectures …)' vs src b041 tex without \\emph (v1 L11)",
+      "required_fix": "Cohesion editor decides; if the bible wins: 'de \\emph{Feynman Lectures on Physics}'.",
+      "severity": "note",
+      "category": "macro"
+    },
+    {
+      "id": "L5",
+      "block": "b041",
+      "fragment": "filosofen … je beslist dingen … Belangstelling Tonen (b039)",
+      "problem": "Stretch budget 4: 'filosoof' (B1) is a transparent cognate, fine unglossed; 'beslist' is 2sg of beslissen (A2), not the B1 adverb, so it does not count; 'Tonen' in the bible's capitalised phrase is the B1 verb the tool does not see. Budget used: 2 of 4.",
+      "evidence": "checks v2 vocab rows filosoof ok-stretch, beslist ok-stretch (ADJ, mis-tagged); lexicon tonen stretch B1; 'Belangstelling Tonen' counted as proper noun (v1 L15)",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-TE-INF",
+      "block": "b047",
+      "span": "na te denken",
+      "decision": "dismissed",
+      "reason": "Same flag as v1 (0.50, review). 'proberen te' is on exceptions.json grammar_whitelist (treat_as review); the alternatives ('wilde nadenken', 'ging nadenken') drop 'tried', which b048 depends on. One te-infinitive of a known verb in a 12-word sentence; accepted."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "Same flag as v1 (0.60, review). Plain attributive adjective ('een nogal verdacht soort smoes'); lexicon lists 'verdacht' as ADJ A2 (suspicious). No participle phrase, no complements. Only the head noun changed (excuus → smoes), not the construction."
+    },
+    {
+      "id": "R-CONJ-OTHER",
+      "block": "b039",
+      "span": "Behalve misschien een heel klein beetje",
+      "decision": "dismissed",
+      "reason": "Reported at 0.2 (ignored; was 0.85 likely in v1 — the tool now notes 'no verb: preposition?'). 'Behalve' is a preposition heading a verbless fragment, the bible's fixed punchline (Narrator voice §4). Nothing is subordinated."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b046",
+      "span": "geruststellende",
+      "decision": "dismissed",
+      "reason": "Reported at 0.2 (below ignore_confidence), unchanged from v1. Attributive adjective before 'kus', in the lexicon as ADJ A2 ('geruststellend'); restricted.md: simple adjectival participles in the lexicon are fine."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "type": "resolved",
+      "check": "grammar",
+      "item": "R-CONJ-OTHER 'Behalve' now 0.2 ignored (v1: 0.85 likely)",
+      "block": "b039",
+      "reason": "The verbless-fragment heuristic requested in v1 feedback is in place; the flag no longer blocks. Keep."
+    },
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-PARTICIPLE 'verdacht' (0.60) / 'geruststellende' (0.20)",
+      "block": "b048",
+      "reason": "Unchanged from v1: both have an ADJ entry in the lexicon and stand bare before a noun (dep amod, no complements); suppress amod participles without complements when the lexicon has an ADJ reading."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "beslist (stretch B1, ADJ)",
+      "block": "b041",
+      "reason": "Unchanged from v1: 'je beslist dingen' is 2sg present of beslissen (A2). With a subject pronoun immediately before the token, prefer the verb reading over the adverb/adjective entry."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "Belangstelling Tonen / Goede Ouder",
+      "block": "b039",
+      "reason": "Unchanged from v1: capitalised bible phrases are counted as proper nouns, so the B1 verb 'tonen' never reaches the table. Look up capitalised mid-sentence words that exist in the lexicon before treating them as names."
+    },
+    {
+      "type": "observation",
+      "check": "vocab",
+      "item": "\\gl on a cognates-list word is not reported",
+      "block": "b039",
+      "reason": "per_block b039 records the gloss 'genetische', but because the lemma is now a cognate it leaves the table entirely, so nothing signals that the gloss is disallowed. A 'gloss-on-cognate' row (like the proposed 'gloss-not-allowed' for keep/never words, ch901 s03 v2) would have caught v2 L1 automatically."
+    }
+  ]
+}

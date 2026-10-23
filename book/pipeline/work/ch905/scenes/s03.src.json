@@ -1,0 +1,175 @@
+{
+  "chapter": 905,
+  "scene": "s03",
+  "index": 2,
+  "of": 3,
+  "chapter_title": "Everything I Believe Is False",
+  "experiment": {
+    "fragment": "f5-cat-scene",
+    "type": "comic dialogue, science vocabulary, exclamations",
+    "variant": "V3 unconstrained literary translation first, then adaptation with translator.md + same loop",
+    "source_chapter": 2,
+    "source_blocks": [
+      "b022",
+      "b033"
+    ]
+  },
+  "source_chapter": 2,
+  "words": 394,
+  "blocks": [
+    {
+      "id": "b022",
+      "kind": "para",
+      "tex": "“You don’t have to,” Harry said. “We’ve performed a definitive experiment. But…” Harry hesitated. He couldn’t help himself. Actually, under the circumstances, he \\emph{shouldn’t} be helping himself. It was right and proper to be curious. “What else \\emph{can} you do?”",
+      "text": "“You don’t have to,” Harry said. “We’ve performed a definitive experiment. But…” Harry hesitated. He couldn’t help himself. Actually, under the circumstances, he shouldn’t be helping himself. It was right and proper to be curious. “What else can you do?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 38,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b023",
+      "kind": "para",
+      "tex": "Professor McGonagall turned into a cat.",
+      "text": "Professor McGonagall turned into a cat.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 40,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b024",
+      "kind": "para",
+      "tex": "Harry scrambled back unthinkingly, back-pedalling so fast that he tripped over a stray stack of books and landed hard on his bottom with a \\emph{thwack}. His hands came down to catch himself without quite reaching properly, and there was a warning twinge in his shoulder as the weight came down unbraced.",
+      "text": "Harry scrambled back unthinkingly, back-pedalling so fast that he tripped over a stray stack of books and landed hard on his bottom with a thwack. His hands came down to catch himself without quite reaching properly, and there was a warning twinge in his shoulder as the weight came down unbraced.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 42,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b025",
+      "kind": "para",
+      "tex": "At once the small tabby cat morphed back up into a robed woman. “I’m sorry, Mr~Potter,” said the witch, sounding sincere, though the corners of her lips were twitching upwards. “I should have warned you.”",
+      "text": "At once the small tabby cat morphed back up into a robed woman. “I’m sorry, Mr Potter,” said the witch, sounding sincere, though the corners of her lips were twitching upwards. “I should have warned you.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 44,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b026",
+      "kind": "para",
+      "tex": "Harry was breathing in short gasps. His voice came out choked. “\\emph{You can’t \\emph{do} that!}”",
+      "text": "Harry was breathing in short gasps. His voice came out choked. “You can’t do that!”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 46,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b027",
+      "kind": "para",
+      "tex": "“It’s only a Transfiguration,” said Professor McGonagall. “An Animagus transformation, to be exact.”",
+      "text": "“It’s only a Transfiguration,” said Professor McGonagall. “An Animagus transformation, to be exact.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 48,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b028",
+      "kind": "para",
+      "tex": "“You turned into a cat! A \\emph{small} cat! You violated Conservation of Energy! That’s not just an arbitrary rule, it’s implied by the form of the quantum Hamiltonian! Rejecting it destroys unitarity and then you get FTL signalling! And cats are \\emph{complicated}! A human mind can’t just visualise a whole cat’s anatomy and, and all the cat biochemistry, and what about the \\emph{neurology}? How can you go on \\emph{thinking} using a cat-sized brain?”",
+      "text": "“You turned into a cat! A small cat! You violated Conservation of Energy! That’s not just an arbitrary rule, it’s implied by the form of the quantum Hamiltonian! Rejecting it destroys unitarity and then you get FTL signalling! And cats are complicated! A human mind can’t just visualise a whole cat’s anatomy and, and all the cat biochemistry, and what about the neurology? How can you go on thinking using a cat-sized brain?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 50,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b029",
+      "kind": "para",
+      "tex": "Professor McGonagall’s lips were twitching harder now. “Magic.”",
+      "text": "Professor McGonagall’s lips were twitching harder now. “Magic.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 52,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b030",
+      "kind": "para",
+      "tex": "“Magic \\emph{isn’t enough} to do that! You’d have to be a god!”",
+      "text": "“Magic isn’t enough to do that! You’d have to be a god!”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 54,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b031",
+      "kind": "para",
+      "tex": "Professor McGonagall blinked. “That’s the first time I’ve ever been called \\emph{that}.”",
+      "text": "Professor McGonagall blinked. “That’s the first time I’ve ever been called that.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 56,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b032",
+      "kind": "para",
+      "tex": "A blur was coming over Harry’s vision, as his brain started to comprehend what had just broken. The whole idea of a unified universe with mathematically regular laws, that was what had been flushed down the toilet; the whole notion of \\emph{physics}. Three thousand years of resolving big complicated things into smaller pieces, discovering that the music of the planets was the same tune as a falling apple, finding that the true laws were perfectly universal and had no exceptions anywhere and took the form of simple maths governing the smallest parts, \\emph{not to mention} that the mind was the brain and the brain was made of neurons, a brain was what a person \\emph{was}—",
+      "text": "A blur was coming over Harry’s vision, as his brain started to comprehend what had just broken. The whole idea of a unified universe with mathematically regular laws, that was what had been flushed down the toilet; the whole notion of physics. Three thousand years of resolving big complicated things into smaller pieces, discovering that the music of the planets was the same tune as a falling apple, finding that the true laws were perfectly universal and had no exceptions anywhere and took the form of simple maths governing the smallest parts, not to mention that the mind was the brain and the brain was made of neurons, a brain was what a person was—",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 58,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b033",
+      "kind": "para",
+      "tex": "And then a woman turned into a cat, so much for all that.",
+      "text": "And then a woman turned into a cat, so much for all that.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 60,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "Harry ruffled a hand through his own hair. Maybe it was just that strange part of him which had already been convinced, but…“That’s a bit of an anticlimax,” Harry said. “You’d think there’d be some kind of more dramatic mental event associated with updating on an observation of infinitesimal probability—” Harry stopped himself. Mum, the witch, and even his Dad were giving him that look again. “I mean, with finding out that everything I believe is false.”",
+    "Seriously, it should have been more dramatic. His brain ought to have been flushing its entire current stock of hypotheses about the universe, none of which allowed this to happen. But instead his brain just seemed to be going, All right, I saw the Hogwarts Professor wave her wand and make your father rise into the air, now what?",
+    "The witch-lady was smiling benevolently upon them, looking quite amused. “Would you like a further demonstration, Mr Potter?”"
+  ],
+  "context_after": [
+    "A hundred questions fought for priority over Harry’s lips and the winner poured out: “And, and what kind of incantation is Wingardium Leviosa? Who invents the words to these spells, nursery schoolers?”",
+    "“That will do, Mr Potter,” Professor McGonagall said crisply, though her eyes shone with suppressed amusement. “If you wish to learn about magic, I suggest that we finalise the paperwork so that you can go to Hogwarts.”",
+    "“Right,” Harry said, somewhat dazed. He pulled his thoughts together. The March of Reason would just have to start over, that was all; they still had the experimental method and that was the important thing. “How do I get to Hogwarts, then?”"
+  ]
+}

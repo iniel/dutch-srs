@@ -1,0 +1,76 @@
+{
+  "scene": "ch001/s04",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, same order, same deadpan ending; every comprehension question is answerable from the Dutch alone. One voice issue: an added exclamation mark in b091 makes Mrs Figg sound agitated where the English has her tut-tutting in one calm sentence. Three small notes on detail and register.",
+  "comprehension": [
+    {
+      "q": "Why does Harry freeze when the neighbour speaks to him?",
+      "answer_from_nl": "Mevrouw Figg, de oppas, vraagt of hij zijn toelatingsbrief van Zweinstein heeft gekregen — she knows about Hogwarts, which he did not expect; 'Harry bleef doodstil staan.'",
+      "answerable": true
+    },
+    {
+      "q": "What does the letter ask of Harry, and by when?",
+      "answer_from_nl": "Hogwarts wants his owl by 31 July: 'Ze willen mijn uil voor 31 juli, zeggen ze'.",
+      "answerable": true
+    },
+    {
+      "q": "What does Mrs Figg think went wrong, and whom does she blame?",
+      "answer_from_nl": "Harry has no owl, yet 'ze' sent him only the ordinary letter ('alleen maar de gewone brief'); she blames the senders, not Harry ('Och, arme jongen!').",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry do with the envelope, and in what state of mind?",
+      "answer_from_nl": "A wrinkled arm comes over the fence with an open, waiting hand; Harry, hardly thinking any more ('dacht nu nauwelijks nog na'), hands the envelope over.",
+      "answerable": true
+    },
+    {
+      "q": "What does Mrs Figg promise, and what is the joke of the ending?",
+      "answer_from_nl": "She will have someone here 'in een wip'; her face disappears, there is a long silence, and a boy's voice says calmly and quietly 'Wat.' — the flat anticlimax after a 'domme theorie' turned out true.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b091",
+      "fragment": "Jou alleen maar de gewone brief sturen!",
+      "problem": "The English closes one tut-tutting sentence with a participial aside and a full stop; the Dutch turns that aside into a second exclamation, so Mrs Figg sounds agitated rather than brisk and clucking.",
+      "evidence": "EN: 'I can't imagine what someone must have been thinking, sending you just the standard letter.' (one sentence, no exclamation) vs NL: 'Ik kan het me niet voorstellen. Wat dachten ze toch? Jou alleen maar de gewone brief sturen!' (three bursts, one added '!'). Only 'Poor dear!' carries an exclamation mark in the source.",
+      "required_fix": "Keep the split if needed, but end the last clause with a full stop, not an exclamation mark: 'Wat dachten ze toch? Jou alleen maar de gewone brief sturen.' — or as a calm statement: 'En dan sturen ze jou alleen maar de gewone brief.' The only exclamation mark in the block stays on 'Och, arme jongen!'.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b090",
+      "fragment": "voor 31 juli",
+      "problem": "'by the 31st of July' includes the 31st; 'voor 31 juli' strictly means before it.",
+      "evidence": "EN: 'they want my owl by the 31st of July' vs NL: 'Ze willen mijn uil voor 31 juli'.",
+      "required_fix": "Optional: 'uiterlijk 31 juli' is the exact deadline wording; if that word is not allowed, 'voor 31 juli' may stay — a Dutch reader reads it as the deadline and the date itself is unchanged.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M3",
+      "block": "b092",
+      "fragment": "Een arm vol rimpels kwam over het hek",
+      "problem": "'stretched out' (a deliberate reach) is reduced to the neutral 'kwam', and 'wrinkled' becomes 'vol rimpels' (full of wrinkles), a shade stronger than the source.",
+      "evidence": "EN: 'A wrinkled arm stretched out over the fence, and opened an expectant hand.' vs NL: 'Een arm vol rimpels kwam over het hek, en een hand ging open en wachtte.'",
+      "required_fix": "Optional: use a verb of reaching, e.g. 'Een arm vol rimpels stak over het hek, en een hand ging open en wachtte.' 'vol rimpels' may stay.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b087",
+      "fragment": "een heel domme theorie",
+      "problem": "'silly' is lighter and more self-mocking than 'dom' (stupid); Harry is embarrassed, not calling himself stupid.",
+      "evidence": "EN: 'Just—testing a really silly theory—' vs NL: 'Gewoon—een heel domme theorie aan het testen—'.",
+      "required_fix": "Optional: 'een heel malle theorie' or 'een heel gekke theorie' is closer to 'silly'; 'domme' is acceptable if those words are not available.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

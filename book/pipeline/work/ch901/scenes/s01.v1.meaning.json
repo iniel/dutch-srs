@@ -1,0 +1,76 @@
+{
+  "scene": "ch901/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, same order, all facts, negations and causal links intact; all five comprehension questions answerable. One voice drift in Michael's opening condescension (b019 'ik begrijp het wel.'), the rest are notes.",
+  "comprehension": [
+    {
+      "q": "What does Michael say in reply to Petunia, and what does his tone give away?",
+      "answer_from_nl": "He says 'Je maakt een grapje'; his tone says otherwise: he is very afraid — maybe she really means it.",
+      "answerable": true
+    },
+    {
+      "q": "According to Michael, how could what Petunia saw have been faked, and what name does he give to the trick of seeming to guess someone's thoughts?",
+      "answer_from_nl": "A trained stage magician (goochelaar) easily imitates something that only seems impossible — he taught Harry to bend spoons; if it seemed they could always guess your thoughts, that is called cold reading.",
+      "answerable": true
+    },
+    {
+      "q": "What did Lily do to Petunia, and why did Lily do it?",
+      "answer_from_nl": "Lily made Petunia the way she is now (her slim body); because Petunia begged her, for years.",
+      "answerable": true
+    },
+    {
+      "q": "Why did Petunia beg Lily for years — what had she felt about Lily, and what did she want even though she could not have magic?",
+      "answer_from_nl": "Lily had always been prettier; Petunia had been mean to her because of that; then Lily got magic too. She begged Lily to use some of that magic on her so she would also be pretty — she could not get the magic, but she could at least be pretty.",
+      "answerable": true
+    },
+    {
+      "q": "What had Petunia told Lily and her husband about Michael, and why can't she just tell Michael what she saw?",
+      "answer_from_nl": "She had told them Michael was not allowed to know. She can't just tell him because then he will think she is— (unfinished).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b019",
+      "fragment": "Lieverd, ik begrijp het wel. Je kent de sceptische literatuur niet.",
+      "problem": "The full stop plus 'wel' turn a dry statement of her ignorance ('I understand that you're not familiar with…') into a reassuring 'I do understand' followed by a separate diagnosis; what he understands is no longer her unfamiliarity but, by implication, why she believes this.",
+      "evidence": "EN: 'Dear, I understand that you're not familiar with the sceptical literature.' vs NL: 'Lieverd, ik begrijp het wel. Je kent de sceptische literatuur niet.'",
+      "required_fix": "Drop 'wel' and bind the two halves so that 'het' is her unfamiliarity: 'Lieverd, ik begrijp het: je kent de sceptische literatuur niet.'",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b015",
+      "fragment": "Zijn toon zei iets anders:",
+      "problem": "'iets anders' spells out the contrast between his words and his tone that the English leaves for the reader to notice.",
+      "evidence": "EN: 'His tone indicated that he was very much afraid that she was serious.' vs NL: 'Zijn toon zei iets anders: hij was heel bang. Misschien meende ze het echt.'",
+      "required_fix": "Optional. A frame that reports rather than contrasts, e.g. 'Zijn toon verried hem: hij was heel bang.' The split itself and 'Misschien meende ze het echt.' are fine; the link survives by sentence order.",
+      "severity": "note",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M3",
+      "block": "b022",
+      "fragment": "Ze wees naar zichzelf, blijkbaar naar haar slanke lichaam.",
+      "problem": "'blijkbaar' (evidently) is a firmer inference than the narrator's tentative 'as though to indicate', and 'wees naar' narrows a gesture at her whole figure to pointing.",
+      "evidence": "EN: 'She gestured at herself, as though to indicate her lithe form.' vs NL: 'Ze wees naar zichzelf, blijkbaar naar haar slanke lichaam.'",
+      "required_fix": "Optional: 'Ze gebaarde naar zichzelf, naar haar slanke lichaam, zo leek het.'",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M4",
+      "block": "b019",
+      "fragment": "De professor rolde met zijn ogen.",
+      "problem": "The narrator's label for Michael is 'de Professor' with a capital P (bible, glossary); lowercase weakens the visible switch from 'Michael' to the ironic label at the moment he starts lecturing.",
+      "evidence": "bible: 'Exception: de Professor (capital P) when the narrator uses it as Michael's label'; NL: 'De professor rolde met zijn ogen.'",
+      "required_fix": "'De Professor rolde met zijn ogen.'",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

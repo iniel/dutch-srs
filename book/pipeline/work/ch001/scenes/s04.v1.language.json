@@ -1,0 +1,126 @@
+{
+  "scene": "ch001/s04",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Clean scene: the single programmatic flag is a tool error, all sentences are short and the vocabulary stays inside the budget with three justified glosses. Two small stumbles remain: an unaccented 'voor 31 juli' that reads as for/before, and an infinitival exclamation in Mrs Figg's line that the checker did not see.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b090",
+      "fragment": "Ze willen mijn uil voor 31 juli, zeggen ze, maar—",
+      "problem": "Unaccented 'voor' before a date is ambiguous between 'for' and 'before'; the standard orthography for the temporal reading next to a date is 'vóór'. The translator dropped the accent only to dodge a false unknown in the checker.",
+      "evidence": "@notes: 'written without accent to avoid a false unknown'; lexicon forms table has no 'vóór' entry",
+      "required_fix": "Write 'Ze willen mijn uil vóór 31 juli, zeggen ze, maar—'. The tool must normalise the accent (see tool_feedback).",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b091",
+      "fragment": "Jou alleen maar de gewone brief sturen!",
+      "problem": "Subjectless infinitival exclamation with a fronted object pronoun: a clause-replacing reduction (no finite verb) that the profile does not list as allowed; an A2 reader has to supply 'ze stuurden' themselves.",
+      "evidence": "R-PARTICIPLE definition in restricted.md ('participle phrases and other clause-replacing reductions'); not flagged by the checker; review-level confidence, since the idiom is natural and all seven words are known",
+      "required_fix": "Make it finite, keeping the indignation: '\\emph{Wat} dachten ze toch? Ze stuurden jou alleen maar de gewone brief!'",
+      "severity": "should_fix",
+      "category": "grammar:R-PARTICIPLE"
+    },
+    {
+      "id": "L3",
+      "block": "b088",
+      "fragment": "\\gl{toelatingsbrief}{acceptance letter}",
+      "problem": "Reported unknown, but it is a compound of two known parts (toelaten A2 → toelating, brief A1) and the gloss is the only one in the paragraph.",
+      "evidence": "vocab row toelatingsbrief: unknown, glossed; lexicon toelaten known A2, brief known",
+      "required_fix": "No change; the gloss may stay. Lexicon owner: add 'toelating' / 'toelatingsbrief' or enable compound splitting.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b093",
+      "fragment": "\\gl{in een wip}{in a jiffy}",
+      "problem": "'wip' alone is not in the lexicon and is opaque; the phrase gloss is the right instrument and the bible (§8) fixes this idiom.",
+      "evidence": "vocab rows wip (unknown, glossed) and 'in een wip' (phrase-glossed); bible narrator voice §8",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L5",
+      "block": "b092",
+      "fragment": "Een arm vol rimpels kwam over het hek",
+      "problem": "Natural Dutch; but the translator avoided the closer 'Een gerimpelde arm' only because the inflected form is not resolved by the tool, while 'gerimpeld' is known (A2).",
+      "evidence": "@notes b092; lexicon gerimpeld known A2, forms table lacks 'gerimpelde'",
+      "required_fix": "No change required. Once the form lookup is fixed, 'Een gerimpelde arm kwam over het hek' is available without a gloss.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L6",
+      "block": "b092",
+      "fragment": "Hij gaf zijn envelop af.",
+      "problem": "Only unglossed stretch word in the scene (B1 'afgeven'), inside the budget of 3; the open, waiting hand in the previous sentence makes the meaning clear.",
+      "evidence": "vocab row afgeven: stretch B1, ok-stretch; stretch budget 3, used 1",
+      "required_fix": "Keep unglossed.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L7",
+      "block": "b087",
+      "fragment": "met \\gl{verstikte}{strangled} stem",
+      "problem": "B1 participle used as a plain attributive adjective in the fixed collocation 'met verstikte stem'; glossed, so it does not count against the budget, and the plain alternatives (schor, hees) mean hoarse.",
+      "evidence": "vocab row verstikken: stretch B1, glossed; @notes b087",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b087",
+      "span": "verstikte",
+      "decision": "dismissed",
+      "reason": "A single past participle used attributively directly before its noun ('met verstikte stem'), without complements, is a plain adjective in a fixed collocation (restricted.md: 'simple adjectival participles that behave as plain adjectives are fine'). It is a vocabulary question (B1, glossed), handled in L7."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-PARTICIPLE review 0.35 'verstikte'",
+      "block": "b087",
+      "issue": "false positive",
+      "reason": "Attributive participle immediately before a noun, no complements, no comma: an adjective. Same pattern as 'gestreepte' in ch905/s02; lower the confidence below 0.3 or suppress when the participle is directly followed by its noun."
+    },
+    {
+      "ref": "grammar: 'Jou alleen maar de gewone brief sturen!'",
+      "block": "b091",
+      "issue": "false negative",
+      "reason": "A clause with no finite verb and a clause-final bare infinitive (exclamative infinitive) is a clause-replacing reduction under R-PARTICIPLE but was not flagged; report such sentences at review level."
+    },
+    {
+      "ref": "vocab: accent normalisation ('vóór')",
+      "block": "b090",
+      "issue": "false positive (normalisation)",
+      "reason": "'vóór' is not in the forms table, so the translator wrote the ambiguous 'voor 31 juli' to avoid an unknown. Strip acute accents before lookup (also raised for 'dát' in ch905/s02)."
+    },
+    {
+      "ref": "vocab: inflected adjective forms ('gerimpelde')",
+      "block": "b092",
+      "issue": "lemmatiser gap",
+      "reason": "'gerimpeld' is known (A2) but its inflected form 'gerimpelde' is not resolved; the translator wrote around it. Generate or resolve -e inflections for ADJ entries, participial adjectives included."
+    },
+    {
+      "ref": "vocab: toelatingsbrief",
+      "block": "b088",
+      "issue": "lexicon gap",
+      "reason": "Transparent compound of known parts (toelaten/toelating + brief); add 'toelating' and 'toelatingsbrief', or split compounds before lookup."
+    },
+    {
+      "ref": "vocab: wip + 'in een wip'",
+      "block": "b093",
+      "issue": "double report",
+      "reason": "The token 'wip' is listed as an unknown lemma and again inside the phrase row 'in een wip'; when a phrase gloss covers a token, drop the separate lemma row (it still counts as unknown in per-block stats)."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "scene": "ch903/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "No restricted construction survives (the whitelisted 'probeerde na te denken' is accepted) and the only hard word is the inflated 'metalen'. Remaining issues are naturalness: 'een hele magische wereld' invites the 'very magical' reading, a book that 'zei', the collocation 'uitleg voor', and a verbless fragment after the dash.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b055",
+      "fragment": "Een platte metalen plaat",
+      "problem": "'metalen' is listed hard (B2); a plain rephrase with the known noun exists.",
+      "evidence": "lexicon: metalen hard B2, metaal known A2 — regular material adjective, so should_fix rather than must_fix",
+      "required_fix": "Write 'Een platte plaat van metaal op een deur nodigt uit tot duwen.'",
+      "severity": "should_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L2",
+      "block": "b048",
+      "fragment": "een hele magische wereld",
+      "problem": "Inflected 'hele' before an adjective is read by many readers as colloquial 'very' (a very magical world), not 'whole'.",
+      "evidence": "V1 and V3 notes avoid this form for the same reason",
+      "required_fix": "Write 'een hele wereld vol magie' (or 'een complete magische wereld').",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b051",
+      "fragment": "zei een van zijn boeken",
+      "problem": "English 'one of his books had said' copied; in Dutch a book does not 'zeggen', the idiom is 'stond in'.",
+      "evidence": "EN: 'one of his books had said' vs NL: 'zei een van zijn boeken'",
+      "required_fix": "Write '\\emph{Geloof niet al je gedachten,} stond in een van zijn boeken.'",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L4",
+      "block": "b049",
+      "fragment": "Dan was er een uitleg voor de brief zonder postzegel in de brievenbus.",
+      "problem": "'uitleg voor' is not the collocation for an explanation of a fact; Dutch says 'een verklaring voor', and the long noun phrase after it is heavy.",
+      "evidence": "lexicon: verklaring known; 'uitleg' = explanation given by someone",
+      "required_fix": "Write 'Dan was er een verklaring voor de brief zonder postzegel.' or 'Dan was het duidelijk: zo kwam de brief zonder postzegel in de brievenbus.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L5",
+      "block": "b052",
+      "fragment": "—geen excuus vooraf: ‘misschien komt er geen professor’, of ‘misschien kan de professor alleen maar lepels buigen’.",
+      "problem": "Verbless fragment hung on the em dash; an A2 reader has to supply the verb and the subject.",
+      "evidence": "the dash joins a full clause to a bare noun phrase with a colon list",
+      "required_fix": "Give it a verb: '—ze bedacht vooraf geen excuus: ‘misschien komt er geen professor’, of ‘misschien kan de professor alleen maar lepels buigen’.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L6",
+      "block": "b050",
+      "fragment": "\\gl{zogenaamde}{so-called}",
+      "problem": "Gloss on a lemma the lexicon marks known A2.",
+      "evidence": "lexicon: zogenaamd known A2",
+      "required_fix": "Drop the \\gl wrapper and the @glosses line.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L7",
+      "block": "b053",
+      "fragment": "\\gl{brein}{brain}",
+      "problem": "Tool status unknown; 'brein' is a transparent cognate and is glossed, so the reader is covered.",
+      "evidence": "lexicon: brein absent, hersenen stretch B1",
+      "required_fix": "Keep; lexicon owner: add 'brein'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b049",
+      "fragment": "het universum werkt echt zo",
+      "problem": "Tool status unknown, but 'universum' is a transparent cognate already used in the glossary.",
+      "evidence": "lexicon: universum absent; glossary.json Confundus Charm note uses 'het hele universum'",
+      "required_fix": "Keep; lexicon owner: add 'universum' as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b055",
+      "fragment": "een testbare hypothese … die ga je testen",
+      "problem": "Tool rows 'testbaar' (unknown) and 'testen' (gloss-or-replace) are dismissed: testbaar = known 'test' + -baar, and 'de hypothese testen' is the fixed glossary phrase.",
+      "evidence": "lexicon: test A2 known; glossary.json hypothese: 'test the hypothesis' = 'de hypothese testen'",
+      "required_fix": "Keep both.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L10",
+      "block": "b052",
+      "fragment": "Harry merkte: hij \\emph{verwachtte} het gewoon.",
+      "problem": "Bare 'merkte:' is abrupt; the perception verb wants its object.",
+      "evidence": "V1/V3 'Harry merkte het bij zichzelf:' reads smoother",
+      "required_fix": "Optional: 'Harry merkte het bij zichzelf: hij \\emph{verwachtte} het gewoon.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L11",
+      "block": "b055",
+      "fragment": "Een handvat op een deur",
+      "problem": "A handle is attached 'aan' a door; 'op' fits the flat plate only.",
+      "evidence": "V3 uses 'een handvat aan een deur'",
+      "required_fix": "Optional: 'Een handvat aan een deur nodigt uit tot trekken.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L12",
+      "block": "b048",
+      "fragment": "een nogal verdacht soort excuus",
+      "problem": "'excuus' primarily means apology; the precise everyday word for a pretext, 'smoes', is known A2.",
+      "evidence": "lexicon: smoes known A2",
+      "required_fix": "Optional: 'een nogal verdacht soort smoes'.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L13",
+      "block": "b047",
+      "fragment": "probeerde na te denken",
+      "problem": "R-TE-INF review flag accepted: 'proberen te' is the whitelisted review chunk and the alternatives ('wilde nadenken', 'dacht na') change attempt into intention or success.",
+      "evidence": "exceptions.json grammar_whitelist: proberen te → review",
+      "required_fix": "Keep. For exceptions.json: consider promoting 'proberen te' to treat_as vocabulary; it was accepted in two of three versions.",
+      "severity": "note",
+      "category": "grammar:R-TE-INF"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-TE-INF",
+      "block": "b047",
+      "span": "na te denken",
+      "decision": "dismissed",
+      "reason": "Whitelisted review chunk 'proberen te'; alternatives shift the meaning (intention or success instead of attempt); accepted as vocabulary (see L13)."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "decision": "dismissed",
+      "reason": "'verdacht' is a plain adjective in the lexicon (known A2), attributive use; look-alike 'Hij was verbaasd'."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-PARTICIPLE",
+      "block": "b048",
+      "span": "verdacht",
+      "issue": "false positive",
+      "reason": "Attributive adjective with a lexicon ADJ entry; suppress when the token has an ADJ entry and no participle phrase around it."
+    },
+    {
+      "ref": "vocab:metalen",
+      "block": "b055",
+      "span": "metalen",
+      "issue": "false positive (level)",
+      "reason": "Regular material adjective of known 'metaal' (A2); the B2 label inflates it."
+    },
+    {
+      "ref": "vocab:universum",
+      "block": "b049",
+      "span": "universum",
+      "issue": "false positive",
+      "reason": "Transparent cognate, used in the glossary; add to lexicon."
+    },
+    {
+      "ref": "vocab:brein",
+      "block": "b053",
+      "span": "brein",
+      "issue": "false positive",
+      "reason": "Transparent cognate of 'brain'; add to lexicon (stretch at most)."
+    },
+    {
+      "ref": "vocab:testbaar",
+      "block": "b055",
+      "span": "testbare",
+      "issue": "false positive",
+      "reason": "Known stem 'test' + productive suffix -baar."
+    },
+    {
+      "ref": "vocab:testen",
+      "block": "b055",
+      "span": "testen",
+      "issue": "false positive",
+      "reason": "Part of the fixed glossary phrase 'de hypothese testen'; lowercase glossary phrase words are not counted as known."
+    },
+    {
+      "ref": "vocab:glosses",
+      "block": "b050",
+      "span": "\\gl{zogenaamde}",
+      "issue": "false negative",
+      "reason": "Gloss on a known A2 lemma is not reported as gloss bloat."
+    },
+    {
+      "ref": "vocab:known_share",
+      "block": "*",
+      "span": "known 97.6%",
+      "issue": "false negative verdict",
+      "reason": "With the cognates brein/universum/testbaar and the glossary phrase 'testen' counted as known, the scene passes the 98% threshold; the FAIL is a lexicon-gap artefact."
+    }
+  ]
+}

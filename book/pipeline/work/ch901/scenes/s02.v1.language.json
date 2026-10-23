@@ -1,0 +1,152 @@
+{
+  "scene": "ch901/s02",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Inside the profile throughout: no restricted construction, the one parser flag is a false positive, both unknown lemmas are either a cognate (sceptisch) or glossed (goochelaar), and the gloss cluster in b019 is a counting artefact (2 real glosses). Only notes: the colon template is used three times in b019, and two glosses sit on words the lexicon already marks known.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b019",
+      "fragment": "de sceptische literatuur",
+      "problem": "Lemma 'sceptisch' is not in the lexicon (status unknown).",
+      "evidence": "vocab table: sceptisch unknown, action review; transparent cognate of EN 'sceptical', the gloss language",
+      "required_fix": "No change. Lexicon owner: add 'sceptisch' (ADJ, sceptical) as known-cognate.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L2",
+      "block": "b019",
+      "fragment": "een getrainde \\gl{goochelaar}{stage magician}",
+      "problem": "Lemma 'goochelaar' is unknown to the lexicon.",
+      "evidence": "vocab table: goochelaar unknown, glossed; 'tovenaar' would erase the stage-magic vs real-magic contrast with b016",
+      "required_fix": "No change; keep the word and its gloss.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L3",
+      "block": "b019",
+      "fragment": "doet heel makkelijk iets onmogelijks na",
+      "problem": "Separable verb 'nadoen' is not in the lexicon and was not detected by the checker (resolved as 'doen').",
+      "evidence": "lexicon: no entry 'nadoen'; na and doen both known A1",
+      "required_fix": "No change: compound of two known parts, meaning (imitate) clear in context. Lexicon owner: add 'nadoen'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b019",
+      "fragment": "\\gl{goochelaar}{…} … \\gl{cold reading}{a mind-reading trick}",
+      "problem": "Checker reports a cluster of 4 glosses in the paragraph.",
+      "evidence": "checks.md Clusters b019 (glosses): cold, cold reading, goochelaar, reading; the file has two \\gl macros",
+      "required_fix": "No change: 2 glosses = gloss_per_paragraph_max. Dismissed as a counting artefact.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L5",
+      "block": "b022",
+      "fragment": "\\emph{\\gl{smeekte}{begged}} … \\gl{fluisterde}{whispered} (b018)",
+      "problem": "Both glossed words are known A2 in the lexicon; the glosses add length without helping the reader.",
+      "evidence": "lexicon: smeken known A2, fluisteren known A2; the fluisteren gloss is forced only by the exceptions.json keep entry (gloss: first)",
+      "required_fix": "Optional: drop the \\gl on 'smeekte' (keep \\emph). Keep 'fluisterde' glossed until exceptions.json is updated.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L6",
+      "block": "b019",
+      "fragment": "ik begrijp het: jij kent … / Dit weet je misschien niet: een getrainde … / Misschien leek het zo: ze konden …",
+      "problem": "Three colon-introduced clauses in one 59-token paragraph; legal, but the rewrite template becomes audible.",
+      "evidence": "naturalness / rhythm; all three sentences are inside the profile",
+      "required_fix": "Optional: replace the middle one with two plain sentences: 'Dat weet je misschien niet. Een getrainde goochelaar doet heel makkelijk iets onmogelijks na.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L7",
+      "block": "b018",
+      "fragment": "Ik heb tegen ze gezegd: jij mocht het niet weten,",
+      "problem": "The colon normally introduces direct speech, but the content keeps the backshifted 'mocht'; a hybrid of direct and reported speech.",
+      "evidence": "R-INDIRECT template applied with colon; readable as 'what I told them' in past time, so no stumble",
+      "required_fix": "No change required. If a cleaner direct-speech reading is wanted: 'Jij mocht het niet weten. Dat heb ik tegen ze gezegd,' (V1 wording).",
+      "severity": "note",
+      "category": "grammar:R-INDIRECT"
+    },
+    {
+      "id": "L8",
+      "block": "b017",
+      "fragment": "Dit is absurd!",
+      "problem": "Only stretch (B1) lemma in the scene; the translator's other suspected stretch words are all known.",
+      "evidence": "lexicon: absurd stretch B1 (cognate); literatuur A2, slikken A2, zomaar A2, tenminste A2, voorstellen A1 all known",
+      "required_fix": "No change; stretch budget is 1 of 2.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L9",
+      "block": "b019",
+      "fragment": "Ik leerde Harry lepels buigen.",
+      "problem": "'leren' + object + bare infinitive is an accusative-with-infinitive like zien/horen (R-PERCEPTION) but is not listed in restricted.md.",
+      "evidence": "restricted.md R-PERCEPTION covers zien/horen/voelen only; the alternative ('hoe je lepels buigt') is an indirect question (R-INDIRECT)",
+      "required_fix": "No change; accepted as the plainest option. Profile owner: decide whether 'leren + obj + inf' is allowed or restricted.",
+      "severity": "note",
+      "category": "grammar:R-PERCEPTION"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b019",
+      "span": "getrainde",
+      "decision": "dismissed",
+      "reason": "Attributive adjectival participle used as a plain adjective (dep amod, no complements); restricted.md: simple adjectival participles that behave as adjectives are fine; base verb 'trainen' is known A1."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-PARTICIPLE 'getrainde' (0.35)",
+      "block": "b019",
+      "reason": "Bare attributive participle with dep amod and no children is an adjective, not a participle phrase; suppress amod participles without complements."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "gloss cluster b019: 4 glosses (cold, cold reading, goochelaar, reading)",
+      "block": "b019",
+      "reason": "A multi-word \\gl{cold reading} is counted once per token plus once as a phrase; count one gloss per \\gl macro. Real count is 2."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "cold (PROPN) + reading (NOUN) as two lemma rows",
+      "block": "b019",
+      "reason": "One English term; should be one glossed phrase row."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "sceptisch unknown",
+      "block": "b019",
+      "reason": "Transparent cognate of the gloss language (sceptical); add to lexicon or to a cognate list."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "nadoen (doet … na) not listed as unknown",
+      "block": "b019",
+      "reason": "Particle 'na' not attached as compound:prt, so the token resolved to known 'doen'; 'nadoen' has no lexicon entry."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "glosses on known words (smeekte, fluisterde) not reported",
+      "block": "b022",
+      "reason": "Both lemmas are known A2; a 'gloss on known word' line would make gloss bloat visible. exceptions.json keep 'fluisteren' (gloss first) conflicts with the lexicon status."
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "scene": "ch905/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "Cleanest of the three versions: all seven grammar flags are false positives, no load finding, the ten glosses all sit on unknown, hard or world words, and the stretch budget is respected. One unknown word with a plain equivalent ('gepast', which the vocabulary tool silently mapped to 'passen') forces a round; the comma before 'die volgt uit' and the heavy topic sentence in b032 should be smoothed in the same pass.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b022",
+      "fragment": "Nieuwsgierig zijn was juist en gepast.",
+      "problem": "'gepast' (appropriate) is in no lexicon list and a plain word with the same meaning exists; the tool missed it because its form table maps 'gepast' to the verb 'passen'.",
+      "evidence": "lexicon: no entry 'gepast'; forms['gepast'] = ['passen'] (to fit), a different word; V1 and V2 use 'goed en juist'",
+      "required_fix": "'Nieuwsgierig zijn was goed en juist.'",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L2",
+      "block": "b028",
+      "fragment": "Dat is niet zomaar een willekeurige regel, die volgt uit de vorm van de kwantum-Hamiltoniaan!",
+      "problem": "Grammatically a demonstrative main clause, but the comma directly after 'regel' invites the reader to parse 'die volgt …' as a relative clause and backtrack at 'volgt'.",
+      "evidence": "R-RELCL flag dismissed as grammar (V2 order), confirmed as a readability problem; V1 uses a semicolon here",
+      "required_fix": "Separate the clauses: 'Dat is niet zomaar een willekeurige regel; die volgt uit de vorm van de kwantum-Hamiltoniaan!' or 'Dat is niet zomaar een willekeurige regel. Die regel volgt uit …'.",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b032",
+      "fragment": "Het hele idee van een \\gl{universum}{universe} uit één stuk, met wiskundig regelmatige wetten, dat spoelde nu door de wc weg; het hele begrip \\emph{natuurkunde}.",
+      "problem": "Legal but heavy: a 22-word sentence whose topic carries a gloss and two post-modifiers before the resumptive 'dat', followed by an apposition after a semicolon.",
+      "evidence": "left-dislocated topic (12 words incl. gloss) + resumptive demonstrative + semicolon apposition; no L-* threshold crossed, but the reader holds the topic open until 'dat spoelde'",
+      "required_fix": "Shorten the topic and mark the resumption: 'Het hele idee van één \\gl{universum}{universe} met wiskundig regelmatige wetten — dát spoelde nu door de wc. Het hele begrip \\emph{natuurkunde}.'",
+      "severity": "should_fix",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L4",
+      "block": "b025",
+      "fragment": "een vrouw in \\gl{gewaad}{robe}",
+      "problem": "Bare 'in gewaad' follows the 'in pyjama / in toga' pattern and is grammatical, but 'in een gewaad' is the more usual form for this noun.",
+      "evidence": "V1 and V2: 'in een gewaad'",
+      "required_fix": "Optional: 'een vrouw in een \\gl{gewaad}{robe}'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L5",
+      "block": "b024",
+      "fragment": "viel met een \\emph{bons} hard op zijn billen",
+      "problem": "'met een bons hard op' splits the manner adverb from the verb; the natural order attaches the adjective to the noun.",
+      "evidence": "idiomatic: 'viel met een harde bons op zijn billen'",
+      "required_fix": "Optional: 'viel met een harde \\emph{bons} op zijn billen'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L6",
+      "block": "b025",
+      "fragment": "“Ik moest je eerst waarschuwen.”",
+      "problem": "Past modal as counterfactual ('I should have warned you') works in colloquial Dutch, but without 'eigenlijk' a reader may first take it as a plain report ('I had to warn you first').",
+      "evidence": "V1/V2 add 'eigenlijk'; 'Het spijt me' before it carries the regret",
+      "required_fix": "Optional: 'Ik moest je eigenlijk eerst waarschuwen.'",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L7",
+      "block": "b022",
+      "fragment": "Eigenlijk, in deze situatie, \\emph{mocht} hij het ook niet laten.",
+      "problem": "A parenthetical between the fronted adverb and the inverted verb makes the reader wait for 'mocht'; light, but avoidable.",
+      "evidence": "no threshold crossed",
+      "required_fix": "Optional: 'Eigenlijk \\emph{mocht} hij het in deze situatie ook niet laten.'",
+      "severity": "note",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L8",
+      "block": "b028",
+      "fragment": "kwantum-Hamiltoniaan, unitariteit, anatomie, kattenbiochemie, neurologie, neuronen",
+      "problem": "Flagged as unknown and as clusters, but they are deliberate opaque jargon (the set-up for 'Magie.'), all transparent cognates for an English-reading learner.",
+      "evidence": "vocab rows unknown, action review; clusters b028 (anatomie, kattenbiochemie, neurologie) and paragraph; translator @notes and bible",
+      "required_fix": "No change; do not gloss. Lexicon owner: mark the jargon so it stops counting toward density and clusters.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b028",
+      "fragment": "\\gl{brein}{brain} … \\gl{universum}{universe} … \\gl{planeten}{planets}",
+      "problem": "The three non-jargon unknown/hard words are glossed exactly once at first occurrence, and 'brein' is reused unglossed four times afterwards; this is the intended pattern.",
+      "evidence": "vocab rows brein (unknown, glossed), universum (unknown, glossed), planeet (hard B2, glossed)",
+      "required_fix": "No change. Lexicon owner: add 'brein' and 'universum' as cognates.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L10",
+      "block": "b024",
+      "fragment": "Er trok een waarschuwende steek door zijn schouder",
+      "problem": "Attributive present participle used as an adjective; allowed, but 'waarschuwend' is not in the lexicon and a known noun phrase says the same.",
+      "evidence": "R-PARTICIPLE flag dismissed; lexicon waarschuwing A2",
+      "required_fix": "Optional: 'Er trok een korte steek door zijn schouder, als waarschuwing, want …'.",
+      "severity": "note",
+      "category": "grammar:R-PARTICIPLE"
+    },
+    {
+      "id": "L11",
+      "block": "b032",
+      "fragment": "De ware wetten waren overal precies hetzelfde",
+      "problem": "Inflected 'ware' (true) is literary; the learner knows 'waar' mainly as 'where' and as predicative 'true'.",
+      "evidence": "lexicon waar A1 (where, true); V1/V2 'de echte wetten'",
+      "required_fix": "Optional: 'De echte wetten waren overal precies hetzelfde'.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L12",
+      "block": "b025",
+      "fragment": "Ze klonk \\gl{oprecht}{sincere}",
+      "problem": "Hard (B2) word, but precise and already glossed; the plain alternatives lose the sense of sincere.",
+      "evidence": "lexicon oprecht hard (B2), glossed",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L13",
+      "block": "b024",
+      "fragment": "Hij struikelde over een verdwaalde stapel boeken",
+      "problem": "'struikelen' (B1) is unglossed here, unlike V1/V2; with only two unglossed stretch words in the scene (struikelen, steun) it is inside the budget and the context ('viel') explains it.",
+      "evidence": "vocab rows struikelen, steun: stretch B1, ok-stretch; budget 3",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b022",
+      "span": "beslissend",
+      "decision": "dismissed",
+      "reason": "Attributive adjective directly before the noun (lexicalised present participle of beslissen, A2); no participle phrase replacing a clause."
+    },
+    {
+      "id": "R-PLUPERF",
+      "block": "b022",
+      "span": "was juist en gepast",
+      "decision": "dismissed",
+      "reason": "'was' + two coordinated predicative adjectives; 'gepast' is an adjective here, not the participle of a lexical verb with 'zijn' as auxiliary (look-alike table: 'Hij was verbaasd'). The word itself is a vocabulary finding (L1)."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b024",
+      "span": "waarschuwende",
+      "decision": "dismissed",
+      "reason": "Present participle used attributively as an adjective before the noun, no complements; not a clause-replacing participle phrase. Plainer alternative noted in L10."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b028",
+      "span": "“U bent in een kat veranderd",
+      "decision": "dismissed",
+      "reason": "Perfectum with zijn of the intransitive 'veranderen in' (A-PERF); no agent, no 'worden'."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b028",
+      "span": ", die volgt uit de vorm van de kwantum-Hamiltoniaan",
+      "decision": "dismissed",
+      "reason": "Finite verb in second position after 'die' makes it a demonstrative main clause, not a relative clause (which would be verb-final). The comma does invite the wrong parse, so it is kept as a naturalness finding (L2)."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b032",
+      "span": ", dat spoelde nu door de wc weg",
+      "decision": "dismissed",
+      "reason": "Resumptive demonstrative after a left-dislocated topic, finite verb in second position: a legal main clause. Its heaviness is a load question (L3)."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b032",
+      "span": "vallende",
+      "decision": "dismissed",
+      "reason": "Attributive adjective in the fixed phrase 'een vallende appel'; no complements, no clause replaced."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "vocab: gepast (missing row)",
+      "block": "b022",
+      "issue": "false negative (forms table)",
+      "reason": "forms['gepast'] maps to 'passen' (to fit), so the adjective 'gepast' (appropriate), absent from the lexicon, never reached the table. Participle-shaped adjectives should be looked up as adjectives first when spaCy tags them ADJ."
+    },
+    {
+      "ref": "R-PLUPERF review 0.45 'was juist en gepast'",
+      "block": "b022",
+      "issue": "false positive",
+      "reason": "'was' + adjective(s); the rule should require a participle of a lexical verb that takes 'zijn' as perfect auxiliary, and should not fire when the participle is coordinated with a plain adjective ('juist en …')."
+    },
+    {
+      "ref": "R-PARTICIPLE (beslissend, waarschuwende, vallende)",
+      "block": "b022",
+      "issue": "false positive",
+      "reason": "A single participle used attributively right before a noun, without complements, is an adjective; suppress or keep confidence below the 0.3 ignore threshold."
+    },
+    {
+      "ref": "R-RELCL ', die volgt' / ', dat spoelde'",
+      "block": "b028",
+      "issue": "false positive as R-RELCL",
+      "reason": "Pronoun immediately followed by the finite verb is a demonstrative main clause. For the pattern 'noun, die/dat + V2' a separate punctuation note (comma invites a relative parse) would be more useful than an R-RELCL flag."
+    },
+    {
+      "ref": "R-PASSIVE 'bent … veranderd'",
+      "block": "b028",
+      "issue": "false positive",
+      "reason": "Perfectum with zijn of a mutative intransitive; a list of zijn-perfectum verbs would remove these."
+    },
+    {
+      "ref": "vocab: kwantum-hamiltoniaan, unitariteit, anatomie, kattenbiochemie, neurologie, neuron (+ clusters b028)",
+      "block": "b028",
+      "issue": "policy gap",
+      "reason": "Deliberate opaque jargon per the bible; a per-scene jargon list would keep these out of density, known-share and cluster verdicts. Compound splitting (kat + biochemie) would also help."
+    },
+    {
+      "ref": "vocab: brein, universum",
+      "block": "b032",
+      "issue": "lexicon gap",
+      "reason": "Transparent cognates absent from every list; glossed here, but should be added to the lexicon so later scenes need not gloss them."
+    },
+    {
+      "ref": "vocab: beslissend (missing row)",
+      "block": "b022",
+      "issue": "silent mapping",
+      "reason": "'beslissend' is not in the lexicon but never appears in the table (mapped to 'beslissen'); acceptable as a transparent derivation, but the mapping is the same mechanism that hid 'gepast'."
+    }
+  ]
+}

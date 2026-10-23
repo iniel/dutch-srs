@@ -1,0 +1,411 @@
+{
+  "scene": "ch905/s02",
+  "version": 2,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch905/scenes/s02.v2.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch905/s02",
+    "version": 2,
+    "tokens": 425,
+    "known_tokens": 419,
+    "known_share": 0.9859,
+    "new_lemmas_unglossed": 6,
+    "new_per_1000": 14.1,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "kwantum-hamiltoniaan",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "die volgt uit de vorm van de kwantum-Hamiltoniaan!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "loslaan",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die regel loslaat, vernietig je de unitariteit en dan krijg je FTL-signalen!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "unitariteit",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je die regel loslaat, vernietig je de unitariteit en dan krijg je FTL-signalen!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenbiochemie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "de hele anatomie van een kat, en, en al die kattenbiochemie, en hoe zit het met de neurologie?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "knipperen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [
+          "Professor Anderling knipperde met haar ogen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "neuron",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een mens —"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "oprecht",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "sincere",
+          "honest",
+          "upright"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": true,
+        "examples": [
+          "Het klonk oprecht, hoewel haar mondhoeken omhoog trokken."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "struikelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to stumble",
+          "fall over",
+          "trip over an object"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": true,
+        "examples": [
+          "Hij struikelde over een verdwaalde stapel boeken en viel met een harde klap op zijn billen."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "steun",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "support"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "het gewicht kwam hard neer, zonder steun."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verstikken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to choke",
+          "to suffocate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b026"
+        ],
+        "glossed": true,
+        "examples": [
+          "Zijn stem klonk verstikt."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "brein",
+        "status": "keep",
+        "cefr": null,
+        "en": [
+          "brain"
+        ],
+        "count": 5,
+        "blocks": [
+          "b028",
+          "b032"
+        ],
+        "glossed": true,
+        "policy": "first",
+        "action": "keep",
+        "hint": "keep (world term); gloss per policy"
+      },
+      {
+        "lemma": "geest",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "ghost",
+          "spirit",
+          "immaterial being"
+        ],
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b028",
+        "scope": "sentence",
+        "new": [
+          "loslaan",
+          "unitariteit"
+        ],
+        "text": "Als je die regel loslaat, vernietig je de unitariteit en dan krijg je FTL-signalen!"
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b022": {
+        "tokens": 40,
+        "new": [],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b024": {
+        "tokens": 53,
+        "new": [
+          "steun"
+        ],
+        "glosses": [
+          "struikelde"
+        ]
+      },
+      "b025": {
+        "tokens": 37,
+        "new": [],
+        "glosses": [
+          "gewaad",
+          "oprecht"
+        ]
+      },
+      "b026": {
+        "tokens": 14,
+        "new": [],
+        "glosses": [
+          "verstikt"
+        ]
+      },
+      "b027": {
+        "tokens": 12,
+        "new": [],
+        "glosses": [
+          "Gedaanteverwisseling",
+          "Faunaat-transformatie"
+        ]
+      },
+      "b028": {
+        "tokens": 93,
+        "new": [
+          "kattenbiochemie",
+          "kwantum-hamiltoniaan",
+          "loslaan",
+          "unitariteit"
+        ],
+        "glosses": [
+          "geest",
+          "brein"
+        ]
+      },
+      "b029": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 13,
+        "new": [],
+        "glosses": [
+          "knipperde"
+        ]
+      },
+      "b032": {
+        "tokens": 123,
+        "new": [
+          "neuron"
+        ],
+        "glosses": []
+      },
+      "b033": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch905/s02",
+    "version": 2,
+    "sentences": 53,
+    "summary": {
+      "likely": 0,
+      "review": 3,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PASSIVE",
+        "span": "Zijn stem klonk verstikt.",
+        "confidence": 0.3,
+        "note": "no worden/zijn: copular?",
+        "block": "b026",
+        "sent": 1,
+        "sentence": "Zijn stem klonk verstikt.",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "“U bent in een kat veranderd",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b028",
+        "sent": 0,
+        "sentence": "“U bent in een kat veranderd!",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", dat was een mens",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b032",
+        "sent": 11,
+        "sentence": "de geest was het brein, en het brein bestond uit neuronen, een brein, dat was een mens —",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": true,
+    "ok": false
+  }
+}

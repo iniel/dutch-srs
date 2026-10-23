@@ -1,0 +1,91 @@
+{
+  "chapter": 902,
+  "scene": "s01",
+  "index": 0,
+  "of": 3,
+  "chapter_title": "A Day of Very Low Probability",
+  "experiment": {
+    "fragment": "f2-description-present",
+    "type": "description, present tense, long sentences",
+    "variant": "V1 single prompt with the rules, no loop",
+    "source_chapter": 1,
+    "source_blocks": [
+      "b010",
+      "b014"
+    ]
+  },
+  "source_chapter": 1,
+  "words": 171,
+  "blocks": [
+    {
+      "id": "b010",
+      "kind": "para",
+      "tex": "\\lettrine{E}{very} inch of wall space is covered by a bookcase. Each bookcase has six shelves, going almost to the ceiling. Some bookshelves are stacked to the brim with hardback books: science, maths, history, and everything else. Other shelves have two layers of paperback science fiction, with the back layer of books propped up on old tissue boxes\\authorsnotefootnotemark{} or lengths of wood, so that you can see the back layer of books above the books in front. And it still isn’t enough. Books are overflowing onto the tables and the sofas and making little heaps under the windows.",
+      "text": "Every inch of wall space is covered by a bookcase. Each bookcase has six shelves, going almost to the ceiling. Some bookshelves are stacked to the brim with hardback books: science, maths, history, and everything else. Other shelves have two layers of paperback science fiction, with the back layer of books propped up on old tissue boxes or lengths of wood, so that you can see the back layer of books above the books in front. And it still isn’t enough. Books are overflowing onto the tables and the sofas and making little heaps under the windows.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 14,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b011",
+      "kind": "cmd",
+      "tex": "\\authorsnotetext{I do this in my own home.}",
+      "text": "",
+      "env": null,
+      "envs": [],
+      "translate": false,
+      "line": 15,
+      "dialogue": false,
+      "gap_before": false
+    },
+    {
+      "id": "b012",
+      "kind": "para",
+      "tex": "This is the living-room of the house occupied by the eminent Professor Michael Verres-Evans, and his wife, Mrs~Petunia Evans-Verres, and their adopted son, Harry James Potter-Evans-Verres.",
+      "text": "This is the living-room of the house occupied by the eminent Professor Michael Verres-Evans, and his wife, Mrs Petunia Evans-Verres, and their adopted son, Harry James Potter-Evans-Verres.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 17,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b013",
+      "kind": "para",
+      "tex": "There is a letter lying on the living-room table, and an unstamped envelope of yellowish parchment, addressed to \\emph{Mr~H.~Potter} in emerald-green ink.",
+      "text": "There is a letter lying on the living-room table, and an unstamped envelope of yellowish parchment, addressed to Mr H. Potter in emerald-green ink.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 19,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b014",
+      "kind": "para",
+      "tex": "The Professor and his wife are speaking sharply at each other, but they are not shouting. The Professor considers shouting to be uncivilised.",
+      "text": "The Professor and his wife are speaking sharply at each other, but they are not shouting. The Professor considers shouting to be uncivilised.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 21,
+      "dialogue": false,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "Beneath the moonlight glints a tiny fragment of silver, a fraction of a line…",
+    "(black robes, falling)",
+    "…blood spills out in litres, and someone screams a word."
+  ],
+  "context_after": [
+    "“You’re joking,” Michael said to Petunia. His tone indicated that he was very much afraid that she was serious.",
+    "“My sister was a witch,” Petunia repeated. She looked frightened, but stood her ground. “Her husband was a wizard.”",
+    "“This is absurd!” Michael said sharply. “They were at our wedding—they visited for Christmas—”"
+  ]
+}

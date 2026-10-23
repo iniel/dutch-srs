@@ -1,0 +1,65 @@
+{
+  "scene": "ch901/s03",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the four changed blocks (b015, b018, b019, b022) against the English: no fact, negation, speaker, intention or causal link changed. 'erg bang' is now the plain equivalent of 'very much afraid'; 'tegen ze gezegd' and 'je kent … niet' are meaning-neutral; the 'even if … at least' chain in b022 survives as 'kon ik niet krijgen, maar … tenminste'. All five comprehension questions remain answerable from v2. v1 had no must_fix/should_fix; M1 (note) carried forward, one new note.",
+  "previous_findings": [
+    {
+      "id": "M1",
+      "block": "b015",
+      "severity": "note",
+      "status": "carried",
+      "note": "b015 changed only 'maar al te bang' → 'erg bang'; 'Zijn toon verried hem:' is unchanged, so the observation still applies. Carried as M1."
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "What does Michael say in reply to Petunia, and what does his tone give away?",
+      "answer_from_nl": "He says 'Dat meen je niet'; his tone gives him away: he is very afraid (erg bang) — maybe she means it after all.",
+      "answerable": true
+    },
+    {
+      "q": "According to Michael, how could what Petunia saw have been faked, and what name does he give to the trick of seeming to guess someone's thoughts?",
+      "answer_from_nl": "She does not know the sceptical literature; a trained stage magician (goochelaar) easily imitates such a thing — it only seems impossible, he taught Harry to bend spoons. If it seemed they could always guess your thoughts, that is called cold reading.",
+      "answerable": true
+    },
+    {
+      "q": "What did Lily do to Petunia, and why did Lily do it?",
+      "answer_from_nl": "Lily made Petunia the way she is now (she gestures at her slim figure); because Petunia begged her, for years.",
+      "answerable": true
+    },
+    {
+      "q": "Why did Petunia beg Lily for years — what had she felt about Lily, and what did she want even though she could not have magic?",
+      "answer_from_nl": "Lily had always been prettier; Petunia had been mean to her because of that; then Lily got magic too. She begged Lily to use some of that magic on her so that she could also be pretty — she could not get Lily's magic, but she could at least be pretty.",
+      "answerable": true
+    },
+    {
+      "q": "What had Petunia told Lily and her husband about Michael, and why can't she just tell Michael what she saw?",
+      "answer_from_nl": "She had told them Michael was not allowed to know. She can't just tell him because then he will think she is— (unfinished).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b015",
+      "fragment": "Zijn toon verried hem:",
+      "problem": "'verried hem' (gave him away) adds the idea that he was trying to hide the fear, where the English 'indicated' merely reports; the implication is already present in the contrast with 'Dat meen je niet', so the effect is unchanged.",
+      "evidence": "EN: 'His tone indicated that he was very much afraid that she was serious.' vs NL (v2): 'Zijn toon verried hem: hij was erg bang. Misschien meende ze het toch.' (carried from v1 M1; 'erg bang' now matches 'very much afraid' in degree)",
+      "required_fix": "None required; keep. The 'meen je niet / meende ze het toch' echo carries the irony exactly.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b022",
+      "fragment": "Haar magie kon ik niet krijgen, maar ik kon tenminste mooi zijn.",
+      "problem": "The concessive conditional 'even if I couldn't have her magic' has become a flat statement; the fact (Petunia is no witch) and the 'at least' logic are unchanged, only the pleading 'even if' shape is gone and 'have' became 'krijgen' (get).",
+      "evidence": "EN: 'even if I couldn't have her magic, at least I could be pretty.' vs NL (v2): 'Haar magie kon ik niet krijgen, maar ik kon tenminste mooi zijn.' (v1: 'Als ik dan niet haar magie kon hebben, dan kon ik tenminste mooi zijn.')",
+      "required_fix": "None required; the fronted 'Haar magie' plus 'maar … tenminste' carries the concession, and 'krijgen' echoes 'En toen kreeg zij magie' two sentences earlier. If the editor wants the hypothetical shape back, the v1 sentence is the fallback, at the load cost named in v1 language finding L4.",
+      "severity": "note",
+      "category": "certainty"
+    }
+  ]
+}

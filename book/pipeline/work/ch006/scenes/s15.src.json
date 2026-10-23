@@ -1,0 +1,88 @@
+{
+  "chapter": 6,
+  "scene": "s15",
+  "index": 14,
+  "of": 15,
+  "chapter_title": "The Planning Fallacy",
+  "words": 57,
+  "blocks": [
+    {
+      "id": "b315",
+      "kind": "heading",
+      "tex": "\\latersection{Aftermath}",
+      "text": "Aftermath",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 622,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b316",
+      "kind": "para",
+      "tex": "Headmaster Albus Dumbledore leaned forward over his desk. His twinkling eyes peered out at Minerva. “So, my dear, how did you find Harry?”",
+      "text": "Headmaster Albus Dumbledore leaned forward over his desk. His twinkling eyes peered out at Minerva. “So, my dear, how did you find Harry?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 624,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b317",
+      "kind": "para",
+      "tex": "Minerva opened her mouth. Then she closed her mouth. Then she opened her mouth again. No words came out.",
+      "text": "Minerva opened her mouth. Then she closed her mouth. Then she opened her mouth again. No words came out.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 626,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b318",
+      "kind": "para",
+      "tex": "“I see,” Albus said gravely. “Thank you for your report, Minerva. You may go.”",
+      "text": "“I see,” Albus said gravely. “Thank you for your report, Minerva. You may go.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 628,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b319",
+      "kind": "comment",
+      "tex": "%  LocalWords:  ome zahav ahava Aaaaaaarrrgh QX31 ahemmed Sheesh",
+      "text": "",
+      "env": null,
+      "envs": [],
+      "translate": false,
+      "line": 630,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b320",
+      "kind": "comment",
+      "tex": "%  LocalWords:  Aw",
+      "text": "",
+      "env": null,
+      "envs": [],
+      "translate": false,
+      "line": 631,
+      "dialogue": false,
+      "gap_before": false
+    }
+  ],
+  "context_before": [
+    "“Look for a first-year girl named Hermione Granger on the train to Hogwarts.”",
+    "“Who is she?”",
+    "There was no answer, and when Harry turned around, Professor McGonagall was gone."
+  ],
+  "context_after": []
+}

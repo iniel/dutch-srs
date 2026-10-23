@@ -1,0 +1,116 @@
+{
+  "scene": "ch906/s03",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Events, numbers (5 procent, 17:1, ~50:1, a ton, a week), negations, the counterfactual 'should have drained' and the six-step arbitrage loop are present in source order; 'ook nog' carries the 'not only' escalation and b034 stays one deadpan sentence. Three quality losses: the jargon phrase in b031 is unpacked into an explanatory apposition, 'competent' became 'goede', and 'waarschijnlijk' in b033 has slid from the whole claim onto the time phrase.",
+  "comprehension": [
+    {
+      "q": "What exactly is the arbitrage loop Harry imagines: what do you bring in, what do you exchange it for and in which order, what do you pay, and what do you end up with?",
+      "answer_from_nl": "Breng een ton zilver binnen; wissel die om in Sikkels (en betaal 5 procent); wissel de Sikkels om voor Galjoenen; neem het goud mee naar de Dreuzelwereld; ruil het daar voor meer zilver dan je in het begin had; en herhaal.",
+      "answerable": true
+    },
+    {
+      "q": "What is the wizarding exchange rate between Sickles and Galleons, what does Harry think the Muggle gold-to-silver ratio is, and what does he notice about the size of the silver coins?",
+      "answer_from_nl": "Zeventien Sikkels tegenover één Galjoen; bij de Dreuzels ergens rond de vijftig tegen één, in elk geval niet zeventien; de zilveren munten leken ook nog eens kleiner dan de gouden.",
+      "answerable": true
+    },
+    {
+      "q": "According to Harry, what should have happened each time the Muggle ratio moved more than 5 % away from the wizarding rate, and has it actually happened?",
+      "answer_from_nl": "Elke keer moest er eigenlijk goud of zilver uit de tovenaarseconomie verdwijnen, tot niemand die koers nog kon houden; 'eigenlijk' plus 'er heeft hier ook nog nooit iemand van arbitrage gehoord' make clear it has not happened.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry not make the snide remarks he was tempted to make, and what does he conclude about the wizards' way of doing things?",
+      "answer_from_nl": "Hij wilde eigenlijk best gemene opmerkingen maken over hun primitieve financiële systeem, maar het trieste is: hun manier is waarschijnlijk beter.",
+      "answerable": true
+    },
+    {
+      "q": "What idea does Harry file away, and under which two conditions would he use it?",
+      "answer_from_nl": "Dat één goede hedgefondsmanager de hele tovenaarswereld in handen kon krijgen, waarschijnlijk binnen een week; voor als hij ooit geen geld meer had, of een weekje vrij.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b031",
+      "fragment": "De fijne details van arbitrage — prijsverschillen op de markt weghalen — begreep hier waarschijnlijk niemand.",
+      "problem": "The dense jargon phrase is unpacked into an explanatory apposition that reads as an in-text definition of arbitrage; the author offers no explanation, and the joke is the clash between the jargon and the dragon-guarded vaults.",
+      "evidence": "EN: 'The finer points of arbitraging away market inefficiencies might well be lost on them.' vs NL: 'De fijne details van arbitrage — prijsverschillen op de markt weghalen — begreep hier waarschijnlijk niemand.'",
+      "required_fix": "Render the jargon as one noun phrase in Harry's register without a defining apposition (e.g. 'de fijne details van het wegarbitreren van marktinefficiënties' or 'van arbitrage op marktinefficiënties'); if a plain phrase must stay, it should not be set off as a definition between dashes.",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M2",
+      "block": "b033",
+      "fragment": "één goede hedgefondsmanager",
+      "problem": "'competent' is a deliberate understatement (merely competent, not brilliant) in Harry's clinical register; 'goede' is everyday praise and softens the joke that it would take no genius at all.",
+      "evidence": "EN: 'one competent hedge fundie' vs NL: 'één goede hedgefondsmanager'",
+      "required_fix": "Use 'één competente hedgefondsmanager' (as in s02); the understatement is the point.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b033",
+      "fragment": "kon één goede hedgefondsmanager de hele tovenaarswereld in handen krijgen, waarschijnlijk binnen een week",
+      "problem": "In the English 'probably' hedges the whole claim (that one hedge fundie could own the wizarding world within a week); the Dutch tail placement asserts the takeover flatly and lets 'waarschijnlijk' hedge only the time span.",
+      "evidence": "EN: 'one competent hedge fundie could probably own the whole wizarding world within a week' vs NL: 'kon één goede hedgefondsmanager de hele tovenaarswereld in handen krijgen, waarschijnlijk binnen een week'",
+      "required_fix": "Move 'waarschijnlijk' into the middle field so it scopes over the predicate: 'kon één competente hedgefondsmanager waarschijnlijk binnen een week de hele tovenaarswereld in handen krijgen' (or '… bezitten').",
+      "severity": "should_fix",
+      "category": "certainty"
+    },
+    {
+      "id": "M4",
+      "block": "b029",
+      "fragment": "Uiteindelijk kon niemand die koers nog houden.",
+      "problem": "'die koers' has no antecedent noun (the paragraph speaks of 'verhouding' and 'gewicht'), and 'koers houden' can also be read as the idiom 'stay the course'; the intended sense (the 17:1 exchange rate could no longer be maintained) is recoverable from context.",
+      "evidence": "EN: 'until it became impossible to maintain the exchange rate' vs NL: 'Uiteindelijk kon niemand die koers nog houden.'",
+      "required_fix": "Optional: 'die wisselkoers nog houden' or 'die koers nog handhaven' names the rate unambiguously; acceptable as is.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M5",
+      "block": "b029",
+      "fragment": "goud of zilver uit de tovenaarseconomie verdwijnen",
+      "problem": "'drained' is a flow out of one economy into the other; 'verdwijnen' (vanish) drops the flow image, though the direction survives through 'uit de tovenaarseconomie'.",
+      "evidence": "EN: 'either gold or silver should have drained from the wizarding economy' vs NL: 'moest er eigenlijk goud of zilver uit de tovenaarseconomie verdwijnen'",
+      "required_fix": "Optional: 'wegstromen' keeps the image; 'verdwijnen' is acceptable.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b031",
+      "fragment": "moest je zelf naar binnen",
+      "problem": "'zelf' is a small added emphasis; the English simply says you had to go in. It fits the point being made (crudity), so no meaning is changed.",
+      "evidence": "EN: 'where you had to go in and take coins out of your vault' vs NL: 'moest je zelf naar binnen en munten uit je kluis halen'",
+      "required_fix": "Optional: drop 'zelf'; acceptable as is.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M7",
+      "block": "b031",
+      "fragment": "Eigenlijk wilde hij best gemene opmerkingen maken",
+      "problem": "'had been tempted' is a past temptation he held back from; 'Eigenlijk wilde hij best' reads as a present inclination ('he'd actually quite like to'), with 'best' adding a degree the source lacks. The restraint is still carried by the ellipsis and the 'Maar' of b032; 'gemene' is also a notch nastier than 'snide'.",
+      "evidence": "EN: 'He'd been tempted to make snide remarks about the crudity of their financial system…' vs NL: 'Eigenlijk wilde hij best gemene opmerkingen maken over hun primitieve financiële systeem…'",
+      "required_fix": "Optional: 'Even wilde hij spottende opmerkingen maken …' keeps the temptation brief and past; acceptable as is.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M8",
+      "block": "b033",
+      "fragment": "of een weekje vrij",
+      "problem": "The diminutive adds a wink the deadpan English does not have and loosens the exact 'week / week' echo that structures the joke ('within a week … had a week free'); 'een weekje vrij' is however the normal Dutch collocation.",
+      "evidence": "EN: 'in case he ever ran out of money, or had a week free' vs NL: 'voor als hij ooit geen geld meer had, of een weekje vrij'",
+      "required_fix": "Optional: 'of een week vrij' keeps the echo exact; acceptable as is.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

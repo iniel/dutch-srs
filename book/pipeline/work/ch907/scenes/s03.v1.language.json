@@ -1,0 +1,265 @@
+{
+  "scene": "ch907/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "Both grammar flags are plain adjectives (`verbaasde` is even named as fine in restricted.md) and the load finding is a segmentation artefact. Two must_fix: the B2 dialogue-tag verb `kaatste terug` and the disjointed `Het is goed, zo’n ontmoeting: iemand kent zijn plaats.` The literary starting point shows in the load: a 22-word opening sentence with an 11-word subject, an em-dash aside that splits subject and verb in b062, and two calques (`rekten zijn lippen zich uit`, `Mijn hart valt flauw`); `zo nu en dan` is a B1 phrase the tool did not see and pushes the stretch budget over. Vocabulary choices are otherwise the best of the three (no gloss on `eer`, `handdruk` glossed, `schenkt` for the smile).",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b065",
+      "fragment": "\\gl{kaatste}{lobbed} de andere jongen terug",
+      "problem": "`terugkaatsen` is a B2 verb used once as a dialogue tag; a plain verb carries the same information.",
+      "evidence": "lexicon: kaatsen hard B2 (glossed); one-off narrator flourish, not a world term and not recurring",
+      "required_fix": "Replace the tag with `antwoordde de andere jongen, met een glimlach` and drop the gloss (remove the `kaatste terug` line from @glosses).",
+      "severity": "must_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L2",
+      "block": "b061",
+      "fragment": "Het is goed, zo’n ontmoeting: iemand kent zijn plaats.",
+      "problem": "The colon sentence is disjointed: `zo’n ontmoeting` has nothing to point at, and `iemand kent zijn plaats` as a bare main clause reads as a statement about some unknown person, not as 'someone who knows his place'; a native reader re-reads it.",
+      "evidence": "NL: 'Het is goed, zo’n ontmoeting: iemand kent zijn plaats.' — no Dutch ellipsis pattern supports this",
+      "required_fix": "Use one allowed als-clause (A-SUB): `Het is fijn als iemand zijn plaats kent.`",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L3",
+      "block": "b055",
+      "fragment": "Naast Harry was een bleke jongen met een spits gezicht en \\emph{supercool} witblond haar in de laatste fase van hetzelfde proces, zo leek het.",
+      "problem": "22 words in one clause; the reader must hold `was` across an 11-word subject before the predicate `in de laatste fase` arrives, and `zo leek het` trails after everything.",
+      "evidence": "L-LEN soft limit 20; copula and predicate separated by 11 words (L-FRAME spirit)",
+      "required_fix": "Split: `Naast Harry stond een bleke jongen met een spits gezicht en \\emph{supercool} witblond haar. Hij was, zo leek het, in de laatste fase van hetzelfde proces.`",
+      "severity": "should_fix",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L4",
+      "block": "b062",
+      "fragment": "Een van de assistentes—zij herkende Harry eerder al, zo leek het—maakte een zacht, \\gl{verstikt}{choked} geluid.",
+      "problem": "An em-dash aside with two finite verbs of its own sits between the subject and its verb; three finite verbs and an interrupted main clause is the hardest pattern for this profile even though no subordinator is used.",
+      "evidence": "finite verbs herkende / leek / maakte = 3 (limit); subject `Een van de assistentes` is 9 words away from `maakte`",
+      "required_fix": "Two sentences in time order: `Een van de assistentes herkende Harry eerder al, zo leek het. Zij maakte nu een zacht, \\gl{verstikt}{choked} geluid.`",
+      "severity": "should_fix",
+      "category": "load:L-NEST"
+    },
+    {
+      "id": "L5",
+      "block": "b061",
+      "fragment": "Toen rekten zijn lippen zich uit tot een \\gl{zelfvoldane}{smug} glimlach.",
+      "problem": "`zich uitrekken` is what a body or a cat does; applied to lips it is a word-for-word copy of 'his lips stretched'.",
+      "evidence": "NL 'rekten zijn lippen zich uit' vs idiomatic 'er kwam een glimlach op zijn lippen'",
+      "required_fix": "`Toen kwam er een brede, \\gl{zelfvoldane}{smug} glimlach op zijn lippen.` (presentational er, A-ER-NEW)",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L6",
+      "block": "b063",
+      "fragment": "Mijn hart valt flauw.",
+      "problem": "`flauwvallen` is something people do; 'my heart faints' is a literal rendering of 'swoon' that a Dutch reader hears as odd rather than as Harry's purple prose.",
+      "evidence": "NL 'Mijn hart valt flauw.' — no Dutch collocation; `mijn hart smelt` is the idiom with the same flirty ring b064 needs",
+      "required_fix": "`Mijn hart smelt.`",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L7",
+      "block": "b055",
+      "fragment": "Zo nu en dan tikte ze",
+      "problem": "`zo nu en dan` is a B1 phrase in the lexicon (not surfaced by the tool); with it the unglossed stretch items are 4 (frustratie, babbelen, verdomme, zo nu en dan) against a budget of 3, and `af en toe` (A1) means exactly the same.",
+      "evidence": "lexicon phrases: 'zo nu en dan' stretch B1; 'af en toe' known A1",
+      "required_fix": "`Af en toe tikte ze met haar \\gl{toverstok}{wand} tegen een hoek van het gewaad, …`",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L8",
+      "block": "b059",
+      "fragment": "met een licht verbaasde blik",
+      "problem": "`licht` as 'slightly' is a known word in a new sense; `een beetje verbaasd` is more transparent, but the phrase is natural and `verbaasd` is A1.",
+      "evidence": "lexicon: licht known A2 (ADJ/NOUN 'light'); flag R-PARTICIPLE dismissed",
+      "required_fix": "Optional: `zei Draco Malfidus, een beetje verbaasd.`",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b057",
+      "fragment": "besloot hij: de maat is vol.",
+      "problem": "Idiom of known words whose meaning is not compositional ('the measure is full'); the colon and `besloot` carry the reader, but `genoeg is genoeg` is transparent.",
+      "evidence": "lexicon: maat A1, vol A2; phrase not in the lexicon",
+      "required_fix": "Keep if the meaning reviewer is happy; otherwise `genoeg is genoeg`.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L10",
+      "block": "b060",
+      "fragment": "meestal rond dit punt",
+      "problem": "`rond dit punt` for a moment in time is a mild calque of 'at around this point'.",
+      "evidence": "NL 'kwamen de tranen meestal rond dit punt'",
+      "required_fix": "Optional: `Bij de anderen kwamen de tranen meestal op dit moment.`",
+      "severity": "note",
+      "category": "calque"
+    },
+    {
+      "id": "L11",
+      "block": "b066",
+      "fragment": "kon maar moeilijk zijn volgende tekst bedenken",
+      "problem": "`maar` in its 'only' sense and `tekst` in the actor's sense are known words in new senses; natural Dutch, slightly less transparent than `kon niet meteen een volgende zin bedenken`.",
+      "evidence": "lexicon: maar A1 'but'; tekst A1 'text'",
+      "required_fix": "Optional: `Harry kon niet meteen zijn volgende zin bedenken.`",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L12",
+      "block": "b055",
+      "fragment": "bekeek de jongen met het witte haar en zijn \\gl{gewaad}{robe} met een patroon als een schaakbord",
+      "problem": "Two `met`-phrases in a row; readable, but the separate sentence of V1 (`Het gewaad had een patroon van vierkanten, net als een schaakbord.`) is lighter.",
+      "evidence": "20 words, one clause",
+      "required_fix": "Optional, only if b055 is reworked anyway.",
+      "severity": "note",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L13",
+      "block": "b066",
+      "fragment": "tot een \\gl{handdruk}{handshake}",
+      "problem": "B2 in the lexicon but a transparent compound (`hand` + `druk`), glossed; b066 carries two glosses, the limit.",
+      "evidence": "vocab table: handdruk hard B2, glossed",
+      "required_fix": "Keep.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L14",
+      "block": "b055",
+      "fragment": "\\emph{supercool} witblond haar",
+      "problem": "Flagged unknown, but `super` (A2) + the loanword `cool` is transparent, and the bible fixes 'awesomecool' → *supercool*.",
+      "evidence": "vocab table: supercool unknown; bible ch 5 decision",
+      "required_fix": "None. Lexicon owner: add `supercool` as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L15",
+      "block": "b055",
+      "fragment": "witblond",
+      "problem": "Flagged unknown; compound of `wit` (A1) + `blond` (A1).",
+      "evidence": "vocab table: witblond unknown (tagged NOUN)",
+      "required_fix": "None. Lexicon owner: add `witblond` as known; the b055 cluster disappears together with L14.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L16",
+      "block": "b064",
+      "fragment": "als flirten met Draco of zo",
+      "problem": "Flagged unknown; international loanword, transparent for the reader.",
+      "evidence": "vocab table: flirten unknown",
+      "required_fix": "None. Lexicon owner: add `flirten` as known.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L17",
+      "block": "b061",
+      "fragment": "\\gl{zelfvoldane}{smug} glimlach",
+      "problem": "Not in the lexicon, but it is Draco's recurring smile; the plain words (`tevreden`, `trots`) lose the smugness.",
+      "evidence": "glossed; recurs in later chapters",
+      "required_fix": "Keep glossed (first occurrence per chapter).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L18",
+      "block": "b063",
+      "fragment": "\\gl{verrukt}{delighted} … Gewoon onuitsprekelijk verrukt",
+      "problem": "Rare word, but it is the mock-courtly register the joke needs; `dolblij` (A2) is the plain fallback if a gloss slot is ever needed.",
+      "evidence": "glossed once, repeated once; b063 has exactly two glosses",
+      "required_fix": "Keep. (The tool counted it twice, as `verrukt` and `verrukken`.)",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L19",
+      "block": "b063",
+      "fragment": "\\gl{onuitsprekelijk}{unutterably}",
+      "problem": "Rare, but it is the joke word and `on-uit-spreek-lijk` is decodable from known parts.",
+      "evidence": "glossed",
+      "required_fix": "Keep glossed.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L20",
+      "block": "b066",
+      "fragment": "wilt u zich dan misschien \\gl{verwaardigen}{deign} tot een \\gl{handdruk}{handshake}",
+      "problem": "Very formal reflexive verb + `tot`; heavy but legal (modal + bare infinitive), and it is the 'deign' joke with no plain equivalent of the same register. `Niets wens ik liever:` after it is fronted-object inversion (A-INV), fine.",
+      "evidence": "glossed; no te-infinitive",
+      "required_fix": "Keep glossed.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L21",
+      "block": "b057",
+      "fragment": "frustratie (b057), babbelde (b063), Verdomme (b066); verstikt (b062) and onderdanen (b065) glossed",
+      "problem": "B1 lemmas; with `zo nu en dan` replaced (L7) the three unglossed ones fill the stretch budget of 3 exactly.",
+      "evidence": "vocab table ok-stretch / glossed; `Verdomme` is B1 but missing from the table",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L22",
+      "block": "b055",
+      "fragment": "een spits gezicht",
+      "problem": "The lexicon knows `spits` as a noun; the adjective 'pointed' is a known word in a new sense, and the standard word for Draco's face.",
+      "evidence": "lexicon: spits known A2 NOUN",
+      "required_fix": "Keep. Lexicon owner: add the ADJ sense.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b059",
+      "span": "verbaasde",
+      "decision": "dismissed",
+      "reason": "`verbaasd` is a lexicon adjective (A1) used attributively in `een licht verbaasde blik`; restricted.md names it explicitly as fine. No clause is being replaced."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b066",
+      "span": "volgende",
+      "decision": "dismissed",
+      "reason": "`volgende` is the ordinary adjective 'next' (A1), not a participle phrase."
+    },
+    {
+      "id": "L-VERBS",
+      "block": "b066",
+      "span": "Nou ja, iedereen wilde toch de hand van Harry Potter schudden, dus — “Als mijn kleren klaar zijn, meneer, wilt u zich dan misschien verwaardigen tot een handdruk?",
+      "decision": "dismissed",
+      "reason": "The tool merged the narration (`…schudden, dus—`, 1 finite verb) with the quoted question (2 finite verbs, one als-clause) across the em-dash; each unit is within the limits. The dash is in the source."
+    }
+  ],
+  "tool_feedback": [
+    {"item": "grammar R-PARTICIPLE b059 `verbaasde` (0.60)", "type": "false positive", "reason": "amod participle whose lemma is a lexicon ADJ (`verbaasd`, A1) and which restricted.md lists as fine; skip amod participles that are lexicon adjectives, or lower them below ignore_confidence."},
+    {"item": "grammar R-PARTICIPLE b066 `volgende`", "type": "false positive", "reason": "`volgend(e)` is a lexicalised adjective; add it (with `vorige`, `komende`) to a skip list."},
+    {"item": "load L-VERBS b066", "type": "artefact", "reason": "sentence segmentation joins narration and the quoted sentence across `dus—“`; split at an opening quote after a dash."},
+    {"item": "load b062 em-dash aside not reported", "type": "false negative", "reason": "`Een van de assistentes—zij herkende …, zo leek het—maakte …` has 3 finite verbs and a 9-word subject–verb gap; a parenthetical main clause between subject and verb deserves an L-NEST/L-FRAME style finding."},
+    {"item": "vocab `zo nu en dan` (b055) not surfaced", "type": "false negative", "reason": "the phrase is stretch B1 in lexicon.phrases, but vocab_check only applies phrases with status known; stretch/hard phrases should be reported as lemmas."},
+    {"item": "vocab supercool / witblond / flirten (unknown)", "type": "lexicon gap", "reason": "transparent compound/loanwords; they alone produce the density FAIL (14.2/1000) and the b055 cluster — after dismissal 2 unglossed new lemmas = 5.7/1000, within limits."},
+    {"item": "vocab verrukt + verrukken", "type": "double count", "reason": "the same two tokens are listed as ADJ `verrukt` and VERB `verrukken`."},
+    {"item": "vocab handdruk hard B2", "type": "status doubt", "reason": "transparent compound of `hand` + `druk` (both A1); B2 overstates it, though glossing is still right."},
+    {"item": "vocab `Verdomme` (b066) and `Oeps` (b064) absent from the table", "type": "false negative", "reason": "sentence-initial capital → spaCy PROPN → counted as a name; `verdomme` is stretch B1 and counts against the budget, `oeps` is not in the lexicon at all (add as known interjection)."},
+    {"item": "vocab `kaatste … terug` → lemma `kaatsen`", "type": "lemmatisation", "reason": "separable `terugkaatsen` not recomposed; the @glosses line names `terugkaatsen`, so gloss matching worked by surface form only."},
+    {"item": "vocab `spits` ADJ, `licht` ADV, `maar` ADV, `tekst` (script sense)", "type": "sense gap", "reason": "all matched a known entry of a different sense; the tool cannot see known-word-new-meaning cases (idea.md §4), so the reviewer has to."}
+  ]
+}

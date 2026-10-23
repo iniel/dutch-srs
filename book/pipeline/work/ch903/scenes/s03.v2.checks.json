@@ -1,0 +1,407 @@
+{
+  "scene": "ch903/s03",
+  "version": 2,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch903/scenes/s03.v2.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch903/s03",
+    "version": 2,
+    "tokens": 301,
+    "known_tokens": 296,
+    "known_share": 0.9834,
+    "new_lemmas_unglossed": 3,
+    "new_per_1000": 10.0,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "ergheid",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": true,
+        "examples": [
+          "Mam maakte een grapje, loog of was gek, in stijgende volgorde van ergheid."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "vermeend",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b050"
+        ],
+        "glossed": true,
+        "examples": [
+          "En dat was al zo vanaf de eerste blik op de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "weerlegging",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": true,
+        "examples": [
+          "Ze beschermde zichzelf niet tegen weerlegging — ze bedacht van tevoren geen excuses voor als er geen professor kwam."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "waanzin",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "delusion"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": true,
+        "examples": [
+          "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dit:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "onwaarschijnlijk",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "improbable",
+          "unlikely",
+          "implausible"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dit:"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "bizar",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bizarre"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar die bizarre zekerheid…"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "opmerken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to remark",
+          "notice"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry merkte het bij zichzelf:"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "brein",
+        "status": "keep",
+        "cefr": null,
+        "en": [
+          "brain"
+        ],
+        "count": 2,
+        "blocks": [
+          "b053",
+          "b054"
+        ],
+        "glossed": false,
+        "policy": "first",
+        "action": "keep-gloss-needed",
+        "hint": "keep, but add \\gl{..}{..} at first occurrence in this chapter"
+      },
+      {
+        "lemma": "bewijs",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "proof"
+        ],
+        "count": 1,
+        "blocks": [
+          "b048"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b047": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b048": {
+        "tokens": 43,
+        "new": [],
+        "glosses": [
+          "bewijs"
+        ]
+      },
+      "b049": {
+        "tokens": 53,
+        "new": [
+          "onwaarschijnlijk"
+        ],
+        "glosses": [
+          "ergheid",
+          "waanzin"
+        ]
+      },
+      "b050": {
+        "tokens": 31,
+        "new": [],
+        "glosses": [
+          "vermeende"
+        ]
+      },
+      "b051": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b052": {
+        "tokens": 65,
+        "new": [
+          "bizar",
+          "opmerken"
+        ],
+        "glosses": [
+          "toverstok",
+          "weerlegging"
+        ]
+      },
+      "b053": {
+        "tokens": 19,
+        "new": [
+          "brein"
+        ],
+        "glosses": [
+          "voorspellinkje"
+        ]
+      },
+      "b054": {
+        "tokens": 22,
+        "new": [
+          "brein"
+        ],
+        "glosses": []
+      },
+      "b055": {
+        "tokens": 37,
+        "new": [],
+        "glosses": [
+          "hypothese"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch903/s03",
+    "version": 2,
+    "sentences": 34,
+    "summary": {
+      "likely": 1,
+      "review": 7,
+      "load": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-TE-INF",
+        "span": "na te denken",
+        "confidence": 0.5,
+        "note": "frequent chunk 'proberen te' — reviewer decides",
+        "block": "b047",
+        "sent": 0,
+        "sentence": "Hij sloot de deur achter zich en probeerde na te denken.",
+        "level": "review",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verdacht",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b048",
+        "sent": 5,
+        "sentence": "Dat leek een nogal verdacht soort excuus.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "stijgende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b049",
+        "sent": 1,
+        "sentence": "Mam maakte een grapje, loog of was gek, in stijgende volgorde van ergheid.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat de verklaring: zo kwam hij",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b049",
+        "sent": 3,
+        "sentence": "dat de verklaring: zo kwam hij zonder postzegel in de brievenbus.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was een deel van Harry helemaal overtuigd",
+        "confidence": 0.45,
+        "note": "",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een deel van Harry helemaal overtuigd:",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "tegen weerlegging — ze bedacht van",
+        "confidence": 0.3,
+        "note": "no worden/zijn: copular?",
+        "block": "b052",
+        "sent": 6,
+        "sentence": "Ze beschermde zichzelf niet tegen weerlegging — ze bedacht van tevoren geen excuses voor als er geen professor kwam.",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "bedacht",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b052",
+        "sent": 6,
+        "sentence": "Ze beschermde zichzelf niet tegen weerlegging — ze bedacht van tevoren geen excuses voor als er geen professor kwam.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-OF",
+        "span": "Of voor als de professor alleen maar",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b052",
+        "sent": 7,
+        "sentence": "Of voor als de professor alleen maar lepels kon buigen.",
+        "level": "ignored",
+        "hint": "ask the question directly: Was het waar? Hij wist het niet."
+      },
+      {
+        "id": "R-RELCL",
+        "span": ", die ga je testen",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b055",
+        "sent": 2,
+        "sentence": "En een testbare hypothese, die ga je testen.",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 10,
+        "limit": 8,
+        "span": "beschermde zichzelf niet tegen weerlegging — ze bedacht van tevoren geen excuses voor",
+        "block": "b052",
+        "sent": 6,
+        "sentence": "Ze beschermde zichzelf niet tegen weerlegging — ze bedacht van tevoren geen excuses voor als er geen professor kwam.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "scene": "ch907/s03",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the six changed blocks (b055, b060, b061, b062, b063, b065) against the English: no fact, negation, speaker, intention, tense or causal link changed and nothing was explained away. The one v1 should_fix (M1, Draco's clipped maxim) is fixed with the wording offered in v1 ('Het is fijn als iemand zijn plaats kent.'); the three optional notes (M2 'Mijn hart smelt', M3 'ongeveer hetzelfde proces', M4 'U \\emph{bent} het!') were all applied. All five comprehension questions remain answerable from v2. Three new notes, none requiring action: the presentational 'stond' in b055, the two-sentence form of the b062 aside, and the flat dialogue tag 'antwoordde' that replaced 'lobbed back' at the language reviewer's request.",
+  "previous_findings": [
+    {"id": "M1", "block": "b061", "severity": "should_fix", "status": "fixed", "note": "'Het is goed, zo’n ontmoeting: iemand kent zijn plaats.' → 'Het is fijn als iemand zijn plaats kent.' — one fluent sentence in Draco's affected register, third person, Harry meant but not addressed; this is the first wording offered in v1 (without the 'Aangenaam.' prefix, which the translator declined as a new unglossed lemma). 'to meet' is left to the situation; the sneer survives intact."},
+    {"id": "M2", "block": "b063", "severity": "note", "status": "fixed", "note": "'Mijn hart valt flauw.' → 'Mijn hart smelt.' — the flirtatious ring that b064's 'Oeps … als flirten' comments on is back."},
+    {"id": "M3", "block": "b055", "severity": "note", "status": "fixed", "note": "'hetzelfde proces' → 'ongeveer hetzelfde proces'; the narrator's hedge of 'a similar process' is restored."},
+    {"id": "M4", "block": "b060", "severity": "note", "status": "fixed", "note": "'U bent het \\emph{echt}!' → 'U \\emph{bent} het!'; stress on the verb as in 'It \\emph{is} you!', no added word."}
+  ],
+  "comprehension": [
+    {
+      "q": "Why does Harry suddenly start gushing over the pale boy he has only just met?",
+      "answer_from_nl": "He can already predict the rest of the conversation and decides in a half-second of frustration: 'de maat is vol' — he turns the tables and starts fawning himself (b057–b058).",
+      "answerable": true
+    },
+    {
+      "q": "Is Harry's admiration real? Where does he get his lines — the tears, the handshake — from?",
+      "answer_from_nl": "No, it is an act: he would like tears to come but it does not work, and 'Bij de anderen kwamen de tranen meestal op dit punt' (b060); he asks for the handshake because 'iedereen wilde toch de hand van Harry Potter schudden' (b066). He is imitating his own admirers.",
+      "answerable": true
+    },
+    {
+      "q": "How does Draco read Harry's behaviour, and what does he believe it tells him about how he will be treated?",
+      "answer_from_nl": "First he is confused ('een beetje in de war'), then a broad smug smile: 'Het is fijn als iemand zijn plaats kent.' (b061). He is pleased with this news: he will get the proper respect for the family Malfidus, and he smiles like the highest king at the least, honest but poor, of his subjects (b065).",
+      "answerable": true
+    },
+    {
+      "q": "Who else notices what Harry is doing, and how does she react?",
+      "answer_from_nl": "One of the assistants — the one who, it seemed, had recognised Harry earlier — now makes a soft, choked sound (b062).",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry think 'Oops' after the line about his heart?",
+      "answer_from_nl": "Because 'Mijn hart smelt.' may have sounded a little odd, like flirting with Draco (b063–b064).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b055",
+      "fragment": "Naast Harry stond een bleke jongen",
+      "problem": "'stond' adds a posture the English leaves implicit; the source only says the boy 'seemed to be going through the final stages of a similar process'.",
+      "evidence": "EN: 'Next to Harry, a pale young boy … seemed to be going through the final stages of a similar process.' vs NL (v2): 'Naast Harry stond een bleke jongen … haar. Hij was, zo leek het, in de laatste fase van ongeveer hetzelfde proces.' (v1 had 'was')",
+      "required_fix": "None required. In a robe fitting standing is the only reading, and presentational 'stond' is the idiomatic Dutch frame that the split asked for by language L3 needed; the hedge 'zo leek het' and 'ongeveer' are both kept.",
+      "severity": "note",
+      "category": "addition"
+    },
+    {
+      "id": "M2",
+      "block": "b062",
+      "fragment": "Een van de assistentes herkende Harry eerder al, zo leek het. Ze maakte nu een zacht, \\gl{verstikt}{choked} geluid.",
+      "problem": "The identifying aside ('the one who’d seemed to recognise Harry') has become a narrative statement of its own, so the English single event reads as two statements; 'nu' is added to carry the sequence.",
+      "evidence": "EN: 'One of the assistants, the one who’d seemed to recognise Harry, made a muffled choking sound.' vs NL (v2) two sentences; v1 had the em-dash aside inside one sentence.",
+      "required_fix": "None required. Order (identification → sound), hedge ('zo leek het'), anteriority ('eerder al') and the callback to the assistant from the earlier Malkin paragraph all survive; 'nu' adds no information beyond the sequence.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M3",
+      "block": "b065",
+      "fragment": "antwoordde de andere jongen, met een glimlach",
+      "problem": "'lobbed back' — the narrator's tennis image, Draco returning Harry's serve in the game of flattery — is flattened to a neutral reporting verb.",
+      "evidence": "EN: 'the other boy lobbed back, accompanied by a smile such as …' vs NL (v2): 'antwoordde de andere jongen, met een glimlach.' (v1: '\\gl{kaatste}{lobbed} de andere jongen terug', replaced on language finding L1, B2 verb)",
+      "required_fix": "None required; the loss was accepted when the B2 verb was dropped, and the king simile that follows carries the tone. Optional, if a trace of the volley is wanted inside the profile: 'gaf de andere jongen terug, met een glimlach' (teruggeven, A2, in its 'retort' sense).",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

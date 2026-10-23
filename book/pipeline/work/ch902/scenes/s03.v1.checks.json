@@ -1,0 +1,270 @@
+{
+  "scene": "ch902/s03",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch902/scenes/s03.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch902/s03",
+    "version": 1,
+    "tokens": 160,
+    "known_tokens": 156,
+    "known_share": 0.975,
+    "new_lemmas_unglossed": 2,
+    "new_per_1000": 12.5,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "pocket",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": true,
+        "examples": [
+          "Op andere planken staan twee rijen pockets met sciencefiction."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "smaragdgroene",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": true,
+        "examples": [
+          "Op de envelop staat in smaragdgroene inkt:"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "eminent",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "eminent",
+          "distinguished"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b012"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dit is de woonkamer van het huis van de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun adoptiezoon, Harry James Po"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "boekenkast",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bookcase"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Elke centimeter muur verdwijnt achter een boekenkast.",
+          "Iedere boekenkast heeft zes planken en komt bijna tot aan het plafond."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "volstaan",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to suffice"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Sommige planken staan helemaal vol met gebonden boeken: wetenschap, wiskunde, geschiedenis en al het andere."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "overstromen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to overflow"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "De boeken stromen over naar de tafels en de banken en maken kleine stapels onder de ramen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "binden",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to tie"
+        ],
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "perkament",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "beschaafd",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "civilized",
+          "cultured"
+        ],
+        "count": 1,
+        "blocks": [
+          "b014"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b010": {
+        "tokens": 88,
+        "new": [
+          "boekenkast",
+          "overstromen",
+          "volstaan"
+        ],
+        "glosses": [
+          "gebonden",
+          "pockets"
+        ]
+      },
+      "b012": {
+        "tokens": 25,
+        "new": [],
+        "glosses": [
+          "eminente"
+        ]
+      },
+      "b013": {
+        "tokens": 27,
+        "new": [],
+        "glosses": [
+          "perkament",
+          "smaragdgroene"
+        ]
+      },
+      "b014": {
+        "tokens": 20,
+        "new": [],
+        "glosses": [
+          "onbeschaafd"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch902/s03",
+    "version": 1,
+    "sentences": 13,
+    "summary": {
+      "likely": 0,
+      "review": 1,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gebonden",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b010",
+        "sent": 2,
+        "sentence": "Sommige planken staan helemaal vol met gebonden boeken: wetenschap, wiskunde, geschiedenis en al het andere.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": true,
+    "ok": false
+  }
+}

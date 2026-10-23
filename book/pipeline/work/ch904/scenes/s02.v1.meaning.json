@@ -1,0 +1,66 @@
+{
+  "scene": "ch904/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, told the same way: every event, emphasis, tense switch and the Harry-versus-Dad motive survive, and all five comprehension questions are answerable from the Dutch alone. Of the three versions this one renders the b076 understatement most exactly. Notes only: the conditional 'als' in b080 and two slightly softened images (b085, b086).",
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b080",
+      "fragment": "als hij het zo bekeek",
+      "problem": "'now that he thought about it' is a realisation happening at this moment; 'als hij het zo bekeek' reads as conditional or habitual ('when he looked at it that way'), so the dawning of the embarrassment is a shade weaker. The self-deprecating irony survives.",
+      "evidence": "EN: 'was…actually pretty embarrassing, now that he thought about it' vs NL: 'Dat was…eigenlijk best gênant, als hij het zo bekeek.'",
+      "required_fix": "No change required. If revised, keep the 'now' of the realisation (e.g. 'nu hij het zo bekeek').",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M2",
+      "block": "b085",
+      "fragment": "als uit het vuur",
+      "problem": "The simile shifts from the hand itself being on fire to the hand being pulled out of a fire; the reflex and the comedy survive, the image is slightly different.",
+      "evidence": "EN: 'pulled down his hand like it was on fire' vs NL: 'trok zijn hand omlaag als uit het vuur'",
+      "required_fix": "No change required. If revised, the sense to keep is 'his hand was burning', not 'he pulled it out of a fire'.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M3",
+      "block": "b086",
+      "fragment": "keek over de schutting van de buren",
+      "problem": "'peered' (a curious, effortful look over the fence) is flattened to a neutral 'keek'; 'grizzled' is dropped. The gesture is still a gesture, only less vivid.",
+      "evidence": "EN: 'An old woman's face peered out from above the neighbouring fence, grizzled grey hair escaping' vs NL: 'Het gezicht van een oude vrouw keek over de schutting van de buren. Grijze haren ontsnapten'",
+      "required_fix": "No change required. If revised, a verb that keeps the peering (e.g. 'gluurde', 'tuurde') would be closer; dropping 'grizzled' is acceptable.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "Why does Harry realise, only as he goes into the garden, that an owl actually coming for the letter would be a problem for him?",
+      "answer_from_nl": "Als er echt een uil kwam en de brief greep, kon hij dat niet zo makkelijk aan pap vertellen — telling Dad would not be easy.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry's brain seem to believe, and how does Harry dismiss it?",
+      "answer_from_nl": "Zijn hersenen geloven blijkbaar van wel (that an owl can really come); hij zegt dat dat kan niet echt gebeuren, toch? en dat het niet uitmaakt: als er echt een uil komt, heeft hij veel belangrijkere zorgen dan de mening van pap.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry decide to shout anyway, even though he finds it embarrassing?",
+      "answer_from_nl": "Nee. Ik ben beter dan pap. Ik zal de wetenschappelijke methode gebruiken, ook als ik me dan dom voel — he will not be like Dad, who refused to test.",
+      "answerable": true
+    },
+    {
+      "q": "How does Harry's first attempt to call out go, and what does he do next?",
+      "answer_from_nl": "“Brief—” klonk meer als een schor gefluister; daarna verzamelde hij al zijn wilskracht en schreeuwde “Brief voor Zweinstein! Mag ik een uil?” de lege lucht in.",
+      "answerable": true
+    },
+    {
+      "q": "Who interrupts Harry, and how does he react?",
+      "answer_from_nl": "Een verbaasde vrouwenstem, een van de buren: mevrouw Figg, af en toe de oppas, grijze haren uit haar haarnetje, kijkend over de schutting. Harry trok zijn hand omlaag als uit het vuur, verstopte de envelop achter zijn rug als drugsgeld, zijn hele gezicht heet van schaamte.",
+      "answerable": true
+    }
+  ]
+}

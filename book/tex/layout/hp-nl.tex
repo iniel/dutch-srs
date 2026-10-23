@@ -1,0 +1,21 @@
+% Dutch edition additions. Loaded after layout/hp-book, before \begin{document}.
+\usepackage{polyglossia}
+\setmainlanguage{dutch}
+\setotherlanguage{english}
+
+% Inline gloss for the A2-B1 edition: \gl{woord}{english} -> woord (english)
+\newcommand{\gl}[2]{#1 (\textit{#2})}
+
+% fmtcount (used by hp-book.sty for "CHAPTER ONE") has no Dutch, so the chapter
+% number word is supplied by nl-assemble as \nlchapterword before each \chapter.
+\providecommand{\nlchapterword}{\thechapter}
+\makeatletter
+\renewcommand*{\printchapternum}{%
+  \chapnumfont \hyperref[contents]{\textls[30]{\nlchapterword}}}
+\renewcommand*{\printchaptername}{%
+  \centering \chapnamefont \hyperref[contents]{\MakeUppercase{\textls[30]{Hoofdstuk}}}}
+\makeatother
+
+\hyphenation{Zwein-stein Per-ka-men-tus An-der-ling Grif-foen-dor Zwad-de-rich
+Ra-ven-klauw Huf-fel-puf Dreu-zel Dreu-zels Wegis-weg Goud-grijp Mal-fi-dus
+Her-me-lien Grif-fel Lub-ber-mans Krin-kel Pot-ter-Evans-Ver-res Ver-res-Evans}

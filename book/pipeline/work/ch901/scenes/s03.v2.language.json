@@ -1,0 +1,171 @@
+{
+  "scene": "ch901/s03",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "All four v1 fixes land: 'erg bang' (L1 must_fix), 'je kent de sceptische literatuur niet' (L2), 'tegen ze gezegd' (L3) and the 12-word 'Haar magie kon ik niet krijgen, maar …' coordination (L4) are plain, natural Dutch inside the profile. The changed blocks introduce no new grammar, vocabulary or naturalness problem; the single parser flag is the same false positive as in v1. One should_fix: exceptions.json now says 'fluisteren' is never glossed, so the \\gl on 'fluisterde' in b018 is gloss bloat and should go. Eight v1 notes carried, one dropped (no gloss clusters reported any more), one new dismissal note for the per-token vocabulary rows.",
+  "previous_findings": [
+    {"id": "L1", "block": "b015", "severity": "must_fix", "status": "fixed", "note": "'hij was maar al te bang' → 'hij was erg bang'; 'erg' known A1 'very'. The translator chose 'erg' over the suggested 'heel/echt' because bible.md lists those among intensifiers never to add; here the source has 'very much', so a plain intensifier is right. Accepted."},
+    {"id": "L2", "block": "b019", "severity": "should_fix", "status": "fixed", "note": "'je bent niet thuis in de sceptische literatuur' → 'je kent de sceptische literatuur niet'; 'kennen' known A1, exactly the suggested wording."},
+    {"id": "L3", "block": "b018", "severity": "should_fix", "status": "fixed", "note": "'Ik heb ze gezegd:' → 'Ik heb tegen ze gezegd:'; standard Dutch, suggested wording."},
+    {"id": "L4", "block": "b022", "severity": "should_fix", "status": "fixed", "note": "als/dan hypothetical → 'Haar magie kon ik niet krijgen, maar ik kon tenminste mooi zijn.' 12 words, A-INV + A-MODAL ×2 + A-COORD, no subordinate clause, no doubled 'dan'; suggested wording."},
+    {"id": "L5", "block": "b016", "severity": "note", "status": "carried", "note": "Block unchanged; carried as v2 L2."},
+    {"id": "L6", "block": "b015", "severity": "note", "status": "carried", "note": "'verried hem' unchanged; carried as v2 L3."},
+    {"id": "L7", "block": "b016", "severity": "note", "status": "carried", "note": "Block unchanged; carried as v2 L4."},
+    {"id": "L8", "block": "b019", "severity": "note", "status": "carried", "note": "'sceptisch' still listed unknown; carried as v2 L5 with updated evidence (it is in exceptions.json cognates; the checker matches cognates on the surface form only)."},
+    {"id": "L9", "block": "b019", "severity": "note", "status": "carried", "note": "Carried as v2 L6."},
+    {"id": "L10", "block": "b019", "severity": "note", "status": "carried", "note": "Carried as v2 L7."},
+    {"id": "L11", "block": "b019", "severity": "note", "status": "dropped", "note": "v2 checks report no gloss clusters (clusters: []); the counting artefact is gone, nothing to dismiss."},
+    {"id": "L12", "block": "b018", "severity": "note", "status": "reopened", "note": "Was 'no change until exceptions.json is updated'; exceptions.json now lists fluisteren with gloss 'never', so the condition is met. Upgraded to v2 L1 should_fix: drop the gloss."},
+    {"id": "L13", "block": "b022", "severity": "note", "status": "carried", "note": "Fragment unchanged in v2; carried as v2 L8."},
+    {"id": "L14", "block": "b019", "severity": "note", "status": "carried", "note": "Fragment unchanged in v2; carried as v2 L9."}
+  ],
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b018",
+      "fragment": "\\gl{fluisterde}{whispered} Petunia",
+      "problem": "Gloss on a known A2 word that exceptions.json now marks gloss 'never'; the \\gl wrapper adds length to a one-word speech tag without helping the reader.",
+      "evidence": "checks v2 vocab table: fluisteren known A2, action gloss-on-known; exceptions.json keep 'fluisteren' → gloss 'never' ('listed so that it is never replaced by zacht zeggen'); the v2 @notes still cite the old 'gloss: first' rule (v1 note L12 was conditional on this update)",
+      "required_fix": "Write 'fluisterde Petunia' without the \\gl macro and remove the line 'fluisterde: whispered' from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L2",
+      "block": "b016",
+      "fragment": "maar \\gl{hield voet bij stuk}{stood her ground}",
+      "problem": "B1 idiom (lexicon phrase 'voet bij stuk' stretch) kept for voice and glossed.",
+      "evidence": "checks v2: 'hield voet bij stuk' phrase-glossed; glossed, so outside the unglossed stretch budget (v1 L5)",
+      "required_fix": "No change. Plain fallback if a gloss must go: 'maar ze hield vol' / 'maar ze bleef bij haar woorden'.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L3",
+      "block": "b015",
+      "fragment": "Zijn toon verried hem:",
+      "problem": "Figurative use of 'verraden' (to give away) where the reader knows it as 'to betray'.",
+      "evidence": "lexicon: verraden known A2 'to betray'; English uses the same figure ('his tone betrayed him') (v1 L6)",
+      "required_fix": "No change required; plain alternative 'Zijn toon zei iets anders:' if the meaning reviewer finds it too literary.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L4",
+      "block": "b016",
+      "fragment": "Ze zag er bang uit",
+      "problem": "Looks like a split pronominal adverb (R-ER-PREP) but is the lexicalised verb 'eruitzien'.",
+      "evidence": "lexicon phrases: eruitzien known A2; look-alike, correctly not flagged (v1 L7)",
+      "required_fix": "No change.",
+      "severity": "note",
+      "category": "grammar:R-ER-PREP"
+    },
+    {
+      "id": "L5",
+      "block": "b019",
+      "fragment": "de sceptische literatuur",
+      "problem": "Lemma 'sceptisch' is reported unknown although exceptions.json lists it as a cognate.",
+      "evidence": "checks v2 vocab table: sceptisch unknown, action review; exceptions.json cognates contains 'sceptisch'; vocab_check matches cognates on the lowercased surface form, and 'sceptische' ≠ 'sceptisch' (v1 L8)",
+      "required_fix": "No change to the text. Tool owner: match cognates on the lemma (or strip the inflectional -e) as well as the surface form.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L6",
+      "block": "b019",
+      "fragment": "een getrainde \\gl{goochelaar}{stage magician}",
+      "problem": "Lemma 'goochelaar' is unknown to the lexicon.",
+      "evidence": "checks v2: goochelaar unknown, glossed; 'tovenaar' would erase the stage-magic vs real-magic contrast with b016 (v1 L9)",
+      "required_fix": "No change; keep the word and its gloss.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b019",
+      "fragment": "doet zoiets heel makkelijk na",
+      "problem": "Separable verb 'nadoen' is not in the lexicon and is not detected by the checker (resolved as 'doen').",
+      "evidence": "lexicon: no entry 'nadoen'; 'na' and 'doen' both known A1 (v1 L10)",
+      "required_fix": "No change: compound of two known parts, meaning (imitate) clear in context. Lexicon owner: add 'nadoen'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b022",
+      "fragment": "Ik ben niet—altijd zo geweest—",
+      "problem": "None: perfectum here is the idiomatic Dutch for 'I wasn't always like this'.",
+      "evidence": "A-PERF; naturalness (v1 L13)",
+      "required_fix": "No change; candidate wording for the bible / final version.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L9",
+      "block": "b019",
+      "fragment": "Ik leerde Harry lepels buigen.",
+      "problem": "'leren' + object + bare infinitive is an accusative-with-infinitive like zien/horen (R-PERCEPTION) but is not listed in restricted.md.",
+      "evidence": "restricted.md R-PERCEPTION covers zien/horen/voelen only; the alternative ('hoe je lepels buigt') is an indirect question (R-INDIRECT) (v1 L14)",
+      "required_fix": "No change; accepted as the plainest option. Profile owner: decide whether 'leren + obj + inf' is allowed or restricted.",
+      "severity": "note",
+      "category": "grammar:R-PERCEPTION"
+    },
+    {
+      "id": "L10",
+      "block": "b019",
+      "fragment": "\\gl{cold reading}{…} (and b016: \\gl{hield voet bij stuk}{…})",
+      "problem": "The vocabulary table lists 'cold' and 'reading' as two unknown glossed lemmas and 'houden', 'voet', 'bij', 'stuk' as four gloss-on-known rows; all six are the tokens of two phrase glosses that the table also reports correctly as phrase-glossed.",
+      "evidence": "checks v2 vocab table rows cold / reading / houden / voet / bij / stuk vs the phrase rows 'cold reading' and 'hield voet bij stuk'",
+      "required_fix": "No change to the text; dismissed as a per-token counting artefact. Tool owner: suppress token rows for tokens inside a \\gl phrase.",
+      "severity": "note",
+      "category": "gloss"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b019",
+      "span": "getrainde",
+      "decision": "dismissed",
+      "reason": "Same flag as v1 (0.35, review). Attributive adjectival participle used as a plain adjective (dep amod, no complements); restricted.md: simple adjectival participles that behave as adjectives are fine; base verb 'trainen' is known A1 and 'getraind' is in its inflection table."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "type": "false_positive",
+      "check": "grammar",
+      "item": "R-PARTICIPLE 'getrainde' (0.35)",
+      "block": "b019",
+      "reason": "Unchanged from v1: bare attributive participle with dep amod and no children is an adjective; suppress amod participles without complements."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "sceptisch unknown",
+      "block": "b019",
+      "reason": "'sceptisch' is in exceptions.json cognates, but vocab_check tests `plain in self.cognates` on the surface form 'sceptische'; also test the lemma / de-inflected form."
+    },
+    {
+      "type": "false_positive",
+      "check": "vocab",
+      "item": "cold (PROPN) + reading (NOUN) as two unknown rows; houden / voet / bij / stuk as gloss-on-known rows",
+      "block": "b019",
+      "reason": "Tokens of a \\gl phrase are listed individually next to the (correct) phrase row; drop the per-token rows when the token is inside a phrase gloss."
+    },
+    {
+      "type": "false_negative",
+      "check": "vocab",
+      "item": "nadoen (doet … na) not listed as unknown",
+      "block": "b019",
+      "reason": "Unchanged from v1: particle 'na' not attached as compound:prt, token resolved to known 'doen'; 'nadoen' has no lexicon entry."
+    },
+    {
+      "type": "observation",
+      "check": "vocab",
+      "item": "gloss-on-known fluisteren is now actionable",
+      "block": "b018",
+      "reason": "exceptions.json keep 'fluisteren' says gloss 'never'; the checker could flag a \\gl on a keep word with gloss 'never' as a hard 'gloss-not-allowed' row instead of the generic gloss-on-known hint."
+    }
+  ]
+}

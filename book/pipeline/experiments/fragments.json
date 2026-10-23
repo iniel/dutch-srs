@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "notes": "Phase 1 fragments (idea.md §7). Each becomes pseudo-chapter 9FF in book/pipeline/work with one scene per variant: s01 = V1 single prompt, s02 = V2 constrained + loop, s03 = V3 literary then adapt + loop.",
+  "variants": {
+    "s01": "V1 single prompt with the rules, no loop",
+    "s02": "V2 constrained translation (translator.md) + checks + reviewers + <=2 fix rounds",
+    "s03": "V3 unconstrained literary translation first, then adaptation with translator.md + same loop"
+  },
+  "fragments": [
+    {"id": 901, "name": "f1-dialogue-tension", "type": "dialogue, marital argument, irony", "chapter": 1, "blocks": ["b015", "b023"]},
+    {"id": 902, "name": "f2-description-present", "type": "description, present tense, long sentences", "chapter": 1, "blocks": ["b010", "b014"]},
+    {"id": 903, "name": "f3-inner-monologue", "type": "inner monologue, reasoning, free indirect thought", "chapter": 1, "blocks": ["b047", "b055"]},
+    {"id": 904, "name": "f4-action-humour", "type": "action, embarrassment humour, neighbour dialogue", "chapter": 1, "blocks": ["b076", "b086"]},
+    {"id": 905, "name": "f5-cat-scene", "type": "comic dialogue, science vocabulary, exclamations", "chapter": 2, "blocks": ["b022", "b033"]},
+    {"id": 906, "name": "f6-economics-exposition", "type": "exposition, complex syntax, numbers, Harry's register", "chapter": 4, "blocks": ["b029", "b034"]},
+    {"id": 907, "name": "f7-draco-voice", "type": "character voice, class register, deadpan", "chapter": 5, "blocks": ["b055", "b066"]}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "scene": "ch902/s01",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "All four blocks keep the events, objects, negation and the causal order of the English; the present tense, the emphasis on the addressee and the dry narrator are intact. One register drift: 'eminent' became 'beroemde' (famous), which asserts public fame the narrator does not claim.",
+  "comprehension": [
+    {
+      "q": "What covers the walls of the room, and where have the books ended up beyond the bookcases?",
+      "answer_from_nl": "Tegen elke centimeter muur staat een boekenkast met zes planken tot bijna aan het plafond; de boeken stromen over op de tafels en de banken en maken kleine stapels onder de ramen.",
+      "answerable": true
+    },
+    {
+      "q": "Why is the back row of paperbacks standing on old tissue boxes or pieces of wood?",
+      "answer_from_nl": "De achterste rij staat hoger, zodat je de achterste boeken boven de voorste boeken kunt zien.",
+      "answerable": true
+    },
+    {
+      "q": "Whose living room is this, and how is Harry related to the couple?",
+      "answer_from_nl": "Het huis van professor Michael Verres-Evans en zijn vrouw Petunia Evans-Verres; Harry James Potter-Evans-Verres is hun adoptiezoon.",
+      "answerable": true
+    },
+    {
+      "q": "What lies on the living-room table, and what is unusual about the envelope?",
+      "answer_from_nl": "Een brief en een envelop van geelachtig perkament zonder postzegel; op de envelop staat in smaragdgroene inkt 'de heer H. Potter'.",
+      "answerable": true
+    },
+    {
+      "q": "How are the Professor and his wife arguing, and why are they not shouting?",
+      "answer_from_nl": "Ze praten op scherpe toon tegen elkaar maar schreeuwen niet; de professor vindt schreeuwen onbeschaafd.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b012",
+      "fragment": "de beroemde professor Michael Verres-Evans",
+      "problem": "'eminent' (distinguished, respected in his field) has become 'beroemde' (famous), a claim of public fame the narrator does not make; the mock-formal label is also flattened into an ordinary compliment.",
+      "evidence": "EN: 'the eminent Professor Michael Verres-Evans' vs NL: 'de beroemde professor Michael Verres-Evans'",
+      "required_fix": "Use a word that means distinguished/respected rather than famous, e.g. 'de eminente professor' (glossed, as s02 and s03 do) or 'de vooraanstaande professor'; do not assert fame.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b014",
+      "fragment": "De professor en zijn vrouw",
+      "problem": "The narrator's capitalised label 'The Professor' (Michael's nickname in the narration) is rendered lowercase, losing the small mock-title the bible asks to keep.",
+      "evidence": "EN: 'The Professor and his wife … The Professor considers shouting' vs NL: 'De professor en zijn vrouw … De professor vindt'; bible: 'Exception: de Professor (capital P) when the narrator uses it as Michael's label.'",
+      "required_fix": "Write 'De Professor' (capital P) in both sentences of b014, as in s02/s03; keep lowercase 'professor' before the name in b012.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M3",
+      "block": "b010",
+      "fragment": "staan helemaal vol boeken",
+      "problem": "'stacked to the brim' is reduced to plain fullness; the overflowing-container image that prepares 'And it still isn't enough' is gone.",
+      "evidence": "EN: 'stacked to the brim with hardback books' vs NL: 'staan helemaal vol boeken met een harde kaft'",
+      "required_fix": "Optional: restore the brim image if a plain form is available ('tot de rand toe vol'); otherwise accept.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b010",
+      "fragment": "maken kleine stapels onder de ramen",
+      "problem": "'little heaps' are untidy piles; 'stapels' suggests orderly stacks, slightly tidying the chaos the paragraph describes.",
+      "evidence": "EN: 'making little heaps under the windows' vs NL: 'maken kleine stapels onder de ramen'",
+      "required_fix": "Optional: 'kleine hoopjes' or 'kleine hopen' would keep the disorder; 'stapels' is acceptable.",
+      "severity": "note",
+      "category": "detail"
+    }
+  ]
+}

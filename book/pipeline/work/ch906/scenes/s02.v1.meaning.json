@@ -1,0 +1,96 @@
+{
+  "scene": "ch906/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Events, numbers (5 %, 17:1, ~50:1, a ton, a week), negations, the counterfactual 'should have drained' and the six-step arbitrage loop are all present in source order; 'competente' keeps the understatement and b034 stays one deadpan sentence. Two losses: the 'not only … ' escalation in Harry's opening thought is flattened to a bare 'En', and the jargon phrase in b031 is unpacked into an explanatory apposition. 'De vaste prijs van een Galjoen' for 'the exchange rate' is confirmed as meaning-preserving.",
+  "comprehension": [
+    {
+      "q": "What exactly is the arbitrage loop Harry imagines: what do you bring in, what do you exchange it for and in which order, what do you pay, and what do you end up with?",
+      "answer_from_nl": "Neem een ton zilver mee; ruil het voor Sikkels (en betaal 5 %); ruil de Sikkels voor Galjoenen; breng het goud naar de Dreuzelwereld; ruil het voor meer zilver dan je eerst had; en herhaal dat.",
+      "answerable": true
+    },
+    {
+      "q": "What is the wizarding exchange rate between Sickles and Galleons, what does Harry think the Muggle gold-to-silver ratio is, and what does he notice about the size of the silver coins?",
+      "answer_from_nl": "Zeventien Sikkels tegenover één Galjoen; bij de Dreuzels ergens rond de vijftig tegen één, volgens Harry in elk geval niet zeventien; de zilveren munten leken zelfs kleiner dan de gouden.",
+      "answerable": true
+    },
+    {
+      "q": "According to Harry, what should have happened each time the Muggle ratio moved more than 5 % away from the wizarding rate, and has it actually happened?",
+      "answer_from_nl": "Elke keer moest er dan eigenlijk goud of zilver uit de tovenaarseconomie verdwijnen, tot niemand de vaste prijs van een Galjoen nog kon volhouden; 'eigenlijk' plus 'niemand hier heeft ooit van arbitrage gehoord' make clear it has not happened.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Harry not make the snide remarks he was tempted to make, and what does he conclude about the wizards' way of doing things?",
+      "answer_from_nl": "Hij wilde even gemene opmerkingen maken over hun primitieve geldsysteem, maar het trieste is: hun manier is waarschijnlijk beter.",
+      "answerable": true
+    },
+    {
+      "q": "What idea does Harry file away, and under which two conditions would he use it?",
+      "answer_from_nl": "Dat één competente hedgefondsmanager waarschijnlijk binnen een week de hele tovenaarswereld kon bezitten; voor als hij ooit geen geld meer had, of een week vrij.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b029",
+      "fragment": "En niemand hier heeft ooit van arbitrage gehoord.",
+      "problem": "The 'not only … ' correlative ranks the second fact as the more remarkable one; a bare 'En' coordinates the two facts flatly, so the escalation that lands the opening thought is gone.",
+      "evidence": "EN: 'So not only is the wizarding economy almost completely decoupled from the Muggle economy, no-one here has ever heard of arbitrage.' vs NL: 'De tovenaarseconomie staat dus bijna helemaal los van de economie van de Dreuzels. En niemand hier heeft ooit van arbitrage gehoord.'",
+      "required_fix": "Keep the two sentences but add a marker that carries 'not only': e.g. 'En niemand hier heeft ook nog eens ooit van arbitrage gehoord.' or 'En bovendien heeft niemand hier ooit van arbitrage gehoord.' or 'En dat is niet alles: …'.",
+      "severity": "should_fix",
+      "category": "omission"
+    },
+    {
+      "id": "M2",
+      "block": "b031",
+      "fragment": "De fijne details van arbitrage—prijsverschillen uit de markt weghalen—begrepen ze hier waarschijnlijk niet.",
+      "problem": "The dense jargon phrase is unpacked into an explanatory apposition that reads as an in-text definition of arbitrage; the author offers no explanation, and the joke is the clash between the jargon and the dragon-guarded vaults.",
+      "evidence": "EN: 'The finer points of arbitraging away market inefficiencies might well be lost on them.' vs NL: 'De fijne details van arbitrage—prijsverschillen uit de markt weghalen—begrepen ze hier waarschijnlijk niet.'",
+      "required_fix": "Render the jargon as one noun phrase in Harry's register without a defining apposition (e.g. 'de fijne details van het wegarbitreren van marktinefficiënties' or 'van arbitrage op marktinefficiënties'); if a plain phrase must stay, it should not be set off as a definition between dashes.",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M3",
+      "block": "b029",
+      "fragment": "Uiteindelijk kon niemand de vaste prijs van een Galjoen nog volhouden.",
+      "problem": "Confirmed on the translator's request: the exchange rate here is the fixed Sickle price of a Galleon, so the meaning survives; the phrase is only identifiable as that rate through the preceding 'zeventien Sikkels tegenover één Galjoen', since 'prijs van een Galjoen' alone could be read as a price in Muggle money.",
+      "evidence": "EN: 'until it became impossible to maintain the exchange rate' vs NL: 'Uiteindelijk kon niemand de vaste prijs van een Galjoen nog volhouden.'",
+      "required_fix": "Accept. Optional: 'de vaste prijs van een Galjoen in Sikkels' or 'die vaste koers' would remove the residual ambiguity.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b029",
+      "fragment": "goud of zilver verdwijnen uit de tovenaarseconomie",
+      "problem": "'drained' is a flow out of one economy into the other; 'verdwijnen' (vanish) drops the flow image, though the direction survives through 'uit de tovenaarseconomie'.",
+      "evidence": "EN: 'either gold or silver should have drained from the wizarding economy' vs NL: 'moest er dan eigenlijk goud of zilver verdwijnen uit de tovenaarseconomie'",
+      "required_fix": "Optional: 'wegstromen uit' keeps the image; 'verdwijnen uit' is acceptable.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M5",
+      "block": "b030",
+      "fragment": "Zeventien was het volgens Harry in elk geval niet.",
+      "problem": "'volgens Harry' reports his opinion from a slight narrator distance, where the English is free indirect thought ('Harry didn't think'); the belief and its hedging are intact.",
+      "evidence": "EN: 'Harry didn't think it was seventeen, anyway.' vs NL: 'Zeventien was het volgens Harry in elk geval niet.'",
+      "required_fix": "Optional: 'Zeventien was het in elk geval niet, dacht Harry.' stays inside his head; acceptable as is.",
+      "severity": "note",
+      "category": "pov"
+    },
+    {
+      "id": "M6",
+      "block": "b031",
+      "fragment": "gemene opmerkingen … hun primitieve geldsysteem",
+      "problem": "'snide' is mocking/derisive rather than mean, and 'financial system' is Harry's formal term; 'gemene … geldsysteem' is a notch plainer and nastier than the source, though the intention (he nearly sneered) is intact.",
+      "evidence": "EN: 'snide remarks about the crudity of their financial system' vs NL: 'gemene opmerkingen maken over hun primitieve geldsysteem'",
+      "required_fix": "Optional: 'spottende' or 'hatelijke opmerkingen' and 'financiële systeem' would sit closer to Harry's register; acceptable as is.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

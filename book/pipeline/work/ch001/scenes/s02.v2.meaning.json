@@ -1,0 +1,127 @@
+{
+  "scene": "ch001/s02",
+  "version": 2,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Re-review of the six changed blocks (b038, b039, b041, b042, b045, b048) against the English: no fact, negation, speaker, intention, causal link or tense changed. Both v1 should_fix items are fixed: the Professor's line is again one statement of disappointed expectation with two emphasised ideas (M1), and Harry's plea no longer carries the clarifying noun 'onderwerp' (M7). The language-driven edits (ouders, bestudeer, in, zeggen, moet, smoes, gezicht) are meaning-neutral. All five comprehension questions remain answerable from v2. Six v1 notes carried (two merged), three new notes, no must_fix.",
+  "previous_findings": [
+    {"id": "M1", "block": "b038", "severity": "should_fix", "status": "fixed", "note": "'Ik dacht: \\emph{jij} weet wel beter … Dit neem je toch niet serieus.' → 'Ik dacht: \\emph{jij} neemt zoiets niet serieus, jongen, hoewel je pas tien bent. Je weet wel beter.' The 'toch niet' check-question is gone; the line is a statement of what Michael expected of Harry, the 'take seriously' and 'know better' halves are linked, emphasis stays on *jij*, two \\emph in the block (magie, jij). Suggested wording taken almost verbatim ('Je' for 'Jij' in the last sentence is fine; the stress already sits on the emphasised *jij*)."},
+    {"id": "M2", "block": "b039", "severity": "note", "status": "carried", "note": "'Ze' → 'Zijn ouders' (language L3). Both parents, as 'ze' already implied; not 'zijn vader', so the English's withheld agent is not over-resolved. Observation still applies; carried as v2 M2."},
+    {"id": "M3", "block": "b039", "severity": "note", "status": "carried", "note": "Fragment unchanged; translator keeps 'Hij kreeg alles, als het maar redelijk was.' because 'alles … Behalve' anchors the bible's punchline. Reason accepted; carried as v2 M3."},
+    {"id": "M4", "block": "b039", "severity": "note", "status": "carried", "note": "Fragment unchanged; carried as v2 M4."},
+    {"id": "M5", "block": "b041", "severity": "note", "status": "fixed", "note": "'ook' dropped: 'Eh… er staat ergens iets over het ideaal van de wetenschap'. The second passage is no longer tied to the Feynman book; Harry's 'I can't think of where' survives as 'Maar waar staat dat? Dat weet ik zo snel niet—'."},
+    {"id": "M6", "block": "b042", "severity": "note", "status": "carried", "note": "Fragment changed by language L1 (indicative → 'moet'); the relative 'who loves him' is still a standalone sentence. Observation unchanged; carried as v2 M5."},
+    {"id": "M7", "block": "b045", "severity": "should_fix", "status": "fixed", "note": "'over dit onderwerp' dropped: 'Alsjeblieft, maak niet te veel ruzie, mam, pap.' No noun; context carries 'about this' (the translator's note is right that every pronoun-level rendering is R-ER-PREP). The required_fix explicitly allowed this option. The consequence — the plea's scope is now implicit — is recorded as v2 M7 (note)."},
+    {"id": "M8", "block": "b045", "severity": "note", "status": "carried", "note": "'try' still dropped; translator's reasons ('proberen te' = new R-TE-INF flag, 'doe je best' would echo b044) accepted. Merged with the 'about this' observation into v2 M7."},
+    {"id": "M9", "block": "b044", "severity": "note", "status": "carried", "note": "Block unchanged; carried as v2 M6."}
+  ],
+  "comprehension": [
+    {
+      "q": "Why does Harry feel his father does not respect him, even though he is treated well?",
+      "answer_from_nl": "Zijn ouders behandelden hem goed: de beste basisscholen, eigen leraren, boeken, betaalde wedstrijden — 'Hij kreeg alles, als het maar redelijk was. Behalve misschien een heel klein beetje respect.' Een Doctor in Oxford luisterde niet naar het advies van een kleine jongen; luisteren was alleen 'Belangstelling Tonen', zoals een Goede Ouder dat doet; een jongen van tien serieus nemen? Nauwelijks.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry tell his mother to look up, and what rule of science does he cite?",
+      "answer_from_nl": "Hoofdstuk twee van het eerste deel van de Feynman Lectures on Physics; de wetenschap heeft maar één regel: de hoogste rechter is de waarneming — naar de wereld kijken en zeggen: dit zie ik. Ergens staat ook het ideaal: dingen beslis je met een experiment, niet met een discussie — maar waar, weet hij zo snel niet.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Petunia decline Harry's help?",
+      "answer_from_nl": "Ze wil geen discussie met zijn vader winnen; ze wil dit van haar man: hij moet naar zijn vrouw luisteren — zij houdt van hem — en hij moet haar vertrouwen, deze ene keer.",
+      "answerable": true
+    },
+    {
+      "q": "What kind of argument do the parents fall into, what does Harry ask of them, and what happens next?",
+      "answer_from_nl": "'Zo'n ruzie': de moeder wil dat de vader zich schuldig voelt, de vader wil dat de moeder zich dom voelt. Harry zegt dat hij naar zijn kamer gaat en vraagt ze niet te veel ruzie te maken, want ze weten het resultaat snel genoeg. Ze zeggen 'natuurlijk', zijn moeder geeft hem een kus, en ze gaan door met ruziemaken terwijl hij de trap neemt naar zijn slaapkamer.",
+      "answerable": true
+    },
+    {
+      "q": "Why should Harry, by his own reasoning, have agreed with Dad?",
+      "answer_from_nl": "Niemand zag ooit bewijs van magie, terwijl er volgens mam ergens een hele wereld vol magie is; zoiets kan niemand geheim houden, en 'nog meer magie' als verklaring daarvoor klinkt als een nogal verdachte smoes.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b039",
+      "fragment": "Harry trok een bitter gezicht.",
+      "problem": "'mouth twisted bitterly' becomes 'pulled a bitter face': the gesture stays a gesture (no label), the bitterness stays, but the specific image (mouth, twisting) is widened to the whole face.",
+      "evidence": "EN: 'Harry's mouth twisted bitterly.' vs NL (v2): 'Harry trok een bitter gezicht.' (v1: 'Harry's mond vertrok bitter.', changed for language L4: 'vertrekken' known to the reader only as 'to leave')",
+      "required_fix": "No change required. If the editor wants the mouth back, the translator's glossed alternative 'Harry's mond \\gl{vertrok}{twisted} bitter.' is exact — but see language L1: b039 then keeps one gloss only if 'genetische' loses its gloss.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M2",
+      "block": "b039",
+      "fragment": "Zijn ouders behandelden hem goed, waarschijnlijk beter dan de meeste \\gl{genetische}{genetic} vaders hun eigen kinderen.",
+      "problem": "The English agentless passive floats between 'his father' and 'his parents'; the Dutch names the agent ('Zijn ouders'), so the comparison reads 'his parents treated him better than most genetic fathers treated their children', and the paragraph's real target — the father of b040 — is a shade less sharp.",
+      "evidence": "EN: 'He was treated well, probably better than most genetic fathers treated their own children.' vs NL (v2): 'Zijn ouders behandelden hem goed, …' (carried from v1 M2; v1 had 'Ze', changed for language L3)",
+      "required_fix": "No change required; 'Zijn ouders' is the right resolution if an agent is needed — do not narrow to 'Zijn vader' (adds a noun the English withholds).",
+      "severity": "note",
+      "category": "pov"
+    },
+    {
+      "id": "M3",
+      "block": "b039",
+      "fragment": "Hij kreeg alles, als het maar redelijk was.",
+      "problem": "'that he wanted' is dropped: the English says his reasonable wishes were granted; the Dutch says he was given everything reasonable.",
+      "evidence": "EN: 'He was given anything reasonable that he wanted' vs NL: 'Hij kreeg alles, als het maar redelijk was.' (carried from v1 M3; translator keeps 'alles … Behalve' as the anchor of the bible's punchline)",
+      "required_fix": "Optional, as in v1: 'Wilde hij iets? Dan kreeg hij het, als het maar redelijk was.' inside the question-answer rhythm; punchline sentence unchanged. Translator's reason for keeping is accepted.",
+      "severity": "note",
+      "category": "omission"
+    },
+    {
+      "id": "M4",
+      "block": "b039",
+      "fragment": "Luisteren deed je natuurlijk wel: dat heette Belangstelling Tonen.",
+      "problem": "The English makes Showing Interest the purpose of the listening; the Dutch makes it the label. Sarcasm intact, purpose link implicit.",
+      "evidence": "EN: 'You would listen to Show Interest, of course' vs NL: 'Luisteren deed je natuurlijk wel: dat heette Belangstelling Tonen.' (carried from v1 M4)",
+      "required_fix": "Acceptable as is. Closer if a purpose construction were allowed: 'Luisteren deed je natuurlijk wel, om Belangstelling te Tonen.' Capitals stay.",
+      "severity": "note",
+      "category": "causality"
+    },
+    {
+      "id": "M5",
+      "block": "b042",
+      "fragment": "hij moet naar zijn vrouw luisteren. Zij houdt van hem. En hij moet haar vertrouwen, deze ene keer—",
+      "problem": "The pointed relative 'his wife who loves him' is a standalone third-person sentence; as leverage inside the request it is slightly less pointed. The new 'moet' is the wish's own modality after 'Ik wil dit van mijn man:' and adds no obligation the English 'I want … to' does not already carry; listen, wife, loves him, trust, just this once and the interruption are all present.",
+      "evidence": "EN: 'I want my husband to, to listen to his wife who loves him, and trust her just this once—' vs NL (v2): 'Ik wil, ik wil dit van mijn man: hij moet naar zijn vrouw luisteren. Zij houdt van hem. En hij moet haar vertrouwen, deze ene keer—' (carried from v1 M6; v1 indicative changed for language L1)",
+      "required_fix": "No change required. The three short sentences suit Petunia's broken speech (bible, ch 1 Characters).",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M6",
+      "block": "b044",
+      "fragment": "Zijn moeder deed haar best: zijn vader moest zich schuldig voelen.",
+      "problem": "'deed haar best' has a faintly approving ring the neutral 'tried to make … feel' lacks; the colon leaves make-feel implicit. Parallelism and meaning preserved.",
+      "evidence": "EN: 'his mother tried to make his father feel guilty, and his father tried to make his mother feel stupid' vs NL: 'Zijn moeder deed haar best: zijn vader moest zich schuldig voelen. Zijn vader deed zijn best: zijn moeder moest zich dom voelen.' (carried from v1 M9; block unchanged)",
+      "required_fix": "Acceptable as is; keep the two halves parallel whatever the wording.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M7",
+      "block": "b045",
+      "fragment": "Alsjeblieft, maak niet te veel ruzie, mam, pap. We weten het resultaat snel genoeg, toch?",
+      "problem": "Two softeners of the English plea are gone: 'try' (v1 M8) and now 'about this' (v1 M7 fix). The Dutch is a direct, general request not to fight too much; the restriction to this fight is implicit, carried by 'het resultaat' in the next sentence and by b044.",
+      "evidence": "EN: 'Please try not to fight too much about this, Mum, Dad, we'll know soon enough how it comes out, right?' vs NL (v2): 'Alsjeblieft, maak niet te veel ruzie, mam, pap. We weten het resultaat snel genoeg, toch?' (v1: '… ruzie over dit onderwerp, …')",
+      "required_fix": "No change required: 'alsjeblieft', 'niet te veel' and the trembling voice in the previous sentence keep it a plea, and every pronoun-level 'about this' is R-ER-PREP while any noun over-explains (v1 M7). Preferable to the v1 noun.",
+      "severity": "note",
+      "category": "omission"
+    },
+    {
+      "id": "M8",
+      "block": "b048",
+      "fragment": "Dat leek een nogal verdacht soort smoes.",
+      "problem": "'smoes' is more colloquial than the neutral 'excuse'; in Harry's free indirect thought it adds a touch of a child's scorn. The sense (pretext, not apology) is now right, and 'nogal … soort' keeps the measured tone.",
+      "evidence": "EN: 'That seemed like a rather suspicious sort of excuse.' vs NL (v2): 'Dat leek een nogal verdacht soort smoes.' (v1 'excuus' changed for language L7: the reader knows 'excuus' only as 'apology')",
+      "required_fix": "No change required; 'smoes' is the only A2 word with the right sense. Bible candidate: 'excuse' (pretext) → 'smoes' in Harry's thoughts.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

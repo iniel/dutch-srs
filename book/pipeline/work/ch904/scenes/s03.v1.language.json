@@ -1,0 +1,147 @@
+{
+  "scene": "ch904/s03",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Natural, slightly more literary Dutch than V2 (toen-clause first in b076, 'terwijl' in b080, particles 'toch', 'wel') but fully inside the profile: no restricted construction, no sentence over 20 words. The vocabulary FAIL is entirely tool-driven ('wél' is accented 'wel', 'haarne' is a bad lemma, 'drugsgeld' a transparent compound); real new lemmas are the 2 stretch words. Secondary: the simile 'als uit het vuur' and a gloss on the known word 'schor'.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b085",
+      "fragment": "trok zijn hand omlaag als uit het vuur",
+      "problem": "'als uit het vuur' is not a Dutch idiom; the compressed simile reads as a translation and makes the reader re-parse (as if the hand came out of a fire).",
+      "evidence": "No Dutch collocation 'als uit het vuur'; the natural form needs 'alsof' (R-CONJ-OTHER), so the comparison must be made explicit instead.",
+      "required_fix": "Make the comparison explicit with an allowed frame: 'Harry trok zijn hand omlaag, zo snel als uit een vuur, en verstopte de envelop achter zijn rug als drugsgeld.' Optionally detach the second simile as a fragment: '… achter zijn rug. Als drugsgeld.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L2",
+      "block": "b082",
+      "fragment": "\\gl{schor}{hoarse} \\gl{gefluister}{whisper}",
+      "problem": "Two glosses in a 12-word paragraph on words the lexicon already marks as known.",
+      "evidence": "lexicon: schor = known A2 (c3529), gefluister = known A2 (c4473); gloss_per_paragraph_max 2 reached on known words.",
+      "required_fix": "Drop the gloss on 'schor' (write 'een schor \\gl{gefluister}{whisper}'); the gloss on gefluister may stay only because exceptions.json asks to gloss fluisteren at first occurrence.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L3",
+      "block": "b076",
+      "fragment": "\\emph{wél}",
+      "problem": "Tool reports 'wél' as unknown; it is 'wel' (A1) with the standard Dutch stress accent.",
+      "evidence": "lexicon: wel known A1 (c648); accent not normalised by the tool.",
+      "required_fix": "No change. (Accent plus \\emph is double emphasis; either alone would do, but both are correct Dutch.)",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L4",
+      "block": "b085",
+      "fragment": "drugsgeld",
+      "problem": "Tool rates it hard (nt2lex C1); for the reader it is a transparent compound of two A1 words and the bible fixes the rendering.",
+      "evidence": "lexicon: drug = known A1, geld = known A1; bible.md ch 1 traps: 'drug money' → drugsgeld; 'replace-or-gloss' action dismissed.",
+      "required_fix": "No change; leave unglossed. Lexicon owner: add 'drugsgeld' as known compound.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L5",
+      "block": "b086",
+      "fragment": "haarnetje",
+      "problem": "Tool lemma 'haarne' is a mis-lemmatised diminutive; the word is haar + net + -je, all known.",
+      "evidence": "lexicon: haar known, net (NOUN) known A1; vocabulary row 'haarne' status unknown dismissed.",
+      "required_fix": "No change. Lexicon owner: add 'haarnetje'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L6",
+      "block": "b080",
+      "fragment": "\\gl{gênant}{embarrassing}",
+      "problem": "Unknown lemma, but it carries the scene (embarrassment comedy) and has no plain equivalent with the same meaning for this reader.",
+      "evidence": "lexicon: gênant absent; 'pijnlijk' (B1) was learned as 'painful', 'stom' shifts the meaning; already glossed.",
+      "required_fix": "Keep as is. Lexicon owner: consider adding gênant (very frequent spoken word).",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b086",
+      "fragment": "\\gl{schutting}{fence}",
+      "problem": "Unknown lemma; the plain alternative 'hek' (A2) is an open fence, and the image needs a solid one she must peer over.",
+      "evidence": "lexicon: schutting absent, hek known A2 'fence'; already glossed; block at the 2-gloss limit.",
+      "required_fix": "Keep as is; switch to 'het hek van de buren' only if the gloss budget of b086 is needed elsewhere.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b080",
+      "fragment": "eigenlijk behoorlijk \\gl{gênant}{embarrassing}",
+      "problem": "'behoorlijk' is known to this reader as an adjective ('proper, fitting'); the degree-adverb sense ('pretty, quite') is a different sense that the card does not cover.",
+      "evidence": "lexicon: behoorlijk known A2, en = reasonable/fitting/proper; V1/V2 use 'best', which the reader knows in exactly this sense.",
+      "required_fix": "Optional: 'eigenlijk best gênant'. Context makes 'behoorlijk' guessable, so no round is needed for this alone.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L9",
+      "block": "b076",
+      "fragment": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, bedacht hij iets.",
+      "problem": "Legal and natural (A-SUB-FIRST, 13 words), but the afterthought 'de achtertuin in' after the clause-final verb and before the inverted main clause is a heavier shape than V2's two main clauses; the postposition 'de achterdeur uit' is also a step up from 'door de achterdeur naar buiten'.",
+      "evidence": "L-SUB satisfied (one subordinate clause); recorded for the V1/V2/V3 comparison, not as a defect.",
+      "required_fix": "None required. Lighter alternative if wanted: 'Harry stampte de achterdeur uit, de achtertuin in. Pas toen bedacht hij iets.'",
+      "severity": "note",
+      "category": "load:L-SUB"
+    },
+    {
+      "id": "L10",
+      "block": "b086",
+      "fragment": "\\gl{plukken}{tufts}",
+      "problem": "Gloss on a word the lexicon marks known (pluk = handful, tuft, A2); the slot could be freed.",
+      "evidence": "lexicon: pluk known A2 (c5080).",
+      "required_fix": "Optional: remove the gloss if b086 ever needs a second gloss elsewhere; otherwise leave.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L11",
+      "block": "b081",
+      "fragment": "ook als ik me dan stom voel",
+      "problem": "The particle 'dan' inside the als-clause is a small spoken-Dutch filler; without it the clause is cleaner.",
+      "evidence": "'ook als ik me stom voel' is the plain form.",
+      "required_fix": "Optional: 'ook als ik me stom voel'.",
+      "severity": "note",
+      "category": "naturalness"
+    },
+    {
+      "id": "L12",
+      "block": "b076",
+      "fragment": "achterdeur; hersenen",
+      "problem": "Two B1 stretch lemmas in the scene, inside the budget.",
+      "evidence": "stretch budget 2 vs 8/1000 allowed; both transparent (achter+deur; hersenen recurs for 'brain' per translator note).",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b084",
+      "span": "verbaasde",
+      "decision": "dismissed",
+      "reason": "Attributive 'verbaasd' is a plain adjective: lexicon ADJ A1 and named explicitly in restricted.md ('verbaasd … are fine'); look-alike table 'Hij was verbaasd.'"
+    }
+  ],
+  "tool_feedback": [
+    "R-PARTICIPLE on 'verbaasde' (b084) is a false positive: lemma is a lexicon ADJ entry and restricted.md names 'verbaasd' as allowed; skip amod participles whose lemma is a lexicon ADJ, or push confidence under ignore_confidence (0.3).",
+    "'wél' reported unknown: the acute stress accent (wél, dát, zó, één) is not normalised before lookup; strip combining acutes for lookup (keep ê/é in gênant/café, which are lexical).",
+    "Vocabulary row 'haarne' is a non-word: spaCy lemma of the diminutive 'haarnetje'; strip -tje/-je before lookup and retry compound decomposition (haar + net) on the stripped form.",
+    "'drugsgeld' rated hard C1 (pos VERB) from an nt2lex-only hit; the lexicon hit pre-empts compound decomposition, so a transparent compound of two A1 words is reported as hard.",
+    "known share 97.9% LOW and density 20.8/1000 HIGH are both artefacts of the three rows above; after dismissal the scene is 2 stretch lemmas ≈ 8.3/1000 and ≥ 99% known.",
+    "Glosses on known lemmas (schor, gefluister, plukken) never appear as a table row, so gloss bloat on known words is invisible from the table; add a 'glossed known lemma' row or warning.",
+    "Sense-level gap, not a bug: 'behoorlijk' passes as known A2 (adjective 'proper') while the text uses the degree-adverb sense; the lexicon cannot see this, so it stays a reviewer judgement."
+  ]
+}

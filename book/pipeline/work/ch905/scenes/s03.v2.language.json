@@ -1,0 +1,132 @@
+{
+  "scene": "ch905/s03",
+  "version": 2,
+  "reviewer": "language",
+  "verdict": "accept",
+  "summary": "Re-review of the five changed blocks. The v1 must_fix is fixed ('gepast' → 'goed en juist'), both should_fix are fixed (semicolon before 'die volgt uit'; the b032 topic sentence is down to 17 words with a dash marking the resumption), and five of the optional notes were applied (in een gewaad, harde bons, eigenlijk, fronted mocht, echte wetten). All four remaining grammar flags are the same attributive-participle / zijn-perfectum false positives as in v1; no load finding; no new restricted construction or calque in the changed text. The vocabulary FAIL (known 97.6 %, 14.4 new/1000) is still produced entirely by the deliberate physics jargon. One new should_fix: the glosses on 'universum' and 'planeten' are now redundant because both words were added to the cognates list.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b032",
+      "fragment": "één \\gl{universum}{universe} … de muziek van de \\gl{planeten}{planets}",
+      "problem": "Both words are now in exceptions.json → cognates ('treated as known, never glossed'), so the two glosses in the heaviest paragraph of the scene add bracketed English the reader does not need.",
+      "evidence": "exceptions.json cognates: 'universum', 'planeet', 'planeten'; v2 checks no longer list either lemma (v1 listed them as gloss-on-known); bible: gloss only 'a kept word the reader may not know'",
+      "required_fix": "Drop the two \\gl wrappers: 'Het hele idee van één universum met wiskundig regelmatige wetten — …' and 'de muziek van de planeten was hetzelfde lied …'; remove 'universum: universe' and 'planeten: planets' from @glosses (10 → 8).",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L2",
+      "block": "b028",
+      "fragment": "kwantum-Hamiltoniaan, unitariteit, FTL-signalen, kattenbiochemie, neurologie; neuronen (b032)",
+      "problem": "Reported as unknown (and the sole cause of the known-share and density FAIL), but they are the deliberate opaque jargon that sets up 'Magie.'; all transparent to an English-reading learner. 'FTL-signalen' (new in v2) is the same kind of item and matches s02.",
+      "evidence": "vocab rows kwantum-hamiltoniaan, unitariteit, kattenbiochemie, neuron: unknown / review; 'FTL-signalen' does not appear in the table at all; bible ch 2: 'keep it opaque, do not simplify quantum Hamiltonian, unitarity, FTL'",
+      "required_fix": "No change; do not gloss. Lexicon owner: a per-scene jargon list would keep these out of density and known-share.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L3",
+      "block": "b028",
+      "fragment": "\\gl{brein}{brain}",
+      "problem": "Only non-jargon unknown left in the scene; glossed once at first occurrence and reused unglossed four times (b028, b032), which is the intended pattern.",
+      "evidence": "vocab row brein: unknown, n 5, glossed; 'hersenen' is B1 and would not serve 'mind = brain' in b032",
+      "required_fix": "No change. Lexicon owner: add 'brein' as a cognate (v1 L9; 'universum' is done).",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "L4",
+      "block": "b024",
+      "fragment": "struikelde … zonder steun; \\gl{oprecht}{sincere} (b025); \\gl{verstikt}{choked} (b026); \\gl{geest}{mind} (b028)",
+      "problem": "Stretch and hard words are inside the budget: two unglossed B1 words (struikelen, steun; budget 3), two glossed (oprecht B2, verstikt B1); 'geest' is glossed although A2 because the lexicon sense is 'ghost', not 'mind'.",
+      "evidence": "vocab rows struikelen, steun: ok-stretch; oprecht: hard, glossed; verstikken: stretch, glossed; geest: gloss-on-known (lexicon en: ghost, spirit)",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:stretch"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b022",
+      "span": "beslissend",
+      "decision": "dismissed",
+      "reason": "Lexicalised present participle used as a plain attributive adjective directly before the noun ('een beslissend experiment'); no complements, no clause replaced. Unchanged from v1."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b024",
+      "span": "waarschuwende",
+      "decision": "dismissed",
+      "reason": "Attributive present participle before the noun without complements ('een waarschuwende steek'), transparent derivation of A2 'waarschuwen'; not a clause-replacing participle phrase. The translator kept it over v1 L10's 'korte steek … als waarschuwing', which would add 'korte'; accepted."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b028",
+      "span": "“U bent in een kat veranderd",
+      "decision": "dismissed",
+      "reason": "Perfectum with 'zijn' of the mutative intransitive 'veranderen in' (A-PERF, look-alike 'Hij is gevallen'); no agent, no 'worden'. Unchanged from v1."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b032",
+      "span": "vallende",
+      "decision": "dismissed",
+      "reason": "Attributive adjective in the fixed Newton phrase 'een vallende appel'; no complements, no clause replaced. Unchanged from v1."
+    }
+  ],
+  "previous_findings": [
+    {"id": "L1", "severity": "must_fix", "block": "b022", "status": "fixed", "note": "'juist en gepast' → 'goed en juist'; both words A2. The R-PLUPERF flag on 'was juist en gepast' is gone with it."},
+    {"id": "L2", "severity": "should_fix", "block": "b028", "status": "fixed", "note": "Comma → semicolon before 'die volgt uit'; the R-RELCL flag no longer fires and the demonstrative reading is immediate."},
+    {"id": "L3", "severity": "should_fix", "block": "b032", "status": "fixed", "note": "Topic shortened to 'één universum met wiskundig regelmatige wetten', dash before 'dat spoelde', apposition split off as 'Het hele begrip natuurkunde.' (17 words; the R-RELCL flag is gone). Accent on 'dát' deliberately not added."},
+    {"id": "L4", "severity": "note", "block": "b025", "status": "applied", "note": "'in gewaad' → 'in een gewaad'."},
+    {"id": "L5", "severity": "note", "block": "b024", "status": "applied", "note": "'met een bons hard op' → 'met een harde bons op'."},
+    {"id": "L6", "severity": "note", "block": "b025", "status": "applied", "note": "'Eigenlijk moest ik je eerst waarschuwen' (fronted variant, as s02)."},
+    {"id": "L7", "severity": "note", "block": "b022", "status": "applied", "note": "'Eigenlijk mocht hij het in deze situatie ook niet laten'; parenthetical gone."},
+    {"id": "L8", "severity": "note", "block": "b028", "status": "carried", "note": "Jargon policy; carried as v2 L2 (now incl. 'FTL-signalen')."},
+    {"id": "L9", "severity": "note", "block": "b028", "status": "partly_done", "note": "'universum' and 'planeten' were added to the cognates list, so their glosses are now redundant (v2 L1); 'brein' still missing (v2 L3)."},
+    {"id": "L10", "severity": "note", "block": "b024", "status": "not_applied", "note": "'waarschuwende' kept; accepted (see flag decision)."},
+    {"id": "L11", "severity": "note", "block": "b032", "status": "applied", "note": "'De ware wetten' → 'de echte wetten'."},
+    {"id": "L12", "severity": "note", "block": "b025", "status": "carried", "note": "oprecht kept and glossed; folded into v2 L4."},
+    {"id": "L13", "severity": "note", "block": "b024", "status": "carried", "note": "struikelen / steun inside the stretch budget; folded into v2 L4."}
+  ],
+  "tool_feedback": [
+    {
+      "ref": "R-PARTICIPLE (beslissend, waarschuwende, vallende)",
+      "block": "b022",
+      "issue": "false positive",
+      "reason": "A single participle used attributively right before a noun, without complements, is an adjective; suppress or keep confidence below the 0.3 ignore threshold. Same three flags as v1."
+    },
+    {
+      "ref": "R-PASSIVE 'bent … veranderd'",
+      "block": "b028",
+      "issue": "false positive",
+      "reason": "Perfectum with zijn of a mutative intransitive; a list of zijn-perfectum verbs (veranderen, vallen, komen, gaan, worden, …) would remove these."
+    },
+    {
+      "ref": "vocab: FTL-signalen (missing row)",
+      "block": "b028",
+      "issue": "silent mapping",
+      "reason": "The hyphenated compound with a capitalised head ('FTL-signalen') never reaches the table — probably counted as a proper noun. It should appear as unknown jargon (or at least as stretch via 'signaal' B1) so the per-scene jargon list can claim it."
+    },
+    {
+      "ref": "vocab: universum, planeten glossed (no row)",
+      "block": "b032",
+      "issue": "missing check",
+      "reason": "Words on the cognates list are 'never glossed' by policy, but a \\gl on them is not reported (v1 showed them as gloss-on-known; v2 shows nothing). A 'gloss-on-cognate' action would have caught L1 programmatically."
+    },
+    {
+      "ref": "vocab: kwantum-hamiltoniaan, unitariteit, kattenbiochemie, neuron",
+      "block": "b028",
+      "issue": "policy gap",
+      "reason": "Deliberate opaque jargon per the bible; still the sole cause of the known-share and density FAIL. A per-scene jargon list would keep these out of the verdict; compound splitting (kat + biochemie, with 'biochemie' already a cognate) would also help."
+    },
+    {
+      "ref": "lexicon: brein",
+      "block": "b028",
+      "issue": "lexicon gap",
+      "reason": "Transparent cognate, still absent from every list; add so later scenes need not gloss it."
+    }
+  ]
+}

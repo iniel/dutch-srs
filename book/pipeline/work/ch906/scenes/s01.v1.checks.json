@@ -1,0 +1,383 @@
+{
+  "scene": "ch906/s01",
+  "version": 1,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch906/scenes/s01.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch906/s01",
+    "version": 1,
+    "tokens": 298,
+    "known_tokens": 292,
+    "known_share": 0.9799,
+    "new_lemmas_unglossed": 6,
+    "new_per_1000": 20.1,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "5%",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Soms verschilde die verhouding dus meer dan 5% van het gewicht van zeventien Sikkels tegenover één Galjoen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wisselkoers",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": true,
+        "examples": [
+          "Uiteindelijk kon dan niemand de wisselkoers nog volhouden."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "gemene",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "hedgefondsmanager",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": true,
+        "examples": [
+          "Aan de andere kant: één goede hedgefondsmanager kon waarschijnlijk binnen een week de hele tovenaarswereld bezitten."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "primitief",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "primitive"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "volhouden",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to continue",
+          "persevere"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b029"
+        ],
+        "glossed": false,
+        "examples": [
+          "Uiteindelijk kon dan niemand de wisselkoers nog volhouden."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "draak",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "dragon"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Draken bewaakten die kluizen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "termijn",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "term",
+          "period"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": false,
+        "examples": [
+          "Die moesten wel genoeg zijn voor zijn behoeften op korte termijn."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "bewaken",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to watch over",
+          "to guard"
+        ],
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "triest",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "pitiful"
+        ],
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "bezitten",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "to own",
+          "to possess"
+        ],
+        "count": 1,
+        "blocks": [
+          "b033"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "behoefte",
+        "status": "known",
+        "cefr": "B1",
+        "en": [
+          "need"
+        ],
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b031",
+        "scope": "sentence",
+        "new": [
+          "gemene",
+          "primitief"
+        ],
+        "text": "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…"
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b029": {
+        "tokens": 124,
+        "new": [
+          "5%",
+          "volhouden"
+        ],
+        "glosses": [
+          "arbitrage",
+          "wisselkoers"
+        ]
+      },
+      "b030": {
+        "tokens": 37,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 68,
+        "new": [
+          "draak",
+          "gemene",
+          "primitief"
+        ],
+        "glosses": [
+          "bewaakten"
+        ]
+      },
+      "b032": {
+        "tokens": 9,
+        "new": [],
+        "glosses": [
+          "trieste"
+        ]
+      },
+      "b033": {
+        "tokens": 35,
+        "new": [],
+        "glosses": [
+          "hedgefondsmanager",
+          "bezitten"
+        ]
+      },
+      "b034": {
+        "tokens": 25,
+        "new": [
+          "termijn"
+        ],
+        "glosses": [
+          "behoeften"
+        ]
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch906/s01",
+    "version": 1,
+    "sentences": 26,
+    "summary": {
+      "likely": 2,
+      "review": 1,
+      "load": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PASSIVE",
+        "span": "heeft ooit van arbitrage gehoord.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "En dat is niet alles: niemand hier heeft ooit van arbitrage gehoord.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "is niet alles: niemand hier heeft ooit van arbitrage gehoord",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b029",
+        "sent": 1,
+        "sentence": "En dat is niet alles: niemand hier heeft ooit van arbitrage gehoord.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gemene",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b031",
+        "sent": 4,
+        "sentence": "Even wilde hij een paar gemene opmerkingen maken over hun primitieve geldsysteem…",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "ging de verhouding tussen goud en zilver steeds op en neer",
+        "block": "b029",
+        "sent": 2,
+        "sentence": "In de grotere economie van de Dreuzels ging de verhouding tussen goud en zilver steeds op en neer.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

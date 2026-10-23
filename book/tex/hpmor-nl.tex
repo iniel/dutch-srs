@@ -1,0 +1,41 @@
+% Dutch A2-B1 edition. Chapters are generated into book/tex/chapters-nl/ by
+% `uv run --project book/pipeline nl-assemble N`; only chapters that exist are included.
+% Build from the repo root with book/tex and book/upstream on TEXINPUTS (see book/pipeline/README.md).
+\RequirePackage[pdf]{layout/hp-book}
+\input{layout/hp-nl}
+
+\newcommand{\nlchapter}[1]{\IfFileExists{chapters-nl/hpmor-chapter-#1.tex}{\include{chapters-nl/hpmor-chapter-#1}}{\stepcounter{chapter}}}
+
+\begin{document}
+{
+\pagestyle{empty}
+\input{layout/hpmor-title}
+\cleartorecto
+}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\part{Harry James Potter-Evans-Verres en de Methoden van Rationaliteit}
+\nlchapter{001}
+\nlchapter{002}
+\nlchapter{003}
+\nlchapter{004}
+\nlchapter{005}
+\nlchapter{006}
+\nlchapter{007}
+\nlchapter{008}
+\nlchapter{009}
+\nlchapter{010}
+\setcounter{chapter}{11}
+\nlchapter{012}
+\nlchapter{013}
+\nlchapter{014}
+\nlchapter{015}
+\nlchapter{016}
+\nlchapter{017}
+\nlchapter{018}
+\nlchapter{019}
+\nlchapter{020}
+\nlchapter{021}
+
+\end{document}

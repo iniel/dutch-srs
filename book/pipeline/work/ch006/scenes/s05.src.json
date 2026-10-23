@@ -1,0 +1,188 @@
+{
+  "chapter": 6,
+  "scene": "s05",
+  "index": 4,
+  "of": 15,
+  "chapter_title": "The Planning Fallacy",
+  "words": 962,
+  "blocks": [
+    {
+      "id": "b110",
+      "kind": "para",
+      "tex": "Harry stared at her in puzzlement. That was a self-evident axiom. “Well…” Harry said slowly. He tried to organise his thoughts. How \\emph{could} he explain himself to a Professor-witch, when she didn’t even know the basics? “Muggle researchers have found that people are always very optimistic, compared to reality. Like they say something will take two days and it takes ten days, or they say it’ll take two months and it takes over thirty-five years. For example, in one experiment, they asked students for times by which they were 50\\% sure, 75\\% sure, and 99\\% sure they’d complete their homework, and only 13\\%, 19\\%, and 45\\% of the students finished by those times. And they found that the reason was that when they asked one group for their best-case estimates if everything went as well as possible, and another group for their average-case estimates if everything went as usual, they got back answers that were statistically indistinguishable. See, if you ask someone what they expect in the \\emph{normal} case, they visualise what looks like the line of maximum probability at each step along the way—everything going according to plan, with no surprises. But actually, since more than half the students didn’t finish by the time they were 99\\% sure they’d be done, reality usually delivers results a little worse than the ‘worst-case scenario’. It’s called the planning fallacy, and the best way to fix it is to ask how long things took the last time you tried them. That’s called using the outside view instead of the inside view. But when you’re doing something new and can’t do that, you just have to be really, really, really pessimistic. Like, so pessimistic that reality actually comes out \\emph{better} than you expected around as often and as much as it comes out worse. It’s actually \\emph{really hard} to be \\emph{so} pessimistic that you stand a decent chance of \\emph{undershooting} real life. Like I make this big effort to be gloomy and I imagine one of my classmates getting bitten, but what actually happens is that the surviving Death Eaters attack the whole school to get at me. But on a happier note—”",
+      "text": "Harry stared at her in puzzlement. That was a self-evident axiom. “Well…” Harry said slowly. He tried to organise his thoughts. How could he explain himself to a Professor-witch, when she didn’t even know the basics? “Muggle researchers have found that people are always very optimistic, compared to reality. Like they say something will take two days and it takes ten days, or they say it’ll take two months and it takes over thirty-five years. For example, in one experiment, they asked students for times by which they were 50% sure, 75% sure, and 99% sure they’d complete their homework, and only 13%, 19%, and 45% of the students finished by those times. And they found that the reason was that when they asked one group for their best-case estimates if everything went as well as possible, and another group for their average-case estimates if everything went as usual, they got back answers that were statistically indistinguishable. See, if you ask someone what they expect in the normal case, they visualise what looks like the line of maximum probability at each step along the way—everything going according to plan, with no surprises. But actually, since more than half the students didn’t finish by the time they were 99% sure they’d be done, reality usually delivers results a little worse than the ‘worst-case scenario’. It’s called the planning fallacy, and the best way to fix it is to ask how long things took the last time you tried them. That’s called using the outside view instead of the inside view. But when you’re doing something new and can’t do that, you just have to be really, really, really pessimistic. Like, so pessimistic that reality actually comes out better than you expected around as often and as much as it comes out worse. It’s actually really hard to be so pessimistic that you stand a decent chance of undershooting real life. Like I make this big effort to be gloomy and I imagine one of my classmates getting bitten, but what actually happens is that the surviving Death Eaters attack the whole school to get at me. But on a happier note—”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 214,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b111",
+      "kind": "para",
+      "tex": "“Stop,” said Professor McGonagall.",
+      "text": "“Stop,” said Professor McGonagall.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 216,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b112",
+      "kind": "para",
+      "tex": "Harry stopped. He had just been about to point out that at least they knew the Dark Lord wouldn’t attack, since he was dead.",
+      "text": "Harry stopped. He had just been about to point out that at least they knew the Dark Lord wouldn’t attack, since he was dead.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 218,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b113",
+      "kind": "para",
+      "tex": "“I think I might not have made myself clear,” the witch said, her precise Scottish voice sounding even more careful. “Did anything happen to \\emph{you personally} that frightened you, Mr~Potter?”",
+      "text": "“I think I might not have made myself clear,” the witch said, her precise Scottish voice sounding even more careful. “Did anything happen to you personally that frightened you, Mr Potter?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 220,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b114",
+      "kind": "para",
+      "tex": "“What happened to me personally is only anecdotal evidence,” Harry explained. “It doesn’t carry the same weight as a replicated, peer-reviewed journal article about a controlled study with random assignment, many subjects, large effect sizes and strong statistical significance.”",
+      "text": "“What happened to me personally is only anecdotal evidence,” Harry explained. “It doesn’t carry the same weight as a replicated, peer-reviewed journal article about a controlled study with random assignment, many subjects, large effect sizes and strong statistical significance.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 222,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b115",
+      "kind": "para",
+      "tex": "Professor McGonagall pinched the bridge of her nose, inhaled, and exhaled. “I would still like to hear about it,” she said.",
+      "text": "Professor McGonagall pinched the bridge of her nose, inhaled, and exhaled. “I would still like to hear about it,” she said.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 224,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b116",
+      "kind": "para",
+      "tex": "“Um…” Harry said. He took a deep breath. “There’d been some muggings in our neighbourhood, and my mother asked me to return a pan she’d borrowed to a neighbour two streets away, and I said I didn’t want to because I might get mugged, and she said, ‘Harry, don’t say things like that!’ Like thinking about it would \\emph{make} it happen, so if I didn’t talk about it, I would be safe. I tried to explain why I wasn’t reassured, and she made me carry over the pan anyway. I was too young to know how statistically unlikely it was for a mugger to target me, but I was old enough to know that not thinking about something doesn’t stop it from happening, so I was really scared.”",
+      "text": "“Um…” Harry said. He took a deep breath. “There’d been some muggings in our neighbourhood, and my mother asked me to return a pan she’d borrowed to a neighbour two streets away, and I said I didn’t want to because I might get mugged, and she said, ‘Harry, don’t say things like that!’ Like thinking about it would make it happen, so if I didn’t talk about it, I would be safe. I tried to explain why I wasn’t reassured, and she made me carry over the pan anyway. I was too young to know how statistically unlikely it was for a mugger to target me, but I was old enough to know that not thinking about something doesn’t stop it from happening, so I was really scared.”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 226,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b117",
+      "kind": "para",
+      "tex": "“Nothing else?” Professor McGonagall said after a pause, when it became clear that Harry was done. “There isn’t anything \\emph{else} that happened to you?”",
+      "text": "“Nothing else?” Professor McGonagall said after a pause, when it became clear that Harry was done. “There isn’t anything else that happened to you?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 228,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b118",
+      "kind": "para",
+      "tex": "“I know it doesn’t \\emph{sound} like much,” Harry defended. “But it was just one of those critical life moments, you see? I mean, I \\emph{knew} that not thinking about something doesn’t stop it from happening, I \\emph{knew} that, but I could see that Mum really thought that way.” Harry stopped, struggling with the anger that was starting to rise up again when he thought about it. “She \\emph{wouldn’t listen}. I tried to tell her, I \\emph{begged} her not to send me out, and she \\emph{laughed it off}. Everything I said, she treated like some sort of big joke…” Harry forced the black rage back down again. “That’s when I realised that everyone who was supposed to protect me was actually crazy, and that they wouldn’t listen to me no matter how much I begged them, and that I couldn’t ever rely on them to get anything right.” Sometimes good intentions weren’t enough, sometimes you had to be sane…",
+      "text": "“I know it doesn’t sound like much,” Harry defended. “But it was just one of those critical life moments, you see? I mean, I knew that not thinking about something doesn’t stop it from happening, I knew that, but I could see that Mum really thought that way.” Harry stopped, struggling with the anger that was starting to rise up again when he thought about it. “She wouldn’t listen. I tried to tell her, I begged her not to send me out, and she laughed it off. Everything I said, she treated like some sort of big joke…” Harry forced the black rage back down again. “That’s when I realised that everyone who was supposed to protect me was actually crazy, and that they wouldn’t listen to me no matter how much I begged them, and that I couldn’t ever rely on them to get anything right.” Sometimes good intentions weren’t enough, sometimes you had to be sane…",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 230,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b119",
+      "kind": "para",
+      "tex": "There was a long silence.",
+      "text": "There was a long silence.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 232,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b120",
+      "kind": "para",
+      "tex": "Harry took the time to breathe deeply and calm himself down. There was no point in getting angry. There was no point in getting angry. \\emph{All} parents were like that, \\emph{no} adult would lower themselves far enough to place themselves on level ground with a child and listen, his genetic parents would have been no different. Sanity was a tiny spark in the night, an infinitesimally rare exception to the rule of madness, so there was no point in getting angry.",
+      "text": "Harry took the time to breathe deeply and calm himself down. There was no point in getting angry. There was no point in getting angry. All parents were like that, no adult would lower themselves far enough to place themselves on level ground with a child and listen, his genetic parents would have been no different. Sanity was a tiny spark in the night, an infinitesimally rare exception to the rule of madness, so there was no point in getting angry.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 234,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b121",
+      "kind": "para",
+      "tex": "Harry didn’t like himself when he was angry.",
+      "text": "Harry didn’t like himself when he was angry.",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 236,
+      "dialogue": false,
+      "gap_before": true
+    },
+    {
+      "id": "b122",
+      "kind": "para",
+      "tex": "“Thank you for sharing that, Mr~Potter,” said Professor McGonagall after a while. There was an abstracted look on her face (almost exactly the same look that had appeared on Harry’s own face while experimenting on the pouch, if Harry had only seen himself in a mirror to realise that). “I shall have to think about this.” She turned towards the alley mouth, and raised her wand—",
+      "text": "“Thank you for sharing that, Mr Potter,” said Professor McGonagall after a while. There was an abstracted look on her face (almost exactly the same look that had appeared on Harry’s own face while experimenting on the pouch, if Harry had only seen himself in a mirror to realise that). “I shall have to think about this.” She turned towards the alley mouth, and raised her wand—",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 238,
+      "dialogue": true,
+      "gap_before": true
+    },
+    {
+      "id": "b123",
+      "kind": "para",
+      "tex": "“Um,” Harry said, “can we go get the healer’s kit now?”",
+      "text": "“Um,” Harry said, “can we go get the healer’s kit now?”",
+      "env": null,
+      "envs": [],
+      "translate": true,
+      "line": 240,
+      "dialogue": true,
+      "gap_before": true
+    }
+  ],
+  "context_before": [
+    "Professor McGonagall opened her mouth, then closed it. The witch rubbed the bridge of her nose, looking thoughtful. “Mr Potter…if I were to offer to listen to you for a while…is there anything you’d like to talk to me about?”",
+    "“About what?”",
+    "“About why you’re convinced you must always be on your guard against terrible things happening to you.”"
+  ],
+  "context_after": [
+    "The witch paused, and looked back at him steadily. “And if I say no—that it is too expensive and you won’t need it—then what?”",
+    "Harry’s face twisted in bitterness. “Exactly what you’re thinking, Professor McGonagall. Exactly what you’re thinking. I conclude you’re another crazy adult I can’t talk to, and I start planning how to get my hands on a healer’s kit anyway.”",
+    "“I am your guardian on this trip,” Professor McGonagall said with a tinge of danger. “I will not allow you to push me around.”"
+  ]
+}

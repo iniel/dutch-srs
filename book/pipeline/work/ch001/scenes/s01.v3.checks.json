@@ -1,0 +1,475 @@
+{
+  "scene": "ch001/s01",
+  "version": 3,
+  "file": "/Users/svetlana/Development/hpmor/dutch/work/ch001/scenes/s01.v3.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch001/s01",
+    "version": 3,
+    "tokens": 916,
+    "known_tokens": 912,
+    "known_share": 0.9956,
+    "new_lemmas_unglossed": 2,
+    "new_per_1000": 2.2,
+    "stretch_budget": 7,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": true,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "ok": true
+    },
+    "lemmas": [
+      {
+        "lemma": "glimen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b004"
+        ],
+        "glossed": false,
+        "examples": [
+          "Onder het maanlicht glimt een heel klein stukje zilver, een fractie van een lijn…"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "cold",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dat heet cold reading — ”"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "reading",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dat heet cold reading — ”"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "eminent",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "eminent",
+          "distinguished"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b012"
+        ],
+        "glossed": true,
+        "examples": [
+          "Dit is de woonkamer in het huis van de eminente professor Michael Verres-Evans, en zijn vrouw, mevrouw Petunia Evans-Verres, en hun adoptiezoon, Harry James Pot"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "boekenkast",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bookcase"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "Tegen elke centimeter muur staat een boekenkast.",
+          "Elke boekenkast heeft zes planken, tot bijna aan het plafond."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "overstromen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to overflow"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b010"
+        ],
+        "glossed": false,
+        "examples": [
+          "De boeken stromen over op de tafels en de banken en liggen in kleine stapels onder de ramen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "cold reading",
+        "status": "phrase",
+        "cefr": null,
+        "en": [
+          "guessing from small cues"
+        ],
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [],
+        "phrase": true,
+        "action": "phrase-glossed",
+        "hint": "multi-word gloss; fine if the phrase is needed, otherwise prefer a plain verb"
+      },
+      {
+        "lemma": "smaragdgroene",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b013"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "goochelaar",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "wrong",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b030"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "per_block": {
+      "b001": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b004": {
+        "tokens": 14,
+        "new": [
+          "glimen"
+        ],
+        "glosses": []
+      },
+      "b006": {
+        "tokens": 3,
+        "new": [],
+        "glosses": [
+          "gewaden"
+        ]
+      },
+      "b008": {
+        "tokens": 10,
+        "new": [],
+        "glosses": []
+      },
+      "b010": {
+        "tokens": 93,
+        "new": [
+          "boekenkast",
+          "overstromen"
+        ],
+        "glosses": []
+      },
+      "b012": {
+        "tokens": 25,
+        "new": [],
+        "glosses": [
+          "eminente"
+        ]
+      },
+      "b013": {
+        "tokens": 28,
+        "new": [],
+        "glosses": [
+          "perkament",
+          "smaragdgroene"
+        ]
+      },
+      "b014": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b015": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b016": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b017": {
+        "tokens": 17,
+        "new": [],
+        "glosses": []
+      },
+      "b018": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b019": {
+        "tokens": 57,
+        "new": [],
+        "glosses": [
+          "goochelaar",
+          "cold reading"
+        ]
+      },
+      "b020": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b021": {
+        "tokens": 4,
+        "new": [],
+        "glosses": []
+      },
+      "b022": {
+        "tokens": 105,
+        "new": [],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      },
+      "b024": {
+        "tokens": 120,
+        "new": [],
+        "glosses": [
+          "smoesjes"
+        ]
+      },
+      "b025": {
+        "tokens": 2,
+        "new": [],
+        "glosses": []
+      },
+      "b026": {
+        "tokens": 83,
+        "new": [],
+        "glosses": []
+      },
+      "b027": {
+        "tokens": 29,
+        "new": [],
+        "glosses": []
+      },
+      "b028": {
+        "tokens": 10,
+        "new": [],
+        "glosses": []
+      },
+      "b029": {
+        "tokens": 22,
+        "new": [],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 30,
+        "new": [],
+        "glosses": [
+          "wrong"
+        ]
+      },
+      "b031": {
+        "tokens": 0,
+        "new": [],
+        "glosses": []
+      },
+      "b032": {
+        "tokens": 23,
+        "new": [],
+        "glosses": []
+      },
+      "b033": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b034": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b035": {
+        "tokens": 17,
+        "new": [],
+        "glosses": []
+      },
+      "b036": {
+        "tokens": 29,
+        "new": [],
+        "glosses": []
+      },
+      "b037": {
+        "tokens": 80,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.975,
+      "new_lemmas_per_1000_max": 15,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch001/s01",
+    "version": 3,
+    "sentences": 137,
+    "summary": {
+      "likely": 0,
+      "review": 3,
+      "load": 0
+    },
+    "verdict": {
+      "ok": true
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "vallend",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b006",
+        "sent": 0,
+        "sentence": "(zwarte gewaden, vallend)",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "getrainde",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b019",
+        "sent": 4,
+        "sentence": "een getrainde goochelaar doet heel makkelijk iets onmogelijks na.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "belachelijkste",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b024",
+        "sent": 1,
+        "sentence": "Ze bedacht de belachelijkste smoesjes:",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-OF",
+        "span": "Of het mocht niet van een centaur",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b024",
+        "sent": 3,
+        "sentence": "Of het mocht niet van een centaur — de belachelijkste dingen, en daarom haatte ik haar.",
+        "level": "ignored",
+        "hint": "ask the question directly: Was het waar? Hij wist het niet."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "Dan hoeven jullie geen ruzie te maken",
+        "confidence": 0.1,
+        "note": "whitelisted chunk 'hoeven te'",
+        "block": "b037",
+        "sent": 0,
+        "sentence": "“Dan hoeven jullie geen ruzie te maken,” zei Harry met vaste stem.",
+        "level": "ignored",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "dingen niet alleen met ruzie hoeven op te lossen",
+        "confidence": 0.1,
+        "note": "whitelisted chunk 'hoeven te'",
+        "block": "b037",
+        "sent": 8,
+        "sentence": "Daar is de experimentele methode voor, zodat we dingen niet alleen met ruzie hoeven op te lossen.”",
+        "level": "ignored",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      }
+    ],
+    "load": []
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": true,
+    "grammar_ok": true,
+    "ok": true
+  }
+}

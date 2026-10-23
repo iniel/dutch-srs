@@ -1,0 +1,126 @@
+{
+  "scene": "ch001/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "The scene is intact: every event, causal link, speaker and point of view survives, the bitterness paragraph keeps its order and punchline, and all comprehension questions are answerable from the Dutch. Two should_fix items: the Professor's reproach in b038 drifts into a check-question, and Harry's plea in b045 gains a clarifying noun the English does not have.",
+  "comprehension": [
+    {
+      "q": "Why does Harry feel his father does not respect him, even though he is treated well?",
+      "answer_from_nl": "Hij kreeg alles wat redelijk was (beste basisscholen, eigen leraren, boeken, betaalde wedstrijden), 'behalve misschien een heel klein beetje respect': een Doctor in Oxford luisterde niet naar het advies van een kleine jongen; luisteren was alleen 'Belangstelling Tonen', zoals een Goede Ouder doet; een jongen van tien serieus nemen deed hij nauwelijks.",
+      "answerable": true
+    },
+    {
+      "q": "What does Harry tell his mother to look up, and what rule of science does he cite?",
+      "answer_from_nl": "Hoofdstuk twee van het eerste deel van de Feynman Lectures on Physics; de wetenschap heeft maar één regel: de hoogste rechter is de waarneming — naar de wereld kijken en vertellen wat je ziet; dingen beslis je met een experiment, niet met een discussie.",
+      "answerable": true
+    },
+    {
+      "q": "Why does Petunia decline Harry's help?",
+      "answer_from_nl": "Ze wil geen discussie met zijn vader winnen; ze wil dat haar man naar zijn vrouw luistert — zij houdt van hem — en haar deze ene keer vertrouwt.",
+      "answerable": true
+    },
+    {
+      "q": "What kind of argument do the parents fall into, what does Harry ask of them, and what happens next?",
+      "answer_from_nl": "'Zo'n ruzie': de moeder wil dat de vader zich schuldig voelt, de vader wil dat de moeder zich dom voelt. Harry zegt dat hij naar zijn kamer gaat en vraagt ze niet te veel ruzie te maken, want ze weten het resultaat snel genoeg. Ze zeggen 'natuurlijk', geven hem een kus, en gaan door met ruziemaken terwijl hij de trap op gaat.",
+      "answerable": true
+    },
+    {
+      "q": "Why should Harry, by his own reasoning, have agreed with Dad?",
+      "answer_from_nl": "Niemand zag ooit bewijs van magie, terwijl er volgens mam een hele wereld vol magie zou zijn; zoiets kan niemand geheim houden, en 'nog meer magie' als verklaring daarvoor klinkt als een verdacht excuus.",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b038",
+      "fragment": "Ik dacht: \\emph{jij} weet wel beter, jongen, hoewel je pas tien bent. Dit neem je toch niet serieus.",
+      "problem": "The English is one disappointed judgement (Harry evidently IS taking this seriously, against the Professor's expectation of him); the Dutch splits it into a bare 'you know better' plus a present-tense 'toch niet' check-question that invites Harry's agreement, which engages him rather than dismisses him.",
+      "evidence": "EN: 'I thought \\emph{you'd} know better than to take this seriously, son, even if you're only ten.' vs NL: 'Ik dacht: \\emph{jij} weet wel beter, jongen, hoewel je pas tien bent. Dit neem je toch niet serieus.'",
+      "required_fix": "Keep the line a statement of disappointed expectation, not a question-like 'toch niet'. The 'know better' and 'take this seriously' halves must stay linked, e.g. 'Ik dacht: \\emph{jij} neemt zoiets niet serieus, jongen, hoewel je pas tien bent. Jij weet wel beter.' Emphasis stays on *jij*; the number of emphasised ideas stays two.",
+      "severity": "should_fix",
+      "category": "voice"
+    },
+    {
+      "id": "M2",
+      "block": "b039",
+      "fragment": "Ze behandelden hem goed, waarschijnlijk beter dan de meeste genetische vaders hun eigen kinderen.",
+      "problem": "The English agentless passives let the paragraph float between 'his father' and 'his parents'; the Dutch resolves the agent to 'ze' (both parents), so the comparison reads 'they treated him better than most fathers', and the paragraph's target — the father Harry wants to scream at in b040 — is slightly blurred.",
+      "evidence": "EN: 'He was treated well, probably better than most genetic fathers treated their own children.' vs NL: 'Ze behandelden hem goed, waarschijnlijk beter dan de meeste genetische vaders hun eigen kinderen.'",
+      "required_fix": "No change required if the passive is unavailable under the grammar profile; do not over-correct to 'Zijn vader behandelde hem goed' (adds a noun the English withholds). If a passive is allowed here, 'Harry werd goed behandeld' is closer.",
+      "severity": "note",
+      "category": "pov"
+    },
+    {
+      "id": "M3",
+      "block": "b039",
+      "fragment": "Hij kreeg alles, als het maar redelijk was.",
+      "problem": "'that he wanted' is dropped: the English says his requests were granted when reasonable, the Dutch says he was given everything as long as it was reasonable.",
+      "evidence": "EN: 'He was given anything reasonable that he wanted' vs NL: 'Hij kreeg alles, als het maar redelijk was.'",
+      "required_fix": "Optional: restore the wanting inside the paragraph's question-answer rhythm, e.g. 'Wilde hij iets? Dan kreeg hij het, als het maar redelijk was.' Keep the punchline sentence 'Behalve misschien een heel klein beetje respect.' unchanged.",
+      "severity": "note",
+      "category": "omission"
+    },
+    {
+      "id": "M4",
+      "block": "b039",
+      "fragment": "Luisteren deed je natuurlijk wel: dat heette Belangstelling Tonen.",
+      "problem": "The English makes Showing Interest the purpose of the listening (you listen in order to Show Interest); the Dutch makes it a label (listening was called Showing Interest). The sarcasm survives, the purpose link is implicit.",
+      "evidence": "EN: 'You would listen to Show Interest, of course' vs NL: 'Luisteren deed je natuurlijk wel: dat heette Belangstelling Tonen.'",
+      "required_fix": "Acceptable as is. Closer if a purpose construction is allowed: 'Luisteren deed je natuurlijk wel, om Belangstelling te Tonen.' Capitals stay.",
+      "severity": "note",
+      "category": "causality"
+    },
+    {
+      "id": "M5",
+      "block": "b041",
+      "fragment": "Eh… er staat ook ergens iets over het ideaal van de wetenschap",
+      "problem": "'ook' ties the second passage to the Feynman book just named; the English leaves its source open (Harry only knows it exists somewhere and cannot recall where).",
+      "evidence": "EN: 'off the top of my head I can't think of where to find something about how it's an ideal of science…' vs NL: 'er staat ook ergens iets over het ideaal van de wetenschap… Maar waar staat dat? Dat weet ik zo snel niet—'",
+      "required_fix": "Optional: drop 'ook' ('Eh… ergens staat iets over het ideaal van de wetenschap…'). The reordering (content first, then 'waar staat dat') is fine; the interruption dash still lands on Harry mid-search.",
+      "severity": "note",
+      "category": "detail"
+    },
+    {
+      "id": "M6",
+      "block": "b042",
+      "fragment": "hij luistert naar zijn vrouw. Zij houdt van hem. En hij vertrouwt haar, deze ene keer—",
+      "problem": "The pointed relative 'his wife who loves him' becomes a standalone third-person statement; as leverage inside the request it is slightly less pointed, but it fits Petunia's broken, repeating speech and all content (listen, wife, loves him, trust, just this once, interruption) is present.",
+      "evidence": "EN: 'I want my husband to, to listen to his wife who loves him, and trust her just this once—' vs NL: 'Ik wil, ik wil dit van mijn man: hij luistert naar zijn vrouw. Zij houdt van hem. En hij vertrouwt haar, deze ene keer—'",
+      "required_fix": "No change required. If a relative clause is allowed in dialogue, 'naar zijn vrouw, die van hem houdt' is closer.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "M7",
+      "block": "b045",
+      "fragment": "maak niet te veel ruzie over dit onderwerp, mam, pap",
+      "problem": "'about this' becomes 'over dit onderwerp': a clarifying noun where the English has a pronoun, and 'onderwerp' gives a trembling child's plea the sound of an agenda item.",
+      "evidence": "EN: 'Please try not to fight too much about this, Mum, Dad' vs NL: 'Alsjeblieft, maak niet te veel ruzie over dit onderwerp, mam, pap.'",
+      "required_fix": "Keep 'about this' as a pronoun-level reference or let context carry it: e.g. 'Alsjeblieft, maak hier niet te veel ruzie over, mam, pap' or 'Alsjeblieft, niet te veel ruzie hierover' — whichever the grammar profile allows. No noun.",
+      "severity": "should_fix",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M8",
+      "block": "b045",
+      "fragment": "Alsjeblieft, maak niet te veel ruzie",
+      "problem": "'try' is dropped: the English plea concedes they will fight anyway and asks only for an attempt; the Dutch is a direct request. 'niet te veel' still carries part of the concession.",
+      "evidence": "EN: 'Please try not to fight too much' vs NL: 'Alsjeblieft, maak niet te veel ruzie'",
+      "required_fix": "Optional, if a softening without 'proberen te' is available (e.g. 'Alsjeblieft, doe je best: niet te veel ruzie, mam, pap'); otherwise acceptable since 'alsjeblieft' and 'niet te veel' keep it a plea.",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M9",
+      "block": "b044",
+      "fragment": "Zijn moeder deed haar best: zijn vader moest zich schuldig voelen.",
+      "problem": "'deed haar best' has a faintly approving ring that the neutral 'tried to make … feel' lacks, and the colon leaves the make-feel relation implicit; the parallel of the two halves and the meaning are preserved.",
+      "evidence": "EN: 'his mother tried to make his father feel guilty, and his father tried to make his mother feel stupid' vs NL: 'Zijn moeder deed haar best: zijn vader moest zich schuldig voelen. Zijn vader deed zijn best: zijn moeder moest zich dom voelen.'",
+      "required_fix": "Acceptable as is; keep the two halves parallel whatever the wording. 'probeerde' would be neutral if the construction is allowed.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "scene": "ch904/s03",
+  "version": 0,
+  "file": "work/ch904/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch904/s03",
+    "version": 0,
+    "tokens": 245,
+    "known_tokens": 232,
+    "known_share": 0.9469,
+    "new_lemmas_unglossed": 13,
+    "new_per_1000": 53.1,
+    "stretch_budget": 2,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "wél",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADV",
+        "count": 1,
+        "blocks": [
+          "b076"
+        ],
+        "glossed": false,
+        "examples": [
+          "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "afgrissen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b076"
+        ],
+        "glossed": false,
+        "examples": [
+          "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "neerdalen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b077"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als er werkelijk een uil neerdaalt en deze envelop grijpt, dan heb ik wel heel wat belangrijkere zorgen dan wat pap ervan denkt."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "gênant",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b080"
+        ],
+        "glossed": false,
+        "examples": [
+          "eigenlijk behoorlijk gênant, nu hij erover nadacht."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "nadacht",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b080"
+        ],
+        "glossed": false,
+        "examples": [
+          "eigenlijk behoorlijk gênant, nu hij erover nadacht."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "vermanen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b083"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry vermande zich en schreeuwde de lege lucht in:"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "schutting",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b086"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het gezicht van een oude vrouw tuurde over de schutting van de buren, met pieken grauwgrijs haar die aan haar haarnetje ontsnapten."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "haarnetje",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b086"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het gezicht van een oude vrouw tuurde over de schutting van de buren, met pieken grauwgrijs haar die aan haar haarnetje ontsnapten."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "drugsgeld",
+        "status": "hard",
+        "cefr": "C1",
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b085"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry trok zijn hand omlaag alsof die in brand stond en verstopte de envelop achter zijn rug alsof het drugsgeld was."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "achterdeur",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "back door"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b076"
+        ],
+        "glossed": false,
+        "examples": [
+          "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het "
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "doordringen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to penetrate"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b076"
+        ],
+        "glossed": false,
+        "examples": [
+          "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het "
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "toepassen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to apply",
+          "implement"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b081"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ik ga de wetenschappelijke methode toepassen, ook al voel ik me er stom bij."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "piek",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "highest point",
+          "peak"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b086"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het gezicht van een oude vrouw tuurde over de schutting van de buren, met pieken grauwgrijs haar die aan haar haarnetje ontsnapten."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b076",
+        "scope": "sentence",
+        "new": [
+          "achterdeur",
+          "afgrissen",
+          "doordringen",
+          "wél"
+        ],
+        "text": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan p"
+      },
+      {
+        "block": "b080",
+        "scope": "sentence",
+        "new": [
+          "gênant",
+          "nadacht"
+        ],
+        "text": "eigenlijk behoorlijk gênant, nu hij erover nadacht."
+      },
+      {
+        "block": "b086",
+        "scope": "sentence",
+        "new": [
+          "haarnetje",
+          "piek",
+          "schutting"
+        ],
+        "text": "Het gezicht van een oude vrouw tuurde over de schutting van de buren, met pieken grauwgrijs haar die aan haar haarnetje ontsnapten."
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b076": {
+        "tokens": 42,
+        "new": [
+          "achterdeur",
+          "afgrissen",
+          "doordringen",
+          "wél"
+        ],
+        "glosses": []
+      },
+      "b077": {
+        "tokens": 39,
+        "new": [
+          "neerdalen"
+        ],
+        "glosses": []
+      },
+      "b078": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b079": {
+        "tokens": 2,
+        "new": [],
+        "glosses": []
+      },
+      "b080": {
+        "tokens": 26,
+        "new": [
+          "gênant",
+          "nadacht"
+        ],
+        "glosses": []
+      },
+      "b081": {
+        "tokens": 20,
+        "new": [
+          "toepassen"
+        ],
+        "glosses": []
+      },
+      "b082": {
+        "tokens": 15,
+        "new": [],
+        "glosses": []
+      },
+      "b083": {
+        "tokens": 17,
+        "new": [
+          "vermanen"
+        ],
+        "glosses": []
+      },
+      "b084": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b085": {
+        "tokens": 27,
+        "new": [
+          "drugsgeld"
+        ],
+        "glosses": []
+      },
+      "b086": {
+        "tokens": 37,
+        "new": [
+          "haarnetje",
+          "piek",
+          "schutting"
+        ],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch904/s03",
+    "version": 0,
+    "sentences": 23,
+    "summary": {
+      "likely": 13,
+      "review": 1,
+      "load": 7
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-DAT",
+        "span": "dat als er wél een uil kwam",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om de brief weg te grissen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om dat aan pap te vertellen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "brein ook lijkt te geloven",
+        "confidence": 0.9,
+        "note": "after 'lijken'",
+        "block": "b077",
+        "sent": 1,
+        "sentence": "Wat mijn brein ook lijkt te geloven.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "ervan",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b077",
+        "sent": 2,
+        "sentence": "Als er werkelijk een uil neerdaalt en deze envelop grijpt, dan heb ik wel heel wat belangrijkere zorgen dan wat pap ervan denkt.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "nu hij erover nadacht.",
+        "confidence": 0.85,
+        "note": "conjunction 'nu'",
+        "block": "b080",
+        "sent": 2,
+        "sentence": "eigenlijk behoorlijk gênant, nu hij erover nadacht.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "erover",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b080",
+        "sent": 2,
+        "sentence": "eigenlijk behoorlijk gênant, nu hij erover nadacht.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "al voel ik me er stom",
+        "confidence": 0.85,
+        "note": "conjunction 'al'",
+        "block": "b081",
+        "sent": 2,
+        "sentence": "Ik ga de wetenschappelijke methode toepassen, ook al voel ik me er stom bij.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "er stom bij",
+        "confidence": 0.7,
+        "note": "split pronominal adverb",
+        "block": "b081",
+        "sent": 2,
+        "sentence": "Ik ga de wetenschappelijke methode toepassen, ook al voel ik me er stom bij.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verbaasde",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b084",
+        "sent": 1,
+        "sentence": "vroeg een verbaasde vrouwenstem, een van de buren.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "alsof die in brand stond en",
+        "confidence": 0.85,
+        "note": "conjunction 'alsof'",
+        "block": "b085",
+        "sent": 0,
+        "sentence": "Harry trok zijn hand omlaag alsof die in brand stond en verstopte de envelop achter zijn rug alsof het drugsgeld was.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-CONJ-OTHER",
+        "span": "alsof het drugsgeld was.",
+        "confidence": 0.85,
+        "note": "conjunction 'alsof'",
+        "block": "b085",
+        "sent": 0,
+        "sentence": "Harry trok zijn hand omlaag alsof die in brand stond en verstopte de envelop achter zijn rug alsof het drugsgeld was.",
+        "level": "likely",
+        "hint": "replace with an allowed subordinator or split: Hij wachtte. Toen kwam ze."
+      },
+      {
+        "id": "R-RELCL",
+        "span": "die aan haar haarnetje ontsnapten",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b086",
+        "sent": 0,
+        "sentence": "Het gezicht van een oude vrouw tuurde over de schutting van de buren, met pieken grauwgrijs haar die aan haar haarnetje ontsnapten.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      }
+    ],
+    "load": [
+      {
+        "id": "L-LEN",
+        "value": 42,
+        "limit": 28,
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b076",
+        "sent": 0,
+        "sentence": "Pas toen Harry de achterdeur uit stampte, de achtertuin in, drong het tot hem door dat als er wél een uil kwam neerstrijken om de brief weg te grissen, hij het nog knap lastig zou krijgen om dat aan pap te vertellen.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 5,
+        "limit": 3,
+        "block": "b077",
+        "sent": 2,
+        "sentence": "Als er werkelijk een uil neerdaalt en deze envelop grijpt, dan heb ik wel heel wat belangrijkere zorgen dan wat pap ervan denkt.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b085",
+        "sent": 0,
+        "sentence": "Harry trok zijn hand omlaag alsof die in brand stond en verstopte de envelop achter zijn rug alsof het drugsgeld was.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b085",
+        "sent": 0,
+        "sentence": "Harry trok zijn hand omlaag alsof die in brand stond en verstopte de envelop achter zijn rug alsof het drugsgeld was.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "drugsgeld",
+        "block": "b085",
+        "sent": 0,
+        "sentence": "Harry trok zijn hand omlaag alsof die in brand stond en verstopte de envelop achter zijn rug alsof het drugsgeld was.",
+        "hint": "no subordinate clause inside another; split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "scene": "ch905/s01",
+  "version": 1,
+  "reviewer": "language",
+  "verdict": "fix",
+  "summary": "Readable and mostly natural Dutch, but the weakest vocabulary layer of the three versions: one unglossed B2 word with a plain equivalent (universeel), the stretch budget doubled, and six glosses spent on known words while brein, geest, planeten and the glossary term Faunaat-transformatie go unglossed. All six grammar flags are false positives; the one L-FRAME load finding stands.",
+  "findings": [
+    {
+      "id": "L1",
+      "block": "b032",
+      "fragment": "de echte wetten waren perfect universeel",
+      "problem": "'universeel' is a hard (B2) word, unglossed, and a plain phrase with the same meaning exists.",
+      "evidence": "lexicon status hard (B2), action replace-or-gloss; V2 and V3 render the same idea with known words",
+      "required_fix": "Replace 'perfect universeel' with 'overal precies hetzelfde': 'De echte wetten waren overal precies hetzelfde.' (combine with L13).",
+      "severity": "must_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L2",
+      "block": "b028",
+      "fragment": "Een menselijke geest kan zich niet zomaar de hele anatomie van een kat voorstellen, en, en alle biochemie van een kat, en hoe zit het met de neurologie?",
+      "problem": "The verbal frame holds 9 words between 'kan' and 'voorstellen', and the stammered list continues after the closing verb, so the reader carries the open frame through the whole object.",
+      "evidence": "L-FRAME 9>8 confirmed",
+      "required_fix": "Close the frame early and hang the list on a colon: 'Een menselijke geest kan zich dat niet zomaar voorstellen: de hele anatomie van een kat, en, en alle biochemie van een kat, en hoe zit het met de \\emph{neurologie}?'",
+      "severity": "should_fix",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "L3",
+      "block": "b024",
+      "fragment": "landde … gestreepte … weggooit … signalen … melodie … steun",
+      "problem": "Six unglossed B1 words against a stretch budget of 3 for this scene length.",
+      "evidence": "lexicon stretch (B1): landen (b024), steun (b024), gestreept (b025, tool lemmatised it as 'streepen'), weggooien (b028), signaal (b028), melodie (b032); budget 3",
+      "required_fix": "Replace the least useful ones with known words: 'landde' → 'viel'; 'de kleine gestreepte kat' → 'de kleine kat met strepen'; 'Als je die wet weggooit' → 'Als je die wet niet accepteert'; 'signalen sneller dan het licht' → 'berichten sneller dan het licht'; 'dezelfde melodie als' → 'hetzelfde liedje als'. Keep 'steun'.",
+      "severity": "should_fix",
+      "category": "vocab:stretch"
+    },
+    {
+      "id": "L4",
+      "block": "b028",
+      "fragment": "Als je die wet weggooit, maak je de unitariteit kapot, en dan krijg je signalen sneller dan het licht!",
+      "problem": "Three new words in one sentence (weggooien, unitariteit, signaal); only 'unitariteit' is the deliberate jargon.",
+      "evidence": "cluster b028 (sentence): signaal, unitariteit, weggooien",
+      "required_fix": "Apply the replacements in L3 ('niet accepteert', 'berichten') so only the intended jargon word remains new.",
+      "severity": "should_fix",
+      "category": "vocab:cluster"
+    },
+    {
+      "id": "L5",
+      "block": "b032",
+      "fragment": "de muziek van de planeten was dezelfde melodie als een vallende appel",
+      "problem": "Two new words in one sentence: 'planeet' (B2, unglossed) and 'melodie' (B1).",
+      "evidence": "cluster b032 (sentence): melodie, planeet; lexicon planeet hard (B2), action replace-or-gloss",
+      "required_fix": "'planeten' has no plain equivalent ('sterren' changes the meaning): keep and gloss '\\gl{planeten}{planets}'; replace 'melodie' with 'liedje': 'de muziek van de \\gl{planeten}{planets} was hetzelfde liedje als een vallende appel.'",
+      "severity": "should_fix",
+      "category": "vocab:cluster"
+    },
+    {
+      "id": "L6",
+      "block": "b028",
+      "fragment": "met een brein zo klein als dat van een kat",
+      "problem": "'brein' is not in any lexicon list and occurs five times unglossed; it carries the mind = brain point of b032.",
+      "evidence": "vocab row brein: unknown, n=5, b028 b032, action review",
+      "required_fix": "Gloss at the first occurrence: 'met een \\gl{brein}{brain} zo klein als dat van een kat'. Lexicon owner: add 'brein' as a transparent cognate.",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L7",
+      "block": "b028",
+      "fragment": "Een menselijke geest",
+      "problem": "'geest' is known to the reader only as ghost/spirit; here it means mind, and nothing in the sentence signals that sense.",
+      "evidence": "lexicon geest: known A2, en = ghost, spirit; V2 and V3 gloss it as 'mind'",
+      "required_fix": "Gloss the sense: 'Een menselijke \\gl{geest}{mind}'. The paragraph stays within 2 glosses once the two unnecessary ones (L9) are dropped.",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L8",
+      "block": "b027",
+      "fragment": "Een Faunaat-transformatie, dat is de precieze naam.",
+      "problem": "Glossary term at its first occurrence in the chapter, left unglossed; 'Faunaat' is opaque to the reader.",
+      "evidence": "glossary.json: 'An Animagus transformation' = 'een Faunaat-transformatie'; vocab row faunaat-transformatie unknown; V2 and V3 gloss it",
+      "required_fix": "Gloss the whole compound: 'Een \\gl{Faunaat-transformatie}{Animagus transformation}, dat is de precieze naam.'",
+      "severity": "should_fix",
+      "category": "name"
+    },
+    {
+      "id": "L9",
+      "block": "b022",
+      "fragment": "\\gl{beslissend}{definitive}, \\gl{aarzelde}{hesitated}, \\gl{steek}{twinge}, \\gl{overtreden}{violated}, \\gl{willekeurige}{arbitrary}, \\gl{uitzondering}{exception}",
+      "problem": "Thirteen glosses on 394 words, six of them on words the reader already knows; the gloss slots are needed elsewhere (L5, L6, L7, L8).",
+      "evidence": "lexicon: aarzelen A2, steek A2, overtreden A2, willekeurig A2, uitzondering known (B1 path word), beslissend = regular derivation of beslissen A2",
+      "required_fix": "Drop these six glosses (b022 beslissend, aarzelde; b024 steek; b028 overtreden, willekeurige; b032 uitzondering) and remove them from @glosses.",
+      "severity": "should_fix",
+      "category": "gloss"
+    },
+    {
+      "id": "L10",
+      "block": "b032",
+      "fragment": "Alles werd \\gl{wazig}{blurry} voor Harry's ogen.",
+      "problem": "'wazig' is unknown and needs a gloss, while the known noun 'waas' says the same thing without one.",
+      "evidence": "vocab row wazig: unknown, glossed; lexicon waas: known A2 (haze, mist)",
+      "required_fix": "'Er kwam een waas voor Harry's ogen.' (as V3) and drop the gloss.",
+      "severity": "should_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L11",
+      "block": "b026",
+      "fragment": "“\\emph{Dat kunt u niet \\emph{doen}!}”",
+      "problem": "Word-for-word 'You can't do that'; in Dutch 'Dat kunt u niet doen' reads first as a moral prohibition (you mustn't), not as 'that is impossible', and the emphasis on 'doen' strengthens that reading.",
+      "evidence": "EN: 'You can't do that!' (impossibility, cf. b028 'You violated Conservation of Energy') vs NL: 'Dat kunt u niet doen!' (prohibition)",
+      "required_fix": "Drop 'doen' and move the emphasis to the modal: '“\\emph{Dat \\emph{kunt} u niet!}”' (as V3).",
+      "severity": "should_fix",
+      "category": "calque"
+    },
+    {
+      "id": "L12",
+      "block": "b032",
+      "fragment": "Het hele idee van een universum als één geheel, met wiskundig regelmatige wetten, dat spoelde nu weg door de wc; het hele idee van \\emph{natuurkunde}.",
+      "problem": "Legal but heavy: a 23-word sentence whose topic carries two post-modifiers before the resumptive 'dat', followed by an apposition after a semicolon.",
+      "evidence": "left-dislocated topic (12 words) + resumptive demonstrative + semicolon apposition; no L-* threshold crossed, but the reader has to hold the topic open until 'dat spoelde'",
+      "required_fix": "Shorten the topic and mark the resumption: 'Het hele idee van één universum met wiskundig regelmatige wetten — dát spoelde nu door de wc. Het hele idee van \\emph{natuurkunde}.'",
+      "severity": "should_fix",
+      "category": "load:L-LEN"
+    },
+    {
+      "id": "L13",
+      "block": "b032",
+      "fragment": "Zien: de echte wetten waren perfect universeel, ze hadden nergens een uitzondering, en ze waren simpele wiskunde voor de allerkleinste deeltjes.",
+      "problem": "The one-word fragment 'Zien:' is not a natural Dutch opener; a reader stumbles on it before the colon.",
+      "evidence": "NL 'Zien:' as a parallel to 'Ontdekken:' for EN 'finding that'; 'zien' is not used this way in Dutch",
+      "required_fix": "Drop 'Zien:' and continue with plain main clauses (with L1): 'De echte wetten waren overal precies hetzelfde. Ze hadden nergens een uitzondering, en ze waren simpele wiskunde voor de allerkleinste deeltjes.'",
+      "severity": "should_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "L14",
+      "block": "b028",
+      "fragment": "de wet van behoud van energie",
+      "problem": "Glossary fixes the capitalised form.",
+      "evidence": "glossary.json: 'Conservation of Energy' = 'de Wet van Behoud van Energie'",
+      "required_fix": "Write 'de Wet van Behoud van Energie'.",
+      "severity": "note",
+      "category": "name"
+    },
+    {
+      "id": "L15",
+      "block": "b028",
+      "fragment": "kwantum-Hamiltoniaan, unitariteit, anatomie, biochemie, neurologie, neuronen",
+      "problem": "Flagged as unknown and as clusters, but they are deliberate opaque jargon (the set-up for 'Magie.'), all transparent cognates for an English-reading learner.",
+      "evidence": "vocab rows unknown, action review; clusters b028 (anatomie, biochemie, neurologie), b032 (brein, neuron); translator @notes and bible: jargon kept unglossed",
+      "required_fix": "No change; do not gloss. Lexicon owner: mark these as jargon so they stop counting toward density and clusters.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L16",
+      "block": "b032",
+      "fragment": "universum … allerkleinste",
+      "problem": "Tool-unknown but transparent: 'universum' is a cognate, 'allerkleinste' is 'aller-' + the superlative of 'klein' (A1).",
+      "evidence": "vocab rows universum, allerkleinst: unknown, action review",
+      "required_fix": "No change. Lexicon owner: add 'universum' (cognate) and let the lemmatiser strip 'aller-'.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "L17",
+      "block": "b025",
+      "fragment": "Ze klonk \\gl{oprecht}{sincere}",
+      "problem": "Hard (B2) word, but precise and already glossed; the plain alternatives ('Het klonk echt', 'eerlijk') lose the sense of sincere.",
+      "evidence": "lexicon oprecht hard (B2), glossed",
+      "required_fix": "Keep as is.",
+      "severity": "note",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "L18",
+      "block": "b025",
+      "fragment": "hoewel haar mondhoeken omhoog trilden",
+      "problem": "'trillen' + 'omhoog' is an unusual pairing; the idiomatic collocation for twitching upward lips is 'omhoog trekken'.",
+      "evidence": "V2: 'hoewel haar mondhoeken omhoog trokken'",
+      "required_fix": "Optional: 'hoewel haar mondhoeken omhoog trokken'.",
+      "severity": "note",
+      "category": "naturalness"
+    }
+  ],
+  "flag_decisions": [
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b022",
+      "span": "beslissend",
+      "decision": "dismissed",
+      "reason": "Attributive adjective directly before the noun (lexicalised present participle of beslissen, A2); no participle phrase replacing a clause."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b025",
+      "span": "gestreepte",
+      "decision": "dismissed",
+      "reason": "Plain attributive adjective ('gestreept', B1 in the lexicon) with no complements; a vocabulary question, handled in L3."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b027",
+      "span": ", dat is de precieze naam",
+      "decision": "dismissed",
+      "reason": "Demonstrative subject with the finite verb in second position ('dat is …') after a fronted noun phrase: a main clause, not a relative clause (verb would be final)."
+    },
+    {
+      "id": "R-PASSIVE",
+      "block": "b028",
+      "span": "“U bent in een kat veranderd",
+      "decision": "dismissed",
+      "reason": "Perfectum with zijn of the intransitive 'veranderen in' (A-PERF); no agent, no 'worden'."
+    },
+    {
+      "id": "R-RELCL",
+      "block": "b032",
+      "span": ", dat spoelde nu weg door de wc",
+      "decision": "dismissed",
+      "reason": "Resumptive demonstrative after a left-dislocated topic, finite verb in second position: a legal main clause. Its heaviness is a load question (L12), not a relative clause."
+    },
+    {
+      "id": "R-PARTICIPLE",
+      "block": "b032",
+      "span": "vallende",
+      "decision": "dismissed",
+      "reason": "Attributive adjective in the fixed phrase 'een vallende appel'; no complements, no clause replaced."
+    },
+    {
+      "id": "L-FRAME",
+      "block": "b028",
+      "span": "kan zich niet zomaar de hele anatomie van een kat voorstellen",
+      "decision": "confirmed",
+      "reason": "Nine words inside the frame and the list continues after 'voorstellen'; see L2."
+    }
+  ],
+  "tool_feedback": [
+    {
+      "ref": "vocab: streepen",
+      "block": "b025",
+      "issue": "false positive (lemmatiser)",
+      "reason": "'gestreepte' is the adjective 'gestreept' (B1, present in the lexicon), not a verb 'streepen'."
+    },
+    {
+      "ref": "vocab: allerkleinst",
+      "block": "b032",
+      "issue": "false positive (lemmatiser)",
+      "reason": "'aller-' + superlative of 'klein' (A1); strip the prefix before lookup."
+    },
+    {
+      "ref": "vocab: faunaat-transformatie",
+      "block": "b027",
+      "issue": "false positive (glossary matching)",
+      "reason": "A glossary term ('Faunaat-transformatie') should count as known (count_glossary_as_known); hyphenated glossary forms are not matched. The missing gloss is still a translation finding (L8), but the row should not count toward density."
+    },
+    {
+      "ref": "vocab: kwantum-hamiltoniaan, unitariteit, anatomie, biochemie, neurologie, neuron (+ clusters b028, b032)",
+      "block": "b028",
+      "issue": "policy gap",
+      "reason": "Deliberate opaque jargon per the bible; the tool needs a per-scene jargon list (e.g. read from @notes) so these do not drive the density, known-share and cluster verdicts."
+    },
+    {
+      "ref": "vocab: brein, universum",
+      "block": "b028",
+      "issue": "lexicon gap",
+      "reason": "Transparent cognates (brain, universe) absent from every list; add to the lexicon rather than report as unknown every scene."
+    },
+    {
+      "ref": "vocab: beslissend",
+      "block": "b022",
+      "issue": "silent mapping",
+      "reason": "'beslissend' is not in the lexicon but never appears in the table (mapped to 'beslissen'); harmless here, but the same mapping hides genuinely unknown adjectives (cf. 'gepast' in V3)."
+    },
+    {
+      "ref": "vocab: glosses on known lemmas",
+      "block": "b022",
+      "issue": "false negative",
+      "reason": "Glosses on aarzelde, steek, overtreden, willekeurige, uitzondering (all known) are not reported; a 'gloss on known word' row would catch gloss bloat automatically."
+    },
+    {
+      "ref": "R-PARTICIPLE (beslissend, gestreepte, vallende)",
+      "block": "b022",
+      "issue": "false positive",
+      "reason": "A single participle used attributively right before a noun, without complements, is an adjective; suppress it or keep confidence below the 0.3 ignore threshold."
+    },
+    {
+      "ref": "R-RELCL ', dat is' / ', dat spoelde'",
+      "block": "b027",
+      "issue": "false positive",
+      "reason": "When the finite verb immediately follows the pronoun (V2 order) it is a demonstrative main clause, as the tool's own note suspects; auto-dismiss or lower confidence below 0.3."
+    },
+    {
+      "ref": "R-PASSIVE 'bent … veranderd'",
+      "block": "b028",
+      "issue": "false positive",
+      "reason": "Perfectum with zijn of a mutative intransitive; a list of zijn-perfectum verbs would remove these."
+    }
+  ]
+}

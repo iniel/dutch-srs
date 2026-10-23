@@ -1,0 +1,1037 @@
+{
+  "scene": "ch903/s03",
+  "version": 0,
+  "file": "work/ch903/scenes/s03.v0.literary.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch903/s03",
+    "version": 0,
+    "tokens": 336,
+    "known_tokens": 318,
+    "known_share": 0.9464,
+    "new_lemmas_unglossed": 18,
+    "new_per_1000": 53.6,
+    "stretch_budget": 3,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "toverwereld",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b048"
+        ],
+        "glossed": false,
+        "examples": [
+          "Niemand had ooit enig bewijs voor magie gezien, en volgens mam bestond er daarbuiten een hele toverwereld."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "uitgemaaken",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het had een uitgemaakte zaak moeten zijn:"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "akeligheid",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "mam maakte een grapje, mam loog, of mam was gek geworden, in oplopende volgorde van akeligheid."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "universum",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dat het universum werkelijk zo in elkaar zat."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "vermeend",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b050"
+        ],
+        "glossed": false,
+        "examples": [
+          "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Z"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "grimas",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b051"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry wreef over zijn voorhoofd en trok een grimas."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "falsificatie",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of w"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "toetsbaar",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is "
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "opdagen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to show up",
+          "to appear"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan"
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "metalen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "metallic",
+          "metal -",
+          "made of metal"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is "
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "daarbuiten",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [],
+        "pos": "ADV",
+        "count": 1,
+        "blocks": [
+          "b048"
+        ],
+        "glossed": false,
+        "examples": [
+          "Niemand had ooit enig bewijs voor magie gezien, en volgens mam bestond er daarbuiten een hele toverwereld."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "oplopen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to incur",
+          "to receive",
+          "suffer"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "mam maakte een grapje, mam loog, of mam was gek geworden, in oplopende volgorde van akeligheid."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "verklaren",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to declare",
+          "state"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "waanzin",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "delusion"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dat het universum werkelijk zo in elkaar zat."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "onwaarschijnlijk",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "improbable",
+          "unlikely",
+          "implausible"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b049"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dat het universum werkelijk zo in elkaar zat."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "bizar",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "bizarre"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b052"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar die bizarre zekerheid…"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "benul",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "understanding",
+          "idea",
+          "insight"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b054"
+        ],
+        "glossed": false,
+        "examples": [
+          "Gewoonlijk was Harry behoorlijk goed in het beantwoorden van die vraag, maar in dit specifieke geval had hij geen flauw benul van wat zijn brein aan het denken "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "toetsen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to examine",
+          "assess"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b055"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is "
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b048",
+        "scope": "sentence",
+        "new": [
+          "daarbuiten",
+          "toverwereld"
+        ],
+        "text": "Niemand had ooit enig bewijs voor magie gezien, en volgens mam bestond er daarbuiten een hele toverwereld."
+      },
+      {
+        "block": "b049",
+        "scope": "sentence",
+        "new": [
+          "akeligheid",
+          "oplopen"
+        ],
+        "text": "mam maakte een grapje, mam loog, of mam was gek geworden, in oplopende volgorde van akeligheid."
+      },
+      {
+        "block": "b049",
+        "scope": "sentence",
+        "new": [
+          "onwaarschijnlijk",
+          "universum",
+          "waanzin"
+        ],
+        "text": "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dat het universum werkelijk zo in elkaar zat."
+      },
+      {
+        "block": "b049",
+        "scope": "paragraph",
+        "new": [
+          "akeligheid",
+          "onwaarschijnlijk",
+          "oplopen",
+          "uitgemaaken",
+          "universum",
+          "verklaren",
+          "waanzin"
+        ]
+      },
+      {
+        "block": "b055",
+        "scope": "sentence",
+        "new": [
+          "metalen",
+          "toetsbaar",
+          "toetsen"
+        ],
+        "text": "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is haar gaan toetsen."
+      }
+    ],
+    "avoid": [],
+    "per_block": {
+      "b047": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b048": {
+        "tokens": 46,
+        "new": [
+          "daarbuiten",
+          "toverwereld"
+        ],
+        "glosses": []
+      },
+      "b049": {
+        "tokens": 60,
+        "new": [
+          "akeligheid",
+          "onwaarschijnlijk",
+          "oplopen",
+          "uitgemaaken",
+          "universum",
+          "verklaren",
+          "waanzin"
+        ],
+        "glosses": []
+      },
+      "b050": {
+        "tokens": 40,
+        "new": [
+          "vermeend"
+        ],
+        "glosses": []
+      },
+      "b051": {
+        "tokens": 22,
+        "new": [
+          "grimas"
+        ],
+        "glosses": []
+      },
+      "b052": {
+        "tokens": 69,
+        "new": [
+          "bizar",
+          "falsificatie",
+          "opdagen"
+        ],
+        "glosses": []
+      },
+      "b053": {
+        "tokens": 19,
+        "new": [],
+        "glosses": []
+      },
+      "b054": {
+        "tokens": 29,
+        "new": [
+          "benul"
+        ],
+        "glosses": []
+      },
+      "b055": {
+        "tokens": 40,
+        "new": [
+          "metalen",
+          "toetsbaar",
+          "toetsen"
+        ],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.98,
+      "new_lemmas_per_1000_max": 10,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch903/s03",
+    "version": 0,
+    "sentences": 22,
+    "summary": {
+      "likely": 26,
+      "review": 9,
+      "load": 14
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-TE-INF",
+        "span": "na te denken",
+        "confidence": 0.5,
+        "note": "frequent chunk 'proberen te' — reviewer decides",
+        "block": "b047",
+        "sent": 0,
+        "sentence": "Hij sloot de deur achter zich en probeerde na te denken.",
+        "level": "review",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat hij het met pap eens had",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b048",
+        "sent": 0,
+        "sentence": "Het gekke was dat hij het met pap eens had moeten zijn.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "had ooit enig bewijs voor magie gezien",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b048",
+        "sent": 1,
+        "sentence": "Niemand had ooit enig bewijs voor magie gezien, en volgens mam bestond er daarbuiten een hele toverwereld.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "daarbuiten",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b048",
+        "sent": 1,
+        "sentence": "Niemand had ooit enig bewijs voor magie gezien, en volgens mam bestond er daarbuiten een hele toverwereld.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verdacht",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b048",
+        "sent": 4,
+        "sentence": "Dat leek een nogal verdacht soort smoes.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "uitgemaakte",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b049",
+        "sent": 0,
+        "sentence": "Het had een uitgemaakte zaak moeten zijn:",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "of mam was gek geworden",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b049",
+        "sent": 1,
+        "sentence": "mam maakte een grapje, mam loog, of mam was gek geworden, in oplopende volgorde van akeligheid.",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was gek geworden",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b049",
+        "sent": 1,
+        "sentence": "mam maakte een grapje, mam loog, of mam was gek geworden, in oplopende volgorde van akeligheid.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "oplopende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b049",
+        "sent": 1,
+        "sentence": "mam maakte een grapje, mam loog, of mam was gek geworden, in oplopende volgorde van akeligheid.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "had verstuurd",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b049",
+        "sent": 2,
+        "sentence": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-IRREALIS-PAST",
+        "span": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b049",
+        "sent": 2,
+        "sentence": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "level": "likely",
+        "hint": "state the regret or near-miss plainly in imperfectum"
+      },
+      {
+        "id": "R-INDIRECT",
+        "span": "hoe hij zonder postzegel in de brievenbus",
+        "confidence": 0.75,
+        "note": "",
+        "block": "b049",
+        "sent": 2,
+        "sentence": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "level": "likely",
+        "hint": "direct speech or thought with a colon; split the question out"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "brievenbus terecht was gekomen",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b049",
+        "sent": 2,
+        "sentence": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was gekomen",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b049",
+        "sent": 2,
+        "sentence": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat het universum werkelijk zo in elkaar",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b049",
+        "sent": 3,
+        "sentence": "Een beetje waanzin was veel, veel minder onwaarschijnlijk dan dat het universum werkelijk zo in elkaar zat.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was een of ander deel van Harry er heilig van overtuigd",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "er heilig van",
+        "confidence": 0.7,
+        "note": "split pronominal adverb",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat magie echt bestond, en was",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat hij de vermeende brief van Zweinsteins",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "had gekregen",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "wat je denkt",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b051",
+        "sent": 1,
+        "sentence": "Geloof niet alles wat je denkt, had in een van zijn boeken gestaan.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "had in een van zijn boeken gestaan",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b051",
+        "sent": 1,
+        "sentence": "Geloof niet alles wat je denkt, had in een van zijn boeken gestaan.",
+        "level": "likely",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "erop",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat hij gewoon verwachtte dat er,",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat er, ja, een professor",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-ZOU",
+        "span": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-DAT",
+        "span": "dat er dan magie uit zou komen",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "colon + main clause (Hij dacht: …) or two sentences"
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "er dan magie uit",
+        "confidence": 0.7,
+        "note": "split pronominal adverb",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "zou komen opdagen",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "om zich tegen falsificatie te wapenen",
+        "confidence": 0.9,
+        "note": "om … te",
+        "block": "b052",
+        "sent": 2,
+        "sentence": "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen.",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-ZOU",
+        "span": "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen.",
+        "confidence": 0.8,
+        "note": "",
+        "block": "b052",
+        "sent": 2,
+        "sentence": "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen.",
+        "level": "likely",
+        "hint": "present tense + misschien / dan / stel, or wilde / kon"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b052",
+        "sent": 2,
+        "sentence": "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "zou kunnen buigen",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b052",
+        "sent": 2,
+        "sentence": "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "is haar gaan toetsen",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b055",
+        "sent": 1,
+        "sentence": "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is haar gaan toetsen.",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b049",
+        "sent": 2,
+        "sentence": "Als mam de brief zelf had verstuurd, zou dat verklaren hoe hij zonder postzegel in de brievenbus terecht was gekomen.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-LEN",
+        "value": 40,
+        "limit": 28,
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "gekregen",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "was een of ander deel van Harry er heilig van overtuigd",
+        "block": "b050",
+        "sent": 0,
+        "sentence": "Alleen was een of ander deel van Harry er heilig van overtuigd dat magie echt bestond, en was dat al geweest sinds het ogenblik dat hij de vermeende brief van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus onder ogen had gekregen.",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 32,
+        "limit": 28,
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 5,
+        "limit": 3,
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "hint": "at most one subordinate clause per sentence"
+      },
+      {
+        "id": "L-NEST",
+        "value": 2,
+        "limit": 1,
+        "span": "komen",
+        "block": "b052",
+        "sent": 1,
+        "sentence": "Harry betrapte zichzelf erop dat hij gewoon verwachtte dat er, ja, een professor van Zweinstein zou komen opdagen en met een toverstok zou zwaaien en dat er dan magie uit zou komen.",
+        "hint": "no subordinate clause inside another; split"
+      },
+      {
+        "id": "L-LEN",
+        "value": 33,
+        "limit": 28,
+        "block": "b052",
+        "sent": 2,
+        "sentence": "De vreemde zekerheid deed geen enkele moeite om zich tegen falsificatie te wapenen — bedacht niet alvast smoesjes waarom er geen professor zou verschijnen, of waarom de professor alleen maar lepels zou kunnen buigen.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-LEN",
+        "value": 29,
+        "limit": 28,
+        "block": "b054",
+        "sent": 0,
+        "sentence": "Gewoonlijk was Harry behoorlijk goed in het beantwoorden van die vraag, maar in dit specifieke geval had hij geen flauw benul van wat zijn brein aan het denken was.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-LEN",
+        "value": 33,
+        "limit": 28,
+        "block": "b055",
+        "sent": 1,
+        "sentence": "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is haar gaan toetsen.",
+        "hint": "split the sentence"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b055",
+        "sent": 1,
+        "sentence": "Een platte metalen plaat op een deur nodigt uit tot duwen, en een handgreep aan een deur nodigt uit tot trekken, en wat je met een toetsbare hypothese doet, is haar gaan toetsen.",
+        "hint": "too many finite verbs; split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

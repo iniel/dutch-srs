@@ -1,0 +1,56 @@
+{
+  "scene": "ch901/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Same scene, same order, all facts, negations, causal links and the four emphases intact; all five comprehension questions answerable. Two notes on narrator asides that became slightly more explicit than the English.",
+  "comprehension": [
+    {
+      "q": "What does Michael say in reply to Petunia, and what does his tone give away?",
+      "answer_from_nl": "He says 'Je maakt een grapje'; his tone says otherwise: he is very afraid — maybe she is serious.",
+      "answerable": true
+    },
+    {
+      "q": "According to Michael, how could what Petunia saw have been faked, and what name does he give to the trick of seeming to guess someone's thoughts?",
+      "answer_from_nl": "A trained stage magician (goochelaar) easily imitates something that only seems impossible — he taught Harry to bend spoons; if it seemed they could always guess your thoughts, that is called cold reading.",
+      "answerable": true
+    },
+    {
+      "q": "What did Lily do to Petunia, and why did Lily do it?",
+      "answer_from_nl": "Lily made Petunia the way she is now (her slim body); because Petunia begged her, for years.",
+      "answerable": true
+    },
+    {
+      "q": "Why did Petunia beg Lily for years — what had she felt about Lily, and what did she want even though she could not have magic?",
+      "answer_from_nl": "Lily had always been prettier; Petunia had been mean to her because of that; then Lily got magic too. She begged Lily to use some of that magic on her so she would also be pretty — she could not get the magic, but she could at least be pretty.",
+      "answerable": true
+    },
+    {
+      "q": "What had Petunia told Lily and her husband about Michael, and why can't she just tell Michael what she saw?",
+      "answer_from_nl": "She had told them Michael was not allowed to know. She can't just tell him because then he will think she is— (unfinished).",
+      "answerable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b015",
+      "fragment": "Zijn toon zei iets anders:",
+      "problem": "'iets anders' spells out the contrast between his words and his tone that the English leaves for the reader to notice.",
+      "evidence": "EN: 'His tone indicated that he was very much afraid that she was serious.' vs NL: 'Zijn toon zei iets anders: hij was heel bang. Misschien was ze serieus.'",
+      "required_fix": "Optional. A frame that reports rather than contrasts, e.g. 'Zijn toon verried hem: hij was heel bang.' The split itself and 'Misschien was ze serieus.' are fine; the link survives by sentence order.",
+      "severity": "note",
+      "category": "over-explaining"
+    },
+    {
+      "id": "M2",
+      "block": "b022",
+      "fragment": "Ze wees naar zichzelf. Ze bedoelde waarschijnlijk haar slanke lichaam.",
+      "problem": "The narrator's light in-sentence aside ('as though to indicate') becomes a separate full sentence of narrator commentary, and 'wees naar' narrows a gesture at her whole figure to pointing; the hedge itself ('waarschijnlijk') is preserved.",
+      "evidence": "EN: 'She gestured at herself, as though to indicate her lithe form.' vs NL: 'Ze wees naar zichzelf. Ze bedoelde waarschijnlijk haar slanke lichaam.'",
+      "required_fix": "Optional: fold the aside back into the gesture sentence: 'Ze gebaarde naar zichzelf, naar haar slanke lichaam, zo leek het.'",
+      "severity": "note",
+      "category": "over-explaining"
+    }
+  ]
+}
