@@ -1,0 +1,1291 @@
+{
+  "scene": "ch002/s01",
+  "version": 1,
+  "file": "/Users/svetlana/Development/dutch-srs/book/pipeline/work/ch002/scenes/s01.v1.nl.md",
+  "structure": {
+    "issues": [],
+    "ok": true
+  },
+  "vocab": {
+    "scene": "ch002/s01",
+    "version": 1,
+    "tokens": 970,
+    "known_tokens": 944,
+    "known_share": 0.9732,
+    "new_lemmas_unglossed": 25,
+    "new_per_1000": 25.8,
+    "stretch_budget": 8,
+    "verdict": {
+      "known_share_ok": false,
+      "density_ok": false,
+      "clusters_ok": false,
+      "avoid_ok": true,
+      "gloss_equivalent_ok": false,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "smooren",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b037"
+        ],
+        "glossed": true,
+        "examples": [
+          "Een gesmoorde lach ontsnapte aan professor Anderling."
+        ],
+        "action": "glossed-known-equivalent",
+        "gloss": "choked",
+        "replace_with": [
+          {
+            "lemma": "stikken",
+            "cefr": "A2",
+            "why": "en 'choke'"
+          }
+        ],
+        "hint": "MUST: glossed, but a known word means the same — replace with it and drop the gloss"
+      },
+      {
+        "lemma": "aandoening",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "ailment"
+        ],
+        "pos": "NOUN",
+        "count": 2,
+        "blocks": [
+          "b038",
+          "b039"
+        ],
+        "glossed": true,
+        "examples": [
+          "En je aandoening?",
+          "“Zijn aandoening?"
+        ],
+        "action": "glossed-known-equivalent",
+        "gloss": "condition",
+        "replace_with": [
+          {
+            "lemma": "toestand",
+            "cefr": "A2",
+            "why": "en 'condition'"
+          },
+          {
+            "lemma": "voorwaarde",
+            "cefr": "A2",
+            "why": "en 'condition'"
+          },
+          {
+            "lemma": "conditie",
+            "cefr": "B1",
+            "why": "en 'condition'"
+          }
+        ],
+        "hint": "MUST: glossed, but a known word means the same — replace with it and drop the gloss"
+      },
+      {
+        "lemma": "waarneming",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "observation"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": true,
+        "examples": [
+          "“Je verwacht toch een dramatischere mentale gebeurtenis, als je je ideeën aanpast na een waarneming met een oneindig kleine kans — ”"
+        ],
+        "action": "glossed-known-equivalent",
+        "gloss": "observation",
+        "replace_with": [
+          {
+            "lemma": "opmerking",
+            "cefr": "B1",
+            "why": "en 'observation'"
+          }
+        ],
+        "hint": "MUST: glossed, but a known word means the same — replace with it and drop the gloss"
+      },
+      {
+        "lemma": "tilen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b008"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Nu, even voor de duidelijkheid,” zei Harry, “als de professor je in de lucht tilt, pap, dan weet je:"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "ketel",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b011"
+        ],
+        "glossed": false,
+        "examples": [
+          "die vrouw kakelt en stopt baby’s in ketels."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "dramatischere",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADV",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Je verwacht toch een dramatischere mentale gebeurtenis, als je je ideeën aanpast na een waarneming met een oneindig kleine kans — ”"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "aanpasen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Je verwacht toch een dramatischere mentale gebeurtenis, als je je ideeën aanpast na een waarneming met een oneindig kleine kans — ”"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wegspoelen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b020"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zijn brein moest nu al zijn hypotheses over het universum wegspoelen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "gestreepte",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": false,
+        "examples": [
+          "Meteen veranderde de kleine gestreepte kat terug in een vrouw in een gewaad."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kwantum-hamiltoniaan",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hij volgt uit de vorm van de kwantum-Hamiltoniaan!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "verwerpen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je hem verwerpt, vernietig je de unitariteit!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "unitariteit",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Als je hem verwerpt, vernietig je de unitariteit!"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kattenformaat",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b028"
+        ],
+        "glossed": false,
+        "examples": [
+          "Hoe kunt u blijven denken met een brein van kattenformaat?"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "knipperen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b031"
+        ],
+        "glossed": false,
+        "examples": [
+          "Professor Anderling knipperde met haar ogen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "wazig",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "Alles werd wazig voor Harry’s ogen."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "neuron",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": true,
+        "examples": [
+          "En bovendien: het verstand was het brein, het brein bestond uit neuronen, een mens was zijn brein —"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "wiltlen",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b035"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Als je over magie wilt leren, stel ik voor:"
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "pincet",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b037"
+        ],
+        "glossed": true,
+        "examples": [
+          "Iemand trok hem met een pincet uit haar, zo leek het."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "kakelen",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "to cackle",
+          "to make a sharp",
+          "broken noise"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b011"
+        ],
+        "glossed": true,
+        "examples": [
+          "die vrouw kakelt en stopt baby’s in ketels."
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "oprecht",
+        "status": "hard",
+        "cefr": "B2",
+        "en": [
+          "sincere",
+          "honest",
+          "upright"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b025"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ze klonk oprecht, hoewel haar mondhoeken omhoog trokken."
+        ],
+        "action": "replace-or-gloss",
+        "hint": "prefer rewording; gloss only if the word matters for the scene"
+      },
+      {
+        "lemma": "terugkijken",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to look back"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b016"
+        ],
+        "glossed": false,
+        "examples": [
+          "Zijn vader keek terug."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "anticlimax",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "anticlimax"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "Maar…“Het is een beetje een anticlimax,” zei Harry."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "gebeurtenis",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "event",
+          "occasion",
+          "occurrence"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Je verwacht toch een dramatischere mentale gebeurtenis, als je je ideeën aanpast na een waarneming met een oneindig kleine kans — ”"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "demonstratie",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "demonstration",
+          "demo"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b021"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Wil je nog een demonstratie, meneer Potter?"
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "krabbelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to scrawl",
+          "scribble"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry krabbelde achteruit, zonder nadenken."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "struikelen",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "to stumble",
+          "fall over",
+          "trip over an object"
+        ],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Daarom struikelde hij over een losse stapel boeken en viel hard op zijn billen met een plof."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "plof",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Daarom struikelde hij over een losse stapel boeken en viel hard op zijn billen met een plof."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "steun",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "support"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b024"
+        ],
+        "glossed": false,
+        "examples": [
+          "Het was een waarschuwing, want zijn gewicht kwam zonder steun naar beneden."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "melodie",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "melody"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b032"
+        ],
+        "glossed": false,
+        "examples": [
+          "de muziek van de planeten was dezelfde melodie als een vallende appel."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "winnaar",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "winner",
+          "one who has won",
+          "often wins"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": false,
+        "examples": [
+          "De winnaar kwam naar buiten:"
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "kleuter",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [
+          "Kleuters?"
+        ],
+        "action": "glossed",
+        "hint": "already glossed"
+      },
+      {
+        "lemma": "duizelig",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "dizzy",
+          "experiencing equilibrium-trouble"
+        ],
+        "pos": "ADJ",
+        "count": 1,
+        "blocks": [
+          "b036"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Goed,” zei Harry, een beetje duizelig."
+        ],
+        "action": "gloss-or-replace",
+        "hint": "replace with a known word if meaning survives; otherwise gloss"
+      },
+      {
+        "lemma": "de mars van de rede",
+        "status": "phrase",
+        "cefr": null,
+        "en": [
+          "The March of Reason"
+        ],
+        "count": 1,
+        "blocks": [
+          "b036"
+        ],
+        "glossed": true,
+        "examples": [],
+        "phrase": true,
+        "action": "phrase-glossed",
+        "hint": "multi-word gloss; fine if the phrase is needed, otherwise prefer a plain verb"
+      },
+      {
+        "lemma": "toverspreuk",
+        "status": "known",
+        "cefr": "A2",
+        "en": [
+          "magical spell",
+          "incantation",
+          "verbal charm"
+        ],
+        "count": 2,
+        "blocks": [
+          "b034"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [
+      {
+        "block": "b019",
+        "scope": "sentence",
+        "new": [
+          "aanpasen",
+          "dramatischere",
+          "gebeurtenis"
+        ],
+        "text": "“Je verwacht toch een dramatischere mentale gebeurtenis, als je je ideeën aanpast na een waarneming met een oneindig kleine kans — ”"
+      },
+      {
+        "block": "b024",
+        "scope": "sentence",
+        "new": [
+          "plof",
+          "struikelen"
+        ],
+        "text": "Daarom struikelde hij over een losse stapel boeken en viel hard op zijn billen met een plof."
+      },
+      {
+        "block": "b028",
+        "scope": "sentence",
+        "new": [
+          "unitariteit",
+          "verwerpen"
+        ],
+        "text": "Als je hem verwerpt, vernietig je de unitariteit!"
+      }
+    ],
+    "avoid": [],
+    "senses": [
+      {
+        "lemma": "net",
+        "known": "just (in time)",
+        "watch": "neat, decent; just now vs exactly (net zo); net (noun)",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "examples": [
+          "ik ontdek het net."
+        ]
+      },
+      {
+        "lemma": "toch",
+        "known": "still, yet",
+        "watch": "surely, after all (dat weet je toch); contradiction (wel toch)",
+        "count": 1,
+        "blocks": [
+          "b019"
+        ],
+        "examples": [
+          "“Je verwacht toch een dramatischere mentale gebeurtenis, als je je ideeën aanpast na een waarneming met een oneindig kleine kans — ”"
+        ]
+      },
+      {
+        "lemma": "toe",
+        "known": "to, closed (deur toe)",
+        "watch": "come on! (toe nou); naar … toe; wat doet dat ertoe",
+        "count": 2,
+        "blocks": [
+          "b010",
+          "b020"
+        ],
+        "examples": [
+          "Gebeurt het niet, dan geef je toe:",
+          "Geen enkele liet dit toe."
+        ]
+      },
+      {
+        "lemma": "even",
+        "known": "a moment",
+        "watch": "equally (even groot); softener in requests",
+        "count": 3,
+        "blocks": [
+          "b008",
+          "b024",
+          "b038"
+        ],
+        "examples": [
+          "“Nu, even voor de duidelijkheid,” zei Harry, “als de professor je in de lucht tilt, pap, dan weet je:",
+          "Zijn schouder deed even pijn."
+        ]
+      },
+      {
+        "lemma": "heel",
+        "known": "very",
+        "watch": "whole (een hele wereld = a whole world, read as 'a very world')",
+        "count": 3,
+        "blocks": [
+          "b028",
+          "b032"
+        ],
+        "examples": [
+          "Een mens kan zich niet zomaar de hele anatomie van een kat voorstellen, en, en alle biochemie van een kat, en hoe zit het met de neurologie?",
+          "Het hele idee van een universum als één geheel, met regelmatige wiskundige wetten: dat verdween door de wc."
+        ]
+      },
+      {
+        "lemma": "nog",
+        "known": "still, yet",
+        "watch": "even (nog groter); another (nog een); nog niet vs niet meer",
+        "count": 6,
+        "blocks": [
+          "b021",
+          "b022",
+          "b029",
+          "b031",
+          "b036",
+          "b038"
+        ],
+        "examples": [
+          "“Wil je nog een demonstratie, meneer Potter?",
+          "“Wat kunt u nog meer doen?”"
+        ]
+      }
+    ],
+    "per_block": {
+      "b001": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      },
+      "b006": {
+        "tokens": 16,
+        "new": [],
+        "glosses": []
+      },
+      "b008": {
+        "tokens": 61,
+        "new": [
+          "tilen"
+        ],
+        "glosses": [
+          "goochelaar"
+        ]
+      },
+      "b009": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b010": {
+        "tokens": 32,
+        "new": [],
+        "glosses": []
+      },
+      "b011": {
+        "tokens": 76,
+        "new": [
+          "ketel"
+        ],
+        "glosses": [
+          "gewaad",
+          "kakelt"
+        ]
+      },
+      "b012": {
+        "tokens": 15,
+        "new": [],
+        "glosses": []
+      },
+      "b013": {
+        "tokens": 9,
+        "new": [],
+        "glosses": []
+      },
+      "b014": {
+        "tokens": 5,
+        "new": [],
+        "glosses": []
+      },
+      "b015": {
+        "tokens": 3,
+        "new": [],
+        "glosses": []
+      },
+      "b016": {
+        "tokens": 8,
+        "new": [
+          "terugkijken"
+        ],
+        "glosses": []
+      },
+      "b017": {
+        "tokens": 14,
+        "new": [],
+        "glosses": []
+      },
+      "b018": {
+        "tokens": 7,
+        "new": [],
+        "glosses": []
+      },
+      "b019": {
+        "tokens": 81,
+        "new": [
+          "aanpasen",
+          "anticlimax",
+          "dramatischere",
+          "gebeurtenis"
+        ],
+        "glosses": [
+          "waarneming"
+        ]
+      },
+      "b020": {
+        "tokens": 51,
+        "new": [
+          "wegspoelen"
+        ],
+        "glosses": [
+          "brein",
+          "toverstok"
+        ]
+      },
+      "b021": {
+        "tokens": 18,
+        "new": [
+          "demonstratie"
+        ],
+        "glosses": []
+      },
+      "b022": {
+        "tokens": 40,
+        "new": [],
+        "glosses": []
+      },
+      "b023": {
+        "tokens": 6,
+        "new": [],
+        "glosses": []
+      },
+      "b024": {
+        "tokens": 57,
+        "new": [
+          "krabbelen",
+          "plof",
+          "steun",
+          "struikelen"
+        ],
+        "glosses": []
+      },
+      "b025": {
+        "tokens": 35,
+        "new": [
+          "gestreepte",
+          "oprecht"
+        ],
+        "glosses": []
+      },
+      "b026": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      },
+      "b027": {
+        "tokens": 13,
+        "new": [],
+        "glosses": [
+          "Gedaanteverwisseling",
+          "Faunaat"
+        ]
+      },
+      "b028": {
+        "tokens": 87,
+        "new": [
+          "kattenformaat",
+          "kwantum-hamiltoniaan",
+          "unitariteit",
+          "verwerpen"
+        ],
+        "glosses": []
+      },
+      "b029": {
+        "tokens": 8,
+        "new": [],
+        "glosses": []
+      },
+      "b030": {
+        "tokens": 11,
+        "new": [],
+        "glosses": []
+      },
+      "b031": {
+        "tokens": 13,
+        "new": [
+          "knipperen"
+        ],
+        "glosses": []
+      },
+      "b032": {
+        "tokens": 102,
+        "new": [
+          "melodie",
+          "wazig"
+        ],
+        "glosses": [
+          "neuronen"
+        ]
+      },
+      "b033": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      },
+      "b034": {
+        "tokens": 30,
+        "new": [
+          "winnaar"
+        ],
+        "glosses": [
+          "toverspreuk",
+          "Kleuters"
+        ]
+      },
+      "b035": {
+        "tokens": 36,
+        "new": [
+          "wiltlen"
+        ],
+        "glosses": []
+      },
+      "b036": {
+        "tokens": 38,
+        "new": [
+          "duizelig"
+        ],
+        "glosses": [
+          "De Mars van de Rede"
+        ]
+      },
+      "b037": {
+        "tokens": 18,
+        "new": [],
+        "glosses": [
+          "gesmoorde",
+          "pincet"
+        ]
+      },
+      "b038": {
+        "tokens": 22,
+        "new": [],
+        "glosses": [
+          "aandoening"
+        ]
+      },
+      "b039": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.975,
+      "new_lemmas_per_1000_max": 15,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch002/s01",
+    "version": 1,
+    "sentences": 150,
+    "summary": {
+      "likely": 7,
+      "review": 8,
+      "ignored": 2,
+      "load": 3,
+      "load_shown": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-RELCL",
+        "span": "wat ik geloof",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b001",
+        "sent": 0,
+        "sentence": "Alles wat ik geloof, is niet waar",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-ER-PREP",
+        "span": "er zitten geen draden aan",
+        "confidence": 0.7,
+        "note": "split pronominal adverb",
+        "block": "b008",
+        "sent": 1,
+        "sentence": "er zitten geen draden aan je.",
+        "level": "likely",
+        "hint": "repeat the noun: niet aan die brief, blij met het cadeau"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "verbaasde",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b011",
+        "sent": 0,
+        "sentence": "Onderdirectrice Minerva Anderling keek met een verbaasde blik naar Harry.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-LATEN",
+        "span": "laten zien",
+        "confidence": 0.1,
+        "note": "laten zien",
+        "block": "b011",
+        "sent": 9,
+        "sentence": "“Zal ik het nu laten zien?”",
+        "level": "ignored",
+        "hint": "give / show with a plain verb, or let the object act: Het boek viel."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "Zal ik het nu laten zien",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b011",
+        "sent": 9,
+        "sentence": "“Zal ik het nu laten zien?”",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "Dat deel was al overtuigd.",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b019",
+        "sent": 2,
+        "sentence": "Dat deel was al overtuigd.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PLUPERF",
+        "span": "was al overtuigd",
+        "confidence": 0.45,
+        "note": "",
+        "block": "b019",
+        "sent": 2,
+        "sentence": "Dat deel was al overtuigd.",
+        "level": "review",
+        "hint": "use imperfectum + al / eerder / daarvoor, tell events in order"
+      },
+      {
+        "id": "R-RELCL",
+        "span": "wat ik geloof",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b019",
+        "sent": 9,
+        "sentence": "Alles wat ik geloof, is niet waar.",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "dit te zeggen",
+        "confidence": 0.9,
+        "note": "after 'lijken'",
+        "block": "b020",
+        "sent": 3,
+        "sentence": "Maar zijn brein leek alleen dit te zeggen:",
+        "level": "likely",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "beslissend",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b022",
+        "sent": 1,
+        "sentence": "“We hebben een beslissend experiment gedaan.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gestreepte",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b025",
+        "sent": 0,
+        "sentence": "Meteen veranderde de kleine gestreepte kat terug in een vrouw in een gewaad.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "“U bent in een kat veranderd",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b028",
+        "sent": 0,
+        "sentence": "“U bent in een kat veranderd!",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "kunt u blijven denken",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b028",
+        "sent": 9,
+        "sentence": "Hoe kunt u blijven denken met een brein van kattenformaat?",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-RELCL",
+        "span": "dat verdween door de wc",
+        "confidence": 0.4,
+        "note": "V2 order after the pronoun: demonstrative?",
+        "block": "b032",
+        "sent": 3,
+        "sentence": "Het hele idee van een universum als één geheel, met regelmatige wiskundige wetten: dat verdween door de wc.",
+        "level": "review",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "vallende",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b032",
+        "sent": 7,
+        "sentence": "de muziek van de planeten was dezelfde melodie als een vallende appel.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "ingehouden",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b035",
+        "sent": 0,
+        "sentence": "“Dat is genoeg, meneer Potter,” zei professor Anderling kortaf, hoewel haar ogen glinsterden van ingehouden plezier.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "gesmoorde",
+        "confidence": 0.35,
+        "note": "",
+        "block": "b037",
+        "sent": 0,
+        "sentence": "Een gesmoorde lach ontsnapte aan professor Anderling.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "kan zich niet zomaar de hele anatomie van een kat voorstellen",
+        "block": "b028",
+        "sent": 8,
+        "sentence": "Een mens kan zich niet zomaar de hele anatomie van een kat voorstellen, en, en alle biochemie van een kat, en hoe zit het met de neurologie?",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b035",
+        "sent": 0,
+        "sentence": "“Dat is genoeg, meneer Potter,” zei professor Anderling kortaf, hoewel haar ogen glinsterden van ingehouden plezier.",
+        "hint": "too many finite verbs; split"
+      },
+      {
+        "id": "L-SUB",
+        "value": 2,
+        "limit": 1,
+        "block": "b035",
+        "sent": 0,
+        "sentence": "“Dat is genoeg, meneer Potter,” zei professor Anderling kortaf, hoewel haar ogen glinsterden van ingehouden plezier.",
+        "hint": "at most one subordinate clause per sentence"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": true,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "chapter": 2,
+  "scenes_with_text": [
+    "s01",
+    "s02"
+  ],
+  "scenes_missing": [],
+  "title_translated": true,
+  "findings": [
+    {
+      "id": "C-TERM",
+      "block": "b056",
+      "scene": "s02",
+      "msg": "source has 'magic', translation lacks 'magie' (check rendering)"
+    },
+    {
+      "id": "C-TERM",
+      "block": "b019",
+      "scene": "s01",
+      "msg": "source has 'probability', translation lacks 'waarschijnlijkheid' (check rendering)"
+    },
+    {
+      "id": "C-ADDRESS-MIX",
+      "block": "b028",
+      "scene": "s01",
+      "msg": "dialogue block uses both u (3) and je/jij (3); check who addresses whom"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b006",
+      "scene": "s01",
+      "msg": "narrative block mostly present tense (3 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b043",
+      "scene": "s02",
+      "msg": "narrative block mostly present tense (4 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b050",
+      "scene": "s02",
+      "msg": "narrative block mostly present tense (2 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    },
+    {
+      "id": "C-TENSE",
+      "block": "b053",
+      "scene": "s02",
+      "msg": "narrative block mostly present tense (2 pres / 1 past) while the chapter is mostly past; confirm against the source"
+    }
+  ],
+  "address": {
+    "s01": {
+      "u": 6,
+      "je": 17
+    },
+    "s02": {
+      "u": 0,
+      "je": 10
+    }
+  },
+  "tense": {
+    "past": 81,
+    "present": 40
+  },
+  "glosses": [
+    {
+      "block": "b008",
+      "word": "goochelaar",
+      "gloss": "magician"
+    },
+    {
+      "block": "b011",
+      "word": "gewaad",
+      "gloss": "robe"
+    },
+    {
+      "block": "b011",
+      "word": "kakelt",
+      "gloss": "cackles"
+    },
+    {
+      "block": "b019",
+      "word": "waarneming",
+      "gloss": "observation"
+    },
+    {
+      "block": "b020",
+      "word": "brein",
+      "gloss": "brain"
+    },
+    {
+      "block": "b020",
+      "word": "toverstok",
+      "gloss": "wand"
+    },
+    {
+      "block": "b027",
+      "word": "Gedaanteverwisseling",
+      "gloss": "Transfiguration"
+    },
+    {
+      "block": "b027",
+      "word": "Faunaat",
+      "gloss": "Animagus"
+    },
+    {
+      "block": "b031",
+      "word": "knipperde",
+      "gloss": "blinked"
+    },
+    {
+      "block": "b032",
+      "word": "neuronen",
+      "gloss": "neurons"
+    },
+    {
+      "block": "b034",
+      "word": "Kleuters",
+      "gloss": "nursery schoolers"
+    },
+    {
+      "block": "b036",
+      "word": "De Mars van de Rede",
+      "gloss": "The March of Reason"
+    },
+    {
+      "block": "b037",
+      "word": "gesmoorde",
+      "gloss": "choked"
+    },
+    {
+      "block": "b037",
+      "word": "pincet",
+      "gloss": "tweezers"
+    },
+    {
+      "block": "b038",
+      "word": "aandoening",
+      "gloss": "condition"
+    },
+    {
+      "block": "b043",
+      "word": "gewetensbezwaarde",
+      "gloss": "conscientious objector"
+    },
+    {
+      "block": "b043",
+      "word": "kinderdienstplicht",
+      "gloss": "child conscription"
+    },
+    {
+      "block": "b045",
+      "word": "logaritmen",
+      "gloss": "logarithms"
+    },
+    {
+      "block": "b057",
+      "word": "plaag",
+      "gloss": "plague"
+    }
+  ],
+  "vocab": {
+    "tokens": 1481,
+    "known_share": 0.9791,
+    "new_per_1000": 18.2
+  },
+  "word_list": [
+    {
+      "lemma": "smooren",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "aandoening",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 2,
+      "glossed": true,
+      "en": [
+        "ailment"
+      ]
+    },
+    {
+      "lemma": "waarneming",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "observation"
+      ]
+    },
+    {
+      "lemma": "logaritmen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 2,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "tilen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "ketel",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "dramatischere",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "aanpasen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "kwantum-hamiltoniaan",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "unitariteit",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "kattenformaat",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "knipperen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "neuron",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "wiltlen",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "pincet",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "slaapcyclus",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "opsta",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "hmmmmm",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "gewetensbezwaarde",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "kinderdienstplicht",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "krater",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "terroriseren",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "kniken",
+      "status": "unknown",
+      "cefr": null,
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "kakelen",
+      "status": "hard",
+      "cefr": "B2",
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "to cackle",
+        "to make a sharp",
+        "broken noise"
+      ]
+    },
+    {
+      "lemma": "plaag",
+      "status": "hard",
+      "cefr": "C1",
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "terugkijken",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to look back"
+      ]
+    },
+    {
+      "lemma": "anticlimax",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "anticlimax"
+      ]
+    },
+    {
+      "lemma": "gebeurtenis",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "event",
+        "occasion",
+        "occurrence"
+      ]
+    },
+    {
+      "lemma": "weggooien",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to throw away",
+        "discard"
+      ]
+    },
+    {
+      "lemma": "demonstratie",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "demonstration",
+        "demo"
+      ]
+    },
+    {
+      "lemma": "struikelen",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "to stumble",
+        "fall over",
+        "trip over an object"
+      ]
+    },
+    {
+      "lemma": "plof",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": []
+    },
+    {
+      "lemma": "steun",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "support"
+      ]
+    },
+    {
+      "lemma": "melodie",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "melody"
+      ]
+    },
+    {
+      "lemma": "winnaar",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "winner",
+        "one who has won",
+        "often wins"
+      ]
+    },
+    {
+      "lemma": "kleuter",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": true,
+      "en": []
+    },
+    {
+      "lemma": "duizelig",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "dizzy",
+        "experiencing equilibrium-trouble"
+      ]
+    },
+    {
+      "lemma": "aanpak",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "approach",
+        "policy is made"
+      ]
+    },
+    {
+      "lemma": "achterdeur",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "back door"
+      ]
+    },
+    {
+      "lemma": "terugkeer",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "return"
+      ]
+    },
+    {
+      "lemma": "zebra",
+      "status": "stretch",
+      "cefr": "B1",
+      "count": 1,
+      "glossed": false,
+      "en": [
+        "zebra",
+        "Equus quagga",
+        "Equus grevyi"
+      ]
+    },
+    {
+      "lemma": "de mars van de rede",
+      "status": "phrase",
+      "cefr": null,
+      "count": 1,
+      "glossed": true,
+      "en": [
+        "The March of Reason"
+      ]
+    }
+  ]
+}

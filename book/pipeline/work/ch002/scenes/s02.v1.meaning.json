@@ -1,0 +1,92 @@
+{
+  "scene": "ch002/s02",
+  "version": 1,
+  "reviewer": "meaning",
+  "verdict": "accept",
+  "summary": "Speakers, addressees (u to McGonagall, jullie to both parents, je from McGonagall), the biting double act, the fixed motif in b053 and the zebra punchline all survive. Three reader-visible stumbles (one referent, two wrong-sense) and a few hedges flattened.",
+  "findings": [
+    {
+      "id": "M1",
+      "block": "b046",
+      "fragment": "viel Harry’s moeder hem bij",
+      "problem": "The previous line (b045) is Harry's, so 'hem' attaches to Harry: the mother seems to back Harry instead of seconding the father's sarcasm.",
+      "evidence": "EN: '“Of course,” seconded Harry’s mother.' (seconding the father, b044) vs NL: '“Natuurlijk,” viel Harry’s moeder hem bij.'",
+      "required_fix": "Name the father: '“Natuurlijk,” viel Harry’s moeder zijn vader bij.' (or 'Harry’s moeder sloot zich bij haar man aan').",
+      "severity": "should_fix",
+      "kind": "referent",
+      "category": "speaker"
+    },
+    {
+      "id": "M2",
+      "block": "b050",
+      "fragment": "Daar! Ziet u het?",
+      "problem": "'Daar!' reads as pointing at a place ('over there'), not as the triumphant 'There!' of 'I told you so'.",
+      "evidence": "EN: '“There! You see what I have to deal with?”' vs NL: '“Daar! Ziet u het? Dit moet ik elke dag verdragen!”'",
+      "required_fix": "Use 'Ziet u wel!' (e.g. '“Ziet u wel? Dit moet ik verdragen!”'); drop the added 'elke dag' while there.",
+      "severity": "should_fix",
+      "kind": "wrong-sense",
+      "category": "addition"
+    },
+    {
+      "id": "M3",
+      "block": "b057",
+      "fragment": "Zweinstein kan de basis prima leren",
+      "problem": "Without an indirect object 'leren' reads as 'learn': Hogwarts itself learning the basics, not teaching them.",
+      "evidence": "EN: 'Hogwarts is quite capable of teaching the basics.' vs NL: 'Zweinstein kan de basis prima leren.'",
+      "required_fix": "Make it teaching: 'Op Zweinstein leer je de basis prima.' or 'Zweinstein kan je de basis prima leren.'",
+      "severity": "should_fix",
+      "kind": "wrong-sense",
+      "category": "detail"
+    },
+    {
+      "id": "M4",
+      "block": "b052",
+      "fragment": "Praten ging haar om de een of andere reden moeilijk.",
+      "problem": "The narrator's coy 'seemed to be' is dropped. 'for some reason' keeps most of the irony, so the joke still reads.",
+      "evidence": "EN: 'Professor McGonagall seemed to be having trouble speaking for some reason' vs NL: 'Praten ging haar om de een of andere reden moeilijk.'",
+      "required_fix": "Optional: 'Praten leek haar om de een of andere reden moeilijk te gaan.'",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M5",
+      "block": "b042",
+      "fragment": "Zoiets ken ik niet…",
+      "problem": "The hedge 'I can't recall hearing about' becomes a flat 'I don't know such a thing'. Her calm, cautious tone is a little flattened.",
+      "evidence": "EN: '“I can’t recall hearing about such a condition before…”' vs NL: '“Zoiets ken ik niet…”'",
+      "required_fix": "Optional: '“Ik heb nog nooit van zoiets gehoord, denk ik…”'",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "M6",
+      "block": "b043",
+      "fragment": "Ik hoef niet te lijden onder ... : het levert geen leraren",
+      "problem": "'on grounds that' is softened into a second statement, and 'should not have to' into 'do not have to'. The colon still carries the justification, so the over-formal joke holds.",
+      "evidence": "EN: 'on grounds that I should not have to suffer for ... failure to provide teachers' vs NL: 'Ik hoef niet te lijden onder het falen ...: het levert geen leraren ...'",
+      "required_fix": "Optional: 'Want ik hoor niet te lijden onder ...'",
+      "severity": "note",
+      "category": "causality"
+    },
+    {
+      "id": "M7",
+      "block": "b044",
+      "fragment": "Voor hen was het één grote grap.",
+      "problem": "'like they thought it was all a big joke' (Harry's indignant view) becomes a narrator statement of fact. The indignation is a little weaker.",
+      "evidence": "EN: 'like they thought it was all a big joke' vs NL: 'Voor hen was het één grote grap.'",
+      "required_fix": "Optional: 'Alsof het één grote grap was.'",
+      "severity": "note",
+      "category": "pov"
+    },
+    {
+      "id": "M8",
+      "block": "b040",
+      "fragment": "Ook als ik vroeg opsta",
+      "problem": "'try to' is dropped: in English the attempt fails; in Dutch he actually gets up early. The point (it makes no difference) survives.",
+      "evidence": "EN: 'Even if I try to wake up early, it makes no difference' vs NL: 'Ook als ik vroeg opsta, maakt het geen verschil.'",
+      "required_fix": "Optional: 'Ook als ik probeer vroeg op te staan, …'",
+      "severity": "note",
+      "category": "omission"
+    }
+  ]
+}

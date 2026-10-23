@@ -1,0 +1,217 @@
+{
+  "scene": "ch002/s02",
+  "version": 1,
+  "reviewer": "review",
+  "verdict": "fix",
+  "summary": "Faithful and keeps the double-act rhythm, but two wrong-sense readings (leren = learn, inhalen = fetch), a 'Haar bijten' that reads as the teacher biting, a missed inverted conditional, one confirmed laten, and several unknown words with plain known equivalents (nors, meelevend, verdragen, falen/uiteenvallen, bijvallen).",
+  "findings": [
+    {
+      "id": "R1",
+      "block": "b042",
+      "fragment": "liet een lang \\emph{hmmmmm} horen",
+      "problem": "Causative laten + infinitive; laten horen is not whitelisted.",
+      "evidence": "flag R-LATEN confirmed",
+      "required_fix": "Professor Anderling zei een lang \\emph{hmmmmm}.",
+      "severity": "must_fix",
+      "category": "grammar:R-LATEN"
+    },
+    {
+      "id": "R2",
+      "block": "b043",
+      "fragment": "onder het falen van een uiteenvallend schoolsysteem",
+      "problem": "falen (hard B2) and uiteenvallen (unknown) cluster in one sentence while known equivalents exist; the two glosses of the paragraph are already used.",
+      "evidence": "vocab rows falen hard → mislukken (known A2); uiteenvallen unknown → uit elkaar vallen; cluster b043",
+      "required_fix": "Split: “Ik hoef niet te lijden onder het mislukken van ons schoolsysteem. Dat valt uit elkaar en levert geen leraren of studiemateriaal van zelfs maar minimaal goede kwaliteit.” Keep the two glossed jargon words of the first sentence.",
+      "severity": "must_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "R3",
+      "block": "b046",
+      "fragment": "Haar bijten was een zeer volwassen reactie.",
+      "problem": "Possessive haar + verbal noun reads as 'her biting' (the teacher bit), reversing who bit whom.",
+      "evidence": "EN: 'Biting her was a very mature response to that.' vs NL: 'Haar bijten' = her act of biting",
+      "required_fix": "“Je beet haar. Dat was een zeer volwassen reactie.”",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "R4",
+      "block": "b046",
+      "fragment": "viel Harry’s moeder hem bij",
+      "problem": "bijvallen 'to second' is a phrase of known words the reader does not know (reads as 'fell at him'); hem right after Harry's outburst also points at Harry.",
+      "evidence": "EN: 'seconded Harry's mother'; bijvallen not in lexicon, missed by the checker (split particle)",
+      "required_fix": "“Natuurlijk,” zei Harry’s moeder.",
+      "severity": "must_fix",
+      "category": "vocab:idiom"
+    },
+    {
+      "id": "R5",
+      "block": "b049",
+      "fragment": "zei zijn moeder meelevend",
+      "problem": "meeleven is unknown; a known equivalent exists.",
+      "evidence": "vocab row meeleven unknown; medelijden known A2",
+      "required_fix": "zei zijn moeder vol medelijden",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R6",
+      "block": "b050",
+      "fragment": "Dit moet ik elke dag verdragen!",
+      "problem": "verdragen is unknown (reader may take it as noun 'treaties'); a known verb fits.",
+      "evidence": "vocab row verdragen unknown; meemaken known A2",
+      "required_fix": "Dit moet ik elke dag meemaken!",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R7",
+      "block": "b052",
+      "fragment": "Praten ging haar om de een of andere reden moeilijk.",
+      "problem": "Un-Dutch collocation (the idiom is 'ging haar moeilijk af') and the narrator's 'seemed' — the hint that she is holding back laughter — is dropped.",
+      "evidence": "EN: 'seemed to be having trouble speaking for some reason'",
+      "required_fix": "Praten leek om de een of andere reden moeilijk voor haar.",
+      "severity": "must_fix",
+      "category": "naturalness"
+    },
+    {
+      "id": "R8",
+      "block": "b053",
+      "fragment": "keek haar nors aan",
+      "problem": "nors is unknown; boos is A1 and already the scene's word for Harry's glares.",
+      "evidence": "vocab row nors unknown → boos (known A1)",
+      "required_fix": "Harry keek haar boos aan.",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R9",
+      "block": "b055",
+      "fragment": "ga ik je volgens mij pas een dag of twee voordat de school begint meenemen",
+      "problem": "Frame ga … meenemen holds 11 words including a whole voordat-clause; 'volgens mij ga ik' about one's own decision is odd Dutch.",
+      "evidence": "EN: 'I think, under the circumstances, that I should avoid taking you … until a day or two before school begins'; L-FRAME not flagged because the subclause hides it",
+      "required_fix": "“Onder deze omstandigheden kan ik je volgens mij beter pas meenemen een dag of twee voor het begin van de school. Dan koop je je schoolspullen.”",
+      "severity": "must_fix",
+      "category": "load:L-FRAME"
+    },
+    {
+      "id": "R10",
+      "block": "b056",
+      "fragment": "Ik moet meteen beginnen met inhalen!",
+      "problem": "The reader knows inhalen as 'to fetch, bring in'; 'catch up' is not the known sense.",
+      "evidence": "lexicon inhalen known A2 = 'to fetch, bring in'; translator note asked for a judgement",
+      "required_fix": "Ik moet meteen beginnen. Anders blijf ik achter! (achterblijven known A2)",
+      "severity": "must_fix",
+      "category": "vocab:sense"
+    },
+    {
+      "id": "R11",
+      "block": "b057",
+      "fragment": "Zweinstein kan de basis prima leren.",
+      "problem": "Reads as 'Hogwarts can learn the basics just fine' — the reader's leren is 'learn', not 'teach'.",
+      "evidence": "EN: 'Hogwarts is quite capable of teaching the basics'",
+      "required_fix": "Op Zweinstein leer je de basis prima.",
+      "severity": "must_fix",
+      "category": "vocab:sense"
+    },
+    {
+      "id": "R12",
+      "block": "b057",
+      "fragment": "laat ik je twee maanden alleen met je schoolboeken, zelfs zonder toverstok, dan vind ik bij mijn terugkeer alleen dit",
+      "problem": "Inverted conditional without als (restricted), and 'laat ik' reads first as hortative 'let me'; the second 'alleen' (only) clashes with 'alleen' (alone).",
+      "evidence": "restricted.md R-CONJ-OTHER: inverted conditionals without als (Kom je, dan …); not flagged by the checker",
+      "required_fix": "Als ik je twee maanden alleen laat met je schoolboeken, zelfs zonder toverstok, dan vind ik bij mijn terugkeer dit.",
+      "severity": "must_fix",
+      "category": "grammar:R-CONJ-OTHER"
+    },
+    {
+      "id": "R13",
+      "block": "b044",
+      "fragment": "beet je in het derde jaar een wiskundeleraar",
+      "problem": "The teacher is a woman (Ze in b045, haar in b046); the masculine form makes Ze attach to Harry's mother first.",
+      "evidence": "EN: 'a maths teacher' … 'She didn't know'; lerares known A1",
+      "required_fix": "een wiskundelerares (b044 only; b049 stays generic)",
+      "severity": "should_fix",
+      "kind": "referent",
+      "category": "naturalness"
+    },
+    {
+      "id": "R14",
+      "block": "b050",
+      "fragment": "Daar! Ziet u het?",
+      "problem": "'Daar!' is a calque of 'There!'; Dutch says 'Ziet u wel?'.",
+      "evidence": "EN: 'There! You see what I have to deal with?'",
+      "required_fix": "“Ziet u wel? Dit moet ik elke dag meemaken!”",
+      "severity": "should_fix",
+      "kind": "collocation",
+      "category": "calque"
+    },
+    {
+      "id": "R15",
+      "block": "b042",
+      "fragment": "Nu dan,",
+      "problem": "'Nu dan' is stiff and bookish for McGonagall's turn back to business.",
+      "evidence": "EN: 'Now,'",
+      "required_fix": "Goed,",
+      "severity": "should_fix",
+      "kind": "collocation",
+      "category": "naturalness"
+    },
+    {
+      "id": "R16",
+      "block": "b040",
+      "fragment": "Ook als ik vroeg opsta",
+      "problem": "'try to' dropped; the attempt (not the success) is what fails.",
+      "evidence": "EN: 'Even if I try to wake up early'",
+      "required_fix": "Optional: Ook als ik probeer vroeg op te staan … (te-infinitive) — leave unless the chapter pass wants it.",
+      "severity": "note",
+      "category": "omission"
+    },
+    {
+      "id": "R17",
+      "block": "b044",
+      "fragment": "Voor hen was het één grote grap.",
+      "problem": "'like they thought it was all a big joke' is Harry-coloured hedging; Dutch is a touch more factual. Acceptable.",
+      "evidence": "EN: 'like they thought it was all a big joke'",
+      "required_fix": "None needed.",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "R18",
+      "block": "b040 b057",
+      "fragment": "slaapcyclus; krater; terroriseren",
+      "problem": "Transparent cognates / compound of known parts (slaap + cyclus 'cycle'); lexicon gaps, not reader problems.",
+      "evidence": "vocab rows slaapcyclus, krater, terroriseren unknown",
+      "required_fix": "Lexicon owner: add krater, terroriseren to cognates; cyclus as cognate.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R19",
+      "block": "b057",
+      "fragment": "bij mijn terugkeer",
+      "problem": "'to this house' dropped; terugkeer is stretch where 'als ik terugkom' would be known.",
+      "evidence": "EN: 'I will return to this house only to find'",
+      "required_fix": "Optional for chapter pass: … dan kom ik terug in dit huis en vind ik dit:",
+      "severity": "note",
+      "category": "detail"
+    }
+  ],
+  "flag_decisions": [
+    {"id": "R-LATEN", "block": "b042", "span": "liet een lang hmmmmm horen", "decision": "confirmed", "reason": "causative laten + horen; not in grammar_whitelist (only laten zien / laten vallen) → R1"},
+    {"id": "R-PASSIVE", "block": "b042", "span": "dit wordt vast geen probleem", "decision": "dismissed", "reason": "copula worden + noun phrase, no participle"},
+    {"id": "R-VERB-CHAIN", "block": "b048", "span": "blijven jullie over dat bijten praten", "decision": "dismissed", "reason": "blijven + bare infinitive, two verbs; bijten is a noun (look-alike table)"},
+    {"id": "R-RELCL", "block": "b053", "span": "die mij niet eerst bijt", "decision": "dismissed", "reason": "fixed motif rendering in memory.md (repeated identically in ch 8)"},
+    {"id": "L-FRAME", "block": "b040", "span": "ben ik tot nu toe niet naar een gewone school gegaan", "decision": "dismissed", "reason": "9 vs 8, all short A1 words, one chunk 'tot nu toe'; reads easily"}
+  ],
+  "tool_feedback": [
+    "Lemmatizer: 'opsta' (opstaan) and 'kniken' (knikken) reported as unknown; both known.",
+    "Interjections like 'hmmmmm' should be skipped by the vocab count.",
+    "Split separable verbs with particle after the object (viel … hem bij → bijvallen) are not looked up as the compound.",
+    "L-FRAME misses frames that contain a whole subordinate clause (b055 ga … voordat de school begint meenemen).",
+    "R-CONJ-OTHER does not catch inverted conditionals 'Laat ik je …, dan …' (b057).",
+    "polysemy.json: add leren (learn vs teach) and inhalen (fetch vs catch up / overtake); possessive + verbal noun ('Haar bijten') as a referent warning."
+  ]
+}

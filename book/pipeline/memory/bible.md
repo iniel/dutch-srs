@@ -229,7 +229,10 @@ slightly formal, never slangy; she says *meneer Potter* in every mood and *je*. 
 *Magie.* answers Harry's tirades (ch 2, ch 6). “Just Professor will do” → *Zeg maar professor.* She
 swears by Merlin: *Wat in Merlijns naam…* Narration labels: *professor Anderling*, *de heks*, *de
 oudere heks*, *de onderdirectrice*, *de heksendame* (Harry's childish label, ch 2–5), *Anderling*
-when Harry is furious or in her own POV *Minerva*.
+when Harry is furious or in her own POV *Minerva*. Her suppressed amusement is a motif: “lips
+twitching” → *haar mondhoeken trokken omhoog*, “twitching harder” → *gingen nu nog verder omhoog*.
+Michael and Petunia say *u* to her (*Goed, u kunt me nu neerzetten.*); Harry calls her
+*onderdirectrice* once before she corrects him to *professor*.
 
 **Madam Pomfrey → madame Plijster** — school healer, mentioned.
 
@@ -362,6 +365,8 @@ RAVENKLAUW!*
 | “Huh.” | Huh. | 2 | Harry and Michael echo |
 | that look | die blik | 2 | italic |
 | “I don't bite anyone who doesn't bite me first.” | Ik bijt niemand die mij niet eerst bijt. | 2 | repeated in 8, identical |
+| McGonagall's lips twitching | haar mondhoeken trokken omhoog / gingen nog verder omhoog | 2 | her suppressed amusement; reuse the *mondhoeken* image |
+| The March of Reason | De Mars van de Rede | 2 | Harry's phrase, glossed as one chunk once per chapter |
 | the Light; warrior / symbol of the Light | het Licht; strijder / symbool van het Licht | 5 / 9 | |
 | “the one with the power to vanquish the Dark Lord” | degene met de macht om de Heer van het Duister te verslaan | 5 | prophecy wording, fixed |
 | Crack of Doom / Look of Doom / Mount Doom / House of Doom | de Doemspleet / de Blik des Doems / de Doemberg / Afdeling des Doems | 3 / 6 / 6 / 10 | one family |
@@ -440,7 +445,17 @@ kinderdienstplicht* (keep, gloss). “nursery schoolers” → *kleuters*. “wi
 fixed rendering (see motifs). “10 pm, 12 am…” → *tien uur 's avonds, twaalf uur, twee uur, vier
 uur*. The opening quote (“Of course it was my fault…”) does not occur in the text; translate freely
 but keep the deadpan.
-**Decisions.** First glosses *Faunaat*, *Gedaanteverwisseling*, *gewaad*; Michael → McGonagall *u*.
+**Decisions (final, after cohesion).** Title *Alles wat ik geloof, is niet waar* (also Harry's
+in-text line, b019, identical). Michael → McGonagall *u*. “levitate” → *in de lucht tillen*; “fair
+play” → *Dat is niet eerlijk.*; “magician's trick” → *een truc van een goochelaar*. “to be exact” →
+*Preciezer gezegd:*. “condition” → *aandoening* (glossed, reused). The bitten teacher is a
+*wiskundelerares* (*Ze kende geen logaritmen!*); generic *je bijt één wiskundeleraar*. “There! You
+see…?” → *Ziet u wel?*. “I'll find a solution in time” → *ik vind wel op tijd een oplossing* (fixed;
+keep *op tijd*). Pomfrey → *madame Plijster*. “10 pm, 12 am, 2 am, 4 am” → *tien uur ’s
+avonds, twaalf uur, twee uur, vier uur*, `\pm`/`\am` dropped. *toverspreuk* unglossed (A2 known).
+Glosses in this chapter (19, in order): goochelaar, gewaad, kakelt, waarneming, brein, toverstok,
+Gedaanteverwisseling, Faunaat, knipperde, neuronen, Kleuters, De Mars van de Rede, gesmoorde,
+pincet, aandoening, gewetensbezwaarde, kinderdienstplicht, logaritmen, plaag.
 
 ### Chapter 3 — Comparing Reality To Its Alternatives → *De werkelijkheid vergelijken met de alternatieven*
 **Summary.** In the Leaky Cauldron everyone recognises Harry Potter; he plays along until an old

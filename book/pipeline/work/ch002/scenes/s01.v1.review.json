@@ -1,0 +1,263 @@
+{
+  "scene": "ch002/s01",
+  "version": 1,
+  "reviewer": "review",
+  "verdict": "fix",
+  "summary": "Meaning and je/u address hold throughout; refrains and canon terms match memory. Fix two restricted constructions the parser missed (b006 split ergens…voor, b010 inverted conditional), two confirmed flags (b020 lijken te, b028 3-verb chain), five unglossed hard/unknown words with plain equivalents, and the b029 'lippen trilden' image that turns McGonagall's suppressed amusement into trembling.",
+  "findings": [
+    {
+      "id": "R1",
+      "block": "b006",
+      "fragment": "Niemand anders kan ergens verantwoordelijk voor zijn.",
+      "problem": "Split pronominal adverb ergens … voor; the parser missed it.",
+      "evidence": "restricted.md R-ER-PREP (split form); not in the checks report",
+      "required_fix": "Niemand anders kan voor iets verantwoordelijk zijn.",
+      "severity": "must_fix",
+      "category": "grammar:R-ER-PREP"
+    },
+    {
+      "id": "R2",
+      "block": "b010",
+      "fragment": "Gebeurt het niet, dan geef je toe",
+      "problem": "Inverted conditional without als, outside the profile; the parser missed it.",
+      "evidence": "restricted.md R-CONJ-OTHER: inverted conditionals without als (Kom je, dan …)",
+      "required_fix": "Als het niet gebeurt, dan geef je toe: je hebt het mis.",
+      "severity": "must_fix",
+      "category": "grammar:R-CONJ-OTHER"
+    },
+    {
+      "id": "R3",
+      "block": "b020",
+      "fragment": "Maar zijn brein leek alleen dit te zeggen:",
+      "problem": "lijken + te-infinitive is restricted.",
+      "evidence": "flag R-TE-INF confirmed",
+      "required_fix": "Maar zijn brein zei alleen dit, zo leek het: (keep the \\emph thought after the colon)",
+      "severity": "must_fix",
+      "category": "grammar:R-TE-INF"
+    },
+    {
+      "id": "R4",
+      "block": "b020",
+      "fragment": "al zijn hypotheses over het universum wegspoelen",
+      "problem": "wegspoelen is unknown and unglossed; a plain known verb carries the meaning.",
+      "evidence": "vocab row wegspoelen unknown / review; EN 'flushing its entire current stock of hypotheses'",
+      "required_fix": "Replace wegspoelen with weggooien: Zijn brein moest nu al zijn hypotheses over het universum weggooien.",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R5",
+      "block": "b025",
+      "fragment": "Ze klonk oprecht",
+      "problem": "oprecht is B2 hard and unglossed; the known word eerlijk says the same.",
+      "evidence": "vocab row oprecht hard B2 replace-or-gloss; EN 'sounding sincere'",
+      "required_fix": "Ze klonk eerlijk, hoewel …",
+      "severity": "must_fix",
+      "category": "vocab:hard"
+    },
+    {
+      "id": "R6",
+      "block": "b025",
+      "fragment": "de kleine gestreepte kat",
+      "problem": "gestreept is unknown and unglossed; a phrase with a known noun works.",
+      "evidence": "vocab row gestreepte unknown / review; EN 'small tabby cat'",
+      "required_fix": "de kleine kat met strepen",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R7",
+      "block": "b028",
+      "fragment": "Hoe kunt u blijven denken met een brein van kattenformaat?",
+      "problem": "Three-verb cluster kunnen + blijven + denken.",
+      "evidence": "flag R-VERB-CHAIN confirmed",
+      "required_fix": "Hoe kunt u nog denken met een brein van kattenformaat? (move \\emph to denken)",
+      "severity": "must_fix",
+      "category": "grammar:R-VERB-CHAIN"
+    },
+    {
+      "id": "R8",
+      "block": "b028",
+      "fragment": "Als je hem verwerpt",
+      "problem": "verwerpen is unknown and unglossed; it is not one of the jargon words that stay opaque on purpose.",
+      "evidence": "vocab row verwerpen unknown / review; cluster b028 (unitariteit, verwerpen); EN 'Rejecting it destroys unitarity'",
+      "required_fix": "Als je hem niet accepteert, vernietig je de unitariteit!",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R9",
+      "block": "b029 b025",
+      "fragment": "Professor Anderlings lippen trilden nu nog harder.",
+      "problem": "The reader knows trillen as tremble or shake, so trembling lips read as fear or near-tears. 'nog harder' also points back to nothing, because b025 has mondhoeken omhoog trokken, not trilden; the recurring 'lips twitching when amused' motif is lost.",
+      "evidence": "EN b025 'the corners of her lips were twitching upwards' / b029 'lips were twitching harder now'; memory: McGonagall 'lips twitching when amused'",
+      "required_fix": "Pick up the b025 image: Professor Anderlings mondhoeken gingen nu nog verder omhoog.",
+      "severity": "must_fix",
+      "category": "vocab:sense"
+    },
+    {
+      "id": "R10",
+      "block": "b032",
+      "fragment": "Alles werd wazig voor Harry’s ogen.",
+      "problem": "wazig is unknown and unglossed; plain known words say it.",
+      "evidence": "vocab row wazig unknown / review; EN 'A blur was coming over Harry's vision'",
+      "required_fix": "Harry zag ineens niet meer goed.",
+      "severity": "must_fix",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R11",
+      "block": "b024",
+      "fragment": "Harry krabbelde achteruit",
+      "problem": "The reader knows krabbelen only as 'scribble', so this reads as Harry scribbling backwards; the next sentence makes the motion clear.",
+      "evidence": "vocab row krabbelen stretch, en 'to scrawl, scribble'; EN 'scrambled back'",
+      "required_fix": "Harry ging zonder nadenken snel achteruit. (then drop or shorten the repeated 'Hij ging zo snel achteruit.')",
+      "severity": "should_fix",
+      "kind": "wrong-sense",
+      "category": "vocab:sense"
+    },
+    {
+      "id": "R12",
+      "block": "b027",
+      "fragment": "Of precies gezegd:",
+      "problem": "Not a Dutch fixed phrase; the usual forms are 'preciezer gezegd' or 'beter gezegd'.",
+      "evidence": "EN 'to be exact'",
+      "required_fix": "Preciezer gezegd: een Faunaat-transformatie.",
+      "severity": "should_fix",
+      "kind": "collocation",
+      "category": "naturalness"
+    },
+    {
+      "id": "R13",
+      "block": "b039",
+      "fragment": "Wat is dit?",
+      "problem": "'Wat is dit?' asks about an object in front of you; for a topic someone has just raised, Dutch says 'Wat is dat?'.",
+      "evidence": "EN 'What's this?' (asking about the condition just mentioned)",
+      "required_fix": "Zijn aandoening? Wat is dat?",
+      "severity": "should_fix",
+      "kind": "collocation",
+      "category": "naturalness"
+    },
+    {
+      "id": "R14",
+      "block": "b008",
+      "fragment": "Dat is geen eerlijk spel.",
+      "problem": "Calque of 'fair play'; the reader notices the odd noun phrase.",
+      "evidence": "EN 'That wouldn't be fair play.'",
+      "required_fix": "Dat is niet eerlijk.",
+      "severity": "should_fix",
+      "kind": "collocation",
+      "category": "calque"
+    },
+    {
+      "id": "R15",
+      "block": "b037",
+      "fragment": "\\gl{gesmoorde}{choked} lach",
+      "problem": "The glossed-known-equivalent row is dismissed: stikken means 'suffocate', and *een gestikte lach* is not Dutch. Keep the gloss.",
+      "evidence": "vocab must-fix row smooren → stikken (different sense)",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:gloss-equivalent"
+    },
+    {
+      "id": "R16",
+      "block": "b038 b039",
+      "fragment": "\\gl{aandoening}{condition}",
+      "problem": "The glossed-known-equivalent row is dismissed: toestand means a current state, not a chronic disorder, and the later scene reuses aandoening. Keep.",
+      "evidence": "vocab must-fix row aandoening → toestand (different sense)",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:gloss-equivalent"
+    },
+    {
+      "id": "R17",
+      "block": "b019",
+      "fragment": "\\gl{waarneming}{observation}",
+      "problem": "The glossed-known-equivalent row is dismissed: opmerking means 'remark', not the scientific observation; Harry's jargon is the joke (bible voice §6). Keep.",
+      "evidence": "vocab must-fix row waarneming → opmerking (different sense)",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "vocab:gloss-equivalent"
+    },
+    {
+      "id": "R18",
+      "block": "b011",
+      "fragment": "stopt baby’s in ketels",
+      "problem": "ketel is unknown and unglossed, with no plain equivalent for 'cauldron'. The paragraph already has two glosses, but the image is clear from context. Lexicon candidate.",
+      "evidence": "vocab row ketel unknown / review",
+      "required_fix": "Chapter pass may gloss it if a gloss slot frees up.",
+      "severity": "note",
+      "category": "vocab:unknown"
+    },
+    {
+      "id": "R19",
+      "block": "b031",
+      "fragment": "knipperde met haar ogen",
+      "problem": "knipperen is unknown, with no plain equivalent; a gloss would help.",
+      "evidence": "vocab row knipperen unknown / review; EN 'blinked'",
+      "required_fix": "Chapter pass: consider \\gl{knipperde}{blinked}.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "R20",
+      "block": "b034",
+      "fragment": "\\gl{toverspreuk}{spell}",
+      "problem": "The lexicon rates toverspreuk A2 known; by the exceptions.json precedence it needs no gloss.",
+      "evidence": "vocab row toverspreuk known gloss-on-known",
+      "required_fix": "Chapter pass: drop the gloss.",
+      "severity": "note",
+      "category": "gloss"
+    },
+    {
+      "id": "R21",
+      "block": "b019",
+      "fragment": "als je je ideeën aanpast",
+      "problem": "'updating on an observation' is plainer than Harry's jargon register (voice §6), but the gloss on waarneming keeps the joke alive. Acceptable.",
+      "evidence": "EN 'updating on an observation of infinitesimal probability'",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "voice"
+    },
+    {
+      "id": "R22",
+      "block": "b025",
+      "fragment": "Ik heb je niet eerst gewaarschuwd.",
+      "problem": "The regret of 'should have' is lost; 'Het spijt me' before it carries the apology.",
+      "evidence": "EN 'I should have warned you.'",
+      "required_fix": "Optional: Ik moest je eerst waarschuwen.",
+      "severity": "note",
+      "category": "certainty"
+    },
+    {
+      "id": "R23",
+      "block": "b028",
+      "fragment": "kwantum-Hamiltoniaan … unitariteit … FTL-signalen",
+      "problem": "Unknown jargon kept opaque on purpose, per the chapter notes. Correct.",
+      "evidence": "memory ch 2 Tone: keep quantum Hamiltonian, unitarity, FTL opaque",
+      "required_fix": "None.",
+      "severity": "note",
+      "category": "voice"
+    }
+  ],
+  "flag_decisions": [
+    {"id": "R-RELCL", "block": "b001", "span": "wat ik geloof", "decision": "dismissed", "reason": "Chapter title fixed in memory (ch 2 heading); a heading in letterspaced capitals, not narration."},
+    {"id": "R-ER-PREP", "block": "b008", "span": "er zitten geen draden aan", "decision": "dismissed", "reason": "Presentational er (A-ER-NEW) + ordinary PP 'aan je'; no pronominal adverb."},
+    {"id": "R-VERB-CHAIN", "block": "b011", "span": "Zal ik het nu laten zien", "decision": "dismissed", "reason": "laten zien is whitelisted vocabulary; zullen + one verb = A-ZULLEN offer."},
+    {"id": "R-PASSIVE", "block": "b019", "span": "Dat deel was al overtuigd.", "decision": "dismissed", "reason": "zijn + adjectival participle expressing a state (look-alike table)."},
+    {"id": "R-RELCL", "block": "b019", "span": "wat ik geloof", "decision": "dismissed", "reason": "Verbatim echo of the fixed chapter title; it must stay identical for the callback."},
+    {"id": "R-TE-INF", "block": "b020", "span": "dit te zeggen", "decision": "confirmed", "reason": "lijken te + infinitive; see R3."},
+    {"id": "R-VERB-CHAIN", "block": "b028", "span": "kunt u blijven denken", "decision": "confirmed", "reason": "Three verbs in one cluster; see R7."},
+    {"id": "L-FRAME", "block": "b028", "span": "kan zich niet zomaar de hele anatomie van een kat voorstellen", "decision": "dismissed", "reason": "9 vs 8; the middle is one noun phrase, easy to parse; part of Harry's breathless rant."}
+  ],
+  "meaning_pass": false,
+  "tool_feedback": [
+    "Lemmatizer errors: 'tilt' → tilen (tillen), 'aanpast' → aanpasen (aanpassen), 'wilt leren' → wiltlen; they inflate the unknown count.",
+    "Comparatives of listed cognates (dramatischere ← dramatisch) should resolve to the cognate.",
+    "Grammar checker misses inverted conditionals without als ('Gebeurt het niet, dan …', R-CONJ-OTHER) and the split 'ergens … voor' (R-ER-PREP).",
+    "R-ER-PREP fires on presentational er + a separate PP ('er zitten geen draden aan je'); require the preposition to have no object.",
+    "R-VERB-CHAIN should count whitelisted chunks (laten zien) as one verb.",
+    "Glossed-known-equivalent matched on English gloss only: smooren→stikken, waarneming→opmerking, aandoening→toestand are all different senses; consider sense-checking the en field.",
+    "Whitelist the fixed chapter title 'Alles wat ik geloof, is niet waar' and its in-text echo for R-RELCL."
+  ]
+}

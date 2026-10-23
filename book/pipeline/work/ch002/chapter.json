@@ -733,14 +733,18 @@
       "words": 994,
       "first_block": "b001",
       "last_block": "b039",
-      "translatable_blocks": 34
+      "translatable_blocks": 34,
+      "dialogue_share": 0.36,
+      "dialogue_heavy": false
     },
     {
       "scene": "s02",
       "words": 542,
       "first_block": "b040",
       "last_block": "b060",
-      "translatable_blocks": 20
+      "translatable_blocks": 20,
+      "dialogue_share": 0.6,
+      "dialogue_heavy": true
     }
   ]
 }

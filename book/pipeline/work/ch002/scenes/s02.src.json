@@ -264,5 +264,13 @@
     "“Hold on a moment, Harry,” his father said. “Remember why you haven’t been going to school up until now? What about your condition?”",
     "Professor McGonagall spun to face Michael. “His condition? What’s this?”"
   ],
-  "context_after": []
+  "context_after": [],
+  "dialogue_share": 0.6,
+  "speakers": [
+    "Harry",
+    "Harry’s",
+    "McGonagall",
+    "Petunia"
+  ],
+  "dialogue_heavy": true
 }

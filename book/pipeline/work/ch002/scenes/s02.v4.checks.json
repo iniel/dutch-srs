@@ -1,0 +1,613 @@
+{
+  "scene": "ch002/s02",
+  "version": 4,
+  "file": "/Users/svetlana/Development/dutch-srs/book/pipeline/work/ch002/scenes/s02.v4.nl.md",
+  "structure": {
+    "issues": [
+      {
+        "id": "S-MACRO",
+        "block": "b040",
+        "msg": "source uses \\pm, translation does not"
+      },
+      {
+        "id": "S-MACRO",
+        "block": "b040",
+        "msg": "source uses \\am, translation does not"
+      }
+    ],
+    "ok": false
+  },
+  "vocab": {
+    "scene": "ch002/s02",
+    "version": 4,
+    "tokens": 512,
+    "known_tokens": 502,
+    "known_share": 0.9805,
+    "new_lemmas_unglossed": 8,
+    "new_per_1000": 15.6,
+    "stretch_budget": 4,
+    "verdict": {
+      "known_share_ok": true,
+      "density_ok": false,
+      "clusters_ok": true,
+      "avoid_ok": true,
+      "gloss_equivalent_ok": true,
+      "ok": false
+    },
+    "lemmas": [
+      {
+        "lemma": "slaapcyclus",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b040"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Mijn slaapcyclus duurt zesentwintig uur."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "opsta",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b040"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ook als ik vroeg opsta, maakt het geen verschil."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "hmmmmm",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "PROPN",
+        "count": 1,
+        "blocks": [
+          "b042"
+        ],
+        "glossed": false,
+        "examples": [
+          "Professor Anderling zei een lang hmmmmm."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "krater",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": false,
+        "examples": [
+          "Een krater met paarse rookwolken."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "terroriseren",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": false,
+        "examples": [
+          "Die terroriseren de rest van Engeland."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "kniken",
+        "status": "unknown",
+        "cefr": null,
+        "en": [],
+        "pos": "VERB",
+        "count": 1,
+        "blocks": [
+          "b058"
+        ],
+        "glossed": false,
+        "examples": [
+          "Harry’s moeder en vader knikten precies tegelijk."
+        ],
+        "action": "review",
+        "hint": "not in any list — reviewer decides (cognate? compound of known parts? name?)"
+      },
+      {
+        "lemma": "aanpak",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "approach",
+          "policy is made"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b047"
+        ],
+        "glossed": false,
+        "examples": [
+          "“Een verstandige aanpak voor het probleem van leraren zonder kennis van logaritmen."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "achterdeur",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "back door"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b051"
+        ],
+        "glossed": false,
+        "examples": [
+          "Ze vluchtte door de achterdeur de tuin in."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "terugkeer",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "return"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": false,
+        "examples": [
+          "En ik denk, meneer Potter: als ik je twee maanden alleen laat met je schoolboeken, zelfs zonder toverstok, dan vind ik bij mijn terugkeer dit."
+        ],
+        "action": "ok-transparent",
+        "hint": "B1 by the data but a compound of two known words; fine without gloss"
+      },
+      {
+        "lemma": "zebra",
+        "status": "stretch",
+        "cefr": "B1",
+        "en": [
+          "zebra",
+          "Equus quagga",
+          "Equus grevyi"
+        ],
+        "pos": "NOUN",
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": false,
+        "examples": [
+          "En een plaag van brandende zebra’s."
+        ],
+        "action": "ok-stretch",
+        "hint": "B1 word inside the stretch budget; fine, consider a gloss if the context does not explain it"
+      },
+      {
+        "lemma": "gewetensbezwaarde",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b043"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "kinderdienstplicht",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b043"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "logaritmen",
+        "status": "known",
+        "cefr": null,
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b045"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      },
+      {
+        "lemma": "plaag",
+        "status": "known",
+        "cefr": "C1",
+        "en": [],
+        "count": 1,
+        "blocks": [
+          "b057"
+        ],
+        "glossed": true,
+        "examples": [],
+        "action": "gloss-on-known",
+        "hint": "glossed although the lexicon rates it known — drop the gloss unless the sense is unusual"
+      }
+    ],
+    "clusters": [],
+    "avoid": [],
+    "senses": [
+      {
+        "lemma": "even",
+        "known": "a moment",
+        "watch": "equally (even groot); softener in requests",
+        "count": 1,
+        "blocks": [
+          "b054"
+        ],
+        "examples": [
+          "Toen hij dat hoorde, moest professor Michael Verres-Evans ook even de kamer uit."
+        ]
+      },
+      {
+        "lemma": "gewoon",
+        "known": "normal, ordinary",
+        "watch": "simply, just (hij deed het gewoon) — also an intensifier the bible forbids",
+        "count": 1,
+        "blocks": [
+          "b040"
+        ],
+        "examples": [
+          "Daarom ben ik tot nu toe niet naar een gewone school gegaan.”"
+        ]
+      },
+      {
+        "lemma": "toch",
+        "known": "still, yet",
+        "watch": "surely, after all (dat weet je toch); contradiction (wel toch)",
+        "count": 1,
+        "blocks": [
+          "b056"
+        ],
+        "examples": [
+          "De andere kinderen kunnen al toveren, toch?"
+        ]
+      },
+      {
+        "lemma": "heel",
+        "known": "very",
+        "watch": "whole (een hele wereld = a whole world, read as 'a very world')",
+        "count": 2,
+        "blocks": [
+          "b040"
+        ],
+        "examples": [
+          "Tien uur ’s avonds, twaalf uur, twee uur, vier uur, zo gaat het de hele klok rond.",
+          "Dan ben ik die hele dag kapot."
+        ]
+      },
+      {
+        "lemma": "wel",
+        "known": "indeed, certainly",
+        "watch": "contrast particle (ik wel); softener (dat is wel goed); 'well' in questions",
+        "count": 2,
+        "blocks": [
+          "b042",
+          "b050"
+        ],
+        "examples": [
+          "“Nee, dit wordt vast geen probleem — ik vind wel op tijd een oplossing.",
+          "“Ziet u wel?"
+        ]
+      }
+    ],
+    "per_block": {
+      "b040": {
+        "tokens": 88,
+        "new": [
+          "opsta",
+          "slaapcyclus"
+        ],
+        "glosses": []
+      },
+      "b041": {
+        "tokens": 12,
+        "new": [],
+        "glosses": []
+      },
+      "b042": {
+        "tokens": 53,
+        "new": [
+          "hmmmmm"
+        ],
+        "glosses": []
+      },
+      "b043": {
+        "tokens": 39,
+        "new": [],
+        "glosses": [
+          "gewetensbezwaarde",
+          "kinderdienstplicht"
+        ]
+      },
+      "b044": {
+        "tokens": 32,
+        "new": [],
+        "glosses": []
+      },
+      "b045": {
+        "tokens": 4,
+        "new": [],
+        "glosses": [
+          "logaritmen"
+        ]
+      },
+      "b046": {
+        "tokens": 14,
+        "new": [],
+        "glosses": []
+      },
+      "b047": {
+        "tokens": 16,
+        "new": [
+          "aanpak"
+        ],
+        "glosses": []
+      },
+      "b048": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      },
+      "b049": {
+        "tokens": 20,
+        "new": [],
+        "glosses": []
+      },
+      "b050": {
+        "tokens": 16,
+        "new": [],
+        "glosses": []
+      },
+      "b051": {
+        "tokens": 22,
+        "new": [
+          "achterdeur"
+        ],
+        "glosses": []
+      },
+      "b052": {
+        "tokens": 28,
+        "new": [],
+        "glosses": []
+      },
+      "b053": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      },
+      "b054": {
+        "tokens": 13,
+        "new": [],
+        "glosses": []
+      },
+      "b055": {
+        "tokens": 42,
+        "new": [],
+        "glosses": []
+      },
+      "b056": {
+        "tokens": 17,
+        "new": [],
+        "glosses": []
+      },
+      "b057": {
+        "tokens": 62,
+        "new": [
+          "krater",
+          "terroriseren",
+          "terugkeer",
+          "zebra"
+        ],
+        "glosses": [
+          "plaag"
+        ]
+      },
+      "b058": {
+        "tokens": 8,
+        "new": [
+          "kniken"
+        ],
+        "glosses": []
+      },
+      "b059": {
+        "tokens": 0,
+        "new": [],
+        "glosses": []
+      }
+    },
+    "thresholds": {
+      "known_token_share_min": 0.975,
+      "new_lemmas_per_1000_max": 15,
+      "new_per_sentence_max": 1,
+      "new_per_paragraph_max": 4,
+      "gloss_per_paragraph_max": 2,
+      "stretch_budget_per_1000": 8,
+      "stretch_budget_min": 3,
+      "count_proper_nouns_as_known": true,
+      "count_numbers_as_known": true,
+      "count_glossary_as_known": true
+    }
+  },
+  "grammar": {
+    "scene": "ch002/s02",
+    "version": 4,
+    "sentences": 77,
+    "summary": {
+      "likely": 3,
+      "review": 2,
+      "ignored": 3,
+      "load": 2,
+      "load_shown": 1
+    },
+    "verdict": {
+      "ok": false
+    },
+    "flags": [
+      {
+        "id": "R-PARTICIPLE",
+        "span": "volgende",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b040",
+        "sent": 5,
+        "sentence": "De volgende dag ga ik dan twee uur later slapen dan dat.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "opsta",
+        "confidence": 0.6,
+        "note": "",
+        "block": "b040",
+        "sent": 7,
+        "sentence": "Ook als ik vroeg opsta, maakt het geen verschil.",
+        "level": "review",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "Daarom ben ik tot nu toe niet naar een gewone school gegaan",
+        "confidence": 0.3,
+        "note": "zijn + participle: state/perfectum are allowed",
+        "block": "b040",
+        "sent": 9,
+        "sentence": "Daarom ben ik tot nu toe niet naar een gewone school gegaan.”",
+        "level": "review",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-PASSIVE",
+        "span": "dit wordt vast geen probleem —",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b042",
+        "sent": 5,
+        "sentence": "“Nee, dit wordt vast geen probleem — ik vind wel op tijd een oplossing.",
+        "level": "likely",
+        "hint": "name the agent (ze / iemand / iedereen) or use a state verb (ging open)"
+      },
+      {
+        "id": "R-TE-INF",
+        "span": "niet te lijden",
+        "confidence": 0.1,
+        "note": "whitelisted chunk 'hoeven te'",
+        "block": "b043",
+        "sent": 2,
+        "sentence": "Ik hoef niet te lijden onder het mislukken van ons schoolsysteem.",
+        "level": "ignored",
+        "hint": "split: Hij ging naar huis. Hij wilde eten. / drop the verb: Hij lachte."
+      },
+      {
+        "id": "R-VERB-CHAIN",
+        "span": "blijven jullie over dat bijten praten",
+        "confidence": 0.8,
+        "note": "3 verbs",
+        "block": "b048",
+        "sent": 1,
+        "sentence": "Hoe lang blijven jullie over dat bijten praten?",
+        "level": "likely",
+        "hint": "drop one verb: Hij wilde gaan. / Je moet wachten."
+      },
+      {
+        "id": "R-RELCL",
+        "span": "die mij niet eerst bijt",
+        "confidence": 0.85,
+        "note": "",
+        "block": "b053",
+        "sent": 2,
+        "sentence": "Ik bijt niemand die mij niet eerst bijt.”",
+        "level": "likely",
+        "hint": "split into two sentences or use a prepositional phrase / adjective"
+      },
+      {
+        "id": "R-PARTICIPLE",
+        "span": "brandende",
+        "confidence": 0.2,
+        "note": "",
+        "block": "b057",
+        "sent": 6,
+        "sentence": "En een plaag van brandende zebra’s.",
+        "level": "ignored",
+        "hint": "make it a clause: Hij lachte en liep weg."
+      }
+    ],
+    "load": [
+      {
+        "id": "L-FRAME",
+        "value": 9,
+        "limit": 8,
+        "span": "ben ik tot nu toe niet naar een gewone school gegaan",
+        "block": "b040",
+        "sent": 9,
+        "sentence": "Daarom ben ik tot nu toe niet naar een gewone school gegaan.”",
+        "hint": "verbal frame too wide; move the object after the clause or split"
+      },
+      {
+        "id": "L-VERBS",
+        "value": 4,
+        "limit": 3,
+        "block": "b049",
+        "sent": 0,
+        "sentence": "“Ik weet het,” zei zijn moeder vol medelijden, “je bijt één wiskundeleraar en je moet het altijd weer horen, hè?",
+        "hint": "too many finite verbs; split"
+      }
+    ]
+  },
+  "verdict": {
+    "structure_ok": false,
+    "vocab_ok": false,
+    "grammar_ok": false,
+    "ok": false
+  }
+}

@@ -1030,7 +1030,7 @@
       "nl": "spreuk",
       "kind": "spell",
       "first_chapter": 2,
-      "note": "Generic. 'toverspreuk' for the first, full mention; 'spreuk' afterwards and in compounds (Terughaalspreuk, Geheugenspreuk). 'cast a spell' = 'een spreuk uitspreken' / 'toveren'."
+      "note": "Generic. 'toverspreuk' for the first, full mention; 'spreuk' afterwards and in compounds (Terughaalspreuk, Geheugenspreuk). 'cast a spell' = 'een spreuk uitspreken' / 'toveren'. 'toverspreuk' is lexicon-known (A2): never glossed (ch 2 cohesion dropped the gloss; 'incantation' = 'toverspreuk' too)."
     },
     {
       "en": "Defence Against the Dark Arts",
@@ -1675,6 +1675,41 @@
       "kind": "phrase",
       "first_chapter": 2,
       "note": "Ch 2 to McGonagall, ch 8 to Hermione; identical both times (fixed callback, relative clause allowed)."
+    },
+    {
+      "en": "The March of Reason",
+      "nl": "De Mars van de Rede",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "Harry's phrase (ch 2 b036), capitals as in the source; glossed as one chunk \\gl{De Mars van de Rede}{The March of Reason}."
+    },
+    {
+      "en": "conscientious objector to child conscription",
+      "nl": "gewetensbezwaarde tegen de kinderdienstplicht",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "Harry's over-formal joke (bible voice §6); both nouns kept and glossed (conscientious objector / child conscription); no article before 'gewetensbezwaarde'."
+    },
+    {
+      "en": "condition (Harry's sleep disorder)",
+      "nl": "aandoening",
+      "kind": "term",
+      "first_chapter": 2,
+      "note": "'your condition' = 'je aandoening' (Michael), 'His condition? What's this?' = 'Zijn aandoening? Wat is dat?'; glossed once per chapter; not 'toestand' (a current state). 'such a condition' may be paraphrased ('zoiets'). Sleep cycle = 'slaapcyclus' (26 hours = 'zesentwintig uur')."
+    },
+    {
+      "en": "maths teacher (the one Harry bit)",
+      "nl": "wiskundelerares",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "The bitten teacher is a woman (ch 2 'she didn't know what a logarithm was' = 'Ze kende geen logaritmen!'): 'wiskundelerares' for her; generic 'you bite one maths teacher' = 'je bijt één wiskundeleraar'. 'logarithms' = 'logaritmen' (glossed)."
+    },
+    {
+      "en": "witchy / cackle",
+      "nl": "heksachtig / kakelen",
+      "kind": "phrase",
+      "first_chapter": 2,
+      "note": "McGonagall's look (ch 2 b011): 'heksachtig' unglossed (transparent from heks); 'kakelen' glossed ('kakelt' → cackles). Callback in ch 9 must reuse 'kakelen'."
     },
     {
       "en": "Clever kids in Ravenclaw, evil kids in Slytherin, wannabe heroes in Gryffindor, and everyone who does the actual work in Hufflepuff.",
