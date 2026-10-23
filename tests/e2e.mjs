@@ -214,8 +214,8 @@ try {
   console.log("FEATURE 6 — learning paths:");
   const pathNames = await page.$$eval(".path-section .level-meta strong", (els) => els.map((e) => e.textContent));
   check(
-    JSON.stringify(pathNames) === JSON.stringify(["TaalCompleet", "Inburgering Online", "Nederlands in gang"]),
-    `dashboard lists the three paths in order (${pathNames.join(" / ")})`,
+    JSON.stringify(pathNames) === JSON.stringify(["TaalCompleet", "Inburgering Online", "Nederlands in gang", "HPMOR"]),
+    `dashboard lists the four paths in order (${pathNames.join(" / ")})`,
   );
   await page.click('[aria-label="Nederlands in gang words"]');
   await page.waitForSelector(".wordlist-select");
