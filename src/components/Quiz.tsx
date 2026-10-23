@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Card, Enrichment } from "../types";
-import type { ReviewTask, Session } from "../review/session";
+import type { ReviewTask, Session, WordCompletion } from "../review/session";
+import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { checkAnswer, acceptedAnswers } from "../review/answerCheck";
 import { dutchCloze } from "../review/cloze";
 import { getHint } from "../data/hints";
@@ -12,6 +13,7 @@ interface QuizProps {
   getEnrichment?: (cardId: string) => Enrichment | undefined;
   /** Fired once per word, when both its directions have cleared. */
   onWordCleared: (cardId: string, passed: boolean) => void;
+  previewLevelUp?: (cardId: string, passed: boolean) => number | undefined;
   onComplete: () => void;
   onQuit: () => void;
   /**
@@ -27,13 +29,14 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplete, onQuit, onRemoveDirection }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLevelUp, onComplete, onQuit, onRemoveDirection }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [flash, setFlash] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [showRemoveSheet, setShowRemoveSheet] = useState(false);
   const [showIgnoreSheet, setShowIgnoreSheet] = useState(false);
+  const [levelUp, setLevelUp] = useState<{ stage: number; id: number } | null>(null);
   const [, force] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -98,6 +101,13 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     if (session.isComplete()) onComplete();
   }
 
+  // Preview before onWordCleared: the preview reads the not-yet-updated stage.
+  function clearWord({ cardId, passed }: WordCompletion) {
+    const stage = previewLevelUp?.(cardId, passed);
+    if (stage !== undefined) setLevelUp((prev) => ({ stage, id: (prev?.id ?? 0) + 1 }));
+    onWordCleared(cardId, passed);
+  }
+
   function closeRemoveSheet() {
     setShowRemoveSheet(false);
     // Restore the between-card focus behaviour so typing resumes on cancel.
@@ -110,7 +120,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     setShowRemoveSheet(false);
     onRemoveDirection?.(cardId);
     const completion = session.removeDirection(cardId, "nl_en");
-    if (completion) onWordCleared(completion.cardId, completion.passed);
+    if (completion) clearWord(completion);
     setPhase("input");
     setValue("");
     force((n) => n + 1);
@@ -125,7 +135,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
   function confirmIgnoreWrong() {
     setShowIgnoreSheet(false);
     const completion = session.markCorrect();
-    if (completion) onWordCleared(completion.cardId, completion.passed);
+    if (completion) clearWord(completion);
     setPhase("input");
     setValue("");
     force((n) => n + 1);
@@ -150,7 +160,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
       setFlash(true);
       window.setTimeout(() => {
         const completion = session.submit(true);
-        if (completion) onWordCleared(completion.cardId, completion.passed);
+        if (completion) clearWord(completion);
         setValue("");
         setFlash(false);
         force((n) => n + 1);
@@ -192,6 +202,17 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, onComplet
     <div className="quiz">
       <div className="quiz-prompt">
         {progressHeader}
+        {levelUp && (
+          <div
+            key={levelUp.id}
+            className="level-up"
+            style={{ background: STAGE_COLORS[stageCategory(levelUp.stage)] }}
+            onAnimationEnd={() => setLevelUp(null)}
+            aria-live="polite"
+          >
+            {stageLabel(levelUp.stage)}
+          </div>
+        )}
         <div className="quiz-word">
           <div className="prompt-label-row">
             <div className="prompt-label">

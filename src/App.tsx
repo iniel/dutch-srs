@@ -12,8 +12,7 @@ import {
   newLessonState,
   startLesson,
   setCustomProgress,
-  answerCorrect,
-  answerIncorrect,
+  answerWord,
   type CustomProgressTarget,
 } from "./srs/schedule";
 import { buildLessonQueue, buildReviewQueue, createSession, singleWordLessonTasks } from "./review/session";
@@ -239,11 +238,17 @@ export function App() {
   function applyWordReview(cardId: string, passed: boolean) {
     setProgress((prev) => {
       const cur = prev.states[cardId] ?? newLessonState();
-      const updated = passed ? answerCorrect(cur, now()) : answerIncorrect(cur, now());
+      const updated = answerWord(cur, passed, now());
       const next = setState(prev, cardId, updated);
       saveProgress(next);
       return next;
     });
+  }
+
+  function previewLevelUp(cardId: string, passed: boolean): number | undefined {
+    const cur = progress.states[cardId] ?? newLessonState();
+    const { stage } = answerWord(cur, passed, now());
+    return stage > cur.stage ? stage : undefined;
   }
 
   function applyWordLesson(cardId: string) {
@@ -393,6 +398,7 @@ export function App() {
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
           onWordCleared={applyWordReview}
+          previewLevelUp={previewLevelUp}
           onComplete={finishSession}
           onRemoveDirection={(id) => persist(setDirectionDisabled(progress, id, "nl_en", true))}
           onQuit={() => {

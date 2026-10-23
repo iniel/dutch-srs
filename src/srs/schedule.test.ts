@@ -4,6 +4,7 @@ import {
   setCustomProgress,
   answerCorrect,
   answerIncorrect,
+  answerWord,
   type CustomProgressTarget,
 } from "./schedule";
 import { STAGE_INTERVALS_MS } from "./stages";
@@ -116,5 +117,17 @@ describe("answerIncorrect", () => {
     expect(s.burned).toBe(false);
     expect(s.incorrectCount).toBe(1);
     expect(s.stage).toBe(1);
+  });
+});
+
+describe("answerWord", () => {
+  const state = { ...newLessonState(), stage: 4, availableAt: NOW };
+
+  it("applies answerCorrect when passed", () => {
+    expect(answerWord(state, true, NOW)).toEqual(answerCorrect(state, NOW));
+  });
+
+  it("applies answerIncorrect when failed", () => {
+    expect(answerWord(state, false, NOW)).toEqual(answerIncorrect(state, NOW));
   });
 });

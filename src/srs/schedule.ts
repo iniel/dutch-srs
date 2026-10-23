@@ -89,3 +89,7 @@ export function answerIncorrect(state: ReviewState, now: number): ReviewState {
     burned: false,
   };
 }
+
+export function answerWord(state: ReviewState, passed: boolean, now: number): ReviewState {
+  return passed ? answerCorrect(state, now) : answerIncorrect(state, now);
+}
