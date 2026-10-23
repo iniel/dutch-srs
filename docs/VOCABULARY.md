@@ -95,6 +95,10 @@ still emits the `easy.ids.json` / `medium.ids.json` / `hard.ids.json` tier lists
   their precached JS until the update is accepted but fetch `paths.json` fresh. A tier-only build crashes on
   a def without `difficulties`, and with it renders the same chapters, labelled "Hoofdstuk N 1". Keep every
   def readable by the previous shape; `scripts/nig-data.test.mjs` enforces it.
+- **HPMOR** (`id: "hpmor"`, units `hpmor:ch001` …) has the same explicit-units + legacy-tier shape. It is
+  written by the hpmor repo's `nl-reader N` (not by a script here) together with the reader texts in
+  `public/books/` (`index.json` + `hpmor/chNNN.json`, every word token carrying its lemma and card ids).
+  Each unit holds every card met in that chapter; `scripts/books-data.test.mjs` checks the ids exist.
 
 Each generator upserts **only its own path by id** (`scripts/paths-file.mjs`) and keeps the rest, written
 atomically. Display order is TaalCompleet → Inburgering Online → Nederlands in gang. Ids are permanent, so

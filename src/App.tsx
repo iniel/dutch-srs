@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ProgressData } from "./types";
 import {
   loadProgress,
@@ -22,6 +22,8 @@ import type { Card } from "./types";
 import { useCards } from "./data/cards";
 import { useEnrichment } from "./data/loadEnrichment";
 import { usePaths } from "./data/loadPaths";
+import { useBookChapter, useBooksIndex } from "./data/loadBooks";
+import { loadReaderPosition, saveReaderPosition, type ReaderPosition } from "./storage/reader";
 import { now } from "./util/now";
 import { useVisualViewportVars } from "./util/visualViewport";
 import { useScrollMemory } from "./util/useScrollMemory";
@@ -41,6 +43,7 @@ import { Settings } from "./screens/Settings";
 import { Search } from "./screens/Search";
 import { WordList, pathSections } from "./screens/WordList";
 import { GeneralProgress } from "./screens/GeneralProgress";
+import { Reader } from "./screens/Reader";
 import { WordCard } from "./components/WordCard";
 import { registerPwa } from "./pwa/registerPwa";
 
@@ -53,7 +56,8 @@ export type Screen =
   | "search"
   | "wordlist"
   | "progress"
-  | "worddetail";
+  | "worddetail"
+  | "reader";
 
 export function App() {
   const { index, error } = useCards();
@@ -71,11 +75,24 @@ export function App() {
   const [listPathId, setListPathId] = useState<string | null>(null);
   const [listSectionId, setListSectionId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [sessionFrom, setSessionFrom] = useState<Screen>("dashboard");
   const [updateReady, setUpdateReady] = useState(false);
   const applyUpdate = useRef<((reload?: boolean) => Promise<void>) | null>(null);
+  const books = useBooksIndex();
+  const readerPos = useRef<ReaderPosition | null>(loadReaderPosition());
+  const [readerAt, setReaderAt] = useState<{ book: string; chapter: number } | null>(null);
+  const readerBook = readerAt ? books?.books.find((b) => b.id === readerAt.book) : undefined;
+  const readerChapterRef = readerBook?.chapters.find((c) => c.n === readerAt!.chapter);
+  const { chapter: readerChapter, error: readerError } = useBookChapter(readerChapterRef?.file ?? null);
 
   useVisualViewportVars(screen === "reviews" || screen === "lessons");
-  useScrollMemory(screen === "wordlist" ? `wordlist:${listPathId}:${listSectionId}` : screen);
+  useScrollMemory(
+    screen === "wordlist"
+      ? `wordlist:${listPathId}:${listSectionId}`
+      : screen === "reader"
+        ? `reader:${readerAt?.book}:${readerAt?.chapter}`
+        : screen,
+  );
 
   const unlockAll = !!progress.settings.unlockAllLevels;
   const paths = useMemo(
@@ -98,6 +115,32 @@ export function App() {
     setScreen("search");
   }
 
+  /** Resume where reading stopped, else the first chapter of the first book. */
+  function openReader() {
+    const book = books?.books.find((b) => b.id === readerPos.current?.book) ?? books?.books[0];
+    if (!book) return;
+    const saved = readerPos.current?.book === book.id ? readerPos.current.chapter : undefined;
+    const chapter = book.chapters.find((c) => c.n === saved) ?? book.chapters[0];
+    setReaderAt({ book: book.id, chapter: chapter.n });
+    setScreen("reader");
+  }
+
+  function openReaderChapter(n: number) {
+    if (!readerAt) return;
+    readerPos.current = { book: readerAt.book, chapter: n, blockId: null };
+    saveReaderPosition(readerPos.current);
+    setReaderAt({ book: readerAt.book, chapter: n });
+  }
+
+  const onReaderPosition = useCallback(
+    (blockId: string) => {
+      if (!readerAt) return;
+      readerPos.current = { book: readerAt.book, chapter: readerAt.chapter, blockId };
+      saveReaderPosition(readerPos.current);
+    },
+    [readerAt],
+  );
+
   useEffect(() => {
     const t = progress.settings.theme;
     const root = document.documentElement;
@@ -118,6 +161,7 @@ export function App() {
     if (tasks.length === 0) return;
     setSession(createSession(tasks));
     setSessionMode("review");
+    setSessionFrom("dashboard");
     setScreen("reviews");
   }
 
@@ -147,6 +191,7 @@ export function App() {
     setLessonCards(ids.map((id) => index.byId.get(id)!).filter(Boolean));
     setSession(createSession(tasks));
     setSessionMode("lesson");
+    setSessionFrom(screen === "reader" || (screen === "worddetail" && detailFrom === "reader") ? "reader" : "dashboard");
     setScreen("lessons");
   }
 
@@ -249,6 +294,14 @@ export function App() {
     });
   }, [paths, progress, unlockAll]);
 
+  const readingSummary = useMemo(() => {
+    const book = books?.books.find((b) => b.id === readerPos.current?.book) ?? books?.books[0];
+    if (!book) return undefined;
+    const ch = book.chapters.find((c) => c.n === readerPos.current?.chapter) ?? book.chapters[0];
+    return { title: book.title, detail: `Hoofdstuk ${ch.n} · ${ch.title}` };
+    // `screen` refreshes the label after a reading session moved the saved position.
+  }, [books, screen]);
+
   function openPathWords(pathId: string) {
     const path = paths.find((p) => p.id === pathId);
     if (!path) return;
@@ -281,6 +334,8 @@ export function App() {
           onSettings={() => setScreen("settings")}
           onSearch={() => openSearch()}
           onWords={() => setScreen("progress")}
+          reading={readingSummary}
+          onOpenReader={openReader}
         />
       )}
       {screen === "search" && (
@@ -358,7 +413,7 @@ export function App() {
           }
           onQuit={() => {
             setSession(null);
-            setScreen("dashboard");
+            setScreen(sessionFrom);
           }}
         />
       )}
@@ -367,7 +422,26 @@ export function App() {
           results={summary.results}
           mode={summary.mode}
           getCard={(id) => index.byId.get(id)}
-          onDone={() => setScreen("dashboard")}
+          onDone={() => setScreen(sessionFrom)}
+        />
+      )}
+      {screen === "reader" && readerBook && readerChapterRef && (
+        <Reader
+          book={readerBook}
+          chapterRef={readerChapterRef}
+          chapter={readerChapter}
+          error={readerError}
+          index={index}
+          progress={progress}
+          getEnrichment={getEnrichment}
+          initialBlockId={readerPos.current?.chapter === readerChapterRef.n ? readerPos.current.blockId : null}
+          onPosition={onReaderPosition}
+          onChapter={openReaderChapter}
+          onBack={() => setScreen("dashboard")}
+          onLearnNow={learnNow}
+          onPin={pinLesson}
+          onUnpin={unpinLesson}
+          onOpenFull={(id) => openWordCard(id, "reader")}
         />
       )}
       {screen === "settings" && (

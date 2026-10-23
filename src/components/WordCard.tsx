@@ -3,7 +3,7 @@ import type { Card, Enrichment, ProgressData } from "../types";
 import type { CustomProgressTarget } from "../srs/schedule";
 import { directionEnabled } from "../types";
 import { cefrBadge } from "../srs/levels";
-import { SrsStagePill } from "./SrsStagePill";
+import { LessonStatusActions } from "./LessonStatusActions";
 import { WordDetail } from "./WordDetail";
 import { speak, pronounce, canPronounce } from "../util/speak";
 
@@ -66,17 +66,15 @@ export function WordCard({ card, enrichment, progress, onBack, onLearnNow, onPin
       <div className="word-srs-row">
         <span className="word-srs-label">Status</span>
         <div className="word-srs-actions">
-          {stage === 0 ? (
-            <>
-              <button className="srs-action primary" onClick={() => onLearnNow(card.id)}>Learn now</button>
-              <button className="srs-action" onClick={() => setShowCustomProgressSheet(true)}>Custom progress</button>
-              {pinned ? (
-                <button className="srs-action" onClick={() => onUnpin(card.id)}>Remove from lessons</button>
-              ) : (
-                <button className="srs-action" onClick={() => onPin(card.id)}>Add to next lesson</button>
-              )}
-            </>
-          ) : <SrsStagePill stage={stage} />}
+          <LessonStatusActions
+            cardId={card.id}
+            stage={stage}
+            pinned={pinned}
+            onLearnNow={onLearnNow}
+            onPin={onPin}
+            onUnpin={onUnpin}
+            onCustomProgress={() => setShowCustomProgressSheet(true)}
+          />
         </div>
       </div>
 

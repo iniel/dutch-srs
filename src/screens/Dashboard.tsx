@@ -23,6 +23,9 @@ interface DashboardProps {
   onSettings: () => void;
   onSearch: () => void;
   onWords: () => void;
+  /** Where reading stopped; absent when no books are shipped. */
+  reading?: { title: string; detail: string };
+  onOpenReader: () => void;
 }
 
 const CATEGORIES: { key: StageCategory; label: string }[] = [
@@ -52,6 +55,8 @@ export function Dashboard({
   onSettings,
   onSearch,
   onWords,
+  reading,
+  onOpenReader,
 }: DashboardProps) {
   const [helpOpen, setHelpOpen] = useState(false);
   const { byCategory, nextAt } = useMemo(() => {
@@ -105,6 +110,16 @@ export function Dashboard({
           ))}
         </div>
       </button>
+
+      {reading && (
+        <button className="level-summary" onClick={onOpenReader} aria-label="Read">
+          <div className="level-meta">
+            <strong>Lezen · {reading.title}</strong>
+            <span>{reading.detail}</span>
+          </div>
+          <span className="level-summary-chevron">›</span>
+        </button>
+      )}
 
       {paths.map((p) => (
         <div className="path-section" key={p.id}>

@@ -378,3 +378,192 @@ button.relation-chip:active {
 .etymology p {
   margin: 6px 0 0;
 }
+
+/* --- Reader (Reader.tsx) --- */
+.reader {
+  gap: 10px;
+  padding-bottom: max(32px, env(safe-area-inset-bottom));
+}
+.reader.sheet-open {
+  padding-bottom: 62vh;
+}
+.reader-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: calc(-10px - env(safe-area-inset-top));
+  padding: calc(10px + env(safe-area-inset-top)) 0 8px;
+  background: var(--bg);
+}
+.reader-topbar .icon-btn:disabled {
+  opacity: 0.35;
+}
+.rd-article {
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.6;
+  color: var(--text-strong);
+  overflow-wrap: break-word;
+}
+.rd-block + .rd-block {
+  margin-top: 0.75em;
+}
+.rd-p {
+  margin: 0;
+}
+.rd-heading {
+  margin: 0.4em 0 0.6em;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  text-align: center;
+}
+.rd-quote {
+  font-style: italic;
+  text-align: center;
+  color: var(--text-muted);
+}
+.rd-quote .rd-em {
+  font-style: normal;
+}
+.rd-note {
+  margin: 0 0.6em;
+  padding-left: 0.8em;
+  border-left: 3px solid var(--border);
+  font-style: italic;
+}
+.rd-break {
+  border: none;
+  text-align: center;
+  margin: 1.2em 0;
+}
+.rd-break::after {
+  content: "⁂";
+  color: var(--text-faint);
+}
+.rd-em {
+  font-style: italic;
+}
+.rd-w {
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-tap-highlight-color: transparent;
+}
+.rd-w.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+.rd-en {
+  margin: 0.35em 0 0;
+  padding: 0.5em 0.7em;
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  color: var(--text-muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  font-style: normal;
+}
+.rd-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+  color: var(--text-faint);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+/* Docked word sheet: no backdrop, so the text stays readable and tappable above it. */
+.word-sheet {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 40;
+  transform: translateX(-50%);
+  max-height: 60vh;
+  gap: 8px;
+  padding-top: 14px;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  animation: word-sheet-up 0.18s ease;
+}
+@keyframes word-sheet-up {
+  from { transform: translate(-50%, 100%); }
+  to { transform: translate(-50%, 0); }
+}
+.ws-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ws-surface {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+.ws-lemma {
+  margin-left: 8px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.ws-gloss {
+  margin-top: -4px;
+  font-style: italic;
+  color: var(--text-muted);
+}
+.ws-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ws-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.ws-card-head {
+  display: flex;
+  align-items: center;
+}
+.ws-dutch {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+.ws-en {
+  color: var(--text-strong);
+}
+.ws-actions {
+  justify-content: flex-start;
+  margin: 8px 0 4px;
+}
+.ws-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ws-search .search-input {
+  flex: 0 0 auto;
+}
+.ws-others {
+  align-items: center;
+  font-size: 0.85rem;
+}
+.ws-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.ws-foot .sheet-cancel {
+  padding: 6px 0;
+  font-size: 0.82rem;
+}
