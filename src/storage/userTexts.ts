@@ -1,5 +1,7 @@
 export const USER_TEXTS_KEY = "dutch-srs-user-texts-v1";
 export const MAX_TEXT_CHARS = 20000;
+/** All texts together stay far below the ~5 MB origin quota so SRS progress always has room to save. */
+export const MAX_TOTAL_CHARS = 500000;
 
 /** A pasted reading text. Kept apart from ProgressData so export/import stays SRS-only. */
 export interface UserText {
@@ -40,4 +42,8 @@ export function userTextTitle(title: string, text: string): string {
   if (t) return t;
   const words = text.trim().split(/\s+/).slice(0, 5).join(" ");
   return words.length < text.trim().length ? `${words}…` : words;
+}
+
+export function fitsBudget(list: UserText[], text: string): boolean {
+  return list.reduce((sum, t) => sum + t.text.length + t.title.length, 0) + text.length <= MAX_TOTAL_CHARS;
 }

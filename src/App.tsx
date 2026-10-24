@@ -47,7 +47,7 @@ import { Reader } from "./screens/Reader";
 import { Library } from "./screens/Library";
 import { BookChapters } from "./screens/BookChapters";
 import { AddText } from "./screens/AddText";
-import { loadUserTexts, saveUserTexts, userTextTitle, type UserText } from "./storage/userTexts";
+import { fitsBudget, loadUserTexts, saveUserTexts, userTextTitle, type UserText } from "./storage/userTexts";
 import { buildFormIndex, countWords, textToChapter } from "./reader/userText";
 import type { BookDef } from "./reader/types";
 import { WordCard } from "./components/WordCard";
@@ -175,6 +175,10 @@ export function App() {
   }
 
   function saveUserText(title: string, text: string) {
+    if (!fitsBudget(userTexts, text)) {
+      setAddTextError("Te veel tekst opgeslagen: verwijder eerst een oude tekst.");
+      return;
+    }
     const created = now();
     const item: UserText = { id: created.toString(36), title: userTextTitle(title, text), text: text.trim(), createdAt: created };
     const next = [...userTexts, item];

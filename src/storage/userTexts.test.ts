@@ -1,5 +1,5 @@
 import { beforeEach, expect, it } from "vitest";
-import { USER_TEXTS_KEY, loadUserTexts, saveUserTexts, userTextTitle } from "./userTexts";
+import { MAX_TOTAL_CHARS, USER_TEXTS_KEY, fitsBudget, loadUserTexts, saveUserTexts, userTextTitle } from "./userTexts";
 
 beforeEach(() => localStorage.clear());
 
@@ -18,4 +18,10 @@ it("titles an untitled text with its first words", () => {
   expect(userTextTitle("  ", "Er was eens een kleine kat die sliep.")).toBe("Er was eens een kleine…");
   expect(userTextTitle("", "Korte tekst.")).toBe("Korte tekst.");
   expect(userTextTitle(" Mijn titel ", "x")).toBe("Mijn titel");
+});
+
+it("caps the total stored text so progress keeps its share of the quota", () => {
+  const big = { id: "a", title: "", text: "x".repeat(MAX_TOTAL_CHARS - 10), createdAt: 1 };
+  expect(fitsBudget([big], "y".repeat(10))).toBe(true);
+  expect(fitsBudget([big], "y".repeat(11))).toBe(false);
 });
