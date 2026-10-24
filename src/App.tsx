@@ -46,6 +46,10 @@ import { GeneralProgress } from "./screens/GeneralProgress";
 import { Reader } from "./screens/Reader";
 import { Library } from "./screens/Library";
 import { BookChapters } from "./screens/BookChapters";
+import { AddText } from "./screens/AddText";
+import { loadUserTexts, saveUserTexts, userTextTitle, type UserText } from "./storage/userTexts";
+import { buildFormIndex, countWords, textToChapter } from "./reader/userText";
+import type { BookDef } from "./reader/types";
 import { WordCard } from "./components/WordCard";
 import { registerPwa } from "./pwa/registerPwa";
 
@@ -61,7 +65,10 @@ export type Screen =
   | "worddetail"
   | "library"
   | "book"
+  | "addtext"
   | "reader";
+
+const USER_BOOK_PREFIX = "user:";
 
 export function App() {
   const { index, error } = useCards();
@@ -85,11 +92,36 @@ export function App() {
   const books = useBooksIndex();
   const readerPos = useRef<ReaderPosition | null>(loadReaderPosition());
   const [libraryBookId, setLibraryBookId] = useState<string | null>(null);
-  const libraryBook = books?.books.find((b) => b.id === libraryBookId);
+  const [userTexts, setUserTexts] = useState<UserText[]>(() => loadUserTexts());
+  const [addTextError, setAddTextError] = useState<string | null>(null);
+  const userBooks = useMemo(
+    () => userTexts.map((t): BookDef => ({
+      id: `${USER_BOOK_PREFIX}${t.id}`,
+      title: t.title,
+      chapters: [{ n: 1, title: t.title, words: countWords(t.text), file: "" }],
+    })),
+    [userTexts],
+  );
+  const allBooks = useMemo(() => [...(books?.books ?? []), ...userBooks], [books, userBooks]);
+  const libraryBook = allBooks.find((b) => b.id === libraryBookId);
   const [readerAt, setReaderAt] = useState<{ book: string; chapter: number } | null>(null);
-  const readerBook = readerAt ? books?.books.find((b) => b.id === readerAt.book) : undefined;
+  const readerBook = readerAt ? allBooks.find((b) => b.id === readerAt.book) : undefined;
   const readerChapterRef = readerBook?.chapters.find((c) => c.n === readerAt!.chapter);
-  const { chapter: readerChapter, error: readerError } = useBookChapter(readerChapterRef?.file ?? null);
+  const readerUserText = readerAt?.book.startsWith(USER_BOOK_PREFIX)
+    ? userTexts.find((t) => `${USER_BOOK_PREFIX}${t.id}` === readerAt.book)
+    : undefined;
+  const bookChapter = useBookChapter(readerUserText ? null : readerChapterRef?.file ?? null);
+  const readingUserText = readerUserText !== undefined;
+  const formIndex = useMemo(
+    () => (readingUserText && index ? buildFormIndex(index.cards, (id) => enrichment.get(id)?.grammar) : null),
+    [readingUserText, index, enrichment],
+  );
+  const userChapter = useMemo(
+    () => (readerUserText && formIndex ? textToChapter(readerAt!.book, readerUserText.title, readerUserText.text, formIndex) : null),
+    [readerUserText, formIndex, readerAt],
+  );
+  const readerChapter = readerUserText ? userChapter : bookChapter.chapter;
+  const readerError = readerUserText ? null : bookChapter.error;
 
   useVisualViewportVars(screen === "reviews" || screen === "lessons");
   useScrollMemory(
@@ -126,7 +158,7 @@ export function App() {
 
   function openBook(bookId: string) {
     setLibraryBookId(bookId);
-    const book = books?.books.find((b) => b.id === bookId);
+    const book = allBooks.find((b) => b.id === bookId);
     if (book?.chapters.length === 1) openChapter(book.chapters[0].n, bookId);
     else setScreen("book");
   }
@@ -140,6 +172,26 @@ export function App() {
     }
     setReaderAt({ book: bookId, chapter: n });
     setScreen("reader");
+  }
+
+  function saveUserText(title: string, text: string) {
+    const created = now();
+    const item: UserText = { id: created.toString(36), title: userTextTitle(title, text), text: text.trim(), createdAt: created };
+    const next = [...userTexts, item];
+    if (!saveUserTexts(next)) {
+      setAddTextError("Opslaan mislukt: de opslag van de browser is vol.");
+      return;
+    }
+    setAddTextError(null);
+    setUserTexts(next);
+    const bookId = `${USER_BOOK_PREFIX}${item.id}`;
+    setLibraryBookId(bookId);
+    openChapter(1, bookId);
+  }
+
+  function deleteUserText(bookId: string) {
+    const next = userTexts.filter((t) => `${USER_BOOK_PREFIX}${t.id}` !== bookId);
+    if (saveUserTexts(next)) setUserTexts(next);
   }
 
   function openReaderChapter(n: number) {
@@ -318,13 +370,13 @@ export function App() {
   }, [paths, progress, unlockAll]);
 
   const readingSummary = useMemo(() => {
-    if (!books?.books.length) return undefined;
-    const book = books.books.find((b) => b.id === readerPos.current?.book);
+    if (!allBooks.length) return undefined;
+    const book = allBooks.find((b) => b.id === readerPos.current?.book);
     const ch = book?.chapters.find((c) => c.n === readerPos.current?.chapter);
-    if (book && ch) return { detail: `${book.title} · Hoofdstuk ${ch.n}` };
-    return { detail: `${books.books.length} ${books.books.length === 1 ? "boek" : "boeken"}` };
+    if (book && ch) return { detail: book.chapters.length === 1 ? book.title : `${book.title} · Hoofdstuk ${ch.n}` };
+    return { detail: `${allBooks.length} ${allBooks.length === 1 ? "boek" : "boeken"}` };
     // `screen` refreshes the label after a reading session moved the saved position.
-  }, [books, screen]);
+  }, [allBooks, screen]);
 
   function openPathWords(pathId: string) {
     const path = paths.find((p) => p.id === pathId);
@@ -451,8 +503,21 @@ export function App() {
           onDone={() => setScreen(sessionFrom)}
         />
       )}
-      {screen === "library" && books && (
-        <Library books={books.books} onOpenBook={openBook} onBack={() => setScreen("dashboard")} />
+      {screen === "library" && (
+        <Library
+          books={books?.books ?? []}
+          texts={userBooks.map((b) => ({ bookId: b.id, title: b.title, words: b.chapters[0].words }))}
+          onOpenBook={openBook}
+          onAddText={() => {
+            setAddTextError(null);
+            setScreen("addtext");
+          }}
+          onDeleteText={deleteUserText}
+          onBack={() => setScreen("dashboard")}
+        />
+      )}
+      {screen === "addtext" && (
+        <AddText error={addTextError} onSave={saveUserText} onBack={() => setScreen("library")} />
       )}
       {screen === "book" && libraryBook && (
         <BookChapters
