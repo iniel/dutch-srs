@@ -288,7 +288,7 @@ export function createSession(tasks: ReviewTask[]): Session {
     markCorrect() {
       const task = queue[0];
       if (!task) return undefined;
-      firstTry.set(task.key, true);
+      if (!firstTry.has(task.key)) firstTry.set(task.key, true);
       return clearCurrent();
     },
     removeDirection(cardId: string, dir: Direction) {

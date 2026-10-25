@@ -407,14 +407,22 @@ describe("session.markCorrect", () => {
     expect(s.current()?.key).toBe("a:nl_en");
   });
 
-  it("undoes a first-try miss on the same item", () => {
+  it("counts an ignored first attempt as correct", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.markCorrect()).toBeUndefined(); // a:en_nl
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: true }); // a:nl_en
+    expect(s.results()[0].missedDirs).toEqual([]);
+  });
+
+  it("keeps a first-try miss when the retry is ignored", () => {
     const s = createSession(tasksFor("a"));
     expect(s.submit(false)).toBeUndefined(); // a:en_nl wrong -> requeued to back
     s.submit(true); // a:nl_en
-    expect(s.markCorrect()).toEqual({ cardId: "a", passed: true }); // requeued a:en_nl
+    expect(s.markCorrect()).toEqual({ cardId: "a", passed: false }); // requeued a:en_nl
     const a = s.results()[0];
-    expect(a.passed).toBe(true);
-    expect(a.missedDirs).toEqual([]);
+    expect(a.passed).toBe(false);
+    expect(a.missedDirs).toEqual(["en_nl"]);
+    expect(s.isComplete()).toBe(true);
   });
 
   it("keeps the other direction's first-try failure", () => {
