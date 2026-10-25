@@ -684,7 +684,7 @@
 }
 .level-up {
   position: absolute;
-  left: 0;
+  left: 24px;
   bottom: 28px;
   padding: 4px 10px;
   border-radius: 7px;
