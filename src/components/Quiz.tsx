@@ -101,11 +101,15 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
     if (session.isComplete()) onComplete();
   }
 
-  // Preview before onWordCleared: the preview reads the not-yet-updated stage.
-  function clearWord({ cardId, passed }: WordCompletion) {
+  // Must run before onWordCleared: the preview reads the not-yet-updated stage.
+  function showLevelUp({ cardId, passed }: WordCompletion) {
     const stage = previewLevelUp?.(cardId, passed);
     if (stage !== undefined) setLevelUp((prev) => ({ stage, id: (prev?.id ?? 0) + 1 }));
-    onWordCleared(cardId, passed);
+  }
+
+  function clearWord(completion: WordCompletion) {
+    showLevelUp(completion);
+    onWordCleared(completion.cardId, completion.passed);
   }
 
   function closeRemoveSheet() {
@@ -158,9 +162,11 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
     if (correct) {
       // Let the green check flash before the next card replaces the input.
       setFlash(true);
+      const upcoming = session.completionIfCorrect();
+      if (upcoming) window.setTimeout(() => showLevelUp(upcoming), 150);
       window.setTimeout(() => {
         const completion = session.submit(true);
-        if (completion) clearWord(completion);
+        if (completion) onWordCleared(completion.cardId, completion.passed);
         setValue("");
         setFlash(false);
         force((n) => n + 1);

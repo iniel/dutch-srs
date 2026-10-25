@@ -439,6 +439,32 @@ describe("session.markCorrect", () => {
   });
 });
 
+describe("session.completionIfCorrect", () => {
+  it("is undefined while the word has another direction outstanding", () => {
+    const s = createSession(tasksFor("a"));
+    expect(s.completionIfCorrect()).toBeUndefined();
+  });
+
+  it("predicts what submit(true) returns, without changing the session", () => {
+    const s = createSession(tasksFor("a"));
+    s.submit(true);
+    expect(s.completionIfCorrect()).toEqual({ cardId: "a", passed: true });
+    expect(s.current()?.key).toBe("a:nl_en");
+    expect(s.submit(true)).toEqual({ cardId: "a", passed: true });
+  });
+
+  it("reports a fail when the word missed on its first try", () => {
+    const s = createSession(tasksFor("a"));
+    s.submit(false);
+    s.submit(true);
+    expect(s.completionIfCorrect()).toEqual({ cardId: "a", passed: false });
+  });
+
+  it("is undefined on an empty queue", () => {
+    expect(createSession([]).completionIfCorrect()).toBeUndefined();
+  });
+});
+
 describe("lessonsRemainingToday", () => {
   it("returns the cap minus what was already started", () => {
     expect(lessonsRemainingToday(15, 0)).toBe(15);

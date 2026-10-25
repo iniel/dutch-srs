@@ -213,6 +213,7 @@ export interface Session {
   current(): ReviewTask | undefined;
   submit(wasCorrect: boolean): WordCompletion | undefined;
   markCorrect(): WordCompletion | undefined;
+  completionIfCorrect(): WordCompletion | undefined;
   /**
    * Drop a direction from the running session (learner switched it off). Removes
    * its queued task(s) and stops counting it; returns a `WordCompletion` if this
@@ -290,6 +291,11 @@ export function createSession(tasks: ReviewTask[]): Session {
       if (!task) return undefined;
       if (!firstTry.has(task.key)) firstTry.set(task.key, true);
       return clearCurrent();
+    },
+    completionIfCorrect() {
+      const task = queue[0];
+      if (!task || wordDirs.get(task.cardId)!.size > 1) return undefined;
+      return { cardId: task.cardId, passed: missedDirsFor(task.cardId).length === 0 };
     },
     removeDirection(cardId: string, dir: Direction) {
       const remaining = wordDirs.get(cardId);
