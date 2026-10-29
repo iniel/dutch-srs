@@ -1,4 +1,4 @@
-import { getHint } from "./hints";
+import { getHint, getSynonymHint } from "./hints";
 
 const MEDIUM_1_CONTRAST_IDS = [
   "c640", "c791", "c906", // even, net, pas
@@ -21,5 +21,12 @@ describe("Medium 1 contrast hints", () => {
       expect(getHint(id, "nl_en")).toBeTruthy();
       expect(getHint(id, "en_nl")).toBeTruthy();
     }
+  });
+});
+
+describe("synonym hints", () => {
+  it("replace the EN→NL hint and leave NL→EN alone", () => {
+    expect(getHint("c906", "en_nl")).toBe(getSynonymHint("c906")?.en);
+    expect(getHint("c906", "nl_en")).toBe("only · not until");
   });
 });

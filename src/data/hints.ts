@@ -1,4 +1,5 @@
 import { itemKey, type Direction } from "../types";
+import synonymHints from "./synonymHints.json";
 
 // Hand-curated, regen-proof disambiguation hints for colliding cards.
 //
@@ -261,6 +262,18 @@ const HINTS: Record<string, string> = {
   "c10106:en_nl": "neutral",
 };
 
+export interface SynonymHint {
+  en: string;
+  ru: string;
+}
+
+const SYNONYM_HINTS: Record<string, SynonymHint> = synonymHints;
+
+export function getSynonymHint(cardId: string): SynonymHint | undefined {
+  return SYNONYM_HINTS[cardId];
+}
+
 export function getHint(cardId: string, dir: Direction): string | undefined {
+  if (dir === "en_nl" && SYNONYM_HINTS[cardId]) return SYNONYM_HINTS[cardId].en;
   return HINTS[itemKey(cardId, dir)];
 }

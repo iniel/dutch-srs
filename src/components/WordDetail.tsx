@@ -1,3 +1,4 @@
+import { getSynonymHint } from "../data/hints";
 import type { Enrichment, Example, Grammar } from "../types";
 import { speak, speechSupported } from "../util/speak";
 
@@ -87,6 +88,7 @@ export function WordDetail({ enrichment, compact, hidePhonetics, onWordClick }: 
   const senses = compact ? e.senses?.slice(0, 2) : e.senses;
   const examples = compact ? e.examples?.slice(0, 1) : e.examples;
   const showLabels = !compact;
+  const hint = getSynonymHint(e.id);
 
   return (
     <div className={`word-detail-rich ${compact ? "compact" : ""}`}>
@@ -99,6 +101,14 @@ export function WordDetail({ enrichment, compact, hidePhonetics, onWordClick }: 
               🔊
             </button>
           )}
+        </div>
+      )}
+
+      {hint && (
+        <div className="lesson-section">
+          {showLabels && <p className="section-label">Hint</p>}
+          <p className="word-hint">{hint.en}</p>
+          <p className="word-ru">{hint.ru}</p>
         </div>
       )}
 

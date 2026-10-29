@@ -225,6 +225,11 @@
   font-size: 0.85rem;
   color: var(--text-muted);
 }
+.word-hint {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  color: var(--text-strong);
+}
 .word-ru {
   margin: 0;
   font-size: 0.95rem;

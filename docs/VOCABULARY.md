@@ -224,7 +224,8 @@ Two words can legitimately share a surface form (NL→EN: `zijn` = "to be" / "hi
 (EN→NL: "nice" = `leuk` / `aardig` / `fijn`). **Cross-card answers are NOT pooled** — each item is
 checked against only its own card's answers (`acceptedAnswers()`), so the learner must answer the exact
 word being drilled. Collisions are disambiguated for the learner by hand-curated hints
-(`src/data/hints.ts`) plus the part of speech and an optional, direction-safe example sentence on the
+(`src/data/hints.ts`; near-synonym EN/RU hints in `src/data/synonymHints.json`, EN shown on EN→NL
+prompts and both on the word card) plus the part of speech and an optional, direction-safe example sentence on the
 Quiz prompt. `acceptedAnswers()` still accepts the bare answer for a parenthetical/placeholder gloss
 (`cousin (male)` → also `cousin`, `to call somebody` → also `to call`) — that's a single-card
 convenience, **not** synonym pooling, and never mutates the EN→NL prompt.
