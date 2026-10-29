@@ -1,1278 +1,994 @@
 {
   "c55": {
-    "en": "Use for describing items that are not alike, or a mixed set of several kinds.",
-    "ru": "Когда предметы не похожи друг на друга или собраны из нескольких разных видов."
-  },
-  "c56": {
-    "en": "Use for a plain, neutral verdict on quality, health or a right answer.",
-    "ru": "Когда нейтральная оценка качества, самочувствия или правильности ответа."
-  },
-  "c60": {
-    "en": "Use when the same applies to one more person or thing.",
-    "ru": "Когда то же самое верно ещё для одного человека или предмета."
+    "en": "Different from each other, or 'various', rather than 'another one'.",
+    "ru": "Отличающиеся друг от друга или «различные», а не «другой, ещё один»."
   },
   "c85": {
-    "en": "Use for an entertaining activity, outing or likeable person, in casual talk.",
-    "ru": "Когда занятие, поездка или человек развлекают и нравятся, в лёгком разговоре."
+    "en": "Fun or likeable: an activity, outing or person you enjoy, rather than taste or looks.",
+    "ru": "Весёлый, симпатичный: занятие, поездка или человек, которые нравятся, а не вкус и не внешность."
   },
-  "c115": {
-    "en": "Use when two or more people act at the same place or time.",
-    "ru": "Когда двое или больше людей действуют в одном месте или в одно время."
+  "c119": {
+    "en": "A calendar date, rather than a meeting with someone.",
+    "ru": "Календарная дата, а не встреча с кем-то."
   },
-  "c183": {
-    "en": "Use when an illustration is dropped into a statement as an aside.",
-    "ru": "Когда к утверждению мимоходом добавляют иллюстрацию."
+  "c121": {
+    "en": "Last, final in a row, or latest, rather than the previous one.",
+    "ru": "Последний, заключительный или самый новый, а не предыдущий."
+  },
+  "c135": {
+    "en": "A number as a math value (7, 100), rather than a count or a label.",
+    "ru": "Число как математическое значение (7, 100), а не количество и не номер."
   },
   "c185": {
-    "en": "Use when asking about the time or date of something.",
-    "ru": "Когда спрашивают о времени или дате события."
+    "en": "The question 'when?', or 'whenever' in formal style, rather than one past moment.",
+    "ru": "Вопрос «когда?» или «всякий раз когда» в книжном стиле, а не единичный момент в прошлом."
   },
   "c196": {
-    "en": "Use for a living being of our species, as opposed to animals, machines or gods.",
-    "ru": "Когда речь о живом существе нашего вида в противовес животным, машинам или богам."
+    "en": "People, individual humans, rather than a nation or folk.",
+    "ru": "Люди, отдельные люди, а не народ."
   },
   "c197": {
-    "en": "Use for a task, question or exam that is hard to solve or understand.",
-    "ru": "Когда задачу, вопрос или экзамен сложно решить или понять."
+    "en": "Difficult to do or understand, the default word, rather than a hassle or physically hard.",
+    "ru": "Трудный для выполнения или понимания, основное слово, а не хлопотный и не твёрдый."
   },
   "c198": {
-    "en": "Use for the high speed of a vehicle, a person or a process.",
-    "ru": "Когда у транспорта, человека или процесса высокая скорость."
-  },
-  "c205": {
-    "en": "Use for any unnamed item in casual everyday talk.",
-    "ru": "Когда в бытовой речи предмет не называют или название забылось."
+    "en": "Measurable objective speed or velocity (km/h), rather than agility.",
+    "ru": "Измеримая объективная скорость процесса или движения (км/ч), а не проворность."
   },
   "c209": {
-    "en": "Use when a task takes little effort, in everyday casual speech.",
-    "ru": "Когда задача не требует усилий, в обычной разговорной речи."
+    "en": "Casual \"not hard\" for an easy task, rather than physical comfort or formal style.",
+    "ru": "Разговорное «несложно» для простой задачи, а не физический комфорт или официальный тон."
   },
   "c246": {
-    "en": "Use when someone has left the place or something has vanished from sight.",
-    "ru": "Когда человек ушёл с места или вещь исчезла из виду."
+    "en": "Gone, not here anymore, rather than 'misplaced' or a direction.",
+    "ru": "Ушёл, исчез, нет здесь, а не «потерял» и не направление."
   },
   "c260": {
-    "en": "Use for the everyday place where a family lives and returns to in the evening.",
-    "ru": "Когда речь о привычном месте, где живёт семья и куда возвращаются вечером."
+    "en": "Everyday 'house, home', rather than official housing language.",
+    "ru": "Бытовое «дом», а не официальный язык жилья."
   },
   "c265": {
-    "en": "Use for a counted total of items or people, whether large or small.",
-    "ru": "Когда речь о подсчитанном общем количестве предметов или людей."
+    "en": "How many: a count of things or people, rather than a digit or a label.",
+    "ru": "Количество: сколько вещей или людей, а не цифра и не номер."
   },
   "c266": {
-    "en": "Use for crowded places, heavy traffic, noise, or a packed schedule.",
-    "ru": "Когда вокруг толпа, пробки, шум или плотный график."
+    "en": "Busy as hectic (a crowded place, a packed schedule), rather than occupied with one task.",
+    "ru": "Занятой как суетный (людное место, плотный график), а не занятый одним делом."
   },
-  "c276": {
-    "en": "Use when a person or thing is missing while something is done or used.",
-    "ru": "Когда при действии нет нужного человека или предмета."
-  },
-  "c281": {
-    "en": "Use for a lower floor of a house, or a spot lower down than the speaker.",
-    "ru": "Когда речь о нижнем этаже дома или о месте ниже говорящего."
-  },
-  "c282": {
-    "en": "Use for a fixed spot higher up, like the upper floor or the top of something.",
-    "ru": "Когда что-то уже находится выше, например на верхнем этаже или наверху."
+  "c273": {
+    "en": "Calm, peaceful, unhurried, not busy, rather than totally silent.",
+    "ru": "Спокойный, неспешный, не суетный, а не совсем беззвучный."
   },
   "c284": {
-    "en": "Use for an ordinary room in a home or hotel, like a bedroom or a booked room.",
-    "ru": "Когда речь о жилой комнате в доме или номере в гостинице."
+    "en": "A room in a home or hotel (also the living room), rather than a big hall or open space.",
+    "ru": "Комната в доме или отеле (также гостиная), а не большой зал и не пространство."
+  },
+  "c288": {
+    "en": "Specifically the living room, rather than any room.",
+    "ru": "Именно гостиная, а не любая комната."
   },
   "c294": {
-    "en": "Use for a warm social atmosphere with people, chatting, candles or drinks.",
-    "ru": "Когда тёплая атмосфера в компании людей: болтовня, свечи, напитки."
+    "en": "Warm and cozy with people, a good atmosphere together, rather than just pleasant on your own.",
+    "ru": "Тепло и уютно в компании, хорошая атмосфера вместе, а не просто приятно самому."
+  },
+  "c297": {
+    "en": "A small cup, a teacup, rather than a headline.",
+    "ru": "Чашечка, маленькая чашка, а не заголовок."
+  },
+  "c325": {
+    "en": "Kind and friendly in character, rather than fun, tasty or pretty.",
+    "ru": "Добрый, дружелюбный по характеру, а не весёлый, вкусный или красивый."
   },
   "c330": {
-    "en": "Use for everyday praise of how something looks or sounds, like weather, a picture or a song.",
-    "ru": "Когда обычная похвала внешнему виду или звучанию: погоде, картинке, песне."
+    "en": "Beautiful to see or hear, rather than fun, tasty or kind.",
+    "ru": "Красивый на вид или на слух, а не весёлый, вкусный или добрый."
+  },
+  "c336": {
+    "en": "A shop where you go shopping, rather than a business or a matter.",
+    "ru": "Магазин, куда ходят за покупками, а не бизнес и не дело."
+  },
+  "c370": {
+    "en": "An amount of money, rather than a count of things.",
+    "ru": "Денежная сумма, а не количество предметов."
   },
   "c372": {
-    "en": "Use when a goal, limit or event is just short of being reached.",
-    "ru": "Когда до цели, предела или события остаётся совсем чуть-чуть."
+    "en": "Almost, just short of it, everyday, rather than 'practically all'.",
+    "ru": "Почти, чуть-чуть не хватило, бытовое, а не «практически всё»."
   },
   "c383": {
-    "en": "Use for the next step in future plans or spoken instructions, or the result after a condition.",
-    "ru": "Когда речь о шаге в планах на будущее или устной инструкции, либо о результате после условия."
+    "en": "'Then' for the future or a consequence, or 'than' in comparisons, rather than the past.",
+    "ru": "«Тогда / потом» о будущем или следствии, либо «чем» в сравнении, а не о прошлом."
   },
   "c393": {
-    "en": "Use for a finished task, cooked food, or bags packed and set to go.",
-    "ru": "Когда дело закончено, еда сварилась или вещи собраны к выходу."
+    "en": "Ready or finished: done, set to go, rather than willing.",
+    "ru": "Готов или закончил: сделано, можно идти, а не «согласен»."
   },
   "c403": {
-    "en": "Use when a group already named all share the same action or state, in everyday speech.",
-    "ru": "Когда уже названная группа людей или вещей целиком делает одно и то же, в разговорной речи."
+    "en": "'All of them / all of it' after the verb, everyday, rather than right before a noun.",
+    "ru": "«Все, всё целиком» после глагола, разговорно, а не прямо перед существительным."
   },
   "c406": {
-    "en": "Use for what is on the plate at home, in casual everyday talk.",
-    "ru": "Когда речь о том, что лежит на тарелке дома, в простом бытовом разговоре."
+    "en": "Everyday 'food', what you eat, rather than food as a resource.",
+    "ru": "Бытовое «еда», то, что ешь, а не пища как ресурс."
   },
   "c420": {
-    "en": "Use for food or drink on the tongue, or for bodily comfort like sleep or a warm bath.",
-    "ru": "Когда речь о вкусе еды и напитков или о телесном комфорте: сон, тёплая ванна."
+    "en": "Tasty, or pleasant to the body (sleep, a warm bath, weather), rather than fun or pretty.",
+    "ru": "Вкусный или приятный телу (сон, тёплая ванна, погода), а не весёлый и не красивый."
   },
   "c421": {
-    "en": "Use for what happens most of the time, with some exceptions.",
-    "ru": "Когда что-то происходит в большинстве случаев, но не всегда."
+    "en": "Most of the time, in most cases, rather than a fixed habit or 'especially'.",
+    "ru": "Чаще всего, в большинстве случаев, а не устойчивая привычка и не «особенно»."
+  },
+  "c423": {
+    "en": "To find, as in having an opinion about something, rather than reasoning or believing.",
+    "ru": "Считать, иметь мнение о чём-то, а не размышлять и не полагать."
   },
   "c430": {
-    "en": "Use for everyday amounts of food, money or time that cover the moment, or when patience runs out.",
-    "ru": "Когда в быту хватает еды, денег или времени, или когда кончилось терпение."
+    "en": "Enough, everyday, rather than a formal 'sufficient'.",
+    "ru": "Достаточно, бытовое, а не книжное «достаточный»."
   },
   "c443": {
-    "en": "Use for relief or satisfaction when things work out, or for wishing someone a good weekend.",
-    "ru": "Когда облегчение или удовлетворение, что всё сложилось, или пожелание хороших выходных."
+    "en": "Nice as in 'glad it is so': a pleasant situation or a wish, rather than fun, taste or looks.",
+    "ru": "Приятно в смысле «хорошо, что так»: ситуация или пожелание, а не веселье, вкус или внешность."
   },
   "c444": {
-    "en": "Use for one of two exactly equal shares, standing alone as a noun.",
-    "ru": "Когда целое поделили ровно на две доли и говорят об одной из них."
-  },
-  "c449": {
-    "en": "Use for a return to a previous place, owner or state, or for counting time back from today.",
-    "ru": "Когда возвращаются на прежнее место, к владельцу или в прежнее состояние, или отсчитывают время назад от сегодня."
+    "en": "The noun 'the half', rather than an adjective before a noun.",
+    "ru": "Существительное «половина», а не прилагательное перед существительным."
   },
   "c451": {
-    "en": "Use right before a noun for the full set of items or people.",
-    "ru": "Когда прямо перед существительным нужен полный набор предметов или людей."
+    "en": "Right before a noun ('all the …'), rather than standing on its own.",
+    "ru": "Прямо перед существительным («все …»), а не самостоятельно."
   },
   "c467": {
-    "en": "Use for an event that comes right after one already named, in everyday speech, with no noun after it.",
-    "ru": "Когда событие идёт сразу за уже названным, в обычной речи, без существительного после слова."
+    "en": "After that, everyday, rather than a formal next step.",
+    "ru": "После этого, разговорно, а не официальный следующий шаг."
   },
-  "c483": {
-    "en": "Use for the body part at the doctor or in neutral speech, or the person leading a school or department.",
-    "ru": "Когда часть тела у врача или в нейтральной речи, либо руководитель школы или отдела."
+  "c476": {
+    "en": "'Because, for': adds an explanation, normal word order, rather than a subclause.",
+    "ru": "«Ведь, потому что»: пояснение, обычный порядок слов, а не придаточное."
   },
   "c512": {
-    "en": "Use for a plan, meeting time or informal deal settled between people.",
-    "ru": "Когда люди договорились о встрече, времени или неформальном плане."
+    "en": "An appointment or arrangement with someone, rather than a calendar date.",
+    "ru": "Встреча или договорённость с кем-то, а не календарная дата."
   },
   "c516": {
     "en": "Use when one moment comes ahead of another moment or ahead of the planned time.",
     "ru": "Когда один момент наступил раньше другого или раньше намеченного срока."
   },
-  "c520": {
-    "en": "Use for joining two clauses in everyday speech when the second one turns against the first.",
-    "ru": "Когда в обычной речи вторая часть фразы идёт против первой."
-  },
   "c524": {
-    "en": "Use for one more item or person of the same kind, other than the one already named.",
-    "ru": "Когда речь о ещё одном предмете или человеке того же рода, не о том, что уже назван."
+    "en": "Other, another one, before a noun, rather than 'in a different way'.",
+    "ru": "Другой, ещё один, перед существительным, а не «по-другому»."
+  },
+  "c541": {
+    "en": "'Very' or 'badly', also with verbs and bad things, rather than only before an adjective.",
+    "ru": "«Очень» или «сильно», и с глаголами, и о плохом, а не только перед прилагательным."
   },
   "c546": {
-    "en": "Use when something is the normal, expected course of things and nobody would be surprised.",
-    "ru": "Когда всё идёт естественным, ожидаемым ходом и никто не удивлён."
+    "en": "Of course, everyday, also 'natural', rather than formal.",
+    "ru": "Конечно, разговорно, также «естественный», а не книжно."
   },
   "c547": {
     "en": "Use when a situation continues without a break, or one more item is added.",
     "ru": "Когда ситуация продолжается без перерыва или добавляется ещё одна штука."
   },
-  "c551": {
-    "en": "Use when the facts point to an outcome that will most likely happen.",
-    "ru": "Когда факты указывают, что исход скорее всего сбудется."
-  },
   "c564": {
-    "en": "Use for items taken one by one, each on its own.",
-    "ru": "Когда предметы перебираются по одному, каждый отдельно."
+    "en": "Focuses on neutral items or elements in a series, rather than individuals.",
+    "ru": "Нейтральный перебор элементов или предметов в ряду, а не личности."
+  },
+  "c568": {
+    "en": "Unfortunately: a neutral sentence word, rather than an exclamation of pity.",
+    "ru": "К сожалению: нейтральное вводное слово, а не восклицание «жаль»."
   },
   "c569": {
-    "en": "Use when a state or action reaches its maximum degree, with nothing left halfway.",
-    "ru": "Когда состояние или действие доведено до предела и ничего не осталось наполовину."
+    "en": "Completely, everyday and emphatic (with 'not': 'at all'), rather than a formal 'complete'.",
+    "ru": "Полностью, разговорно и эмоционально (с «не» — «совсем»), а не книжное «полный»."
   },
   "c572": {
-    "en": "Use for everyday talk, a casual suggestion, or a fifty-fifty guess.",
-    "ru": "Когда в обычном разговоре что-то предлагают или гадают при шансах пятьдесят на пятьдесят."
-  },
-  "c608": {
-    "en": "Use for size, dimensions or clothing size measured in units.",
-    "ru": "Когда речь о размере, габаритах или размере одежды."
+    "en": "Everyday 'maybe, perhaps', rather than formal or 'possible'.",
+    "ru": "Бытовое «может быть», а не книжное и не «возможный»."
   },
   "c615": {
-    "en": "Use when a pair already named both share it, said on its own in everyday speech.",
-    "ru": "Когда уже названная пара вместе что-то делает, в разговорной речи."
+    "en": "Both, on its own after the verb, everyday, rather than before a noun.",
+    "ru": "Оба, самостоятельно после глагола, разговорно, а не перед существительным."
+  },
+  "c640": {
+    "en": "For a short moment, or softening a request, rather than 'a moment ago' or 'only'.",
+    "ru": "Ненадолго, на минутку, или смягчает просьбу, а не «только что» и не «только»."
   },
   "c642": {
-    "en": "Use for a strong degree before an adjective in everyday speech.",
-    "ru": "Когда сильная степень стоит перед прилагательным в обычной разговорной речи."
+    "en": "Everyday 'very' before an adjective, rather than formal or slangy.",
+    "ru": "Бытовое «очень» перед прилагательным, а не книжное и не сленговое."
   },
   "c643": {
-    "en": "Use for a missed chance or cancelled plans that cause mild regret.",
-    "ru": "Когда упущен шанс или сорвались планы и осталась лёгкая досада."
+    "en": "What a pity: regret about something, rather than a neutral 'unfortunately'.",
+    "ru": "Жаль: сожаление о чём-то, а не нейтральное «к сожалению»."
   },
   "c644": {
-    "en": "Use for an object that has stopped working, like a phone, bike or machine.",
-    "ru": "Когда предмет или прибор больше не работает."
+    "en": "Broken or ruined, of things but also of a person worn out, rather than only an object out of order.",
+    "ru": "Сломанный, разрушенный, о вещах и о вымотанном человеке, а не только о неисправной вещи."
+  },
+  "c648": {
+    "en": "An emphatic 'yes, it does', contradicting a no, rather than plain certainty.",
+    "ru": "Эмфатическое «да, всё-таки», возражение на «нет», а не просто уверенность."
   },
   "c650": {
-    "en": "Use for one item left out of an otherwise complete list or group.",
-    "ru": "Когда из полного перечня выпадает один пункт."
+    "en": "'Except, apart from': leaves one out, rather than adding a remark.",
+    "ru": "«Кроме, за исключением»: исключает, а не добавляет."
   },
   "c661": {
-    "en": "Use when something happens anyway, against an obstacle or an expectation.",
-    "ru": "Когда что-то происходит вопреки препятствию или ожиданию."
+    "en": "Still, anyway, despite something, everyday, rather than a formal 'however'.",
+    "ru": "Всё-таки, всё равно, несмотря ни на что, разговорно, а не книжное «однако»."
   },
   "c665": {
-    "en": "Use for a rough estimate of a number, time or amount, either side.",
-    "ru": "Когда число, время или сумма прикидываются на глаз, с отклонением в любую сторону."
+    "en": "Approximately, a rough number, rather than 'concerning a topic'.",
+    "ru": "Примерно, приблизительное число, а не «о чём-то»."
   },
   "c667": {
-    "en": "Use for every thing or matter at once, never for people.",
-    "ru": "Когда речь обо всех вещах и делах сразу, а не о людях."
+    "en": "Everything: things and matters, never people, rather than 'everyone'.",
+    "ru": "Всё: вещи и дела, не люди, а не «все»."
   },
   "c672": {
-    "en": "Use when the next step follows a request or event without any pause, in everyday talk.",
-    "ru": "Когда следующее действие идёт сразу за просьбой или событием, в обычной бытовой речи."
+    "en": "Right away, everyday, rather than formal or urgent.",
+    "ru": "Сразу, разговорно, а не официально и не срочно."
   },
   "c692": {
-    "en": "Use right before a noun naming the earlier event or clock time, like a meal, class or hour.",
-    "ru": "Когда сразу перед существительным стоит более раннее событие или время: еда, урок, час."
+    "en": "After + a noun or time ('after dinner'), rather than a full clause.",
+    "ru": "После + существительное или время, а не целое придаточное."
   },
   "c700": {
-    "en": "Use for a fixed date, hour or event that something comes ahead of (takes a noun).",
-    "ru": "Когда что-то происходит до конкретной даты, часа или события (ставится перед существительным)."
+    "en": "Before + a noun or time, also 'for', rather than a full clause.",
+    "ru": "До, перед + существительное или время, также «для», а не целое придаточное."
+  },
+  "c729": {
+    "en": "'Next to', or 'in addition to': adds alongside, rather than leaving out.",
+    "ru": "«Рядом с» или «в дополнение к»: добавляет, а не исключает."
   },
   "c732": {
-    "en": "Use for the link between a talk, book, film or thought and what it deals with.",
-    "ru": "Когда разговор, книга, фильм или мысль связаны с тем, чему они посвящены."
+    "en": "About a topic, what a talk or book deals with, rather than 'approximately'.",
+    "ru": "О теме, о чём разговор или книга, а не «примерно»."
   },
   "c737": {
-    "en": "Use when one step is done ahead, before others arrive or the main event starts.",
-    "ru": "Когда один шаг делают заранее, пока остальные не пришли или главное ещё не началось."
+    "en": "In advance, a step done before the rest, rather than 'already'.",
+    "ru": "Заранее, шаг до остального, а не «уже»."
+  },
+  "c739": {
+    "en": "To think: the act of thinking, or to believe, rather than giving an opinion.",
+    "ru": "Думать: процесс мысли или «полагать», а не высказывать мнение."
   },
   "c741": {
-    "en": "Use when drawing a quick conclusion or summing up in casual speech.",
-    "ru": "Когда в разговоре делается быстрый вывод или подводится итог."
+    "en": "'So': a conclusion drawn, rather than pointing back to a reason just named.",
+    "ru": "«Значит, так что»: вывод, а не отсылка к только что названной причине."
+  },
+  "c745": {
+    "en": "Fine, perfectly OK, agreeing or 'good enough', rather than excited praise.",
+    "ru": "Отлично, вполне хорошо, согласие или «годится», а не восторг."
   },
   "c761": {
-    "en": "Use for what a word, sign or event stands for, or how much it matters.",
-    "ru": "Когда речь о смысле слова, знака или события, или о его важности."
+    "en": "The meaning of a word or sign, or its significance, rather than someone's intention.",
+    "ru": "Значение слова или знака, важность, а не чьё-то намерение."
   },
   "c765": {
-    "en": "Use when life as a whole is going well, or when chance turns out in someone's favor.",
-    "ru": "Когда жизнь в целом складывается хорошо или когда повезло со случаем."
-  },
-  "c769": {
-    "en": "Use when a train leaves before boarding, a shot goes wide, or an absent person is longed for.",
-    "ru": "Когда поезд ушёл до посадки, удар прошёл мимо цели или тоскливо без отсутствующего человека."
+    "en": "Happy in life, deeply, also 'luckily', rather than glad about one thing.",
+    "ru": "Счастливый в жизни, глубоко, также «к счастью», а не рад чему-то одному."
   },
   "c787": {
-    "en": "Use when a long-awaited moment finally comes and the wait is over.",
-    "ru": "Когда долгое ожидание закончилось и наступает облегчение."
+    "en": "Finally, at last, after a long wait, rather than the last item or the outcome.",
+    "ru": "Наконец-то, после долгого ожидания, а не последний пункт и не итог."
   },
   "c791": {
-    "en": "Use for something that happened moments ago, or that barely made it in time.",
-    "ru": "Когда что-то случилось только что или успело впритык."
-  },
-  "c796": {
-    "en": "Use before a noun for the day, item or person right behind the current one in line.",
-    "ru": "Когда перед существительным: день, предмет или человек стоит в очереди сразу за текущим."
+    "en": "A moment ago or only barely, rather than 'only' or 'simply'.",
+    "ru": "Только что или едва-едва, а не «только» и не «просто»."
   },
   "c803": {
-    "en": "Use when keys or a phone got misplaced and cannot be found.",
-    "ru": "Когда ключи или телефон куда-то задевались и их не найти."
+    "en": "Lost: can't find it or got rid of it, rather than simply gone.",
+    "ru": "Потерял: не могу найти или избавился, а не просто «исчез»."
   },
-  "c805": {
-    "en": "Use for every place or location.",
-    "ru": "Когда речь о каждом месте, по всей территории."
-  },
-  "c824": {
-    "en": "Use for two things set side by side as opposites.",
-    "ru": "Когда две вещи поставлены рядом как противоположности."
+  "c812": {
+    "en": "Focuses on distinct individuals or people, rather than items in a list.",
+    "ru": "Фокус на людях и индивидуальности участников, а не на элементах ряда."
   },
   "c830": {
-    "en": "Use for every person around, counted as one crowd.",
-    "ru": "Когда речь о каждом человеке вокруг, как об одной толпе."
+    "en": "Everyone, every person, standing on its own, rather than a group already named.",
+    "ru": "Все, каждый человек, самостоятельно, а не уже названная группа."
+  },
+  "c850": {
+    "en": "Everyday 'again': it happens once more, rather than starting anew.",
+    "ru": "Бытовое «снова, опять»: случилось ещё раз, а не «заново»."
   },
   "c854": {
-    "en": "Use when a result follows from a reason already stated in the previous sentence.",
-    "ru": "Когда следствие вытекает из причины, уже названной в предыдущей фразе."
+    "en": "'That's why': points back to a reason just named, rather than a general conclusion.",
+    "ru": "«Поэтому, вот почему»: отсылка к только что названной причине, а не общий вывод."
+  },
+  "c860": {
+    "en": "A number as a label (phone, house, ticket), also a song, rather than a count.",
+    "ru": "Номер как метка (телефон, дом, билет), также песня, а не количество."
   },
   "c865": {
-    "en": "Use for a role or job someone fills, or a condition that triggers something.",
-    "ru": "Когда речь о роли, должности или условии, при котором что-то случится."
+    "en": "'If / whenever', or a role someone fills ('as a teacher'), rather than one past moment or a comparison.",
+    "ru": "«Если / всякий раз когда» или роль («как учитель»), а не единичный момент в прошлом и не сравнение."
   },
-  "c889": {
-    "en": "Use when agreeing with what another person has just said.",
-    "ru": "Когда подтверждаются слова собеседника, сказанные только что."
+  "c877": {
+    "en": "A situation, the state of things, rather than one case or instance.",
+    "ru": "Ситуация, положение дел, а не отдельный случай."
   },
-  "c893": {
-    "en": "Use for the good time a person has during an activity, named as a thing.",
-    "ru": "Когда хорошее время, проведённое за занятием, названо как предмет."
+  "c881": {
+    "en": "One more time: a request or plan to repeat, rather than noting it happened again.",
+    "ru": "Ещё раз: просьба или план повторить, а не замечание, что это снова случилось."
   },
   "c897": {
-    "en": "Use when something is done or has happened earlier than expected.",
-    "ru": "Когда что-то уже сделано или случилось раньше ожидаемого."
+    "en": "Already, earlier than expected, rather than 'in advance'.",
+    "ru": "Уже, раньше ожидаемого, а не «заранее»."
   },
   "c906": {
-    "en": "Use when a time, deadline or age arrives later than expected.",
-    "ru": "Когда время, срок или возраст наступили позже ожидаемого."
+    "en": "Not until, later than expected, rather than 'a moment ago' or 'simply'.",
+    "ru": "Не раньше чем, позже ожидаемого, а не «только что» и не «просто»."
   },
   "c913": {
-    "en": "Use when something is easy to see, hear or understand, with no confusion.",
-    "ru": "Когда что-то легко увидеть, услышать или понять без путаницы."
+    "en": "Clear as obvious, easy to understand, rather than bright or transparent.",
+    "ru": "Ясный как понятный, очевидный, а не светлый и не прозрачный."
+  },
+  "c916": {
+    "en": "Handy, convenient, also skilful, rather than of deep value.",
+    "ru": "Удобный, практичный, также ловкий, а не приносящий большую пользу."
   },
   "c921": {
-    "en": "Use when something is within the norm, with nothing wrong or off.",
-    "ru": "Когда всё в пределах нормы, без отклонений и сбоев."
+    "en": "Normally, as is usual, often against today's exception, rather than 'in most cases'.",
+    "ru": "Обычно, как принято, часто в противовес нынешнему исключению, а не «в большинстве случаев»."
   },
   "c926": {
-    "en": "Use for whatever is left after the main portion has been used, eaten or done.",
-    "ru": "Когда основное уже израсходовали, съели или сделали, и что-то осталось."
+    "en": "The rest, what remains, rather than relaxing.",
+    "ru": "Остаток, оставшееся, а не отдых."
   },
   "c932": {
-    "en": "Use when a specific piece of news, a gift or an event triggers a quick good reaction.",
-    "ru": "Когда конкретная новость, подарок или событие вызывают быструю радостную реакцию."
+    "en": "Glad, pleased about a specific thing, rather than happy in life.",
+    "ru": "Рад чему-то конкретному, а не счастлив в жизни."
   },
-  "c939": {
-    "en": "Use for low weight, brightness, or a mild load or punishment.",
-    "ru": "Когда вес небольшой, вокруг светло, либо нагрузка или наказание мягкие."
+  "c934": {
+    "en": "Fantastic, over-the-top praise, rather than calm approval.",
+    "ru": "Фантастический, бурная похвала, а не спокойное одобрение."
   },
-  "c942": {
-    "en": "Use for plenty of room, or an amount that goes past a stated number.",
-    "ru": "Когда места много или количество превышает названное число."
-  },
-  "c961": {
-    "en": "Use for a big weight, or for work and a life that wear a person out.",
-    "ru": "Когда предмет много весит или работа и жизнь сильно изматывают."
+  "c982": {
+    "en": "Finally, lastly: the last point or step, rather than relief after waiting.",
+    "ru": "Наконец, в заключение: последний пункт или шаг, а не облегчение после ожидания."
   },
   "c984": {
-    "en": "Use for the next step in a formal written report, protocol or step-by-step account.",
-    "ru": "Когда описан очередной шаг в официальном отчёте, протоколе или пошаговом изложении."
+    "en": "Subsequently, the next step in a sequence, more formal, rather than a casual 'after that'.",
+    "ru": "Затем, следующим шагом, более книжно, а не разговорное «после этого»."
   },
   "c988": {
-    "en": "Use for a firm surface that does not give way, or for loud sound or high speed.",
-    "ru": "Когда поверхность твёрдая и не поддаётся, или звук громкий, или скорость высокая."
+    "en": "Firm, loud or fast, rather than 'difficult'.",
+    "ru": "Твёрдый, громкий или быстрый, а не «трудный»."
   },
   "c994": {
-    "en": "Use for a room, street or person with no sound or movement.",
-    "ru": "Когда вокруг нет звука и ничто не движется."
+    "en": "Silent with no sound, or not moving, rather than calm and relaxed.",
+    "ru": "Тихий, без звука, или неподвижный, а не спокойный и расслабленный."
   },
   "c1002": {
-    "en": "Use for a measurable gap between two things, such as in price, age or score.",
-    "ru": "Когда между двумя вещами есть разрыв, который можно измерить: в цене, возрасте, счёте."
+    "en": "A difference that exists between things, rather than the act of telling them apart.",
+    "ru": "Разница, которая есть между вещами, а не умение их различать."
   },
   "c1015": {
     "en": "Use when something happens near the start of a day, season or life, ahead of the usual hour.",
     "ru": "Когда что-то происходит в начале дня, сезона или жизни, раньше обычного часа."
   },
-  "c1025": {
-    "en": "Use for the set theme of an essay, lesson, meeting or email subject line.",
-    "ru": "Когда речь о заданной теме сочинения, урока, встречи или строки темы письма."
-  },
   "c1032": {
-    "en": "Use before a noun or a clock time to describe an amount cut in two.",
-    "ru": "Когда половинное количество стоит прямо перед предметом или часом."
+    "en": "Adjective 'half a …', also in clock times, rather than the noun 'the half'.",
+    "ru": "Прилагательное «пол-…», также о времени, а не существительное «половина»."
   },
   "c1034": {
-    "en": "Use for a sudden new plan or suggestion of what to do.",
-    "ru": "Когда внезапно появляется новый план или предложение, что сделать."
+    "en": "An idea or notion (a plan, a concept, 'no idea'), rather than a passing thought.",
+    "ru": "Идея, представление (план, понятие, «понятия не имею»), а не мимолётная мысль."
   },
   "c1042": {
     "en": "Use for a long-gone period when life or habits were different from now.",
     "ru": "Когда речь о давнем периоде, когда жизнь или привычки были другими, чем сейчас."
   },
-  "c1058": {
-    "en": "Use for a sudden unplanned event such as a crash or fall, often with injuries.",
-    "ru": "Когда внезапно случилась авария, столкновение или падение, часто с пострадавшими."
-  },
   "c1067": {
-    "en": "Use when an action restarts from scratch, often after a failed attempt.",
-    "ru": "Когда действие начинают заново, с нуля, часто после неудачи."
+    "en": "Again, often anew from the start, slightly formal, rather than a casual 'again'.",
+    "ru": "Снова, часто заново с начала, чуть книжно, а не разговорное «опять»."
   },
   "c1068": {
-    "en": "Use for a view, outfit or performance whose beauty stops people in their tracks.",
-    "ru": "Когда вид, наряд или выступление поражают своей красотой."
-  },
-  "c1074": {
-    "en": "Use when something goes beyond what anyone would expect.",
-    "ru": "Когда происходит что-то сверх всяких ожиданий."
+    "en": "Beautiful to a very high degree, magnificent, rather than everyday pretty.",
+    "ru": "Красивый в высшей степени, великолепный, а не просто симпатичный."
   },
   "c1078": {
-    "en": "Use for a pair placed right before the noun, or in formal writing.",
-    "ru": "Когда пара стоит прямо перед существительным или упоминается в официальном тексте."
+    "en": "Both, before a noun or formal, rather than standing on its own.",
+    "ru": "Оба, перед существительным или книжно, а не самостоятельно."
   },
   "c1091": {
-    "en": "Use when a manner is shown on the spot, or a degree is turned up.",
-    "ru": "Когда способ показывают прямо сейчас или усиливают степень."
+    "en": "'Like this / so much': manner or degree, rather than a conclusion.",
+    "ru": "«Так, вот так, настолько»: способ или степень, а не вывод."
   },
   "c1094": {
-    "en": "Use for something rare and out of the ordinary, or to boost an adjective in formal speech.",
-    "ru": "Когда что-то редкое и необычное, или для усиления прилагательного в официальной речи."
+    "en": "Special as unusual or remarkable, also 'particularly', rather than made for a purpose.",
+    "ru": "Особенный как необычный, примечательный, также «особенно», а не предназначенный для цели."
   },
   "c1098": {
-    "en": "Use for an affectionate, kind person, child, pet or gesture.",
-    "ru": "Когда человек, ребёнок, питомец или жест добрые и ласковые."
+    "en": "'Love,' at the end of a message, rather than the feeling itself.",
+    "ru": "«С любовью» в конце сообщения, а не само чувство."
+  },
+  "c1101": {
+    "en": "A reason as a cause or motive, rather than the mind.",
+    "ru": "Причина, мотив, а не разум."
   },
   "c1106": {
-    "en": "Use for a large room where crowds gather for concerts, meetings or sports.",
-    "ru": "Когда большое помещение собирает толпу на концерт, собрание или спорт."
+    "en": "A large hall for many people (concerts, meetings, a hospital ward), rather than a room at home.",
+    "ru": "Большой зал для многих людей (концерты, собрания, больничная палата), а не комната в доме."
   },
   "c1120": {
-    "en": "Use when describing a person, face or song that is full of sorrow right now.",
-    "ru": "Когда описывают человека, лицо или песню, полные грусти."
+    "en": "Sad as a person feels, rather than something that makes you sad.",
+    "ru": "Грустный — о чувстве человека, а не о том, что вызывает грусть."
   },
   "c1131": {
-    "en": "Use when food, weather or a moment is top-level delight.",
-    "ru": "Когда еда, погода или момент приносят наслаждение на пределе."
+    "en": "Delightful to the senses, stronger than 'tasty': food, weather, a bath, rather than looks or fun.",
+    "ru": "Восхитительный для чувств, сильнее, чем «вкусно»: еда, погода, ванна, а не внешность или веселье."
   },
   "c1133": {
-    "en": "Use for a person with a handsome face, or one who cleverly solved something hard.",
-    "ru": "Когда у человека красивое лицо или он ловко решил трудную задачу."
+    "en": "Good-looking, or impressive at something, rather than just smart.",
+    "ru": "Симпатичный или здорово что-то умеющий, а не просто умный."
   },
   "c1134": {
     "en": "Use when a statement is followed by its explanation or a list of the items.",
     "ru": "Когда после утверждения идёт пояснение или перечисление."
   },
   "c1136": {
-    "en": "Use for one single finished moment in a story about the past.",
-    "ru": "Когда в рассказе о прошлом речь об одном уже прошедшем моменте."
+    "en": "One finished moment in the past ('then', 'when I was…'), rather than future or repeated time.",
+    "ru": "Один завершённый момент в прошлом, а не будущее и не повторяющееся время."
   },
-  "c1141": {
-    "en": "Use for calling, writing or meeting someone, or for physical touch.",
-    "ru": "Когда люди созваниваются, переписываются, встречаются или касаются друг друга."
+  "c1139": {
+    "en": "Soon, in the coming days or weeks, rather than within hours.",
+    "ru": "Скоро, в ближайшие дни или недели, а не через пару часов."
+  },
+  "c1145": {
+    "en": "Because: the reason, with the verb at the end, rather than an added explanation.",
+    "ru": "Потому что: причина, глагол в конце, а не добавочное пояснение."
+  },
+  "c1147": {
+    "en": "Smart, quick in thinking, rather than good-looking or skilled.",
+    "ru": "Умный, сообразительный, а не красивый и не умелый."
   },
   "c1149": {
-    "en": "Use for the item right before the current one in a series of weeks, jobs or homes.",
-    "ru": "Когда речь о предмете, стоящем прямо перед текущим в череде недель, работ или домов."
-  },
-  "c1166": {
-    "en": "Use when quality, health, results, or a mark fall below the norm.",
-    "ru": "Когда качество, здоровье, результат или оценка ниже нормы."
-  },
-  "c1168": {
-    "en": "Use when naming the person, source or rule a claim or opinion comes from.",
-    "ru": "Когда указан человек, источник или правило, от которого исходит мнение или утверждение."
-  },
-  "c1198": {
-    "en": "Use for a goal or outcome that an action is meant to make possible.",
-    "ru": "Когда действие совершается ради цели или результата, который оно должно обеспечить."
-  },
-  "c1201": {
-    "en": "Use for any set of people or things gathered without formal membership.",
-    "ru": "Когда люди или предметы собраны вместе без официального членства."
+    "en": "Previous, the one before this one, rather than the final one.",
+    "ru": "Прошлый, предыдущий, а не последний по счёту."
   },
   "c1204": {
-    "en": "Use when someone is asked for their personal view and says it out loud.",
-    "ru": "Когда человека спрашивают, что он лично думает, и он высказывается вслух."
+    "en": "An opinion, what you think about something, rather than a judgement or verdict.",
+    "ru": "Мнение, что ты думаешь о чём-то, а не оценка и не приговор."
   },
   "c1221": {
-    "en": "Use for the measurable outcome of effort or testing, like a score or lab figure.",
-    "ru": "Когда есть измеримый итог работы или проверки: оценка, счёт, анализы."
-  },
-  "c1230": {
-    "en": "Use for someone being counted, as in bookings, tickets, seats or official forms.",
-    "ru": "Когда кого-то считают: бронь, билеты, места, анкеты."
+    "en": "A result, the outcome of effort or a test, rather than a side effect.",
+    "ru": "Результат усилия или проверки, а не побочное последствие."
   },
   "c1233": {
-    "en": "Use for a scheduled pastime or planned event, such as a club outing or school program.",
-    "ru": "Когда речь о занятии по расписанию, кружке, мероприятии или программе досуга."
+    "en": "Something you do or a planned event, rather than a single deed or a campaign.",
+    "ru": "Занятие или запланированное мероприятие, а не отдельный поступок и не кампания."
   },
   "c1235": {
-    "en": "Use for a component of a system, a share of the work, or one volume of a book series.",
-    "ru": "Когда речь о детали механизма, доле общей работы или томе многотомника."
+    "en": "A part or share of a whole, rather than a physical piece or a stretch.",
+    "ru": "Часть или доля целого, а не физический кусок и не отрезок."
   },
   "c1239": {
-    "en": "Use for all public bodies together, from city hall to the state, dealing with citizens.",
-    "ru": "Когда речь обо всех госорганах сразу, от мэрии до министерств, перед гражданами."
+    "en": "The authorities, all public bodies, rather than the cabinet in power.",
+    "ru": "Власти, все государственные органы, а не правящий кабинет."
   },
   "c1242": {
-    "en": "Use for rest after work, or a time when nobody disturbs anyone.",
-    "ru": "Когда наступил отдых и никто не тревожит."
+    "en": "Rest as calm and peace, relaxing, rather than what remains.",
+    "ru": "Отдых, покой, тишина, а не остаток."
   },
   "c1243": {
-    "en": "Use for something made or reserved for one purpose or one person.",
-    "ru": "Когда вещь сделана или отведена под одну цель или одного человека."
-  },
-  "c1245": {
-    "en": "Use for looking after a sick person, child, or home, or for worry about a problem.",
-    "ru": "Когда ухаживают за больным, ребёнком или домом, или тревожатся из-за проблемы."
+    "en": "Special as set apart or made for a purpose, rather than strange or remarkable.",
+    "ru": "Специальный, особый, предназначенный для цели, а не необычный и не примечательный."
   },
   "c1257": {
-    "en": "Use for a scheduled work or club session with an agenda, a chair and minutes.",
-    "ru": "Когда коллеги или члены совета собираются по повестке, с председателем и протоколом."
+    "en": "A meeting with an agenda, at work or a club, rather than meeting someone.",
+    "ru": "Собрание с повесткой, на работе или в клубе, а не встреча с кем-то."
   },
   "c1268": {
-    "en": "Use when one action follows another straight on, with no stop, detour or go-between.",
-    "ru": "Когда одно действие следует за другим без остановки, крюка или посредника."
+    "en": "Directly, straight away, with no detour or go-between, rather than a casual 'right away'.",
+    "ru": "Прямо, сразу, без обходов и посредников, а не разговорное «сейчас же»."
   },
   "c1269": {
-    "en": "Use for an excited reaction to news, a party or a trip.",
-    "ru": "Когда бурная радостная реакция на новость, вечеринку или поездку."
-  },
-  "c1270": {
-    "en": "Use for the energy or trouble a person puts into doing something.",
-    "ru": "Когда человек тратит силы и старание, чтобы что-то сделать."
+    "en": "Great, awesome: enthusiastic praise, rather than a calm 'fine'.",
+    "ru": "Отличный, потрясающий: восторженная похвала, а не спокойное «нормально»."
   },
   "c1273": {
-    "en": "Use for a specific course or program that trains for a job or diploma.",
-    "ru": "Когда речь о конкретной программе или курсах, которые готовят к профессии или диплому."
-  },
-  "c1276": {
-    "en": "Use for university years spent on one subject, or for a research piece.",
-    "ru": "Когда речь о годах в университете по одной специальности или о научном исследовании."
+    "en": "Training or a course for a job or diploma, rather than the school system.",
+    "ru": "Обучение, курс для профессии или диплома, а не система образования."
   },
   "c1280": {
-    "en": "Use when the speaker is personally confident, or gives a firm yes to a request.",
-    "ru": "Когда говорящий лично уверен или твёрдо соглашается на просьбу."
+    "en": "Certainly, sure, no doubt, rather than 'a certain one'.",
+    "ru": "Конечно, уверенно, без сомнений, а не «определённый, некий»."
+  },
+  "c1301": {
+    "en": "'Otherwise, or else': a warning, rather than 'apart from that'.",
+    "ru": "«Иначе, а то»: предупреждение, а не «в остальном»."
+  },
+  "c1304": {
+    "en": "Once as 'some time' or 'once more', also softening a request, rather than exactly one time.",
+    "ru": "Как-нибудь, однажды или «ещё раз», смягчает просьбу, а не ровно один раз."
   },
   "c1306": {
-    "en": "Use for something expected a little later, such as the next meeting when saying goodbye.",
-    "ru": "Когда событие ждут чуть позже, например следующую встречу при прощании."
-  },
-  "c1307": {
-    "en": "Use after a stretch of time counted back from this moment.",
-    "ru": "Когда отрезок времени отсчитывается назад от текущего момента."
+    "en": "Soon or quickly, casual, rather than a planned date.",
+    "ru": "Скоро или быстро, разговорно, а не запланированная дата."
   },
   "c1311": {
-    "en": "Use for urgent orders, emergencies or official notices that allow no delay.",
-    "ru": "Когда звучит срочный приказ, авария или официальное требование без права на отсрочку."
-  },
-  "c1313": {
-    "en": "Use when a result, service or situation meets expectations and nothing more is needed.",
-    "ru": "Когда результат, сервис или положение дел устраивают и больше ничего не нужно."
+    "en": "Immediately, at once, formal or urgent, rather than a casual 'right away'.",
+    "ru": "Немедленно, тотчас, официально или срочно, а не разговорное «сразу»."
   },
   "c1319": {
-    "en": "Use for a correct answer, or the exact point or moment in question.",
-    "ru": "Когда ответ верный или речь о точном месте или моменте."
+    "en": "Correct, matching the rule or the right answer, rather than true to the facts.",
+    "ru": "Правильный, по правилу или верный ответ, а не правдивый по фактам."
+  },
+  "c1337": {
+    "en": "Weird, odd, everyday, rather than unfamiliar or foreign.",
+    "ru": "Странный, чудной, разговорно, а не незнакомый и не чужой."
   },
   "c1343": {
-    "en": "Use for a formal recommendation from a doctor, lawyer, expert or official body.",
-    "ru": "Когда рекомендацию даёт врач, юрист, специалист или официальная инстанция."
+    "en": "Advice, a recommendation, everyday or professional, rather than a council.",
+    "ru": "Совет, рекомендация, бытовая или профессиональная, а не совет как орган."
   },
-  "c1361": {
-    "en": "Use for a trait or thing that belongs to one person or group.",
-    "ru": "Когда черта или вещь принадлежит одному человеку или группе."
+  "c1362": {
+    "en": "An entrance hall or a big open hall (sports, factory), rather than a concert or meeting hall.",
+    "ru": "Прихожая или большой открытый зал (спортивный, цех), а не концертный зал и не зал собраний."
   },
   "c1364": {
-    "en": "Use for a plan, option, or risk that can happen or is not ruled out.",
-    "ru": "Когда план, вариант или риск может осуществиться или не исключён."
+    "en": "Possible: it can happen or be done, rather than a guess like 'maybe'.",
+    "ru": "Возможный: может случиться или быть сделан, а не догадка «может быть»."
   },
   "c1367": {
-    "en": "Use for a calm, agreeable experience or contact, said in a polite or neutral tone.",
-    "ru": "Когда опыт или общение спокойно приятны, в вежливом нейтральном тоне."
+    "en": "Agreeable and comfortable, in a polite neutral tone, rather than cozy togetherness or fun.",
+    "ru": "Приятный, комфортный, в вежливом нейтральном тоне, а не уют компании и не веселье."
   },
   "c1375": {
-    "en": "Use for the odds of success, winning or something happening.",
-    "ru": "Когда речь о шансах на успех, выигрыш или о вероятности события."
-  },
-  "c1377": {
-    "en": "Use for dealings between people, or welfare support for people in need.",
-    "ru": "Когда речь об общении между людьми или о помощи и пособиях нуждающимся."
+    "en": "A chance: the odds, or an opportunity to try, rather than an occasion or event.",
+    "ru": "Шанс: вероятность или возможность попробовать, а не повод и не событие."
   },
   "c1385": {
-    "en": "Use for a strong degree in formal writing, such as letters, news or official texts.",
-    "ru": "Когда сильная степень нужна в официальном тексте: письме, новостях, документе."
-  },
-  "c1387": {
-    "en": "Use for a private inner sensation in body or mind, like a hunch or a sense of touch.",
-    "ru": "Когда ощущение возникает внутри одного человека: в теле, на коже или как предчувствие."
+    "en": "Formal 'very' in writing and official texts, rather than everyday speech.",
+    "ru": "Книжное «очень» в письменных и официальных текстах, а не в бытовой речи."
   },
   "c1407": {
-    "en": "Use for the school system as a whole: teachers, classes, national education policy.",
-    "ru": "Когда речь о школьной системе в целом: учителя, уроки, государственная политика."
+    "en": "Education as teaching and the school system, rather than one course.",
+    "ru": "Образование как преподавание и школьная система, а не отдельный курс."
   },
   "c1408": {
-    "en": "Use for the cabinet of ministers that runs the country after an election.",
-    "ru": "Когда речь о кабинете министров, который правит страной после выборов."
+    "en": "The government in power, the cabinet of ministers, rather than all public bodies.",
+    "ru": "Правительство у власти, кабинет министров, а не все органы власти."
   },
-  "c1423": {
-    "en": "Use for skill or wisdom built up over years of doing things or living through events.",
-    "ru": "Когда навык или мудрость накоплены годами практики или пережитых событий."
+  "c1427": {
+    "en": "Tricky or annoying, causing hassle, rather than hard to understand.",
+    "ru": "Хлопотный, неудобный, доставляет проблемы, а не трудный для понимания."
   },
   "c1429": {
-    "en": "Use when a person is not joking, or an offer or plan is real.",
-    "ru": "Когда человек не шутит, или предложение и план настоящие."
+    "en": "Serious as not joking, sincere, rather than dangerous or grave.",
+    "ru": "Серьёзный как не шутящий, искренний, а не опасный и не тяжёлый."
   },
-  "c1436": {
-    "en": "Use when a person is short of time and pressed to hurry.",
-    "ru": "Когда человеку не хватает времени и он вынужден торопиться."
+  "c1433": {
+    "en": "Intention: what someone means to do or say, rather than a word's meaning.",
+    "ru": "Намерение: что кто-то хочет сделать или сказать, а не значение слова."
   },
-  "c1440": {
-    "en": "Use for motion that goes up, like lifting, climbing or looking up.",
-    "ru": "Когда что-то движется вверх, например его поднимают, по нему лезут или туда смотрят."
+  "c1445": {
+    "en": "Again already, annoyed or surprised it is back so soon, rather than a neutral 'again'.",
+    "ru": "Опять уже, с досадой или удивлением, что так скоро, а не нейтральное «снова»."
   },
-  "c1455": {
-    "en": "Use for a chance meeting or coincidence with no plan behind it.",
-    "ru": "Когда встреча или совпадение произошли сами собой, без умысла."
+  "c1451": {
+    "en": "Emphatic 'terribly, extremely', rather than a neutral 'very'.",
+    "ru": "Эмоциональное «ужасно, чрезвычайно», а не нейтральное «очень»."
   },
   "c1471": {
-    "en": "Use for everyday exaggeration about weather, boredom, or an annoying person.",
-    "ru": "Когда в быту преувеличивают про погоду, скуку или надоедливого человека."
-  },
-  "c1485": {
-    "en": "Use for a plus point that puts someone ahead of others in a comparison.",
-    "ru": "Когда у кого-то есть плюс, который ставит его выше других."
+    "en": "Horrible, terrible, everyday, also 'terribly' as an intensifier, rather than truly shocking.",
+    "ru": "Ужасный, кошмарный, бытовое, также «ужасно» для усиления, а не по-настоящему шокирующий."
   },
   "c1498": {
-    "en": "Use when one item in a list stands out above the rest.",
-    "ru": "Когда один пункт из перечня выделяется сильнее остальных."
+    "en": "Especially, above all: one stands out, rather than 'usually'.",
+    "ru": "Особенно, прежде всего: выделяет одно, а не «обычно»."
   },
   "c1501": {
-    "en": "Use for an affair to be handled, a court case, a business or a shop.",
-    "ru": "Когда речь о деле, которое нужно решить: суд, бизнес или магазин."
+    "en": "A business, a matter or a case, also a shop as a business, rather than just a store.",
+    "ru": "Дело, предприятие, вопрос, также магазин как бизнес, а не просто лавка."
+  },
+  "c1511": {
+    "en": "Quality as how good something is, rather than a neutral trait.",
+    "ru": "Качество как уровень «насколько хорошо», а не нейтральная черта."
   },
   "c1517": {
-    "en": "Use for a short, hurried action squeezed into a spare minute.",
-    "ru": "Когда короткое дело делается наспех за свободную минуту."
+    "en": "Agility, nimbleness, or doing something quickly on the fly, rather than high velocity.",
+    "ru": "Проворность, шустрость или действие на скорую руку, а не физическая скорость на спидометре."
   },
-  "c1528": {
-    "en": "Use for a formal club with members, fees and a board.",
-    "ru": "Когда речь о клубе с членством, взносами и правлением."
+  "c1527": {
+    "en": "Broken, out of order, objects only, casual, rather than a person worn out.",
+    "ru": "Сломанный, не работает, только о вещах, разговорно, а не об уставшем человеке."
   },
   "c1531": {
-    "en": "Use when comparing to a named model or listing sample cases after a noun.",
-    "ru": "Когда сравнивают с названным образцом или перечисляют случаи после существительного."
-  },
-  "c1536": {
-    "en": "Use for any built structure, like an office, school or station, whether or not anyone lives there.",
-    "ru": "Когда речь о любом строении (офис, школа, вокзал), даже если в нём никто не живёт."
+    "en": "Comparing to a model or listing examples, rather than a role or a condition.",
+    "ru": "Сравнение с образцом или перечисление примеров, а не роль и не условие."
   },
   "c1548": {
-    "en": "Use for a set, form or list with no part missing.",
-    "ru": "Когда в наборе, анкете или списке не пропущено ни одной части."
+    "en": "Complete, nothing missing, also 'completely', neutral, rather than emphatic everyday.",
+    "ru": "Полный, без пропусков, также «полностью», нейтрально, а не эмоционально-разговорно."
   },
   "c1615": {
-    "en": "Use for a physical chunk that has been cut or broken off, or for counting single items.",
-    "ru": "Когда предмет отрезали или отломили, или считают поштучно."
+    "en": "A physical piece, or one item when counting, rather than a share of a whole.",
+    "ru": "Физический кусок или одна штука при счёте, а не доля целого."
   },
   "c1620": {
-    "en": "Use for a sound, smell, person or place that feels odd, unfamiliar or from another country.",
-    "ru": "Когда звук, запах, человек или место кажутся странными, незнакомыми или чужими."
+    "en": "Strange as unfamiliar or foreign, rather than just weird.",
+    "ru": "Странный как незнакомый или чужой, а не просто чудной."
   },
-  "c1635": {
-    "en": "Use for a lively, laughing mood that others can see and hear, or for bright colors and tunes.",
-    "ru": "Когда оживлённое, смешливое настроение видно и слышно окружающим, или про яркие цвета и мелодии."
+  "c1630": {
+    "en": "Love as a feeling, rather than a sign-off.",
+    "ru": "Любовь как чувство, а не подпись в сообщении."
   },
-  "c1644": {
-    "en": "Use for one sitting at the table at a set time: breakfast, lunch or dinner.",
-    "ru": "Когда речь об одном приёме пищи за столом в своё время: завтрак, обед или ужин."
-  },
-  "c1646": {
-    "en": "Use for the feeling on the tongue, or for personal style in clothes or music.",
-    "ru": "Когда речь об ощущении на языке или о личном вкусе в одежде и музыке."
+  "c1665": {
+    "en": "Simple, casual, can mean simple-minded, rather than a neutral 'plain'.",
+    "ru": "Простой, разговорно, может значить «простоватый», а не нейтральное «незамысловатый»."
   },
   "c1670": {
-    "en": "Use for a home in official contexts like rental ads, the housing market, or council paperwork.",
-    "ru": "Когда жильё фигурирует в объявлениях об аренде, на рынке недвижимости или в документах муниципалитета."
-  },
-  "c1689": {
-    "en": "Use when picking one option from several on offer, like a menu or a list.",
-    "ru": "Когда из нескольких вариантов, как в меню или списке, берут один."
+    "en": "A dwelling or residence in official or housing contexts, rather than everyday 'house'.",
+    "ru": "Жилище, жильё в официальном контексте, а не бытовое «дом»."
   },
   "c1693": {
-    "en": "Use for an abrupt event in news or written narration, such as a sudden death or storm.",
-    "ru": "Когда резкое событие описано в новостях или книге: внезапная смерть, буря."
-  },
-  "c1731": {
-    "en": "Use for the lowest inner surface of a glass, box, sea or river, or for soil.",
-    "ru": "Когда речь о самом низу стакана, коробки, моря или реки, либо о почве."
+    "en": "Highlights unexpectedness and disruption, rather than just the timing; can be an adjective.",
+    "ru": "Подчеркивает неожиданность и резкий слом ситуации, а не просто момент; может быть прилагательным."
   },
   "c1748": {
     "en": "Use for opening a spoken reply with a pause or hesitation.",
     "ru": "Когда устный ответ начинается с паузы или раздумья."
   },
   "c1751": {
-    "en": "Use when a person or task lacks a concrete item to get something done.",
-    "ru": "Когда человеку или делу не хватает конкретной вещи, чтобы что-то сделать."
+    "en": "Needed, necessary, the everyday word, rather than a formal necessity.",
+    "ru": "Нужный, необходимый, бытовое слово, а не книжная необходимость."
   },
   "c1768": {
     "en": "Use for an unknown moment anywhere in a lifetime, past or future.",
     "ru": "Когда момент неизвестен и может быть в любой точке жизни, в прошлом или будущем."
   },
   "c1769": {
-    "en": "Use when adding one more, stronger argument to a case.",
-    "ru": "Когда к доводам добавляется ещё один, более весомый."
+    "en": "'Moreover': adds a further, stronger argument, rather than a side remark.",
+    "ru": "«Более того»: добавляет ещё более сильный довод, а не замечание вскользь."
   },
   "c1780": {
-    "en": "Use when someone is in the middle of a specific task right now.",
-    "ru": "Когда человек прямо сейчас посреди конкретного дела."
-  },
-  "c1781": {
-    "en": "Use for a person who stands there wide-eyed after something they did not expect.",
-    "ru": "Когда человек стоит с широко раскрытыми глазами после того, чего не ждал."
-  },
-  "c1790": {
-    "en": "Use for a size or amount far beyond the normal scale.",
-    "ru": "Когда размер или количество далеко за пределами обычного."
+    "en": "Busy doing something, in the middle of a task, rather than hectic.",
+    "ru": "Занят делом, в процессе, а не суета."
   },
   "c1795": {
-    "en": "Use for the stretch of time between two events, in written or neutral narration.",
-    "ru": "Когда речь о промежутке времени между двумя событиями, в письменном или нейтральном рассказе."
-  },
-  "c1799": {
-    "en": "Use when someone moves slowly to avoid danger, damage, or mistakes.",
-    "ru": "Когда действуют медленно, чтобы избежать опасности, поломки или ошибки."
-  },
-  "c1800": {
-    "en": "Use for the real facts as a thing someone tells, hides, or finds out.",
-    "ru": "Когда речь о самих реальных фактах, которые можно рассказать, скрыть или выяснить."
+    "en": "Meanwhile or by now, neutral and written, rather than strictly one of the two.",
+    "ru": "Тем временем или уже к этому моменту, нейтрально и книжно, а не строго одно из двух."
   },
   "c1815": {
-    "en": "Use for a particular but unnamed one, or a fixed time or rule.",
-    "ru": "Когда речь о конкретном, но не названном предмете или об установленном сроке."
+    "en": "A certain, specific one, or determined, rather than 'surely'.",
+    "ru": "Определённый, некий, конкретный, а не «конечно»."
   },
   "c1818": {
-    "en": "Use for the final outcome after a long process or a series of changes.",
-    "ru": "Когда описывается итог долгого процесса или цепочки событий."
+    "en": "In the end, eventually: the outcome after a process, rather than relief or a last item.",
+    "ru": "В итоге, в конечном счёте: результат после процесса, а не облегчение и не последний пункт."
   },
   "c1826": {
-    "en": "Use for an everyday effect that one event or cause brings about.",
-    "ru": "Когда одно событие повлекло за собой другое, в обычной речи."
+    "en": "A consequence, an effect that follows from a cause, rather than an achieved result.",
+    "ru": "Последствие, следствие причины, а не достигнутый результат."
   },
   "c1832": {
-    "en": "Use when free area, capacity or outer space matters more than walls.",
-    "ru": "Когда важна свободная площадь, вместимость или космос, а не сами стены."
+    "en": "Space, room to move, or a room seen as space, rather than a specific room at home.",
+    "ru": "Пространство, место, или помещение как пространство, а не конкретная комната в доме."
   },
   "c1840": {
-    "en": "Use for someone who stays composed under stress, without panic.",
-    "ru": "Когда человек в стрессе не паникует и держит себя в руках."
+    "en": "Composed, keeping your cool (also a calm sea), rather than a quiet, unhurried place.",
+    "ru": "Собранный, не теряет самообладания (также спокойное море), а не тихое неспешное место."
   },
   "c1841": {
-    "en": "Use for an effortless task in neutral or written style, or for a chair or clothes that feel comfortable.",
-    "ru": "Когда задача без усилий описана нейтрально или письменно, либо кресло или одежда удобны телу."
+    "en": "Physical comfort/ease or a formal register, rather than casual simplicity.",
+    "ru": "Физический комфорт (удобство) или формальный регистр, а не просто разговорная легкость."
   },
   "c1842": {
-    "en": "Use for food as a resource: supply, aid, animal feed, labels and health.",
-    "ru": "Когда речь о пище как ресурсе: запасы, гуманитарная помощь, корм, этикетки и здоровье."
+    "en": "Food as a resource (supply, nutrition, aid), rather than your meal.",
+    "ru": "Пища как ресурс (запасы, питание, помощь), а не твоя еда."
   },
   "c1846": {
-    "en": "Use for a zone with set borders or a purpose, like a nature reserve or a field of work.",
-    "ru": "Когда у зоны есть границы или назначение: заповедник, сфера работы."
+    "en": "An area with borders or a purpose (region, zone, field), rather than surroundings.",
+    "ru": "Область с границами или назначением (регион, зона, сфера), а не окрестности."
   },
   "c1854": {
-    "en": "Use for a big title above a newspaper article, or a head in casual street talk.",
-    "ru": "Когда крупный заголовок над газетной статьёй или голова в грубоватом бытовом разговоре."
+    "en": "A cup (also 'head', informal) or a headline, rather than a small teacup.",
+    "ru": "Чашка (также «голова», разг.) или заголовок, а не маленькая чашечка."
+  },
+  "c1870": {
+    "en": "At least as a minimum number or amount, rather than a consolation.",
+    "ru": "Как минимум: число или количество, а не утешение."
   },
   "c1872": {
-    "en": "Use for a shocking event that startles people, like an accident or disaster.",
-    "ru": "Когда событие пугает и потрясает, как авария или катастрофа."
-  },
-  "c1873": {
-    "en": "Use for places, transport or records open to anyone, not private.",
-    "ru": "Когда место, транспорт или документ открыты для всех, а не частные."
-  },
-  "c1880": {
-    "en": "Use for the heavy feeling that follows a loss, a death or a breakup.",
-    "ru": "Когда речь о самом тяжёлом чувстве после потери, смерти или разрыва."
-  },
-  "c1887": {
-    "en": "Use for a lasting personal bond, such as a romantic partner or a steady business partner.",
-    "ru": "Когда двух людей или фирмы годами связывают личные, любовные или деловые отношения."
+    "en": "Awful, dreadful, stronger: a real shock or fright, rather than a mild complaint.",
+    "ru": "Ужасный, страшный, сильнее: настоящий шок или страх, а не лёгкая жалоба."
   },
   "c1892": {
-    "en": "Use for real danger or harm, such as an illness, injury, accident or crisis.",
-    "ru": "Когда есть реальная опасность или вред: болезнь, травма, авария, кризис."
+    "en": "Serious as grave (an illness, accident, problem), rather than not joking.",
+    "ru": "Серьёзный как тяжёлый (болезнь, авария, проблема), а не «не шучу»."
   },
   "c1906": {
-    "en": "Use for a casual aside that pops up mid-conversation.",
-    "ru": "Когда в живом разговоре вдруг вспоминается что-то попутное."
+    "en": "'By the way': a casual side remark, rather than a formal one or a stronger argument.",
+    "ru": "«Кстати»: разговорное замечание вскользь, а не книжное и не новый довод."
   },
   "c1913": {
-    "en": "Use when a state has been reached by the present moment, after time has passed.",
-    "ru": "Когда за прошедшее время к настоящему моменту уже сложилось новое положение дел."
+    "en": "By now: a state reached as time passed, rather than a parallel action.",
+    "ru": "К этому времени, уже: состояние наступило, а не параллельное действие."
   },
   "c1917": {
-    "en": "Use for the places right around a specific point, like a house, a town or a person.",
-    "ru": "Когда речь о местах вокруг конкретной точки: дома, города или человека."
-  },
-  "c1931": {
-    "en": "Use for the sample itself, or a person others copy.",
-    "ru": "Когда речь о самом образце или о человеке, которому подражают."
+    "en": "The surroundings around a point, your area, rather than a defined zone.",
+    "ru": "Окрестности вокруг точки, твоё окружение, а не очерченная зона."
   },
   "c1932": {
-    "en": "Use for a minimum requirement, or a small consolation when things go badly.",
-    "ru": "Когда задана нижняя граница требования или есть маленькое утешение в неудаче."
-  },
-  "c1942": {
-    "en": "Use for a large amount, sharp rise or vigorous effort, such as a big portion, a steep price increase or hard work.",
-    "ru": "Когда речь о большом количестве, резком росте или усилии: большая порция, сильное подорожание, упорная работа."
-  },
-  "c1952": {
-    "en": "Use for people, goods, news or trade that come from another country.",
-    "ru": "Когда человек, товар, новости или торговля пришли из другой страны."
+    "en": "At least as 'anyway, that is': a consolation or correction, rather than a minimum number.",
+    "ru": "По крайней мере как «хоть, то есть»: утешение или уточнение, а не минимальное число."
   },
   "c1955": {
-    "en": "Use for the act of intending one's words, or holding an opinion.",
-    "ru": "Когда человек говорит что-то с умыслом или держится своего мнения."
-  },
-  "c1957": {
-    "en": "Use when a level is noticeably higher than expected but still short of extreme, said casually.",
-    "ru": "Когда уровень заметно выше ожидаемого, но не крайний, в непринуждённой речи."
-  },
-  "c1995": {
-    "en": "Use when something matches the expected pattern or stereotype of its kind.",
-    "ru": "Когда что-то совпадает с привычным шаблоном или стереотипом своего типа."
+    "en": "To mean, or to hold a firm opinion, formal, rather than a plain 'think'.",
+    "ru": "Иметь в виду или твёрдо считать, книжно, а не просто «думать»."
   },
   "c2029": {
-    "en": "Use for something plain, with few parts and no frills.",
-    "ru": "Когда вещь, устройство или быт скромные, с минимумом деталей."
+    "en": "Simple, plain, uncomplicated, neutral, rather than casual.",
+    "ru": "Простой, незамысловатый, нейтрально, а не разговорно."
   },
   "c2044": {
-    "en": "Use when no second one exists anywhere, one of a kind.",
-    "ru": "Когда второго такого нет вообще, единственный в своём роде."
+    "en": "Adjective 'the only one' before a noun, rather than an adverb limiting an action.",
+    "ru": "Прилагательное «единственный» перед существительным, а не наречие-ограничение."
   },
-  "c2052": {
-    "en": "Use for an emphatic yes or a total no, with no exceptions at all.",
-    "ru": "Когда ответ категоричный, полное да или полное нет без исключений."
-  },
-  "c2053": {
-    "en": "Use for all time already gone, or for a person's whole history.",
-    "ru": "Когда речь обо всём ушедшем времени или о всей истории человека."
+  "c2061": {
+    "en": "If need be, as an option, rather than a guess.",
+    "ru": "При необходимости, как вариант, а не догадка."
   },
   "c2071": {
-    "en": "Use for one specific incident or instance, like an accident or a medical case.",
-    "ru": "Когда речь об отдельном происшествии или конкретном случае, например аварии или болезни пациента."
+    "en": "A case, an instance, also 'in that case', rather than the general state of things.",
+    "ru": "Случай, пример, также «в этом случае», а не общее положение дел."
   },
-  "c2075": {
-    "en": "Use for a deep, lasting pull toward someone or something far away or out of reach.",
-    "ru": "Когда сильно и долго тянет к далёкому или недоступному человеку, месту или вещи."
-  },
-  "c2090": {
-    "en": "Use for the chosen plan and rules an organization follows on a topic.",
-    "ru": "Когда организация выбрала план и правила действий по какому-то вопросу."
+  "c2078": {
+    "en": "Sad, gloomy or saddening (a story, a sight, a situation), rather than a person's feeling.",
+    "ru": "Печальный, унылый, вызывающий грусть (история, вид, ситуация), а не чувство человека."
   },
   "c2099": {
-    "en": "Use for a rural part of a country known for its own landscape, dialect or food.",
-    "ru": "Когда речь о сельской части страны со своим пейзажем, диалектом или кухней."
+    "en": "A countryside region with its own character, rather than a zone or a plot.",
+    "ru": "Местность, край со своим характером, а не зона и не участок."
+  },
+  "c2109": {
+    "en": "Of course, more formal and written, rather than everyday speech.",
+    "ru": "Разумеется, книжнее и на письме, а не в бытовой речи."
   },
   "c2114": {
-    "en": "Use for a personal decision that settles a dilemma or ends a doubt.",
-    "ru": "Когда человек сам решает дилемму и снимает сомнения."
-  },
-  "c2115": {
-    "en": "Use for a wound dressing, or a logical or causal tie between facts or events.",
-    "ru": "Когда речь о повязке на рану или о логической, причинной связи между фактами."
+    "en": "A decision as a choice made, everyday, rather than a formal resolution.",
+    "ru": "Решение как сделанный выбор, бытовое, а не официальное постановление."
   },
   "c2121": {
-    "en": "Use for a nation that shares a language and history, or for a crowd of ordinary folk.",
-    "ru": "Когда речь о нации с общим языком и историей или о толпе простых людей."
-  },
-  "c2127": {
-    "en": "Use when something follows from reasoning or cause and effect, so it makes sense.",
-    "ru": "Когда что-то следует из рассуждения или из причины и следствия и поэтому разумно."
-  },
-  "c2133": {
-    "en": "Use for something that applies to everyone or the whole, not one specific case.",
-    "ru": "Когда что-то касается всех или целого, без частностей."
+    "en": "A people, a nation or folk, rather than individuals.",
+    "ru": "Народ, нация, а не отдельные люди."
   },
   "c2134": {
-    "en": "Use for the reasoning faculty as a whole: common sense, intellect, or losing one's mind.",
-    "ru": "Когда речь о способности рассуждать в целом: здравый смысл, ум, сойти с ума."
+    "en": "Reason as the mind, intellect, rather than a cause or motive.",
+    "ru": "Разум, ум, рассудок, а не причина и не мотив."
   },
   "c2148": {
-    "en": "Use for a built-in quality of a person or thing, like a character trait or a property of a material.",
-    "ru": "Когда речь о внутреннем качестве человека или свойстве вещества и предмета."
-  },
-  "c2178": {
-    "en": "Use when war, a fight or a feud has ended between countries or people.",
-    "ru": "Когда между странами или людьми закончилась война, ссора или вражда."
+    "en": "A property or trait, any characteristic, rather than how good it is.",
+    "ru": "Свойство, черта, любая характеристика, а не уровень качества."
   },
   "c2205": {
-    "en": "Use for exactly one occurrence, or for a situation that is settled and cannot change.",
-    "ru": "Когда событие было ровно один раз или ситуация уже решена и не изменится."
+    "en": "Once, a single time, or 'once and for all', rather than 'some day' or 'once again'.",
+    "ru": "Однажды, один раз или «раз и навсегда», а не «когда-нибудь» и не «ещё раз»."
   },
   "c2211": {
-    "en": "Use for a second action running in parallel with another one, in everyday speech.",
-    "ru": "Когда в разговорной речи параллельно с одним действием идёт другое."
-  },
-  "c2230": {
-    "en": "Use for the feeling itself that fills someone or shows on a face, named as a thing.",
-    "ru": "Когда само чувство названо как вещь: оно охватывает человека или видно на лице."
+    "en": "Meanwhile: another action at the same time, everyday, rather than 'by now'.",
+    "ru": "Тем временем: другое действие одновременно, разговорно, а не «уже к этому моменту»."
   },
   "c2236": {
-    "en": "Use for a person, offer or price that draws people in and makes them want it.",
-    "ru": "Когда человек, предложение или цена притягивают к себе."
+    "en": "Appealing, it draws you in (a person, offer or price), rather than beauty itself.",
+    "ru": "Привлекательный, притягивает (человек, предложение, цена), а не красота как таковая."
   },
   "c2266": {
-    "en": "Use for any everyday aim, a target to hit, or a trip's destination.",
-    "ru": "Когда речь о личном стремлении, мишени для попадания или пункте назначения."
-  },
-  "c2267": {
-    "en": "Use for the end point of reasoning, research or a report.",
-    "ru": "Когда выводят итог из рассуждений, исследования или отчёта."
-  },
-  "c2268": {
-    "en": "Use for a box, text, or product holding something inside, or a mind grasping something hard.",
-    "ru": "Когда коробка, текст или продукт содержат что-то внутри или ум вмещает сложное."
+    "en": "Aim, goal, target, everyday, rather than a written objective.",
+    "ru": "Цель, мишень, бытовое, а не записанная задача."
   },
   "c2317": {
-    "en": "Use for parents raising a child at home: manners, values, discipline.",
-    "ru": "Когда родители растят ребёнка дома: манеры, ценности, дисциплина."
+    "en": "Upbringing by parents at home, rather than schooling.",
+    "ru": "Воспитание родителями дома, а не школьное обучение."
   },
   "c2331": {
-    "en": "Use for a formal decision taken by a board, council, government or meeting.",
-    "ru": "Когда совет, правительство или собрание официально что-то постановили."
-  },
-  "c2444": {
-    "en": "Use for pressure before an exam, a conflict, or a thriller climax, and for electrical voltage.",
-    "ru": "Когда давит ожидание перед экзаменом, ссорой или развязкой фильма, а также про напряжение в электросети."
+    "en": "A firm or official decision, a resolution, rather than any everyday choice.",
+    "ru": "Твёрдое или официальное решение, постановление, а не любой бытовой выбор."
   },
   "c2448": {
-    "en": "Use for a personal tip from a friend, parent or older relative in everyday life.",
-    "ru": "Когда совет даёт друг, родитель или старший родственник в обычной жизни."
+    "en": "Advice or counsel, personal and a bit literary, also a council, rather than a professional recommendation.",
+    "ru": "Совет, наставление, личное и чуть книжное, также совет как орган, а не профессиональная рекомендация."
+  },
+  "c2459": {
+    "en": "Slangy 'super, totally', casual speech only, rather than a neutral 'very'.",
+    "ru": "Разговорное «супер, жутко», только в живой речи, а не нейтральное «очень»."
   },
   "c2469": {
-    "en": "Use for a person agreeing to take on effort or a sacrifice for someone else.",
-    "ru": "Когда человек соглашается взять на себя усилие или жертву ради другого."
+    "en": "Willing, prepared to do something, rather than finished.",
+    "ru": "Готов в смысле «согласен» что-то сделать, а не закончил."
   },
-  "c2529": {
-    "en": "Use for a strong reaction that shows outwardly, like tears, anger or a rush of joy.",
-    "ru": "Когда реакция сильная и видна со стороны: слёзы, гнев, всплеск радости."
-  },
-  "c2561": {
-    "en": "Use for money left over after all costs are paid.",
-    "ru": "Когда после вычета всех расходов остаются деньги."
+  "c2523": {
+    "en": "Physical motion, or a social movement, rather than an organised action.",
+    "ru": "Физическое движение или общественное движение, а не организованная акция."
   },
   "c2576": {
-    "en": "Use when two people meet face to face, by chance or for the first time.",
-    "ru": "Когда люди встречаются лично, случайно или впервые."
+    "en": "An encounter, meeting someone, rather than a formal meeting with an agenda.",
+    "ru": "Встреча, знакомство с кем-то, а не собрание с повесткой."
   },
   "c2582": {
-    "en": "Use when a movement, route or activity continues past the current point, or one more point joins a list.",
-    "ru": "Когда движение, путь или занятие продолжается за текущую точку, или к списку добавляется ещё пункт."
+    "en": "Further on, or 'apart from that, for the rest', rather than 'or else'.",
+    "ru": "Дальше, или «в остальном, кроме того», а не «иначе, а то»."
   },
   "c2622": {
-    "en": "Use for one specific past moment brought back, or a notice that prompts an action.",
-    "ru": "Когда всплывает конкретный момент из прошлого или приходит напоминание о деле."
-  },
-  "c2623": {
-    "en": "Use for the feeling itself as a thing, in solemn or emotional speech.",
-    "ru": "Когда речь о самом чувстве как о предмете, в торжественной или эмоциональной речи."
-  },
-  "c2715": {
-    "en": "Use for a precise, narrowly defined detail in technical or formal talk.",
-    "ru": "Когда речь о точной, узко очерченной детали в техническом или официальном разговоре."
-  },
-  "c2780": {
-    "en": "Use for grasping how something works, or for sympathy toward someone else's situation.",
-    "ru": "Когда человек разобрался, как что-то устроено, или сочувствует чужому положению."
-  },
-  "c2872": {
-    "en": "Use for a visit, guest or result nobody planned or prepared for.",
-    "ru": "Когда визит, гость или результат никто не планировал и не ждал."
-  },
-  "c2878": {
-    "en": "Use for a fair price, demand, or decision that most people would accept.",
-    "ru": "Когда цена, требование или решение честные и приемлемые для большинства."
-  },
-  "c2899": {
-    "en": "Use for a formal grade of work, results or service at the top level.",
-    "ru": "Когда официальная оценка работы, результата или сервиса на высшем уровне."
-  },
-  "c2931": {
-    "en": "Use for a money deficit, a defeat in a match, or a death in the family.",
-    "ru": "Когда речь о денежном минусе, проигрыше в матче или смерти близкого."
+    "en": "A memory of something, or a reminder, rather than the ability to remember.",
+    "ru": "Воспоминание о чём-то или напоминание, а не способность помнить."
   },
   "c2934": {
-    "en": "Use for a single idea that pops into the head at a given moment.",
-    "ru": "Когда в голове мелькает одна отдельная идея в конкретный момент."
-  },
-  "c2961": {
-    "en": "Use for what a judge or court announces at the end of a case.",
-    "ru": "Когда судья или суд объявляет итог дела."
-  },
-  "c3045": {
-    "en": "Use for doing something without effort, or for convenience at home or in use, named as a thing.",
-    "ru": "Когда что-то делается без усилий или удобно в быту, названо как предмет."
+    "en": "A thought in your head, something you think, rather than a plan or a view.",
+    "ru": "Мысль в голове, то, о чём думаешь, а не план и не взгляд."
   },
   "c3048": {
-    "en": "Use when adding a clinching reason to an argument, or naming the last item in a list.",
-    "ru": "Когда приводится решающий довод в споре или называется последний пункт перечня."
+    "en": "After all: a reason everyone knows, rather than relief after waiting.",
+    "ru": "В конце концов, ведь: довод, который всем известен, а не облегчение после ожидания."
   },
-  "c3052": {
-    "en": "Use when an act is done on purpose and fully awake, not by accident or reflex.",
-    "ru": "Когда действие сделано намеренно и в ясном уме, не случайно и не машинально."
-  },
-  "c3079": {
-    "en": "Use for a concrete item that can be picked up, held or lost.",
-    "ru": "Когда речь о конкретном предмете, который можно взять в руки или потерять."
-  },
-  "c3083": {
-    "en": "Use for a trait, mistake or feeling that is typical of people, not for the being itself.",
-    "ru": "Когда описывается черта, ошибка или чувство, свойственные людям, а не само существо."
-  },
-  "c3143": {
-    "en": "Use for a room in formal writing, like a property listing or official report.",
-    "ru": "Когда помещение в доме описано официально: объявление о продаже, протокол, книжный текст."
-  },
-  "c3272": {
-    "en": "Use for a specific problem or obstacle that blocks progress, such as money or health trouble.",
-    "ru": "Когда речь о конкретной проблеме или препятствии, например с деньгами или здоровьем."
-  },
-  "c3643": {
-    "en": "Use when the outcome is sure, or income, a job or a safety net are guaranteed.",
-    "ru": "Когда исход точно известен или доход, работа и подстраховка гарантированы."
+  "c3389": {
+    "en": "Clear as bright, transparent or lucid, rather than obvious.",
+    "ru": "Ясный как светлый, прозрачный, а не очевидный."
   },
   "c4324": {
-    "en": "Use for a festive event or a free moment that lets something be done.",
-    "ru": "Когда есть праздник, торжество или свободный момент, удобный для действия."
+    "en": "An occasion or opportunity: a moment or event that allows something, rather than the odds.",
+    "ru": "Случай, повод: момент или событие, которое что-то позволяет, а не вероятность."
   },
   "c5247": {
-    "en": "Use for an objection placed mid-sentence in formal writing, such as reports or news articles.",
-    "ru": "Когда возражение стоит в середине фразы в официальном тексте, отчёте или статье."
+    "en": "However: a formal written contrast, rather than an everyday 'still'.",
+    "ru": "Однако: книжное противопоставление, а не разговорное «всё-таки»."
   },
   "c5249": {
-    "en": "Use for people living together side by side in everyday life.",
-    "ru": "Когда люди живут бок о бок и уживаются друг с другом в повседневности."
-  },
-  "c5252": {
-    "en": "Use for the way a person or animal habitually acts toward others, judged good or bad.",
-    "ru": "Когда оценивают, как человек или животное обычно ведёт себя с окружающими."
-  },
-  "c5255": {
-    "en": "Use when there is only a tiny amount, or something only just happened.",
-    "ru": "Когда чего-то совсем мало или что-то едва-едва получилось."
+    "en": "Society as people living together, the social side, rather than a system or a company.",
+    "ru": "Общество как люди, живущие вместе, а не система и не компания."
   },
   "c5257": {
-    "en": "Use for an organized campaign, protest, store promotion, or a burst of physical action.",
-    "ru": "Когда речь о кампании, протесте, распродаже в магазине или о динамичных событиях."
+    "en": "Action with energy: a campaign, protest, sale or action scene, rather than a calm pastime.",
+    "ru": "Действие с напором: кампания, протест, акция, экшен, а не спокойное занятие."
   },
-  "c5266": {
-    "en": "Use for an official step a government or organisation takes against a problem.",
-    "ru": "Когда власти или организация принимают официальный шаг против проблемы."
-  },
-  "c5278": {
-    "en": "Use when a fact suddenly dawns on someone, or a plan gets carried out in reality.",
-    "ru": "Когда до человека вдруг доходит факт или план воплощают в жизнь."
+  "c5269": {
+    "en": "The natural environment, ecology, rather than your surroundings.",
+    "ru": "Окружающая среда, экология, а не окрестности."
   },
   "c5279": {
-    "en": "Use for an inner drive of a person or group, like rest, food or company.",
-    "ru": "Когда человека или группу тянет изнутри: к отдыху, еде, общению."
-  },
-  "c5301": {
-    "en": "Use for the small group of people leading a club, school, company or city.",
-    "ru": "Когда группа людей руководит клубом, школой, фирмой или городом."
-  },
-  "c5303": {
-    "en": "Use for colleagues, firms or countries joining efforts on a shared task.",
-    "ru": "Когда коллеги, фирмы или страны вместе работают над общей задачей."
+    "en": "A need someone feels, a want, rather than an objective necessity.",
+    "ru": "Потребность, которую человек чувствует, а не объективная необходимость."
   },
   "c5304": {
-    "en": "Use for an unavoidable step in rules, medicine or official documents.",
-    "ru": "Когда шаг неизбежен по правилам, в медицине или в официальных документах."
+    "en": "Necessary, essential, formal, rather than an everyday 'needed'.",
+    "ru": "Необходимый, неизбежный, книжно, а не бытовое «нужно»."
   },
   "c5326": {
-    "en": "Use for near-total coverage: all or nothing, with rare exceptions.",
-    "ru": "Когда охват почти полный: все или ничего, за редкими исключениями."
+    "en": "Practically, virtually, with all / none / always, rather than 'nearly reached'.",
+    "ru": "Практически, фактически, со словами «все / никто / всегда», а не «чуть не достиг»."
   },
   "c5332": {
-    "en": "Use for an object, tip, or skill that helps get a task done.",
-    "ru": "Когда вещь, совет или навык помогает справиться с делом."
-  },
-  "c5355": {
-    "en": "Use for a decision, result or contract that is final and cannot be changed anymore.",
-    "ru": "Когда решение, результат или договор окончательные и больше не изменятся."
+    "en": "Useful, of real value or benefit, rather than just convenient.",
+    "ru": "Полезный, приносящий пользу, а не просто удобный."
   },
   "c5364": {
-    "en": "Use for a walkable plot of land, like a building site, campus or sports grounds.",
-    "ru": "Когда речь о участке земли под ногами: стройплощадке, кампусе, спортплощадке."
+    "en": "A plot of land you walk on (site, grounds, campus), rather than a region.",
+    "ru": "Участок земли (площадка, территория, кампус), а не регион."
   },
   "c5395": {
-    "en": "Use for a side remark in formal writing or speech.",
-    "ru": "Когда в официальном тексте или речи делается замечание в сторону."
+    "en": "Formal 'by the way, incidentally', rather than casual speech or a stronger argument.",
+    "ru": "Книжное «впрочем, кстати», а не разговорное и не новый довод."
   },
   "c5399": {
-    "en": "Use for the surrounding conditions under which something happens, like weather or a tough situation.",
-    "ru": "Когда речь о внешних условиях вокруг события, например погоде или тяжёлой обстановке."
+    "en": "A circumstance, the conditions around, rather than a physical state or fitness.",
+    "ru": "Обстоятельство, внешние условия, а не физическое состояние."
   },
   "c5400": {
-    "en": "Use when someone tells things apart or treats groups unequally.",
-    "ru": "Когда кто-то различает вещи или по-разному обращается с группами людей."
+    "en": "A distinction someone makes, telling apart, rather than the difference itself.",
+    "ru": "Различие, которое кто-то проводит, а не сама разница."
   },
-  "c5438": {
-    "en": "Use for a condition set by someone else, like an employer, a law or strikers.",
-    "ru": "Когда условие ставит кто-то другой: работодатель, закон или бастующие."
-  },
-  "c5446": {
-    "en": "Use for a conclusion drawn from signs or evidence, without seeing it happen.",
-    "ru": "Когда вывод сделан по признакам или чужим словам, без личного наблюдения."
-  },
-  "c5462": {
-    "en": "Use for harm to property or money that someone must repair or pay for, as in insurance claims.",
-    "ru": "Когда вещь или имущество пострадали и кто-то должен оплатить ремонт или возместить ущерб."
+  "c5478": {
+    "en": "Condition as a state or fitness, rather than the circumstances around.",
+    "ru": "Состояние, физическая форма, а не обстоятельства."
   },
   "c5497": {
-    "en": "Use for an objective written down in a plan, policy, or company strategy.",
-    "ru": "Когда цель официально записана в плане, программе или стратегии организации."
-  },
-  "c5511": {
-    "en": "Use for the single case that breaks a general rule.",
-    "ru": "Когда речь о единичном случае, который нарушает общее правило."
-  },
-  "c5521": {
-    "en": "Use for official rules or signs that allow one group and shut out everyone else.",
-    "ru": "Когда официальное правило или табличка допускает одну группу и никого больше."
-  },
-  "c5546": {
-    "en": "Use for a try whose success is uncertain or that already failed.",
-    "ru": "Когда результат попытки неизвестен заранее или она уже провалилась."
-  },
-  "c5557": {
-    "en": "Use for a proportion between two quantities, or how well two sides get along.",
-    "ru": "Когда сравнивают две величины в пропорции или оценивают, ладят ли две стороны."
-  },
-  "c5598": {
-    "en": "Use for distinguishing marks that help recognize or identify something among others.",
-    "ru": "Когда речь об отличительных признаках, по которым что-то узнают или опознают."
+    "en": "An objective set down in a plan or policy, rather than any aim.",
+    "ru": "Задача, записанная в плане или политике, а не любая цель."
   },
   "c5654": {
-    "en": "Use for one single object or unit taken complete, in formal language.",
-    "ru": "Когда один предмет или единое целое берётся полностью, в книжной речи."
-  },
-  "c5747": {
-    "en": "Use for a long-term picture of the future, like a company or party strategy.",
-    "ru": "Когда речь о долгосрочной картине будущего, например стратегии компании или партии."
+    "en": "Whole, entire, formal, rather than an everyday 'completely'.",
+    "ru": "Целый, весь, книжно, а не разговорное «полностью»."
   },
   "c5781": {
-    "en": "Use for a situation that leaves no other option.",
-    "ru": "Когда сама ситуация не оставляет другого выбора."
+    "en": "Necessity, no other option, rather than a felt need.",
+    "ru": "Необходимость, нет другого выхода, а не ощущаемая потребность."
   },
   "c5822": {
-    "en": "Use for a fixed habit or routine, the way things go by custom.",
-    "ru": "Когда речь о привычке или заведённом порядке."
-  },
-  "c5873": {
-    "en": "Use when someone has the right to give orders, as parents or the police do.",
-    "ru": "Когда у кого-то есть право приказывать, как у родителей или полиции."
-  },
-  "c6036": {
-    "en": "Use for a confident guess or prediction about something not yet checked.",
-    "ru": "Когда делается уверенное предположение о том, что ещё не проверено."
-  },
-  "c6057": {
-    "en": "Use for a scheme set up for a group, like a payment plan, subsidy or rule set.",
-    "ru": "Когда организация устанавливает схему для многих людей: рассрочку, льготу или порядок."
+    "en": "Usually by habit or custom, slightly formal, rather than 'in most cases'.",
+    "ru": "Обычно, по привычке или обычаю, чуть книжно, а не «в большинстве случаев»."
   },
   "c6063": {
-    "en": "Use for one specific deed someone performs, often in legal, medical or formal reports.",
-    "ru": "Когда речь об одном конкретном поступке или операции, часто в протоколе, законе или медицине."
+    "en": "One specific act someone performs, formal style, rather than an activity or a campaign.",
+    "ru": "Один конкретный поступок, в книжном стиле, а не занятие и не кампания."
   },
   "c6094": {
-    "en": "Use for a careful guess in formal writing, news, or polite letters.",
-    "ru": "Когда осторожное предположение звучит в официальном тексте, новостях или вежливом письме."
+    "en": "Formal 'perhaps, probably', in writing, rather than everyday 'maybe'.",
+    "ru": "Книжное «возможно, вероятно», на письме, а не бытовое «может быть»."
   },
   "c6105": {
-    "en": "Use before a noun for the other members of a group once some are set aside.",
-    "ru": "Когда из группы выделили часть, а описываешь всех остальных её членов."
-  },
-  "c6164": {
-    "en": "Use for conditions, timing, or a price that work in someone's favour.",
-    "ru": "Когда обстоятельства, момент или цена складываются удачно."
-  },
-  "c6594": {
-    "en": "Use when one person is set apart from the group or society, often in formal or cold speech.",
-    "ru": "Когда один человек противопоставлен группе или обществу, часто в официальной или отстранённой речи."
+    "en": "Before a noun: the remaining others, rather than 'the rest' as a noun.",
+    "ru": "Перед существительным: «остальные», а не «остаток» как существительное."
   },
   "c6706": {
-    "en": "Use for assessing whether a person, work or act is good or bad.",
-    "ru": "Когда человека, работу или поступок оценивают как хорошие или плохие."
+    "en": "A judgement (good or bad), or a verdict, rather than a plain opinion.",
+    "ru": "Суждение (хорошо или плохо) или приговор, а не просто мнение."
   },
   "c6751": {
-    "en": "Use for a section of a continuous area, period or text, like a stretch of road or part of the day.",
-    "ru": "Когда речь о куске сплошного пространства, отрезка времени или текста."
+    "en": "A section of something continuous (road, day, text), rather than a share or a piece.",
+    "ru": "Участок чего-то сплошного (дороги, дня, текста), а не доля и не кусок."
   },
   "c7744": {
-    "en": "Use when a person must face the formal fallout of a choice or broken rule.",
-    "ru": "Когда человеку приходится официально отвечать за своё решение или нарушение."
-  },
-  "c8247": {
-    "en": "Use for an item in a museum, an art collection, technology or scientific study.",
-    "ru": "Когда предмет стоит в музее, относится к искусству, технике или его изучают."
+    "en": "A consequence you must face, formal, rather than a neutral effect.",
+    "ru": "Последствие, с которым придётся считаться, книжно, а не нейтральное следствие."
   },
   "c8319": {
-    "en": "Use for a long-held view on principles, like politics, religion or upbringing.",
-    "ru": "Когда речь о давно сложившейся позиции по принципиальным вопросам: политика, религия, воспитание."
-  },
-  "c9302": {
-    "en": "Use for civilian matters outside the army and church, civil law, or a middle-class lifestyle.",
-    "ru": "Когда речь о гражданских делах вне армии и церкви, о гражданском праве или о мещанском быте."
+    "en": "A view or conception held on a matter, rather than a new idea.",
+    "ru": "Взгляд, понимание вопроса, а не новая идея."
   },
   "c9989": {
-    "en": "Use for the capacity to store and keep things, in a brain or a computer.",
-    "ru": "Когда речь о способности хранить информацию, у мозга или компьютера."
+    "en": "Memory as the ability to remember, rather than one memory.",
+    "ru": "Память как способность помнить, а не отдельное воспоминание."
   },
   "c10114": {
-    "en": "Use when someone is by themselves, or for an everyday limit in plain speech.",
-    "ru": "Когда человек без компании или речь о бытовом ограничении."
+    "en": "Everyday 'only' that limits who or what, rather than a time word or 'simply'.",
+    "ru": "Бытовое «только», ограничивающее кого или что, а не про время и не «просто»."
   },
-  "c10116": {
-    "en": "Use when a required piece is absent from a set, list, or package.",
-    "ru": "Когда в наборе, списке или комплекте недостаёт нужной части."
+  "c10127": {
+    "en": "A direction, 'away / towards', with a movement verb, rather than 'gone'.",
+    "ru": "Направление «туда, прочь» с глаголом движения, а не «исчез»."
   },
   "c10128": {
-    "en": "Use when a statement, story, or rumor matches what really happened.",
-    "ru": "Когда утверждение, история или слух совпадают с тем, что было на самом деле."
-  },
-  "c10134": {
-    "en": "Use for the mood that fills a place or event, like a party, café or room.",
-    "ru": "Когда настроение исходит от места или события: вечеринки, кафе, комнаты."
-  },
-  "c10139": {
-    "en": "Use for linking two clauses with actions happening at once or in contrast.",
-    "ru": "Когда соединяют две части предложения с одновременными или противопоставленными действиями."
+    "en": "True, matching the facts or reality, rather than correct by a rule.",
+    "ru": "Правдивый, соответствует фактам, а не правильный по правилу."
   },
   "c10140": {
-    "en": "Use for a warning about the consequence if a condition is not met.",
-    "ru": "Когда предупреждают о последствии, если условие не выполнить."
+    "en": "Different after the verb ('it is different'), or 'differently', rather than 'another' before a noun.",
+    "ru": "«Другой» после глагола («всё иначе») или «по-другому», а не «другой» перед существительным."
   },
   "c10141": {
-    "en": "Use for a single item or piece, or a bare minimum count.",
-    "ru": "Когда речь об одном предмете или минимальном количестве."
-  },
-  "c10142": {
-    "en": "Use for a situation that only looks a certain way but is not real.",
-    "ru": "Когда что-то лишь выглядит так, а на деле неправда."
+    "en": "Bookish or Flemish 'only', or 'single' before a noun, rather than the everyday word.",
+    "ru": "Книжное или фламандское «только», либо «одиночный» перед существительным, а не бытовое слово."
   },
   "c10144": {
-    "en": "Use when something is ordinary and uncomplicated, with no fuss.",
-    "ru": "Когда всё обычно и просто, без лишних сложностей."
+    "en": "'Simply', nothing special about it, rather than a time word or a limit.",
+    "ru": "«Просто», без особых причин, а не про время и не ограничение."
   },
   "c10148": {
-    "en": "Use for society as a system of institutions, jobs and economy, or for a company or firm.",
-    "ru": "Когда речь о системе общества с её институтами, работой и экономикой или о компании, фирме."
+    "en": "Society as a system (institutions, economy), also a company, rather than people living together.",
+    "ru": "Общество как система (институты, экономика), также компания, а не люди вместе."
   },
   "c10149": {
-    "en": "Use when one whole action, with its own doer, must happen ahead of another action (starts a full clause).",
-    "ru": "Когда одно полное действие со своим исполнителем должно произойти до другого действия (вводит целое придаточное)."
-  },
-  "c10150": {
-    "en": "Use for casual spoken chat with friends about doing something right then.",
-    "ru": "Когда в непринуждённом разговоре с друзьями дело делается тут же."
+    "en": "Before + a full clause with its own verb, rather than a noun or time.",
+    "ru": "Перед тем как + придаточное со своим глаголом, а не существительное или время."
   },
   "c10151": {
-    "en": "Use for meeting an official standard, like a passing school grade or a formal report.",
-    "ru": "Когда уровень проходит по официальной норме, например оценка на экзамене или формальный отчёт."
-  },
-  "c10152": {
-    "en": "Use when two options are both rejected in one statement.",
-    "ru": "Когда в одной фразе отвергаются сразу оба варианта."
+    "en": "Sufficient, formal, also a passing grade, rather than everyday 'enough'.",
+    "ru": "Достаточный, книжно, также оценка «удовлетворительно», а не бытовое «хватит»."
   },
   "c10153": {
-    "en": "Use when telling a story out loud and everything changes in a moment.",
-    "ru": "Когда в устном рассказе всё вдруг меняется в один миг."
-  },
-  "c10154": {
-    "en": "Use when someone is aware that a specific event or fact took place, often in formal or legal settings.",
-    "ru": "Когда человек осведомлён о конкретном факте или событии, часто в официальной или правовой обстановке."
-  },
-  "c10155": {
-    "en": "Use before a named obstacle that failed to stop an action.",
-    "ru": "Когда перед словом стоит препятствие, которое не помешало действию."
+    "en": "Marks the exact turning point in time (\"all at once\"), not dramatic surprise; adverb only.",
+    "ru": "Фиксирует сам момент резкого перелома («и тут в один миг»), а не драматичность; только наречие."
   },
   "c10156": {
-    "en": "Use for a whole group of people in formal speech or writing.",
-    "ru": "Когда целая группа людей упоминается в официальной или книжной речи."
+    "en": "All people, formal or written, rather than everyday 'all of them'.",
+    "ru": "Все люди, официально или книжно, а не разговорное «все»."
   },
   "c10157": {
-    "en": "Use for a cause that is an event or circumstance, not someone's motive.",
-    "ru": "Когда причина — событие или обстоятельство, а не чей-то мотив."
+    "en": "Because of an event or circumstance (a cause), rather than someone's reason.",
+    "ru": "Из-за события или обстоятельства (причина), а не чьё-то основание."
   },
-  "c10159": {
-    "en": "Use for a formal, signed contract that is legally binding on both sides.",
-    "ru": "Когда стороны подписали формальный договор с юридической силой."
+  "c10196": {
+    "en": "Later today, in a little while, rather than in the coming weeks.",
+    "ru": "Попозже сегодня, через некоторое время, а не в ближайшие недели."
   },
-  "c10160": {
-    "en": "Use when a shield, guard or rule stands between someone and a danger.",
-    "ru": "Когда щит, охрана или закон заслоняют кого-то от опасности."
+  "c10757": {
+    "en": "After + a full clause with its own verb, rather than a noun.",
+    "ru": "После того как + придаточное со своим глаголом, а не существительное."
   }
 }
