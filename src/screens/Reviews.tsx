@@ -1,6 +1,6 @@
 import type { Card, Enrichment } from "../types";
-import type { Session } from "../review/session";
-import { Quiz } from "../components/Quiz";
+import type { ReviewTask, Session } from "../review/session";
+import { Quiz, type QuizQuestion } from "../components/Quiz";
 
 interface ReviewsProps {
   session: Session;
@@ -11,9 +11,10 @@ interface ReviewsProps {
   onComplete: () => void;
   onQuit: () => void;
   onRemoveDirection?: (cardId: string) => void;
+  question?: (task: ReviewTask, card: Card) => QuizQuestion;
 }
 
-export function Reviews({ session, getCard, getEnrichment, onWordCleared, previewLevelUp, onComplete, onQuit, onRemoveDirection }: ReviewsProps) {
+export function Reviews({ session, getCard, getEnrichment, onWordCleared, previewLevelUp, onComplete, onQuit, onRemoveDirection, question }: ReviewsProps) {
   return (
     <div className="screen session-screen">
       <Quiz
@@ -25,6 +26,7 @@ export function Reviews({ session, getCard, getEnrichment, onWordCleared, previe
         onComplete={onComplete}
         onQuit={onQuit}
         onRemoveDirection={onRemoveDirection}
+        question={question}
       />
     </div>
   );

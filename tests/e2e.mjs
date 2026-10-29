@@ -212,7 +212,7 @@ try {
   await page.waitForSelector(".action-card");
 
   console.log("FEATURE 6 — learning paths:");
-  const pathNames = await page.$$eval(".path-section .level-meta strong", (els) => els.map((e) => e.textContent));
+  const pathNames = await page.$$eval('.path-section button[aria-label$=" words"] .level-meta strong', (els) => els.map((e) => e.textContent));
   check(
     JSON.stringify(pathNames) === JSON.stringify(["TaalCompleet", "Inburgering Online", "Nederlands in gang", "HPMOR"]),
     `dashboard lists the four paths in order (${pathNames.join(" / ")})`,

@@ -174,6 +174,15 @@ describe("export/import", () => {
     expect(imported).toEqual(data);
   });
 
+  it("adds grammar as a top-level field without changing the vocab part", () => {
+    const data = setState(loadProgress(), "card1", sampleState);
+    const grammar = { version: 1 as const, drills: { perfectum: { states: { c1: sampleState } } } };
+    const { grammar: exported, ...vocab } = JSON.parse(exportProgress(data, grammar));
+    expect(exported).toEqual(grammar);
+    expect(vocab).toEqual(JSON.parse(exportProgress(data)));
+    expect(importProgress(exportProgress(data, grammar))).toEqual(data);
+  });
+
   it("rejects invalid JSON", () => {
     expect(() => importProgress("{garbage")).toThrow(/Invalid JSON/);
   });

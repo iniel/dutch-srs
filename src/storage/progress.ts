@@ -1,6 +1,7 @@
 import type { AppSettings, Direction, ItemKey, ProgressData, ReviewState } from "../types";
 import { DIRECTIONS } from "../types";
 import cardRedirects from "../data/cardRedirects.json";
+import type { GrammarData } from "./grammar";
 
 export const STORAGE_KEY = "dutch-srs-progress-v1";
 export const CURRENT_VERSION = 2;
@@ -34,7 +35,7 @@ function mergeSettings(partial: Partial<AppSettings> | undefined): AppSettings {
   return { ...DEFAULT_SETTINGS, ...(partial ?? {}) };
 }
 
-function isReviewState(value: unknown): value is ReviewState {
+export function isReviewState(value: unknown): value is ReviewState {
   if (typeof value !== "object" || value === null) return false;
   const s = value as Record<string, unknown>;
   return (
@@ -77,6 +78,21 @@ function moreAdvanced(a: ReviewState, b: ReviewState): ReviewState {
   return order > 0 ? b : a;
 }
 
+export function redirectStates(
+  states: Record<string, ReviewState>,
+  redirects: Record<string, string>,
+): Record<string, ReviewState> {
+  const moved = (id: string) => Object.prototype.hasOwnProperty.call(redirects, id);
+  const out: Record<string, ReviewState> = {};
+  for (const [id, st] of Object.entries(states)) if (!moved(id)) out[id] = st;
+  for (const [id, st] of Object.entries(states)) {
+    if (!moved(id)) continue;
+    const target = redirects[id];
+    out[target] = out[target] ? moreAdvanced(out[target], st) : st;
+  }
+  return out;
+}
+
 // Cards merged into another card are deleted from the deck; their saved progress follows them
 // so a word studied on either card keeps the furthest progress reached.
 export function redirectCardIds(data: ProgressData, redirects: Record<string, string>): ProgressData {
@@ -85,13 +101,7 @@ export function redirectCardIds(data: ProgressData, redirects: Record<string, st
   if (!Object.keys(data.states).some(moved) && !data.lessonQueue.some(moved) && !Object.keys(disabled).some(moved)) {
     return data;
   }
-  const states: Record<string, ReviewState> = {};
-  for (const [id, st] of Object.entries(data.states)) if (!moved(id)) states[id] = st;
-  for (const [id, st] of Object.entries(data.states)) {
-    if (!moved(id)) continue;
-    const target = redirects[id];
-    states[target] = states[target] ? moreAdvanced(states[target], st) : st;
-  }
+  const states = redirectStates(data.states, redirects);
   const disabledDirections: Record<string, Direction[]> = {};
   for (const [id, dirs] of Object.entries(disabled)) if (!moved(id)) disabledDirections[id] = dirs;
   for (const [id, dirs] of Object.entries(disabled)) {
@@ -203,8 +213,8 @@ export function updateSettings(data: ProgressData, partial: Partial<AppSettings>
   return { ...data, settings: { ...data.settings, ...partial } };
 }
 
-export function exportProgress(data: ProgressData): string {
-  return JSON.stringify(data, null, 2);
+export function exportProgress(data: ProgressData, grammar?: GrammarData): string {
+  return JSON.stringify(grammar ? { ...data, grammar } : data, null, 2);
 }
 
 export function importProgress(json: string): ProgressData {

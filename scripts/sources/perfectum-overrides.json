@@ -1,0 +1,21 @@
+{
+  "participle": {
+    "doorrijden": "doorgereden",
+    "illustreren": "geïllustreerd",
+    "inperken": "ingeperkt",
+    "karakteriseren": "gekarakteriseerd",
+    "paardrijden": "paardgereden",
+    "uitmaken": "uitgemaakt",
+    "verslappen": "verslapt",
+    "visualiseren": "gevisualiseerd",
+    "zorgen": "gezorgd"
+  },
+  "exclude": {
+    "zullen": "no perfectum",
+    "gevallen": "archaic, confusable with the participle of vallen",
+    "kondigen": "not a standalone verb (aankondigen)",
+    "bakenen": "not a standalone verb (afbakenen)",
+    "perken": "not a standalone verb (beperken)",
+    "beelden": "not a standalone verb (afbeelden, verbeelden)"
+  }
+}

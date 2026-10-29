@@ -22,6 +22,16 @@ interface QuizProps {
    * live session itself. Only wired for reviews (not lessons).
    */
   onRemoveDirection?: (cardId: string) => void;
+  question?: (task: ReviewTask, card: Card) => QuizQuestion;
+}
+
+export interface QuizQuestion {
+  prompt: string;
+  detail?: string;
+  label: string;
+  accepted: string[];
+  reveal: string[];
+  fuzzy: boolean;
 }
 
 type Phase = "input" | "wrong";
@@ -29,7 +39,7 @@ type Phase = "input" | "wrong";
 const dirLabel = (dir: ReviewTask["dir"]) =>
   dir === "nl_en" ? "Dutch → English" : "English → Dutch";
 
-export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLevelUp, onComplete, onQuit, onRemoveDirection }: QuizProps) {
+export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLevelUp, onComplete, onQuit, onRemoveDirection, question }: QuizProps) {
   const [value, setValue] = useState("");
   const [phase, setPhase] = useState<Phase>("input");
   const [flash, setFlash] = useState(false);
@@ -69,12 +79,14 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
   const card = getCard(task.cardId);
   if (!card) return null;
 
-  const prompt = task.dir === "nl_en" ? card.dutch : card.english.join(" / ");
+  const custom = question?.(task, card);
+  const prompt = custom ? custom.prompt : task.dir === "nl_en" ? card.dutch : card.english.join(" / ");
   // Only this card's own answers are accepted. Collisions (same Dutch / same
   // English across cards) are NOT pooled — each item must be answered precisely;
   // hints (src/data/hints.ts) steer the learner toward the wanted sense.
-  const accepted = acceptedAnswers(card, task.dir);
-  const reveal = task.dir === "nl_en" ? card.english : [card.dutch];
+  const accepted = custom ? custom.accepted : acceptedAnswers(card, task.dir);
+  const reveal = custom ? custom.reveal : task.dir === "nl_en" ? card.english : [card.dutch];
+  const fuzzy = custom ? custom.fuzzy : task.dir === "nl_en";
 
   // Disambiguation hint for colliding words. A hand-curated hint (src/data/hints.ts)
   // wins and is shown inline; otherwise fall back to a direction-safe example
@@ -82,11 +94,12 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
   // Dutch example with the answer word blanked out (a cloze that gives context
   // without revealing the answer); when it can't be blanked reliably it falls
   // back to the English example so the Dutch answer isn't given away.
-  const manualHint = getHint(card.id, task.dir);
+  const manualHint = custom ? undefined : getHint(card.id, task.dir);
   const enr = getEnrichment?.(card.id);
   const cloze = task.dir === "en_nl" ? dutchCloze(card, enr) : null;
-  const example =
-    task.dir === "nl_en"
+  const example = custom
+    ? undefined
+    : task.dir === "nl_en"
       ? card.exampleNl ?? enr?.examples?.find((e) => e.nl)?.nl
       : cloze ?? card.exampleEn ?? enr?.examples?.find((e) => e.en)?.en;
   const exampleLang: "nl" | "en" = task.dir === "nl_en" || cloze ? "nl" : "en";
@@ -153,7 +166,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
       return;
     }
     if (value.trim() === "") return;
-    const { correct } = checkAnswer(value, accepted, task!.dir === "nl_en");
+    const { correct } = checkAnswer(value, accepted, fuzzy);
     // EN→NL prompts never speak on open; play the Dutch answer once submitted (right or wrong).
     // Skip it when a correct answer is about to advance to an NL→EN card: that next card
     // speaks the Dutch word on open and would cut this answer off mid-utterance.
@@ -222,12 +235,16 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
         <div className="quiz-word">
           <div className="prompt-label-row">
             <div className="prompt-label">
-              {dirLabel(task.dir)} · {card.type}
-              {card.pos && card.pos.toLowerCase() !== card.type.toLowerCase()
-                ? ` · ${card.pos}`
-                : ""}
+              {custom ? custom.label : (
+                <>
+                  {dirLabel(task.dir)} · {card.type}
+                  {card.pos && card.pos.toLowerCase() !== card.type.toLowerCase()
+                    ? ` · ${card.pos}`
+                    : ""}
+                </>
+              )}
             </div>
-            {task.dir === "nl_en" && onRemoveDirection && (
+            {task.dir === "nl_en" && onRemoveDirection && !custom && (
               <button
                 type="button"
                 className="quiz-remove-dir"
@@ -256,6 +273,7 @@ export function Quiz({ session, getCard, getEnrichment, onWordCleared, previewLe
               </button>
             )}
           </div>
+          {custom?.detail && <div className="quiz-detail">{custom.detail}</div>}
           {!wrong && manualHint && <div className="quiz-hint manual">{manualHint}</div>}
           {!wrong && !manualHint && example && (
             showHint ? (

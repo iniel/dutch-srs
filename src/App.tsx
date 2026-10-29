@@ -15,8 +15,13 @@ import {
   answerWord,
   type CustomProgressTarget,
 } from "./srs/schedule";
-import { buildLessonQueue, buildReviewQueue, createSession, singleWordLessonTasks } from "./review/session";
-import type { Session, WordResult } from "./review/session";
+import { buildLessonQueue, buildReviewQueue, createSession, shuffleInterleaved, singleWordLessonTasks } from "./review/session";
+import type { ReviewTask, Session, WordResult } from "./review/session";
+import { drillStates, loadGrammar, saveGrammar, setDrillState, type GrammarData } from "./storage/grammar";
+import { useGrammarDrill } from "./data/loadGrammar";
+import { drillSummary, grammarLessonIds, grammarLessonTasks, grammarReviewTasks } from "./grammar/queue";
+import { perfectumAccepted, perfectumReveal } from "./grammar/drill";
+import type { QuizQuestion } from "./components/Quiz";
 import type { Card } from "./types";
 import { useCards } from "./data/cards";
 import { useEnrichment } from "./data/loadEnrichment";
@@ -35,13 +40,13 @@ import {
   pathRingPct,
   wordsToUnlockNext,
 } from "./paths/engine";
-import { Dashboard, type PathSummary } from "./screens/Dashboard";
+import { Dashboard, type GrammarRowSummary, type PathSummary } from "./screens/Dashboard";
 import { Reviews } from "./screens/Reviews";
 import { Lessons } from "./screens/Lessons";
 import { Summary } from "./screens/Summary";
 import { Settings } from "./screens/Settings";
 import { Search } from "./screens/Search";
-import { WordList, pathSections } from "./screens/WordList";
+import { GroupedWordList, WordList, drillGroups, pathSections } from "./screens/WordList";
 import { GeneralProgress } from "./screens/GeneralProgress";
 import { Reader } from "./screens/Reader";
 import { Library } from "./screens/Library";
@@ -53,6 +58,8 @@ import type { BookDef } from "./reader/types";
 import { WordCard } from "./components/WordCard";
 import { registerPwa } from "./pwa/registerPwa";
 
+type SessionKind = "vocab" | "grammar";
+
 export type Screen =
   | "dashboard"
   | "reviews"
@@ -61,6 +68,7 @@ export type Screen =
   | "settings"
   | "search"
   | "wordlist"
+  | "grammarlist"
   | "progress"
   | "worddetail"
   | "library"
@@ -79,8 +87,11 @@ export function App() {
   const [screen, setScreen] = useState<Screen>("dashboard");
   const [session, setSession] = useState<Session | null>(null);
   const [sessionMode, setSessionMode] = useState<"review" | "lesson">("review");
+  const [sessionKind, setSessionKind] = useState<SessionKind>("vocab");
+  const [grammar, setGrammar] = useState<GrammarData>(() => loadGrammar());
+  const grammarDrill = useGrammarDrill();
   const [lessonCards, setLessonCards] = useState<Card[]>([]);
-  const [summary, setSummary] = useState<{ results: WordResult[]; mode: "review" | "lesson" } | null>(null);
+  const [summary, setSummary] = useState<{ results: WordResult[]; mode: "review" | "lesson"; kind: SessionKind } | null>(null);
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [detailFrom, setDetailFrom] = useState<Screen>("dashboard");
   const [listPathId, setListPathId] = useState<string | null>(null);
@@ -234,6 +245,7 @@ export function App() {
     if (tasks.length === 0) return;
     setSession(createSession(tasks));
     setSessionMode("review");
+    setSessionKind("vocab");
     setSessionFrom("dashboard");
     setScreen("reviews");
   }
@@ -258,12 +270,13 @@ export function App() {
     enterLessonSession(tasks);
   }
 
-  function enterLessonSession(tasks: ReturnType<typeof singleWordLessonTasks>) {
+  function enterLessonSession(tasks: ReviewTask[], kind: SessionKind = "vocab") {
     if (!index) return;
     const ids = [...new Set(tasks.map((t) => t.cardId))];
     setLessonCards(ids.map((id) => index.byId.get(id)!).filter(Boolean));
     setSession(createSession(tasks));
     setSessionMode("lesson");
+    setSessionKind(kind);
     setSessionFrom(screen === "reader" || (screen === "worddetail" && detailFrom === "reader") ? "reader" : "dashboard");
     setScreen("lessons");
   }
@@ -336,8 +349,86 @@ export function App() {
     });
   }
 
+  function persistGrammar(next: GrammarData) {
+    setGrammar(next);
+    saveGrammar(next);
+  }
+
+  const grammarItems = useMemo(
+    () => new Map((grammarDrill?.items ?? []).map((item) => [item.cardId, item])),
+    [grammarDrill],
+  );
+
+  function grammarQuestion(task: ReviewTask, card: Card): QuizQuestion {
+    const item = grammarItems.get(task.cardId)!;
+    return {
+      prompt: item.infinitive,
+      detail: card.english.join(", "),
+      label: grammarDrill!.name,
+      accepted: perfectumAccepted(item),
+      reveal: [perfectumReveal(item)],
+      fuzzy: false,
+    };
+  }
+
+  function startGrammarLessons() {
+    if (!index || !grammarDrill) return;
+    const ids = grammarLessonIds(
+      grammarDrill,
+      drillStates(grammar, grammarDrill.id),
+      progress.states,
+      progress.settings.lessonBatchSize,
+    ).filter((id) => index.byId.has(id));
+    if (ids.length === 0) return;
+    enterLessonSession(grammarLessonTasks(ids), "grammar");
+  }
+
+  function startGrammarReviews() {
+    if (!index || !grammarDrill) return;
+    const t = now();
+    const due = grammarReviewTasks(grammarDrill, drillStates(grammar, grammarDrill.id), t).filter((task) =>
+      index.byId.has(task.cardId),
+    );
+    if (due.length === 0) return;
+    setSession(createSession(shuffleInterleaved(due, t)));
+    setSessionMode("review");
+    setSessionKind("grammar");
+    setSessionFrom("dashboard");
+    setScreen("reviews");
+  }
+
+  function applyGrammarReview(cardId: string, passed: boolean) {
+    if (!grammarDrill) return;
+    const drillId = grammarDrill.id;
+    setGrammar((prev) => {
+      const cur = drillStates(prev, drillId)[cardId] ?? newLessonState();
+      const next = setDrillState(prev, drillId, cardId, answerWord(cur, passed, now()));
+      saveGrammar(next);
+      return next;
+    });
+  }
+
+  function previewGrammarLevelUp(cardId: string, passed: boolean): number | undefined {
+    if (!grammarDrill) return undefined;
+    const cur = drillStates(grammar, grammarDrill.id)[cardId] ?? newLessonState();
+    const { stage } = answerWord(cur, passed, now());
+    return stage > cur.stage ? stage : undefined;
+  }
+
+  function applyGrammarLesson(cardId: string) {
+    if (!grammarDrill) return;
+    const drillId = grammarDrill.id;
+    setGrammar((prev) => {
+      const existing = drillStates(prev, drillId)[cardId];
+      if (existing && existing.stage > 0) return prev;
+      const next = setDrillState(prev, drillId, cardId, startLesson(newLessonState(), now()));
+      saveGrammar(next);
+      return next;
+    });
+  }
+
   function finishSession() {
-    if (session) setSummary({ results: session.results(), mode: sessionMode });
+    if (session) setSummary({ results: session.results(), mode: sessionMode, kind: sessionKind });
     setSession(null);
     setScreen("summary");
   }
@@ -372,6 +463,22 @@ export function App() {
       };
     });
   }, [paths, progress, unlockAll]);
+
+  const grammarSummary = useMemo<GrammarRowSummary | undefined>(
+    () =>
+      grammarDrill
+        ? { name: grammarDrill.name, ...drillSummary(grammarDrill, drillStates(grammar, grammarDrill.id), progress.states, now()) }
+        : undefined,
+    [grammarDrill, grammar, progress],
+  );
+
+  const grammarListGroups = useMemo(
+    () =>
+      screen === "grammarlist" && index && grammarDrill
+        ? drillGroups(index, grammarDrill, drillStates(grammar, grammarDrill.id), progress.states)
+        : [],
+    [screen, index, grammarDrill, grammar, progress],
+  );
 
   const readingSummary = useMemo(() => {
     if (!allBooks.length) return undefined;
@@ -414,6 +521,10 @@ export function App() {
           onSettings={() => setScreen("settings")}
           onSearch={() => openSearch()}
           onWords={() => setScreen("progress")}
+          grammar={grammarSummary}
+          onStartGrammarLessons={startGrammarLessons}
+          onStartGrammarReviews={startGrammarReviews}
+          onOpenGrammar={() => setScreen("grammarlist")}
           reading={readingSummary}
           onOpenLibrary={() => setScreen("library")}
         />
@@ -437,6 +548,15 @@ export function App() {
           showCefr={!["inburgering", "nederlands-in-gang"].includes(listPath.id)}
           onOpen={(id) => openWordCard(id, "wordlist")}
           onTogglePin={toggleLessonPin}
+          onBack={() => setScreen("dashboard")}
+        />
+      )}
+      {screen === "grammarlist" && grammarDrill && (
+        <GroupedWordList
+          title={grammarDrill.name}
+          groups={grammarListGroups}
+          showCefr={false}
+          onOpen={(id) => openWordCard(id, "grammarlist")}
           onBack={() => setScreen("dashboard")}
         />
       )}
@@ -470,10 +590,13 @@ export function App() {
           session={session}
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
-          onWordCleared={applyWordReview}
-          previewLevelUp={previewLevelUp}
+          onWordCleared={sessionKind === "grammar" ? applyGrammarReview : applyWordReview}
+          previewLevelUp={sessionKind === "grammar" ? previewGrammarLevelUp : previewLevelUp}
           onComplete={finishSession}
-          onRemoveDirection={(id) => persist(setDirectionDisabled(progress, id, "nl_en", true))}
+          onRemoveDirection={
+            sessionKind === "grammar" ? undefined : (id) => persist(setDirectionDisabled(progress, id, "nl_en", true))
+          }
+          question={sessionKind === "grammar" ? grammarQuestion : undefined}
           onQuit={() => {
             setSession(null);
             setScreen("dashboard");
@@ -486,13 +609,18 @@ export function App() {
           lessonCards={lessonCards}
           getCard={(id) => index.byId.get(id)}
           getEnrichment={getEnrichment}
-          onWordCleared={applyWordLesson}
+          onWordCleared={sessionKind === "grammar" ? applyGrammarLesson : applyWordLesson}
           onComplete={finishSession}
-          onRemoveDirection={(id) => persist(setDirectionDisabled(progress, id, "nl_en", true))}
-          disabledDirections={progress.disabledDirections}
-          onToggleDirection={(id, enabled) =>
-            persist(setDirectionDisabled(progress, id, "nl_en", !enabled))
+          onRemoveDirection={
+            sessionKind === "grammar" ? undefined : (id) => persist(setDirectionDisabled(progress, id, "nl_en", true))
           }
+          disabledDirections={progress.disabledDirections}
+          onToggleDirection={
+            sessionKind === "grammar"
+              ? undefined
+              : (id, enabled) => persist(setDirectionDisabled(progress, id, "nl_en", !enabled))
+          }
+          question={sessionKind === "grammar" ? grammarQuestion : undefined}
           onQuit={() => {
             setSession(null);
             setScreen(sessionFrom);
@@ -505,6 +633,14 @@ export function App() {
           mode={summary.mode}
           getCard={(id) => index.byId.get(id)}
           onDone={() => setScreen(sessionFrom)}
+          getAnswer={
+            summary.kind === "grammar"
+              ? (id) => {
+                  const item = grammarItems.get(id);
+                  return item ? perfectumReveal(item) : "";
+                }
+              : undefined
+          }
         />
       )}
       {screen === "library" && (
@@ -555,6 +691,8 @@ export function App() {
         <Settings
           progress={progress}
           onChange={persist}
+          grammar={grammar}
+          onGrammarChange={persistGrammar}
           onBack={() => setScreen("dashboard")}
         />
       )}

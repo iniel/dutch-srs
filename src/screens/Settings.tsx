@@ -6,14 +6,17 @@ import {
   resetProgress,
   updateSettings,
 } from "../storage/progress";
+import { importGrammar, resetGrammar, type GrammarData } from "../storage/grammar";
 
 interface SettingsProps {
   progress: ProgressData;
   onChange: (next: ProgressData) => void;
+  grammar: GrammarData;
+  onGrammarChange: (next: GrammarData) => void;
   onBack: () => void;
 }
 
-export function Settings({ progress, onChange, onBack }: SettingsProps) {
+export function Settings({ progress, onChange, grammar, onGrammarChange, onBack }: SettingsProps) {
   const [msg, setMsg] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -22,7 +25,7 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
   }
 
   function download() {
-    const blob = new Blob([exportProgress(progress)], { type: "application/json" });
+    const blob = new Blob([exportProgress(progress, grammar)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -33,8 +36,11 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
 
   async function doImport(file: File) {
     try {
-      const data = importProgress(await file.text());
+      const json = await file.text();
+      const data = importProgress(json);
+      const importedGrammar = importGrammar(json);
       onChange(data);
+      if (importedGrammar) onGrammarChange(importedGrammar);
       setMsg("Progress imported.");
     } catch (e) {
       setMsg(e instanceof Error ? e.message : "Import failed.");
@@ -114,6 +120,7 @@ export function Settings({ progress, onChange, onBack }: SettingsProps) {
           onClick={() => {
             if (confirm("Reset all progress? This cannot be undone.")) {
               onChange(resetProgress());
+              onGrammarChange(resetGrammar());
               setMsg("Progress reset.");
             }
           }}

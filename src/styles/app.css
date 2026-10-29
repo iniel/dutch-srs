@@ -155,20 +155,65 @@
   font-weight: 600;
 }
 
-/* Per-path dashboard section: ring/browse button + its own Lessons button */
+.dash-section-title {
+  margin: 10px 0 -6px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: var(--text);
+}
+.topbar + .dash-section-title {
+  margin-top: 0;
+}
+.dash-subtitle {
+  margin: 0 0 -8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
 .path-section {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: stretch;
+  gap: 8px;
 }
-.path-lessons {
-  flex-direction: row;
-  align-items: baseline;
-  gap: 10px;
-  padding: 12px 16px;
+.path-section + .path-section {
+  margin-top: -8px;
 }
-.path-lessons .action-count {
-  font-size: 1.6rem;
+.path-section > .level-summary {
+  flex: 1;
+  min-width: 0;
+  gap: 12px;
+}
+.path-section .level-meta {
+  min-width: 0;
+}
+.path-section .level-meta strong,
+.path-section .level-meta span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.path-actions {
+  display: flex;
+  gap: 6px;
+  flex: none;
+}
+.path-actions .action-card {
+  min-height: 0;
+  width: 64px;
+  padding: 8px 4px;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.path-actions .action-count {
+  font-size: 1.3rem;
+  letter-spacing: -0.5px;
+}
+.path-actions .action-name {
+  font-size: 0.7rem;
 }
 
 /* Dashboard action cards */
@@ -391,6 +436,11 @@
   letter-spacing: -1px;
   word-break: break-word;
   line-height: 1.05;
+}
+.quiz-detail {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.85;
 }
 .quiz-hint-btn {
   margin-top: 14px;
@@ -872,6 +922,13 @@
 .lesson-meaning {
   font-size: 1.05rem;
   color: var(--text-strong);
+}
+.lesson-answer {
+  margin-top: 14px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--accent);
 }
 .lesson-phon {
   font-size: 0.85rem;

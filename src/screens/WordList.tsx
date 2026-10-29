@@ -1,11 +1,14 @@
-import { useMemo } from "react";
-import type { ProgressData } from "../types";
+import { useMemo, type ReactNode } from "react";
+import type { ProgressData, ReviewState } from "../types";
 import type { CardIndex } from "../data/cards";
 import { STAGE_COLORS, stageCategory, stageLabel } from "../srs/stages";
 import { MIN_REVIEW_STAGE, BURNED_STAGE } from "../srs/stages";
 import { cefrBadge, LEVEL_PASS_THRESHOLD } from "../srs/levels";
 import { unitProgress } from "../paths/engine";
 import type { LearningPath } from "../paths/types";
+import type { GrammarDrill } from "../grammar/types";
+import { grammarLessonIds } from "../grammar/queue";
+import { perfectumReveal } from "../grammar/drill";
 
 export interface WordSection {
   id: string;
@@ -42,29 +45,75 @@ interface ListItem {
   stage: number;
 }
 
-function buildStageGroups(index: CardIndex, progress: ProgressData, cardIds: string[]) {
-  const byStage = new Map<number, ListItem[]>();
-  for (const id of cardIds) {
-    const card = index.byId.get(id);
-    if (!card) continue;
-    const stage = progress.states[id]?.stage ?? 0;
-    const items = byStage.get(stage) ?? [];
-    items.push({
-      cardId: id,
-      dutch: card.dutch,
-      english: card.english.join(", "),
-      cefr: cefrBadge(card),
-      stage,
-    });
-    byStage.set(stage, items);
-  }
-  for (const items of byStage.values()) {
-    items.sort((a, b) => a.dutch.localeCompare(b.dutch));
-  }
-  return byStage;
+export interface WordGroup {
+  key: string;
+  label: string;
+  color: string;
+  items: ListItem[];
 }
 
 const STAGE_ORDER_WITH_UNSTARTED = [...STAGE_ORDER, NOT_STARTED_STAGE];
+
+function stageGroups(items: ListItem[]): WordGroup[] {
+  const byStage = new Map<number, ListItem[]>();
+  for (const item of items) {
+    byStage.set(item.stage, [...(byStage.get(item.stage) ?? []), item]);
+  }
+  return STAGE_ORDER_WITH_UNSTARTED.flatMap((stage) => {
+    const group = byStage.get(stage);
+    if (!group) return [];
+    group.sort((a, b) => a.dutch.localeCompare(b.dutch));
+    return [{
+      key: String(stage),
+      label: stage === NOT_STARTED_STAGE ? "Not started" : stageLabel(stage),
+      color: STAGE_COLORS[stageCategory(stage)],
+      items: group,
+    }];
+  });
+}
+
+function pathGroups(index: CardIndex, progress: ProgressData, cardIds: string[]): WordGroup[] {
+  return stageGroups(
+    cardIds.flatMap((id) => {
+      const card = index.byId.get(id);
+      if (!card) return [];
+      return [{
+        cardId: id,
+        dutch: card.dutch,
+        english: card.english.join(", "),
+        cefr: cefrBadge(card),
+        stage: progress.states[id]?.stage ?? 0,
+      }];
+    }),
+  );
+}
+
+export function drillGroups(
+  index: CardIndex,
+  drill: GrammarDrill,
+  grammarStates: Record<string, ReviewState>,
+  vocabStates: Record<string, ReviewState>,
+): WordGroup[] {
+  const rows = new Map(
+    drill.items.flatMap((item) => {
+      const card = index.byId.get(item.cardId);
+      if (!card) return [];
+      const row: ListItem = {
+        cardId: item.cardId,
+        dutch: item.infinitive,
+        english: `${perfectumReveal(item)} · ${card.english.join(", ")}`,
+        stage: grammarStates[item.cardId]?.stage ?? 0,
+      };
+      return [[item.cardId, row] as const];
+    }),
+  );
+  const started = [...rows.values()].filter((row) => row.stage >= MIN_REVIEW_STAGE);
+  const notStarted = grammarLessonIds(drill, grammarStates, vocabStates, Infinity).flatMap((id) => rows.get(id) ?? []);
+  return [
+    ...stageGroups(started),
+    { key: "unstarted", label: "Not started", color: STAGE_COLORS.lesson, items: notStarted },
+  ].filter((group) => group.items.length > 0);
+}
 
 interface WordRowProps {
   item: ListItem;
@@ -72,11 +121,11 @@ interface WordRowProps {
   showCefr: boolean;
   pinned: boolean;
   onOpen: (cardId: string) => void;
-  onTogglePin: (cardId: string) => void;
+  onTogglePin?: (cardId: string) => void;
 }
 
 function WordRow({ item, color, showCefr, pinned, onOpen, onTogglePin }: WordRowProps) {
-  const canQueue = item.stage === NOT_STARTED_STAGE;
+  const canQueue = onTogglePin !== undefined && item.stage === NOT_STARTED_STAGE;
 
   return (
     <div className="word-row-wrap">
@@ -107,6 +156,62 @@ function WordRow({ item, color, showCefr, pinned, onOpen, onTogglePin }: WordRow
   );
 }
 
+interface GroupedWordListProps {
+  title: string;
+  groups: WordGroup[];
+  showCefr?: boolean;
+  pinnedIds?: ReadonlySet<string>;
+  onOpen: (cardId: string) => void;
+  onTogglePin?: (cardId: string) => void;
+  onBack: () => void;
+  children?: ReactNode;
+}
+
+export function GroupedWordList({
+  title,
+  groups,
+  showCefr = true,
+  pinnedIds,
+  onOpen,
+  onTogglePin,
+  onBack,
+  children,
+}: GroupedWordListProps) {
+  return (
+    <div className="screen wordlist">
+      <header className="topbar">
+        <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
+        <h1>{title}</h1>
+        <span className="topbar-spacer" />
+      </header>
+
+      {children}
+
+      {groups.map((group) => (
+        <section key={group.key} className="wordlist-section">
+          <h2 style={{ color: group.color }}>
+            {group.label} <span className="wordlist-count">{group.items.length}</span>
+          </h2>
+          <ul className="word-rows">
+            {group.items.map((item) => (
+              <li key={item.cardId}>
+                <WordRow
+                  item={item}
+                  color={group.color}
+                  showCefr={showCefr}
+                  pinned={pinnedIds?.has(item.cardId) ?? false}
+                  onOpen={onOpen}
+                  onTogglePin={onTogglePin}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  );
+}
+
 export function WordList({
   index,
   progress,
@@ -127,7 +232,7 @@ export function WordList({
   const pinnedIds = useMemo(() => new Set(progress.lessonQueue), [progress.lessonQueue]);
 
   const groups = useMemo(
-    () => buildStageGroups(index, progress, selected?.cardIds ?? []),
+    () => pathGroups(index, progress, selected?.cardIds ?? []),
     [index, progress, selected],
   );
 
@@ -141,13 +246,15 @@ export function WordList({
   const toLevelUp = Math.max(0, Math.ceil(prog.total * LEVEL_PASS_THRESHOLD) - prog.gurued);
 
   return (
-    <div className="screen wordlist">
-      <header className="topbar">
-        <button className="icon-btn" onClick={onBack} aria-label="back">‹</button>
-        <h1>{title}</h1>
-        <span className="topbar-spacer" />
-      </header>
-
+    <GroupedWordList
+      title={title}
+      groups={groups}
+      showCefr={showCefr}
+      pinnedIds={pinnedIds}
+      onOpen={onOpen}
+      onTogglePin={onTogglePin}
+      onBack={onBack}
+    >
       <select
         className="wordlist-select"
         value={selected?.id ?? ""}
@@ -165,35 +272,7 @@ export function WordList({
       </div>
 
       {total === 0 && <div className="word-empty">No words in this section.</div>}
-
-      {STAGE_ORDER_WITH_UNSTARTED.map((stage) => {
-        const items = groups.get(stage);
-        if (!items || items.length === 0) return null;
-        const color = STAGE_COLORS[stageCategory(stage)];
-        return (
-          <section key={stage} className="wordlist-section">
-            <h2 style={{ color }}>
-              {stage === NOT_STARTED_STAGE ? "Not started" : stageLabel(stage)}{" "}
-              <span className="wordlist-count">{items.length}</span>
-            </h2>
-            <ul className="word-rows">
-              {items.map((item) => (
-                <li key={item.cardId}>
-                  <WordRow
-                    item={item}
-                    color={color}
-                    showCefr={showCefr}
-                    pinned={pinnedIds.has(item.cardId)}
-                    onOpen={onOpen}
-                    onTogglePin={onTogglePin}
-                  />
-                </li>
-              ))}
-            </ul>
-          </section>
-        );
-      })}
-    </div>
+    </GroupedWordList>
   );
 }
 

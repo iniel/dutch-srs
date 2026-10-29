@@ -32,7 +32,7 @@ function isApprentice(stage: number): boolean {
 // the queue. Uses rank-offset: en_nl gets rank r, nl_en gets rank r+gap, where
 // gap = min(floor(N/3), 8). This bounds the maximum distance between a word's two
 // directions to gap+N tasks, ensuring partial-session progress even when interrupted.
-function shuffleInterleaved(tasks: ReviewTask[], seed: number): ReviewTask[] {
+export function shuffleInterleaved(tasks: ReviewTask[], seed: number): ReviewTask[] {
   const rand = seededRandom(seed);
 
   const byCard = new Map<string, ReviewTask[]>();

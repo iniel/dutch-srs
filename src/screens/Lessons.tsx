@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import type { Card, Direction, Enrichment } from "../types";
-import { directionEnabled } from "../types";
-import type { Session } from "../review/session";
+import { directionEnabled, itemKey } from "../types";
+import type { ReviewTask, Session } from "../review/session";
 import { speak, pronounce, canPronounce } from "../util/speak";
-import { Quiz } from "../components/Quiz";
+import { Quiz, type QuizQuestion } from "../components/Quiz";
 import { WordDetail } from "../components/WordDetail";
 import { ProgressBar } from "../components/ProgressBar";
 
@@ -18,9 +18,10 @@ interface LessonsProps {
   onRemoveDirection?: (cardId: string) => void;
   disabledDirections?: Record<string, Direction[]>;
   onToggleDirection?: (cardId: string, enabled: boolean) => void;
+  question?: (task: ReviewTask, card: Card) => QuizQuestion;
 }
 
-export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit, onRemoveDirection, disabledDirections, onToggleDirection }: LessonsProps) {
+export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCleared, onComplete, onQuit, onRemoveDirection, disabledDirections, onToggleDirection, question }: LessonsProps) {
   const [phase, setPhase] = useState<"info" | "quiz">("info");
   const [idx, setIdx] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -37,6 +38,7 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
     const e = getEnrichment?.(card.id);
     const isLast = idx === lessonCards.length - 1;
     const phon = [e?.ipa, e?.syllables].filter(Boolean).join(" · ");
+    const q = question?.({ key: itemKey(card.id, "nl_en"), cardId: card.id, dir: "nl_en" }, card);
     return (
       <div className="screen lesson-screen">
         <header className="topbar">
@@ -49,9 +51,9 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
 
         <div className="lesson-scroll" ref={scrollRef}>
           <div className="lesson-hero">
-            <div className="lesson-eyebrow">{card.type} · {card.group}</div>
+            <div className="lesson-eyebrow">{q ? q.label : `${card.type} · ${card.group}`}</div>
             <div className="lesson-word">
-              {card.dutch}
+              {q ? q.prompt : card.dutch}
               {canPronounce(e?.audioUrl) && (
                 <button
                   type="button"
@@ -63,16 +65,17 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
                 </button>
               )}
             </div>
-            <div className="lesson-meaning">{card.english.join(", ")}</div>
-            {phon && <div className="lesson-phon">{phon}</div>}
-            {card.notes && <div className="feedback-notes">{card.notes}</div>}
+            <div className="lesson-meaning">{q ? q.detail : card.english.join(", ")}</div>
+            {q && <div className="lesson-answer">{q.reveal.join(", ")}</div>}
+            {!q && phon && <div className="lesson-phon">{phon}</div>}
+            {!q && card.notes && <div className="feedback-notes">{card.notes}</div>}
           </div>
 
-          <hr className="hairline" />
+          {!q && <hr className="hairline" />}
 
-          <WordDetail enrichment={e} hidePhonetics />
+          {!q && <WordDetail enrichment={e} hidePhonetics />}
 
-          {onToggleDirection && (
+          {onToggleDirection && !q && (
             <div className="word-srs-row">
               <span className="word-srs-label">Dutch → English</span>
               <div className="word-srs-actions">
@@ -115,6 +118,7 @@ export function Lessons({ session, lessonCards, getCard, getEnrichment, onWordCl
         onComplete={onComplete}
         onQuit={onQuit}
         onRemoveDirection={onRemoveDirection}
+        question={question}
       />
     </div>
   );

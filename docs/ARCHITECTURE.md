@@ -107,6 +107,15 @@ A **path** is just an ordered progression view over that shared data.
   finally clears — matches WaniKani: miss it once and it demotes even if you later get it right.)
 - Lessons: `startLesson(...)` → the item enters review at stage 1.
 
+## Grammar drills (`src/grammar/`, `src/storage/grammar.ts`)
+- **Separate storage key** `dutch-srs-grammar-v1` (`{ version, drills: { [id]: { states } } }`), never inside
+  `ProgressData` — `coerceProgress` would drop it. Same `ReviewState` + `src/srs/schedule.ts` SRS, keyed by
+  `cardId`; card redirects apply on load/import. Export adds an optional top-level `grammar` field; reset clears both.
+- **Gate + live ordering:** a verb is eligible once its vocab card is at stage ≥ 1. Lessons are ordered by
+  vocab stage (descending), ties by file order — recomputed at each start, nothing stored.
+- **Exact match:** `QuizQuestion.fuzzy = false`, so `heeft gewoont` ≠ `heeft gewoond` (d/t is the point).
+- One `nl_en` task per item. `App.tsx` tracks `sessionKind` (`vocab` | `grammar`) to route quiz callbacks.
+
 ## State & routing
 
 `App.tsx` holds `progress`, `screen`, `session`, `sessionMode`, `lessonCards`, `summary`. Screen is a

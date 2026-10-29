@@ -6,11 +6,12 @@ interface SummaryProps {
   mode: "review" | "lesson";
   getCard: (id: string) => Card | undefined;
   onDone: () => void;
+  getAnswer?: (cardId: string) => string;
 }
 
 const DIR_ARROW: Record<string, string> = { nl_en: "NL→EN", en_nl: "EN→NL" };
 
-export function Summary({ results, mode, getCard, onDone }: SummaryProps) {
+export function Summary({ results, mode, getCard, onDone, getAnswer }: SummaryProps) {
   const total = results.length;
   const correct = results.filter((r) => r.passed).length;
   const pct = total === 0 ? 100 : Math.round((correct / total) * 100);
@@ -39,9 +40,9 @@ export function Summary({ results, mode, getCard, onDone }: SummaryProps) {
               const arrows = r.missedDirs.map((d) => DIR_ARROW[d]).join(" ");
               return (
                 <li key={r.cardId}>
-                  <span className="missed-dir">{arrows}</span>
+                  {!getAnswer && <span className="missed-dir">{arrows}</span>}
                   <span className="missed-dutch">{card.dutch}</span>
-                  <span className="missed-en">{card.english.join(", ")}</span>
+                  <span className="missed-en">{getAnswer ? getAnswer(r.cardId) : card.english.join(", ")}</span>
                 </li>
               );
             })}

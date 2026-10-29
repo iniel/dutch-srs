@@ -236,6 +236,11 @@ glosses, articles, notes, POS, add senses, whatever. Keep the schema, and **neve
 `c{highest+1}`. Then `npm run enrich` / `npm run a2:idlists` if you touched anything they key on, `npm run
 build`, commit `cards.json` + `dist/`, deploy.
 
+## Perfectum dataset (`public/grammar/perfectum.json`)
+Hand-owned, like `cards.json`: fix rows (aux, participle) by editing the file. `npm run build:perfectum`
+only **appends** verbs not yet present (existing rows are never reordered). Row order is just the lesson
+tie-breaker. Aux comes from `scripts/sources/perfectum-aux.json` (default `hebben`).
+
 ## Adding a different deck / language
 Adjust the field mapping in `convert-anki.mjs` (`fieldIndex` + the `get(...)` calls) to match the new
 deck's model field names, and the `DECKS` array. The rest of the app is language-agnostic except UI
