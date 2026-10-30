@@ -27,7 +27,9 @@ describe("shipped Nederlands in gang data", () => {
       english.splice(english.lastIndexOf(gloss), 1);
     }
     expect(createHash("sha256").update(JSON.stringify(prefix)).digest("hex")).toBe(baseline.cardsSha256);
-    const io = paths.paths.find(p => p.id === "inburgering");
+    const inburgering = paths.paths.find(p => p.id === "inburgering");
+    const ioTiers = ["easy", "medium", "hard"];
+    const io = { ...inburgering, difficulties: inburgering.difficulties.filter(d => ioTiers.includes(d.key)) };
     expect(createHash("sha256").update(JSON.stringify(io)).digest("hex")).toBe(baseline.inburgeringSha256);
   });
   it("accounts for every source note and reconstructs all 18 chapters", () => {

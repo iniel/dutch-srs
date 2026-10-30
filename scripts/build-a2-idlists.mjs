@@ -50,7 +50,7 @@ if (problems.length) { console.log(`\nUNRESOLVED (${problems.length}):`); proble
 
 // --- public/paths.json: the "Inburgering Online" progression path ---
 // The runtime app treats these as an ordered set of difficulty tiers. A card is
-// kept only in its LOWEST tier (easy < medium < hard) so the three arrays are
+// kept only in its LOWEST tier (in IO_TIERS then EXTRA_TIERS order) so the arrays are
 // disjoint — no card is drilled twice within one path. The app chunks each tier
 // into units of `unitSize` at load time.
 const IO_TIERS = [
@@ -58,11 +58,19 @@ const IO_TIERS = [
   { key: "medium", label: "Medium" },
   { key: "hard", label: "Hard" },
 ];
+const EXTRA_TIERS = [
+  { key: "common-verbs", label: "Common verbs" },
+  { key: "separable-verbs", label: "Separable verbs" },
+  { key: "adjectives", label: "Adjectives" },
+  { key: "prepositions", label: "Prepositions" },
+];
+const extra = JSON.parse(readFileSync(join(root, "scripts/sources/inburgering-extra.json"), "utf8"));
+const tierIds = { ...extra, ...out };
 const acrossTiers = new Set();
 const difficulties = [];
-for (const { key, label } of IO_TIERS) {
+for (const { key, label } of [...IO_TIERS, ...EXTRA_TIERS]) {
   const kept = [];
-  for (const id of out[key] ?? []) {
+  for (const id of tierIds[key] ?? []) {
     if (acrossTiers.has(id)) continue; // keep-lowest across tiers
     acrossTiers.add(id);
     kept.push(id);

@@ -2,11 +2,12 @@ import type { ReviewState } from "../types";
 import { STAGE_INTERVALS_MS, BURNED_STAGE, MIN_REVIEW_STAGE } from "./stages";
 
 /** The only stages a never-started word can be promoted to manually. */
-export type CustomProgressTarget = "guru" | "master";
+export type CustomProgressTarget = "guru" | "master" | "enlightened";
 
 const CUSTOM_PROGRESS_STAGE: Record<CustomProgressTarget, number> = {
   guru: 5, // Guru I
   master: 7,
+  enlightened: 8,
 };
 
 export function newLessonState(): ReviewState {
@@ -40,7 +41,7 @@ export function setCustomProgress(
 ): ReviewState {
   // `target` normally comes from a typed UI callback, but this is a public
   // boundary: never turn unexpected runtime input into an invalid SRS state.
-  if (state.stage !== 0 || (target !== "guru" && target !== "master")) return state;
+  if (state.stage !== 0 || !Object.hasOwn(CUSTOM_PROGRESS_STAGE, target)) return state;
 
   const stage = CUSTOM_PROGRESS_STAGE[target];
   return {

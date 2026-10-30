@@ -118,6 +118,10 @@ const HINTS: Record<string, string> = {
   // stuk — adjective vs noun
   "c1527:nl_en": "adjective",
   "c1615:nl_en": "piece / individual item",
+  "c478:nl_en": "body · noun",
+  "c10793:nl_en": "adjective",
+  "c10793:en_nl": "not rich",
+  "c2704:en_nl": "shabby · pitiful",
 
   // ---- Inburgering Online · Medium 1: near-translation contrasts.
   // These cards do not have duplicate Dutch prompts. The hint distinguishes

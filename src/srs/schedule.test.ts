@@ -34,6 +34,7 @@ describe("setCustomProgress", () => {
   it.each([
     ["guru", 5],
     ["master", 7],
+    ["enlightened", 8],
   ] as const)("sets an unstarted word to %s (stage %i) on its normal schedule", (target, stage) => {
     const s = setCustomProgress(newLessonState(), target, NOW);
     expect(s).toEqual({

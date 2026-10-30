@@ -86,8 +86,10 @@ still emits the `easy.ids.json` / `medium.ids.json` / `hard.ids.json` tier lists
 `Card.level` at runtime). Two shapes are supported, distinguished by the presence of `units`:
 
 - **Difficulty tiers** — `{ id, name, unitSize, difficulties: [{ key, label, cardIds }] }`. Used by
-  **Inburgering Online** (`id: "inburgering"`), emitted by `npm run a2:idlists`. The three tiers are made
-  **disjoint** (walking easy → medium → hard, each id is kept only in its lowest tier), and the app chunks
+  **Inburgering Online** (`id: "inburgering"`), emitted by `npm run a2:idlists`. Easy/medium/hard come from `a2-mapping.json`,
+  then four hand-pinned levels from `scripts/sources/inburgering-extra.json` (common verbs, separable verbs,
+  adjectives, prepositions). The tiers are made
+  **disjoint** (walking them in order, each id is kept only in its lowest tier), and the app chunks
   each tier into units of `unitSize` at load time.
 - **Explicit units** — `{ id, name, units: [{ id, label, cardIds }] }`. Used by **Nederlands in gang**
   (`id: "nederlands-in-gang"`, units `nederlands-in-gang:chapter:1` … `:18`), emitted by `npm run import:nig`.

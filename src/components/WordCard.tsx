@@ -127,6 +127,16 @@ export function WordCard({ card, enrichment, progress, paths, onBack, onLearnNow
             >
               Master
             </button>
+            <button
+              type="button"
+              className="sheet-action"
+              onClick={() => {
+                onSetCustomProgress(card.id, "enlightened");
+                setShowCustomProgressSheet(false);
+              }}
+            >
+              Enlightened
+            </button>
             <button type="button" className="sheet-cancel" onClick={() => setShowCustomProgressSheet(false)}>
               Cancel
             </button>
