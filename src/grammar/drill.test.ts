@@ -11,7 +11,7 @@ const item = (infinitive: string, aux: GrammarItem["aux"], participle: string): 
 
 describe("perfectumAccepted", () => {
   it("accepts both persons of hebben", () => {
-    expect(perfectumAccepted(item("werken", "hebben", "gewerkt"))).toEqual(["heeft gewerkt", "hebben gewerkt"]);
+    expect(perfectumAccepted(item("werken", "hebben", "gewerkt"))).toEqual(["heeft gewerkt", "hebben gewerkt", "gewerkt"]);
   });
 
   it("accepts both persons of zijn", () => {
@@ -20,7 +20,7 @@ describe("perfectumAccepted", () => {
 
   it("accepts all four forms when both auxiliaries are possible", () => {
     expect(perfectumAccepted(item("lopen", "hebben/zijn", "gelopen")).sort()).toEqual(
-      ["hebben gelopen", "heeft gelopen", "is gelopen", "zijn gelopen"],
+      ["gelopen", "hebben gelopen", "heeft gelopen", "is gelopen", "zijn gelopen"],
     );
   });
 
@@ -28,7 +28,18 @@ describe("perfectumAccepted", () => {
     expect(perfectumAccepted(item("zich afmelden", "hebben", "afgemeld"))).toEqual([
       "heeft zich afgemeld",
       "hebben zich afgemeld",
+      "zich afgemeld",
     ]);
+  });
+
+  it("lets hebben be omitted", () => {
+    const accepted = perfectumAccepted(item("werken", "hebben", "gewerkt"));
+    expect(checkAnswer("gewerkt", accepted, false).correct).toBe(true);
+  });
+
+  it("requires zijn to be typed", () => {
+    const accepted = perfectumAccepted(item("gaan", "zijn", "gegaan"));
+    expect(checkAnswer("gegaan", accepted, false).correct).toBe(false);
   });
 
   it("rejects a misspelled participle under exact checking", () => {

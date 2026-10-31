@@ -13,12 +13,15 @@ function participlePhrase(item: GrammarItem): string {
   return /^zich\s/.test(item.infinitive) ? `zich ${item.participle}` : item.participle;
 }
 
+// "hebben" may be omitted like "de"; "zijn" must be typed like "het" — picking zijn is the point.
 export function perfectumAccepted(item: GrammarItem): string[] {
   const phrase = participlePhrase(item);
-  return auxesOf(item.aux).flatMap((aux) => [
+  const auxes = auxesOf(item.aux);
+  const withAux = auxes.flatMap((aux) => [
     `${AUX_FORMS[aux].singular} ${phrase}`,
     `${AUX_FORMS[aux].plural} ${phrase}`,
   ]);
+  return auxes.includes("hebben") ? [...withAux, phrase] : withAux;
 }
 
 export function perfectumReveal(item: GrammarItem): string {

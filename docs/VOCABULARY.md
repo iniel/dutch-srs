@@ -243,6 +243,7 @@ build`, commit `cards.json` + `dist/`, deploy.
 Hand-owned, like `cards.json`: fix rows (aux, participle) by editing the file. `npm run build:perfectum`
 only **appends** verbs not yet present (existing rows are never reordered). Row order is just the lesson
 tie-breaker. Aux comes from `scripts/sources/perfectum-aux.json` (default `hebben`).
+Answers: `hebben` may be omitted (`gewerkt`), `zijn` must be typed (`is gegaan`) — same rule as `de`/`het`.
 
 ## Adding a different deck / language
 Adjust the field mapping in `convert-anki.mjs` (`fieldIndex` + the `get(...)` calls) to match the new
