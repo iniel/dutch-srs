@@ -1,15 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { CardIndex } from "../data/cards";
-import { searchCards } from "../data/searchCards";
+import { buildSearchForms, searchCards } from "../data/searchCards";
+import type { Grammar } from "../types";
 
 interface SearchProps {
   index: CardIndex;
   onOpen: (cardId: string) => void;
   onBack: () => void;
+  getGrammar: (cardId: string) => Grammar | undefined;
   initialQuery?: string;
 }
 
-export function Search({ index, onOpen, onBack, initialQuery }: SearchProps) {
+export function Search({ index, onOpen, onBack, getGrammar, initialQuery }: SearchProps) {
   const [query, setQuery] = useState(initialQuery ?? "");
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -17,11 +19,12 @@ export function Search({ index, onOpen, onBack, initialQuery }: SearchProps) {
     inputRef.current?.focus();
   }, []);
 
-  const results = useMemo(() => searchCards(index.cards, query), [index.cards, query]);
+  const formsOf = useMemo(() => buildSearchForms(index.cards, getGrammar), [index.cards, getGrammar]);
+  const results = useMemo(() => searchCards(index.cards, query, undefined, formsOf), [index.cards, query, formsOf]);
 
   function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Escape") onBack();
-    else if (e.key === "Enter" && results.length > 0) onOpen(results[0].id);
+    else if (e.key === "Enter" && results.length > 0) onOpen(results[0].card.id);
   }
 
   return (
@@ -40,10 +43,13 @@ export function Search({ index, onOpen, onBack, initialQuery }: SearchProps) {
       </header>
 
       <ul className="word-rows">
-        {results.map((card) => (
+        {results.map(({ card, form }) => (
           <li key={card.id}>
             <button className="word-row" onClick={() => onOpen(card.id)}>
-              <span className="word-row-dutch">{card.dutch}</span>
+              <span className="word-row-dutch">
+                {card.dutch}
+                {form && <span className="word-row-form">{form}</span>}
+              </span>
               <span className="word-row-en">{card.english.join(", ")}</span>
               <span className="word-row-tag">{card.group}</span>
             </button>

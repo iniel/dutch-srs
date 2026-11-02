@@ -83,6 +83,7 @@ export function App() {
   const enrichment = useEnrichment();
   const pathDefs = usePaths();
   const getEnrichment = (id: string) => enrichment.get(id);
+  const getGrammar = useCallback((id: string) => enrichment.get(id)?.grammar, [enrichment]);
   const [progress, setProgress] = useState<ProgressData>(() => loadProgress());
   const [screen, setScreen] = useState<Screen>("dashboard");
   const [session, setSession] = useState<Session | null>(null);
@@ -535,6 +536,7 @@ export function App() {
           initialQuery={searchQuery}
           onOpen={(id) => openWordCard(id, "search")}
           onBack={() => setScreen("dashboard")}
+          getGrammar={getGrammar}
         />
       )}
       {screen === "wordlist" && listPath && (

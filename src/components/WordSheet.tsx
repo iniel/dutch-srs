@@ -69,7 +69,7 @@ export function WordSheet({
     smartSearchQuery(token, (q) => searchCards(index.cards, q, 1).length > 0),
   );
   const results = useMemo(
-    () => (searching ? searchCards(index.cards, query, SHEET_RESULTS) : []),
+    () => (searching ? searchCards(index.cards, query, SHEET_RESULTS).map((m) => m.card) : []),
     [searching, index.cards, query],
   );
   const keyboardInset = useKeyboardInset();

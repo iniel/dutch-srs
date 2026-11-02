@@ -56,6 +56,13 @@
   font-weight: 600;
   color: var(--text-strong);
 }
+.word-row-form {
+  white-space: nowrap;
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
 .word-row-wrap {
   position: relative;
 }
