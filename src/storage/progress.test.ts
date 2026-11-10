@@ -3,11 +3,14 @@ import type { ProgressData, ReviewState } from "../types";
 import {
   CURRENT_VERSION,
   DEFAULT_SETTINGS,
+  clampLessonBatchSize,
+  LESSON_BATCH_MAX,
   STORAGE_KEY,
   exportProgress,
   getState,
   importProgress,
   loadProgress,
+  parseLessonBatchSize,
   redirectCardIds,
   resetAll,
   resetProgress,
@@ -173,6 +176,33 @@ describe("updateSettings", () => {
     const next = updateSettings(data, { lessonBatchSize: 10 });
     expect(next.settings.lessonBatchSize).toBe(10);
     expect(next.settings.theme).toBe(DEFAULT_SETTINGS.theme);
+  });
+});
+
+describe("parseLessonBatchSize", () => {
+  it("accepts whole numbers within range, including two digits", () => {
+    expect(parseLessonBatchSize("1")).toBe(1);
+    expect(parseLessonBatchSize("25")).toBe(25);
+    expect(parseLessonBatchSize(String(LESSON_BATCH_MAX))).toBe(LESSON_BATCH_MAX);
+  });
+
+  it("rejects empty, out-of-range and fractional input", () => {
+    expect(parseLessonBatchSize("")).toBeUndefined();
+    expect(parseLessonBatchSize("0")).toBeUndefined();
+    expect(parseLessonBatchSize(String(LESSON_BATCH_MAX + 1))).toBeUndefined();
+    expect(parseLessonBatchSize("2.5")).toBeUndefined();
+  });
+});
+
+describe("clampLessonBatchSize", () => {
+  it("clamps out-of-range numbers into range", () => {
+    expect(clampLessonBatchSize("99", 5)).toBe(LESSON_BATCH_MAX);
+    expect(clampLessonBatchSize("0", 5)).toBe(1);
+  });
+
+  it("falls back for empty or non-numeric input", () => {
+    expect(clampLessonBatchSize("", 7)).toBe(7);
+    expect(clampLessonBatchSize("abc", 7)).toBe(7);
   });
 });
 

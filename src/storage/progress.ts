@@ -12,6 +12,19 @@ export const DEFAULT_SETTINGS: AppSettings = {
   theme: "system",
 };
 
+export const LESSON_BATCH_MAX = 50;
+
+export function parseLessonBatchSize(raw: string): number | undefined {
+  const n = Number(raw);
+  return raw.trim() !== "" && Number.isInteger(n) && n >= 1 && n <= LESSON_BATCH_MAX ? n : undefined;
+}
+
+export function clampLessonBatchSize(raw: string, fallback: number): number {
+  const n = Math.round(Number(raw));
+  if (raw.trim() === "" || !Number.isFinite(n)) return fallback;
+  return Math.min(LESSON_BATCH_MAX, Math.max(1, n));
+}
+
 function freshProgress(settings: AppSettings = DEFAULT_SETTINGS): ProgressData {
   return { version: CURRENT_VERSION, states: {}, lessonQueue: [], disabledDirections: {}, settings: { ...settings } };
 }

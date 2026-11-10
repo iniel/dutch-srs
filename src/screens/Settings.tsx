@@ -1,8 +1,11 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { AppSettings, ProgressData } from "../types";
 import {
+  LESSON_BATCH_MAX,
+  clampLessonBatchSize,
   exportProgress,
   importProgress,
+  parseLessonBatchSize,
   resetProgress,
   updateSettings,
 } from "../storage/progress";
@@ -19,6 +22,9 @@ interface SettingsProps {
 export function Settings({ progress, onChange, grammar, onGrammarChange, onBack }: SettingsProps) {
   const [msg, setMsg] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const batchSize = progress.settings.lessonBatchSize;
+  const [batchDraft, setBatchDraft] = useState(String(batchSize));
+  useEffect(() => setBatchDraft(String(batchSize)), [batchSize]);
 
   function setSetting(partial: Partial<AppSettings>) {
     onChange(updateSettings(progress, partial));
@@ -59,12 +65,20 @@ export function Settings({ progress, onChange, grammar, onGrammarChange, onBack 
         <span>Lesson batch size</span>
         <input
           type="number"
+          inputMode="numeric"
           min={1}
-          max={20}
-          value={progress.settings.lessonBatchSize}
-          onChange={(e) =>
-            setSetting({ lessonBatchSize: Math.max(1, Math.min(20, Number(e.target.value) || 1)) })
-          }
+          max={LESSON_BATCH_MAX}
+          value={batchDraft}
+          onChange={(e) => {
+            setBatchDraft(e.target.value);
+            const size = parseLessonBatchSize(e.target.value);
+            if (size !== undefined) setSetting({ lessonBatchSize: size });
+          }}
+          onBlur={() => {
+            const size = clampLessonBatchSize(batchDraft, batchSize);
+            if (size !== batchSize) setSetting({ lessonBatchSize: size });
+            setBatchDraft(String(size));
+          }}
         />
       </label>
 

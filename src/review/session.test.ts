@@ -140,9 +140,15 @@ describe("buildLessonQueue pinned", () => {
     expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "a", "a"]);
   });
 
-  it("includes all pinned words even past batchSize, with no normal fill", () => {
+  it("caps pinned words at batchSize in pin order, with no normal fill", () => {
     const queue = buildLessonQueue(["a", "b", "c", "d"], {}, 2, undefined, ["b", "c", "d"]);
-    expect(queue.map((t) => t.cardId)).toEqual(["b", "b", "c", "c", "d", "d"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["b", "b", "c", "c"]);
+  });
+
+  it("skips started pins without letting them use up batch slots", () => {
+    const states: Record<string, ReviewState> = { b: state({ stage: 3 }) };
+    const queue = buildLessonQueue(["a"], states, 2, undefined, ["b", "c", "d"]);
+    expect(queue.map((t) => t.cardId)).toEqual(["c", "c", "d", "d"]);
   });
 
   it("ignores a pinned word already started (stage>0)", () => {

@@ -161,7 +161,7 @@ export function singleWordLessonTasks(cardId: string, disabled?: DisabledDirecti
 /**
  * Build a lesson batch from an already path-filtered, unlock-filtered, ordered pool
  * of candidate card ids. Pinned words lead the batch and bypass the pool (so a pin
- * from a still-locked unit is still taught); all pins are kept even past `batchSize`.
+ * from a still-locked unit is still taught); pins past `batchSize` wait for a later batch.
  * Callers own path membership + unlock gating (see `src/paths/engine.ts`).
  */
 export function buildLessonQueue(
@@ -177,23 +177,13 @@ export function buildLessonQueue(
     return !state || state.stage === 0;
   };
 
-  const picked: string[] = [];
-  const pickedSet = new Set<string>();
-
-  for (const id of pinned) {
-    if (pickedSet.has(id) || !isNew(id)) continue;
-    picked.push(id);
-    pickedSet.add(id);
+  const picked = new Set<string>();
+  for (const id of [...pinned, ...orderedCandidateIds]) {
+    if (picked.size >= batchSize) break;
+    if (isNew(id)) picked.add(id);
   }
 
-  for (const id of orderedCandidateIds) {
-    if (picked.length >= batchSize) break;
-    if (pickedSet.has(id) || !isNew(id)) continue;
-    picked.push(id);
-    pickedSet.add(id);
-  }
-
-  const tasks = picked.flatMap((id) => singleWordLessonTasks(id, disabled));
+  const tasks = [...picked].flatMap((id) => singleWordLessonTasks(id, disabled));
   return seed === undefined ? tasks : shuffleInterleaved(tasks, seed);
 }
 
