@@ -35,16 +35,27 @@ function mergeSettings(partial: Partial<AppSettings> | undefined): AppSettings {
   return { ...DEFAULT_SETTINGS, ...(partial ?? {}) };
 }
 
-export function isReviewState(value: unknown): value is ReviewState {
-  if (typeof value !== "object" || value === null) return false;
+export function parseReviewState(value: unknown): ReviewState | undefined {
+  if (typeof value !== "object" || value === null) return undefined;
   const s = value as Record<string, unknown>;
-  return (
-    typeof s.stage === "number" &&
-    typeof s.availableAt === "number" &&
-    typeof s.lastReviewedAt === "number" &&
-    typeof s.incorrectCount === "number" &&
-    typeof s.burned === "boolean"
-  );
+  // JSON.stringify writes the Infinity of burned/unstarted items as null.
+  const availableAt = s.availableAt === null ? Infinity : s.availableAt;
+  if (
+    typeof s.stage !== "number" ||
+    typeof availableAt !== "number" ||
+    typeof s.lastReviewedAt !== "number" ||
+    typeof s.incorrectCount !== "number" ||
+    typeof s.burned !== "boolean"
+  ) {
+    return undefined;
+  }
+  return {
+    stage: s.stage,
+    availableAt,
+    lastReviewedAt: s.lastReviewedAt,
+    incorrectCount: s.incorrectCount,
+    burned: s.burned,
+  };
 }
 
 // Lower stage wins so a word counts as advanced only when its weaker direction is.
@@ -119,7 +130,8 @@ function coerceProgress(value: unknown): ProgressData {
 
   const rawStates: Record<string, ReviewState> = {};
   for (const [key, raw] of Object.entries(obj.states as Record<string, unknown>)) {
-    if (isReviewState(raw)) rawStates[key] = raw;
+    const state = parseReviewState(raw);
+    if (state) rawStates[key] = state;
   }
   const states = obj.version < CURRENT_VERSION ? migrateV1ToV2(rawStates) : rawStates;
   const lessonQueue = Array.isArray(obj.lessonQueue)

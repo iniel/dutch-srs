@@ -11,11 +11,21 @@ interface LessonStatusActionsProps {
 }
 
 export function LessonStatusActions({ cardId, stage, pinned, onLearnNow, onPin, onUnpin, onCustomProgress }: LessonStatusActionsProps) {
-  if (stage > 0) return <SrsStagePill stage={stage} />;
+  const customProgress = onCustomProgress && (
+    <button className="srs-action" onClick={onCustomProgress}>Custom progress</button>
+  );
+  if (stage > 0) {
+    return (
+      <>
+        <SrsStagePill stage={stage} />
+        {customProgress}
+      </>
+    );
+  }
   return (
     <>
       <button className="srs-action primary" onClick={() => onLearnNow(cardId)}>Learn now</button>
-      {onCustomProgress && <button className="srs-action" onClick={onCustomProgress}>Custom progress</button>}
+      {customProgress}
       {pinned ? (
         <button className="srs-action" onClick={() => onUnpin(cardId)}>Remove from lessons</button>
       ) : (

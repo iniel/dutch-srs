@@ -67,6 +67,13 @@ describe("load / save / reset", () => {
     expect(localStorage.getItem(STORAGE_KEY)).toBe("vocab");
   });
 
+  it("keeps a burned item burned, although JSON stores its Infinity availableAt as null", () => {
+    const burned: ReviewState = { stage: 9, availableAt: Infinity, lastReviewedAt: 5, incorrectCount: 0, burned: true };
+    const data = setDrillState({ version: 1, drills: {} }, "perfectum", "c1", burned);
+    saveGrammar(data);
+    expect(loadGrammar()).toEqual(data);
+  });
+
   it("loads empty data from missing or corrupt storage", () => {
     expect(loadGrammar()).toEqual({ version: 1, drills: {} });
     localStorage.setItem(GRAMMAR_STORAGE_KEY, "{not json");

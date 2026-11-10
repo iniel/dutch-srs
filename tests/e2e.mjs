@@ -361,7 +361,7 @@ try {
     await customPage.waitForSelector(".word-row");
     await customPage.click(".word-row");
     await customPage.waitForSelector(".word-detail");
-    check(await customPage.$('.srs-action:has-text("Custom progress")') !== null, "custom control is only shown for an unstarted word");
+    check(await customPage.$('.srs-action:has-text("Custom progress")') !== null, "custom control is shown for an unstarted word");
     await customPage.click('.srs-action:has-text("Custom progress")');
     await customPage.waitForSelector(".bottom-sheet");
     check(
@@ -391,7 +391,21 @@ try {
       JSON.stringify(disabledDirections) === JSON.stringify({ control: ["nl_en"] }),
       "custom progress preserves direction settings",
     );
-    check(await customPage.$('.srs-action:has-text("Custom progress")') === null, "a started word cannot be promoted again");
+    await customPage.click('.srs-action:has-text("Custom progress")');
+    await customPage.waitForSelector(".bottom-sheet");
+    check(
+      await customPage.$eval('.sheet-action:has-text("Master")', (button) => button.disabled),
+      "a started word's current stage cannot be re-picked",
+    );
+    await customPage.click('.sheet-action:has-text("Burned")');
+    await customPage.waitForSelector(".bottom-sheet", { state: "detached" });
+    await customPage.reload();
+    await customPage.waitForSelector(".action-card");
+    const burnedState = (await readState(customPage)).states[selectedCardId];
+    check(
+      burnedState?.stage === 9 && burnedState?.burned === true && burnedState?.lastReviewedAt > 0,
+      "a started word can be burned, and stays burned after reload",
+    );
   } finally {
     await customContext.close();
   }

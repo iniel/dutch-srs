@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Card, Enrichment, ProgressData } from "../types";
-import type { CustomProgressTarget } from "../srs/schedule";
+import { CUSTOM_PROGRESS_STAGE, type CustomProgressTarget } from "../srs/schedule";
+import { stageLabel } from "../srs/stages";
 import { directionEnabled } from "../types";
 import { cefrBadge } from "../srs/levels";
 import { LessonStatusActions } from "./LessonStatusActions";
@@ -8,6 +9,11 @@ import { WordDetail } from "./WordDetail";
 import { PathChips } from "./PathChips";
 import type { PathMembership } from "../paths/engine";
 import { speak, pronounce, canPronounce } from "../util/speak";
+
+const CUSTOM_PROGRESS_OPTIONS = Object.entries(CUSTOM_PROGRESS_STAGE).map(([target, stage]) => ({
+  target: target as CustomProgressTarget,
+  stage,
+}));
 
 interface WordCardProps {
   card: Card;
@@ -99,44 +105,30 @@ export function WordCard({ card, enrichment, progress, paths, onBack, onLearnNow
         </div>
       )}
 
-      {showCustomProgressSheet && stage === 0 && (
+      {showCustomProgressSheet && (
         <div className="sheet-backdrop" onClick={() => setShowCustomProgressSheet(false)}>
           <div className="bottom-sheet" onClick={(e) => e.stopPropagation()}>
             <h2 className="sheet-title">Set custom progress?</h2>
             <p className="sheet-note">
               Don&apos;t cheat — only use this if you&apos;re certain you already know this word.
               It will be scheduled as if you had completed the selected stage.
+              {stage > 0 && <> Replaces the current stage, {stageLabel(stage)}.</>}
             </p>
-            <button
-              type="button"
-              className="sheet-action"
-              onClick={() => {
-                onSetCustomProgress(card.id, "guru");
-                setShowCustomProgressSheet(false);
-              }}
-            >
-              Guru I
-            </button>
-            <button
-              type="button"
-              className="sheet-action"
-              onClick={() => {
-                onSetCustomProgress(card.id, "master");
-                setShowCustomProgressSheet(false);
-              }}
-            >
-              Master
-            </button>
-            <button
-              type="button"
-              className="sheet-action"
-              onClick={() => {
-                onSetCustomProgress(card.id, "enlightened");
-                setShowCustomProgressSheet(false);
-              }}
-            >
-              Enlightened
-            </button>
+            {CUSTOM_PROGRESS_OPTIONS.map(({ target, stage: optionStage }) => (
+              <button
+                key={target}
+                type="button"
+                className="sheet-action"
+                disabled={optionStage === stage}
+                onClick={() => {
+                  onSetCustomProgress(card.id, target);
+                  setShowCustomProgressSheet(false);
+                }}
+              >
+                {stageLabel(optionStage)}
+                {optionStage === stage && " (current)"}
+              </button>
+            ))}
             <button type="button" className="sheet-cancel" onClick={() => setShowCustomProgressSheet(false)}>
               Cancel
             </button>

@@ -545,6 +545,10 @@
   font-weight: 700;
   cursor: pointer;
 }
+.sheet-action:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 .sheet-action.danger {
   color: #ef4444;
   border-color: rgba(239, 68, 68, 0.4);

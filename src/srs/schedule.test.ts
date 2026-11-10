@@ -46,14 +46,37 @@ describe("setCustomProgress", () => {
     });
   });
 
-  it("does not overwrite progress for a word that has already started", () => {
-    const started = startLesson(newLessonState(), NOW);
-    expect(setCustomProgress(started, "master", NOW + 1)).toBe(started);
+  it("burns a word: never due again", () => {
+    const s = setCustomProgress(newLessonState(), "burned", NOW);
+    expect(s).toEqual({ stage: 9, availableAt: Infinity, lastReviewedAt: NOW, incorrectCount: 0, burned: true });
+  });
+
+  it("moves a started word up or down and keeps its mistake count", () => {
+    const apprentice = { ...startLesson(newLessonState(), 0), incorrectCount: 4 };
+    const promoted = setCustomProgress(apprentice, "burned", NOW);
+    expect(promoted).toMatchObject({ stage: 9, burned: true, incorrectCount: 4 });
+
+    const demoted = setCustomProgress(promoted, "guru", NOW + 1);
+    expect(demoted).toEqual({
+      stage: 5,
+      availableAt: NOW + 1 + STAGE_INTERVALS_MS[5],
+      lastReviewedAt: NOW + 1,
+      incorrectCount: 4,
+      burned: false,
+    });
+  });
+
+  it("leaves a word already at the target stage untouched, so its review timer keeps running", () => {
+    const master = setCustomProgress(newLessonState(), "master", NOW);
+    expect(setCustomProgress(master, "master", NOW + 1)).toBe(master);
+    const burned = setCustomProgress(newLessonState(), "burned", NOW);
+    expect(setCustomProgress(burned, "burned", NOW + 1)).toBe(burned);
   });
 
   it("refuses an unexpected runtime target without changing the word", () => {
     const unstarted = newLessonState();
-    expect(setCustomProgress(unstarted, "burned" as CustomProgressTarget, NOW)).toBe(unstarted);
+    expect(setCustomProgress(unstarted, "apprentice" as CustomProgressTarget, NOW)).toBe(unstarted);
+    expect(setCustomProgress(unstarted, "toString" as CustomProgressTarget, NOW)).toBe(unstarted);
   });
 });
 

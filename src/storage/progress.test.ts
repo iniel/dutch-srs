@@ -27,6 +27,14 @@ const sampleState: ReviewState = {
   burned: false,
 };
 
+const burnedState: ReviewState = {
+  stage: 9,
+  availableAt: Infinity,
+  lastReviewedAt: 100,
+  incorrectCount: 3,
+  burned: true,
+};
+
 beforeEach(() => {
   localStorage.clear();
 });
@@ -84,6 +92,11 @@ describe("save/load round-trip", () => {
 
     const loaded = loadProgress();
     expect(getState(loaded, "card1")).toEqual(sampleState);
+  });
+
+  it("keeps a burned word burned, although JSON stores its Infinity availableAt as null", () => {
+    saveProgress(setState(loadProgress(), "card1", burnedState));
+    expect(getState(loadProgress(), "card1")).toEqual(burnedState);
   });
 });
 
@@ -172,6 +185,11 @@ describe("export/import", () => {
     const json = exportProgress(data);
     const imported = importProgress(json);
     expect(imported).toEqual(data);
+  });
+
+  it("keeps a burned word burned through export and import", () => {
+    const data = setState(loadProgress(), "card1", burnedState);
+    expect(getState(importProgress(exportProgress(data)), "card1")).toEqual(burnedState);
   });
 
   it("adds grammar as a top-level field without changing the vocab part", () => {

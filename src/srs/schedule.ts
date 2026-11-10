@@ -1,13 +1,13 @@
 import type { ReviewState } from "../types";
 import { STAGE_INTERVALS_MS, BURNED_STAGE, MIN_REVIEW_STAGE } from "./stages";
 
-/** The only stages a never-started word can be promoted to manually. */
-export type CustomProgressTarget = "guru" | "master" | "enlightened";
+export type CustomProgressTarget = "guru" | "master" | "enlightened" | "burned";
 
-const CUSTOM_PROGRESS_STAGE: Record<CustomProgressTarget, number> = {
+export const CUSTOM_PROGRESS_STAGE: Record<CustomProgressTarget, number> = {
   guru: 5, // Guru I
   master: 7,
   enlightened: 8,
+  burned: BURNED_STAGE,
 };
 
 export function newLessonState(): ReviewState {
@@ -29,28 +29,23 @@ export function startLesson(state: ReviewState, now: number): ReviewState {
   };
 }
 
-/**
- * Record a never-started word as though it had just completed the chosen SRS
- * stage. Keeping this here (rather than assigning a stage in the UI) makes the
- * restriction and its normal review scheduling part of the SRS contract.
- */
 export function setCustomProgress(
   state: ReviewState,
   target: CustomProgressTarget,
   now: number,
 ): ReviewState {
-  // `target` normally comes from a typed UI callback, but this is a public
-  // boundary: never turn unexpected runtime input into an invalid SRS state.
-  if (state.stage !== 0 || !Object.hasOwn(CUSTOM_PROGRESS_STAGE, target)) return state;
-
+  if (!Object.hasOwn(CUSTOM_PROGRESS_STAGE, target)) return state;
   const stage = CUSTOM_PROGRESS_STAGE[target];
+  // Re-picking the current stage must not restart its review timer.
+  if (state.stage === stage) return state;
+
+  const burned = stage === BURNED_STAGE;
   return {
     ...state,
     stage,
-    availableAt: now + STAGE_INTERVALS_MS[stage],
+    availableAt: burned ? Infinity : now + STAGE_INTERVALS_MS[stage],
     lastReviewedAt: now,
-    incorrectCount: 0,
-    burned: false,
+    burned,
   };
 }
 

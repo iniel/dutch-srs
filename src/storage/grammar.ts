@@ -1,6 +1,6 @@
 import type { ReviewState } from "../types";
 import cardRedirects from "../data/cardRedirects.json";
-import { isReviewState, redirectStates } from "./progress";
+import { parseReviewState, redirectStates } from "./progress";
 
 export const GRAMMAR_STORAGE_KEY = "dutch-srs-grammar-v1";
 
@@ -27,7 +27,10 @@ export function coerceGrammar(value: unknown): GrammarData {
   for (const [drillId, raw] of Object.entries(value.drills)) {
     if (!isRecord(raw) || !isRecord(raw.states)) continue;
     const states: Record<string, ReviewState> = {};
-    for (const [cardId, st] of Object.entries(raw.states)) if (isReviewState(st)) states[cardId] = st;
+    for (const [cardId, rawState] of Object.entries(raw.states)) {
+      const state = parseReviewState(rawState);
+      if (state) states[cardId] = state;
+    }
     drills[drillId] = { states };
   }
   return { version: 1, drills };
